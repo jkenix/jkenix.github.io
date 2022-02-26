@@ -18,23 +18,49 @@ $opt: optimizeLegibility;
   Georgia, serif, Verdana, Geneva, sans-serif;}
 // Header
 
-header { 
-  // display:grid;
-  // grid-template-columns:1fr;
-  // grid-gap: 0px;
+.preview {
+  display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: flex-start;
+  .header-preview-left 
+{
+width: 908px;
+height: 715px;
+}
+.header-preview-right {
+ width: 458px;
+ height: 715px;
+
+ p {
+  position: absolute;
+  width: 311px;
+  height: 175px;
+  left: 962px;
+  top: 140.86px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 39.9588px;
+  line-height: 58px;
+  /* or 144% */
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: 1.37135px;
+  
+  color: #262F32;
+  
+ }
+}
 }
 
 .nav {
   min-height: 100%;
-    .nav-content {
-        
-      }
 }
 
 // Main
-main { 
-
-}
 
 // Footer
 
