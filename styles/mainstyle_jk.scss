@@ -1,0 +1,40 @@
+// Переменные
+$opt: optimizeLegibility;
+// Миксины
+@mixin centerstatic {
+  text-align:center;
+  position: static;
+}
+@mixin nocopy {
+  -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+} 
+@mixin fontfamily{
+  font-family: Tahoma, Geneva, sans-serif, 
+  Georgia, serif, Verdana, Geneva, sans-serif;}
+// Header
+
+header { 
+  // display:grid;
+  // grid-template-columns:1fr;
+  // grid-gap: 0px;
+}
+
+.nav {
+  min-height: 100%;
+    .nav-content {
+        
+      }
+}
+
+// Main
+main { 
+
+}
+
+// Footer
+

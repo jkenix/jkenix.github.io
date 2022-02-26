@@ -1,0 +1,20 @@
+/* Resets */
+* {margin: 0; padding: 0;}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Others */
+img {
+	max-width: 100%;
+}
+@media screen and (min-width: 800px) { }
+
+body { 
+
+}
+
