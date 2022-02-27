@@ -1,3 +1,5 @@
+// Стили
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 // Переменные
 $opt: optimizeLegibility;
 // Миксины
@@ -18,40 +20,54 @@ $opt: optimizeLegibility;
   Georgia, serif, Verdana, Geneva, sans-serif;}
 // Header
 
-.preview {
-  display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: flex-start;
-  .header-preview-left 
+.main-header {
+  width: 1366px;
+  height: 715px;
+  background-color: #f3f3f3;
+
+  &.img {
+    display: inline-block;
+    vertical-align: top;
+  }
+.main-header-left 
 {
 width: 908px;
 height: 715px;
 }
-.header-preview-right {
- width: 458px;
- height: 715px;
 
- p {
+.header-preview-right {
+  width: 458px;
+  height: 715px;
+}
+.header-prr-aboutali {
+  width: 333px;
+  height: 455px;
+  left: 951px;
+  top: 146px;  
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+ .hpr-ali-header {
+  display:flex;
+  flex-direction: column;
   position: absolute;
   width: 311px;
   height: 175px;
-  left: 962px;
-  top: 140.86px;
-  
+  left: 960px;
+  top: 146.86px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   font-size: 39.9588px;
   line-height: 58px;
   /* or 144% */
-  
-  display: flex;
-  align-items: center;
   letter-spacing: 1.37135px;
-  
   color: #262F32;
-  
+ }
+ .hpr-aboutali {
+  flex-direction: column;
+  position: absolute;
  }
 }
 }
