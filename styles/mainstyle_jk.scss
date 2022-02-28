@@ -17,65 +17,88 @@ $opt: optimizeLegibility;
 } 
 @mixin fontfamily{
   font-family: Tahoma, Geneva, sans-serif, 
-  Georgia, serif, Verdana, Geneva, sans-serif;}
+  Georgia, serif, Verdana, Geneva, sans-serif;
+}
 // Header
-
 .main-header {
   width: 1366px;
   height: 715px;
   background-color: #f3f3f3;
+  display:block;
 
   &.img {
     display: inline-block;
     vertical-align: top;
   }
-.main-header-left 
-{
-width: 908px;
-height: 715px;
-}
 
-.header-preview-right {
-  width: 458px;
-  height: 715px;
-}
-.header-prr-aboutali {
-  width: 333px;
-  height: 455px;
-  left: 951px;
-  top: 146px;  
-  display:flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  .header_content {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    .header_content_nav {
+      display: block;
+      flex-direction: column;
+      top: 57px;      
+    }
+    .header_nav_bar {
+      cursor: pointer;
+      font-size: 45.4px;
+      position: absolute;
+      display:block;
+      top: 45.1px;
+      opacity: 0.9;
+      width: 33px;
+      height: 29px;
+      left: 50.4px;
+    }
+    .header_title {
+      position: absolute;
+      flex-wrap: nowrap;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 311px;
+      height: 175px;
+      left: 54px;
+      top: 147.86px;
+      font-family: Roboto;
+      font-style: normal;
+      font-size: 39.9588px;
+      font-weight: 300;
+      line-height: 58px;
+      letter-spacing: 1.27135px;
+    }
+    .header_about_ali {
+      position: absolute;
+      width: 357px;
+      height: 226px;
+      left: 54px;
+      top: 369.29px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17.9814px;
+      line-height: 28px;
+      /* or 156% */
+      // align-items: center;
+      letter-spacing: 0.617108px;
+      color: #262F32;
+      &::before {
+        position: absolute;
+        width: 348px;
+        height: 126px;
+        left: 45px;
+        top: 489px;
+      }
+      
+    }
+  }
 
- .hpr-ali-header {
-  display:flex;
-  flex-direction: column;
-  position: absolute;
-  width: 311px;
-  height: 175px;
-  left: 960px;
-  top: 146.86px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 39.9588px;
-  line-height: 58px;
-  /* or 144% */
-  letter-spacing: 1.37135px;
-  color: #262F32;
- }
- .hpr-aboutali {
-  flex-direction: column;
-  position: absolute;
- }
-}
 }
 
 .nav {
   min-height: 100%;
 }
-
 // Main
 
 // Footer
