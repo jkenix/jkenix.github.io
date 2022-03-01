@@ -20,7 +20,7 @@ $opt: optimizeLegibility;
   Georgia, serif, Verdana, Geneva, sans-serif;
 }
 @mixin main_strart_verified{
-  display: inline-block;
+    display: inline-block;
     position: absolute;
     width: 752px;
     height: 427px;
@@ -117,6 +117,7 @@ $opt: optimizeLegibility;
     position: absolute;
     width: 614px;
     height: 854px;
+    background-image: url("/img/Rectangle 1 copy 2.webp");
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       &:before {
         content: '';
@@ -131,6 +132,7 @@ $opt: optimizeLegibility;
   }
   .main_strarting {
     @include main_strart_verified();
+    background-image: url("/img/Rectangle 11.webp");
     &:before {
         content: '';
         display: inline-block;
@@ -145,7 +147,7 @@ $opt: optimizeLegibility;
   .main_verified {
     @include main_strart_verified();
       top: 427px;
-
+      background-image: url("/img/Rectangle 1 copy.webp");
       &:before {
         content: '';
         display: inline-block;
@@ -169,12 +171,73 @@ $opt: optimizeLegibility;
     position: absolute;
     width: 458px;
     height: 715px;
-    left: 0px;
+    background-image: url("/img/Rectangle 2 copy.webp");
+
+    img {
+      top: 442px;
+      left: 59px;
+      position: absolute;
+    }
+    &:before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 0px; left: 0px;
+      width: 100%;
+      height: 100%;
+      opacity: 0.75;
+      background: #1D5367;
+    }
   }
+
   .footer_form_and_links {
     position: absolute;
     width: 908px;
     height: 715px;
     left: 458px;
+    background-image: url("/img/Rectangle 2.webp");
+    &:before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 0px; left: 0px;
+      width: 100%;
+      height: 100%;
+      opacity: 0.75;
+      background: #5A665F;
+    }
+
+    h2 {
+      position: absolute;
+      width: 248px;
+      height: 66px;
+      left: 57px;
+      top: 59.5px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 45px;
+      line-height: 66px;
+      letter-spacing: 1.45px;
+      color: #FFFFFF;
+    }
+    
+    .footer_forms {
+      position: absolute;
+      width: 624px;
+      height: 237px;
+      left: 48px;
+      top: 162px;
+    }
+
+    .footer_contacts {
+      position: absolute;
+      width: 462px;
+      height: 150px;
+      left: 54px;
+      top: 493px;
+
+    }
+    
   }
 }
