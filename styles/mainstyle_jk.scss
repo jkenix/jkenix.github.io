@@ -19,13 +19,20 @@ $opt: optimizeLegibility;
   font-family: Tahoma, Geneva, sans-serif, 
   Georgia, serif, Verdana, Geneva, sans-serif;
 }
+@mixin main_strart_verified{
+  display: inline-block;
+    position: absolute;
+    width: 752px;
+    height: 427px;
+    left: 614px;
+}
 // Header
-.main-header {
+.header {
   width: 1366px;
   height: 715px;
   background-color: #f3f3f3;
   display:block;
-
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   &.img {
     display: inline-block;
     vertical-align: top;
@@ -35,6 +42,9 @@ $opt: optimizeLegibility;
     display: inline-block;
     vertical-align: top;
     position: absolute;
+    width: 457px;
+    height: 715px;
+    top: 0px;
     .header_content_nav {
       display: block;
       flex-direction: column;
@@ -47,8 +57,8 @@ $opt: optimizeLegibility;
       display:block;
       top: 45.1px;
       opacity: 0.9;
-      width: 33px;
-      height: 29px;
+      width: 40px;
+      height: 45px;
       left: 50.4px;
     }
     .header_title {
@@ -71,7 +81,7 @@ $opt: optimizeLegibility;
     .header_about_ali {
       position: absolute;
       width: 357px;
-      height: 226px;
+      height: 244px;
       left: 54px; /* or 54.8 */
       top: 369.29px;
       font-family: Roboto;
@@ -96,11 +106,75 @@ $opt: optimizeLegibility;
   }
 
 }
-
-.nav {
-  min-height: 100%;
-}
 // Main
+.main {
+  position: absolute;
+  width: 1366px;
+  height: 854px;
+  top: 715px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  .main_skills {
+    position: absolute;
+    width: 614px;
+    height: 854px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      &:before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0px; left: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 0.75;
+        background: #1E92AF;
+      }
+  }
+  .main_strarting {
+    @include main_strart_verified();
+    &:before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0px; left: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 0.91;
+        background: #FFF4D2;
+      }
+  }
+  .main_verified {
+    @include main_strart_verified();
+      top: 427px;
 
+      &:before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0px; left: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 0.75;
+        background: #162633;
+      }
+  }
+}
 // Footer
-
+.footer {
+  position: absolute;
+  width: 1366px;
+  height: 715px;
+  top: 1568px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  .footer_about_author {
+    position: absolute;
+    width: 458px;
+    height: 715px;
+    left: 0px;
+  }
+  .footer_form_and_links {
+    position: absolute;
+    width: 908px;
+    height: 715px;
+    left: 458px;
+  }
+}
