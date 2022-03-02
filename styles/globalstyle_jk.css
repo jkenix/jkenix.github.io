@@ -10,7 +10,7 @@
 
 /* Global */
 body {
-    margin: 0 auto;
+  margin: 0 auto;
 	padding: 0;
 	width: 1366px;
 }
@@ -22,7 +22,7 @@ body {
   img {
     width: 500px;
     height: 400px;
-	max-width: 100%;
+	  max-width: 100%;
   }
 }
 

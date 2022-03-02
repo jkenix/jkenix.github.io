@@ -1,24 +1,18 @@
 // Стили
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
 // Переменные
 $opt: optimizeLegibility;
+$black: #262F32;
+$white: #FFFFFF;
+$shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 // Миксины
-@mixin centerstatic {
-  text-align:center;
-  position: static;
-}
-@mixin nocopy {
-  -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        -o-user-select: none;
-        user-select: none;
-} 
 @mixin fontfamily{
-  font-family: Tahoma, Geneva, sans-serif, 
+  font-family: "Roboto", Tahoma, Geneva, sans-serif, 
   Georgia, serif, Verdana, Geneva, sans-serif;
+font-style: normal;
+font-weight: normal;
 }
+@mixin fonth2{ h2 {font-size: 45px; font-weight:400;}}
 @mixin main_strart_verified{
     display: inline-block;
     position: absolute;
@@ -26,13 +20,20 @@ $opt: optimizeLegibility;
     height: 427px;
     left: 614px;
 }
+// Global 
+/* Span */
+.wtitle {
+  font-weight: 900; font-family: "Roboto Black";
+}
 // Header
 .header {
   width: 1366px;
   height: 715px;
   background-color: #f3f3f3;
   display:block;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  @include fontfamily();
+  color: $black;
+  filter: $shadow;
   &.img {
     display: inline-block;
     vertical-align: top;
@@ -45,64 +46,49 @@ $opt: optimizeLegibility;
     width: 457px;
     height: 715px;
     top: 0px;
-    .header_content_nav {
-      display: block;
-      flex-direction: column;
-      top: 57px;      
-    }
-    .header_nav_bar {
-      cursor: pointer;
-      font-size: 45.4px;
-      position: absolute;
-      display:block;
-      top: 45.1px;
-      opacity: 0.9;
-      width: 40px;
-      height: 45px;
-      left: 50.4px;
-    }
-    .header_title {
-      position: absolute;
-      flex-wrap: nowrap;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      width: 311px;
-      height: 175px;
-      left: 54px;
-      top: 147.86px;
-      font-family: Roboto;
-      font-style: normal;
-      font-size: 39.9588px;
-      font-weight: 300;
-      line-height: 58px;
-      letter-spacing: 1.27135px;
-    }
-    .header_about_ali {
-      position: absolute;
-      width: 357px;
-      height: 244px;
-      left: 54px; /* or 54.8 */
-      top: 369.29px;
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 17.9814px;
-      line-height: 28px;
-      /* or 156% */
-      // align-items: center;
-      letter-spacing: 0.647108px;
-      color: #262F32;
-      p {
-        margin-bottom: 27.43px;
-        // position: absolute;
-        // width: 348px;
-        // height: 126px;
-        // left: 45px;
-        // top: 489px;
+
+      .header_nav_bar {
+        cursor: pointer;
+        font-size: 45.4px;
+        position: absolute;
+        display:block;
+        top: 45.1px;
+        opacity: 0.9;
+        width: 40px;
+        height: 45px;
+        left: 50.4px;
       }
-      
-    }
+      .header_title {
+        position: absolute;
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 311px;
+        height: 175px;
+        left: 54px;
+        top: 147.86px;
+        font-size: 39.9588px;
+        font-weight: 400;
+        line-height: 58px;
+        letter-spacing: 1.27135px;
+      }
+      .header_about_ali {
+        position: absolute;
+        width: 357px;
+        height: 244px;
+        left: 54px; /* or 54.8 */
+        top: 369.29px;
+        font-size: 17.9814px;
+        line-height: 28px;
+        letter-spacing: 0.647108px;
+        
+        p {
+          margin-bottom: 27.43px;
+          
+        }
+        
+      }
   }
 
 }
@@ -112,13 +98,38 @@ $opt: optimizeLegibility;
   width: 1366px;
   height: 854px;
   top: 715px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  .main_skills {
-    position: absolute;
-    width: 614px;
-    height: 854px;
-    background-image: url("/img/Rectangle 1 copy 2.webp");
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  @include fontfamily();
+  @include fonth2();
+  filter: $shadow;
+    .main_skills {
+      color: #FFFFFF;
+      position: absolute;
+      width: 614px;
+      height: 854px;
+      background-image: url("/img/Rectangle 1 copy 2.webp");
+      .drawing_sketch {
+        position: absolute;
+        width: 452px;
+        height: 182px;
+        left: 59px;
+        top: 70px;
+        p {margin-top: 14.29px;}
+      }
+      .making_design {
+        position: absolute;
+        width: 452px;
+        height: 182px;
+        left: 59px;
+        top: 338px;
+      }
+      .developing_product {
+        position: absolute;
+        width: 452px;
+        height: 182px;
+        left: 59px;
+        top: 605px;
+      }
+
       &:before {
         content: '';
         display: inline-block;
@@ -131,21 +142,37 @@ $opt: optimizeLegibility;
       }
   }
   .main_strarting {
-    @include main_strart_verified();
-    background-image: url("/img/Rectangle 11.webp");
-    &:before {
-        content: '';
-        display: inline-block;
+      color: $black;
+      @include main_strart_verified();
+      background-image: url("/img/Rectangle 11.webp");
+      h2 {
+        font-weight: 100;
         position: absolute;
-        top: 0px; left: 0px;
-        width: 100%;
-        height: 100%;
-        opacity: 0.91;
-        background: #FFF4D2;
+        width: 323px;
+        height: 66px;
+        left: 58px;
+        top: 59.5px;
       }
+      p {
+        width: 566px;
+        height: 112px;
+        left: 54px;
+        top: 139.79px;
+      }
+      &:before {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          top: 0px; left: 0px;
+          width: 100%;
+          height: 100%;
+          opacity: 0.91;
+          background: #FFF4D2;
+        }
   }
   .main_verified {
-    @include main_strart_verified();
+      color: $white;
+      @include main_strart_verified();
       top: 427px;
       background-image: url("/img/Rectangle 1 copy.webp");
       &:before {
@@ -162,16 +189,31 @@ $opt: optimizeLegibility;
 }
 // Footer
 .footer {
+  @include fontfamily();
   position: absolute;
   width: 1366px;
   height: 715px;
   top: 1568px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  color: $white;
+  filter: $shadow;
   .footer_about_author {
     position: absolute;
     width: 458px;
     height: 715px;
     background-image: url("/img/Rectangle 2 copy.webp");
+    
+    h2 {
+      position: absolute;
+      flex-wrap: nowrap;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 373px;
+      height: 132px;
+      left: 48px;
+      top: 51.5px;
+      letter-spacing: 1.35px;
+    }
 
     img {
       top: 442px;
@@ -213,13 +255,10 @@ $opt: optimizeLegibility;
       height: 66px;
       left: 57px;
       top: 59.5px;
-      font-family: Roboto;
-      font-style: normal;
       font-weight: 300;
       font-size: 45px;
       line-height: 66px;
       letter-spacing: 1.45px;
-      color: #FFFFFF;
     }
     
     .footer_forms {
