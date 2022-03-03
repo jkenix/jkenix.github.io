@@ -1,29 +1,31 @@
-// Стили
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
 // Переменные
 $opt: optimizeLegibility;
 $black: #262F32;
 $white: #FFFFFF;
 $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 // Миксины
-@mixin fontfamily{
+@mixin hflex { position: absolute; // Устанавливает flex для h1 в .header и h2 в .footer_about_author
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;}  
+@mixin fontfamily{ // Устанавливает шрифты по умолчанию для всего текста. Макет делался с упором на Roboto.
   font-family: "Roboto", Tahoma, Geneva, sans-serif, 
   Georgia, serif, Verdana, Geneva, sans-serif;
 font-style: normal;
 font-weight: normal;
 }
-@mixin fonth2{ h2 {font-size: 45px; font-weight:400;}}
-@mixin main_strart_verified{
+@mixin fonth2{h2 {font-size: 45px; font-weight: 100; font-family: "Roboto Light";} // Настройка шрифта для всех h2 
+.wtitle, .wtitle_footer { 
+  font-family: "Roboto Black"; font-weight: 100;}
+  .wtitle_footer {font-size: 42px;}
+}
+@mixin main_strart_verified{ //Устанавливает положение для .main_strarting и .main_verified
     display: inline-block;
     position: absolute;
     width: 752px;
     height: 427px;
     left: 614px;
-}
-// Global 
-/* Span */
-.wtitle {
-  font-weight: 900; font-family: "Roboto Black";
 }
 // Header
 .header {
@@ -58,12 +60,8 @@ font-weight: normal;
         height: 45px;
         left: 50.4px;
       }
-      .header_title {
-        position: absolute;
-        flex-wrap: nowrap;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+      h1 {
+        @include hflex();
         width: 311px;
         height: 175px;
         left: 54px;
@@ -102,7 +100,7 @@ font-weight: normal;
   @include fonth2();
   filter: $shadow;
     .main_skills {
-      color: #FFFFFF;
+      color: $white;
       position: absolute;
       width: 614px;
       height: 854px;
@@ -175,6 +173,13 @@ font-weight: normal;
       @include main_strart_verified();
       top: 427px;
       background-image: url("/img/Rectangle 1 copy.webp");
+      h2 {
+        position: absolute;
+        width: 361px;
+        height: 66px;
+        left: 54px;
+        top: 59.5px;
+      }
       &:before {
         content: '';
         display: inline-block;
@@ -190,6 +195,7 @@ font-weight: normal;
 // Footer
 .footer {
   @include fontfamily();
+  @include fonth2();
   position: absolute;
   width: 1366px;
   height: 715px;
@@ -203,11 +209,7 @@ font-weight: normal;
     background-image: url("/img/Rectangle 2 copy.webp");
     
     h2 {
-      position: absolute;
-      flex-wrap: nowrap;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+      @include hflex();
       width: 373px;
       height: 132px;
       left: 48px;
@@ -216,9 +218,20 @@ font-weight: normal;
     }
 
     img {
-      top: 442px;
-      left: 59px;
       position: absolute;
+      width: 90px;
+      height: 90px;
+      left: 59px;
+      top: 441px;
+    }
+    .wtitle_footer {
+      position: absolute;
+      width: 214px;
+      height: 66px;
+      left: 59px;
+      top: 553px;
+      letter-spacing: 1.26px;
+
     }
     &:before {
       content: '';

@@ -1,3 +1,26 @@
+/* Шрифты */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap'); */
+@font-face {
+  font-family: "Roboto Light";
+  src:
+      url(/fonts/RobotoLight.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src:
+      url(/fonts/RobotoBold.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src:
+      url(/fonts/RobotoRegular.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto Black";
+  src:
+      url(/fonts/RobotoBlack.woff) format("woff");
+}
+
 /* Resets */
 * {margin: 0; padding: 0;}
 *, *:before, *:after {
