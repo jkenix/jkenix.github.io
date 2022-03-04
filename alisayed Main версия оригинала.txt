@@ -1,0 +1,97 @@
+// Версия оригинала
+// Main
+.main {
+  width: 1366px;
+  height: 854px;
+  @include fontfamily();
+  @include fonth2();
+  filter: $shadow;
+  display: block;
+  float: left;
+ 
+    .main_skills {
+      background-image: url("/img/Rectangle 1 copy 2.webp");
+      color: $white;
+      display: block;
+      float: left;
+      width: 614px;
+      height: 854px;
+      padding-top: 58px;
+      padding-left: 60px;
+      padding-right: 100px;
+      
+            h2 {
+                letter-spacing: 1.55px;
+                line-height: 66px;
+                margin-bottom: 23px;
+              }
+            
+              p {
+                font-family: "Roboto Regular";
+                letter-spacing: 0.5350px;
+                font-size: 15.57px;
+                line-height: 28px;
+                margin-bottom:66px;
+         
+      }
+
+     
+    }
+  .main_strarting {
+      color: $black;
+      @include main_strart_verified();
+      background-image: url("/img/Rectangle 11.webp");
+      display: block;
+      float: right;
+      h2 {
+        font-weight: 100;
+        
+        position: absolute;
+        width: 323px;
+        height: 66px;
+        left: 58px;
+        top: 59.5px;
+      }
+      p {
+        width: 566px;
+        height: 112px;
+        left: 54px;
+        top: 139.79px;
+      }
+      &:before {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          top: 0px; left: 0px;
+          width: 100%;
+          height: 100%;
+          opacity: 0.91;
+          background: #FFF4D2;
+        }
+  }
+  .main_verified {
+      display: block;
+      float: right;
+      color: $white;
+      @include main_strart_verified();
+      top: 427px;
+      background-image: url("/img/Rectangle 1 copy.webp");
+      h2 {
+        position: absolute;
+        width: 361px;
+        height: 66px;
+        left: 54px;
+        top: 59.5px;
+      }
+      &:before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0px; left: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 0.75;
+        background: #162633;
+      }
+  }
+}

@@ -35,6 +35,7 @@ body {
   margin: 0 auto;
 	padding: 0;
 	width: 1366px;
+  text-rendering: optimizeLegibility;
 }
 /* Медиа-запросы */
 @media only screen and (min-height: 0px) and (min-width: 500px) and 

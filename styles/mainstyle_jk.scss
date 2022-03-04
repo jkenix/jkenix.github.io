@@ -68,9 +68,11 @@ $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         left: 54px;
         top: 147.86px;
         font-size: 39.9588px;
-        font-weight: 400;
         line-height: 58px;
         letter-spacing: 1.27135px;
+          span {font-family: 'Roboto Light'}
+          .bold {font-family: 'Roboto Bold'}
+          .regular {font-family: "Roboto Regular";}
       }
       .header_about_ali {
         position: absolute;
@@ -107,40 +109,28 @@ $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       height: 854px;
       padding-left: 60px;
       padding-right: 100px;
+      padding-top:56px;
       background-image: url("/img/Rectangle 1 copy 2.webp");
 
-      h2 {margin-bottom: 23px;}
-      p {margin-bottom: 65px;}
-      .drawing_sketch {
+      .main_skills_content {
         position: absolute;
         width: 452px;
-        height: 182px;
-        left: 59px;
-        top: 63px;
+        height: 750px;
+        left: 60px;
             h2 {
-              position: absolute;
-              letter-spacing: 1.55px;
+                letter-spacing: 1.55px;
+                margin-bottom: 23px;
+                line-height: 66px;
               }
             
               p {
-                position: absolute;
-                letter-spacing: 0.4671px;
+                font-family: "Roboto Regular";
+                letter-spacing: 0.5350px;
+                font-size: 15.57px;
+                line-height: 28px;
+                margin-bottom:66px;
               }
          
-      }
-      .making_design {
-        position: absolute;
-        width: 452px;
-        height: 182px;
-        left: 59px;
-        top: 338px;
-      }
-      .developing_product {
-        position: absolute;
-        width: 452px;
-        height: 182px;
-        left: 59px;
-        top: 605px;
       }
 
       &:before {
