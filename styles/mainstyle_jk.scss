@@ -117,6 +117,7 @@ $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         width: 452px;
         height: 750px;
         left: 60px;
+         
             h2 {
                 letter-spacing: 1.55px;
                 margin-bottom: 23px;
@@ -129,6 +130,10 @@ $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                 font-size: 15.57px;
                 line-height: 28px;
                 margin-bottom:66px;
+
+                &:nth-of-type(3) { // Либо nth-child(3n)
+                  margin-bottom:62px;
+                }
               }
          
       }
@@ -158,6 +163,7 @@ $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         top: 59.5px;
       }
       p {
+        position: absolute;
         width: 566px;
         height: 112px;
         left: 54px;
@@ -186,6 +192,14 @@ $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         left: 54px;
         top: 59.5px;
       }
+      p {
+        position: absolute;
+        width: 566px;
+        height: 112px;
+        left: 54px;
+        top: 139.79px;
+      }
+      
       &:before {
         content: '';
         display: inline-block;
