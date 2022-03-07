@@ -5,104 +5,77 @@ $white: #FFFFFF;
 $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 // Миксины
 @mixin hflex { position: absolute; // Устанавливает flex для h1 в .header и h2 в .footer_about_author
-  flex-wrap: nowrap;
-  display: flex;
-  flex-direction: column;
+  flex-wrap: nowrap; display: flex; flex-direction: column;
   align-items: flex-start;}  
 @mixin fontfamily{ // Устанавливает шрифты по умолчанию для всего текста. Макет делался с упором на Roboto.
-  font-family: "Roboto", Tahoma, Geneva, sans-serif, 
-  Georgia, serif, Verdana, Geneva, sans-serif;
+  font-family: "Roboto", Tahoma, Geneva, sans-serif, Georgia, serif, Verdana, Geneva, sans-serif;
   font-display: swap;
   font-style: normal;
   font-weight: normal;
 }
 @mixin fonth2{h2 {font-size: 45px; font-weight: 100; font-family: "Roboto Light";} // Настройка шрифта для всех h2 
-.wtitle, .wtitle_footer { 
-  font-family: "Roboto Black"; font-weight: 100;}
-  .wtitle_footer {font-size: 42px;}
+.wtitle, .wtitle_footer {font-family: "Roboto Black"; font-weight: 100;}
+.wtitle_footer {font-size: 42px;}
 }
 @mixin main_strart_verified{ //Устанавливает положение для .main_strarting и .main_verified
-    display: inline-block;
-    position: absolute;
-    width: 752px;
-    height: 427px;
-    left: 614px;
+    display: block; position: absolute; float: right;
+    width: 752px; height: 427px; left: 614px;
+    padding-top: 61.5px; padding-left: 55px;
+    padding-right: 160px; padding-bottom: 70px;
+    // .main_strarting и .main_verified _content
+    &_content {
+      position: absolute; width: 555px; height: 297px;
+      p {line-height: 28px;letter-spacing: 0.5971px;
+        width: 552px;height: 112px;}
+      a {padding-top: 13px;width: 212px;height: 52px;}
+     }
 }
+// Global
+p, a {font-family: "Roboto Regular";}
+.btn {text-decoration: none ; @include fontfamily(); 
+  border-radius: 14px; font-size: 16.57px;
+  position: absolute;text-align: center;}
 // Header
 .header {
-  width: 1366px;
-  height: 715px;
+  width: 1366px; height: 715px;
   background-color: #f3f3f3;
-  display:block;
-  @include fontfamily();
-  color: $black;
-  filter: $shadow;
-  &.img {
-    display: inline-block;
-    vertical-align: top;
-  }
+  display:block; @include fontfamily(); color: $black; filter: $shadow;
+  &.img {display: inline-block;vertical-align: top;}
 
   .header_content {
-    display: inline-block;
-    vertical-align: top;
-    position: absolute;
-    width: 457px;
-    height: 715px;
-    top: 0px;
+    display: inline-block; vertical-align: top; position: absolute;
+    width: 457px; height: 715px; top: 0px;
 
       .header_nav_bar {
-        cursor: pointer;
-        font-size: 45.4px;
-        position: absolute;
-        display:block;
-        top: 45.1px;
+        cursor: pointer; font-size: 45.4px;
+        position: absolute; display:block; top: 45.1px;
+        width: 40px; height: 45px; left: 50.4px;
         opacity: 0.9;
-        width: 40px;
-        height: 45px;
-        left: 50.4px;
       }
       h1 {
-        @include hflex();
-        width: 311px;
-        height: 175px;
-        left: 54px;
-        top: 147.86px;
-        font-size: 39.9588px;
-        line-height: 58px;
-        letter-spacing: 1.27135px;
+        @include hflex(); width: 311px; height: 175px; left: 54px; top: 147.86px;
+        font-size: 39.9588px; line-height: 58px; letter-spacing: 1.27135px;
           span {font-family: 'Roboto Light'}
           .bold {font-family: 'Roboto Bold'}
           .regular {font-family: "Roboto Regular";}
       }
       .header_about_ali {
-        position: absolute;
-        width: 357px;
-        height: 244px;
-        left: 54px; /* or 54.8 */
+        position: absolute; width: 357px; height: 244px; left: 54px; /* or 54.8 */
         top: 369.29px;
-        font-size: 17.9814px;
-        line-height: 28px;
-        letter-spacing: 0.647108px;
-        
-        p {
-          margin-bottom: 27.43px;
-          
-        }
-        
+        font-size: 17.9814px ;line-height: 28px; letter-spacing: 0.647108px;
+        p {margin-bottom: 27.43px;}
       }
   }
 
 }
 // Main
 .main {
-  position: absolute;
-  width: 1366px;
-  height: 854px;
-  top: 715px;
-  @include fontfamily();
-  @include fonth2();
+  position: absolute; width: 1366px; height: 854px; top: 715px;
+  @include fontfamily(); @include fonth2();
+  p {font-size: 15.57px;};
   filter: $shadow;
-    .main_skills {
+
+  .main_skills {
       color: $white;
       position: absolute;
       width: 614px;
@@ -112,11 +85,10 @@ $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       padding-top:56px;
       background-image: url("/img/Rectangle 1 copy 2.webp");
 
-      .main_skills_content {
+      &_content { //main skills content
         position: absolute;
         width: 452px;
         height: 750px;
-        left: 60px;
          
             h2 {
                 letter-spacing: 1.55px;
@@ -125,12 +97,9 @@ $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
               }
             
               p {
-                font-family: "Roboto Regular";
                 letter-spacing: 0.5350px;
-                font-size: 15.57px;
                 line-height: 28px;
                 margin-bottom:66px;
-
                 &:nth-of-type(3) { // Либо nth-child(3n)
                   margin-bottom:62px;
                 }
@@ -138,7 +107,7 @@ $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
          
       }
 
-      &:before {
+      &:before {       // main_skills before
         content: '';
         display: inline-block;
         position: absolute;
@@ -150,24 +119,14 @@ $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       }
   }
   .main_strarting {
-      color: $black;
-      @include main_strart_verified();
+      color: $black; @include main_strart_verified();
       background-image: url("/img/Rectangle 11.webp");
-      h2 {
-        font-weight: 100;
-        
-        position: absolute;
-        width: 323px;
-        height: 66px;
-        left: 58px;
-        top: 59.5px;
-      }
-      p {
-        position: absolute;
-        width: 566px;
-        height: 112px;
-        left: 54px;
-        top: 139.79px;
+      h2 {letter-spacing: 1.35px;margin-bottom: 30px;}
+      p {margin-bottom: 46.5px;}
+      a {color: $black; letter-spacing: 0.5971px;border: 2px solid $black;
+        &:before {
+          
+        }
       }
       &:before {
           content: '';
@@ -181,25 +140,19 @@ $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
   }
   .main_verified {
-      color: $white;
-      @include main_strart_verified();
-      top: 427px;
-      background-image: url("/img/Rectangle 1 copy.webp");
-      h2 {
-        position: absolute;
-        width: 361px;
-        height: 66px;
-        left: 54px;
-        top: 59.5px;
+      color: $white; @include main_strart_verified();
+      top: 427px; background-image: url("/img/Rectangle 1 copy.webp");
+      h2 {letter-spacing: 1.18px;margin-bottom: 29px;}
+      p {margin-bottom: 47.5px;}
+      a {
+        color: $white; letter-spacing: 0.6971px;border: 2px solid $white;
+        width: 212px;
+        height: 52px;
+        &:before {
+
+        }
       }
-      p {
-        position: absolute;
-        width: 566px;
-        height: 112px;
-        left: 54px;
-        top: 139.79px;
-      }
-      
+
       &:before {
         content: '';
         display: inline-block;
@@ -293,24 +246,24 @@ $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       background: #5A665F;
     }
 
-    h2 {
-      position: absolute;
-      width: 248px;
-      height: 66px;
-      left: 57px;
-      top: 59.5px;
-      font-weight: 300;
-      font-size: 45px;
-      line-height: 66px;
-      letter-spacing: 1.45px;
-    }
-    
     .footer_forms {
       position: absolute;
       width: 624px;
       height: 237px;
       left: 48px;
       top: 162px;
+
+        h2 {
+          width: 248px;
+          height: 66px;
+          left: 57px;
+          top: 59.5px;
+          font-weight: 300;
+          font-size: 45px;
+          line-height: 66px;
+          letter-spacing: 1.45px;
+        }
+      
     }
 
     .footer_contacts {

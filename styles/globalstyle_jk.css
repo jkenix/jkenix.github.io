@@ -37,7 +37,6 @@ body {
 	width: 1366px;
   text-rendering: optimizeLegibility;
 }
-p {font-family: "Roboto Regular";}
 /* Медиа-запросы */
 @media only screen and (min-height: 0px) and (min-width: 500px) and 
 (max-height: 900px) and (max-width: 1024px)
