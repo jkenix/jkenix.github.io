@@ -64,19 +64,23 @@
 <footer class="footer">
   <div class="footer_about_author">
     <h2>This Webpage Is <span class="wtitle">Designed By</span></h2>
-    <img src ="/img/logo.webp" width="90px" height="90px" alt="Ali Sayed logo">
-    <!-- Author google -->
-    <h2 class="wtitle_footer">Ali Sayed</h2>
-    <div class="footer_about_ali"><p>Graphic Designer</p></div>
+    <a class="ali_logo" href="#"></a>
+    <h2 class="author">Ali Sayed</h2>
+    <span class="profession"><p>Graphic Designer</p></span>
   </div>
   <div class="footer_form_and_links">
-    <div class="footer_forms"> 
+    <div class="footer_form_and_links_content">
     <h2>Say ‘<span class="wtitle">Hello</span>’</h2>
-      <form><a href="#" class="btn">Your name</a></form>
-      <form><a href="#" class="btn">Your email</a></form>
-      <form><a href="#" class="btn">Message Here</a></form>
+    <form class="footer_form" name="contact-form" action="" method="post">
+      <input type="text" name="name" id="name" placeholder="Your Name" value="" required>
+      <input type="email" name="mail" id="mail" placeholder="Your Email" value="" required>
+      <textarea rows="3" cols="50" name="message" id="message" placeholder="Your Message Here ..."></textarea>
+      <button class="send" type="submit" id="submit-message">Send message</button>
+      <button class="reset" type="reset" id="reset-message">Reset</button>
+    </form>
     </div>
     <div class="footer_contacts">
+      <span>Stay Connected With Us...</span>
       <a href="#" class="social_link_facebook"><i class="fa-brands fa-facebook-f"></i></a>
       <a href="#" class="social_link_dribbble"><i class="fa-brands fa-dribbble"></i></a>
       <a href="#" class="social_link_twitter"><i class="fa-brands fa-twitter"></i></a>

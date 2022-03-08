@@ -14,8 +14,7 @@ $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   font-weight: normal;
 }
 @mixin fonth2{h2 {font-size: 45px; font-weight: 100; font-family: "Roboto Light";} // Настройка шрифта для всех h2 
-.wtitle, .wtitle_footer {font-family: "Roboto Black"; font-weight: 100;}
-.wtitle_footer {font-size: 42px;}
+.wtitle, .author {font-family: "Roboto Black"; font-weight: 100;}
 }
 @mixin main_strart_verified{ //Устанавливает положение для .main_strarting и .main_verified
     display: block; position: absolute; float: right;
@@ -27,14 +26,22 @@ $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       position: absolute; width: 555px; height: 297px;
       p {line-height: 28px;letter-spacing: 0.5971px;
         width: 552px;height: 112px;}
-      a {padding-top: 13px;width: 212px;height: 52px;}
+      a {width: 212px;height: 52px;
+        &:hover {border-color: #50a2b3;color: #50a2b3;}
+        &:active {
+          border-color: #1a7086;
+          color: #1a7086;
+        }
+      }
+
      }
 }
 // Global
 p, a {font-family: "Roboto Regular";}
-.btn {text-decoration: none ; @include fontfamily(); 
-  border-radius: 14px; font-size: 16.57px;
-  position: absolute;text-align: center;}
+.btn {text-decoration: none; @include fontfamily(); 
+  border-radius: 10px; font-size: 16.57px;position: absolute;
+  text-align: center; display: inline-block; padding-top: 14px
+}
 // Header
 .header {
   width: 1366px; height: 715px;
@@ -70,19 +77,15 @@ p, a {font-family: "Roboto Regular";}
 }
 // Main
 .main {
-  position: absolute; width: 1366px; height: 854px; top: 715px;
+  display: block; width: 1366px; height: 854px;
   @include fontfamily(); @include fonth2();
   p {font-size: 15.57px;};
   filter: $shadow;
 
   .main_skills {
       color: $white;
-      position: absolute;
-      width: 614px;
-      height: 854px;
-      padding-left: 60px;
-      padding-right: 100px;
-      padding-top:56px;
+      display: block; float: left; width: 614px; height: 854px;
+      padding-left: 60px; padding-right: 100px; padding-top:56px;
       background-image: url("/img/Rectangle 1 copy 2.webp");
 
       &_content { //main skills content
@@ -119,14 +122,13 @@ p, a {font-family: "Roboto Regular";}
       }
   }
   .main_strarting {
-      color: $black; @include main_strart_verified();
+      color: $black; 
       background-image: url("/img/Rectangle 11.webp");
+      @include main_strart_verified();
       h2 {letter-spacing: 1.35px;margin-bottom: 30px;}
       p {margin-bottom: 46.5px;}
       a {color: $black; letter-spacing: 0.5971px;border: 2px solid $black;
-        &:before {
-          
-        }
+       
       }
       &:before {
           content: '';
@@ -140,18 +142,11 @@ p, a {font-family: "Roboto Regular";}
         }
   }
   .main_verified {
-      color: $white; @include main_strart_verified();
-      top: 427px; background-image: url("/img/Rectangle 1 copy.webp");
+      color: $white; top: 427px; background-image: url("/img/Rectangle 1 copy.webp");
+      @include main_strart_verified();
       h2 {letter-spacing: 1.18px;margin-bottom: 29px;}
       p {margin-bottom: 47.5px;}
-      a {
-        color: $white; letter-spacing: 0.6971px;border: 2px solid $white;
-        width: 212px;
-        height: 52px;
-        &:before {
-
-        }
-      }
+      a {color: $white; letter-spacing: 0.6971px;border: 2px solid $white;}
 
       &:before {
         content: '';
@@ -167,16 +162,12 @@ p, a {font-family: "Roboto Regular";}
 }
 // Footer
 .footer {
-  @include fontfamily();
-  @include fonth2();
-  position: absolute;
-  width: 1366px;
-  height: 715px;
-  top: 1568px;
-  color: $white;
-  filter: $shadow;
+  @include fontfamily(); @include fonth2();
+  width: 1366px; height: 715px; color: $white;filter: $shadow;
   .footer_about_author {
     position: absolute;
+    display: block;
+    float: left;
     width: 458px;
     height: 715px;
     background-image: url("/img/Rectangle 2 copy.webp");
@@ -191,14 +182,17 @@ p, a {font-family: "Roboto Regular";}
 
       .wtitle {margin-top: 12px;  letter-spacing: 1.25px;}
     }
-    img {
+    .ali_logo {
+      display: block;
       position: absolute;
       width: 90px;
       height: 90px;
       left: 59px;
       top: 441px;
+      background-image: url("/img/logo.webp");
     }
-    .wtitle_footer {
+    .author {
+      font-size: 42px;
       position: absolute;
       width: 214px;
       height: 66px;
@@ -206,7 +200,7 @@ p, a {font-family: "Roboto Regular";}
       top: 558px;
       letter-spacing: 1.26px;
     }
-    .footer_about_ali {
+    .profession {
       position: absolute;
       font-family: "Roboto Regular";
       width: 165px;
@@ -230,50 +224,37 @@ p, a {font-family: "Roboto Regular";}
   }
 
   .footer_form_and_links {
-    position: absolute;
-    width: 908px;
-    height: 715px;
-    left: 458px;
+    position: absolute; width: 908px; height: 715px; left: 458px;
     background-image: url("/img/Rectangle 2.webp");
-    &:before {
-      content: '';
-      display: inline-block;
-      position: absolute;
-      top: 0px; left: 0px;
-      width: 100%;
-      height: 100%;
-      opacity: 0.75;
-      background: #5A665F;
-    }
-
-    .footer_forms {
-      position: absolute;
-      width: 624px;
-      height: 237px;
-      left: 48px;
-      top: 162px;
+    padding-top: 59px;
+    padding-left: 48px;
+    padding-right: 236px;
+    padding-bottom: 70px;
+    &:before {content: '';display: inline-block;position: absolute;top: 0px; left: 0px;
+      width: 100%;height: 100%;opacity: 0.75;background: #5A665F url("/img/Rectangle 3.webp");}
+      &_content {
+        display: block;
+        width: 624px;
+        height: 323px;
 
         h2 {
-          width: 248px;
-          height: 66px;
-          left: 57px;
-          top: 59.5px;
-          font-weight: 300;
-          font-size: 45px;
-          line-height: 66px;
-          letter-spacing: 1.45px;
+          position: absolute;  left: 57px;
+          line-height: 66px;letter-spacing: 1.45px;
         }
-      
+        .footer_form { position: absolute;  width: 304px;
+          height: 57px; margin-top: 59px;
+        }
+      }
     }
-
-    .footer_contacts {
-      position: absolute;
-      width: 462px;
-      height: 150px;
-      left: 54px;
-      top: 493px;
-
+  .footer_contacts {
+    position: absolute;
+    width: 462px;
+    height: 150px;
+    left: 54px;
+    top: 493px;
+      p {font-size: 16.57px; letter-spacing: 0.4971px; width: 243px;height: 32px; line-height: 32px;}
+      .social_link_facebook {}
     }
     
-  }
+  
 }
