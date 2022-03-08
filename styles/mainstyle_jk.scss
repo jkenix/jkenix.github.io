@@ -4,7 +4,7 @@ $black: #262F32;
 $white: #FFFFFF;
 $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 // Миксины
-@mixin hflex { position: absolute; // Устанавливает flex для h1 в .header и h2 в .footer_about_author
+@mixin hflex {position: absolute; // Устанавливает flex для h1 в .header и h2 в .footer_about_author
   flex-wrap: nowrap; display: flex; flex-direction: column;
   align-items: flex-start;}  
 @mixin fontfamily{ // Устанавливает шрифты по умолчанию для всего текста. Макет делался с упором на Roboto.
@@ -40,24 +40,21 @@ $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 p, a {font-family: "Roboto Regular";}
 .btn {text-decoration: none; @include fontfamily(); 
   border-radius: 10px; font-size: 16.57px;position: absolute;
-  text-align: center; display: inline-block; padding-top: 14px
-}
+  text-align: center; display: inline-block; padding-top: 14px}
 // Header
 .header {
-  width: 1366px; height: 715px;
-  background-color: #f3f3f3;
-  display:block; @include fontfamily(); color: $black; filter: $shadow;
-  &.img {display: inline-block;vertical-align: top;}
+  width: 1366px; height: 715px; background-color: #f3f3f3;
+  display: block; @include fontfamily(); color: $black; filter: $shadow;
+  &.img {display: inline-block; vertical-align: top;}
 
   .header_content {
     display: inline-block; vertical-align: top; position: absolute;
-    width: 457px; height: 715px; top: 0px;
+    width: 457px; height: 715px; padding:52px;
 
       .header_nav_bar {
         cursor: pointer; font-size: 45.4px;
         position: absolute; display:block; top: 45.1px;
-        width: 40px; height: 45px; left: 50.4px;
-        opacity: 0.9;
+        width: 40px; height:55px; left: 50.4px; opacity: 0.9;
       }
       h1 {
         @include hflex(); width: 311px; height: 175px; left: 54px; top: 147.86px;
@@ -66,7 +63,7 @@ p, a {font-family: "Roboto Regular";}
           .bold {font-family: 'Roboto Bold'}
           .regular {font-family: "Roboto Regular";}
       }
-      .header_about_ali {
+      .header_text {
         position: absolute; width: 357px; height: 244px; left: 54px; /* or 54.8 */
         top: 369.29px;
         font-size: 17.9814px ;line-height: 28px; letter-spacing: 0.647108px;
@@ -224,35 +221,25 @@ p, a {font-family: "Roboto Regular";}
   }
 
   .footer_form_and_links {
-    position: absolute; width: 908px; height: 715px; left: 458px;
+    width: 908px; height: 715px; left: 458px; display: block; float: right;
     background-image: url("/img/Rectangle 2.webp");
-    padding-top: 59px;
-    padding-left: 48px;
-    padding-right: 236px;
-    padding-bottom: 70px;
-    &:before {content: '';display: inline-block;position: absolute;top: 0px; left: 0px;
-      width: 100%;height: 100%;opacity: 0.75;background: #5A665F url("/img/Rectangle 3.webp");}
-      &_content {
-        display: block;
-        width: 624px;
-        height: 323px;
+    padding-top: 59px; padding-left: 55px; padding-right: 236px; padding-bottom: 70px;
 
-        h2 {
-          position: absolute;  left: 57px;
-          line-height: 66px;letter-spacing: 1.45px;
+        h2 {line-height: 66px; letter-spacing: 1.45px;}
+        .footer_form {margin-top: 42px;
+          margin-bottom: 10px;
+          width: 624px;
+          height: 237px;
+          position: relative;
+          color: #fff;
+        
         }
-        .footer_form { position: absolute;  width: 304px;
-          height: 57px; margin-top: 59px;
-        }
-      }
     }
   .footer_contacts {
-    position: absolute;
     width: 462px;
     height: 150px;
-    left: 54px;
-    top: 493px;
-      p {font-size: 16.57px; letter-spacing: 0.4971px; width: 243px;height: 32px; line-height: 32px;}
+      form {display: block;}
+      span {font-size: 16.57px; letter-spacing: 0.4971px;  line-height: 32px;}
       .social_link_facebook {}
     }
     
