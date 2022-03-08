@@ -122,7 +122,7 @@ p, a {font-family: "Roboto Regular";}
       color: $black; 
       background-image: url("/img/Rectangle 11.webp");
       @include main_strart_verified();
-      h2 {letter-spacing: 1.35px;margin-bottom: 30px;}
+      h2 {letter-spacing: 1.35px; margin-bottom: 30px;}
       p {margin-bottom: 46.5px;}
       a {color: $black; letter-spacing: 0.5971px;border: 2px solid $black;
        
@@ -222,25 +222,81 @@ p, a {font-family: "Roboto Regular";}
 
   .footer_form_and_links {
     width: 908px; height: 715px; left: 458px; display: block; float: right;
-    background-image: url("/img/Rectangle 2.webp");
-    padding-top: 59px; padding-left: 55px; padding-right: 236px; padding-bottom: 70px;
+    background-image: url("/img/forms_content.jpg");
+    padding-top: 39px; padding-left: 53px; padding-right: 55px; padding-bottom: 70px;
 
-        h2 {line-height: 66px; letter-spacing: 1.45px;}
-        .footer_form {margin-top: 42px;
-          margin-bottom: 10px;
-          width: 624px;
-          height: 237px;
-          position: relative;
-          color: #fff;
-        
+        h2 {line-height: 66px; letter-spacing: 1.45px;     display: block;
+          font-family: "Roboto Light", "Arial", sans-serif;
+          font-weight: 100;
+          font-size: 45px;
+          line-height: 66px; margin-top: 20px; margin-bottom: 20px;}
+        .footer_form {display: block; margin-top: 42px; margin-bottom: 10px;
+          width: 619px; height: 301px; position: relative; color: #fff; font-size: 16.57px; line-height: 32px;
+          
+          // Вариант кода без класса:
+          /*& input[type="text"] {border: 1px solid #fff;
+            outline: none; background-color: transparent;
+            padding-top: 16px; padding-bottom: 19px; padding-left: 27px; padding-right: 27px;
+            width: 248px; border-radius: 10px; position: absolute; top: 0; left: 0; right: 0;}*/
+            
+              .input_form {
+                writing-mode: horizontal-tb !important;  text-rendering: auto; 
+                letter-spacing: normal; word-spacing: normal;
+                border: 1px solid #fff;
+                outline: none; background-color: transparent;
+                padding-top: 16px; padding-bottom: 19px; padding-left: 27px; padding-right: 27px;
+                width: 248px; border-radius: 10px; position: absolute; top: 0; left: 0; right: 0;
+                text-transform: none;
+                text-indent: 0px;
+                text-shadow: none;
+                display: inline-block;
+                text-align: start;
+                appearance: auto;
+                -webkit-rtl-ordering: logical;
+                cursor: text;
+                color: inherit;
+                font: inherit;
+                margin: 0;
+                line-height: normal;
+
+              }
+              textarea {border: 1px solid #fff;
+                outline: none;
+                background-color: transparent;
+                resize: none;
+                padding-top: 16px;
+                padding-bottom: 19px;
+                padding-left: 27px;
+                padding-right: 27px;
+                width: 563px;
+                border-radius: 10px;
+                position: absolute;
+                top: 70px;
+                left: 0; overflow: auto;
+            }
+
+            .button {
+              color: #fff;
+              border: 2px solid #fff;
+              position: absolute;
+              outline: none;
+              background-color: transparent;
+              padding-top: 9px;
+              padding-bottom: 12px;
+              padding-left: 27px;
+              padding-right: 27px;
+              width: 248px;
+              border-radius: 10px;
+            }
         }
     }
   .footer_contacts {
     width: 462px;
     height: 150px;
-      form {display: block;}
+      form {}
       span {font-size: 16.57px; letter-spacing: 0.4971px;  line-height: 32px;}
       .social_link_facebook {}
+
     }
     
   
