@@ -1,8 +1,45 @@
-// Переменные
-$opt: optimizeLegibility;
-$black: #262F32;
-$white: #FFFFFF;
-$shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+/* Шрифты */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap'); */
+@font-face {
+  font-family: "Roboto Light";
+  
+  src:
+      url(/fonts/RobotoLight.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src:
+      url(/fonts/RobotoBold.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src:
+      url(/fonts/RobotoRegular.woff) format("woff");
+}
+@font-face {
+  font-family: "Roboto Black";
+  src:
+      url(/fonts/RobotoBlack.woff) format("woff");
+}
+/* Resets */
+* {margin: 0; padding: 0;}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Медиа-запросы */
+@media only screen and (min-height: 0px) and (min-width: 500px) and 
+(max-height: 900px) and (max-width: 1024px)
+{
+  img {
+    width: 500px;
+    height: 400px;
+	  max-width: 100%;
+  }
+}
 // Миксины
 @mixin hflex {position: absolute; // Устанавливает flex для h1 в .header и h2 в .footer_about_author
   flex-wrap: nowrap; display: flex; flex-direction: column;
@@ -36,11 +73,24 @@ $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
      }
 }
-// Global
+/* Global */
+body {
+  margin: 0 auto;
+	padding: 0;
+	width: 1366px;
+  text-rendering: optimizeLegibility;
+}
 p, a {font-family: "Roboto Regular";}
 .btn {text-decoration: none; @include fontfamily(); 
   border-radius: 10px; font-size: 16.57px;position: absolute;
   text-align: center; display: inline-block; padding-top: 14px}
+form {display: block;}
+// Переменные
+$opt: optimizeLegibility;
+$black: #262F32;
+$white: #FFFFFF;
+$shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
 // Header
 .header {
   width: 1366px; height: 715px; background-color: #f3f3f3;
@@ -160,7 +210,7 @@ p, a {font-family: "Roboto Regular";}
 // Footer
 .footer {
   @include fontfamily(); @include fonth2();
-  width: 1366px; height: 715px; color: $white;filter: $shadow;
+  width: 1366px; height: 715px; color: $white; filter: $shadow;
   .footer_about_author {
     position: absolute;
     display: block;
@@ -223,70 +273,47 @@ p, a {font-family: "Roboto Regular";}
   .footer_form_and_links {
     width: 908px; height: 715px; left: 458px; display: block; float: right;
     background-image: url("/img/forms_content.jpg");
-    padding-top: 39px; padding-left: 53px; padding-right: 55px; padding-bottom: 70px;
+    padding-top: 39px; padding-left: 55px; padding-right: 55px; padding-bottom: 70px;
 
-        h2 {line-height: 66px; letter-spacing: 1.45px;     display: block;
+        h2 {line-height: 66px; letter-spacing: 1.45px; display: block;
           font-family: "Roboto Light", "Arial", sans-serif;
           font-weight: 100;
           font-size: 45px;
           line-height: 66px; margin-top: 20px; margin-bottom: 20px;}
-        .footer_form {display: block; margin-top: 42px; margin-bottom: 10px;
-          width: 619px; height: 301px; position: relative; color: #fff; font-size: 16.57px; line-height: 32px;
+        
+        textarea::placeholder, input::placeholder {color: #fff; font-size: 16.57px;
+          line-height: 32px; letter-spacing: 0.4971px; text-rendering: auto; }
+        .footer_form {margin-top: 42px; margin-bottom: 10px;
+          width: 619px; height: 301px; position: relative;  font-size: 16.57px; line-height: 32px;
+          font-family: "Roboto Regular", "Lucida Grande", sans-serif;
           
-          // Вариант кода без класса:
-          /*& input[type="text"] {border: 1px solid #fff;
-            outline: none; background-color: transparent;
-            padding-top: 16px; padding-bottom: 19px; padding-left: 27px; padding-right: 27px;
-            width: 248px; border-radius: 10px; position: absolute; top: 0; left: 0; right: 0;}*/
+          #submit {margin-right: 50px;}
+          & input[type="text"] {top: 0; left: 0; margin-right:10px;}
+          & input[type="email"] {top: 0; right: 0;}
             
               .input_form {
-                writing-mode: horizontal-tb !important;  text-rendering: auto; 
-                letter-spacing: normal; word-spacing: normal;
-                border: 1px solid #fff;
-                outline: none; background-color: transparent;
-                padding-top: 16px; padding-bottom: 19px; padding-left: 27px; padding-right: 27px;
-                width: 248px; border-radius: 10px; position: absolute; top: 0; left: 0; right: 0;
-                text-transform: none;
-                text-indent: 0px;
-                text-shadow: none;
-                display: inline-block;
-                text-align: start;
-                appearance: auto;
-                -webkit-rtl-ordering: logical;
-                cursor: text;
-                color: inherit;
-                font: inherit;
-                margin: 0;
-                line-height: normal;
-
-              }
-              textarea {border: 1px solid #fff;
-                outline: none;
+                color: inherit; display: inline-block; outline: none;
                 background-color: transparent;
-                resize: none;
-                padding-top: 16px;
-                padding-bottom: 19px;
-                padding-left: 27px;
-                padding-right: 27px;
-                width: 563px;
-                border-radius: 10px;
-                position: absolute;
-                top: 70px;
-                left: 0; overflow: auto;
+                padding-top: 16px; padding-bottom: 19px; padding-left: 27px; padding-right: 27px;
+                width: 301px;  top: 0; left: 0;
+                border: 1px solid #fff; border-radius: 10px; margin-bottom: 14px;
+              }
+
+              textarea {  top: 70px; width: 619px; height: 160px;  margin: 0; left: 0;
+                letter-spacing: normal; word-spacing: normal; color: inherit;
+                overflow: auto; outline: none;
+                background-color: transparent; resize: none;
+                padding-top: 14px; padding-bottom: 19px; 
+                padding-left: 27px; padding-right: 27px;
+                border: 1px solid #fff; border-radius: 10px; margin-bottom: 6px;
             }
 
-            .button {
-              color: #fff;
-              border: 2px solid #fff;
-              position: absolute;
-              outline: none;
-              background-color: transparent;
-              padding-top: 9px;
-              padding-bottom: 12px;
-              padding-left: 27px;
-              padding-right: 27px;
-              width: 248px;
-              border-radius: 10px;
+            .button {  width: 248px; color: #fff; background-color: transparent; outline: none;
+              padding-top: 19px; padding-bottom: 12px;
+              padding-left: 27px; padding-right: 27px;
+              border: 2px solid #fff; border-radius: 10px;
+              margin-right: 23px;
+              
             }
         }
     }

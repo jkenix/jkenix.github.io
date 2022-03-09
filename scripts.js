@@ -1,1 +1,1 @@
-import '/styles/mainstyle_jk.scss';
+import '/styles/alisayed_jk.scss';
