@@ -208,54 +208,39 @@ $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 }
 // Footer
+.error {border-color: red !important;}
 .footer {
   @include fontfamily(); @include fonth2();
-  width: 1366px; height: 715px; color: $white; filter: $shadow;
+  width: 1366px; height: 715px; color: $white; filter: $shadow; display: block;
   .footer_about_author {
-    position: absolute;
-    display: block;
-    float: left;
-    width: 458px;
-    height: 715px;
+    position: absolute; display: block; float: left;
+    width: 458px; height: 715px;
     background-image: url("/img/Rectangle 2 copy.webp");
     
     h2 {
       @include hflex();
-      width: 373px;
-      height: 132px;
-      left: 48px;
-      top: 64.5px;
-      letter-spacing: 1.35px;
+      width: 373px; height: 132px;
+      left: 48px; top: 64.5px; letter-spacing: 1.35px;
 
       .wtitle {margin-top: 12px;  letter-spacing: 1.25px;}
     }
     .ali_logo {
-      display: block;
-      position: absolute;
-      width: 90px;
-      height: 90px;
-      left: 59px;
-      top: 441px;
+      display: block; position: absolute;
+      width: 90px; height: 90px;
+      left: 59px; top: 441px;
       background-image: url("/img/logo.webp");
     }
     .author {
       font-size: 42px;
-      position: absolute;
-      width: 214px;
-      height: 66px;
-      left: 57px;
-      top: 558px;
+      position: absolute; width: 214px; height: 66px;
+      left: 57px; top: 558px;
       letter-spacing: 1.26px;
     }
     .profession {
-      position: absolute;
-      font-family: "Roboto Regular";
-      width: 165px;
-      height: 66px;
-      left: 58px;
-      top: 600.28px;
-      margin-top: 23px;
-      letter-spacing: 0.971px;
+      position: absolute; font-family: "Roboto Regular";
+      width: 165px; height: 66px;
+      left: 58px; top: 600.28px;
+      margin-top: 23px; letter-spacing: 0.971px;
     }
 
     &:before {
@@ -283,16 +268,17 @@ $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         
         textarea::placeholder, input::placeholder {color: #fff; font-size: 16.57px;
           line-height: 32px; letter-spacing: 0.4971px; text-rendering: auto; }
-        .footer_form {margin-top: 42px; margin-bottom: 10px;
-          width: 619px; height: 301px; position: relative;  font-size: 16.57px; line-height: 32px;
+       
+        .footer_form {margin-top: 42px; margin-bottom: 15px;
+          width: 619px; height: 301px; position: relative; font-size: 16.57px; line-height: 32px;
           font-family: "Roboto Regular", "Lucida Grande", sans-serif;
           
-          #submit {margin-right: 50px;}
+          & [type="submit"] {margin-right:116px;}
           & input[type="text"] {top: 0; left: 0; margin-right:10px;}
-          & input[type="email"] {top: 0; right: 0;}
+          & input[type="email"] {top: 0; right: 0; }
             
               .input_form {
-                color: inherit; display: inline-block; outline: none;
+                color: inherit;  outline: none;
                 background-color: transparent;
                 padding-top: 16px; padding-bottom: 19px; padding-left: 27px; padding-right: 27px;
                 width: 301px;  top: 0; left: 0;
@@ -308,23 +294,54 @@ $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
                 border: 1px solid #fff; border-radius: 10px; margin-bottom: 6px;
             }
 
-            .button {  width: 248px; color: #fff; background-color: transparent; outline: none;
+            .send, .reset {  width: 248px; color: #fff; background-color: transparent; outline: none;
               padding-top: 19px; padding-bottom: 12px;
               padding-left: 27px; padding-right: 27px;
               border: 2px solid #fff; border-radius: 10px;
-              margin-right: 23px;
-              
+
+               &:hover {
+                border-color: #50a2b3;
+                color: #50a2b3;
+            }
+              &:active {
+                border-color: #1a7086;
+                color: #1a7086;
+              }
             }
         }
     }
-  .footer_contacts {
-    width: 462px;
-    height: 150px;
-      form {}
-      span {font-size: 16.57px; letter-spacing: 0.4971px;  line-height: 32px;}
-      .social_link_facebook {}
-
-    }
-    
   
+      .social_content {font-size: 16.57px; line-height: 32px; 
+      width: 243px; height: 32px;
+      font-family: "Roboto Regular"; letter-spacing: 0.0671px;
+      }
+
+      // After span .stay
+      .social_links {width: 250px; height: 70px; margin-top: 16px;
+        margin-bottom: 15px; 
+
+          & .social-link { display: block;  float: left; font-size: 19px;
+            line-height: 45px; color: #fff; text-decoration: none; text-align: center;
+            width: 45px; height: 45px;
+            border: 1px solid transparent; border-radius: 7px;
+            margin-right: 5px; 
+          }
+          & .social-link:hover {border-color: #ffffff;}
+          & .social-link:active {border-color: #50a2b3; color: #50a2b3;}
+          .social-link.facebook { background-color: #345bb4;  padding-right: 16px;
+            padding-left: 16px; padding-top: 0px; padding-bottom: 11px; font-size: 18px;}
+          .social-link.dribbble { background-color: #e64895;  font-size: 23px;}
+          .social-link.twitter {background-color: #00b4ff;}
+          }
+          // Span request
+          .request {width: 491px; height: 32px; font-size: 16.57px; line-height: 30px; 
+            font-family: "Roboto Regular"; letter-spacing: 0px; 
+          }
+     
 }
+
+
+
+
+
+
