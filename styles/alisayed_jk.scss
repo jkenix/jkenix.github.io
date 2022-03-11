@@ -1,28 +1,11 @@
-// Файл стилей для работы макета alisayed by jkenix. Version data: 10.03.22. 
+// Файл стилей для работы макета alisayed by jkenix. Version data: 11.03.22. 
 // Требуется так же файл normalize.css для работы с макетом.
 /* Шрифты */
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap'); */
-@font-face {
-  font-family: "Roboto Light";
-  
-  src:
-      url(/fonts/RobotoLight.woff) format("woff");
-}
-@font-face {
-  font-family: "Roboto Bold";
-  src:
-      url(/fonts/RobotoBold.woff) format("woff");
-}
-@font-face {
-  font-family: "Roboto Regular";
-  src:
-      url(/fonts/RobotoRegular.woff) format("woff");
-}
-@font-face {
-  font-family: "Roboto Black";
-  src:
-      url(/fonts/RobotoBlack.woff) format("woff");
-}
+@font-face {font-family: "Roboto Light";src:url(/fonts/RobotoLight.woff) format("woff");}
+@font-face {font-family: "Roboto Bold";src:url(/fonts/RobotoBold.woff) format("woff");}
+@font-face {font-family: "Roboto Regular";src:url(/fonts/RobotoRegular.woff) format("woff");}
+@font-face {font-family: "Roboto Black";src:url(/fonts/RobotoBlack.woff) format("woff");}
 /* Resets */
 * {margin: 0; padding: 0;}
 *, *:before, *:after {
@@ -48,13 +31,10 @@
   flex-wrap: nowrap; display: flex; flex-direction: column;
   align-items: flex-start;}  
 @mixin fontfamily{ // Устанавливает шрифты по умолчанию для всего текста. Макет делался с упором на Roboto.
-  font-family: "Roboto", Tahoma, Geneva, sans-serif, Georgia, serif, Verdana, Geneva, sans-serif;
-  font-display: swap;
+  font-family: "Roboto", Tahoma, Geneva, sans-serif, Georgia, serif, Verdana;
+  font-display: fallback;
   font-style: normal;
   font-weight: normal;
-}
-@mixin fonth2{h2 {font-size: 45px; font-weight: 100; font-family: "Roboto Light";} // Настройка шрифта для всех h2 
-.wtitle, .author {font-family: "Roboto Black"; font-weight: 100;}
 }
 @mixin main_strart_verified{ //Устанавливает положение для .main_strarting и .main_verified
     display: block; position: absolute; float: right;
@@ -64,23 +44,20 @@
     // .main_strarting и .main_verified _content
     &_content {
       position: absolute; width: 555px; height: 297px;
-      p {line-height: 28px;letter-spacing: 0.5971px;
-        width: 552px;height: 112px;}
-      a {width: 212px;height: 52px;
-        &:hover {border-color: #50a2b3;color: #50a2b3;}
-        &:active {
-          border-color: #1a7086;
-          color: #1a7086;
-        }
-      }
-
-     }
+      p {line-height: 28px; letter-spacing: 0.5971px;
+        width: 552px; height: 112px;}
+      a {width: 212px; height: 52px;
+        &:hover {border-color: #50a2b3; color: #50a2b3;}
+        &:active {border-color: #1a7086; color: #1a7086;}
+      } }
 }
 /* Global */
 body {margin: 0 auto; padding: 0; width: 1366px; text-rendering: optimizeLegibility;}
+h2 {font-size: 45px; font-weight: 100; font-family: "Roboto Light";}
+.wtitle, .author {font-family: "Roboto Black"; font-weight: 100;}
 p, a {font-family: "Roboto Regular";}
 .btn {text-decoration: none; @include fontfamily(); 
-  border-radius: 10px; font-size: 16.57px;position: absolute;
+  border-radius: 10px; font-size: 16.57px; position: absolute;
   text-align: center; display: inline-block; padding-top: 14px}
 form {display: block;}
 // Переменные
@@ -97,7 +74,7 @@ $black: #262F32; $white: #FFFFFF; $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0,
 
       .header_nav_bar {
         cursor: pointer; font-size: 45.4px;
-        position: absolute; display:block; top: 45.1px;
+        position: absolute; display: block; top: 45.1px;
         width: 40px; height:55px; left: 50.4px; opacity: 0.9;
       }
       h1 {
@@ -117,9 +94,9 @@ $black: #262F32; $white: #FFFFFF; $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0,
 
 }
 // Main
-.main {
+main {
   display: block; width: 1366px; height: 854px;
-  @include fontfamily(); @include fonth2();
+  @include fontfamily(); 
   p {font-size: 15.57px;};
   filter: $shadow;
 
@@ -155,7 +132,7 @@ $black: #262F32; $white: #FFFFFF; $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0,
       @include main_strart_verified();
       h2 {letter-spacing: 1.35px; margin-bottom: 30px;}
       p {margin-bottom: 46.5px;}
-      a {color: $black; letter-spacing: 0.5971px;border: 2px solid $black;
+      a {color: $black; letter-spacing: 0.5971px; border: 2px solid $black;
        
       }
       &:before {
@@ -191,7 +168,7 @@ $black: #262F32; $white: #FFFFFF; $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0,
 // Footer
 .error {border-color: red !important;}
 .footer {
-  @include fontfamily(); @include fonth2();
+  @include fontfamily(); 
   width: 1366px; height: 715px; color: $white; filter: $shadow; display: block;
   .footer_about_author {
     position: absolute; display: block; float: left;
@@ -218,10 +195,10 @@ $black: #262F32; $white: #FFFFFF; $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0,
       letter-spacing: 1.26px;
     }
     .profession {
-      position: absolute; font-family: "Roboto Regular";
+      font-family: "Roboto Regular"; font-size: 16.57px; position: absolute; 
       width: 165px; height: 66px;
       left: 58px; top: 600.28px;
-      margin-top: 23px; letter-spacing: 0.971px;
+      margin-top: 23px; letter-spacing: 0.5971px;
     }
 
     &:before {
@@ -241,18 +218,16 @@ $black: #262F32; $white: #FFFFFF; $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0,
     background-image: url("/img/forms_content.jpg");
     padding-top: 39px; padding-left: 55px; padding-right: 55px; padding-bottom: 70px;
 
-        h2 {line-height: 66px; letter-spacing: 1.45px; display: block;
-          font-family: "Roboto Light", "Arial", sans-serif;
-          font-weight: 100;
-          font-size: 45px;
-          line-height: 66px; margin-top: 20px; margin-bottom: 20px;}
+        h2 {line-height: 66px; letter-spacing: 1.45px;
+          margin-top: 20px; margin-bottom: 20px;}
         
         textarea::placeholder, input::placeholder {color: #fff; font-size: 16.57px;
           line-height: 32px; letter-spacing: 0.4971px; text-rendering: auto; }
        
         .footer_form {margin-top: 42px; margin-bottom: 15px;
-          width: 619px; height: 301px; position: relative; font-size: 16.57px; line-height: 32px;
-          font-family: "Roboto Regular", "Lucida Grande", sans-serif;
+          width: 619px; height: 301px; position: relative; 
+          font-size: 16.57px; line-height: 32px;
+          font-family: "Roboto Regular";
           
           & [type="submit"] {margin-right:116px;}
           & input[type="text"] {top: 0; left: 0; margin-right:10px;}
@@ -315,7 +290,7 @@ $black: #262F32; $white: #FFFFFF; $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0,
         }
 
             // Span request
-            .request {width: 491px; height: 32px; font-size: 16.57px; line-height: 30px; 
-              font-family: "Roboto Regular"; letter-spacing: 0px; 
+            .request {width: 491px; height: 32px; font-size: 16px; line-height: 32px; 
+              font-family: "Roboto Regular"; 
             }
 }
