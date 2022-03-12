@@ -1,0 +1,71 @@
+// Файл стилей для работы макета dart service manager by jkenix. 
+// Требуется так же файл normalize.css для работы с макетом.
+// http://localhost:1234/# - parcel 
+// Оригинальный сайт - https://andrewlance.github.io/PSD-1/
+/* Шрифты */
+/* @import url('https://fonts.googleapis.com/'); */ // Шрифты с гугла (При желании)
+// ====== Кастомные шрифты: ====== \\
+// @font-face {font-family: ;src:url(/fonts/.woff) format("woff");}
+// @font-face {font-family: ;src:url(/fonts/.woff) format("woff");}
+// @font-face {font-family: ;src:url(/fonts/.woff) format("woff");}
+// @font-face {font-family: ;src:url(/fonts/.woff) format("woff");}
+/* Resets */
+* {margin: 0; padding: 0;}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Миксины */
+@mixin fontfamily{ // Устанавливает шрифты по умолчанию для всего текста. Макет делался с упором на .
+  font-family: "Roboto", Tahoma, Geneva, sans-serif, Georgia, serif, Verdana;
+  font-display: fallback;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin h { // Устанавливает 
+
+}  
+@mixin f{ 
+  
+}
+@mixin m{ //Устанавливает 
+
+}
+/* Global */
+body {margin: 0 auto; padding: 0; width: 0px; text-rendering: optimizeLegibility;}
+h1 {font-size: 16px; font-weight: 100; font-family: "Roboto Light";}
+p, a {font-family: "Roboto Regular";}
+// Переменные
+$shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+// Header
+.header {
+  width: 1366px; height: 715px; background-color: #f3f3f3;
+  display: block; @include fontfamily(); color: $black; filter: $shadow;
+  // &.img {display: inline-block; vertical-align: top;}
+
+  .header_content {
+    display: inline-block; vertical-align: top; position: absolute;
+    width: 457px; height: 715px; padding:52px;
+
+     
+      }
+
+}
+// Main
+main {
+  display: block; width: 1366px; height: 854px;
+  @include fontfamily(); filter: $shadow;
+
+  
+}
+// Footer
+.footer {
+  @include fontfamily(); 
+  width: 1366px; height: 715px; color: $white; filter: $shadow; display: block;
+  
+
+}
