@@ -1,0 +1,9 @@
+dist/
+**/cache
+**/.cache
+.cache/
+cache/
+node_modules/
+**package.json
+**package-lock.json
+*.json
