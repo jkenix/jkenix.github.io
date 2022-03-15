@@ -2,13 +2,12 @@
 // Требуется так же файл normalize.css для работы с макетом.
 // http://localhost:1234/# - parcel 
 // Оригинальный сайт - https://andrewlance.github.io/PSD-1/
-/* Шрифты */
-/* @import url('https://fonts.googleapis.com/'); */ // Шрифты с гугла (При желании)
 // ====== Кастомные шрифты: ====== \\
-// @font-face {font-family: ;src:url(/fonts/.woff) format("woff");}
-// @font-face {font-family: ;src:url(/fonts/.woff) format("woff");}
-// @font-face {font-family: ;src:url(/fonts/.woff) format("woff");}
-// @font-face {font-family: ;src:url(/fonts/.woff) format("woff");}
+@font-face {font-family: "Raleway Regular";src:url(/fonts/RalewayRegular.woff) format("woff");}
+@font-face {font-family: "Raleway ExtraBold";src:url(/fonts/RalewayExtraBold.woff) format("woff");}
+@font-face {font-family: "Raleway SemiBold";src:url(/fonts/RalewaySemiBold.woff) format("woff");}
+@font-face {font-family: "Raleway Bold";src:url(/fonts/RalewayBold.woff) format("woff");}
+@font-face {font-family: "Raleway Medium";src:url(/fonts/RalewayMedium.woff) format("woff");}
 /* Resets */
 * {margin: 0; padding: 0;}
 *, *:before, *:after {
@@ -19,8 +18,8 @@
     padding: 0;
 }
 /* Миксины */
-@mixin fontfamily{ // Устанавливает шрифты по умолчанию для всего текста. Макет делался с упором на .
-  font-family: "Roboto", Tahoma, Geneva, sans-serif, Georgia, serif, Verdana;
+@mixin fontfamily{ // Устанавливает шрифты по умолчанию для всего текста. Макет делался с упором на Raleway.
+  font-family: "Raleway", sans-serif, Tahoma, Geneva, sans-serif, Georgia, serif, Verdana;
   font-display: fallback;
   font-style: normal;
   font-weight: normal;
@@ -36,28 +35,32 @@
 
 }
 /* Global */
-body {margin: 0 auto; padding: 0; width: 0px; text-rendering: optimizeLegibility;}
+body {margin: 0 auto; padding: 0; width: 1600px;text-rendering: optimizeLegibility; }
 h1 {font-size: 16px; font-weight: 100; font-family: "Roboto Light";}
 p, a {font-family: "Roboto Regular";}
 // Переменные
 $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 // Header
 .header {
-  width: 1366px; height: 715px; background-color: #f3f3f3;
-  display: block; @include fontfamily(); color: $black; filter: $shadow;
-  // &.img {display: inline-block; vertical-align: top;}
+  width: 1600px; height: 750px; background-size: cover; padding-top:50px; padding-left: 80px;
+  background-image: url("/img/headerbg.webp");
+  display: inline-block; @include fontfamily(); filter: $shadow;
 
-  .header_content {
-    display: inline-block; vertical-align: top; position: absolute;
-    width: 457px; height: 715px; padding:52px;
-
-     
-      }
+    &_logo {position: fixed; display: inline-block; width:180px; height:40px;
+      .logo {position: absolute; width:30px; height:30px; background-image: url("/img/Shape 1.webp");}
+      span {
+        .dart {left: 0; font-family: 'Raleway', sans-serif;}
+        font-family: "Raleway ExtraBold"; font-size: 15px; line-height: 15px;
+        position: absolute; width: 150px; height: 36px; left: 40px; color: #FFFFFF;}
+    }
+    &_content {position: relative; display: inline-block; width:180px; height:40px;
+    
+    }
 
 }
 // Main
-main {
-  display: block; width: 1366px; height: 854px;
+.main {
+  display: block; width: 1600px; height: 3805px;
   @include fontfamily(); filter: $shadow;
 
   
@@ -65,7 +68,7 @@ main {
 // Footer
 .footer {
   @include fontfamily(); 
-  width: 1366px; height: 715px; color: $white; filter: $shadow; display: block;
+  width: 1600px; height: 300px;filter: $shadow; display: block;
   
 
 }
