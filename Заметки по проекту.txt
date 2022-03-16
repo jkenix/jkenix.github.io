@@ -1,0 +1,1 @@
+white-space: pre; - отступ без br, либо с br
