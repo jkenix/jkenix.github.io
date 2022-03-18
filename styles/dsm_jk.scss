@@ -17,6 +17,15 @@
     margin: 0;
     padding: 0;
 }
+// Переменные
+$shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+/* Global */
+body {margin: 0 auto; padding: 0; width: 1600px;}
+h1 {font-size: 58px; font-family: "Raleway ExtraBold"; font-weight: 800; line-height: 65px}
+h2 {font-family: "Raleway SemiBold"; font-size: 45px; line-height: 57px; font-weight: 600}
+h3 {font-family: "Raleway SemiBold"; font-size: 25px; line-height: 29px; font-weight: 600}
+p {font-family: "Raleway Regular"; font-weight: 400;}
+a {text-decoration: none;}
 /* Миксины */
 @mixin fontfamily{ // Устанавливает шрифты по умолчанию для всего текста. Макет делался с упором на Raleway.
   font-family: "Raleway", sans-serif, Tahoma, Geneva, Georgia, Verdana;
@@ -29,7 +38,7 @@
   .menu { color: #FFFFFF;
     display: flex; justify-content: space-between;
     .logo { width: 180px; height: 30px; display: block;
-      img {float: left;}
+      img {float: left; user-select: none;}
       &_content {
         font-family: "Raleway ExtraBold"; font-size: 15px; line-height: 15px; position: absolute;
         display: block; width: 150px; height: 36px; left: 120px; 
@@ -50,42 +59,79 @@
           &:active {color: #23523c}
         }
       }
-    &_btn {width: 80px; height: 25px; display: flex; justify-content: center;
-      font-family: "Raleway Regular"; font-weight: 400; font-size: 12px; color: #FFFFFF;
-      line-height: 22px; margin-top: 3px; 
-      border: solid #FFFFFF 1px;
-        &:hover {background-color: #061E37}
-        &:active {background-color: transparent;}
-    }
+      &_btn {width: 80px; height: 25px; display: flex; justify-content: center; user-select: none;
+        font-family: "Raleway Regular"; font-weight: 400; font-size: 12px; color: #FFFFFF;
+        line-height: 22px; margin-top: 3px; 
+        border: solid #FFFFFF 1px;
+          &:hover {background-color: #061E37}
+          &:active {background-color: transparent;}
+      }
   }
 }  
-@mixin f{ 
-  
-}
-@mixin m{ //Устанавливает 
-
-}
-/* Global */
-body {margin: 0 auto; padding: 0; width: 1600px;}
-h1 {font-size: 55px; font-family: "Raleway ExtraBold"; font-weight: 800; line-height: 65px}
-h2 {font-family: "Raleway SemiBold"; font-size: 45px; line-height: 57px; font-weight: 600}
-h3 {font-family: "Raleway SemiBold"; font-size: 25px; line-height: 29px; font-weight: 600}
-p {font-family: "Raleway Regular"; font-size: 15px; font-weight: 400}
-a {text-decoration: none;}
-// Переменные
-$shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 // Header
-
 .header { 
   display: flex; flex-direction: column; box-sizing: border-box; position: relative;
   width: 1600px; height: 750px; 
-  padding-top:50px; padding-left: 80px; padding-right: 80px;
+  padding-top: 50px; padding-left: 80px; padding-right: 80px;
   background-image: url("/img/headerbg.webp"); opacity: 0.9; background-size: cover; 
   @include fontfamily(); filter: $shadow; 
     @include menu(); 
-    &_content {}
+    &_content {width: 1465px; height: 360px; margin-top: 145px; 
+      display: flex; justify-content: space-between; margin-left: -4px;
+        &_product {width: 590px; height: 316px; color: white;
+          h1 {width: 473px; height: 131px; margin-bottom: 14px;}
+          p {margin-left: 3px; letter-spacing: 1.0234; padding-bottom: 13px; display: inline-block; font-size: 18px;
+            &:nth-of-type(2) {letter-spacing: 0.04px}
+            &:nth-of-type(3) {letter-spacing: 0.4050px; margin-bottom: 23px;}
+          }
+          .buttons {width: 350px; height: 65px; display: inline-flex; user-select: none; 
+            .button_buy {width: 155px; height: 58px; margin-left: 2px; 
+              font-family: "Raleway Regular"; font-size: 14px; color: #FFFFFF;
+              padding-top: 20px; margin-right: 25px;
+              display: flex; justify-content: center;  border: 1px; border-radius: 10px;
+              background-color: #061E37;
+              &:hover {border: solid white 1px;}
+              &:active {background-color: transparent;}
+            }
+            .button_try {width: 165px; height: 58px; 
+              font-family: "Raleway Bold"; font-size: 15px; color: #061E37;
+              padding-left: 5px; padding-top: 19px;
+              display: flex; justify-content: center;  border: 1px; border-radius: 10px;
+              background-color: white;
+              &:hover {border: solid #061E37 1px;}
+              &:active {background-color: transparent;}
+            }
+          }
+         
+        }
+        &_video {width: 600px; height: 320px; display: flex; justify-content: center;  
+          position: relative; margin-top: 11px; margin-right: 20px;
+          background: url("/img/Player background.webp") no-repeat 0 0 transparent; 
+          box-shadow: 0px 10px 20px 0px rgb(0 0 0 / 20%); border: solid black 1px; 
+          border-radius: 4.8px; user-select: none;
+
+          a {background-color: #061E37; width: 65px; height: 65px; 
+            box-shadow: 0px 0.3rem 0.3rem 0px rgb(0 0 0 / 15%);
+            z-index: 1; border-radius: 10px; margin-top: 110px; cursor: pointer;
+            img {margin-top: 25px; margin-left: 26px;}
+            &:hover {background-color: #00b8d4}
+            &:active {background-color: red}
+          }
+
+          &:after {background-color: white;  opacity: 0.8; 
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 4.8px;
+          }
+        }
+    }
     
-    &:after {background-image: linear-gradient(-53.0deg, #00b8d4 13%, #1de9b6 86%);
+&:after {background-image: linear-gradient(-53.0deg, #00b8d4 13%, #1de9b6 86%);
       opacity: 0.9;
       content: "";
       display: block;
@@ -108,6 +154,7 @@ $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         h3 {width: 331px; height: 29px; margin-left: -5px; margin-bottom: 15px;}
         .pr_man_tool_content {margin-left: -130px; margin-bottom: 6px;}
         p {width: 565px; height: 18px;margin-left: -110px; white-space: pre-wrap;  margin-bottom: 7px;
+          font-size: 15px; 
           &:nth-of-type(3) {margin-left: 120px; margin-bottom: 0px;}
         }
       }
@@ -144,11 +191,11 @@ $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 // Footer
 .footer {
-  display: flex; flex-direction: column; box-sizing: border-box; position: relative; 
-  width: 1600px; height: 300px;
+  display: flex; flex-direction: column; box-sizing: border-box; 
+  position: relative; width: 1600px; height: 300px;
   padding-top:95px; padding-left: 80px; padding-right: 0px;
-  @include fontfamily(); filter: $shadow; 
-  @include menu(); background-color: #061E37;
+  @include fontfamily(); @include menu();
+  filter: $shadow; background-color: #061E37;
     .menu_nav {display: flex; flex-wrap: nowrap; position: relative; width: 525px; height: 40px;
       a {font-size: 15px; line-height: 25px; font-family: "Raleway SemiBold"; font-weight: 600;
         padding: 4px; align-items: center; color: #FFFFFF;
