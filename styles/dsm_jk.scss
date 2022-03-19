@@ -78,7 +78,7 @@ a {text-decoration: none;}
     @include menu(); 
     &_content {width: 1465px; height: 360px; margin-top: 145px; 
       display: flex; justify-content: space-between; margin-left: -4px;
-        &_product {width: 590px; height: 316px; color: white;
+        &_product {width: 590px; height: 330px; color: white;
           h1 {width: 473px; height: 131px; margin-bottom: 14px;}
           p {margin-left: 3px; letter-spacing: 1.0234; padding-bottom: 13px; display: inline-block; font-size: 18px;
             &:nth-of-type(2) {letter-spacing: 0.04px}
@@ -148,14 +148,28 @@ a {text-decoration: none;}
   @include fontfamily(); filter: $shadow; 
   &_easy_useful {display: block; position: relative; 
     width: 1600px; height: 801px;
-    padding-top: 89px; padding-left: 80px; padding-right: 80px;
-      &_title { left: 573px; width: 555px; height: 165px; position: relative;
-        h2 {width: 297px; height: 55px; margin-bottom: 10px;}
-        h3 {width: 331px; height: 29px; margin-left: -5px; margin-bottom: 15px;}
-        .pr_man_tool_content {margin-left: -130px; margin-bottom: 6px;}
-        p {width: 565px; height: 18px;margin-left: -110px; white-space: pre-wrap;  margin-bottom: 7px;
-          font-size: 15px; 
-          &:nth-of-type(3) {margin-left: 120px; margin-bottom: 0px;}
+    padding-top: 89px; padding-left: 80px; padding-right: 80px; padding-bottom: 200px;
+      &_title {display: inline-block; left: 403px; width: 655px; height: 176px; position: relative;
+        h2 {width: 297px; height: 55px; margin-bottom: 10px; margin-left: 170px;}
+        h3 {width: 331px; height: 29px; margin-left: 165px; margin-bottom: 15px;}
+        .pr_man_tool_content {margin-left: 40px; margin-bottom: 6px;}
+        p {width: 565px; height: 18px; margin-left: 60px; 
+          white-space: pre-wrap;  margin-bottom: 7px; font-size: 15px; 
+          &:nth-of-type(3) {width: 60px; height: 18px; 
+            align-items: center; margin-left: 290px; margin-bottom: 0px;}
+        }
+      }
+      &_content {margin-left: 83px; margin-right: 83px; margin-top: 109px; justify-content: space-between;
+        display: flex; box-sizing: border-box;
+        &_images {
+          img {display: block; margin-bottom: 20px;}
+        }
+        &_block {text-align: center; width: 344px; height: 204px;
+          display: flex; justify-content: center;
+          
+          
+          strong {padding-left: 23px;}
+          p {}
         }
       }
   }
