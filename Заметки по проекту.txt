@@ -1,2 +1,0 @@
-parcel dsm_jk.html
-white-space: pre; - отступ без br, либо с br
