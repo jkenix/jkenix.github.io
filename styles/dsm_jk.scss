@@ -24,9 +24,10 @@ body {margin: 0 auto; padding: 0; width: 1600px;}
 h1 {font-family: "Raleway ExtraBold"; font-size: 58px; font-weight: 800; line-height: 65px}
 h2 {font-family: "Raleway SemiBold"; font-size: 45px; font-weight: 600; line-height: 57px;}
 h3 {font-family: "Raleway SemiBold"; font-size: 25px; font-weight: 600; line-height: 29px;}
-p {font-family: "Raleway Regular"; font-weight: 400;}
+p {font-family: "Raleway Regular"; font-weight: 400; font-size: 15px;}
 a {text-decoration: none; user-select: none;}
 img {user-select: none;}
+summary {list-style-type: none;}
 /* Миксины */
 @mixin fontfamily{ // Устанавливает шрифты по умолчанию для всего текста. Макет делался с упором на Raleway.
   font-family: "Raleway", sans-serif, Tahoma, Geneva, Georgia, Verdana;
@@ -155,11 +156,11 @@ img {user-select: none;}
       &_title {display: inline-block; left: 403px; width: 655px; height: 176px; position: relative;
         h2 {width: 297px; height: 55px; margin-bottom: 10px; margin-left: 170px;}
         h3 {width: 331px; height: 29px; margin-left: 165px; margin-bottom: 15px;}
-        .pr_man_tool_content {margin-left: 40px; margin-bottom: 6px;}
-        p {width: 565px; height: 18px; margin-left: 60px; 
-          white-space: pre-wrap;  margin-bottom: 7px; font-size: 15px; 
+        .pr_man_tool_content {margin-left: 40px;}
+        p {width: 565px; height: 18px;
+          margin-left: 60px; white-space: pre-wrap;  margin-bottom: 7px;
           &:nth-of-type(3) {width: 60px; height: 18px; 
-            align-items: center; margin-left: 290px; margin-bottom: 0px;}
+            align-items: center; margin-left: 290px;}
         }
       }
       // easy_useful Контент с картинками, заголовками и кнопкой 
@@ -186,22 +187,51 @@ img {user-select: none;}
       }
   }
   &_counts {display: flex; width: 1600px; height: 150px;
-    .business {background-color: #80D8FF;
-      flex-grow: 1;
-      img {vertical-align: middle; border-style: none;  margin-right: 1rem; 
-        display: inline-flex; 
-        width: 4rem; margin-left: 23px;}
-      p {display: inline-flex; font-size: 1.3rem;
-        line-height: 1.6rem;
-        font-weight: 800;}
-    }
-    .downloads {float: left; width: 400px; height: 150px; background-color: #82B1FF;}
-    .freeinstals {float: left; width: 400px; height: 150px; background-color: #B388FF;}
-    .prousers {float: left; width: 400px; height: 150px; background-color: #EA80FC;}
+    div {padding: 45px 10px 10px 70px; display: inline-flex; width: 400px; height: 150px;}
+    img {display: inline-flex; margin-left: 23px;}
+      p {font-family: "Raleway ExtraBold"; margin: 6px 0 0 23px;
+        font-size: 20px; line-height: 25px;  font-weight: 800;
+        color: white; display: inline-flex;
+      }
+    .business {background-color: #80D8FF; padding: 45px 10px 10px 95px;}
+    .downloads {background-color: #82B1FF;}
+    .freeinstals {background-color: #B388FF;}
+    .prousers {background-color: #EA80FC;}
   }
   &_services {width: 1600px; height: 870px; display: block; position: relative;
-    padding-top: 89px; padding-left: 80px; padding-right: 80px;
-
+    padding: 89px 380px 93px 380px;
+      h2 {padding: 0px 330px 0px 330px;}
+      p {display: inline-block; width: 627px; height: 40px;
+        text-align: center; margin: 15px 20px 0px 107px;
+        line-height: 1.4;
+      }
+      &_spoilers {width: 800px; height: 280; 
+        margin: 50px 20px 20px 20px;
+        span {font-family: "Raleway Bold"; 
+          font-weight: 700; font-size: 15px; line-height: 18px;
+          padding-left: 20px; padding-right: 610px;
+        }
+        .stat_content {display: flex; 
+          .services_img {padding-top: 22px; }
+          p {align-items: flex-start; position: relative;}
+        }
+        
+        details {
+        border: solid #ffffff 1px;
+        box-shadow: 0px 0.3rem 0.3rem 0px rgb(0 0 0 / 15%);
+        padding: 18px 0px 19px 24px;
+        margin-bottom: 10px;
+        &:hover {border: solid #000000 1px; border-radius: 10px;}
+        &:active {background-color: #1de9b6; user-select: none;}
+        }
+        .trending_up_details {margin-bottom: 20px;
+          padding: 18px 0px 20px 24px; 
+        }
+        .inbox_title {padding-right: 646px;}
+        .team_title {padding-right: 651px;}
+        .settings_title {padding-right: 620px;}
+        .feed_title {padding-right: 655px;}
+      }
   }
   &_about_customers {width: 1600px; height: 564px; display: block; position: relative;
     background-image: url("/img/about_customers_bg.webp"); opacity: 0.9; background-size: cover;
