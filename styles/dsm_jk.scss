@@ -199,9 +199,9 @@ summary {list-style-type: none;}
     .prousers {background-color: #EA80FC;}
   }
   &_services {width: 1600px; height: 870px; display: block; position: relative;
-    padding: 89px 380px 93px 380px;
+    padding: 89px 380px 78px 380px;
       h2 {padding: 0px 330px 0px 330px;}
-      p {display: inline-block; width: 627px; height: 40px;
+      .title_info {display: inline-block; width: 627px; height: 40px;
         text-align: center; margin: 15px 20px 0px 107px;
         line-height: 1.4;
       }
@@ -211,9 +211,13 @@ summary {list-style-type: none;}
           font-weight: 700; font-size: 15px; line-height: 18px;
           padding-left: 20px; padding-right: 610px;
         }
-        .stat_content {display: flex; 
-          .services_img {padding-top: 22px; }
-          p {align-items: flex-start; position: relative;}
+        .stat_content {display: inline-flex;
+          .services_img {padding-top: 22px;}
+          .stat_text {
+            p { position: relative; margin: 26px 0px 0px 29px;
+                line-height: 25px; letter-spacing: 0.45px;
+            }
+          }
         }
         
         details {
@@ -257,24 +261,30 @@ summary {list-style-type: none;}
 .footer {
   display: flex; flex-direction: column; box-sizing: border-box; 
   position: relative; width: 1600px; height: 300px;
-  padding-top:95px; padding-left: 80px; padding-right: 0px;
+  padding: 95px 70px 120px 80px;
   @include fontfamily(); @include menu();
   filter: $shadow; background-color: #061E37;
-    .menu_nav {display: flex; flex-wrap: nowrap; position: relative; width: 525px; height: 40px;
+    .menu {display: flex; justify-content: space-between; margin-bottom: 35px;}
+    .menu_nav {position: relative; width: 455px; height: 40px;
       a {font-size: 15px; line-height: 25px; font-family: "Raleway SemiBold"; font-weight: 600;
-        padding: 4px; align-items: center; color: #FFFFFF;
-        &.home {padding-right: 45px;}
-        &.service {padding-right: 44px;}
-        &.extetension {padding-right: 29px;}
-        &.pricing {padding-right: 45px;}
-        &.help {padding-right: 0;}
+        padding: 4px; color: #FFFFFF;
         
         &:hover {color: rgb(22, 144, 160);}
         &:active {color: #23523c;}
       }
     }
-    &_links {
-      &_details {}
-      &_websites {}
+    &_links {display: flex; justify-content: space-between;
+      &_details {
+        display: flex;
+        a {font-family: "Raleway Regular"; font-weight: 400; font-size: 15px;
+          line-height: 25px; color: white;}
+        .privacy {margin-right: 20px;}
+        img {margin-right: 18px;}
+      }
+      &_websites {width: 173px; height: 18px; display: flex;
+        .facebook_logo {background-color: transparent; padding: 10px 10px 10px 15px;
+          opacity: .2; border: 1px solid white; border-radius: 10px;}
+        img {border-style: none; }
+      }
     }
 }
