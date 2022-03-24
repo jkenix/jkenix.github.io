@@ -69,7 +69,14 @@ summary {list-style-type: none;}
           &:active {background-color: transparent;}
       }
   }
-}  
+}
+@mixin buttongs {
+    .button_gs {
+      font-family: "Raleway Bold"; font-weight: 700; font-size: 15px; line-height: 18px;
+      display: flex; justify-content: center;  color: white; 
+      white-space: nowrap;
+    }
+}
 // Header
 .header { 
   display: flex; flex-direction: column; box-sizing: border-box; position: relative;
@@ -176,15 +183,14 @@ summary {list-style-type: none;}
             margin-top: 10px;}
         }
       }
-      .button_gs {width: 152px; height: 60px; margin-left: 644px; margin-right: 645px;
-        font-family: "Raleway Bold"; font-weight: 700; font-size: 15px; line-height: 18px;
-        display: block; justify-content: center;  border: 1px; border-radius: 9px;
-        padding: 20px 22px 22px 30px; color: white; 
-              background-color: #1DE9B6;
-              &:hover {border: solid #061E37 1px;}
-              &:active {background-color: #061E37;}
-              
-      }
+     @include buttongs();
+     .button_gs {width: 152px; height: 60px; 
+        margin-left: 644px; margin-right: 645px;
+        border: 1px; border-radius: 9px;
+        padding: 20px 22px 22px 30px; background-color: #1DE9B6;
+        &:hover {border: solid #061E37 1px;}
+        &:active {background-color: #061E37;}
+     }
   }
   &_counts {display: flex; width: 1600px; height: 150px;
     div {padding: 45px 10px 10px 70px; display: inline-flex; width: 400px; height: 150px;}
@@ -219,14 +225,13 @@ summary {list-style-type: none;}
             }
           }
         }
-        
         details {
-        border: solid #ffffff 1px;
-        box-shadow: 0px 0.3rem 0.3rem 0px rgb(0 0 0 / 15%);
-        padding: 18px 0px 19px 24px;
-        margin-bottom: 10px;
-        &:hover {border: solid #000000 1px; border-radius: 10px;}
-        &:active {background-color: #1de9b6; user-select: none;}
+          border: solid #ffffff 1px;
+          box-shadow: 0px 0.3rem 0.3rem 0px rgb(0 0 0 / 15%);
+          padding: 18px 0px 19px 24px;
+          margin-bottom: 10px;
+          &:hover {border: solid #000000 1px; border-radius: 10px;}
+          &:active {background-color: #1de9b6; user-select: none;}
         }
         .trending_up_details {margin-bottom: 20px;
           padding: 18px 0px 20px 24px; 
@@ -239,7 +244,42 @@ summary {list-style-type: none;}
   }
   &_about_customers {width: 1600px; height: 564px; display: block; position: relative;
     background-image: url("/img/about_customers_bg.webp"); opacity: 0.9; background-size: cover;
-    
+    padding: 40px 70px 72px 80px; color: white; 
+    &_info {position: relative; display: block; float: left; 
+      width: 515px; height: 289px;
+      padding-top: 82px; 
+      h2 {position: relative; margin-bottom: 9px;
+      }
+      .about_customers {width: 544px; height: 45px; 
+        font-weight: 600; line-height: 25px; letter-spacing: 0.2px;
+        margin-bottom: 78px;
+      }
+      @include buttongs();
+      .button_gs {width: 150px; height: 55px;
+        margin-left: 0px; margin-right: 0px;  
+        background-color: #061E37; padding: 18px 10px 8px 15px;
+        border-radius: 5px; 
+        &:hover {border: solid #ffffff 1px;}
+        &:active {background-color: transparent;}
+      }
+    }
+     &_preview {width: 650px; height: 485px; padding-top: 10px;
+      display: flex; justify-content: space-between;
+      flex-direction: column;
+      padding-left: 160px;
+      .button_up {margin-left: 430px;}
+      img {vertical-align: middle;}
+        &_content {
+          width: 780px; height: 410px;
+          .about_customers { 
+            width: 670px; height: 180px;
+            padding: 37px 74px 45px 40px;
+            display: inline-block;
+          }
+        }
+      }
+      .button_down {}
+   
     &:after { background-image: linear-gradient(-53.0deg, #00b8d4 13%, #1de9b6 86%);
       opacity: 0.9;
       content: "";
@@ -281,10 +321,11 @@ summary {list-style-type: none;}
         .privacy {margin-right: 20px;}
         img {margin-right: 18px;}
       }
-      &_websites {width: 173px; height: 18px; display: flex;
-        .facebook_logo {background-color: transparent; padding: 10px 10px 10px 15px;
+      &_websites {width: 190px; height: 18px; display: flex;
+        .facebook_logo {background-color: transparent; padding: 7px 3px 19px 15px;
+          color: white;
           opacity: .2; border: 1px solid white; border-radius: 10px;}
-        img {border-style: none; }
+        img {border-style: none; align-items: center;}
       }
     }
 }
