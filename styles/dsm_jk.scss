@@ -28,6 +28,7 @@ p {font-family: "Raleway Regular"; font-weight: 400; font-size: 15px;}
 a {text-decoration: none; user-select: none;}
 img {user-select: none;}
 summary {list-style-type: none;}
+input, textarea, label {font-family:"Raleway Medium"; font-weight: 500;}
 /* Миксины */
 @mixin fontfamily{ // Устанавливает шрифты по умолчанию для всего текста. Макет делался с упором на Raleway.
   font-family: "Raleway", sans-serif, Tahoma, Geneva, Georgia, Verdana;
@@ -245,9 +246,14 @@ summary {list-style-type: none;}
   &_about_customers {width: 1600px; height: 564px; display: block; position: relative;
     background-image: url("/img/about_customers_bg.webp"); opacity: 0.9; background-size: cover;
     padding: 40px 70px 72px 80px; color: white; 
-    &_info {position: relative; display: block; float: left; 
-      width: 515px; height: 289px;
-      padding-top: 82px; 
+    display: flex; justify-content: space-between;
+    align-items: center; text-align: left;  flex-direction: row;
+    margin: auto 0;
+    box-sizing: border-box;
+    &_info {position: relative; 
+      justify-content: space-between;
+      width: 515px; height: 383px; 
+      padding-top: 47px; 
       h2 {position: relative; margin-bottom: 9px;
       }
       .about_customers {width: 544px; height: 45px; 
@@ -263,39 +269,122 @@ summary {list-style-type: none;}
         &:active {background-color: transparent;}
       }
     }
-     &_preview {width: 650px; height: 485px; padding-top: 10px;
+    &_preview {width: 777px; height: 515px; padding-top: 28px; 
       display: flex; justify-content: space-between;
       flex-direction: column;
-      padding-left: 160px;
-      .button_up {margin-left: 430px;}
       img {vertical-align: middle;}
-        &_content {
-          width: 780px; height: 410px;
-          .about_customers { 
-            width: 670px; height: 180px;
-            padding: 37px 74px 45px 40px;
-            display: inline-block;
+      .button_up, .button_down {display: block;
+        text-align: center;
+        width: 100%;
+        cursor: pointer;
+        
+        &_img {width: 24.48px;
+          margin: 0 0 0 112px;}
+        
+      }
+        &_content {padding-top: 0px;
+          width: 780px; height: 390px;
+          color: #061E37;
+          img {margin-right: 37px;}
+          .John_logo {margin-top: -74px;}
+          .Khalessi_logo {margin-top: -78px;}
+          .about_customers_info {
+            width: 653px; height: 162px;
+            padding: 30px 65px 0px 30px;
+            margin-bottom: 70px;
+            display: inline-block; 
+            border: 1px solid white; border-radius: 8px;
+            strong {display: block;
+              font-family: "Raleway Bold"; font-weight: 700;
+              padding-bottom: 5px; font-size: 18px;
+              line-height: 25px;
+            }
+            p {font-style: italic;line-height: 25px;}
           }
         }
       }
-      .button_down {}
-   
-    &:after { background-image: linear-gradient(-53.0deg, #00b8d4 13%, #1de9b6 86%);
-      opacity: 0.9;
-      content: "";
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
+    &:after {background-image: linear-gradient(-53.0deg, #00b8d4 13%, #1de9b6 86%);
+      opacity: 0.9; content: ""; display: block;
+      position: absolute; left: 0; top: 0;
+      width: 100%; height: 100%; z-index: -1;
     }
   }
   &_our_team {width: 1600px; height: 760px; display: block; position: relative;
-
+    padding: 89px 477px 89px 478px;
+    h2 {padding: 0 223px 12px 222px; white-space: nowrap;}
+    .about_team_title {display: flex;
+      align-items: center;
+      text-align: center;
+      line-height: 25px; padding: 0px 15px 11px 15px;}
+    &_pictures {width:460px; height:220px;
+        justify-content: space-between;
+        display: flex; align-items: center;
+        margin: 52px 100px 20px 100px;
+    } 
+    strong {display: flex; justify-content: center;
+      font-family: "Raleway Bold"; padding: 5px 0px 10px 16px;
+      font-weight: 700; font-size: 18px; line-height: 25px;
+    }
+    .about_sophie {line-height: 25px;
+        display: flex; align-items: center; text-align: center;
+        margin-bottom: 16px
+      }
+   &_websites {
+     display: flex; justify-content: center;
+        a {cursor: pointer; transition: opacity .15s linear;
+          &:hover {opacity: .3;}
+        }
+        img {background-color: transparent;  display: flex;
+          padding: 10px 9.5px 10px 9px;
+        }
+      }
   }
-  &_contact_us {width: 1600px; height: 660.5px;}
+  &_contact_us {width: 1600px; height: 660.5px; display: block; position: relative;
+    padding: 38px 490px 85px 500px;
+      h2 {padding: 0 50px 10px 182px}
+      p {margin: 0px 0px 46px -10px;
+        line-height: 25px; display: flex;
+        align-items: center; text-align: center;
+      }
+      input, textarea {font-size: 14px; line-height: 30px;}
+      form {width: 610px; height: 375px;
+        .form-line {
+          display: flex; justify-content: space-between;
+          align-items: center; width: 100%;
+          margin-bottom: 20px;
+          input {width: 280px; height: 50px;
+            border: 1px solid black; border-radius: 4px;
+            font-size: 14px; line-height: 30px;
+          }
+          .f-name {padding: 0 0 0 19px;}
+          .l-name {padding: 0 0 0 18px; margin-right: 10px;}
+          .e-name {padding: 0 0 0 19px;}
+          .p-name {padding: 0 0 0 18px; margin-right: 10px;}
+        }
+        textarea {width: 600px; height: 150px; 
+            padding: 10px 0 0 19px; margin-bottom: 0px;
+          }
+        .form-bottom {display: flex; justify-content: space-between;
+          .form_subscribe {margin-top: 31px;
+            label {font-size: 15px; line-height: 18px;
+              padding: 30px 0 0 10px;
+              }
+            }
+          }
+        .send_button {width: 130px; height: 50px; 
+            margin-top: 15px; margin-right: 10px;
+            color: white;
+            font-weight: 500; font-size: 16px;
+            line-height: 30px;
+            background-color: #1DE9B6; 
+            border: 1px; border-radius: 5px;
+            &:hover {border: solid black 1px;}
+            &:active {background-color: black;
+              border: solid #1DE9B6 1px;
+            }
+          }
+      }
+  }
 }
 // Footer
 .footer {
@@ -304,28 +393,39 @@ summary {list-style-type: none;}
   padding: 95px 70px 120px 80px;
   @include fontfamily(); @include menu();
   filter: $shadow; background-color: #061E37;
-    .menu {display: flex; justify-content: space-between; margin-bottom: 35px;}
+    .menu {display: flex; justify-content: space-between; margin-bottom: 32px;}
     .menu_nav {position: relative; width: 455px; height: 40px;
       a {font-size: 15px; line-height: 25px; font-family: "Raleway SemiBold"; font-weight: 600;
         padding: 4px; color: #FFFFFF;
-        
         &:hover {color: rgb(22, 144, 160);}
         &:active {color: #23523c;}
       }
     }
-    &_links {display: flex; justify-content: space-between;
+    &_links {display: flex;
+      justify-content: space-between;
+      align-items: center; 
       &_details {
         display: flex;
         a {font-family: "Raleway Regular"; font-weight: 400; font-size: 15px;
-          line-height: 25px; color: white;}
+          line-height: 25px; cursor: pointer; color: white; opacity: .2;
+          &:hover {opacity: 1;
+            color: white;}
+          &:active {
+            opacity: 1;
+            color: black;}
+        }
         .privacy {margin-right: 20px;}
         img {margin-right: 18px;}
       }
-      &_websites {width: 190px; height: 18px; display: flex;
-        .facebook_logo {background-color: transparent; padding: 7px 3px 19px 15px;
-          color: white;
-          opacity: .2; border: 1px solid white; border-radius: 10px;}
-        img {border-style: none; align-items: center;}
+      &_websites {
+        display: flex; justify-content: center;
+        a {cursor: pointer; opacity: .2;
+            &:hover {opacity: 1;
+              color: rgb(255, 255, 255);}
+        }
+        img {background-color: transparent;  display: flex;
+          padding: 10px 9.5px 10px 9px;
+        }
       }
     }
 }
