@@ -1,0 +1,62 @@
+// Файл стилей для работы макета dart service manager, написанный jkenix.
+// Styles file for dart service manager layout by jkenix. 
+// Требуется так же файл normalize.css для работы с макетом.
+// It also requires a normalize.css file to work with the layout.
+// Опирался на эти сайты при разработке: 
+// Based on this sites while developing:
+// https://wooder-furniture.surge.sh/
+// https://sierikovroman.github.io/wooder/#
+// P.S. I'm new developer. Do not judge strictly!
+// ====== Кастомные шрифты: (Custom fonts) ====== \\
+@font-face {font-family: "Raleway Regular";src:url(/fonts/RalewayRegular.woff) format("woff");}
+@font-face {font-family: "Raleway ExtraBold";src:url(/fonts/RalewayExtraBold.woff) format("woff");}
+@font-face {font-family: "Raleway SemiBold";src:url(/fonts/RalewaySemiBold.woff) format("woff");}
+@font-face {font-family: "Raleway Bold";src:url(/fonts/RalewayBold.woff) format("woff");}
+@font-face {font-family: "Raleway Medium";src:url(/fonts/RalewayMedium.woff) format("woff");}
+/* Resets */
+* {margin: 0; padding: 0;}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+// Переменные
+$shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+/* Global */
+body {margin: 0 auto; padding: 0; width: 1600px;}
+h1 {font-family: "Raleway ExtraBold"; font-size: 58px; font-weight: 800; line-height: 65px}
+h2 {font-family: "Raleway SemiBold"; font-size: 45px; font-weight: 600; line-height: 57px;}
+h3 {font-family: "Raleway SemiBold"; font-size: 25px; font-weight: 600; line-height: 29px;}
+p {font-family: "Raleway Regular"; font-weight: 400; font-size: 15px;}
+a {text-decoration: none; user-select: none;}
+img {user-select: none;}
+summary {list-style-type: none;}
+input, textarea, label {font-family:"Raleway Medium"; font-weight: 500;}
+/* Миксины */
+@mixin fontfamily{ // Устанавливает шрифты по умолчанию для всего текста. Макет делался с упором на Raleway.
+  font-family: "Raleway", sans-serif, Tahoma, Geneva, Georgia, Verdana;
+  font-display: fallback;
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+// Header
+.header { 
+ 
+  @include fontfamily(); filter: $shadow; 
+    @include menu(); 
+   
+    
+&:after {}
+}
+// Main
+.main {
+ 
+}
+// Footer
+.footer {
+  
+}

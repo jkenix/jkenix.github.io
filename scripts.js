@@ -1,1 +1,1 @@
-import '/styles/dsm_jk.scss';
+import '/styles/wooder_jk_parcel.scss';
