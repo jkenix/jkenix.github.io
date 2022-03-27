@@ -1,1 +1,1 @@
-import '/styles/dsm_jk.scss';
+import '/styles/dsm_jk_parcel.scss';
