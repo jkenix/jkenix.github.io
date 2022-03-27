@@ -3,11 +3,11 @@
 // http://localhost:1234/# - parcel 
 // Оригинальный сайт - https://andrewlance.github.io/PSD-1/
 // ====== Кастомные шрифты: ====== \\
-@font-face {font-family: "Raleway Regular";src:url(/fonts/RalewayRegular.woff) format("woff");}
-@font-face {font-family: "Raleway ExtraBold";src:url(/fonts/RalewayExtraBold.woff) format("woff");}
-@font-face {font-family: "Raleway SemiBold";src:url(/fonts/RalewaySemiBold.woff) format("woff");}
-@font-face {font-family: "Raleway Bold";src:url(/fonts/RalewayBold.woff) format("woff");}
-@font-face {font-family: "Raleway Medium";src:url(/fonts/RalewayMedium.woff) format("woff");}
+@font-face {font-display: fallback; font-family: "Raleway Regular";src:url(/fonts/RalewayRegular.woff) format("woff");}
+@font-face {font-display: fallback; font-family: "Raleway ExtraBold";src:url(/fonts/RalewayExtraBold.woff) format("woff");}
+@font-face {font-display: fallback; font-family: "Raleway SemiBold";src:url(/fonts/RalewaySemiBold.woff) format("woff");}
+@font-face {font-display: fallback; font-family: "Raleway Bold";src:url(/fonts/RalewayBold.woff) format("woff");}
+@font-face {font-display: fallback; font-family: "Raleway Medium";src:url(/fonts/RalewayMedium.woff) format("woff");}
 /* Resets */
 * {margin: 0; padding: 0;}
 *, *:before, *:after {
