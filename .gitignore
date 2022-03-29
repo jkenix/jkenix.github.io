@@ -8,4 +8,5 @@ node_modules/
 **package-lock.json
 *.json
 *.txt
+*.zip
 Old JKP/
