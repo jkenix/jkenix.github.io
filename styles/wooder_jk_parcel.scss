@@ -25,6 +25,7 @@
 // Переменные
 $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 /* Global */
+html {scroll-behavior: smooth;}
 body {margin: 0 auto; padding: 0; width: 1600px;}
 h1 {font-family: "Raleway ExtraBold"; font-size: 58px; font-weight: 800; line-height: 65px}
 h2 {font-family: "Raleway SemiBold"; font-size: 45px; font-weight: 600; line-height: 57px;}
@@ -45,11 +46,9 @@ input, textarea, label {font-family:"Raleway Medium"; font-weight: 500;}
 
 // Header
 .header { 
- 
   @include fontfamily(); filter: $shadow; 
-   
-    
-&:after {}
+ 
+  &:after {}
 }
 // Main
 .main {
