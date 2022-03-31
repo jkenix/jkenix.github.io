@@ -1,4 +1,4 @@
-import '/styles/wooder_jk_parcel.scss';
+import '/styles/wooder_jk_parcel.scss'; // Comment, if don't use parcel
 /* MENU */
 function showMenu() {
     var w = $(window).width();
