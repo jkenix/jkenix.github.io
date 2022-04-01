@@ -1,1 +1,5 @@
-@import "/styles/normalize_dsm.css";@import "/styles/dsm_jk.scss";
+/*Uncomment, if you use parcel*/
+@import "/styles/dsm_jk_parcel.scss"; 
+@import "/styles/normalize_dsm.css";
+/*Uncomment, if you don't use parcel*/
+/* @import "/styles/dsm_jk_public.css"; */ 
