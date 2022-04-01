@@ -8,5 +8,6 @@ node_modules/
 **package-lock.json
 *.json
 *.txt
-Old JKP/
 *.map
+Old JKP/
+Test/
