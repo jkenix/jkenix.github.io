@@ -8,11 +8,9 @@
 // https://sierikovroman.github.io/wooder/#
 // P.S. I'm new developer. Do not judge strictly!
 // ====== Кастомные шрифты: (Custom fonts) ====== \\
-// @font-face {font-display: fallback;font-family: "Raleway Regular";src:url(/fonts/RalewayRegular.woff) format("woff");}
-// @font-face {font-display: fallback;font-family: "Raleway ExtraBold";src:url(/fonts/RalewayExtraBold.woff) format("woff");}
-// @font-face {font-display: fallback;font-family: "Raleway SemiBold";src:url(/fonts/RalewaySemiBold.woff) format("woff");}
-// @font-face {font-display: fallback;font-family: "Raleway Bold";src:url(/fonts/RalewayBold.woff) format("woff");}
-// @font-face {font-display: fallback;font-family: "Raleway Medium";src:url(/fonts/RalewayMedium.woff) format("woff");}
+@font-face {font-display: fallback;font-family: "Proxima Nova Bold";src:url(/fonts/proximanova_bold.woff) format("woff");}
+@font-face {font-display: fallback;font-family: "Proxima Nova Light";src:url(/fonts/proximanova_light.woff) format("woff");}
+@font-face {font-display: fallback;font-family: "Proxima Nova Regular";src:url(/fonts/proximanova_regular.woff) format("woff");}
 /* Resets */
 * {margin: 0; padding: 0;}
 *, *:before, *:after {
@@ -35,7 +33,8 @@ body { // размер шрифта увеличивается на 1px чере
 }
 h1 {}
 p {font-family: ""; font-weight: 0; font-size: 15px;}
-a {text-decoration: none; user-select: none;}
+a {text-decoration: none; user-select: none; font-family: "Proxima Nova Bold";}
+span {font-family: "Proxima Nova Bold";}
 img {user-select: none;}
 summary {list-style-type: none;}
 input, textarea, label {font-family:""; font-weight: 0;}
@@ -47,7 +46,7 @@ input, textarea, label {font-family:""; font-weight: 0;}
 }
 /* Миксины */
 @mixin fontfamily{ // Устанавливает шрифты по умолчанию для всего текста. Макет делался с упором на Raleway.
-  font-family: "Raleway", sans-serif, Tahoma, Geneva, Georgia, Verdana;
+  font-family: "Proxima Nova", sans-serif, Tahoma, Geneva, Georgia, Verdana;
   font-display: fallback;
   font-style: normal;
   font-weight: normal;
@@ -58,6 +57,8 @@ input, textarea, label {font-family:""; font-weight: 0;}
 .header {width: 100%; height: 1042px;
     display: block;
     padding: 35px 30px 0px 30px;
+    a, span {font-size: 15px; 
+      line-height: 1.5; letter-spacing: 0.38px; text-align: center; color: rgba(255, 255, 255, 0.5);}
     .left_block {
       position: absolute; 
       width: 100%;
@@ -71,32 +72,51 @@ input, textarea, label {font-family:""; font-weight: 0;}
     .right_block {
       position: absolute;  width: 100%;
       max-width: 853px; height: 1043px;
-      z-index: 1;  right: 0px;
+      z-index: -1;  right: 0px;
       top: 0px;
       background: url("/img/wood_background2.webp") no-repeat;
       -webkit-background-size: cover; background-size: cover; background-position: center;
     }
     .menu {width: 100%; height: 26px;
-      display: flex; position: absolute;
-      img {position: absolute;}
-      span {position: relative;}
-      &_block {
-        display: inline-flex;
-        img {position: absolute;}
-        span {position: relative;}
+      display: flex;
+      &_block {display: inline-flex;
+        .menu_btn {display: inline-flex;
+          background-color: transparent; border: none;
+          cursor: pointer;
+        }
+        img {position: relative;}
+        span {padding: 0px 0px 0px 11px; position: relative;}
+      }
+      &_wooder_logo {display: flex; height: 26px; position: relative; padding: 0px 0px 0px 594px; height: 26px;
+        img {vertical-align: top; margin-top: -4px;}
+      }
+      &_items {display: flex; height: 26px;  padding-left: 100px;  margin-right: 250px;
+        a {align-items: center; padding-right: 117px;}
+        #products {padding-right: 95px;}
+      }
+      &_info {display: flex; height: 26px;
+        img {position: relative;}
       }
     }
-      .img-overlay {
-        img {
-          width: 23px;
-          height: 25px;
-          margin-right: 25px;
-          margin-bottom: 25px;
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          z-index: 2; }
+    .about_wooder {display: block; width: 100%; height: 982px;
+      padding: 297px 374px 0px 376px;
+      .block1 {display: inline-block; height: 122px; width: 30px; margin-right: 260px;}
+      .wooder_block {position: absolute; display: inline-block;
+        span {font-size: 100px; display: block; letter-spacing: 20px; color: #bea67c;}
       }
+    }
+
+      // .img-overlay {
+      //   img {
+      //     width: 23px;
+      //     height: 25px;
+      //     margin-right: 25px;
+      //     margin-bottom: 25px;
+      //     position: absolute;
+      //     bottom: 0;
+      //     right: 0;
+      //     z-index: 2; }
+      // }
 }
 .header_line {
   display: block;
