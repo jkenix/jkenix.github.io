@@ -13,6 +13,16 @@ function closeMenu() {
 }
 
 /* INFO */
+const infC = document.querySelector('.icon_inf .fas');
+infC.onmouseover = function(){
+  let infK = document.querySelector('.icon_inf-card');
+  infK.classList.add('open');
+}
+infC.onmouseout = function(){
+  let infK = document.querySelector('.icon_inf-card');
+  infK.classList.remove('open');
+}
+
 function showInfo() {
     var h = $(window).height();
     $(".info_wrapper").css('height', h + "px");
@@ -26,9 +36,3 @@ function closeInfo() {
     $(".information_block").css('opacity', 0).fadeOut(1000, linear);
     $(".information_block").css('display', none);
 }
-
-/* smooth scroll */
-var scroll = new SmoothScroll('a[data-scroll]', {
-    speed: 2500,
-    easing: 'easeInOutCubic'
-});
