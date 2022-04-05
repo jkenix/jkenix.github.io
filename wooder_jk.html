@@ -7,35 +7,45 @@
   <meta name="author" content="Dmitriy">
   <link rel="shortcut icon" href="/img/jklogo.png"/>
   <link rel="stylesheet" media="screen" href="/styles_jk.css"/>
+  <script src="/js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <header class="header" id="home">
-    <div class="left_block">
+    <div class="left-block">
         <div class="img-overlay"></div>
     </div>
-    <div class="right_block">
+    <div class="right-block">
         <div class="img-overlay"></div>
     </div>
     <div class="menu">
-      <div class="menu_block">
-        <button type="button" class="menu_btn" onclick="showMenu()">
-          <img class="menu_logo" src="/img/menu.webp" id="menu_img" width="34" height="23" alt="Menu icon">
-          <span id="menu" onclick="showMenu()">MENU</span>
-        </button>
+      <div class="menu-block">
+          <nav class="one">
+            <ul class="topmenu">
+              <li><a href="#"><img class="menu-logo" src="/img/menu.webp" id="menu_img" width="34" height="23" alt="Menu icon"></a>
+                <ul class="submenu">
+                  <li><a href="">FURNITURE</a></li>
+                  <li><a href="">DECOR</a></li>
+                  <li><a href="">QUALITY</a></li>
+                  <li><a href="">DEMONSTRATION</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <span>MENU</span>
       </div>
-      <div class="menu_wooder_logo">
+      <div class="menu-wooder-logo">
           <a href="#"><img class="wooder_logo" src="/img/wooder_logo.webp" width="212" height="24" alt="Wooder logo"></a>
       </div>
-      <div class="menu_items">
+      <div class="menu-items">
         <a href="#home">HOME</a>
         <a href="#products" id="products">PRODUCTS</a>
         <a href="#about">ABOUT</a>
       </div>
-      <div class="menu_info">
+      <div class="menu-info">
         <button><img class="info" src="/img/info.webp" width="23" height="23" alt="Wooder logo"></button>
       </div>
     </div>
-    <div class="about_wooder">
+    <div class="about-wooder">
       <div class="block1">
       <img>
       <img>
@@ -68,6 +78,6 @@
   
   </footer>
 <script src="/js/scripts.js"></script> 
-<script src="/js/jquery-3.6.0.min.js"></script>
+
 </body>
 </html>
