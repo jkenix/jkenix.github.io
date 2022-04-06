@@ -33,11 +33,12 @@ body { // размер шрифта увеличивается на 1px чере
 }
 p {font-family: ""; font-weight: 0; font-size: 15px;}
 a {text-decoration: none; font-family: "Proxima Nova Bold";}
-button {background-color: transparent;}
 span {font-family: "Proxima Nova Bold";}
 img {user-select: none;}
+ul {list-style: none;}
+button {background-color: transparent;}
 summary {list-style-type: none;}
-input, textarea, label {font-family:""; font-weight: 0;}
+// Накладывает темный цвет на задний фон header и main_demonstration
 .img-overlay {
   width: 100%;
   height: 100%;
@@ -45,7 +46,7 @@ input, textarea, label {font-family:""; font-weight: 0;}
   opacity: 0.9;
 }
 /* Миксины */
-@mixin fontfamily{ // Устанавливает шрифты по умолчанию для всего текста. Макет делался с упором на Raleway.
+@mixin fontfamily{ // Устанавливает шрифты по умолчанию для всего текста. Макет делался с упором на Proxima.
   font-family: "Proxima Nova", sans-serif, Tahoma, Geneva, Georgia, Verdana;
   font-display: fallback;
   font-style: normal;
@@ -56,7 +57,7 @@ input, textarea, label {font-family:""; font-weight: 0;}
 // Header
 .header {width: 100%; height: 1042px;
     display: block;
-    padding: 35px 30px 0px 30px;
+    padding: 30px 30px 0px 0px;
     a, span {font-size: 15px; 
       line-height: 1.5; letter-spacing: 0.38px; 
       text-align: center; color: rgba(255, 255, 255, 0.5);
@@ -78,63 +79,62 @@ input, textarea, label {font-family:""; font-weight: 0;}
       -webkit-background-size: cover; background-size: cover; background-position: center;
     }
     // Navigation bar of header
-    .menu {width: 100%; height: 26px; z-index: 100;
-      display: flex; position: fixed;
-      &-block {display: inline-flex;
+    .fixednav {
+      background: rgba(0,0,0,0.8);
+      position: fixed;
+      .menu-block {height: 10px;}
+      .submenu {background: rgba(0,0,0,0.8) !important;
+        li a {
+          border-bottom: 1px solid rgba(255,255,255,.3); // Удалить
+          color: white; // Удалить?
+          &:hover {color: #bea67c !important}
+          &:active {color:#fff !important}
+        }
+      }
+    }
+    .menu {width: 100%; z-index: 100;
+      padding: 5px 0 0 30px;
+      display: flex;
+      &-block {display: inline-flex; cursor: pointer; height: 175px;
           &:hover {filter: opacity(1) drop-shadow(0 0 0 #fff);
             transition: all 1s ease;}
-        img {position: relative; cursor: pointer;}
-        span {padding: 0px 0px 0px 11px; position: relative;}
-        // Выпадающее меню
-        ul {
-          list-style: none; 
-          margin: 0;
-          padding: 0;
-        }
-        .topmenu > li {
-          position: relative;
-        }
-        .topmenu > li:last-child {
-          margin-right: 0;
-        }
-        a {
-          display: block;
-          // padding: 0px 15px;
-          text-decoration: none;
-          outline: none;
-          transition: .5s linear;
-        }
-        .submenu {
-          margin: 10px 0px 0px 0px;
-          position: absolute;
-          top: 100%;
-          left: 0;
-          z-index: 10;
-          -webkit-transition: 0.5s ease-in-out;
-          -moz-transition: 0.5s ease-in-out;
-          -o-transition: 0.5s ease-in-out;
-          transition: 0.5s ease-in-out;
-        }
-
-        .one {display: inline-flex;}
-
-        .one ul {
-          background: transparent;
-        }
-        .one ul a {
-          color: #695753;
-        }
-        .one .submenu {
-          display: none;
-          background: #b19891;
-        }
-        .one ul li:hover .submenu {
-          display: block;
-        }
-        .submenu li a {
-          border-bottom: 1px solid rgba(255,255,255,.3);
-          color: white;
-        }
+          // Выпадающее меню
+        &__nav {
+            span {padding: 0px 0px 0px 6px;}
+            img {margin: -3px 0 0 0;}
+            a {display: block; 
+              white-space: nowrap;
+              text-decoration: none; outline: none;
+              transition: .5s linear;
+            }
+            ul {padding: 0; background: transparent;}
+            .topmenu > li {
+              position: relative;
+              &:last-child {margin-right: 0;}
+            }
+            li {height: 35px;
+                &:hover {// Отвечает за показывание меню
+                  .submenu {display: block;}
+                }
+            }
+            .submenu {
+                display: none;
+                padding: 0 10px 0 10px;
+                position: absolute;
+                top: 100%; left: 0; z-index: 10;
+                -webkit-transition: 0.5s ease-in-out;
+                -moz-transition: 0.5s ease-in-out;
+                -o-transition: 0.5s ease-in-out;
+                transition: 0.5s ease-in-out;
+                background: #bea67c;
+                li a {
+                  border-bottom: 1px solid rgba(255,255,255,.3);
+                  color: white;
+                  &:hover {color: black;}
+                  &:active {color:#fff;}
+                }
+              }
+          }
       }
       &-wooder-logo {display: flex; height: 26px; position: relative; 
         padding: 0px 0px 0px 594px; height: 26px;
@@ -148,7 +148,7 @@ input, textarea, label {font-family:""; font-weight: 0;}
           &:active {filter: opacity(1) drop-shadow(0 0 0 #bea67c);
             transition: all 0s ease;}
         }
-        #products {padding-right: 95px;}
+        #menu_products {padding-right: 95px;}
 
       }
       &-info {display: flex; height: 23px;
@@ -164,10 +164,20 @@ input, textarea, label {font-family:""; font-weight: 0;}
       }
     }
     // Center of header
-    .about-wooder {display: block; width: 100%; height: 982px;
-      padding: 297px 374px 0px 376px;
-      .block1 {display: inline-block; height: 122px; width: 30px; margin-right: 260px;}
-      .wooder_block {position: absolute; display: inline-block; padding: 0 0 0 15px;
+    .about-wooder {display: block; width: 100%; height: 982px; position: absolute;
+      padding: 87px 374px 0px 360px;
+      .block1 {display: inline-block;  width: 40px; margin-right: 295px;
+        .line {display: block; margin-left: 20px;}
+        .one {display: block; transform:rotate(90deg); 
+          font-size: 50px; letter-spacing: 6px; 
+          margin-bottom: 83px;
+        }
+        .ellips {display: block;
+          margin-left: 14px; margin-bottom: 40px;
+        }
+        
+      }
+      .wooder_block {position: absolute; display: inline-block; padding: 34px 0 0 16px;
         h1 {font-family: "Proxima Nova Bold";
           font-size: 100px; display: block; 
           letter-spacing: 20px; color: #bea67c; 

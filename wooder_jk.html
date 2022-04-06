@@ -7,7 +7,6 @@
   <meta name="author" content="Dmitriy">
   <link rel="shortcut icon" href="/img/jklogo.png"/>
   <link rel="stylesheet" media="screen" href="/styles_jk.css"/>
-  <script src="/js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <header class="header" id="home">
@@ -17,28 +16,28 @@
     <div class="right-block">
         <div class="img-overlay"></div>
     </div>
-    <div class="menu">
+    <div id="navigation" class="menu">
       <div class="menu-block">
-          <nav class="one">
+          <nav class="menu-block__nav">
             <ul class="topmenu">
-              <li><a href="#"><img class="menu-logo" src="/img/menu.webp" id="menu_img" width="34" height="23" alt="Menu icon"></a>
+              <li class="menu-logo"><a href="#"><img class="menu-logo" src="/img/menu.webp" id="menu_img" width="34" height="23" alt="Menu icon">
+                <span>MENU</span></a>
                 <ul class="submenu">
-                  <li><a href="">FURNITURE</a></li>
-                  <li><a href="">DECOR</a></li>
-                  <li><a href="">QUALITY</a></li>
-                  <li><a href="">DEMONSTRATION</a></li>
+                  <li><a href="#furniture">FURNITURE</a></li>
+                  <li><a href="#decor">DECOR</a></li>
+                  <li><a href="#quality">QUALITY</a></li>
+                  <li><a href="#demonstration">DEMONSTRATION</a></li>
                 </ul>
               </li>
             </ul>
           </nav>
-          <span>MENU</span>
       </div>
       <div class="menu-wooder-logo">
           <a href="#"><img class="wooder_logo" src="/img/wooder_logo.webp" width="212" height="24" alt="Wooder logo"></a>
       </div>
       <div class="menu-items">
         <a href="#home">HOME</a>
-        <a href="#products" id="products">PRODUCTS</a>
+        <a href="#products" id="menu_products">PRODUCTS</a>
         <a href="#about">ABOUT</a>
       </div>
       <div class="menu-info">
@@ -47,12 +46,12 @@
     </div>
     <div class="about-wooder">
       <div class="block1">
-      <img>
-      <img>
-      <img>
-      <img>
-      <img>
-      <img>
+        <img class="line" src="/img/line_until_01.webp" width="4" height="51" alt="Line until main">
+      <span class="one">01</span>
+      <img class="ellips" src="/img/ellips_lightbrown.webp">
+      <img class="ellips" src="/img/ellips_darkgray.webp">
+      <img class="ellips" src="/img/ellips_darkgray.webp">
+      <img class="ellips" src="/img/ellips_darkgray.webp">
       </div>
       <div class="wooder_block">
         <h1>WOODER</h1>
@@ -62,8 +61,8 @@
         </button>
       </div>
     </div>
-</header>
-  <div class="header_line">
+  </header>
+  <div class="header-line">
       <img src="/img/line_until_01.webp" width="4" height="51" alt="Line until main">
   </div>
   <main class="main">
@@ -77,7 +76,7 @@
   <footer class="footer">
   
   </footer>
+<script async src="/js/jquery-3.6.0.min.js"></script>
 <script src="/js/scripts.js"></script> 
-
 </body>
 </html>
