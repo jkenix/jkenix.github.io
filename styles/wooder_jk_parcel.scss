@@ -24,12 +24,10 @@
 $shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 /* Global */
 html {scroll-behavior: smooth;}
-body { // размер шрифта увеличивается на 1px через каждые 100px ширины области просмотра
-  font-size: calc(16px + 1vw);
-  // междустрочный интервал увеличивается вместе со шрифтом
-  // и получает дополнительный прирост на 0.1em + 0.5px через каждые 100px ширины области просмотра
-  line-height: calc(1.1em + 0.5vw);
-  height: calc(100vw * (9/16));
+body { 
+  font-size: calc(16px + 1vw); // размер шрифта увеличивается на 1px через каждые 100px ширины области просмотра
+  line-height: calc(1.1em + 0.5vw); // Междустрочный интервал увеличивается вместе со шрифтом
+  height: calc(100vw * (9/16)); // Междустрочный интервал увеличивается вместе со шрифтом
 }
 p {font-family: ""; font-weight: 0; font-size: 15px;}
 a {text-decoration: none; font-family: "Proxima Nova Bold";}
@@ -58,10 +56,7 @@ summary {list-style-type: none;}
 .header {width: 100%; height: 1042px;
     display: block;
     padding: 30px 30px 0px 0px;
-    a, span {font-size: 15px; 
-      line-height: 1.5; letter-spacing: 0.38px; 
-      text-align: center; color: rgba(255, 255, 255, 0.5);
-    }
+    // Backgrounds
     .left-block {
       position: absolute; 
       width: 100%;
@@ -79,22 +74,19 @@ summary {list-style-type: none;}
       -webkit-background-size: cover; background-size: cover; background-position: center;
     }
     // Navigation bar of header
-    .fixednav {
+    .__fixednav {
       background: rgba(0,0,0,0.8);
       position: fixed;
       .menu-block {height: 10px;}
-      .submenu {background: rgba(0,0,0,0.8) !important;
-        li a {
-          border-bottom: 1px solid rgba(255,255,255,.3); // Удалить
-          color: white; // Удалить?
-          &:hover {color: #bea67c !important}
-          &:active {color:#fff !important}
-        }
-      }
+     
     }
     .menu {width: 100%; z-index: 100;
       padding: 5px 0 0 30px;
       display: flex;
+      a, span {font-size: 15px; 
+        line-height: 1.5; letter-spacing: 0.38px; 
+        text-align: center; color: rgba(255, 255, 255, 0.5);
+      }
       &-block {display: inline-flex; cursor: pointer; height: 175px;
           &:hover {filter: opacity(1) drop-shadow(0 0 0 #fff);
             transition: all 1s ease;}
@@ -115,6 +107,12 @@ summary {list-style-type: none;}
             li {height: 35px;
                 &:hover {// Отвечает за показывание меню
                   .submenu {display: block;}
+                }
+            }
+            .__black { background: rgba(0,0,0,0.8) !important;
+              li a {
+                &:hover {color: #bea67c !important}
+                &:active {color:#fff !important}
                 }
             }
             .submenu {
@@ -164,25 +162,26 @@ summary {list-style-type: none;}
       }
     }
     // Center of header
-    .about-wooder {display: block; width: 100%; height: 982px; position: absolute;
-      padding: 87px 374px 0px 360px;
-      .block1 {display: inline-block;  width: 40px; margin-right: 295px;
+    .about-wooder {display: flex; width: 100%; height: 430px;
+      padding: 87px 374px 0px 360px; margin: 0 0 338px 0;
+      .block1 {display: block; width: 40px; margin-right: 295px;
         .line {display: block; margin-left: 20px;}
         .one {display: block; transform:rotate(90deg); 
-          font-size: 50px; letter-spacing: 6px; 
-          margin-bottom: 83px;
+          color: #bea67c; font-size: 50px; 
+          line-height: 1.5; letter-spacing: 6px; margin-bottom: 83px; 
         }
         .ellips {display: block;
           margin-left: 14px; margin-bottom: 40px;
         }
         
       }
-      .wooder_block {position: absolute; display: inline-block; padding: 34px 0 0 16px;
+      .wooder_block {display: block;
+        padding: 34px 0 0 16px; margin: 0 255px 0 0;
         h1 {font-family: "Proxima Nova Bold";
           font-size: 100px; display: block; 
           letter-spacing: 20px; color: #bea67c; 
         }
-          .wooder_info {width: 308px; height: 58px; 
+        .wooder_info {width: 308px; height: 58px; 
             margin: 32px 0 0 4px; padding: 0 0 0 84px;
             display: flex; align-items: center; border: 1px solid white;
             span {font-size: 14px; letter-spacing: 2.8px; color: #fff;
@@ -198,21 +197,19 @@ summary {list-style-type: none;}
               transition: all 0s ease;
               img {filter: opacity(1) drop-shadow(0 0 0 #ffffff);}
             }
-          }
+        }
+      }
+      .furniture-decore {display: block; width: 10px; height: 98px;
+        margin: 22px 0 0 0;
+        white-space: nowrap;
+        transform:rotate(90deg);
+        span {margin: 0 10px 0 0px; font-size: 15px; color: rgba(190, 166, 124, 0.2);}
+        .furn {letter-spacing: 1.7px;}
+        .dec {letter-spacing: 1.8px;}
       }
     }
-
-      // .img-overlay {
-      //   img {
-      //     width: 23px;
-      //     height: 25px;
-      //     margin-right: 25px;
-      //     margin-bottom: 25px;
-      //     position: absolute;
-      //     bottom: 0;
-      //     right: 0;
-      //     z-index: 2; }
-      // }
+    // Share button
+    .share {margin: 0 0px 0 1869px; z-index: 2;}
 }
 .header-line {
   display: block;
