@@ -7,6 +7,7 @@
   <meta name="author" content="Dmitriy">
   <link rel="shortcut icon" href="/img/jklogo.png"/>
   <link rel="stylesheet" media="screen" href="/styles_jk.css"/>
+  <script src="https://kit.fontawesome.com/4cc52014fe.js" crossorigin="anonymous"></script> <!-- Подключение шрифтов для share -->
 </head>
 <body>
   <header class="header" id="home">
@@ -20,7 +21,7 @@
       <div class="menu-block">
           <nav class="menu-block__nav">
             <ul class="topmenu">
-              <li class="menu-logo"><a href="#"><img class="menu-logo" src="/img/menu.webp" id="menu_img" width="34" height="23" alt="Menu icon">
+              <li class="menu-logo"><a><img class="menu-logo" src="/img/menu.webp" id="menu_img" width="34" height="23" alt="Menu icon">
                 <span>MENU</span></a>
                 <ul id="sub" class="submenu">
                   <li><a href="#furniture">FURNITURE</a></li>
@@ -41,23 +42,24 @@
         <a href="#about">ABOUT</a>
       </div>
       <div class="menu-info">
-        <button><img class="info" src="/img/info.webp" width="23" height="23" alt="Wooder logo"></button>
+        <button class="info"><img src="/img/info.webp" width="23" height="23" alt="Wooder logo"></button>
+        <div class="info-popup"><span>Developer: Dmitriy "jkenix"</span></div>
       </div>
     </div>
     <div class="about-wooder">
       <div class="block1">
         <img class="line" src="/img/line_until_01.webp" width="4" height="51" alt="Line until main">
       <span class="one">01</span>
-      <img class="ellips" src="/img/ellips_lightbrown.webp">
-      <img class="ellips" src="/img/ellips_darkgray.webp">
-      <img class="ellips" src="/img/ellips_darkgray.webp">
-      <img class="ellips" src="/img/ellips_darkgray.webp">
+      <img class="ellips" src="/img/ellips_lightbrown.webp" width="10" height="10" alt="ellips light brown">
+      <img class="ellips" src="/img/ellips_darkgray.webp" width="10" height="10" alt="ellips dark gray">
+      <img class="ellips" src="/img/ellips_darkgray.webp" width="10" height="10" alt="ellips dark gray">
+      <img class="ellips" src="/img/ellips_darkgray.webp" width="10" height="10" alt="ellips dark gray">
       </div>
       <div class="wooder_block">
         <h1>WOODER</h1>
         <button class="wooder_info">
-            <span>LEARN MORE</span>
-            <img src="/img/arrow_1.webp" width="36" height="13" alt="arrow">
+             LEARN MORE
+            <img src="/img/arrow_1.webp" width="36" height="13" alt="arrow after learn more">
         </button>
       </div>
       <div class="furniture-decore">
@@ -66,16 +68,32 @@
         <span class="dec">DECOR</span>
         </div>
     </div>
-    <span class="share"><img src="/img/share.webp"></span>
+    <button class="share"><i class="fa-solid fa-share-nodes"></i></button>
   </header>
   <div class="header-line">
       <img src="/img/line_until_01.webp" width="4" height="51" alt="Line until main">
   </div>
   <main class="main">
-      <div class="main_products" id="products">
-        
+      <div class="main-products" id="products">
+        <div class="furniture-block">
+          <div class="lines">
+            <img src="/img/furniture_line.webp" width="151" height="1" alt="furniture line">
+            <img class="line_2" src="/img/furniture_line2.webp"  width="44" height="4" alt="line after furniture line">
+            <span>01</span><span class="dot">.</span>
+          </div>
+          <div class="furniture">
+            <h2>FURNITURE</h2>
+            <p>Wooder utilizes materials otherwise left behind, rendered useless in their original intent. By creat-ing new pieces made of reclaimed barnwood</p>
+            <button class="furniture_info"> LEARN MORE
+            <img src="/img/lineb_lernmore.webp" width="44" height="2" alt="line after learn more">
+            <img class="arrow" src="/img/arrow_learnmore.webp" width="4" height="7" alt="arrow after learn more">
+            </button>
+          </div>
+          <div class="furn_image"></div>
+        </div> <!-- end of furniture-block -->
+        <div class="videos"></div>
       </div>
-      <div class="main_demonstration">
+      <div class="main-demonstration" id="demonstration">
         <div class="img-overlay"></div>
       </div>
   </main>
