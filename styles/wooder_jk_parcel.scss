@@ -320,14 +320,70 @@ summary {list-style-type: none;}
           background: url("/img/furniture.webp") ;
         }
       } // furniture-block end
-    .decor-block {display: block; padding: 125px 340px 155px 325px;
-      .decor_image {display: block; width: 616px; height: 397px; 
-        filter: $shadow;
-        margin: 0 0 0 39px;
-        background: url("/img/decor.webp") ;
+    .decor-block {display: flex; padding: 125px 340px 155px 325px;
+      .decor_image {display: block; 
+        width: 616px; height: 397px; 
+        filter: $shadow; margin: 0 0 0 39px;
+        background: url("/img/decor.webp");
       }
+      .decor {display: inline-block; height: 360px; padding: 106px 0 0 108px; 
+        h2 {font-size: 50px; letter-spacing: 2px; margin-bottom: 10px;
+          padding: 0 0 0 102px;
+        }
+        p {width: 290px; height: 24px; margin: 0 0 0 2px; display: block;
+          text-align: center; line-height: 1.67; letter-spacing: 0.38px;
+          &:nth-of-type(2) {padding: 1px 0 0 11px; margin-bottom: 27px;}
+        }
+        .decor_info {width: 353px; height: 16px; 
+            margin: 23px 0 0 0px; padding: 3px 3px 0 46px;
+            display: inline-block; position: absolute; border: none;
+            span {font-size: 14px; letter-spacing: 2.8px; color: rgb(0, 0, 0);
+              margin-right: 0px;
+            }
+            .lal {margin: 0px 0 5px 0px;}
+            // decor_info after/hover/active
+            &:after {
+              content: ''; top: 5px;
+              position: relative; display: block;
+              margin: 0 0 0 74px;
+              width: 44px; height: 2px;
+              background: #a9946e;
+            }
+            &:hover {
+              span {color: #bea67c; transition: all 1s ease; }
+              img {filter: invert(100%); transition: all 1s ease;}
+            }
+            &:active {
+              span {color: #ffa600; transition: all 0s ease; }
+              img {filter: opacity(1) drop-shadow(0 0 0 #ffa60059);}
+            }
+          }
+      } // decor block end
+      .lines {display: block;height: 570px;
+        padding: 133px 0 0 18px; 
+        img {display: block; margin: 0 0 54px 0;}
+        .line_2 {margin: 0 0 0 0px;}
+        span {display: flex; margin: 143px 0 23px 0px;
+          padding: 0 0 0 86px; user-select: none;
+          font-size: 36px; line-height: 2.78;
+          letter-spacing: 2.7px; color: #000;
+          // .lines after
+          &:after {content: '';
+            position: relative;
+            top: 55px; left: 4px;
+            background: #bea67c;
+            width: 7px; height: 7px;
+            border-radius: 50%;
+          }
+        }
+        .lan {margin: 0 0 0 104px;}
+      } // decor .lines end
     } // decor-block end
   } // main-products end
+  &-quality {height: 594px; display: flex; padding: 125px 340px 155px 325px;
+    .videos {display: block; width: 100%; height: 100%;
+    }
+  }
   &-demonstration {
     width: 100%; height: 915px;
     background: url("/img/wedodesign_background.webp");
