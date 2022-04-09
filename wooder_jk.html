@@ -7,7 +7,6 @@
   <meta name="author" content="Dmitriy">
   <link rel="shortcut icon" href="/img/jklogo.png"/>
   <link rel="stylesheet" media="screen" href="/styles_jk.css"/>
-  <script src="https://kit.fontawesome.com/4cc52014fe.js" crossorigin="anonymous"></script> <!-- Подключение шрифтов для share -->
 </head>
 <body>
   <header class="header" id="home">
@@ -42,7 +41,7 @@
         <a href="#about">ABOUT</a>
       </div>
       <div class="menu-info">
-        <button class="info"><img src="/img/info.webp" width="23" height="23" alt="Wooder logo"></button>
+        <button class="info"><img src="/img/info.webp" width="23" height="23" alt="info button"></button>
         <div class="info-popup"><span>Developer: Dmitriy "jkenix"</span></div>
       </div>
     </div>
@@ -75,24 +74,28 @@
   </div>
   <main class="main">
       <div class="main-products" id="products">
-        <div class="furniture-block">
+        <div class="furniture-block" id="furniture">
           <div class="lines">
-            <img src="/img/furniture_line.webp" width="151" height="1" alt="furniture line">
-            <img class="line_2" src="/img/furniture_line2.webp"  width="44" height="4" alt="line after furniture line">
-            <span>01</span><span class="dot">.</span>
+            <img src="/img/product_line.webp" width="151" height="1" alt="furniture line">
+            <img class="line_2" src="/img/product_line2.webp"  width="44" height="4" alt="line after furniture line">
+            <span>01</span>
+            <img class="lan" src="/img/line_after_number.webp" width="4" height="51" alt="line after 01">
           </div>
           <div class="furniture">
             <h2>FURNITURE</h2>
             <p>Wooder utilizes materials otherwise left behind, rendered useless in their original intent. By creat-ing new pieces made of reclaimed barnwood</p>
-            <button class="furniture_info"> LEARN MORE
-            <img src="/img/lineb_lernmore.webp" width="44" height="2" alt="line after learn more">
-            <img class="arrow" src="/img/arrow_learnmore.webp" width="4" height="7" alt="arrow after learn more">
+            <button class="furniture_info">
+            <span>LEARN MORE</span>
+            <img class="lal" src="/img/arrow_learnmore.png" width="37" height="9" alt="line after learn more">
             </button>
           </div>
           <div class="furn_image"></div>
         </div> <!-- end of furniture-block -->
+        <div class="decor-block" id="decor">
+          <div class="decor_image"></div>
+        </div>  <!-- end of decor-block -->
         <div class="videos"></div>
-      </div>
+      </div>  
       <div class="main-demonstration" id="demonstration">
         <div class="img-overlay"></div>
       </div>
@@ -101,6 +104,7 @@
   
   </footer>
 <script async src="/js/jquery-3.6.0.min.js"></script>
+<script src="https://kit.fontawesome.com/4cc52014fe.js" crossorigin="anonymous"></script> <!-- Подключение шрифтов для share -->
 <script src="/js/scripts.js"></script> 
 </body>
 </html>

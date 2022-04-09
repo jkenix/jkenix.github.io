@@ -21,7 +21,7 @@
     padding: 0;
 }
 // Переменные
-$shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+$shadow: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.25));
 /* Global */
 html {scroll-behavior: smooth;}
 body { 
@@ -233,13 +233,13 @@ summary {list-style-type: none;}
       } //wooder_block end
       .furniture-decore {display: block; width: 10px; height: 98px;
         margin: 22px 0 0 0;
-        white-space: nowrap;
-        transform:rotate(90deg);
+        white-space: nowrap; transform:rotate(90deg);
+        user-select: none;
         span {margin: 0 10px 0 0px; font-size: 15px; color: rgba(190, 166, 124, 0.2);}
         .furn {letter-spacing: 1.7px;}
         .dec {letter-spacing: 1.8px;}
       } // furniture-decore end
-    } //about-woder end
+    } // about-woder end
 // Share button
     .share {margin: 0 0px 0 1869px; display: block; 
       border: none; border-radius: 5px;
@@ -249,7 +249,7 @@ summary {list-style-type: none;}
         &:active {filter: opacity(1) drop-shadow(0 0 0 #000);
           transition: all 0s ease;}
      }
-}
+} // header end
 .header-line {
   display: block; margin-top: -26px;
   padding-left: 1559px;
@@ -259,58 +259,83 @@ summary {list-style-type: none;}
 // Main
 .main {display: block;
   width: 100%; height: 100%;
-  &-products { display: flex;
+  &-products {
     width: 100%; height: 2063px;
-    .furniture-block {display: flex; width: 100%; height: 100%;
+    .furniture-block {display: flex; width: 100%; height: 620px;
       padding: 67px 340px 155px 364px;
         .lines {display: block; width: 165px; height: 570px;
-          padding: 133px 0 0 14px;
+          padding: 133px 0 0 14px; 
           img {display: block; margin: 0 0 54px 0;}
           .line_2 {margin: 0 0 0 108px;}
-          span {display: inline-block; margin: 143px 0 0 0px;
-            padding: 0 0 0 11px;
+          span {display: flex; margin: 143px 0 66px 0px;
+            padding: 0 0 0 12px; user-select: none;
             font-size: 36px; line-height: 2.78;
             letter-spacing: 2.7px; color: #000;
+            // .lines after
+            &:after {content: '';
+              position: relative;
+              top: 55px; left: 4px;
+              background: #bea67c;
+              width: 7px; height: 7px;
+              border-radius: 50%;
+            }
           }
-          .dot {padding: 0 0 0 2px; color: #bea67c}
+          .lan {margin: 0 0 0 32px;}
         } // furniture-block .lines end
-        .furniture {display: block; height: 300px; padding: 106px 0 0 28px; 
+        .furniture {display: inline-block; height: 360px; padding: 106px 0 0 28px; 
           h2 {font-size: 50px; letter-spacing: 2px; margin-bottom: 10px;}
-          p {width: 350px; height: 74px; margin: 0 0 0 2px; display: inline-block;
+          p {width: 350px; height: 74px; margin: 0 0 0 2px; display: block;
             line-height: 1.67; letter-spacing: 0.38px;}
           .furniture_info {width: 172px; height: 16px; 
-              margin: 20px 0 0 3px; font-size: 14px;
-              display: flex; position: absolute; border: none;
-              letter-spacing: 2.8px; color: rgb(0, 0, 0);
-              img {margin: 5px 0 0 6px;}
-              .arrow {margin: 2px 0 0 0px;}
-              // furniture_info hover & active
+              margin: 23px 0 0 0px; padding: 3px 8px 0 0;
+              display: inline-block; position: absolute; border: none;
+              span {font-size: 14px; letter-spacing: 2.8px; color: rgb(0, 0, 0);}
+              .lal {margin: 0px 0 0 0px;}
+              // furniture_info after/hover/active
+              &:after {
+                content: ''; top: 6px;
+                position: relative; display: block;
+                margin: 0 0 0 4px;
+                width: 44px; height: 2px;
+                background: #a9946e;
+              }
               &:hover {
-                  transition: all 2s ease;
-                  color: #bea67c;
-                    img {filter: invert(100%); transition: all 2s ease;}
+                span {color: #bea67c; transition: all 1s ease; }
+                img {filter: invert(100%); transition: all 1s ease;}
               }
               &:active {
-                transition: all 0s ease; color: #ffa600;
+                span {color: #ffa600; transition: all 0s ease; }
                 img {filter: opacity(1) drop-shadow(0 0 0 #ffa60059);}
               }
             } // furniture .wooder_info end
+          .lal2 {display: inline-block; width: 44px; height: 2px; 
+            position: relative;
+            background: url("/img/line_after_learnmore.webp");
+          margin: 40px 0 0 2px;
+          }
         } //furniture end
         .furn_image {display: block; width: 616px; height: 397px; 
           filter: $shadow;
           margin: 0 0 0 39px;
-          background: url("/img/furniture-01.webp") ;
+          background: url("/img/furniture.webp") ;
         }
-      } //furniture-block end
-  } //main-products end
+      } // furniture-block end
+    .decor-block {display: block; padding: 125px 340px 155px 325px;
+      .decor_image {display: block; width: 616px; height: 397px; 
+        filter: $shadow;
+        margin: 0 0 0 39px;
+        background: url("/img/decor.webp") ;
+      }
+    } // decor-block end
+  } // main-products end
   &-demonstration {
     width: 100%; height: 915px;
     background: url("/img/wedodesign_background.webp");
     -webkit-background-size: cover; background-size: cover; background-position: center;
     z-index: -1;
-  }
-}
+  } //main-demonstration end
+} // main end
 // Footer
 .footer {
   
-}
+} // footer end
