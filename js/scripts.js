@@ -30,12 +30,15 @@ infC.onmouseout = function(){
 }
 // Share
 $(document).ready(function () {
-    $(".share").click(function (event) {
+    $(".share").click(function (event) { // Header share
         event.preventDefault();
-        CopyToClipboard("https://jkenix.github.io/", true, "Link copied");
+        CopyToClipboard("https://jkenix.github.io/", true, "Link copied!");
+    });
+    $(".share_2").click(function (event) { // Footer share
+        event.preventDefault();
+        CopyToClipboard("https://jkenix.github.io/", true, "Link copied!");
     });
 });
-
 function CopyToClipboard(value, showNotification, notificationText) {
     var $temp = $("<input>");
     $("body").append($temp);
@@ -64,5 +67,3 @@ function CopyToClipboard(value, showNotification, notificationText) {
         });
     }
 }
-
- 
