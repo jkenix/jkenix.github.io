@@ -29,13 +29,16 @@ body {
   line-height: calc(1.1em + 0.5vw); // Междустрочный интервал увеличивается вместе со шрифтом
   height: calc(100vw * (9/16)); // Междустрочный интервал увеличивается вместе со шрифтом
 }
-p {font-family: "Proxima Nova Regular"; font-weight: normal; font-size: 15px;}
-a {text-decoration: none; font-family: "Proxima Nova Bold";}
+p {font-family: "Proxima Nova Regular"; font-weight: normal; font-size: 15px;
+  line-height: 1.67; letter-spacing: 0.38px;
+}
+a {text-decoration: none; font-family: "Proxima Nova Bold"; white-space: nowrap;}
 div {font-family: "Proxima Nova Bold";}
 span {font-family: "Proxima Nova Bold";}
 img {user-select: none;}
 ul {list-style: none;}
 button {font-family: "Proxima Nova Bold"; font-size: 14px; background-color: transparent;}
+h2 {font-family: "Proxima Nova Bold"; font-size: 48px; letter-spacing: 3.36px; white-space: nowrap;}
 summary {list-style-type: none;}
 // Накладывает темный цвет на задний фон header и main_demonstration
 .img-overlay {
@@ -51,6 +54,19 @@ summary {list-style-type: none;}
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
+}
+// Share button header
+.share, .share_2 {margin: 0 0px 0 1869px; display: block; 
+  border: none; border-radius: 5px;
+  .fa-solid {cursor: pointer; color: #ffa200; font-size: 27px;}
+    &:hover {filter: opacity(1) drop-shadow(0 0 0 #fff);
+      transition: all 1s ease;}
+    &:active {filter: opacity(1) drop-shadow(0 0 0 #000);
+      transition: all 0s ease;}
+}
+// Share button footer
+.share_2 {margin: 0 0px 0 1569px;
+  .fa-solid {color: #fff;}
 }
 // Блок-уведомление о копировании ссылки на страницу
 // Выходит при нажатии на кнопку share внизу header
@@ -73,7 +89,7 @@ summary {list-style-type: none;}
   white-space: nowrap;
 }
 // Header
-.header {width: 100%; height: 1042px;
+.header {width: 100%; height: 1043px;
     display: block;
     padding: 30px 0px 0px 0px;
     // Backgrounds
@@ -240,15 +256,6 @@ summary {list-style-type: none;}
         .dec {letter-spacing: 1.8px;}
       } // furniture-decore end
     } // about-woder end
-// Share button
-    .share {margin: 0 0px 0 1869px; display: block; 
-      border: none; border-radius: 5px;
-      .fa-solid {cursor: pointer; color: #ffa200; font-size: 27px;}
-        &:hover {filter: opacity(1) drop-shadow(0 0 0 #fff);
-          transition: all 1s ease;}
-        &:active {filter: opacity(1) drop-shadow(0 0 0 #000);
-          transition: all 0s ease;}
-     }
 } // header end
 .header-line {
   display: block; margin-top: -26px;
@@ -257,14 +264,13 @@ summary {list-style-type: none;}
     img {position: absolute;}
   }
 // Main
-.main {display: block;
-  width: 100%; height: 100%;
+.main {display: block;  
   &-products {
-    width: 100%; height: 2063px;
+    width: 100%; height: 100%;
     .furniture-block {display: flex; width: 100%; height: 620px;
       padding: 67px 340px 155px 364px;
         .lines {display: block; width: 165px; height: 570px;
-          padding: 133px 0 0 14px; 
+          padding: 132px 0 0 14px; 
           img {display: block; margin: 0 0 54px 0;}
           .line_2 {margin: 0 0 0 108px;}
           span {display: flex; margin: 143px 0 66px 0px;
@@ -283,7 +289,7 @@ summary {list-style-type: none;}
           .lan {margin: 0 0 0 32px;}
         } // furniture-block .lines end
         .furniture {display: inline-block; height: 360px; padding: 106px 0 0 28px; 
-          h2 {font-size: 50px; letter-spacing: 2px; margin-bottom: 10px;}
+          h2 {margin-bottom: 10px;}
           p {width: 350px; height: 74px; margin: 0 0 0 2px; display: block;
             line-height: 1.67; letter-spacing: 0.38px;}
           .furniture_info {width: 172px; height: 16px; 
@@ -320,16 +326,14 @@ summary {list-style-type: none;}
           background: url("/img/furniture.webp") ;
         }
       } // furniture-block end
-    .decor-block {display: flex; padding: 125px 340px 155px 325px;
+    .decor-block {display: flex; padding: 125px 340px 41px 325px;
       .decor_image {display: block; 
         width: 616px; height: 397px; 
         filter: $shadow; margin: 0 0 0 39px;
         background: url("/img/decor.webp");
       }
       .decor {display: inline-block; height: 360px; padding: 106px 0 0 108px; 
-        h2 {font-size: 50px; letter-spacing: 2px; margin-bottom: 10px;
-          padding: 0 0 0 102px;
-        }
+        h2 {margin-bottom: 10px;padding: 0 0 0 102px;}
         p {width: 290px; height: 24px; margin: 0 0 0 2px; display: block;
           text-align: center; line-height: 1.67; letter-spacing: 0.38px;
           &:nth-of-type(2) {padding: 1px 0 0 11px; margin-bottom: 27px;}
@@ -360,7 +364,7 @@ summary {list-style-type: none;}
           }
       } // decor block end
       .lines {display: block;height: 570px;
-        padding: 133px 0 0 18px; 
+        padding: 132px 0 0 18px; 
         img {display: block; margin: 0 0 54px 0;}
         .line_2 {margin: 0 0 0 0px;}
         span {display: flex; margin: 143px 0 23px 0px;
@@ -380,18 +384,63 @@ summary {list-style-type: none;}
       } // decor .lines end
     } // decor-block end
   } // main-products end
-  &-quality {height: 594px; display: flex; padding: 125px 340px 155px 325px;
-    .videos {display: block; width: 100%; height: 100%;
-    }
-  }
+  &-quality {height: 706px; display: block; padding: 0px 372px 0px 465px;
+    &-content {display: flex; flex-direction: column; 
+    h2 {padding: 0 0 0 209px;}
+    .line_2 {margin: 11px 0 0px 476px;}
+    p {margin: 18px 0 0px 219px; width: 560px; height: 37px; 
+      text-align: center; line-height: 1.67;
+      letter-spacing: 0.38px;}
+  } // main-quality-content end
+  .videos {display: flex; width: 100%; margin: 80px 0 0 0; flex-wrap: wrap;
+        .video-block_1, .video-block_2, .video-block_3 {display: flex;
+          flex-direction: column;
+          align-items: center; margin: 0 73px 0 0px;
+            .video-container {
+              position: relative;
+              border: 1px solid #e7e7e7; border-radius: 50%; 
+              padding: 20px; margin-bottom: 20px;
+              display: flex; align-items: center; flex-direction: column;
+              .video_img {
+                width: 240px; height: 240px;
+                background: url("/img/player_img1.webp") no-repeat center top / cover;
+              }
+              .video_img2 {width: 240px; height: 240px;
+                background: url("/img/player_img2.webp") no-repeat center top / cover;} 
+              .video_img3 {width: 240px; height: 240px;
+                  background: url("/img/player_img3.webp") no-repeat center top / cover;} 
+              .button_player {width: 68px; height: 68px;
+              position: relative; display: flex; justify-content: center;
+              border-radius: 50%; background-color: #bea67c; border: none;
+              align-items: center; top: 37%; left: 36%; 
+                &:hover {transition: 0.5s ease; background-color: #000;}
+                &:active {transition: 0s ease; background-color: #fff;}
+            }
+          }
+        span {margin: 11px 0 0 8px; 
+          font-family: "Proxima Nova Regular"; font-size: 16px;
+          line-height: 1.5; letter-spacing: 0.4px;
+        }
+        } // video-block end
+    } // videos end
+  } // main-quality end
   &-demonstration {
-    width: 100%; height: 915px;
+    width: 100%; height: 916px;
     background: url("/img/wedodesign_background.webp");
     -webkit-background-size: cover; background-size: cover; background-position: center;
     z-index: -1;
-  } //main-demonstration end
+  } // main-demonstration end
+  &-about-us {width: 100%; height: 663px;
+  
+  } // main-about-us
 } // main end
 // Footer
-.footer {
-  
+.footer {display: flex; width: 1918px;
+  height: 68px; background-color: #000;
+  span {font-size: 15px; font-family: "Proxima Nova Regular";}
+  &-wooder-logo {
+    display: flex; height: 26px; position: relative; flex-wrap: nowrap;
+    a {color: #fff;}
+
+  }
 } // footer end
