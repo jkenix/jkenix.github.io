@@ -191,7 +191,7 @@ summary {list-style-type: none;}
         img {cursor: pointer; position: relative;}
         .info-popup {width: 130px; height: 70px; user-select: none;
           position: absolute;
-          padding: 0px; margin-top: 10px; margin-left: -130px; 
+          padding: 0px; margin-top: 15px; margin-left: -130px; 
           display: inline-block;
           background: black;
           border: 2px solid #a9946e;
@@ -268,7 +268,7 @@ summary {list-style-type: none;}
   &-products {
     width: 100%; height: 100%;
     .furniture-block {display: flex; width: 100%; height: 620px;
-      padding: 67px 340px 155px 364px;
+      padding: 67px 340px 155px 364px; flex-wrap: nowrap;
         .lines {display: block; width: 165px; height: 570px;
           padding: 132px 0 0 14px; 
           img {display: block; margin: 0 0 54px 0;}
@@ -392,7 +392,47 @@ summary {list-style-type: none;}
       text-align: center; line-height: 1.67;
       letter-spacing: 0.38px;}
   } // main-quality-content end
-  .videos {display: flex; width: 100%; margin: 80px 0 0 0; flex-wrap: wrap;
+  // Блок с кнопкой закрытия видео
+  .close_block {
+    position: fixed;
+    top: 160px;
+    right: 620px;
+    width: 43.75px;
+    height: 70px;
+    z-index: 1001;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s ease;
+  }
+  // Блок расположения видео
+  .video_play_block {
+    display: flex;
+    justify-content: center; flex-direction: column;
+    align-items: center; position: fixed;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    top: 0; right: 0;
+    padding: 20px;
+    opacity: 0;
+    transition: 0.3s ease;
+    background: rgba(0,0,0,0.9);
+    z-index: -10;
+    span {display: flex; 
+      z-index: 1001; color: white;
+      padding: 10px 0 0 0;
+      width: 560px; height: 190px;
+      font-family: "Proxima Nova Light"; font-size: 28px;
+      text-align: center;
+    }
+  }
+  // Свойство показа блоков с видео
+  .__show {display: flex;
+     .fa-xmark {font-size: 70px; color: #fff;}
+  }
+  .__open {opacity: 1; z-index: 1000;}
+  // Свойства класса videos
+  .videos {display: flex; width: 100%; margin: 80px 0 0 0; flex-wrap: nowrap;
         .video-block_1, .video-block_2, .video-block_3 {display: flex;
           flex-direction: column;
           align-items: center; margin: 0 73px 0 0px;
@@ -401,20 +441,22 @@ summary {list-style-type: none;}
               border: 1px solid #e7e7e7; border-radius: 50%; 
               padding: 20px; margin-bottom: 20px;
               display: flex; align-items: center; flex-direction: column;
-              .video_img {
+              .play_video_1 {
                 width: 240px; height: 240px;
                 background: url("/img/player_img1.webp") no-repeat center top / cover;
               }
-              .video_img2 {width: 240px; height: 240px;
+              .play_video_2 {width: 240px; height: 240px;
                 background: url("/img/player_img2.webp") no-repeat center top / cover;} 
-              .video_img3 {width: 240px; height: 240px;
+              .play_video_3 {width: 240px; height: 240px;
                   background: url("/img/player_img3.webp") no-repeat center top / cover;} 
-              .button_player {width: 68px; height: 68px;
+              .button_player_1, .button_player_2, .button_player_3 {width: 68px; height: 68px;
               position: relative; display: flex; justify-content: center;
-              border-radius: 50%; background-color: #bea67c; border: none;
+              border-radius: 50%; background-color: #bea67c;
               align-items: center; top: 37%; left: 36%; 
-                &:hover {transition: 0.5s ease; background-color: #000;}
-                &:active {transition: 0s ease; background-color: #fff;}
+              cursor: pointer;
+                .fa-play {color: #fff; font-size: 27px; margin: 3px 0 0 5px;}
+                &:hover {transition: 0s ease; background-color: #ff0000; border: 3px solid #fff;}
+                &:active {transition: 0s ease; background-color: #000;}
             }
           }
         span {margin: 11px 0 0 8px; 
@@ -435,7 +477,7 @@ summary {list-style-type: none;}
   } // main-about-us
 } // main end
 // Footer
-.footer {display: flex; width: 1918px;
+.footer {display: flex; width: 100%;
   height: 68px; background-color: #000;
   span {font-size: 15px; font-family: "Proxima Nova Regular";}
   &-wooder-logo {
