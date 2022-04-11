@@ -67,3 +67,55 @@ function CopyToClipboard(value, showNotification, notificationText) {
         });
     }
 }
+// Videos
+// Video 1
+const btn = document.querySelector('.button_player_1');
+const cb = document.querySelector('.close_block');
+btn.onclick = function(){
+    let vpb = document.querySelector('.video_play_block');
+    vpb.classList.add('__open');
+
+    let cbs = document.querySelector('.close_block');
+    cbs.classList.add('__show');
+
+}
+cb.onclick = function(){
+    let cbc = document.querySelector('.close_block');
+    cbc.classList.remove('__show');
+    let vpbc = document.querySelector('.video_play_block');
+    vpbc.classList.remove('__open');
+}
+// Video 2
+const btn2 = document.querySelector('.button_player_2');
+const cb2 = document.querySelector('.close_block');
+btn2.onclick = function(){
+    let vpb2 = document.querySelector('.video_play_block');
+    vpb2.classList.add('__open');
+
+    let cbs2 = document.querySelector('.close_block');
+    cbs2.classList.add('__show');
+
+}
+cb2.onclick = function(){
+    let cbc2 = document.querySelector('.close_block');
+    cbc2.classList.remove('__show');
+    let vpbc2 = document.querySelector('.video_play_block');
+    vpbc2.classList.remove('__open');
+}
+// Video 3
+const btn3 = document.querySelector('.button_player_3');
+const cb3 = document.querySelector('.close_block');
+btn3.onclick = function(){
+    let vpb3 = document.querySelector('.video_play_block');
+    vpb3.classList.add('__open');
+
+    let cbs3 = document.querySelector('.close_block');
+    cbs3.classList.add('__show');
+
+}
+cb3.onclick = function(){
+    let cbc3 = document.querySelector('.close_block');
+    cbc3.classList.remove('__show');
+    let vpbc3 = document.querySelector('.video_play_block');
+    vpbc3.classList.remove('__open');
+}
