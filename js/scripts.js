@@ -119,3 +119,20 @@ cb3.onclick = function(){
     let vpbc3 = document.querySelector('.video_play_block');
     vpbc3.classList.remove('__open');
 }
+// Video 4
+const btn4 = document.querySelector('.button_player_4');
+const cb4 = document.querySelector('.close_block');
+btn4.onclick = function(){
+    let vpb4 = document.querySelector('.video_play_block');
+    vpb4.classList.add('__open');
+
+    let cbs4 = document.querySelector('.close_block');
+    cbs4.classList.add('__show');
+
+}
+cb4.onclick = function(){
+    let cbc4 = document.querySelector('.close_block');
+    cbc4.classList.remove('__show');
+    let vpbc4 = document.querySelector('.video_play_block');
+    vpbc4.classList.remove('__open');
+}
