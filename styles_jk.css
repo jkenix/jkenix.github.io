@@ -1,1 +1,2 @@
-@import "/styles/bootstrap_min.css"; /* @import "/styles/wooder_jk_public.css"; */ @import "/styles/normalize.css";
+/* @import "/styles/wooder_jk_public.css"; */ 
+@import "/styles/normalize.css"; @import "/styles/all.min.css";
