@@ -41,7 +41,7 @@
         <a href="#about">ABOUT</a>
       </div>
       <div class="menu-info">
-        <button class="info"><img src="/img/info.webp" width="23" height="23" alt="info button"></button>
+        <button class="info"><i class="fa-solid fa-circle-info"></i></button>
         <div class="info-popup"><span>Developer: Dmitriy "jkenix"</span></div>
       </div>
     </div>
@@ -103,7 +103,7 @@
             </button>
           </div>
           <div class="lines">
-            <img src="/img/product_line.webp" width="151" height="1" alt="furniture line">
+            <img class="line_1" src="/img/product_line.webp" width="151" height="1" alt="furniture line">
             <img class="line_2" src="/img/product_line2.webp"  width="44" height="4" alt="line after furniture line">
             <span>02</span>
             <img class="lan" src="/img/line_after_number.webp" width="4" height="51" alt="line after 01">
@@ -121,7 +121,7 @@
             <i class="fa-solid fa-xmark"></i>
           </div>
           <div class="video_play_block">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/isIAYcF_ojk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/isIAYcF_ojk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <span>That's just layout, so i uploaded my video :)
               Watch if you want.  I'll be happy!
             </span>
@@ -129,7 +129,7 @@
           <div class="video-block_1">
             <div class="video-container">
               <div class="play_video_1">
-                <div class="button_player_1"><i class="fa-solid fa-play"></i></div>
+                <div class="button_player_1" id="button_player_1"><i class="fa-solid fa-play"></i></div>
               </div>
             </div>
             <img src="/img/small_line.webp" width="25" height="1" alt="small line">
@@ -156,21 +156,48 @@
         </div> <!--end of videos --> 
       </div> <!-- end of main-quality -->
       <div class="main-demonstration" id="demonstration">
+        <div class="main-demonstration-wrapper">
+          <div class="main-demonstration-wrapper-content">
+          <div class="lines">
+            <img src="/img/wedod_line.webp" width="151" height="1" alt="furniture line">
+            <img class="line_2" src="/img/product_line2.webp"  width="44" height="4" alt="line after furniture line">
+          </div>
+          <div class="wedodesign">
+            <h2>WE DO THE DESIGN OF ANY COMPLEXITY</h2>
+            <p>This is a team of professionals that make the furniture and wood décor high standard. Creating modern designs. Adhering to the global quality standards. And we are doing work with love.</p>
+            <button class="button_player_4">
+            <!-- <i class="fa-solid fa-circle-play"></i> -->
+            <i class="fa-regular fa-circle-play"></i>
+            <span>WATCH VIDEO</span>
+            </button>
+          </div>
+          <div class="vert_line"><img src="/img/wedod_line2.webp" width="1" height="151" alt="vertical line"></div>
+          </div>
+        </div>
         <div class="img-overlay"></div>
       </div>
       <div class="main-about-us" id="about">
-
+        <div class="imgs"></div>
+        <img class="asl" src="/img/product_line.webp" width="151" height="1" alt="about us line">
+        <img class="line_2" src="/img/product_line2.webp"  width="44" height="4" alt="line after about us line">
+        <div class="main-about-us-content">
+          <h2>ABOUT US</h2>
+            <p>We are a team of professionals in the wood pro-cessing and the creation of wooden furniture</p><p>of the highest class</p>
+            <button class="about_us_info">
+            <span>LEARN MORE</span>
+            <img class="lal" src="/img/arrow_learnmore.png" width="37" height="9" alt="line after learn more">
+            </button>
+        </div>
       </div>
   </main>
   <footer class="footer">
     <span>© 2022 WOODER</span>
-    <div class="footer-wooder-logo">
-      <a href="#home">WOODER</a>
-    </div>
+    <a href="#home">WOODER</a>
+    <img class="line_2" src="/img/product_line2.webp" width="44" height="4" alt="line on wooder logo">
     <button class="share_2"><i class="fa-solid fa-share-nodes"></i></button>
   </footer>
 <script async src="/js/jquery-3.6.0.min.js"></script>
-<script src="https://kit.fontawesome.com/4cc52014fe.js" crossorigin="anonymous"></script> <!-- Подключение шрифтов для share -->
+<!-- <script src="https://kit.fontawesome.com/4cc52014fe.js" crossorigin="anonymous"></script> Подключение шрифтов для share -->
 <script src="/js/scripts.js"></script> 
 </body>
 </html>

@@ -1,16 +1,12 @@
-// Файл стилей для работы макета dart service manager, написанный jkenix.
-// Styles file for dart service manager layout by jkenix. 
+// Файл стилей для работы макета WOODER, написанный jkenix.
+// Styles file for WOODER layout by jkenix. 
 // Требуется так же файл normalize.css для работы с макетом.
 // It also requires a normalize.css file to work with the layout.
-// Опирался на эти сайты при разработке: 
-// Based on this sites while developing:
-// https://wooder-furniture.surge.sh/
-// https://sierikovroman.github.io/wooder/#
 // P.S. I'm new developer. Do not judge strictly!
 // ====== Кастомные шрифты: (Custom fonts) ====== \\
-@font-face {font-display: fallback;font-family: "Proxima Nova Bold";src:url(/fonts/proximanova_bold.woff) format("woff");}
-@font-face {font-display: fallback;font-family: "Proxima Nova Light";src:url(/fonts/proximanova_light.woff) format("woff");}
-@font-face {font-display: fallback;font-family: "Proxima Nova Regular";src:url(/fonts/proximanova_regular.woff) format("woff");}
+@font-face {font-display: fallback;text-rendering: optimizeLegibility; font-family: "Proxima Nova Bold";src:url(/fonts/proximanova_bold.woff) format("woff");}
+@font-face {font-display: fallback;text-rendering: optimizeLegibility; font-family: "Proxima Nova Light";src:url(/fonts/proximanova_light.woff) format("woff");}
+@font-face {font-display: fallback;text-rendering: optimizeLegibility; font-family: "Proxima Nova Regular";src:url(/fonts/proximanova_regular.woff) format("woff");}
 /* Resets */
 * {margin: 0; padding: 0;}
 *, *:before, *:after {
@@ -24,11 +20,7 @@
 $shadow: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.25));
 /* Global */
 html {scroll-behavior: smooth;}
-body { 
-  font-size: calc(16px + 1vw); // размер шрифта увеличивается на 1px через каждые 100px ширины области просмотра
-  line-height: calc(1.1em + 0.5vw); // Междустрочный интервал увеличивается вместе со шрифтом
-  height: calc(100vw * (9/16)); // Междустрочный интервал увеличивается вместе со шрифтом
-}
+body {min-height: 100vh; min-width: 100vh;}
 p {font-family: "Proxima Nova Regular"; font-weight: normal; font-size: 15px;
   line-height: 1.67; letter-spacing: 0.38px;
 }
@@ -38,7 +30,11 @@ span {font-family: "Proxima Nova Bold";}
 img {user-select: none;}
 ul {list-style: none;}
 button {font-family: "Proxima Nova Bold"; font-size: 14px; background-color: transparent;}
+h1 {font-family: "Proxima Nova Bold"; font-size: 100px; display: block; 
+  letter-spacing: 20px; color: #bea67c;
+}
 h2 {font-family: "Proxima Nova Bold"; font-size: 48px; letter-spacing: 3.36px; white-space: nowrap;}
+iframe {border: 0px;}
 summary {list-style-type: none;}
 // Накладывает темный цвет на задний фон header и main_demonstration
 .img-overlay {
@@ -47,7 +43,7 @@ summary {list-style-type: none;}
   background: #000000;
   opacity: 0.9;
 }
-/* Миксины */
+/* Миксины  (!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!) */ 
 @mixin fontfamily{ // Устанавливает шрифты по умолчанию для всего текста. Макет делался с упором на Proxima.
   font-family: "Proxima Nova", sans-serif, Tahoma, Geneva, Georgia, Verdana;
   font-display: fallback;
@@ -55,7 +51,7 @@ summary {list-style-type: none;}
   font-weight: normal;
   text-rendering: optimizeLegibility;
 }
-// Share button header
+// Share button header and footer
 .share, .share_2 {margin: 0 0px 0 1869px; display: block; 
   border: none; border-radius: 5px;
   .fa-solid {cursor: pointer; color: #ffa200; font-size: 27px;}
@@ -65,16 +61,17 @@ summary {list-style-type: none;}
       transition: all 0s ease;}
 }
 // Share button footer
-.share_2 {margin: 0 0px 0 1569px;
-  .fa-solid {color: #fff;}
+ .share_2 {margin: 0 0px 0 0px;
+  .fa-solid {color: #fff;
+    &:hover {color: #ffa200; filter: opacity(1) drop-shadow(0 0 0 #fff);
+      transition: all 1s ease;}
+  }
 }
 // Блок-уведомление о копировании ссылки на страницу
 // Выходит при нажатии на кнопку share внизу header
 .copy-notification {
-  // color: #ffffff;
   color: #000;
   background-color: #bea67c;
-  // background-color: rgba(0,0,0,0.8);
   padding: 20px;
   border-radius: 30px;
   position: fixed;
@@ -92,6 +89,7 @@ summary {list-style-type: none;}
 .header {width: 100%; height: 1043px;
     display: block;
     padding: 30px 0px 0px 0px;
+    @include fontfamily();
     // Backgrounds
     .left-block {
       position: absolute; 
@@ -109,7 +107,7 @@ summary {list-style-type: none;}
       background: url("/img/wood_background2.webp") no-repeat;
       -webkit-background-size: cover; background-size: cover; background-position: center;
     }
-    //Блок,выходящий при прокрутке страницы от 1043px в высоту
+    // Блок,выходящий при прокрутке страницы от 1043px в высоту
     .__fixednav { 
       background: rgba(0,0,0,0.8);
       position: fixed;
@@ -173,7 +171,7 @@ summary {list-style-type: none;}
         a {cursor: pointer; display: flex;}
         img {vertical-align: top; margin-top: -4px;}
       } // menu-wooder-logo end
-      &-items {display: flex; height: 26px;  padding-left: 100px;  margin-right: 250px;
+      &-items {display: flex; height: 26px;  padding-left: 100px;  margin-right: 252px;
         a {align-items: center; padding-right: 117px;  
           &:hover {filter: opacity(1) drop-shadow(0 0 0 #fff);
           transition: all 1s ease;}
@@ -182,13 +180,13 @@ summary {list-style-type: none;}
         }
         #menu_products {padding-right: 95px;}
       } // menu-items end
-      &-info {display: flex; height: 23px;
+      &-info {display: flex; height: 21px;
         button {cursor: pointer; display: flex; border: none;
-          overflow: visible; border-radius: 15px;
-          &:hover {background-color: #a9946e;
-          transition: all 0s ease; border-radius: 15px;}
+          overflow: visible; border-radius: 13px; position: relative;
+          .fa-solid {position: relative; color: gray; font-size: 21px;}
+          &:hover {background-color: #fff;
+          transition: all 0s ease; border-radius: 10px;}
         }
-        img {cursor: pointer; position: relative;}
         .info-popup {width: 130px; height: 70px; user-select: none;
           position: absolute;
           padding: 0px; margin-top: 15px; margin-left: -130px; 
@@ -223,16 +221,13 @@ summary {list-style-type: none;}
       } //block1 end
       .wooder_block {display: block;
         padding: 34px 0 0 16px; margin: 0 255px 0 0;
-        h1 {font-family: "Proxima Nova Bold";
-          font-size: 100px; display: block; 
-          letter-spacing: 20px; color: #bea67c; 
-        }
+        
         .wooder_info {width: 308px; height: 58px; 
             margin: 33px 0 0 4px; padding: 2px 0px 0 85px;
             display: flex; align-items: center; border: 1px solid white;
             letter-spacing: 2.8px; color: #fff;
             margin-right: 0px;
-            img {margin: 0 0 2px 4px; }
+            img {margin: 0 0 2px 4px;}
             // wooder-info hover & active
             &:hover {filter: opacity(1) drop-shadow(0 0 0 #bea67c);
               transition: all 2s ease;
@@ -247,11 +242,10 @@ summary {list-style-type: none;}
             }
         }
       } //wooder_block end
-      .furniture-decore {display: block; width: 10px; height: 98px;
-        margin: 22px 0 0 0;
-        white-space: nowrap; transform:rotate(90deg);
-        user-select: none;
-        span {margin: 0 10px 0 0px; font-size: 15px; color: rgba(190, 166, 124, 0.2);}
+      .furniture-decore {display: block; width: 10px; height: 55px;
+        margin: 42px 0px 0 0px;
+        white-space: nowrap; transform:rotate(90deg); user-select: none;
+        span {margin: 0 17px 0 0px; font-size: 15px; color: rgba(190, 166, 124, 0.2);}
         .furn {letter-spacing: 1.7px;}
         .dec {letter-spacing: 1.8px;}
       } // furniture-decore end
@@ -366,7 +360,6 @@ summary {list-style-type: none;}
       .lines {display: block;height: 570px;
         padding: 132px 0 0 18px; 
         img {display: block; margin: 0 0 54px 0;}
-        .line_2 {margin: 0 0 0 0px;}
         span {display: flex; margin: 143px 0 23px 0px;
           padding: 0 0 0 86px; user-select: none;
           font-size: 36px; line-height: 2.78;
@@ -466,23 +459,109 @@ summary {list-style-type: none;}
         } // video-block end
     } // videos end
   } // main-quality end
-  &-demonstration {
-    width: 100%; height: 916px;
-    background: url("/img/wedodesign_background.webp");
-    -webkit-background-size: cover; background-size: cover; background-position: center;
-    z-index: -1;
+  &-demonstration {display: flex;
+    width: 100%; height: 916px; 
+    background: url("/img/wedodesign_background.webp") center center; background-size: cover;
+    &-wrapper {position: absolute; display: flex;
+      width: 1560px; height: 737px; z-index: 2;
+      margin: 90px 178px 89px 186px;
+      border: 1px solid #bea67c;
+      &-content {display: flex; padding: 202px 0 0 209px; z-index: 2; 
+        .lines {display: block; padding: 28px 0 0 0;
+          img {display: block; margin: 0 0 136px 0;}
+          .line_2 {margin: 0 0 0 108px;}
+        }
+        .wedodesign {display: inline-block; height: 290px; 
+          padding: 0px 0 0 25px; color: white;
+          h2 {width: 510px;
+            display: flex; white-space: pre-wrap;
+            font-size: 48px; 
+            line-height: 1.25; letter-spacing: 1.2px;
+          }
+          p {width: 408px; height: 94px; margin: 34px 0 0 4px; display: flex;}
+          button {width: 306px; height: 58px; 
+              margin: 45px 0 0 4px; padding: 0px 0px 0 0px; 
+              display: flex; position: absolute; 
+              justify-content: center; align-items: center;
+              border: 1px solid #fff;
+              .fa-regular {font-size: 25px; background-color: transparent; 
+               padding: 0 9px 0 0;}
+              .fa-circle-play {color: white; font-size: 25px;}
+              span {font-size: 14px; letter-spacing: 2.8px; color: #fff;
+                padding: 0 0 0 0px;
+              }
+              // button after/hover/active
+              &:hover {
+                background-color: #000; transition: all 0.5s ease;
+                border: 1px solid #bea67c;
+                .fa-circle-play {color: red; transition: all 1s ease;}
+                span {color: #bea67c; transition: all 1s ease;}
+              }
+              &:active {
+                span {color: #ffa600; transition: all 0s ease;}
+                .fa-circle-play {color: gray; transition: all 0s ease;}
+              }
+            } //button end
+          } // wedodesign end
+        .vert_line {margin: 0 0 0 551px; padding: 90px 0 0 0;}
+      } // main-demonstration-wrapper-content end
+    }
   } // main-demonstration end
-  &-about-us {width: 100%; height: 663px;
-  
-  } // main-about-us
+  &-about-us {width: 100%; height: 663px; 
+    padding: 138.8px 485px 124px 392.9px; 
+    display: flex;
+    .imgs {display: block; width: 620px; height: 400.3px;
+      background: url("/img/aboutus_bg.webp") no-repeat center top / cover;
+    }
+    .asl {position: absolute; margin: 114px 0 0 505px;}
+    .line_2 {position: relative; margin: 169px 0 0 25px;}
+    &-content {display: inline-block; height: 360px; padding: 89px 0 0 28px; 
+      h2 {margin-bottom: 11px;}
+      p {width: 340px; height: 50px; margin: 0 0 0 0px; display: block;
+        line-height: 1.67; letter-spacing: 0.38px;
+        &:nth-child(2) {
+          margin: 0 0 0 0; padding: 0 0 0 0;
+        }
+      }
+      .about_us_info {width: 172px; height: 16px; 
+          margin: 0px 0 0 0px; padding: 0px 8px 0 0;
+          display: inline-block; position: absolute; border: none;
+          span {font-size: 14px; letter-spacing: 2.8px; color: rgb(0, 0, 0);}
+          .lal {margin: 0px 0 0 0px;}
+          // furniture_info after/hover/active
+          &:after {
+            content: ''; top: 6px;
+            position: relative; display: block;
+            margin: 0 0 0 4px;
+            width: 44px; height: 2px;
+            background: #a9946e;
+          }
+          &:hover {
+            span {color: #bea67c; transition: all 1s ease; }
+            img {filter: invert(100%); transition: all 1s ease;}
+          }
+          &:active {
+            span {color: #ffa600; transition: all 0s ease; }
+            img {filter: opacity(1) drop-shadow(0 0 0 #ffa60059);}
+          }
+        } // .about_us_info end
+      .lal2 {display: inline-block; width: 44px; height: 2px; 
+        position: relative;
+        background: url("/img/line_after_learnmore.webp");
+      margin: 40px 0 0 2px;
+      }
+    } //main-about-us-content end
+  } // main-about-us end
 } // main end
 // Footer
-.footer {display: flex; width: 100%;
+.footer {display: flex; width: 100%; padding: 12px 0 0 0;
   height: 68px; background-color: #000;
-  span {font-size: 15px; font-family: "Proxima Nova Regular";}
-  &-wooder-logo {
-    display: flex; height: 26px; position: relative; flex-wrap: nowrap;
-    a {color: #fff;}
-
-  }
+  span {font-size: 15px; font-family: "Proxima Nova Regular";
+    line-height: 1.67; letter-spacing: 0.38px; color: #fff;
+    margin: 0 370px 0 380px; padding-top: 12px;}
+    a {color: #fff; font-size: 30px; 
+      letter-spacing: 9px; margin: 0 564px 0 0px;
+      user-select: none;
+    }
+  img {position: absolute; margin: 21px 0 0 915px; user-select: none; cursor: pointer;}
 } // footer end
