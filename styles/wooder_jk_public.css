@@ -51,7 +51,7 @@ div {
 h1 {
   display: block;
   font-family: "Proxima Nova Bold";
-  font-size: 100px;
+  font-size: 100px !important;
   letter-spacing: 20px;
   color: #bea67c;
 }
@@ -701,8 +701,8 @@ iframe {
 }
 .main-quality .close_block {
   position: fixed;
-  top: 160px;
-  right: 620px;
+  top: 20px;
+  right: 20px;
   width: 43.75px;
   height: 70px;
   z-index: 1001;
