@@ -1,6 +1,6 @@
 // Определение Jquery 
-var jquery = require("jquery");
-window.$ = window.jQuery = jquery; // notice the definition of global variables here
+// If you dont' use node.js comment var line
+var jquery = require("jquery"); window.$ = window.jQuery = jquery;  
 // Импортирование стилей
 import '/styles/wooder_jk_parcel.scss'; // Comment, if don't use parcel
 // Функция переключения класса навигации на фиксированный при скролле
