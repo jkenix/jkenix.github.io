@@ -39,6 +39,28 @@ body {
   min-height: 100vh;
   min-width: 100vh;
   font-size: calc(16px + 1vw);
+  margin: 0 auto;
+  padding: 0;
+  width: 1903px;
+}
+
+div {
+  font-family: "Proxima Nova Bold";
+}
+
+h1 {
+  display: block;
+  font-family: "Proxima Nova Bold";
+  font-size: 100px;
+  letter-spacing: 20px;
+  color: #bea67c;
+}
+
+h2 {
+  font-family: "Proxima Nova Bold";
+  font-size: 48px !important;
+  letter-spacing: 3.36px;
+  white-space: nowrap;
 }
 
 p {
@@ -55,8 +77,10 @@ a {
   white-space: nowrap;
 }
 
-div {
+button {
   font-family: "Proxima Nova Bold";
+  font-size: 14px !important;
+  background-color: transparent;
 }
 
 span {
@@ -71,33 +95,12 @@ ul {
   list-style: none;
 }
 
-button {
-  font-family: "Proxima Nova Bold";
-  font-size: 14px;
-  background-color: transparent;
-}
-
-h1 {
-  font-family: "Proxima Nova Bold";
-  font-size: 100px;
-  display: block;
-  letter-spacing: 20px;
-  color: #bea67c;
-}
-
-h2 {
-  font-family: "Proxima Nova Bold";
-  font-size: 48px;
-  letter-spacing: 3.36px;
-  white-space: nowrap;
+summary {
+  list-style-type: none;
 }
 
 iframe {
   border: 0px;
-}
-
-summary {
-  list-style-type: none;
 }
 
 .img-overlay {
@@ -108,7 +111,7 @@ summary {
 }
 
 .share, .share_2 {
-  margin: 0 0px 0 1869px;
+  margin: 0 0px 0 1669px;
   display: block;
   border: none;
   border-radius: 5px;
@@ -161,32 +164,7 @@ summary {
   height: 1043px;
   display: block;
   padding: 30px 0px 0px 0px;
-}
-.header .left-block {
-  position: absolute;
-  width: 100%;
-  max-width: 1050px;
-  height: 1001px;
-  z-index: -1;
-  left: 0px;
-  top: 0px;
-  background: url("/img/wood_background1.webp") no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
-}
-.header .right-block {
-  position: absolute;
-  width: 100%;
-  max-width: 853px;
-  height: 1043px;
-  z-index: -1;
-  right: 0px;
-  top: 0px;
-  background: url("/img/wood_background2.webp") no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
+  background: url("/img/main_bg_wood.webp") no-repeat;
 }
 .header .__fixednav {
   background: rgba(0, 0, 0, 0.8);

@@ -2,12 +2,24 @@
 // Требуется так же файл normalize.css для работы с макетом. // It also requires a normalize.css file to work with the layout.
 // P.S. I'm new developer. Do not judge strictly!
 // ====== Кастомные шрифты: (Custom fonts) ====== \\
-@font-face {font-display: fallback;text-rendering: optimizeLegibility; 
-  font-family: "Proxima Nova Bold";src:url(/fonts/proximanova_bold.woff) format("woff");}
-@font-face {font-display: fallback;text-rendering: optimizeLegibility; 
-  font-family: "Proxima Nova Light";src:url(/fonts/proximanova_light.woff) format("woff");}
-@font-face {font-display: fallback;text-rendering: optimizeLegibility; 
-  font-family: "Proxima Nova Regular";src:url(/fonts/proximanova_regular.woff) format("woff");}
+@font-face {
+  font-display: fallback;
+  text-rendering: optimizeLegibility; 
+  font-family: "Proxima Nova Bold";
+  src:url(/fonts/proximanova_bold.woff) format("woff");
+}
+@font-face {
+  font-display: fallback;
+  text-rendering: optimizeLegibility; 
+  font-family: "Proxima Nova Light";
+  src:url(/fonts/proximanova_light.woff) format("woff");
+}
+@font-face {
+  font-display: fallback;
+  text-rendering: optimizeLegibility; 
+  font-family: "Proxima Nova Regular";
+  src:url(/fonts/proximanova_regular.woff) format("woff");
+}
 /* Resets */
 * {margin: 0; padding: 0;}
 *, *:before, *:after {
@@ -21,24 +33,43 @@
 $shadow: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.25));
 /* Global */
 html {scroll-behavior: smooth;}
-body {min-height: 100vh; min-width: 100vh; font-size: calc(16px + 1vw);}
-p {font-family: "Proxima Nova Regular"; font-weight: normal; font-size: 15px;
+body {
+  min-height: 100vh; min-width: 100vh; 
+  font-size: calc(16px + 1vw);
+  margin: 0 auto; padding: 0;
+  width: 1903px;
+}
+div {font-family: "Proxima Nova Bold";}
+h1 {
+  display: block;
+  font-family: "Proxima Nova Bold"; font-size: 100px;  
+  letter-spacing: 20px; color: #bea67c;
+}
+h2 {
+  font-family: "Proxima Nova Bold"; 
+  font-size: 48px !important; 
+  letter-spacing: 3.36px; 
+  white-space: nowrap;
+}
+p {
+  font-family: "Proxima Nova Regular"; 
+  font-weight: normal; font-size: 15px;
   line-height: 1.67; letter-spacing: 0.38px;
 }
-a {text-decoration: none !important; font-family: "Proxima Nova Bold"; 
-  white-space: nowrap;}
-div {font-family: "Proxima Nova Bold";}
+a {
+  text-decoration: none !important; 
+  font-family: "Proxima Nova Bold"; 
+  white-space: nowrap;
+}
+button {
+  font-family: "Proxima Nova Bold"; font-size: 14px !important; 
+  background-color: transparent;
+}
 span {font-family: "Proxima Nova Bold";}
 img {user-select: none;}
 ul {list-style: none;}
-button {font-family: "Proxima Nova Bold"; font-size: 14px; background-color: transparent;}
-h1 {font-family: "Proxima Nova Bold"; font-size: 100px; display: block; 
-  letter-spacing: 20px; color: #bea67c;
-}
-h2 {font-family: "Proxima Nova Bold"; font-size: 48px; 
-  letter-spacing: 3.36px; white-space: nowrap;}
-iframe {border: 0px;}
 summary {list-style-type: none;}
+iframe {border: 0px;}
 // Накладывает темный цвет на задний фон header и main_demonstration 
 // Overlays a dark color on the background of the header and main demonstration
 .img-overlay {
@@ -49,7 +80,7 @@ summary {list-style-type: none;}
 }
 // Share button header and footer
 .share, .share_2 {
-  margin: 0 0px 0 1869px; display: block; 
+  margin: 0 0px 0 1669px; display: block; 
   border: none; border-radius: 5px;
   .fa-solid {cursor: pointer; color: #ffa200; font-size: 27px;}
     &:hover {filter: opacity(1) drop-shadow(0 0 0 #fff);
@@ -87,24 +118,8 @@ summary {list-style-type: none;}
 .header {
     width: 100%; height: 1043px;
     display: block;
-    padding: 30px 0px 0px 0px;
-    // Backgrounds
-    .left-block {
-      position: absolute; 
-      width: 100%;
-      max-width: 1050px; height: 1001px;
-      z-index: -1;  left: 0px; top: 0px;
-      background: url("/img/wood_background1.webp") no-repeat;
-      -webkit-background-size: cover;background-size: cover; background-position: center;
-         
-    }
-    .right-block {
-      position: absolute;  width: 100%;
-      max-width: 853px; height: 1043px;
-      z-index: -1;  right: 0px; top: 0px;
-      background: url("/img/wood_background2.webp") no-repeat;
-      -webkit-background-size: cover; background-size: cover; background-position: center;
-    }
+    padding: 30px 0px 0px 0px; 
+    background: url("/img/main_bg_wood.webp") no-repeat;
     // Блок, выходящий при прокрутке страницы от 1043px в высоту
     // Block exiting when scrolling the page from 1043px in height
     .__fixednav { 
