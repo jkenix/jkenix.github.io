@@ -1,3 +1,3 @@
-/* @import "/styles/wooder_jk_public.css"; */ /* Uncomment, if don't use parcel*/
+@import "/styles/wooder_jk_public.css"; /* Uncomment, if don't use parcel*/
 @import "/styles/bootstrap_min.css"; @import "/styles/normalize.css"; 
-@import "/styles/all.min.css"; /* Comment, if don't use parcel */
+@import "/styles/all.min.css";

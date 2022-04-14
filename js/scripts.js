@@ -1,8 +1,8 @@
 // Определение Jquery 
 // If you dont' use node.js comment var line
-var jquery = require("jquery"); window.$ = window.jQuery = jquery;  
+// var jquery = require("jquery"); window.$ = window.jQuery = jquery;  
 // Импортирование стилей
-import '/styles/wooder_jk_parcel.scss'; // Comment, if don't use parcel
+// import '/styles/wooder_jk_parcel.scss'; // Comment, if don't use parcel
 // Функция переключения класса навигации на фиксированный при скролле
 $(function($) {
     $(window).scroll(function(){
