@@ -4,6 +4,7 @@
 // Импортирование стилей // Import styles
 // import '/styles/wooder_jk_parcel.scss'; // Comment, if don't use parcel
 // Функция переключения класса навигации на фиксированный при скролле
+// Function to switch navigation class to fixed on scroll
 $(function($) {
     $(window).scroll(function(){
         if($(this).scrollTop()>1043){
@@ -16,7 +17,7 @@ $(function($) {
         }
     });
 });
-// Функция показа инфо о разработчике
+// Функция показа инфо о разработчике // Function to show info about the developer
 const infC = document.querySelector('.menu-info .info');
 infC.onmouseover = function(){
   let infK = document.querySelector('.info-popup');
@@ -136,3 +137,17 @@ cb4.onclick = function(){
     let vpbc4 = document.querySelector('.video_play_block');
     vpbc4.classList.remove('__open');
 }
+// Скрипт закрытия блока с видео по нажатию на свободную область
+// Script for closing a block with a video by clicking on a free area
+$(document).mouseup(function (e){
+    var div = $('.video_play_block');
+    if (div.is(e.target) 
+        && div.has(e.target).length === 0) { 
+        $(".video_play_block").removeClass('__open');
+        $(".close_block").removeClass('__show');
+        $(".video_play_block").click(function (event) {
+            event.preventDefault();
+            CopyToClipboard("", true, "Thanks!");
+        });
+    }
+});
