@@ -20,7 +20,7 @@
 //     padding: 0;
 // }
 // Variables
-$shadow: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.25));
+$shadow: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
 // Mixins
 // Center flex
 @mixin flexc() {display: flex; justify-content: center; align-items: center;}
@@ -28,7 +28,7 @@ $shadow: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.25));
 html {scroll-behavior: smooth;}
 body {
   // min-height: 100vh; min-width: 100vh; 
-  font-size: calc(16px + 1vw);
+  // font-size: calc(16px + 1vw);
   // margin: 0 auto; padding: 0;
   // width: 1903px;
 }
@@ -81,7 +81,13 @@ header {
     .nav-items {
       @include flexc();
       max-width: 646px; height: 80px;
-       a {margin: 0 41px 0 0; color: #222222}
+       a {
+        font-size: 14px;
+        margin: 0 41px 0 0; 
+        color: #222222;
+        &:hover {transition: 0s all; color: #6f42c1; font-weight: 900;}
+        &:active {transition: 0s all; color: #5231FF; font-weight: 900;}
+      }
     }
   }
 }
@@ -101,24 +107,81 @@ header {
     }
     h2 {
       height: 50px;
-      margin: 0 0 3.4rem 0; 
+      margin: 0 0 44px 0; 
       font-size: 2.438rem; 
-      color:#3B3B3B
+      color:#3B3B3B;
     }
     .homepages {
       display: flex; justify-content: space-between;
+      .button_homepage {
+        @include flexc();
+        width: 120px; max-height: 28px;
+        color: #fff;
+        background-color: #5231FF;
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 1px;
+        margin: 6px 0 20px 0;
+        border-radius: 5px;
+          &:hover {
+            transition: 1s all; background-color: #111; 
+            font-weight: 900;
+          }
+          &:active {
+            transition: 0s all; background-color: #fff;
+            color: #111; font-weight: 900;
+          }
+      }
       img {
-        display: block;  
-        max-width: 100%; height: auto;
-        object-fit: cover;
+        max-width: 100%; object-fit: cover;
         filter: $shadow;
+        margin-bottom: 32px;
+      }
+      .homepages-block {
+        display: flex; flex-wrap: wrap;
+        max-width: 610px; 
+      }
+      .block_1 {
+        justify-content: center; 
+        padding: 0px 39px 0 40px;
+      }
+      .block_2 {
+        align-items: center;
+        justify-content: space; flex-direction: column;
+        padding: 0 20px 20px 0px;
       }
     }
    
   }
 }
 // Media
-@media (max-width: 981px) and (min-width: 767px) {
+@media (max-width: 1180px) {
+  .main .homepages {
+    // justify-content: start;
+    width: 1100px;
+  }
+}
+@media (max-width: 1100px) {
+  .main .homepages {
+    width: 1000px;
+    .block_1 {width: 610px; padding: 0 20px 0 20px;}
+  }
+}
+@media (max-width: 1000px) { 
+  .main .homepages {
+    width: 100%;
+    flex-direction: column;
+      .homepages-block {
+        max-width: 100%;
+          button {max-width: 100%;}
+      }
+      .block_1 { width: 100%; align-items: center;
+        justify-content: space; flex-direction: column;}
+  }
+  
+}
+@media (max-width: 981px) {
   header {
     padding: 0 0 5.626rem 2.5rem;
   }
@@ -132,19 +195,26 @@ header {
     text-align: center;
       .nav-items {
         justify-content: center;
-        padding: 0 0px 0 0;
-        //  a {padding: 0rem 1.5rem 0 1.5rem;}
+        padding: 0 0px 0 60px;
       }
+      a {padding: 0 10px 0 0;}
   }
 }
 @media (max-width: 635px) {
   .header .header-nav { 
     width: 450px; 
     .nav-items {
+      justify-content: space-between;
+      padding:0;
       a {padding: 0.6rem; width: auto; height: auto; margin: 0;}
     }
   }
 }
+// Уменьшение изображений
+@media (max-width: 585px) {
+
+}
+// Конец медиа с уменьшением изображений
 @media (max-width: 460px) {
   header {
     display: flex; 
@@ -159,8 +229,33 @@ header {
       height: 100px; width: 355px;
       padding: 0px 0 0 0;
       display: flex; flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-around;
        a {padding: 0rem 1rem 0rem 1rem; }
     }
+  }
+}
+@media (max-width: 362px) {
+  .header .header-nav .nav-items {
+    width: 280px;
+  }
+}
+@media (max-width: 295px) { 
+  .header .header-nav .nav-items {
+    width: 200px;
+  }
+}
+@media (max-width: 200px) { 
+  header {
+    display: flex; 
+    padding: 1.25rem 0rem 5rem 0rem;
+  }
+  .header .header-nav .nav-items {
+    width: 130px;
+  }
+  .main span {
+    display: block; height: 26px;
+    font-size: 1rem;
+    margin: 0 0 1.625rem 0;
+    color: #7C8499; 
   }
 }
