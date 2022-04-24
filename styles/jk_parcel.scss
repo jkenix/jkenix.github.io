@@ -48,6 +48,7 @@ p {
 a {
   font-family: "Bitter Regular";
   text-decoration: none !important; 
+  color: #000;
 }
 button {
 
@@ -59,7 +60,22 @@ img {user-select: none;}
 ul {list-style: none;}
 summary {list-style-type: none;}
 iframe {border: 0px;}
-
+// Modal
+.modal-body-contact {
+  display: flex;
+  justify-content: space-around;
+  span {margin-bottom: 10px;}  
+  .fa-github {color: #000; margin-right: 10px;}
+  .fa-youtube {color: red; margin-right: 10px;}
+}
+.modal-body-about {
+  @include flexc();
+  span {margin-bottom: 10px;}
+  .fa-figma {color: #000;}
+  a {color: #5231FF;
+    &:hover {color: #0a58ca; .fa-figma {color: #0059ff;}}
+  }
+}
 // Header
 header {
   padding: 1.25rem calc(7.5rem + 1.5vw) 5.626rem calc(7.5rem + 1.5vw);
@@ -92,11 +108,11 @@ header {
   }
 }
 .main {
-  width: 100%; height: 3618px;
+  width: 100%; height: 100%;
   &-home-pages {
     margin: 0 auto;
     width: 100%; max-width: 1200px;
-    height: 2341px;
+    height: 100%;
     display: flex; justify-content: start;
     flex-flow: column; text-align: center; 
     span {
@@ -112,12 +128,11 @@ header {
       color:#3B3B3B;
     }
     .homepages {
-      display: flex; justify-content: space-between;
+      width: 100%;
+      justify-content: space-between;
       .button_homepage {
         @include flexc();
         width: 120px; max-height: 28px;
-        color: #fff;
-        background-color: #5231FF;
         font-size: 9px;
         font-weight: 400;
         line-height: 28px;
@@ -148,17 +163,19 @@ header {
       }
       .block_2 {
         align-items: center;
-        justify-content: space; flex-direction: column;
-        padding: 0 20px 20px 0px;
+        flex-direction: column;
+        padding: 0 20px 0px 0px;
       }
     }
    
   }
 }
+.footer {
+  display: block; position: relative;
+}
 // Media
 @media (max-width: 1180px) {
   .main .homepages {
-    // justify-content: start;
     width: 1100px;
   }
 }
@@ -168,22 +185,22 @@ header {
     .block_1 {width: 610px; padding: 0 20px 0 20px;}
   }
 }
-@media (max-width: 1000px) { 
+@media (max-width: 1015px) { 
   .main .homepages {
-    width: 100%;
+    width: 100%; 
     flex-direction: column;
       .homepages-block {
-        max-width: 100%;
+        max-width: 100%; 
           button {max-width: 100%;}
       }
-      .block_1 { width: 100%; align-items: center;
+      .block_1 { width: 100%; align-items: center; 
         justify-content: space; flex-direction: column;}
   }
   
 }
 @media (max-width: 981px) {
   header {
-    padding: 0 0 5.626rem 2.5rem;
+    padding: 1.25rem 0 5.626rem 2.5rem;
   }
 }
 @media (max-width: 766px) {
@@ -211,8 +228,8 @@ header {
   }
 }
 // Уменьшение изображений
-@media (max-width: 585px) {
-
+@media (max-width: 586px) {
+.main-home-pages img .homepages img {width: 200;}
 }
 // Конец медиа с уменьшением изображений
 @media (max-width: 460px) {
@@ -246,16 +263,12 @@ header {
 }
 @media (max-width: 200px) { 
   header {
-    display: flex; 
     padding: 1.25rem 0rem 5rem 0rem;
   }
   .header .header-nav .nav-items {
     width: 130px;
   }
   .main span {
-    display: block; height: 26px;
-    font-size: 1rem;
     margin: 0 0 1.625rem 0;
-    color: #7C8499; 
   }
 }
