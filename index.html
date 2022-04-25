@@ -27,20 +27,20 @@
         <a href="#">Pages</a>
         <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal_About">About</a>
         <a href="#">Blog</a>
-        <a href="#"  data-bs-toggle="modal" data-bs-target="#exampleModal_Contact">Contact</a> <!-- class="m-contact" -->
+        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal_Contact">Contact</a> 
         <a href="#"><img src="/img/fb.webp" width="35.99" height="35.99" alt="facebook logo"></a>
       </div>
     </div>
       <div class="modal fade" id="exampleModal_Contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog ">
+        <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body modal-body-contact flex-wrap">
-              <span><a href="https://github.com/jkenix"><i class="fa-brands fa-github"></i>Github</a></span>
-              <span><a href="https://github.com/jkenix/jkenix.github.io"><i class="fa-brands fa-github"></i>Github Repo of this page</a></span>
-              <span><a href="https://www.youtube.com/channel/UC22MYJStT6bDNPdSzFIzDqQ"><i class="fa-brands fa-youtube"></i>My Youtube Channel (For fun)</a></span>
+              <span><a class="page-link" href="https://github.com/jkenix"><i class="fa-brands fa-github"></i>Github</a></span>
+              <span><a class="page-link"href="https://github.com/jkenix/jkenix.github.io"><i class="fa-brands fa-github"></i>Github Repo of this page</a></span>
+              <span><a class="page-link"href="https://www.youtube.com/channel/UC22MYJStT6bDNPdSzFIzDqQ"><i class="fa-brands fa-youtube"></i>My Youtube Channel (For fun)</a></span>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
@@ -55,42 +55,43 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body modal-body-about flex-column">
-              <span>Designed by jkenix.</span>
-              <a href="https://www.figma.com/file/QAXy6olwXzRISfbiVlnVCA/Evelin?node-id=0%3A1"><i class="fa-brands fa-figma"></i> Original layout</a>
+              <span>Designed by <strong>jkenix</strong>.</span>
+              <a class="page-link" href="https://www.figma.com/file/QAXy6olwXzRISfbiVlnVCA/Evelin?node-id=0%3A1">Original layout</a>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
+      </div>
   </header>
   <main class="main">
     <div class="main-home-pages">
       <span>Our Portfolio Layouts</span>
       <h2>6 Home Pages</h2>
-      <div class="homepages d-flex">
+      <div class="homepages d-flex shadow">
         <div class="homepages-block block_1">
-          <button class="button_homepage btn btn-primary">HOMEPAGE 1</button>
-          <img src="/img/homepage1.webp" width="531" height="600" alt="homepage 1 image">
-          <button class="button_homepage btn btn-primary">HOMEPAGE 4</button>
-          <img src="/img/homepage4.webp" width="531" height="600" alt="homepage 4 image">
-          <button class="button_homepage btn btn-primary">HOMEPAGE 6</button>
-          <img src="/img/homepage6.webp" width="531" height="600" alt="homepage 6 image">
+          <button class="btn_homepage btn btn-primary"><a href="#">HOMEPAGE 1</a></button>
+          <a href="#"><img src="/img/homepage1.webp" width="531" height="600" alt="homepage 1 image"></a>
+          <button class="btn_homepage btn btn-primary">HOMEPAGE 4</button>
+          <a href="#"><img src="/img/homepage4.webp" width="531" height="600" alt="homepage 4 image"></a>
+          <button class="btn_homepage btn btn-primary">HOMEPAGE 6</button>
+          <a href="#"><img src="/img/homepage6.webp" width="531" height="600" alt="homepage 6 image"></a>
         </div>
         <div class="homepages-block block_2">
-          <button class="button_homepage btn btn-primary">HOMEPAGE 2</button>
+          <button class="btn_homepage btn btn-primary">HOMEPAGE 2</button>
           <img src="/img/homepage2.webp" width="531" height="270" alt="homepage 2 image">
-          <button class="button_homepage btn btn-primary">HOMEPAGE 3</button>
+          <button class="btn_homepage btn btn-primary">HOMEPAGE 3</button>
           <img src="/img/homepage3.webp" width="531" height="600" alt="homepage 3 image">
-          <button class="button_homepage btn btn-primary">HOMEPAGE 5</button>
+          <button class="btn_homepage btn btn-primary">HOMEPAGE 5</button>
           <img src="/img/homepage5.webp" width="531" height="600" alt="homepage 5 image">
         </div>
       </div>
     </div>
   </main>
-  <footer class="absolute-bottom">
+  <footer>
     <span>Created by Dmitriy "jkenix" </span>
-    <span>Evelin All right reserved/ Powered by Practice</span>
+    <span>Evelin All right reserved/ Powered by Github Pages</span>
   </footer>
 <script src="/js/scripts.js"></script> 
 </body>
