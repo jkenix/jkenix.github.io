@@ -143,6 +143,7 @@ header {
         letter-spacing: 1px;
         margin: 6px 0 20px 0;
         border-radius: 5px;
+          a {color:#fff;}
           &:hover {
             transition: 1s all; background-color: #111; 
             font-weight: 900;
@@ -154,7 +155,9 @@ header {
           }
       }
       img {
-        max-width: 100%; object-fit: cover;
+        height: auto;
+        display: block; 
+        width: 100%;
         margin-bottom: 32px;
       }
       .homepages-block {
@@ -168,7 +171,7 @@ header {
       .block_2 {
         align-items: center;
         flex-direction: column;
-        padding: 0 20px 0px 0px;
+        padding: 0 20px 0px 20px;
       }
     }
    
@@ -183,13 +186,13 @@ header {
     width: 1100px;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1115px) {
   .main .homepages {
-    width: 1000px;
+    width: 1050px;
     .block_1 {width: 610px; padding: 0 20px 0 20px;}
   }
 }
-@media (max-width: 1015px) { 
+@media (max-width: 1066px) { // Скрипт скролла ломается
   .main .homepages {
     width: 100%; 
     flex-direction: column;
@@ -197,10 +200,12 @@ header {
         max-width: 100%; 
           button {max-width: 100%;}
       }
-      .block_1 { width: 100%; align-items: center; 
-        justify-content: space; flex-direction: column;}
+      .block_1, .block_2 { // Увеличение изображений
+        width: 100%; align-items: center; 
+        flex-direction: column;
+         img {width: 600px;}
+      }
   }
-  
 }
 @media (max-width: 981px) {
   header {
@@ -212,7 +217,7 @@ header {
   .header .header-nav {
     display: block;
     height: 100%;  
-    width: 650px;
+    width: 610px;
     text-align: center;
       .nav-items {
         justify-content: center;
@@ -221,9 +226,16 @@ header {
       a {padding: 0 10px 0 0;}
   }
 }
+@media (max-width: 665px) { // Уменьшение изображений
+  .main .homepages {
+  .block_1, .block_2 { 
+      img {width: 550px;}
+    }
+  }
+}
 @media (max-width: 635px) {
   .header .header-nav { 
-    width: 450px; 
+    width: 440px; 
     .nav-items {
       justify-content: space-between;
       padding:0;
@@ -231,38 +243,55 @@ header {
     }
   }
 }
-// Уменьшение изображений
-@media (max-width: 586px) {
-.main-home-pages img .homepages img {width: 200;}
+@media (max-width: 586px) { // Уменьшение изображений
+  .main .homepages {
+    .block_1, .block_2 { 
+        img {width: 400px;}
+      }
+    }
 }
-// Конец медиа с уменьшением изображений
 @media (max-width: 460px) {
   header {
     display: flex; 
-    padding: 1.25rem 0rem 2rem 0rem;
+    padding: 1.25rem 0rem 5.626rem 0rem;
   }
   .header .header-nav { 
     @include flexc();
     height: 180px;
     flex-wrap: wrap;
-    margin: 0px 0 0 3px;
+    margin: 0px 0 0 5px;
     .nav-items {
-      height: 100px; width: 355px;
+      height: 100px; width: 350px;
       padding: 0px 0 0 0;
       display: flex; flex-wrap: wrap;
       justify-content: space-around;
        a {padding: 0rem 1rem 0rem 1rem; }
     }
   }
+  .main .homepages {
+    .block_1, .block_2 { 
+        img {width: 300px;}
+      }
+  }
 }
-@media (max-width: 362px) {
+@media (max-width: 370px) { // Скрипт скролла ломается
   .header .header-nav .nav-items {
-    width: 280px;
+    width: 270px;
+  }
+  .main .homepages {
+    .block_1, .block_2 { 
+        img {width: 260px;}
+      }
   }
 }
 @media (max-width: 295px) { 
   .header .header-nav .nav-items {
-    width: 200px;
+    width: 180px;
+  }
+  .main .homepages {
+    .block_1, .block_2 { 
+        img {width: 130px;}
+      }
   }
 }
 @media (max-width: 200px) { 
@@ -270,9 +299,16 @@ header {
     padding: 1.25rem 0rem 5rem 0rem;
   }
   .header .header-nav .nav-items {
-    width: 130px;
+    width: 110px;
   }
+  h2 {font-size: 20px !important;}
+  .main-home-pages .homepages .btn_homepage {font-size: 7px; }
   .main span {
     margin: 0 0 1.625rem 0;
+  }
+  .main .homepages {
+    .block_1, .block_2 { 
+        img {width: 100px;}
+      }
   }
 }
