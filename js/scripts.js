@@ -8,11 +8,11 @@ var bootstrap = require("bootstrap");
 // and change the position of the modal window
 $(function($) {
     $(window).scroll(function(){
-        if($(this).scrollTop()>400){
+        if($(this).scrollTop()>1500){
             $('.header').addClass('fixed-top');
             $('.modal-dialog').addClass('modal-dialog-center');
         }
-        else if ($(this).scrollTop()<400){
+        else if ($(this).scrollTop()<1500){
             $('.header').removeClass('fixed-top');
             $('.modal-dialog').removeClass('modal-dialog-center');
         }
