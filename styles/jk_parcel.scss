@@ -77,9 +77,16 @@ iframe {border: 0px;}
 .fixed-top { 
   padding-top: 5px; padding-bottom: 0;
   background: rgba(0,0,0,0.8);
+  width: 100%;
   h1 {font-weight: 100; color: #fff;}
+  .header-nav span {background-color: #fff; color: #000;}
   .header-nav .nav-items a {color: #fff}
 }
+// Меню на разрешениях ниже 200px
+.menu {
+      
+}
+
 // Header
 header {
   padding: 1.25rem calc(7.5rem + 1.5vw) 5.626rem calc(7.5rem + 1.5vw);
@@ -97,6 +104,23 @@ header {
       height: 55px;
       background-color: black; border-radius: 50%;
       font-weight: normal;
+    }
+    .menu-items {width: auto; height: auto;}
+    .menu {display: none;
+      max-width: 100%; 
+      &:hover {
+        .nav-items {display: block !important}
+        .nav-items a {
+          display: block !important; width: 100px;
+        }
+      }
+      a {
+        &:hover {color:#0059ff; 
+          .fa-bars{color:#cec150}
+        }
+      }
+      .page-link {color: #000;}
+      .fa-bars {color: #000;}
     }
     .nav-items {
       @include flexc();
@@ -133,8 +157,10 @@ header {
       color:#3B3B3B;
     }
     .homepages {
-      width: 100%;
+      width: 100%; 
       justify-content: space-between;
+      padding-bottom: 80px;
+      margin-bottom: 40px;
       .btn_homepage {
         width: 120px; max-height: 28px;
         font-size: 9px;
@@ -175,6 +201,18 @@ header {
       }
     }
    
+  }
+  &-newsletter {
+    display: flex;
+    width: 100%; height: 100%;
+    padding: 0px 120px 0px 120px;
+    text-align: center;
+      .newsletter-block {
+        background: url("/img/newsletter_bg.webp") no-repeat center center;
+        display: block;
+        width: 100%;
+        height: 486px;
+      }    
   }
 }
 .footer {
@@ -286,7 +324,7 @@ header {
 }
 @media (max-width: 295px) { 
   .header .header-nav .nav-items {
-    width: 180px;
+    width: 182px;
   }
   .main .homepages {
     .block_1, .block_2 { 
@@ -296,13 +334,21 @@ header {
 }
 @media (max-width: 200px) { 
   header {
-    padding: 1.25rem 0rem 5rem 0rem;
+    padding: 1.25rem 0rem 3rem 0rem;
+    .header-nav {
+      flex-direction: column; justify-content: start !important; 
+      height: auto !important;
+    }
+    .header-nav .menu {display: block;}
   }
-  .header .header-nav .nav-items {
+  .header .header-nav .nav-items {display: none; width: 0; height: 0;}
+  .header .header-nav .nav-items a {
+    display: none;
     width: 110px;
   }
+  .header .header-nav a {padding: 0px 10px 0px 10px;}
   h2 {font-size: 20px !important;}
-  .main-home-pages .homepages .btn_homepage {font-size: 7px; }
+  .main-home-pages .homepages .btn_homepage {font-size: 7px;}
   .main span {
     margin: 0 0 1.625rem 0;
   }
