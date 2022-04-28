@@ -28,7 +28,4 @@ $(document).ready(function() {
             $('.nav-items a').removeClass('page-link');
         })
     }
-    else  if ($(window).width() >= 295) {
-
-    };
 });
