@@ -16,19 +16,19 @@ $(window).scroll(function(){
             $('.modal-dialog').removeClass('modal-dialog-center');
         }
     });
-// 
-$(document).ready(function (Menu) {
-    // Добавить скрипт при опред разрешении экрана
-    // $(".menu").append('<a class="page-link"><i class="fa-solid fa-bars"></i> MENU</a>');
-    $('.menu').mouseover(function() {
-        $('.nav-items').css({display: "block", width: "100px", height: "200px"});
-        $('.nav-items a').css({display: "block"});
-        $('.nav-items a').addClass('page-link');
-        $('.menu').css({display: ""});
-    });
-    $('.nav-items a').mouseout(function() {
-        // $('.nav-items').css({display: "none", width: "0px", height: "0px", });
-        // $('.nav-items a').css({display: "none"});
-        // $('.nav-items a').removeClass('page-link');
-    })
+// Function of add button of menu on width < 201px (Work, ONLY if you load page with this width)
+$(document).ready(function() {
+    if (window.innerWidth < 295) {
+            $(".menu").prepend('<a class="page-link"><i class="fa-solid fa-bars"></i> MENU</a>');
+            $(".menu").addClass("menu__active");
+        $('.menu__active').mouseover(function() {
+            $('.nav-items a').addClass('page-link');
+        });
+        $('.menu__active').mouseleave(function() {
+            $('.nav-items a').removeClass('page-link');
+        })
+    }
+    else  if ($(window).width() >= 295) {
+
+    };
 });
