@@ -6,13 +6,13 @@
   font-display: fallback;
   text-rendering: optimizeLegibility; 
   font-family: "Bitter Regular";
-  src:url(/fonts/BitterRegular.woff) format("woff");
+  src: url(/fonts/BitterRegular.woff) format("woff");
 }
 @font-face {
   font-display: fallback;
   text-rendering: optimizeLegibility; 
   font-family: "OpenSans Regular";
-  src:url(/fonts/OpenSansRegular.woff) format("woff");
+  src: url(/fonts/OpenSansRegular.woff) format("woff");
 }
 // Variables
 $shadow: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
@@ -22,8 +22,9 @@ $shadow: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
 body {
   // min-height: 100vh; min-width: 100vh; 
   // font-size: calc(14px + 1vw);
-  // margin: 0 auto; padding: 0;
-  // width: 1903px;
+  // margin: 0 auto;
+  
+  height: 100%;
 }
 div {font-family: "Bitter Regular";}
 h1 {
@@ -32,12 +33,15 @@ h1 {
   font-family: "Bitter Regular";
   font-weight: 600;
   user-select: none;
+  cursor: pointer;
 }
 h2 {
   font-family: "Bitter Regular";
 }
 p {
-  font-size: 1rem;
+  width: 60%; margin: 0 auto; 
+  font-size: 1rem; color: #fff;
+  @include flexc();
 }
 a {
   font-family: "Bitter Regular";
@@ -73,11 +77,10 @@ iframe {border: 0px;}
   }
 }
 .modal-backdrop {z-index: 1;}
-// 
+// Class of fix menu background
 .fixed-top { 
-  padding-top: 5px; padding-bottom: 0;
   background: rgba(0,0,0,0.8);
-  width: 100%;
+  width: 100%; padding: 5px 0px 0px calc(7.5rem + 1.5vw);
   h1 {font-weight: 100; color: #fff;}
   .header-nav span {background-color: #fff; color: #000;}
   .header-nav .nav-items a {color: #fff}
@@ -103,8 +106,11 @@ header {
     .menu {
       max-width: 100%;
       a {
-        &:hover {color:#0059ff; 
-          .fa-bars{color:#cec150}
+        &:hover {
+          color:#fff;
+          font-weight: 900; 
+          user-select: none;
+          .fa-bars{color:#0059ff}
         }
       }
       .page-link {color: #000;}
@@ -194,32 +200,60 @@ header {
     display: flex;
     width: 100%; height: 100%;
     padding: 0px 120px 0px 120px;
+    margin-bottom: 40px;
     text-align: center;
       .newsletter-block {
         background: url("/img/newsletter_bg.webp") no-repeat center center;
         display: block;
         width: 100%;
         height: 486px;
+        padding: 98px 240px 32px 240px;
+          span {color: #fff;}
+          h2 {
+            margin-top: 10px;
+            color: #fff; font-weight: 400;
+            font-size: 39px;
+            line-height: 50px;
+            margin-bottom: 25px;
+          }
+          form {margin: 108px 0 0 7px;}
       }    
   }
 }
 .footer {
-
+  width: 100%;
+  height: 100%;
+  margin: 20px 0 0 0;
+  padding: 0 0px 0 10px;
 }
 // Media
+@media (max-width: 1465px) {
+  .main-newsletter {
+    padding: 0px 0px 0px 0px;
+  } 
+}
+@media (max-width: 1250px) { 
+  .main-newsletter {
+    margin: 0 auto;
+    width: 90%;
+  } 
+  .main-newsletter .newsletter-block {
+    
+  }
+}
 @media (max-width: 1180px) {
-  .main .homepages {
+  .main .homepages { // Main
     width: 1100px;
   }
 }
 @media (max-width: 1115px) {
-  .main .homepages {
+  .main .homepages { // Main
     width: 1050px;
     .block_1 {width: 610px; padding: 0 20px 0 20px;}
   }
 }
 @media (max-width: 1066px) { // Скрипт скролла ломается
-  .main .homepages {
+  .main .homepages { // Main
     width: 100%; 
     flex-direction: column;
       .homepages-block {
@@ -234,11 +268,16 @@ header {
   }
 }
 @media (max-width: 981px) {
+  .fixed-top {padding: 5px 0px 0px 50px;}
   header {
     padding: 1.25rem 0 5.626rem 2.5rem;
   }
 }
+@media (max-width: 888px) { // Уменьшение body
+
+}
 @media (max-width: 766px) {
+  .fixed-top {padding: 5px 0px 0px 0px;}
   header {padding: 1.25rem 0rem 5.626rem 0rem;}
   .header .header-nav {
     display: block;
@@ -253,7 +292,8 @@ header {
   }
 }
 @media (max-width: 665px) { // Уменьшение изображений
-  .main .homepages {
+  .fixed-top {padding: 5px 0px 0px 0px;}
+  .main .homepages { // Main
   .block_1, .block_2 { 
       img {width: 550px;}
     }
@@ -270,7 +310,7 @@ header {
   }
 }
 @media (max-width: 586px) { // Уменьшение изображений
-  .main .homepages {
+  .main .homepages { // Main
     .block_1, .block_2 { 
         img {width: 400px;}
       }
@@ -283,7 +323,6 @@ header {
   }
   .header .header-nav { 
     @include flexc();
-    height: 180px;
     flex-wrap: wrap;
     margin: 0px 0 0 5px;
     .nav-items {
@@ -294,7 +333,7 @@ header {
        a {padding: 0rem 1rem 0rem 1rem; }
     }
   }
-  .main .homepages {
+  .main .homepages { // Main
     .block_1, .block_2 { 
         img {width: 300px;}
       }
@@ -307,27 +346,33 @@ header {
   .header .header-nav .nav-items a:last-child {
     display: none;
   }
-  .main .homepages {
+  .main .homepages { // Main
     .block_1, .block_2 { 
         img {width: 260px;}
       }
   }
 }
 @media (max-width: 295px) { 
+  .fixed-top {padding: 0;}
   header {
     padding: 1.25rem 0rem 3rem 0rem;
+    h1 {display: flex !important;}
     .header-nav {
       flex-direction: column; justify-content: start !important; 
       height: auto !important;
+      padding-top: 5px; margin: 0 !important;
     }
     .header-nav .menu {
+      width: 105px;
       display: block; padding-bottom: 5px;
+      // header-nav .menu hover
       &:hover {
         .nav-items {
-          display: block !important; width: 88px; 
+          display: block !important; width: 105px; 
           height: 135px; position: absolute;
         }
-        .nav-items a {display: block; width: auto;
+        .nav-items a {
+          display: block; width: auto;
             &:last-child {
               display: none !important;
             }
@@ -335,11 +380,17 @@ header {
       }
     }
   }
+  .page-link {
+    &:hover{background-color: #000;}
+  }
   .header .header-nav .nav-items {display: none; width: 0; height: 0;}
-  .header .header-nav .nav-items a {display: none; width: 110px;}
+  .header .header-nav .nav-items a {
+    display: none; width: 110px;
+    &:hover {color:#fff;}
+    &:active {color:#000; background-color:#0059ff;}
+  }
   .header .header-nav a {padding: 0px 10px 0px 10px;}
-  // Main
-  h2 {font-size: 20px !important;}
+  h2 {font-size: 20px !important;} // Main
   .main-home-pages .homepages .btn_homepage {font-size: 7px;}
   .main span {
     margin: 0 0 1.625rem 0;
