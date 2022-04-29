@@ -20,7 +20,7 @@
 <body>
   <header class="header" id="home">
     <div class="header-nav"> 
-      <h1>E<span>veli</span>n</h1>
+      <h1 id="scrol">E<span>veli</span>n</h1>
         <div class="menu">
           <div class="nav-items">
             <a href="#">Intro</a>
@@ -29,45 +29,10 @@
             <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal_About">About</a>
             <a href="#">Blog</a>
             <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal_Contact">Contact</a> 
-            <a href="#"><img src="/img/fb.webp" width="35.99" height="35.99" alt="facebook logo"></a>
+            <a class="fb_logo" href="#"><img src="/img/fb.webp" width="35.99" height="35.99" alt="facebook logo"></a>
           </div>
         </div>
     </div>
-      <div class="modal fade" id="exampleModal_Contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalToggleLabel">My social links!</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body modal-body-contact flex-wrap">
-              <span><a class="page-link" href="https://github.com/jkenix"><i class="fa-brands fa-github"></i>Github</a></span>
-              <span><a class="page-link"href="https://github.com/jkenix/jkenix.github.io"><i class="fa-brands fa-github"></i>Github Repo of this page</a></span>
-              <span><a class="page-link"href="https://www.youtube.com/channel/UC22MYJStT6bDNPdSzFIzDqQ"><i class="fa-brands fa-youtube"></i>My Youtube Channel (For fun)</a></span>
-              <a href="#"><img src="/img/fb.webp" width="35.99" height="35.99" alt="facebook logo"></a>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="exampleModal_About" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog ">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body modal-body-about flex-column">
-              <span>Designed by <strong>jkenix</strong>.</span>
-              <a class="page-link" href="https://www.figma.com/file/QAXy6olwXzRISfbiVlnVCA/Evelin?node-id=0%3A1">Original layout</a>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
   </header>
   <main class="main">
     <div class="main-home-pages">
@@ -76,19 +41,19 @@
       <div class="homepages d-flex shadow">
         <div class="homepages-block block_1">
           <button class="btn_homepage btn btn-primary"><a href="#">HOMEPAGE 1</a></button>
-          <a href="#"><img src="/img/homepage1.webp" width="531" height="600" alt="homepage 1 image"></a>
+          <a href="/img/homepage1.webp"><img src="/img/homepage1.webp" width="531" height="600" alt="homepage 1 image"></a>
           <button class="btn_homepage btn btn-primary">HOMEPAGE 4</button>
-          <a href="#"><img src="/img/homepage4.webp" width="531" height="600" alt="homepage 4 image"></a>
+          <a href="/img/homepage4.webp"><img src="/img/homepage4.webp" width="531" height="600" alt="homepage 4 image"></a>
           <button class="btn_homepage btn btn-primary">HOMEPAGE 6</button>
-          <a href="#"><img src="/img/homepage6.webp" width="531" height="600" alt="homepage 6 image"></a>
+          <a href="/img/homepage6.webp"><img src="/img/homepage6.webp" width="531" height="600" alt="homepage 6 image"></a>
         </div>
         <div class="homepages-block block_2">
           <button class="btn_homepage btn btn-primary">HOMEPAGE 2</button>
-          <a href="#"><img src="/img/homepage2.webp" width="531" height="270" alt="homepage 2 image"></a>
+          <a href="/img/homepage2.webp"><img src="/img/homepage2.webp" width="531" height="270" alt="homepage 2 image"></a>
           <button class="btn_homepage btn btn-primary">HOMEPAGE 3</button>
-          <a href="#"><img src="/img/homepage3.webp" width="531" height="600" alt="homepage 3 image"></a>
+          <a href="/img/homepage3.webp"><img src="/img/homepage3.webp" width="531" height="600" alt="homepage 3 image"></a>
           <button class="btn_homepage btn btn-primary">HOMEPAGE 5</button>
-          <a href="#"><img src="/img/homepage5.webp" width="531" height="600" alt="homepage 5 image"></a>
+          <a href="/img/homepage5.webp"><img src="/img/homepage5.webp" width="531" height="600" alt="homepage 5 image"></a>
         </div>
       </div>
     </div>
@@ -96,16 +61,64 @@
       <div class="newsletter-block">
         <span>Newsletter</span>
         <h2>Sign Up to Newsletter</h2>
-        <p>You gotta go through it to see there ain’t nothing to it. Did you feel that?Look at me – I’m not out of breath anymore!</p>
-        <form></form>
-        <span>I respect your privacy, so we never share your info</span>
+        <p>You gotta go through it to see there ain’t nothing to it. Did you feel that?</p>
+        <p>Look at me – I’m not out of breath anymore!</p>
+        <form method="POST">
+          <div class="form-line">
+            <div>
+              <input class="e-name" name="email" value="Email" type="text">
+              <input class="send_button" type="submit" value="SEND">
+            
+            </div>
+            
+          </div>
+          <div class="form-bottom">
+          </div>
+        </form>
+        <span class="respect">I respect your privacy, so we never share your info</span>
       </div>
     </div>
   </main>
-  <footer class="footer">
-    <span>Created by Dmitriy "jkenix" </span>
-    <span>Evelin All right reserved/ Powered by Github Pages</span>
+  <footer class="footer d-flex shadow">
+    <span class="copyright"><strong>© Evelin.</strong>Created by Dmitriy "jkenix".</span>
+    <span class="text-primary">All right reserved/ Powered by Github Pages.</span>
   </footer>
+  <div class="modal fade" id="exampleModal_Contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalToggleLabel">My social links!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-contact flex-wrap">
+          <span><a class="page-link text-nowrap" href="https://github.com/jkenix"><i class="fa-brands fa-github"></i>Github</a></span>
+          <span><a class="page-link text-center" href="https://github.com/jkenix/jkenix.github.io"><i class="fa-brands fa-github"></i>Github Repo of this page</a></span>
+          <span><a class="page-link text-center" href="https://www.youtube.com/channel/UC22MYJStT6bDNPdSzFIzDqQ"><i class="fa-brands fa-youtube"></i><span>My Youtube Channel</span></a></span>
+          <span><a class="fb_logo" href="#"><img src="/img/fb.webp" width="35.99" height="35.99" alt="facebook logo"></a></span>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal_About" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-about flex-column">
+          <span class="text-center">Designed by <strong>jkenix</strong>.</span>
+          <a class="page-link text-center" href="https://www.figma.com/file/QAXy6olwXzRISfbiVlnVCA/Evelin?node-id=0%3A1">Original layout</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#" id="scroll_top" title="Наверх"></a>
 <script src="/js/scripts.js"></script> 
 </body>
 </html>
