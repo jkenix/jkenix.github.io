@@ -32,13 +32,6 @@ $(document).ready(function() {
                 $('.e-name').click(function(){
                     $(this).val('');
                 });
-                $('.e-name').mouseover(function(){
-                    $(this).val('');
-                });
-            // Add value again, if mouse leave block
-            $('.e-name').mouseleave(function() {
-                $('.e-name').val('Enter email');
-            });
         });
     }
 });
