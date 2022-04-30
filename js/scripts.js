@@ -16,13 +16,29 @@ $(window).scroll(function(){
         }
     });
 // Function of add button of menu on width < 201px (Work, ONLY if you load page with this width)
+// and form .e-name block interactive
 $(document).ready(function() {
     if (window.innerWidth < 295) {
             $(".menu").prepend('<a class="page-link __bg-dark-menu"><i class="fa-solid fa-bars"></i> MENU</a>');
             $(".menu").addClass("menu__active");
-        //
+        // Add class, if mouse over menu__active block
         $('.menu__active').mouseover(function() {
             $('.nav-items a').addClass('page-link __bg-dark-menu');
+        });
+        // Function rename default value and add interacive
+        $(function(Ename_active){ 
+            $('.e-name').val('Enter email');
+                // Clear value functions
+                $('.e-name').click(function(){
+                    $(this).val('');
+                });
+                $('.e-name').mouseover(function(){
+                    $(this).val('');
+                });
+            // Add value again, if mouse leave block
+            $('.e-name').mouseleave(function() {
+                $('.e-name').val('Enter email');
+            });
         });
     }
 });
@@ -41,8 +57,8 @@ $(function(){
 			$('#scroll_top').hide();
 		}
 	});
- 
-	$('#scroll_top').click(function(){
+    // If click on h1, page scroll to top
+	$('#scroll_top'), $("h1").click(function(){
 		$('html, body').animate({scrollTop: 0}, 600);
 		return false;
 	});
