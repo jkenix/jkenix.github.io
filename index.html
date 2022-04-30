@@ -7,29 +7,29 @@
   <meta name="author" content="https://github.com/jkenix">
   <link rel="shortcut icon" href="/img/jklogo.webp"/>
   <link rel="stylesheet" media="screen" href="/styles_jk.css"/>
-  <script src="/js/jquery-3.6.0.min.js"></script>
-  <meta property="og:title" content=" (by jkenix)">
+  <meta property="og:title" content="Evelin">
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://jkenix.github.io/"/>
   <meta property="og:image" content=""/>
   <meta property="og:image:width" content="531"/>
   <meta property="og::image:height" content="600"/>
-  <meta property="og:description" content="Страница, сделанная jkenix по макету."/>
+  <meta property="og:description" content="Page made by jkenix from layout."/>
   <meta property="og:site_name" content="Evelin"/>
+  <script src="/js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <header class="header" id="home">
     <div class="header-nav"> 
-      <h1 id="scrol">E<span>veli</span>n</h1>
+      <h1 title="Evelin">E<span>veli</span>n</h1>
         <div class="menu">
           <div class="nav-items">
-            <a href="#">Intro</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Pages</a>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal_About">About</a>
-            <a href="#">Blog</a>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal_Contact">Contact</a> 
-            <a class="fb_logo" href="#"><img src="/img/fb.webp" width="35.99" height="35.99" alt="facebook logo"></a>
+            <a>Intro</a>
+            <a>Portfolio</a>
+            <a>Pages</a>
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal_About">About</a>
+            <a>Blog</a>
+            <a data-bs-toggle="modal" data-bs-target="#exampleModal_Contact">Contact</a> 
+            <a title="Facebook" class="fb_logo"><img src="/img/fb.webp" width="36" height="36" alt="facebook logo"></a>
           </div>
         </div>
     </div>
@@ -40,20 +40,20 @@
       <h2>6 Home Pages</h2>
       <div class="homepages d-flex shadow">
         <div class="homepages-block block_1">
-          <button class="btn_homepage btn btn-primary"><a href="#">HOMEPAGE 1</a></button>
-          <a href="/img/homepage1.webp"><img src="/img/homepage1.webp" width="531" height="600" alt="homepage 1 image"></a>
+          <button class="btn_homepage btn btn-primary">HOMEPAGE 1</button>
+          <a><img src="/img/homepage1.webp" width="531" height="600" alt="homepage 1 image"></a>
           <button class="btn_homepage btn btn-primary">HOMEPAGE 4</button>
-          <a href="/img/homepage4.webp"><img src="/img/homepage4.webp" width="531" height="600" alt="homepage 4 image"></a>
+          <a><img src="/img/homepage4.webp" width="531" height="600" alt="homepage 4 image"></a>
           <button class="btn_homepage btn btn-primary">HOMEPAGE 6</button>
-          <a href="/img/homepage6.webp"><img src="/img/homepage6.webp" width="531" height="600" alt="homepage 6 image"></a>
+          <a><img src="/img/homepage6.webp" width="531" height="600" alt="homepage 6 image"></a>
         </div>
         <div class="homepages-block block_2">
           <button class="btn_homepage btn btn-primary">HOMEPAGE 2</button>
-          <a href="/img/homepage2.webp"><img src="/img/homepage2.webp" width="531" height="270" alt="homepage 2 image"></a>
+          <a><img src="/img/homepage2.webp" width="531" height="270" alt="homepage 2 image"></a>
           <button class="btn_homepage btn btn-primary">HOMEPAGE 3</button>
-          <a href="/img/homepage3.webp"><img src="/img/homepage3.webp" width="531" height="600" alt="homepage 3 image"></a>
+          <a><img src="/img/homepage3.webp" width="531" height="600" alt="homepage 3 image"></a>
           <button class="btn_homepage btn btn-primary">HOMEPAGE 5</button>
-          <a href="/img/homepage5.webp"><img src="/img/homepage5.webp" width="531" height="600" alt="homepage 5 image"></a>
+          <a><img src="/img/homepage5.webp" width="531" height="600" alt="homepage 5 image"></a>
         </div>
       </div>
     </div>
@@ -65,14 +65,10 @@
         <p>Look at me – I’m not out of breath anymore!</p>
         <form method="POST">
           <div class="form-line">
-            <div>
-              <input class="e-name" name="email" value="Email" type="text">
-              <input class="send_button" type="submit" value="SEND">
-            
+            <div class="email-block d-flex">
+              <input class="e-name" name="email" value="Enter your email" type="text">
             </div>
-            
-          </div>
-          <div class="form-bottom">
+            <input class="send_button" type="submit" value="SUBSCRIBE">
           </div>
         </form>
         <span class="respect">I respect your privacy, so we never share your info</span>
@@ -81,9 +77,9 @@
   </main>
   <footer class="footer d-flex shadow">
     <span class="copyright"><strong>© Evelin.</strong>Created by Dmitriy "jkenix".</span>
-    <span class="text-primary">All right reserved/ Powered by Github Pages.</span>
+    <span class="text-primary">All right reserved / Powered by Github Pages.</span>
   </footer>
-  <div class="modal fade" id="exampleModal_Contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="exampleModal_Contact" tabindex="-1" aria-labelledby="exampleModalToggleLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -94,7 +90,7 @@
           <span><a class="page-link text-nowrap" href="https://github.com/jkenix"><i class="fa-brands fa-github"></i>Github</a></span>
           <span><a class="page-link text-center" href="https://github.com/jkenix/jkenix.github.io"><i class="fa-brands fa-github"></i>Github Repo of this page</a></span>
           <span><a class="page-link text-center" href="https://www.youtube.com/channel/UC22MYJStT6bDNPdSzFIzDqQ"><i class="fa-brands fa-youtube"></i><span>My Youtube Channel</span></a></span>
-          <span><a class="fb_logo" href="#"><img src="/img/fb.webp" width="35.99" height="35.99" alt="facebook logo"></a></span>
+          <span><a class="fb_logo"><img src="/img/fb.webp" width="36" height="36" alt="facebook logo"></a></span>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
@@ -106,6 +102,7 @@
     <div class="modal-dialog ">
       <div class="modal-content">
         <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabel">About me</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body modal-body-about flex-column">
@@ -118,7 +115,7 @@
       </div>
     </div>
   </div>
-  <a href="#" id="scroll_top" title="Наверх"></a>
+  <a href="#" id="scroll_top" title="Up"></a>
 <script src="/js/scripts.js"></script> 
 </body>
 </html>
