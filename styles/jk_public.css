@@ -135,6 +135,17 @@ input {
   color: #fff;
 }
 
+.__bg-dark-menu:hover {
+  background-color: #000 !important;
+}
+.__bg-dark-menu:active {
+  background-color: #7C8499 !important;
+  color: #5231FF !important;
+}
+.__bg-dark-menu:active .fa-bars {
+  color: #000 !important;
+}
+
 #scroll_top {
   display: none;
   position: fixed;
@@ -175,8 +186,10 @@ header .header-nav span {
   align-items: center;
   color: #fff;
   height: 55px;
+  width: 60px;
   background-color: black;
   border-radius: 50%;
+  font-size: 2.1rem;
   font-weight: normal;
 }
 header .header-nav .menu {
@@ -445,6 +458,9 @@ header .header-nav .nav-items a:active {
   header {
     padding: 1.25rem 0 5.626rem 2.5rem;
   }
+  header .header-nav span {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 836px) {
   .main-newsletter .newsletter-block {
@@ -516,6 +532,11 @@ header .header-nav .nav-items a:active {
   }
 }
 @media (max-width: 586px) {
+  header .header-nav span {
+    width: 55px;
+    font-size: 1.8rem;
+  }
+
   .main .homepages .block_1 img, .main .homepages .block_2 img {
     width: 400px;
   }
@@ -579,7 +600,7 @@ header .header-nav .nav-items a:active {
     width: 280px;
   }
   .main-newsletter .newsletter-block form .form-line .e-name {
-    width: 185px;
+    width: 198px;
   }
   .main-newsletter .newsletter-block form .form-line .send_button {
     margin-left: 200px;
@@ -587,6 +608,11 @@ header .header-nav .nav-items a:active {
   }
 }
 @media (max-width: 370px) {
+  header .header-nav span {
+    width: 45px;
+    font-size: 1.5rem;
+  }
+
   .header .header-nav .nav-items {
     width: 270px;
   }
@@ -626,10 +652,6 @@ header .header-nav .nav-items a:active {
 @media (max-width: 295px) {
   .fixed-top {
     padding: 0;
-  }
-
-  .__bg-dark-menu:hover {
-    background-color: #000;
   }
 
   .modal-body-contact span {
