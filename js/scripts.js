@@ -1,8 +1,8 @@
 // Import styles
-import '/styles/jk_parcel.scss'; // Comment, if don't use parcel
+// import '/styles/jk_parcel.scss'; // Comment, if don't use parcel
 // Define Jquery (If you dont' use node.js comment this lines)
-var jquery = require("jquery"); window.$ = window.jQuery = jquery;  
-var bootstrap = require("bootstrap"); 
+// var jquery = require("jquery"); window.$ = window.jQuery = jquery;  
+// var bootstrap = require("bootstrap"); 
 // Function to switch navigation class to fixed on scroll
 // and change the position of the modal window
 $(window).scroll(function(){
@@ -25,7 +25,8 @@ $(document).ready(function() {
         $('.menu__active').mouseover(function() {
             $('.nav-items a').addClass('page-link __bg-dark-menu');
         });
-        // Function rename default value and add interacive
+    }
+    // Function rename default value and add interacive
         $(function(Ename_active){ 
             $('.e-name').val('Enter email');
                 // Clear value functions
@@ -33,7 +34,6 @@ $(document).ready(function() {
                     $(this).val('');
                 });
         });
-    }
 });
 // Function show message, if click on fb logo.
 $(document).ready(function() {
