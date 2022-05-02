@@ -92,6 +92,9 @@ input {
   color: red;
   margin-right: 10px;
 }
+.modal-body-contact .facebook_logo {
+  display: none;
+}
 
 .modal-body-about {
   display: flex !important;
@@ -566,7 +569,6 @@ header .header-nav .nav-items a:active {
   .header .header-nav .nav-items {
     height: 100px;
     width: 350px;
-    padding: 0px 0 0 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -574,7 +576,6 @@ header .header-nav .nav-items a:active {
   .header .header-nav .nav-items a {
     padding: 0rem 1rem 0rem 1rem;
   }
-
   .header .header-nav .nav-items a:nth-child(5) {
     margin: 0 0 0 auto;
   }
@@ -583,6 +584,10 @@ header .header-nav .nav-items a:active {
   }
   .header .header-nav .nav-items a:last-child {
     display: none;
+  }
+
+  .facebook_logo {
+    display: block !important;
   }
 
   .main-home-pages {
@@ -630,10 +635,6 @@ header .header-nav .nav-items a:active {
   }
   .header .header-nav .nav-items a:nth-child(6) {
     margin: 0;
-  }
-
-  .header .header-nav .nav-items a:last-child {
-    display: none;
   }
 
   .main .homepages .block_1 img, .main .homepages .block_2 img {
