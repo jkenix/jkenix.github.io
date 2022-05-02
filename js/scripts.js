@@ -6,13 +6,19 @@
 // Function to switch navigation class to fixed on scroll
 // and change the position of the modal window
 $(window).scroll(function(){
-        if($(this).scrollTop()>1000){
-            $('.header').addClass('fixed-top');
-            $('.modal-dialog').addClass('modal-dialog-center');
+        if($(this).scrollTop()>10){
+            $(function(Showmenu){
+                $('.header').addClass('__scroll');
+                $('.modal-dialog').addClass('modal-dialog-center');
+            });
         }
-        else if ($(this).scrollTop()<1000){
-            $('.header').removeClass('fixed-top');
+        else if ($(this).scrollTop()<10) {
+            $('.header').removeClass('__scroll');
             $('.modal-dialog').removeClass('modal-dialog-center');
+        }
+        // Check page reboot
+        else if (window.innerWidth > 10) {
+            return Showmenu();
         }
     });
 // Function of add button of menu on width < 201px (Work, ONLY if you load page with this width)
