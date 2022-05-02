@@ -71,8 +71,12 @@ input {font-family: "Bitter Regular";}
 .modal-backdrop {z-index: 1;}
 // Class of fix menu background
 .fixed-top { 
+  padding: 1.25rem calc(7.5rem + 1.5vw) 0 calc(7.5rem + 1.5vw);
+}
+.__scroll {
+  padding: 5px 0px 0px calc(7.5rem + 1.5vw);
   background: rgba(0,0,0,0.8);
-  width: 100%; padding: 5px 0px 0px calc(7.5rem + 1.5vw);
+  width: 100%;
   h1 {font-weight: 100; color: #fff;}
   .header-nav span {background-color: #fff; color: #000;}
   .header-nav .nav-items a {color: #fff}
@@ -104,7 +108,6 @@ input {font-family: "Bitter Regular";}
 }
 // Header
 header {
-  padding: 1.25rem calc(7.5rem + 1.5vw) 5.626rem calc(7.5rem + 1.5vw);
   .header-nav {
     display: flex;
     align-items: center;
@@ -139,6 +142,7 @@ header {
       max-width: 646px; height: 80px;
        a {
         font-size: 0.875rem;
+        font-weight: 600;
         margin: 0 41px 0 0; 
         color: #222222;
         &:hover {
@@ -157,6 +161,7 @@ header {
 .main {
   width: 100%; height: 100%;
   &-home-pages {
+    padding-top:10.626rem;
     margin: 0 auto;
     width: 100%; max-width: 1200px;
     height: 100%;
@@ -219,7 +224,6 @@ header {
         padding: 0 20px 0px 20px;
       }
     } // .main-home-pages .homepages end
-   
   } // main-home-pages end
   &-newsletter {
     display: flex;
@@ -326,12 +330,7 @@ header {
 }
 @media (max-width: 981px) {
   .fixed-top {padding: 5px 0px 0px 50px;}
-  header {
-    padding: 1.25rem 0 5.626rem 2.5rem;
-    .header-nav span {
-      font-size: 2rem;
-    }
-  }
+  header .header-nav span {font-size: 2rem;}
 }
 @media (max-width: 836px) { // reduction padding .main newsletter-block
   .main-newsletter .newsletter-block { 
@@ -340,7 +339,6 @@ header {
 }
 @media (max-width: 766px) {
   .fixed-top {padding: 5px 0px 0px 0px;}
-  header {padding: 1.25rem 0rem 5.626rem 0rem;}
   .header .header-nav {
     display: block;
     height: 100%;  
@@ -400,10 +398,7 @@ header {
     }
 }
 @media (max-width: 460px) {
-  header {
-    display: flex; 
-    padding: 1.25rem 0rem 5.626rem 0rem;
-  }
+  header {display: flex;}
   .header .header-nav { 
     @include flexc();
     flex-wrap: wrap;
@@ -415,6 +410,20 @@ header {
       justify-content: space-around;
        a {padding: 0rem 1rem 0rem 1rem; }
     }
+  }
+  .header .header-nav .nav-items  {
+    a:nth-child(5) {
+      margin: 0 0 0 auto;
+    }
+    a:nth-child(6) {
+      margin: 0 auto 0 0;
+    }
+    a:last-child {
+      display: none;
+    }
+  }
+  .main-home-pages {
+    padding-top: 12.626rem;
   }
   .main .homepages { // Main
     .block_1, .block_2 { 
@@ -445,6 +454,12 @@ header {
   }
   .header .header-nav .nav-items {
     width: 270px;
+    a:nth-child(5) {
+      margin: 0;
+    }
+    a:nth-child(6) {
+      margin: 0 ;
+    }
   }
   .header .header-nav .nav-items a:last-child {
     display: none;
@@ -470,7 +485,7 @@ header {
     .copyright {margin-bottom: 15px;}
   }
 }
-@media (max-width: 295px) { 
+@media (max-width: 296px) { 
   .fixed-top {padding: 0;}
   
   .modal-body-contact span {
@@ -490,15 +505,16 @@ header {
       padding-top: 5px; margin: 0 !important;
     }
     .header-nav .menu {
-      width: 105px;
+      width: 170px;
       display: block; padding-bottom: 5px;
       // header-nav .menu hover
       &:hover {
         .nav-items {
-          display: block !important; width: 105px; 
+          display: block !important; width: 170px; 
           height: 135px; position: absolute;
         }
         .nav-items a {
+          padding: 8px 0 8px 0;
           display: block; width: auto;
             &:last-child {
               display: none !important;
@@ -515,8 +531,12 @@ header {
   }
   .header .header-nav a {padding: 0px 10px 0px 10px;}
   // Main
-  .main-home-pages h2 {
-    font-size: 25px;
+  .main .main-home-pages {
+    padding-top: 8.626rem;
+      h2 {
+        font-size: 25px;
+        margin: 0 0 20px 0;
+      }
   }
   .main-home-pages .homepages {
     .btn_homepage {font-size: 10px; padding: 0;}
@@ -556,6 +576,17 @@ header {
   }
 }
 @media (max-width: 200px) { 
+  header {
+    .header-nav .menu {
+      width: 120px;
+      // header-nav .menu hover
+      &:hover {
+        .nav-items {
+          width: 120px; 
+        }
+      }
+    }
+  }
   .main-newsletter .newsletter-block { // reduction padding main-newsletter
     padding: 10px 0px 10px 0px;
     h2 {
