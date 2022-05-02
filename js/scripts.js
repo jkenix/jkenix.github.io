@@ -43,7 +43,7 @@ $(document).ready(function() {
 });
 // Function show message, if click on fb logo.
 $(document).ready(function() {
-    $('.fb_logo').click(function() { 
+    $('.fb_logo'),$('.facebook_logo').click(function() { 
         alert('This is just fb logo from layout. I don"t have fb.');
     });
 });
