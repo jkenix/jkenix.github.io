@@ -20,7 +20,7 @@ $shadow: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
 /* Global */
 h1 {
   @include flexc(); 
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-family: "Bitter Regular";
   font-weight: 600;
   user-select: none;
@@ -96,16 +96,22 @@ input {font-family: "Bitter Regular";}
 	display: none;
 	position: fixed;
 	bottom: 60px;
-	right: 10px;
+	right: 60px;
 	z-index: 1000;
-	width: 50px;
-	height: 50px;
+	width: 80px;
+	height: 80px;
 	background: url("/img/scroll_top.PNG") center center no-repeat;
 	border-radius: 100%;
 	opacity: 0.5;
   border: 12px solid black; background-color: transparent;
     &:hover {opacity: 1;}
     &:active {transition: all 0s; border: 12px solid #0a58ca;}
+}
+// Wrapper
+.wrapper {
+  background-color: #fff;
+  max-width: 1652px;
+  margin: auto;
 }
 // Header
 header {
@@ -114,7 +120,7 @@ header {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    width: 100%; max-width: 1200px;
+    width: 100%; max-width: 1150px;
     height: 60px;
     span {
       @include flexc(); 
@@ -294,8 +300,18 @@ header {
     span {@include flexc(); padding: 0 10px 0 10px;}
 }
 // Media
-@media (max-width: 1465px) { // increasing padding main-newsletter
+@media (min-width: 1921px) {
+  .footer {flex-direction: column;}
+  body {background-color: #000 !important;}
+  body {display: flex; flex-direction: row;}
+}
+@media (max-width: 1590px) { // increasing padding main-newsletter
   .main-newsletter {padding: 0;} 
+  #scroll_top {
+    right: 20px;
+    width: 50px;
+	  height: 50px;
+  }
 }
 @media (max-width: 1250px) {  // reduction main-newsletter
   .main-newsletter {
@@ -331,7 +347,7 @@ header {
 }
 @media (max-width: 981px) {
   .fixed-top {padding: 5px 0px 0px 50px;}
-  header .header-nav span {font-size: 2rem;}
+  header .header-nav span {font-size: 1.9rem;}
 }
 @media (max-width: 836px) { // reduction padding .main newsletter-block
   .main-newsletter .newsletter-block { 
@@ -339,6 +355,12 @@ header {
   }
 }
 @media (max-width: 766px) {
+  #scroll_top {
+    right: 10px; 
+    width: 40px; 
+    height: 40px; 
+    border: 7px solid black;
+  }
   .fixed-top {padding: 5px 0px 0px 0px;}
   .header .header-nav {
     display: block;

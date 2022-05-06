@@ -15,7 +15,7 @@ h1 {
   display: flex !important;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-family: "Bitter Regular";
   font-weight: 600;
   user-select: none;
@@ -157,10 +157,10 @@ input {
   display: none;
   position: fixed;
   bottom: 60px;
-  right: 10px;
+  right: 60px;
   z-index: 1000;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   background: url("/img/scroll_top.PNG") center center no-repeat;
   border-radius: 100%;
   opacity: 0.5;
@@ -175,13 +175,19 @@ input {
   border: 12px solid #0a58ca;
 }
 
+.wrapper {
+  background-color: #fff;
+  max-width: 1652px;
+  margin: auto;
+}
+
 header .header-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1150px;
   height: 60px;
 }
 header .header-nav span {
@@ -409,9 +415,29 @@ header .header-nav .nav-items a:active {
   padding: 0 10px 0 10px;
 }
 
-@media (max-width: 1465px) {
+@media (min-width: 1921px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  body {
+    background-color: #000 !important;
+  }
+
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 1590px) {
   .main-newsletter {
     padding: 0;
+  }
+
+  #scroll_top {
+    right: 20px;
+    width: 50px;
+    height: 50px;
   }
 }
 @media (max-width: 1250px) {
@@ -460,7 +486,7 @@ header .header-nav .nav-items a:active {
   }
 
   header .header-nav span {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 }
 @media (max-width: 836px) {
@@ -469,6 +495,13 @@ header .header-nav .nav-items a:active {
   }
 }
 @media (max-width: 766px) {
+  #scroll_top {
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border: 7px solid black;
+  }
+
   .fixed-top {
     padding: 5px 0px 0px 0px;
   }
