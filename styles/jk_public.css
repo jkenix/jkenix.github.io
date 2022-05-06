@@ -285,16 +285,14 @@ header .header-nav .nav-items a:active {
   color: #fff;
 }
 .main-home-pages .homepages .btn_homepage:hover {
-  transition: 1s all;
+  transition: 0s all;
   background-color: #111;
-  font-weight: 900;
+  font-weight: 600;
 }
 .main-home-pages .homepages .btn_homepage:active {
   transition: 0s all;
   background-color: #fff;
-  font-weight: 900;
-}
-.main-home-pages .homepages .btn_homepage:active a {
+  font-weight: 600;
   color: #000;
   transition: 0s all;
 }

@@ -196,13 +196,13 @@ header {
           a {color:#fff;}
         // btn_homepage active/hover
           &:hover {
-            transition: 1s all; background-color: #111; 
-            font-weight: 900;
+            transition: 0s all; background-color: #111; 
+            font-weight: 600;
           }
           &:active {
             transition: 0s all; background-color: #fff;
-            font-weight: 900;
-            a {color:#000; transition: 0s all;}
+            font-weight: 600;
+            color:#000; transition: 0s all;
           }
       } // btn_homepage end
       img {
