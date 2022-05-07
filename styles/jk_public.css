@@ -156,12 +156,15 @@ input {
 #scroll_top {
   display: none;
   position: fixed;
+  justify-content: center;
+  align-items: center;
+  color: #0059ff;
+  font-size: 35px;
   bottom: 60px;
   right: 60px;
   z-index: 1000;
   width: 80px;
   height: 80px;
-  background: url("/img/scroll_top.PNG") center center no-repeat;
   border-radius: 100%;
   opacity: 0.5;
   border: 12px solid black;
@@ -177,8 +180,8 @@ input {
 
 .wrapper {
   background-color: #fff;
-  max-width: 1920px;
-  margin: auto;
+  max-width: 1652px;
+  margin: 0 auto;
 }
 
 header .header-nav {
@@ -415,18 +418,25 @@ header .header-nav .nav-items a:active {
   padding: 0 10px 0 10px;
 }
 
+@media (min-width: 2099px) {
+  #scroll_top {
+    color: #fff;
+  }
+}
 @media (min-width: 1921px) {
+  #scroll_top {
+    right: 150px;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+  }
+
   .footer {
     flex-direction: column;
   }
 
   body {
-    background-color: #000 !important;
-  }
-
-  body {
-    display: flex;
-    flex-direction: row;
+    background-color: var(--bs-gray-700) !important;
   }
 }
 @media (max-width: 1590px) {
@@ -438,6 +448,11 @@ header .header-nav .nav-items a:active {
     right: 20px;
     width: 50px;
     height: 50px;
+    border: 5px solid black;
+  }
+  #scroll_top:active {
+    transition: all 0s;
+    border: 5px solid #0a58ca;
   }
 }
 @media (max-width: 1250px) {
@@ -499,7 +514,12 @@ header .header-nav .nav-items a:active {
     right: 10px;
     width: 40px;
     height: 40px;
+    font-size: 25px;
     border: 7px solid black;
+  }
+  #scroll_top:active {
+    transition: all 0s;
+    border: 7px solid #0a58ca;
   }
 
   .fixed-top {

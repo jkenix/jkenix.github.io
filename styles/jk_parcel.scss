@@ -95,12 +95,15 @@ input {font-family: "Bitter Regular";}
 #scroll_top {
 	display: none;
 	position: fixed;
+  justify-content: center;
+  align-items: center;
+  color: #0059ff;
+  font-size: 35px;
 	bottom: 60px;
 	right: 60px;
 	z-index: 1000;
 	width: 80px;
 	height: 80px;
-	background: url("/img/scroll_top.PNG") center center no-repeat;
 	border-radius: 100%;
 	opacity: 0.5;
   border: 12px solid black; background-color: transparent;
@@ -110,8 +113,8 @@ input {font-family: "Bitter Regular";}
 // Wrapper
 .wrapper {
   background-color: #fff;
-  max-width: 1920px;
-  margin: auto;
+  max-width: 1652px;
+  margin: 0 auto;
 }
 // Header
 header {
@@ -300,10 +303,20 @@ header {
     span {@include flexc(); padding: 0 10px 0 10px;}
 }
 // Media
+@media (min-width: 2099px) {
+  #scroll_top {
+   color: #fff;
+  }
+}
 @media (min-width: 1921px) {
+  #scroll_top {
+    right: 150px; 
+    width: 100px; 
+    height: 100px; 
+    font-size: 50px;
+  }
   .footer {flex-direction: column;}
-  body {background-color: #000 !important;}
-  body {display: flex; flex-direction: row;}
+  body {background-color: var(--bs-gray-700) !important;}
 }
 @media (max-width: 1590px) { // increasing padding main-newsletter
   .main-newsletter {padding: 0;} 
@@ -311,6 +324,8 @@ header {
     right: 20px;
     width: 50px;
 	  height: 50px;
+    border: 5px solid black;
+    &:active {transition: all 0s; border: 5px solid #0a58ca;}
   }
 }
 @media (max-width: 1250px) {  // reduction main-newsletter
@@ -359,7 +374,9 @@ header {
     right: 10px; 
     width: 40px; 
     height: 40px; 
+    font-size: 25px;
     border: 7px solid black;
+    &:active {transition: all 0s; border: 7px solid #0a58ca;}
   }
   .fixed-top {padding: 5px 0px 0px 0px;}
   .header .header-nav {
