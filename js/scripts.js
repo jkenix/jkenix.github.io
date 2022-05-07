@@ -43,7 +43,7 @@ $(document).ready(function() {
 });
 // Function show message, if click on fb logo.
 $(document).ready(function() {
-    $('.fb_logo'),$('.facebook_logo').click(function() { 
+    $('.fb_logo, .facebook_logo').click(function() { 
         alert('This is just fb logo from layout. I don"t have fb.');
     });
 });
@@ -52,6 +52,7 @@ $(function(){
 	$(window).scroll(function(){
 		if($(window).scrollTop() > 100) {
 			$('#scroll_top').show();
+            $('#scroll_top').css({"display": "flex"},);
 		} else {
 			$('#scroll_top').hide();
 		}
