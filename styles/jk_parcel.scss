@@ -113,7 +113,7 @@ input {font-family: "Bitter Regular";}
 // Wrapper
 .wrapper {
   background-color: #fff;
-  max-width: 1652px;
+  max-width: 1900px;
   margin: 0 auto;
 }
 // Header
@@ -306,6 +306,11 @@ header {
 @media (min-width: 2099px) {
   #scroll_top {
    color: #fff;
+  }
+}
+@media (min-width: 2000px) {
+  .wrapper {
+    max-width: 1652px;
   }
 }
 @media (min-width: 1921px) {
