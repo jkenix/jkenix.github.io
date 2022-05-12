@@ -92,6 +92,10 @@ input {
   color: red;
   margin-right: 10px;
 }
+.modal-body-contact .fa-facebook-square {
+  font-size: 20px;
+  margin-right: 5px;
+}
 .modal-body-contact .facebook_logo {
   display: none;
 }
@@ -176,6 +180,17 @@ input {
 #scroll_top:active {
   transition: all 0s;
   border: 12px solid #0a58ca;
+}
+
+.fa-facebook-square {
+  font-size: 36px;
+  color: #000;
+}
+.fa-facebook-square:hover {
+  color: #0059ff;
+}
+.fa-facebook-square:active {
+  color: #5231FF;
 }
 
 .wrapper {
