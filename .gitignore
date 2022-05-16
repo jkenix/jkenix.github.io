@@ -4,12 +4,8 @@ dist/
 .cache/
 cache/
 node_modules/
-**package.json
 **package-lock.json
-*.json
 *.txt
 *.zip
-Old JKP/
 Test/
 README.md
-bootstrap-5.1.3/

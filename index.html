@@ -1,97 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Evelin</title>
+  <title></title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="https://github.com/jkenix">
   <link rel="shortcut icon" href="/img/jklogo.webp"/>
   <link rel="stylesheet" media="screen" href="/styles_jk.css"/>
-  <meta property="og:title" content="Evelin">
+  <link rel="apple-touch-icon" href="/img/jklogo_apple.webp">
+  <meta name="theme-color" content="#000"/>
+  <meta property="og:title" content="">
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://jkenix.github.io/"/>
   <meta property="og:image" content=""/>
-  <meta property="og:image:width" content="531"/>
-  <meta property="og::image:height" content="600"/>
+  <meta property="og:image:width" content=""/>
+  <meta property="og::image:height" content=""/>
   <meta property="og:description" content="Page made by jkenix from layout."/>
-  <meta property="og:site_name" content="Evelin"/>
+  <meta property="og:site_name" content=""/>
   <script src="/js/jquery-3.6.0.min.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/jBox.all.min.js"></script>
 </head>
 <body>
-  <header class="header fixed-top" id="home">
-    <div class="header-nav"> 
-      <h1 title="Evelin">E<span>veli</span>n</h1>
+  <div class="wrapper">
+  <header class="header" id="home">
         <div class="menu">
-          <div class="nav-items">
-            <a>Intro</a>
-            <a>Portfolio</a>
-            <a>Pages</a>
-            <a data-bs-toggle="modal" data-bs-target="#exampleModal_About">About</a>
-            <a>Blog</a>
-            <a data-bs-toggle="modal" data-bs-target="#exampleModal_Contact">Contact</a> 
-            <a title="Facebook" class="fb_logo"><img src="/img/fb.webp" width="36" height="36" alt="facebook logo"></a>
-          </div>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal_Test">Активная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal_About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal_Contact">Contact</a>
+            </li>
+          </ul>
         </div>
-    </div>
   </header>
   <main class="main">
-    <div class="main-home-pages">
-      <span>Our Portfolio Layouts</span>
-      <h2>6 Home Pages</h2>
-      <div class="homepages d-flex shadow">
-        <div class="homepages-block block_1">
-          <button class="btn_homepage btn btn-primary">HOMEPAGE 1</button>
-          <a><img src="/img/homepage1.webp" width="531" height="600" alt="homepage 1 image"></a>
-          <button class="btn_homepage btn btn-primary">HOMEPAGE 4</button>
-          <a><img src="/img/homepage4.webp" width="531" height="600" alt="homepage 4 image"></a>
-          <button class="btn_homepage btn btn-primary">HOMEPAGE 6</button>
-          <a><img src="/img/homepage6.webp" width="531" height="600" alt="homepage 6 image"></a>
-        </div>
-        <div class="homepages-block block_2">
-          <button class="btn_homepage btn btn-primary">HOMEPAGE 2</button>
-          <a><img src="/img/homepage2.webp" width="531" height="270" alt="homepage 2 image"></a>
-          <button class="btn_homepage btn btn-primary">HOMEPAGE 3</button>
-          <a><img src="/img/homepage3.webp" width="531" height="600" alt="homepage 3 image"></a>
-          <button class="btn_homepage btn btn-primary">HOMEPAGE 5</button>
-          <a><img src="/img/homepage5.webp" width="531" height="600" alt="homepage 5 image"></a>
-        </div>
+      <!-- <div id="myModal" class="page-link m-2">Click me to open a modal window!</div> -->
+    <div class="main-content">
+      <div class="display-3 order-first">I'm container-fluid</div>
+      <div class="title order-5"><h1 role="button" tabindex="0" hidden>Jkenix default h1</h1></div>
+      <h2 class="order-2">Jkenix default h2</h2>
+      <span class="order-4">Jkenix default span</span>
+      <p class="order-3">You gotta go through it to see there ain’t nothing to it. Did you feel that?</p>
+      <div class="main-content-block block_1 order-last">
+        <button class="btn btn_main-content btn-primary">Button</button>
       </div>
     </div>
-    <div class="main-newsletter">
-      <div class="newsletter-block">
-        <span>Newsletter</span>
-        <h2>Sign Up to Newsletter</h2>
-        <p>You gotta go through it to see there ain’t nothing to it. Did you feel that?</p>
-        <p>Look at me – I’m not out of breath anymore!</p>
-        <form method="POST">
-          <div class="form-line">
-            <div class="email-block d-flex">
-              <input class="e-name" name="email" value="Enter your email" type="text">
-            </div>
-            <input class="send_button" type="submit" value="SUBSCRIBE">
-          </div>
-        </form>
-        <span class="respect">I respect your privacy, so we never share your info</span>
-      </div>
+    <div class="main-content">
+      <ul class="nav nav-fill">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Активная</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Выпадающий список</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Действие</a></li>
+            <li><a class="dropdown-item" href="#">Другое действие</a></li>
+            <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Отделенная ссылка</a></li>
+          </ul>
+        </li>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            Кнопка выпадающего списка
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-item active" href="#">Действие</a></li>
+            <li><a class="dropdown-item" href="#">Другое действие</a></li>
+            <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Отделенная ссылка</a></li>
+          </ul>
+        </div>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ссылка</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ссылка</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Отключенная</a>
+        </li>
+      </ul>
+      <div class="display-3 invisible">I'm container-fluid</div>
     </div>
+    <div class="main-content">
+      <div class="hstack gap-3">
+        <div class="bg-light border">Первый элемент</div>
+        <div class="bg-light border">Второй элемент</div>
+        <div class="bg-light border">Третий элемент</div>
+      </div>
   </main>
   <footer class="footer d-flex shadow">
-    <span class="copyright"><strong>© 2022 Evelin.</strong>Created by Dmitriy "jkenix".</span>
+    <span class="copyright"><strong>© 2022 JKTest.</strong>Created by jkenix.</span>
     <span class="text-primary">All right reserved / Powered by Github Pages.</span>
   </footer>
+  <div class="modal fade" id="exampleModal_Test" tabindex="-1" aria-labelledby="exampleModalToggleLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalToggleLabel">Test</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-contact flex-wrap">
+          <h5>Popover in a modal</h5>
+          <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-bs-content="Popover body content is set in this attribute.">button</a> triggers a popover on click.</p>
+          <hr>
+          <h5>Tooltips in a modal</h5>
+          <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="modal fade" id="exampleModal_Contact" tabindex="-1" aria-labelledby="exampleModalToggleLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title text-center" id="exampleModalToggleLabel">My social links!</h5>
+          <h5 class="modal-title text-center" id="exampleModal_Contact">My social links!</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body modal-body-contact flex-wrap">
           <span><a class="page-link text-nowrap" href="https://github.com/jkenix"><i class="fa-brands fa-github"></i>Github</a></span>
           <span><a class="page-link text-center" href="https://github.com/jkenix/jkenix.github.io"><i class="fa-brands fa-github"></i>Github Repo of this page</a></span>
           <span><a class="page-link text-center" href="https://www.youtube.com/channel/UC22MYJStT6bDNPdSzFIzDqQ"><i class="fa-brands fa-youtube"></i><span>My Youtube Channel</span></a></span>
-          <span><a class="facebook_logo"><img src="/img/fb.webp" width="36" height="36" alt="facebook logo"></a></span>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
@@ -103,7 +142,7 @@
     <div class="modal-dialog ">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title text-center" id="exampleModalLabel">About me</h5>
+          <h5 class="modal-title text-center" id="exampleModal_About">About me</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body modal-body-about flex-column">
@@ -116,7 +155,8 @@
       </div>
     </div>
   </div>
-  <a href="#" id="scroll_top" title="Up"></a>
+  <a href="#" id="scroll_top" title="Up"><i class="fa-solid fa-arrow-up"></i></a>
+</div>
 <script src="/js/scripts.js"></script> 
 </body>
 </html>

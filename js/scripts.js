@@ -3,17 +3,35 @@
 // Define Jquery (If you dont' use node.js comment this lines)
 // var jquery = require("jquery"); window.$ = window.jQuery = jquery;  
 // var bootstrap = require("bootstrap"); 
+// ==================================================================
+// Jbox
+new jBox('Modal', {
+    width: 300,
+    height: 200,
+    attach: '#myModal',
+    title: 'My Modal Window',
+    content: '<i>Hello there!</i>'
+});
+new jBox('Tooltip', {
+    attach: '.tooltip',
+});
+var dropdownElementList = Array.prototype.slice.call(document.querySelectorAll('.dropdown-toggle'))
+var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+  return new bootstrap.Dropdown(dropdownToggleEl)
+})
 // Function to switch navigation class to fixed on scroll
-// and change the position of the modal window
+// and change the position of the modal window 
 $(window).scroll(function(){
         if($(this).scrollTop()>10){
             $(function(Showmenu){
                 $('.header').addClass('__scroll');
+                $('.header').addClass('fixed-top');
                 $('.modal-dialog').addClass('modal-dialog-center');
             });
         }
         else if ($(this).scrollTop()<10) {
             $('.header').removeClass('__scroll');
+            $('.header').removeClass('fixed-top');
             $('.modal-dialog').removeClass('modal-dialog-center');
         }
         // Check page reboot
@@ -43,15 +61,16 @@ $(document).ready(function() {
 });
 // Function show message, if click on fb logo.
 $(document).ready(function() {
-    $('.fb_logo'),$('.facebook_logo').click(function() { 
+    $('.fb_logo, .facebook_logo').click(function() { 
         alert('This is just fb logo from layout. I don"t have fb.');
     });
 });
 // Function scroll to top
 $(function(){
 	$(window).scroll(function(){
-		if($(window).scrollTop() > 100) {
+		if($(window).scrollTop() > 10) {
 			$('#scroll_top').show();
+            $('#scroll_top').css({"display": "flex"},);
 		} else {
 			$('#scroll_top').hide();
 		}
