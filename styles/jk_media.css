@@ -1,0 +1,125 @@
+@media (min-width: 2099px) {
+  #scroll_top {
+    color: #fff;
+  }
+}
+@media (min-width: 1921px) {
+  #scroll_top {
+    right: 150px;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  body {
+    background-color: var(--bs-gray-700) !important;
+  }
+}
+@media (max-width: 1590px) {
+  #scroll_top {
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: 5px solid black;
+  }
+  #scroll_top:active {
+    transition: all 0s;
+    border: 5px solid #0a58ca;
+  }
+}
+@media (min-width: 1400px) {
+  body, .wrapper {
+    background-color: #adb5bd;
+  }
+}
+@media (max-width: 1399.98px) {
+  body, .wrapper {
+    background-color: #198754;
+  }
+}
+@media (max-width: 1199.98px) {
+  body, .wrapper {
+    background-color: #c29ffa;
+  }
+}
+@media (max-width: 991.98px) {
+  body, .wrapper {
+    background-color: #0dcaf0;
+  }
+
+  .header .header-wrapper {
+    padding: 20px 140px 0 100px;
+  }
+}
+@media (max-width: 766px) {
+  .header .header-wrapper {
+    padding: 20px 0px 0 0px;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 10px;
+  }
+
+  #scroll_top {
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    border: 7px solid black;
+  }
+  #scroll_top:active {
+    transition: all 0s;
+    border: 7px solid #0a58ca;
+  }
+
+  .footer {
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  .footer span {
+    padding: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  body, .wrapper {
+    background-color: #1aa179;
+  }
+}
+@media (max-width: 575.98px) {
+  body, .wrapper {
+    background-color: #ab296a;
+  }
+}
+@media (max-width: 450px) {
+  header .contacts {
+    flex-direction: column;
+    gap: 10px;
+    width: auto;
+  }
+}
+@media (max-width: 350px) {
+  .header .header-wrapper {
+    padding: 20px 0px 0 15px;
+    align-items: flex-end;
+  }
+
+  .footer {
+    height: auto;
+  }
+
+  .footer span {
+    flex-direction: column;
+  }
+}
+@media (max-width: 270px) {
+  .header .header-wrapper {
+    padding: 20px 0px 0 0px;
+  }
+}
+
+/*# sourceMappingURL=jk_media.css.map */
