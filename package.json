@@ -6,13 +6,15 @@
     "jquery": "^3.6.0",
     "js": "^0.1.0",
     "node-sass": "^7.0.1",
-    "react-scripts": "^2.1.3"
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
+    "npm-run-all": "^4.1.5",
     "sass": "^1.51.0"
   },
   "scripts": {
-    "dev": "npm run main | npm run media | parcel index.html",
+    "dev": "run-p main media",
+    "parcel": "parcel index.html",
     "main": "sass --watch styles/jk_parcel.scss:styles/jk_public.css",
     "media": "sass --watch styles/jk_media_parcel.scss:styles/jk_media.css",
     "node-scss": "node-sass -w  --sourcemap true styles/jk_parcel.scss -o styles/"
