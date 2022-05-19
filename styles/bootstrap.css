@@ -6,6 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
  /* Edited by jkenix */
+ /* 103 line + - h sizes*/
  /* 236 line - a { text-decoration: none; */
  /* 3031 line - .btn-check:checked + .btn-primary:focus */
  /* 3924 line - nav-link {color: #000} */
@@ -102,26 +103,26 @@ hr:not([size]) {
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
   font-weight: 500;
-  line-height: 1.2;
+  /* line-height: 1.2; */
 }
 
 h1, .h1 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(1rem + 1vw); /*def: calc(1.375rem + 1.5vw)*/
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 2.5rem;
+    font-size: 1rem; /*def: 2.5rem*/
   }
 }
 
 h2, .h2 {
-  font-size: calc(1.325rem + 0.9vw);
+  font-size: calc(1.325rem + 0.9vw); /*def: calc(1.325rem + 0.9vw)*/
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 2rem;
+    font-size: 2rem; /*def: */
   }
 }
 
