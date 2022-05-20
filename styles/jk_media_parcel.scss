@@ -11,20 +11,42 @@
     .footer {flex-direction: column;}
     body {background-color: var(--bs-gray-700) !important;}
 }
-@media (max-width: 1590px) { 
-   
+@media (max-width: 1500px) { 
+  .main .title-content-wrapper-content {
+    display: block;
+    width: 480px;
+    .content-title {
+      h2 {align-items: flex-start;}
+    }
+    p {text-align: start;}
+  }
 }
 @include media-breakpoint-up(xxl) {
     body, .wrapper {background-color: $gray-500;}
 }
 @include media-breakpoint-down(xxl)  {
     body, .wrapper {background-color: $green-500;}
-    .main .title-content-wrapper img{
-      width: auto;
-    } 
 }
 @include media-breakpoint-down(xl)  {
     body, .wrapper {background-color: $indigo-200;}
+}
+@media (max-width: 1135px) {
+  .main .title-content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #6f42c1;
+    padding: 75px 27px 76px 140px;
+      &-content {
+        display: flex;
+        width: 100%;
+        .content-title {
+          h2 {align-items: center;}
+        }
+        p {text-align: center; margin: 0 auto 25px auto; width: 70%;}
+        button {margin: 0 auto; width: 50%;}
+      }
+}
 }
 @include media-breakpoint-down(lg)  {
     body, .wrapper {background-color: $cyan-500;}
