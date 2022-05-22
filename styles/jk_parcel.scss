@@ -49,7 +49,7 @@ $shadow: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
         transition: 0s all; background-color: #fff;
         color:#000; transition: 0s all;
       }
-  } // btn end
+  }
 }
 // Modal
 .modal-dialog-center {
@@ -157,14 +157,11 @@ input {font-family: "Nunito Regular";}
   max-width: 1920px;
   margin: 0 auto;
 }
-.p-wrapper, .about-seo-wrapper {
+header, .p-wrapper, .about-seo-wrapper {
   background-color: $purple-500; 
 }
 // Header
 header {
-    width: 100%;
-    height: auto;
-    background-color: $purple-500;
   .header-wrapper {
       @include flexb();
       height: 68px;
@@ -329,7 +326,7 @@ header {
         }
     }
     .cnt_4 {
-      margin: 0 110px 115px 140px;
+      margin: 0 110px 190px 140px;
       .text_col {
         padding: 22px 0 0 0;
         span {
@@ -342,12 +339,46 @@ header {
           width: 95%; line-height: 34px;
         }
         .stat_col {
-          padding: 0 66.5px 0 25px;
-            .row {gap: 20px;}
-            .col_img {flex: 0 0 0%;}
-            span {color: #2C1258;}
+          padding: 33px 66.5px 0 24px;
+            .row {}
+            .col_img {flex: 0 0 0%; margin: 0 20px 0 0;}
+            .img_2 {margin: 0 20px 0 60px;}
+            .text-stat_col {
+              padding: 3px 0 0px 0;
+              span {color: #2C1258;}
+            }
         }
       }
+    }
+    .cr-wrapper {
+      padding: 96px 125px 99.69px 140px;
+      margin-bottom: 185.5px;
+      color: #fff;
+      .row {
+        flex: 0 0 50%;
+        .text_col {
+          padding: 157.69px 0 0 0;
+            h2 {width: 93%; margin-bottom: 26px;}
+            p {width: 91%; line-height: 34px; margin-bottom: 25px;}
+        }
+        @include btn();
+        .btn_main-content {
+          width: 186px;
+          height: 52px;
+          margin: 0 0 156.31px 0;
+        }
+        .img_col {
+          padding: 3px 0 0 0;
+          .border-wrapper {
+            width: 318px;
+            height: 286px;
+          }
+        }
+      }
+    }
+    .our-services-wrapper {
+      padding: 0 120px 0 140px;
+      h2 {text-align: center;}
     }
 }
 // Footer
