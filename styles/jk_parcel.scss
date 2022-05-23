@@ -133,6 +133,7 @@ h1 {
   height: 23px;
 }
 h2 {
+  margin: 0; 
   line-height: 56px;
   font-size: 2.625rem;
   font-family: "Nunito Regular";
@@ -157,12 +158,11 @@ input {font-family: "Nunito Regular";}
   max-width: 1920px;
   margin: 0 auto;
 }
-header, .p-wrapper, .about-seo-wrapper {
+.p-wrapper, .about-seo-wrapper {
   background-color: $purple-500; 
 }
 // Header
 header {
-  .header-wrapper {
       @include flexb();
       height: 68px;
       padding: 20px 140px 0 140px;
@@ -193,11 +193,10 @@ header {
       width: 94.12px; height: 28px;
       @include flexb();
     }
-  }
 }
 .nav-wrapper {
   width: 100%; height: 94px;
-  padding: 0 140px 0 140px;
+  padding: 0 123px 0 140px;
     .border-wrapper {
       height: 94px;
       width: 100%;
@@ -214,9 +213,8 @@ header {
   width: 100%; height: 100%;
     .title-content-wrapper {
       width: 100%;
-      display: flex; flex-direction: row;
       background-color: $purple-500;
-      padding: 75px 27px 76px 140px;
+      padding: 75px 7px 76px 140px;
       justify-content: space-between;
         &-content {
           color: #fff; 
@@ -261,42 +259,44 @@ header {
     }
     .about-seo-wrapper { 
       width: 100%;
-      padding: 0 140px 0 140px;
+      padding: 0 123px 0 140px;
       height: calc(200px - 76px);
+      margin: 0 0 463px 0;
       .cnt_1 {
         padding: 0px 80px 0px 80px;
         border-radius: 10px 10px 0 0;
-        height: 124px;
         .col {
-          padding-top:100px;
+          padding: 100px 0 40px 0;
           span {color: #F4AB00; font-size: 1.188rem;}
           h2 {padding: 20px 0 0 0; margin: 0 0 25px 0;}
-          p {line-height: 34px; width: 99%;}
+          
         }
-        .row {
-            p {
-              font-size: 0.938rem; 
-              line-height: 28px; 
-              width: 90%;
-              padding: 8px 0 0 0;
+        .col_content-1 {
+          p {line-height: 34px; width: 97%;}
+        }
+        .col_content-2 {
+          .row {
+            margin-left: 60px;
+            padding-bottom: 50px;
+            gap: 25px;
+            .img_col {
+              width: auto;
             }
-        }
-        .img_col {
-          margin: 0 24px 103px 68px;
-        }
-        .text_col {
-          padding: 0;
-         
+            .text_col {
+              padding: 0;
+              p {
+                font-size: 0.938rem; 
+                line-height: 28px; 
+                width: 80%;
+                padding: 8px 0 0 0;
+              }
+            }
+          }
         }
       }
     }
     .row {--bs-gutter-x: 0rem;}
     .cnt_2 {
-      padding: 0px 80px 0px 80px;
-      margin: 0 140px 70px 140px;
-        .col {padding: 391px 0 0 0;}
-    }
-    .cnt_3 {
       padding: 75.41px 5px 150px 31px;
       margin: 0 110px 0 140px;
         .text_col {
@@ -325,7 +325,7 @@ header {
           }
         }
     }
-    .cnt_4 {
+    .cnt_3 {
       margin: 0 110px 190px 140px;
       .text_col {
         padding: 22px 0 0 0;
@@ -340,7 +340,6 @@ header {
         }
         .stat_col {
           padding: 33px 66.5px 0 24px;
-            .row {}
             .col_img {flex: 0 0 0%; margin: 0 20px 0 0;}
             .img_2 {margin: 0 20px 0 60px;}
             .text-stat_col {
@@ -355,8 +354,8 @@ header {
       margin-bottom: 185.5px;
       color: #fff;
       .row {
-        flex: 0 0 50%;
-        .text_col {
+        width: 100%;
+        .title_col {
           padding: 157.69px 0 0 0;
             h2 {width: 93%; margin-bottom: 26px;}
             p {width: 91%; line-height: 34px; margin-bottom: 25px;}
@@ -366,19 +365,41 @@ header {
           width: 186px;
           height: 52px;
           margin: 0 0 156.31px 0;
+          justify-content: center; align-items: center;
         }
-        .img_col {
+        .content_col {
+          width: 671px; height: 662px;
           padding: 3px 0 0 0;
+          .row_content {
+            flex-wrap: wrap;
+            gap: 30px;
+          }
+          .imc_1, .imc_2 {
+            .border-wrapper {
+              width: 318px;
+              height: 286px;
+            }
+          }
           .border-wrapper {
-            width: 318px;
-            height: 286px;
+            padding: 35px 0 0 37px;
+              h2 {font-size: 1.188rem; margin: 10px 0 5px 0;}
+              p {font-size: 0.938rem; width: 92%; line-height: 26px;}
           }
         }
       }
     }
     .our-services-wrapper {
       padding: 0 120px 0 140px;
-      h2 {text-align: center;}
+      .our-services-content {
+        h2 {text-align: center;}
+        .row {
+          gap: 34px;
+          .border-wrapper {
+            width: auto;
+              span {font-size: 1rem; line-height: 16px;}
+          }
+        }
+      }
     }
 }
 // Footer
