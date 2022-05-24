@@ -5,11 +5,17 @@
 // Media
 @media (min-width: 2099px) {
     #scroll_top {
+      width: 100px; height: 100px; font-size: 100px;
     }
   }
 @media (min-width: 1921px) {
     .footer {flex-direction: column;}
     body {background-color: var(--bs-gray-700) !important;}
+    #scroll_top {
+      min-width: 80px; min-height: 80px;
+      max-width: 100px; max-height: 100px;
+      font-size: 50px;
+    }
 }
 @media (max-width: 1500px) { 
   .main {
@@ -123,7 +129,13 @@
     .footer span {flex-direction: column;}
 }
 @media (max-width: 270px) {
-    .header .header-wrapper {
-      padding: 20px 0px 0 0px; 
+  .wrapper .menu {
+    width: 170px;
+    display: block; padding-bottom: 5px;
+    // header-nav .menu hover
+   
+  }
+    .header {
+      padding: 0px; 
     }
 }
