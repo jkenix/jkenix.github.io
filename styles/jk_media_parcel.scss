@@ -21,7 +21,7 @@
   .main {
     .title-content-wrapper-content {
       display: block;
-      width: 480px;
+      // width: 480px;
         h2 {align-items: flex-start;}
       p {text-align: start;}
     }
@@ -73,7 +73,7 @@
 @include media-breakpoint-down(xl)  {
     body, .wrapper {background-color: $indigo-200;}
 }
-@media (max-width: 1135px) {
+@media (max-width: 1180px) {
   .main .title-content-wrapper {
     width: 100%;
     flex-direction: column;
@@ -82,7 +82,7 @@
       &-content {
         display: flex;
         width: 100%;
-          h2 {align-items: center;}
+        h2 {align-items: center;}
         p {text-align: center; margin: 0 auto 25px auto; width: 70%;}
         button {margin: 0 auto; width: 50%;}
       }
