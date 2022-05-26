@@ -19,17 +19,16 @@
 }
 @media (max-width: 1500px) { 
   .main {
-    .title-content-wrapper-content {
+    .title-text_col {
       display: block;
-      // width: 480px;
-        h2 {align-items: flex-start;}
+      width: 480px;
+      h2 {align-items: flex-start;}
       p {text-align: start;}
     }
-  
   }
 }
 @media (min-width: 1441px) {
-  .cr-wrapper .row {
+  .conversion-rate {
     justify-content: center;
     align-items: center;
     text-align:center;
@@ -49,44 +48,119 @@
 @include media-breakpoint-down(xxl)  {
     body, .wrapper {background-color: $green-500;}
     .main {
-      .cnt_1, .cnt_2 .row, .cnt_3 .row_content, .cr-wrapper .row {flex-direction: column;}
-      .cnt_2 .row {
-        .text_col {
-          padding: 0 60px 0 60px;
-          text-align: center;
-          .row {
-            width: 400px;
-            height: 180px !important;
+      .cnt-1, .cnt-2, .cnt-3, .conversion-rate, .seo-marketing {flex-direction: column;}
+      .about-seo-wrapper {
+      padding: 75px 40px 76px 40px;
+        margin-bottom: 682px;
+          .cnt-1 {
+            padding: 0 145px 0 145px; 
+            text-align: center; 
+              .col p, .row p {width: 100% !important;} // Проблемный участок
+              .col_content-2 .row {margin-left: 10;}
           }
-        }
       }
-      .cnt_3 .row_content {
-        padding: 0 60px 0 60px;
+      .cnt-2 {
+        gap: 55px;
+        padding: 0px 0px 0px 0px;
+        margin: 0 40px 0 40px;
+          .img_col {justify-content: center; align-items: center; display: flex;}
+          .text_col {
+            padding: 0 60px 0 60px;
+            text-align: center;
+            .row {width: 100%; height: 100%;}
+          }
+      }
+      .cnt-3 {
+        margin: 0 40px 10px 40px;
+        padding: 0 0px 10px 40px;
         .text_col {
           width: 50%; margin: 0 auto;
           text-align: center;
+            .stat_col {
+              padding: 10px;
+              .col_img {margin: 0;}
+              .img_2 {margin: 0;}
+            }
+        }
+       
+      }
+      .conversion-rate {
+        padding: 0px 125px 0px 140px;
+        margin-bottom: 20px;
+        text-align: center;
+        h2, p {width: 100%;} // Проблемный участок
+        .btn {margin: 0 auto;}
+        .title_col {padding: 40px 0 20px 0;}
+        .content_col {
+          width: 100%;
+          height: 100%;
+          .row_content {justify-content: center;}
+          .border-wrapper {max-width: 100%;} // Проблемный участок
         }
       }
-     
+      .our-services {
+        padding: 0 40px 0 40px;
+        margin-bottom: 30px;
+        justify-content: center;
+          .row {
+            a {width: auto;}
+          }
+      }
+      .seo-marketing {
+        text-align: center;
+        margin: 0;
+        gap: 30px;
+        p {min-width: 100%;} // Проблемный участок фикс мин-видз
+        .col {padding: 0;}
+        .btn {margin: 0 auto;}
+        .img_col {padding-bottom: 40px;}
+      }
     }
 }
 @include media-breakpoint-down(xl)  {
     body, .wrapper {background-color: $indigo-200;}
 }
 @media (max-width: 1180px) {
-  .main .title-content-wrapper {
-    width: 100%;
-    flex-direction: column;
-    background-color: #6f42c1;
-    padding: 75px 27px 76px 140px;
-      &-content {
-        display: flex;
-        width: 100%;
-        h2 {align-items: center;}
-        p {text-align: center; margin: 0 auto 25px auto; width: 70%;}
-        button {margin: 0 auto; width: 50%;}
-      }
-}
+  .main {
+    .title {
+      padding: 0;
+      flex-direction: column;
+        &-text_col {
+          display: flex;
+          width: 100%;
+          h2 {align-items: center;}
+          p {text-align: center; margin: 0 auto 25px auto; width: 70%;}
+          button {margin: 0 auto 30px auto; width: 50%;}
+        }
+        .col {max-width: 100%;}
+    }
+    .about-seo-wrapper {
+      margin-bottom: 770px;
+        .cnt-1 {flex-direction: column;}
+    }
+    .cnt-2 {
+      gap: 55px;
+      padding: 0;
+      margin: 0 40px 0 40px;
+    }
+    .cnt-3 {
+      margin: 0 40px 10px 40px;
+    }
+    .conversion-rate {
+      padding: 0px 125px 0px 140px;
+        .content_col {
+        }
+    }
+    .our-services {
+      padding: 0 40px 0 40px;
+        .row {
+          width: auto;
+          justify-content: center;
+          a {width: auto;}
+        }
+    }
+  }
+  
 }
 @include media-breakpoint-down(lg)  {
     body, .wrapper {background-color: $cyan-500;}
