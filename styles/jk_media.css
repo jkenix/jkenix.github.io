@@ -1,10 +1,95 @@
+@media (min-width: 2099px) {
+  #scroll_top {
+    width: 100px;
+    height: 100px;
+    font-size: 100px;
+  }
+}
 @media (min-width: 1921px) {
-  .footer {
-    flex-direction: column;
+  body {
+    background-color: #495057 !important;
   }
 
-  body {
-    background-color: var(--bs-gray-700) !important;
+  #scroll_top {
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 100px;
+    max-height: 100px;
+    font-size: 50px;
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+@media (min-width: 1501px) {
+  .main .title-text_col {
+    max-width: 800px;
+  }
+  .main .reasons-choosing-seo .text_col {
+    padding-left: 120px;
+  }
+  .main .conversion-rate {
+    margin-bottom: 60px;
+  }
+  .main .conversion-rate .title_col h2, .main .conversion-rate .title_col p {
+    margin: 0 auto 25px auto;
+  }
+  .main .conversion-rate .title_col p {
+    width: 60%;
+  }
+  .main .conversion-rate .content_col .border-wrapper {
+    padding: 35px 0 0 20px;
+  }
+  .main .seo-marketing {
+    margin-bottom: 0px;
+  }
+  .main .seo-marketing .text_col .btn_main-content {
+    margin: 0 0 100px 0;
+  }
+  .main .hsw .row_content {
+    gap: 40px;
+    padding: 0 350px 0 350px;
+    justify-content: center;
+  }
+  .main .hsw .row_content .cb_1 {
+    max-width: 100%;
+    display: flex;
+    flex: 1 0 0%;
+  }
+}
+@media (max-width: 1500px) {
+  .main .title-text_col {
+    display: block;
+    width: 480px;
+  }
+  .main .title-text_col h2 {
+    align-items: flex-start;
+  }
+  .main .title-text_col p {
+    text-align: start;
+  }
+}
+@media (min-width: 1441px) {
+  .conversion-rate {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .conversion-rate .title_col {
+    padding: 0 !important;
+  }
+  .conversion-rate .title_col h2 {
+    width: 100%;
+  }
+  .conversion-rate .title_col .btn_main-content {
+    margin: 0 auto;
+  }
+  .conversion-rate .title_col .border-wrapper p {
+    max-width: 100%;
   }
 }
 @media (min-width: 1400px) {
@@ -17,13 +102,209 @@
     background-color: #198754;
   }
 
-  .main .title-content-wrapper img {
+  .main .about-seo-wrapper {
+    padding: 75px 40px 76px 40px;
+    margin-bottom: 820px;
+  }
+  .main .about-seo-wrapper .as-title {
+    padding: 0 145px 0 145px;
+    text-align: center;
+  }
+  .main .about-seo-wrapper .as-title .col-xxl p {
+    margin: 0 auto;
+    width: 60%;
+  }
+  .main .about-seo-wrapper .as-title .col-xxl h2 {
+    width: 50%;
+    margin: 0 auto 25px auto;
+  }
+  .main .about-seo-wrapper .as-title .col_content-1 {
+    padding: 40px 0 40px 0;
+  }
+  .main .about-seo-wrapper .as-title .col_content-2 {
+    padding: 0;
+  }
+  .main .about-seo-wrapper .as-title .col_content-2 .row {
+    justify-content: center;
+    padding: 0 0 40px 0;
+    margin: 0;
+  }
+  .main .appear-fp {
+    justify-content: center;
+    gap: 55px;
+    padding: 0;
+    margin: 0 40px 0 40px;
+  }
+  .main .appear-fp .text_col {
+    padding: 0 60px 0 60px;
+    text-align: center;
+  }
+  .main .appear-fp .text_col p {
+    width: 60%;
+    margin: 0 auto 30px auto;
+  }
+  .main .appear-fp .text_col .row {
+    width: 100%;
+  }
+  .main .appear-fp .check_col {
+    height: 154px;
+  }
+  .main .appear-fp .check_col ul {
+    margin: 0;
+  }
+  .main .reasons-choosing-seo {
+    margin: 0 40px 10px 40px;
+    padding: 0 0px 10px 0px;
+  }
+  .main .reasons-choosing-seo .text_col {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .main .reasons-choosing-seo .text_col p {
+    width: 65%;
+    margin: 0 auto 30px auto;
+  }
+  .main .reasons-choosing-seo .text_col .stat_col {
+    padding: 20px 0 0 0;
+  }
+  .main .reasons-choosing-seo .text_col .stat_col .col_img {
+    margin: 0;
+  }
+  .main .reasons-choosing-seo .text_col .stat_col .img_2 {
+    margin: 0;
+  }
+  .main .reasons-choosing-seo .text_col .row {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .main .conversion-rate {
+    padding: 0px 125px 80px 140px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .main .conversion-rate .title_col {
+    padding: 80px 40px 40px 80px;
+  }
+  .main .conversion-rate .title_col h2 {
+    max-width: 100%;
+  }
+  .main .conversion-rate .title_col p {
+    width: 55%;
+    margin: 0 auto;
+  }
+  .main .conversion-rate .title_col .btn {
+    margin: 20px auto 0 auto;
+  }
+  .main .conversion-rate .content_col {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  .main .conversion-rate .content_col .row_content {
+    justify-content: center;
+  }
+  .main .conversion-rate .content_col .border-wrapper {
+    padding: 35px 0 0 0;
+  }
+  .main .conversion-rate .content_col .border-wrapper p {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .main .our-services {
+    padding: 0 40px 0 40px;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  .main .our-services .row a {
     width: auto;
+  }
+  .main .seo-marketing {
+    text-align: center;
+    margin: 0;
+    gap: 30px;
+  }
+  .main .seo-marketing .col-xxl {
+    padding: 0;
+  }
+  .main .seo-marketing .text_col p {
+    margin: 20px auto 20px auto;
+    max-width: 50%;
+  }
+  .main .seo-marketing .text_col .btn {
+    margin: 0 auto 0 auto;
+  }
+  .main .seo-marketing .img_col {
+    padding-bottom: 40px;
+  }
+  .main .hsw .row_content {
+    justify-content: center;
+    padding: 0;
   }
 }
 @media (max-width: 1199.98px) {
   body, .wrapper {
     background-color: #c29ffa;
+  }
+
+  .nav-wrapper .menu {
+    padding: 0 75px 0 75px;
+  }
+  .nav-wrapper .nav {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main .title {
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main .title-text_col {
+    display: flex;
+    width: 100%;
+  }
+  .main .title-text_col h2 {
+    align-items: center;
+  }
+  .main .title-text_col p {
+    text-align: center;
+    margin: 0 auto 25px auto;
+    width: 50%;
+  }
+  .main .title-text_col button {
+    margin: 0 auto 30px auto;
+    width: 50%;
+  }
+  .main .title .col {
+    max-width: 100%;
+  }
+  .main .about-seo-wrapper {
+    margin-bottom: 920px;
+  }
+  .main .reasons-choosing-seo {
+    margin: 0 40px 10px 40px;
+  }
+  .main .conversion-rate {
+    padding: 50px 60px 50px 60px;
+  }
+  .main .conversion-rate .title_col {
+    padding: 0px 0 40px 0;
+  }
+  .main .our-services {
+    padding: 0 40px 0 40px;
+  }
+  .main .our-services .row {
+    justify-content: center;
+  }
+  .main .hsw .row_content {
+    gap: 20px;
+  }
+  .main .hsw .row_content .cb_1 {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 0 0%;
+    max-width: 80%;
   }
 }
 @media (max-width: 991.98px) {
@@ -31,26 +312,56 @@
     background-color: #0dcaf0;
   }
 
-  .header .header-wrapper {
-    padding: 20px 140px 0 100px;
+  .header {
+    padding: 20px 20px 0 20px;
   }
-}
-@media (max-width: 766px) {
-  .header .header-wrapper {
-    padding: 20px 0px 0 0px;
-    flex-direction: column;
+
+  .nav-wrapper {
+    padding: 0 20px 0 20px;
+  }
+  .nav-wrapper .menu {
+    padding: 0 0px 0 0px;
+  }
+  .nav-wrapper .nav {
+    justify-content: center;
     align-items: center;
-    height: auto;
-    gap: 10px;
+  }
+
+  .main .about-seo-wrapper {
+    margin-bottom: 920px;
+  }
+  .main .conversion-rate {
+    padding: 0 40px 30px 40px;
+  }
+  .main .reasons-choosing-seo .text_col {
+    width: 100%;
+  }
+  .main .reasons-choosing-seo .text_col p {
+    width: 50%;
+    margin: 0 auto 20px auto;
+  }
+  .main .reasons-choosing-seo .text_col .row {
+    justify-content: center;
+    width: 100%;
+  }
+  .main .reasons-choosing-seo .text_col .text-stat_col {
+    max-width: 15%;
+    margin-right: 60px;
+  }
+  .main .hsw .row_content .cb_1 {
+    max-width: 100%;
   }
 
   .footer {
-    justify-content: start;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
-
-  .footer span {
-    padding: 0;
+}
+@media (max-width: 929px) {
+  .main .about-seo-wrapper {
+    margin-bottom: 1180px;
   }
 }
 @media (max-width: 767.98px) {
@@ -85,8 +396,14 @@
   }
 }
 @media (max-width: 270px) {
-  .header .header-wrapper {
-    padding: 20px 0px 0 0px;
+  .wrapper .menu {
+    width: 170px;
+    display: block;
+    padding-bottom: 5px;
+  }
+
+  .header {
+    padding: 0px;
   }
 }
 
