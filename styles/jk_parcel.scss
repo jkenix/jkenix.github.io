@@ -162,9 +162,7 @@ input {font-family: "Nunito Regular";}
   max-width: 1920px;
   margin: 0 auto;
 }
-.w__bg {
-  background-color: #fff; border: 1px solid #fff;
-}
+.w__bg {background-color: #fff; border: 1px solid #fff;}
 .header-wrapper, .p__bg {background-color: $purple-500;}
 .dv__bg {background-color: #421B81;}
 // Img
@@ -349,10 +347,6 @@ header {
             }
         }
       } // text_col end
-      .img-fluid {
-        display: flex;
-        justify-content: center;
-      }
     }
     .conversion-rate {
       padding: 96px 125px 99.69px 140px;
@@ -386,7 +380,7 @@ header {
               height: 286px;
             }
           }
-          .br_m {margin: 30px 0 0 0;}
+          .br__m {margin: 30px 0 0 0;}
           .border-wrapper {
             background-color: #fff; 
             color: #2C1258;
