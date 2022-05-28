@@ -118,11 +118,11 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: calc(1.325rem + 0.9vw); /*def: calc(1.325rem + 0.9vw)*/
+  font-size: calc(1.325rem + 0.9vw); /* def: calc(1.325rem + 0.9vw) */
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 2.625rem; /*def: 2rem*/
+    font-size: 2.625rem; /* def: 2rem */
   }
 }
 
@@ -131,7 +131,7 @@ h3, .h3 {
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 1.75rem;
+    font-size: 1.125rem; /* def: 1.75rem */
   }
 }
 
