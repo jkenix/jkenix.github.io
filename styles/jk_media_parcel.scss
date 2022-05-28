@@ -22,8 +22,33 @@
   }
 }
 @media (min-width: 1501px) {
-  .main .title-text_col {
-    max-width: 800px;
+  .main {
+    .title-text_col {max-width: 800px;}
+    .reasons-choosing-seo .text_col {padding-left: 120px;}
+    .conversion-rate {
+      margin-bottom: 60px;
+      .title_col {
+        h2, p {margin: 0 auto 25px auto;}
+        p {width: 60%;}
+      }
+     .content_col .border-wrapper {
+      padding: 35px 0 0 20px;
+    }
+    } // Good for 1400px + breakpoints
+    .seo-marketing {
+      margin-bottom: 0px; // Good for 1400px + breakpoints
+      .text_col .btn_main-content {margin: 0 0 100px 0;} // Good for 1400px + breakpoints
+    }
+    .hsw .row_content {
+      gap: 40px;
+      padding: 0 350px 0 350px;
+      justify-content: center;
+      .cb_1 {
+        max-width: 100%;
+        display: flex;
+        flex: 1 0 0%;
+      }
+    }
   }
 }
 @media (max-width: 1500px) { 
