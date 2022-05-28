@@ -21,6 +21,11 @@
     gap: 10px;
   }
 }
+@media (min-width: 1501px) {
+  .main .title-text_col {
+    max-width: 800px;
+  }
+}
 @media (max-width: 1500px) { 
   .main {
     .title-text_col {
@@ -46,17 +51,15 @@
     .title_col .border-wrapper p {max-width: 100%;}
   }
 }
-@include media-breakpoint-up(xxl) { // 1400px +
-    body, .wrapper {background-color: $gray-500;}
-}
+@include media-breakpoint-up(xxl) { body, .wrapper {background-color: $gray-500;}} // 1400px + // Only demonstrative class
 @include media-breakpoint-down(xxl)  { // 1400px
     body, .wrapper {background-color: $green-500;}
     .main {
-      .seo-marketing {flex-direction: column;}
+      // .seo-marketing {flex-direction: column;}
       .about-seo-wrapper {
         padding: 75px 40px 76px 40px;
         margin-bottom: 820px;
-          .cnt-1 {
+          .as-title {
             padding: 0 145px 0 145px; 
             text-align: center; 
               .col-xxl {
@@ -74,14 +77,15 @@
               } 
           }
       }
-      .cnt-2 {
+      .appear-fp {
+        justify-content: center;
         gap: 55px;
-        padding: 0px 0px 0px 0px;
+        padding: 0;
         margin: 0 40px 0 40px;
           .text_col {
             padding: 0 60px 0 60px;
             text-align: center;
-            p {width: 60%;margin: 0 auto 30px auto;}
+            p {width: 60%; margin: 0 auto 30px auto;}
             .row {width: 100%;}
           }
           .check_col {
@@ -89,19 +93,19 @@
             ul {margin: 0;}
           }
       }
-      .cnt-3 {
+      .reasons-choosing-seo {
         margin: 0 40px 10px 40px;
-        padding: 0 0px 10px 40px;
+        padding: 0 0px 10px 0px;
         .text_col {
-          width: 60%; margin: 0 auto;
+          width: 65%; margin: 0 auto;
           text-align: center;
-          p {width: 100%;}
+          p {width: 65%; margin: 0 auto 30px auto;}
             .stat_col {
               padding: 20px 0 0 0;
               .col_img {margin: 0;}
               .img_2 {margin: 0;}
             }
-            .row {width: 80%; margin: 0 auto;}
+            .row {width: 60%; margin: 0 auto;}
         }
        
       }
@@ -110,7 +114,7 @@
         margin-bottom: 20px;
         text-align: center;
         .title_col {
-          padding: 80px 40px 20px 80px;
+          padding: 80px 40px 40px 80px;
           h2 {max-width: 100%;} 
           p {width: 55%; margin: 0 auto;}
           .btn {margin: 20px auto 0 auto;}
@@ -137,13 +141,19 @@
         text-align: center;
         margin: 0;
         gap: 30px;
-        p {min-width: 100%;} // Проблемный участок фикс мин-видз
-        .col {padding: 0;}
-        .btn {margin: 0 auto;}
+        .col-xxl {padding: 0;}
+        .text_col {
+          
+          p {margin: 20px auto 20px auto; max-width: 50%;} // Проблемный участок фикс мин-видз
+          .btn {margin: 0 auto 0 auto;}
+        }
         .img_col {padding-bottom: 40px;}
       }
       .hsw {
-        .row_content {justify-content: center; padding: 0;}
+        .row_content {
+          justify-content: center; 
+          padding: 0;
+        }
       }
     }
 }
@@ -154,59 +164,47 @@
       .nav {justify-content: center; align-items: center;}
     }
     .main {
-      .about-seo-wrapper {
-        margin-bottom: 810px;
-      }
-      .hsw {
-          .row_content .cb_1 {
-            max-width: 80%;
-            display: flex;
-            justify-content: space-between;
-            flex: 1 0 0%;
+      .title {
+        padding: 0; 
+        flex-direction: column;
+        justify-content: center;
+          &-text_col {
+            display: flex; width: 100%;
+            h2 {align-items: center;}
+            p {
+              text-align: center; 
+              margin: 0 auto 25px auto; 
+              width: 50%;
+            }
+            button {
+              margin: 0 auto 30px auto; 
+              width: 50%;
+            }
           }
+          .col {max-width: 100%;}
       }
-    }
-
-}
-@media (max-width: 1180px) {
-  .main {
-    .title {
-      padding: 0; flex-direction: column;
-        &-text_col {
-          display: flex; width: 100%;
-          h2 {align-items: center;}
-          p {text-align: center; margin: 0 auto 25px auto; width: 70%;}
-          button {margin: 0 auto 30px auto; width: 50%;}
-        }
-        .col {max-width: 100%;}
-    }
-    .about-seo-wrapper {
-      margin-bottom: 920px;
-    }
-    .cnt-2 {
-      gap: 55px;
-      padding: 0;
-      margin: 0 40px 0 40px;
-    }
-    .cnt-3 {
-      margin: 0 40px 10px 40px;
-    }
+      .about-seo-wrapper {margin-bottom: 920px;}
+    .reasons-choosing-seo {margin: 0 40px 10px 40px;}
     .conversion-rate {
-     padding: 50px 60px 50px 60px;
-        .title_col {
-          padding: 0px 0 40px 0;
-        }
+      padding: 50px 60px 50px 60px;
+        .title_col {padding: 0px 0 40px 0;}
     }
     .our-services {
       padding: 0 40px 0 40px;
-        .row {
-          width: auto;
-          justify-content: center;
-          a {width: auto;}
+        .row {justify-content: center;}
+    }
+    .hsw {
+      .row_content {
+        gap: 20px;
+        .cb_1 {
+          display: flex; 
+          justify-content: space-between;
+          flex: 1 0 0%;
+          max-width: 80%;
         }
+      }
     }
   }
-
 }
 @include media-breakpoint-down(lg)  { // 992px
     body, .wrapper {background-color: $cyan-500;}
@@ -216,13 +214,15 @@
       .nav {justify-content: center; align-items: center;}
     }
     .main {
-      .conversion-rate {
-        padding: 0 40px 30px 40px;
-      }
-      .cnt-3 {
+      .about-seo-wrapper {margin-bottom: 920px;}
+      .conversion-rate {padding: 0 40px 30px 40px;}
+      .reasons-choosing-seo {
         .text_col{
           width: 100%;
-          p {width: 50%; margin: 0 auto 20px auto;}
+          p {
+            width: 50%; 
+            margin: 0 auto 20px auto;
+          }
           .row {justify-content: center; width: 100%;}
           .text-stat_col {
             max-width: 15%;
@@ -230,13 +230,27 @@
           }
         }
       }
-      
+      .hsw {
+        .row_content {
+          .cb_1 {
+            max-width: 100%;
+          }
+        }
+       
+      }
     }
     .footer {
       flex-direction: column; 
       justify-content: center; align-items: center;
       gap: 10px;
     }
+}
+@media (max-width: 929px) {
+  .main {
+    .about-seo-wrapper {
+      margin-bottom: 1180px; // Заглушка. Поменять везде маржин!
+    }
+  }
 }
 @include media-breakpoint-down(md)  { // 768px
     body, .wrapper {background-color: $teal-600;}

@@ -128,7 +128,7 @@ $shadow: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
 /* Global */
 h1 {
   margin: 0; 
-  text-align:start;
+  text-align: start;
   font-family: "Nunito ExtraBold";
   width: 94px;
   height: 23px;
@@ -136,11 +136,10 @@ h1 {
 h2 {
   margin: 0; 
   line-height: 56px;
-  font-size: 2.625rem;
   font-family: "Nunito Regular";
 }
 h3 {
-  font-size: 1.125rem;
+  font-family: "Nunito Regular";
   line-height: 34px;
 }
 p {
@@ -157,19 +156,19 @@ span {font-family: "Nunito Regular";}
 img {user-select: none;}
 ul {list-style: none;}
 input {font-family: "Nunito Regular";}
-// Img
-.img_col {@include flexc();}
 // Wrappers
 .wrapper {
   background-color: #fff;
   max-width: 1920px;
   margin: 0 auto;
 }
-.about-seo-wrapper-content {
+.w__bg {
   background-color: #fff; border: 1px solid #fff;
 }
 .header-wrapper, .p__bg {background-color: $purple-500;}
 .dv__bg {background-color: #421B81;}
+// Img
+.img_col {@include flexc();}
 // Header
 header {
   @include flexb();
@@ -230,9 +229,8 @@ header {
           display: flex; flex-direction: column;
           align-items: center;
             h2 {
-              display: flex; align-items: center; flex-direction: column;
-              font-size: 3.75rem !important;
-              text-align: center;
+              display: flex; align-items: center; 
+              flex-direction: column;
               margin: 30px 0 41px 0;
               white-space: nowrap;
               line-height: 70px;
@@ -247,14 +245,9 @@ header {
               margin: 0 0 25px 0;
             }
             @include btn();
-            .btn_main-content {
-              width: 186px;
-              height: 52px;
-            }
+            .btn_main-content {width: 186px; height: 52px;}
         }
         .img_col {
-          display: flex;
-          justify-content: center; align-items: center;
           max-width: 738px;
         }
     }
@@ -263,7 +256,7 @@ header {
       padding: 0 123px 0 140px;
       height: 124px;
       margin-bottom: 463px;
-      .cnt-1 {
+      .as-title {
         padding: 0px 80px 0px 80px;
         border-radius: 10px 10px 0 0;
         .col-xxl { // common col
@@ -293,11 +286,11 @@ header {
                 padding: 8px 0 0 0;
               }
             }
-          }
+          } 
         }
       }
     }
-    .cnt-2 {
+    .appear-fp {
       padding: 75.41px 5px 150px 31px;
       margin: 0 110px 0 140px;
         .text_col {
@@ -308,25 +301,26 @@ header {
             width: 96%;
             line-height: 34px; margin-bottom: 26px;
           }
+          // Sp code
             .check_col {
               .ul-col {
                 padding: 0;
-                li {padding: 0 0 13px 7px;line-height: 28px;}
-              }
-              .ulc_1 {
-                padding: 0;
-                li {padding: 0 0 13px 7px;line-height: 28px;}
+                li {padding: 0 0 13px 7px; line-height: 28px;}
+              
                 .fa-check {padding: 0 19px 0 0;}
-              }
               .ulc_2 {
                 padding: 0;
                 li {padding: 0 0 13px 7px;line-height: 28px;}
                 .fa-check {padding: 0 18px 0 0px;}
               }
+              }
             }
         } // text_col end
+        .img_col {
+          max-width: 552px;
+        }
     } 
-    .cnt-3 {
+    .reasons-choosing-seo {
       margin: 0 110px 190px 140px;
       .text_col {
         padding: 22px 0 0 0;
@@ -467,39 +461,54 @@ header {
         color: #fff;
         justify-content: center;
         h2 {
+          padding-left: 15px;
           text-align: center; 
-          width: 425px; line-height: 56px;
+          width: 425px;
           span {color: #F4AB00;}
         }
-        h3 {text-align: center; margin: 30px 0 76px 0;}
+        h3 {
+          text-align: center; 
+          padding-left: 15px;
+          line-height: 9px;
+          margin: 42px 0 90px 0;
+        }
         .row_content {
           padding: 0 0px 0 60px;
           text-align: center;
           justify-content: space-between; 
-          // gap: 280px;
+          // Common code 
           .col_content-1, .col_content-2, .cb_2 {
-            // padding: 0 0 0 50px;
             .col {padding-bottom: 26px;}
-            p {margin-top: 10px;}
+            p {
+              width: 245px;
+              text-align: center; 
+              line-height: 28px;
+              font-size: 1rem;
+            }
           }
-            .cb_1 {
+          .cb_1 {
               max-width:60%;
               display: flex; 
               justify-content: space-between;
-              // gap: 140px;
               flex: 1 0 0%;
-                .col_content-1, .col_content-2 {width: 266px;}
-               
+                .col_content-1, .col_content-2 {
+                  width: 266px;
+                  p {
+                    font-size: 1rem;
+                    width: 90%; margin: 10px auto 0 auto;
+                  }
+                }
                 span {font-size: 1.25rem;}
-                p {text-align: center; line-height: 28px;}
+               
             }
-            .cb_2 {
+          .cb_2 {
               width: 356px;
               .col_img {
                 justify-content: center;
                 display: flex;
               }
-              p {width: 65%; margin: 20px auto 0 auto;}
+              span {font-size: 1.188rem;}
+              p {width: 64%; margin: 10px auto 0 auto;}
             }
         }
     }
