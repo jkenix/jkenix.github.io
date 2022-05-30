@@ -59,13 +59,6 @@
   background: rgba(0, 0, 0, 0.8);
 }
 
-.menu {
-  margin: 0 30px 0 30px;
-  padding: 0 0 0 5px;
-  text-align: center;
-  font-size: 20px;
-}
-
 .fa-bars {
   margin: 0 5px 0 5px;
   font-size: 35px;
@@ -189,7 +182,7 @@ input {
   background-color: #421B81;
 }
 
-.img_col {
+.img__resp {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,6 +201,9 @@ header a:hover {
 header a:active .fa-brands {
   color: #0059ff;
 }
+header .phone-block {
+  margin-right: 25px;
+}
 header .contacts {
   display: flex;
 }
@@ -219,13 +215,16 @@ header .contacts div {
 header .contacts div a {
   color: #fff;
   padding: 0 0 0 12px;
-  margin: 0 20px 0 0;
+  line-height: 28px;
 }
 header .contacts div a:hover {
   color: #000;
 }
 header .contacts div a:active {
   color: #0059ff;
+}
+header .mail a {
+  font-size: 0.938rem;
 }
 header .media {
   width: 94.12px;
@@ -249,6 +248,11 @@ header .media {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.nav-wrapper .border-wrapper .menu {
+  padding-right: 10px;
+  text-align: center;
+  font-size: 20px;
 }
 .nav-wrapper .border-wrapper button {
   font-family: "Nunito Regular";
@@ -346,7 +350,7 @@ header .media {
   width: 186px;
   height: 52px;
 }
-.main .title .img_col {
+.main .title .img__resp {
   max-width: 738px;
 }
 .main .about-seo-wrapper {
@@ -382,7 +386,7 @@ header .media {
   padding-bottom: 50px;
   gap: 25px;
 }
-.main .about-seo-wrapper .as-title .col_content-2 .row .img_col {
+.main .about-seo-wrapper .as-title .col_content-2 .row .img__resp {
   padding: 0;
   max-width: 86px;
   max-height: 86px;
@@ -435,7 +439,7 @@ header .media {
 .main .appear-fp .text_col .check_col .ul-col .ulc_2 .fa-check {
   padding: 0 18px 0 0px;
 }
-.main .appear-fp .img_col {
+.main .appear-fp .img__resp {
   max-width: 552px;
 }
 .main .reasons-choosing-seo {
@@ -654,11 +658,12 @@ header .media {
   justify-content: center;
   align-items: center;
 }
-.main .seo-marketing .img_col {
+.main .seo-marketing .img__resp {
   display: block;
 }
 .main .hsw {
   padding: 58px 140px 100px 140px;
+  margin-bottom: 176px;
   color: #fff;
   justify-content: center;
 }
@@ -721,7 +726,136 @@ header .media {
   width: 64%;
   margin: 10px auto 0 auto;
 }
-
+.main .marketing-team {
+  padding: 0 173px 0 173px;
+  margin-bottom: 196px;
+}
+.main .marketing-team h2, .main .marketing-team h3 {
+  padding-left: 20px;
+  text-align: center;
+}
+.main .marketing-team h3 {
+  margin: 10px 0 60px 0;
+}
+.main .marketing-team .team {
+  display: flex;
+}
+.main .marketing-team .block_top {
+  margin-bottom: 60px;
+}
+.main .marketing-team .block_top, .main .marketing-team .block_bottom {
+  display: flex;
+  gap: 24px;
+}
+.main .marketing-team .block_top .icon_col, .main .marketing-team .block_bottom .icon_col {
+  max-width: 86px;
+}
+.main .marketing-team .col_1 {
+  margin-right: 30px;
+}
+.main .marketing-team .col_1 span:nth-child(1) {
+  font-size: 1.188rem;
+}
+.main .marketing-team .col_1 .text_col {
+  max-width: 126px;
+  padding-top: 16px;
+}
+.main .marketing-team .col_1 .text_col span:nth-child(2) {
+  font-size: 0.938rem;
+}
+.main .marketing-team .col_2 .block_top span:nth-child(1) {
+  font-size: 1.188rem;
+}
+.main .marketing-team .col_2 .block_top span:nth-child(2) {
+  font-size: 0.875rem;
+}
+.main .marketing-team .col_2 .block_bottom span:nth-child(1) {
+  font-size: 1.25rem;
+}
+.main .marketing-team .col_2 .block_bottom span:nth-child(2) {
+  font-size: 0.938rem;
+}
+.main .marketing-team .col_2 .text_col {
+  padding-top: 14px;
+  max-width: 133px;
+}
+.main .marketing-team .col_3 span:nth-child(1) {
+  font-size: 1.25rem;
+}
+.main .marketing-team .col_3 span:nth-child(2) {
+  font-size: 0.938rem;
+}
+.main .marketing-team .col_3 .block_top, .main .marketing-team .col_3 .block_bottom {
+  margin-left: 35px;
+}
+.main .marketing-team .col_3 .block_bottom span:nth-child(1) {
+  font-size: 1.188rem;
+}
+.main .marketing-team .col_3 .text_col {
+  padding-top: 14px;
+  max-width: 157px;
+}
+.main .pricing-plans {
+  padding: 130px 125px 110px 140px;
+}
+.main .pricing-plans h2, .main .pricing-plans h3 {
+  text-align: center;
+  color: #fff;
+}
+.main .pricing-plans h2 {
+  font-size: 2.375rem;
+}
+.main .pricing-plans h3 {
+  margin-bottom: 55px;
+  line-height: 50px;
+}
+.main .pricing-plans .plans {
+  justify-content: space-between;
+}
+.main .pricing-plans .w__bg {
+  border-radius: 20px;
+}
+.main .pricing-plans .col, .main .pricing-plans .col-xxl {
+  max-width: 360px;
+}
+.main .pricing-plans .plan-silver, .main .pricing-plans .plan-gold, .main .pricing-plans .plan-platinum {
+  padding: 40px 38px 51px 30px;
+}
+.main .pricing-plans .plan-silver .pt, .main .pricing-plans .plan-gold .pt, .main .pricing-plans .plan-platinum .pt {
+  color: #F4AB00;
+  display: flex;
+  font-size: 1.375rem;
+  justify-content: center;
+}
+.main .pricing-plans .plan-silver .row_price, .main .pricing-plans .plan-gold .row_price, .main .pricing-plans .plan-platinum .row_price {
+  color: #5B25B3;
+  padding-left: 60px;
+  font-size: 3.125rem;
+  line-height: 36px;
+}
+.main .pricing-plans .plan-silver .row_type, .main .pricing-plans .plan-gold .row_type, .main .pricing-plans .plan-platinum .row_type {
+  color: #5B25B3;
+  display: flex;
+  margin-bottom: 40px;
+}
+.main .pricing-plans .plan-silver .row_type .col, .main .pricing-plans .plan-gold .row_type .col, .main .pricing-plans .plan-platinum .row_type .col {
+  width: 107px;
+}
+.main .pricing-plans .plan-silver .row_type .val, .main .pricing-plans .plan-gold .row_type .val, .main .pricing-plans .plan-platinum .row_type .val {
+  padding-left: 40px;
+  max-width: 146px;
+  display: flex;
+}
+.main .pricing-plans .plan-silver .row_type span, .main .pricing-plans .plan-gold .row_type span, .main .pricing-plans .plan-platinum .row_type span {
+  font-size: 1.25rem;
+  line-height: 26px;
+}
+.main .pricing-plans .fa-check {
+  padding-right: 19px;
+}
+.main .pricing-plans .plan-gold {
+  padding-top: 16px;
+}
 .footer {
   --bs-gutter-x: 0rem;
   display: flex;

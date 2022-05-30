@@ -74,22 +74,28 @@
   }
 }
 @media (min-width: 1441px) {
-  .conversion-rate {
+  .main .conversion-rate {
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  .conversion-rate .title_col {
-    padding: 0 !important;
+  .main .conversion-rate .title_col {
+    padding: 0 0 0 0;
   }
-  .conversion-rate .title_col h2 {
+  .main .conversion-rate .title_col h2 {
     width: 100%;
   }
-  .conversion-rate .title_col .btn_main-content {
+  .main .conversion-rate .title_col .btn_main-content {
     margin: 0 auto;
   }
-  .conversion-rate .title_col .border-wrapper p {
+  .main .conversion-rate .title_col .border-wrapper p {
     max-width: 100%;
+  }
+  .main .marketing-team {
+    margin: 0px;
+  }
+  .main .pricing-plans {
+    padding: 60px 125px 110px 140px;
   }
 }
 @media (min-width: 1400px) {
@@ -100,6 +106,10 @@
 @media (max-width: 1399.98px) {
   body, .wrapper {
     background-color: #198754;
+  }
+
+  .nav-wrapper .border-wrapper .menu {
+    padding-right: 0px;
   }
 
   .main .about-seo-wrapper {
@@ -237,9 +247,39 @@
   .main .seo-marketing .img_col {
     padding-bottom: 40px;
   }
+  .main .hsw {
+    margin-bottom: 60px;
+  }
   .main .hsw .row_content {
     justify-content: center;
     padding: 0;
+  }
+  .main .marketing-team {
+    margin: 0px;
+  }
+  .main .marketing-team .col {
+    margin-bottom: 30px;
+  }
+  .main .marketing-team .col .block_bottom, .main .marketing-team .col-xxl .block_bottom {
+    margin-bottom: 0;
+  }
+  .main .marketing-team .col .col, .main .marketing-team .col-xxl .col {
+    justify-content: center;
+  }
+  .main .marketing-team .col_3 {
+    display: flex;
+  }
+  .main .marketing-team .col_3 .block_bottom {
+    margin-left: 40px;
+  }
+  .main .marketing-team .col_3 .block_top {
+    margin-left: 20px;
+  }
+  .main .pricing-plans {
+    padding: 60px 125px 110px 140px;
+  }
+  .main .pricing-plans .plans {
+    justify-content: center;
   }
 }
 @media (max-width: 1199.98px) {
@@ -351,6 +391,10 @@
   .main .hsw .row_content .cb_1 {
     max-width: 100%;
   }
+  .main .marketing-team .col .block_top, .main .marketing-team .col .block_bottom, .main .marketing-team .col-xxl .block_top, .main .marketing-team .col-xxl .block_bottom {
+    margin: 0;
+    justify-content: flex-start;
+  }
 
   .footer {
     flex-direction: column;
@@ -367,6 +411,10 @@
 @media (max-width: 767.98px) {
   body, .wrapper {
     background-color: #1aa179;
+  }
+
+  .marketing-team .col-xxl {
+    flex-direction: column;
   }
 }
 @media (max-width: 575.98px) {
