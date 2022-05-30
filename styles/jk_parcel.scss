@@ -77,12 +77,7 @@ $shadow: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
 .__scroll {
   background: rgba(0,0,0,0.8);
 }
-// Menu
-.menu {
-  margin: 0 30px 0 30px; padding: 0 0 0 5px;
-  text-align: center;
-  font-size: 20px;
-}
+
 // Change menu elements background color
 .fa-bars {margin: 0 5px 0 5px; font-size: 35px; color: #000;}
 .__bg-dark-menu {
@@ -166,7 +161,7 @@ input {font-family: "Nunito Regular";}
 .header-wrapper, .p__bg {background-color: $purple-500;}
 .dv__bg {background-color: #421B81;}
 // Img
-.img_col {@include flexc();}
+.img__resp {@include flexc();} // Заменить на img_resp
 // Header
 header {
   @include flexb();
@@ -181,6 +176,7 @@ header {
         .fa-brands{color:#0059ff;}
       }
     }
+    .phone-block {margin-right: 25px;}
     .contacts {
       display: flex; 
       div {
@@ -189,11 +185,14 @@ header {
         height: 28px; 
         a {
           color: #fff; padding: 0 0 0 12px;
-          margin: 0 20px 0 0;
+          line-height: 28px;
             &:hover {color: #000;}
             &:active {color: #0059ff;}
         }
       }
+    }
+    .mail a {
+      font-size: 0.938rem;
     }
     .media {
       width: 94.12px; height: 28px;
@@ -210,6 +209,12 @@ header {
       border: 1px solid #fff; 
       border-radius: 10px; background-color: #fff;
       @include flexb(); align-items: center;
+      // Menu
+      .menu {
+        padding-right: 10px;
+        text-align: center;
+        font-size: 20px;
+      }
       @include btn();
       .btn {font-size: 0.813rem;}
     }
@@ -245,7 +250,7 @@ header {
             @include btn();
             .btn_main-content {width: 186px; height: 52px;}
         }
-        .img_col {
+        .img__resp {
           max-width: 738px;
         }
     }
@@ -271,7 +276,7 @@ header {
             margin-left: 60px;
             padding-bottom: 50px;
             gap: 25px;
-            .img_col {
+            .img__resp {
               padding: 0;
               max-width: 86px; max-height: 86px;
             }
@@ -314,7 +319,7 @@ header {
               }
             }
         } // text_col end
-        .img_col {
+        .img__resp {
           max-width: 552px;
         }
     } 
@@ -447,11 +452,12 @@ header {
               justify-content: center; align-items: center;
             }
         }
-        .img_col {display: block;}
+        .img__resp {display: block;}
         
     }
     .hsw {
       padding: 58px 140px 100px 140px;
+      margin-bottom: 176px;
         color: #fff;
         justify-content: center;
         h2 {
@@ -505,6 +511,103 @@ header {
               p {width: 64%; margin: 10px auto 0 auto;}
             }
         }
+    }
+    .marketing-team {
+      padding: 0 173px 0 173px;
+      margin-bottom: 196px;
+      h2, h3 {padding-left: 20px; text-align: center;}
+      h3 {margin: 10px 0 60px 0;}
+      .team {display: flex;}
+      .block_top {margin-bottom: 60px;}
+      // Common classes
+      .block_top, .block_bottom {
+        display: flex; gap: 24px;
+        .icon_col {max-width: 86px;}
+      }
+      // Main classes
+      .col_1 {
+        margin-right: 30px;
+        span:nth-child(1) {font-size: 1.188rem;}
+        .text_col {
+          max-width: 126px; 
+          padding-top: 16px;
+          span:nth-child(2) {font-size: 0.938rem;}
+        }
+      }
+      .col_2 {
+        .block_top {
+          span {
+            &:nth-child(1) {font-size: 1.188rem;}
+            &:nth-child(2) {font-size: 0.875rem;}
+          }
+        }
+        .block_bottom {
+          span {
+            &:nth-child(1) {font-size: 1.25rem;}
+            &:nth-child(2) {font-size: 0.938rem;}
+          }
+        }
+        .text_col {padding-top: 14px; max-width: 133px;}
+      }
+      .col_3 {
+        span {
+          &:nth-child(1) {font-size: 1.25rem;}
+          &:nth-child(2) {font-size: 0.938rem;}
+        }
+        .block_top, .block_bottom {
+          margin-left: 35px;
+        }
+        .block_bottom {
+          span:nth-child(1) {font-size: 1.188rem;}
+        }
+        .text_col {padding-top: 14px; max-width: 157px;}
+      }
+    }
+    .pricing-plans {
+      padding: 130px 125px 110px 140px;
+      h2, h3 {text-align: center; color: #fff;}
+      h2 {font-size: 2.375rem;}
+      h3 {margin-bottom: 55px; line-height: 50px;}
+      .plans {justify-content: space-between;}
+      .w__bg {border-radius: 20px;}
+      // Common classes
+      .col, .col-xxl {max-width: 360px;}
+      .plan-silver,  .plan-gold, .plan-platinum {
+        padding: 40px 38px 51px 30px;
+        .pt {
+          color: #F4AB00;
+          display: flex; 
+          font-size: 1.375rem; 
+          justify-content: center;
+        }
+        .row_price {
+          color: #5B25B3;
+          padding-left: 60px;
+          font-size: 3.125rem; line-height: 36px;
+        }
+        .row_type {
+          color: #5B25B3;
+          display: flex; margin-bottom: 40px;
+          .col {width: 107px;}
+          .val {padding-left: 40px; max-width: 146px; display: flex;}
+          span {
+            font-size: 1.25rem; line-height: 26px;
+          }
+          
+        }
+      }
+      .fa-check {padding-right: 19px;}
+      // Main classes
+      .plan-silver {
+
+      }
+      .plan-gold {
+        padding-top: 16px;
+
+      }
+      .plan-platinum {
+
+      }
     }
 }
 // Footer
