@@ -49,6 +49,11 @@
         flex: 1 0 0%;
       }
     }
+    .client-review {
+      p {max-width: 55%; margin: 0 auto;}
+      .carousel-control-next {margin-right: 350px; }
+      .carousel-control-prev {margin-left: 350px;}
+    }
   }
 }
 @media (max-width: 1500px) { 
@@ -58,6 +63,10 @@
       width: 480px;
       h2 {align-items: flex-start;}
       p {text-align: start;}
+    }
+    .client-review {
+      .carousel-control-next {margin-right: 300px;}
+      .carousel-control-prev {margin-left: 300px;}
     }
   }
 }
@@ -77,10 +86,10 @@
       .title_col .border-wrapper p {max-width: 100%;}
     }
     .marketing-team {
-      margin: 0px;
+      // margin: 0px;
     }
     .pricing-plans {
-      padding: 60px 125px 110px 140px;
+      // padding: 60px 125px 110px 140px;
     }
   }
 }
@@ -121,10 +130,7 @@
             p {width: 60%; margin: 0 auto 30px auto;}
             .row {width: 100%;}
           }
-          .check_col {
-            height: 154px;
-            ul {margin: 0;}
-          }
+          .check_col {height: 154px;}
       }
       .reasons-choosing-seo {
         margin: 0 40px 10px 40px;
@@ -203,8 +209,27 @@
         }
       }
       .pricing-plans {
-        padding: 60px 125px 110px 140px;
-        .plans {justify-content: center;}
+        padding: 60px 20px 110px 20px;
+        margin-bottom: 40px;
+        .plans {
+          justify-content: center;
+          gap: 20px;
+        }
+      }
+      .client-review {
+        margin-bottom: 100px;
+        p {width: 80%; margin: 0 auto;}
+        .carousel-control-next {margin-right: 250px;}
+        .carousel-control-prev {margin-left: 250px;}
+      }
+      .companies {
+        justify-content: center;
+        gap: 10px;
+        .col, .col-xxl {gap: 20px;}
+        .col-xxl .col {padding: 0;}
+        .col_1 {max-width: 213px;}
+        .col_2 {max-width: 161px;}
+        .col_3 {max-width: 183px;}
       }
     }
 }
@@ -255,6 +280,10 @@
         }
       }
     }
+    .client-review {
+      .carousel-control-next {margin-right: 200px;}
+      .carousel-control-prev {margin-left: 200px;}
+    }
   }
 }
 @include media-breakpoint-down(lg)  { // 992px
@@ -295,7 +324,13 @@
           .block_top, .block_bottom {margin: 0; justify-content: flex-start;}
         }
       }
-
+      .client-review {
+        .carousel-control-next {margin-right: 100px;}
+        .carousel-control-prev {margin-left: 100px;}
+      }
+      .companies {
+        padding: 0 40px 0 40px;
+      }
     }
     .footer {
       flex-direction: column; 
@@ -312,8 +347,13 @@
 }
 @include media-breakpoint-down(md)  { // 768px
     body, .wrapper {background-color: $teal-600;}
-    .marketing-team {
-      .col-xxl {flex-direction: column;}
+    .main {
+      .marketing-team {
+        .col-xxl {flex-direction: column;}
+      }
+      .client-review {
+        .carousel-control-next, .carousel-control-prev {margin: 0px;}
+      }
     }
 }
 @include media-breakpoint-down(sm) { // 576px

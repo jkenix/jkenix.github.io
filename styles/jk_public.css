@@ -159,6 +159,10 @@ ul {
   list-style: none;
 }
 
+li {
+  font-size: 1rem;
+}
+
 input {
   font-family: "Nunito Regular";
 }
@@ -286,9 +290,6 @@ header .media {
 .main {
   width: 100%;
   height: 100%;
-}
-.main .row {
-  --bs-gutter-x: 0rem;
 }
 .main .title {
   display: flex;
@@ -419,25 +420,12 @@ header .media {
   line-height: 34px;
   margin-bottom: 26px;
 }
-.main .appear-fp .text_col .check_col .ul-col {
-  padding: 0;
-}
-.main .appear-fp .text_col .check_col .ul-col li {
+.main .appear-fp .text_col .ul-col li {
   padding: 0 0 13px 7px;
   line-height: 28px;
 }
-.main .appear-fp .text_col .check_col .ul-col .fa-check {
+.main .appear-fp .text_col .ul-col .fa-check {
   padding: 0 19px 0 0;
-}
-.main .appear-fp .text_col .check_col .ul-col .ulc_2 {
-  padding: 0;
-}
-.main .appear-fp .text_col .check_col .ul-col .ulc_2 li {
-  padding: 0 0 13px 7px;
-  line-height: 28px;
-}
-.main .appear-fp .text_col .check_col .ul-col .ulc_2 .fa-check {
-  padding: 0 18px 0 0px;
 }
 .main .appear-fp .img__resp {
   max-width: 552px;
@@ -612,13 +600,12 @@ header .media {
   max-width: 73%;
 }
 .main .seo-marketing .text_col ul {
-  padding: 0 0 0 8px;
+  padding-left: 8px;
   margin-bottom: 43px;
 }
 .main .seo-marketing .text_col ul li {
-  padding: 0 0 13px 0;
+  padding-bottom: 13px;
   line-height: 28px;
-  font-size: 1rem;
 }
 .main .seo-marketing .text_col ul li .fa-regular {
   padding-right: 17px;
@@ -797,6 +784,7 @@ header .media {
 }
 .main .pricing-plans {
   padding: 130px 125px 110px 140px;
+  margin-bottom: 225px;
 }
 .main .pricing-plans h2, .main .pricing-plans h3 {
   text-align: center;
@@ -819,7 +807,7 @@ header .media {
   max-width: 360px;
 }
 .main .pricing-plans .plan-silver, .main .pricing-plans .plan-gold, .main .pricing-plans .plan-platinum {
-  padding: 40px 38px 51px 30px;
+  padding: 35px 38px 51px 30px;
 }
 .main .pricing-plans .plan-silver .pt, .main .pricing-plans .plan-gold .pt, .main .pricing-plans .plan-platinum .pt {
   color: #F4AB00;
@@ -836,26 +824,160 @@ header .media {
 .main .pricing-plans .plan-silver .row_type, .main .pricing-plans .plan-gold .row_type, .main .pricing-plans .plan-platinum .row_type {
   color: #5B25B3;
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 .main .pricing-plans .plan-silver .row_type .col, .main .pricing-plans .plan-gold .row_type .col, .main .pricing-plans .plan-platinum .row_type .col {
   width: 107px;
 }
 .main .pricing-plans .plan-silver .row_type .val, .main .pricing-plans .plan-gold .row_type .val, .main .pricing-plans .plan-platinum .row_type .val {
+  display: flex;
   padding-left: 40px;
   max-width: 146px;
-  display: flex;
 }
 .main .pricing-plans .plan-silver .row_type span, .main .pricing-plans .plan-gold .row_type span, .main .pricing-plans .plan-platinum .row_type span {
   font-size: 1.25rem;
   line-height: 26px;
 }
-.main .pricing-plans .fa-check {
+.main .pricing-plans .plan-silver ul, .main .pricing-plans .plan-gold ul, .main .pricing-plans .plan-platinum ul {
+  padding: 0 0 40px 7px;
+}
+.main .pricing-plans .plan-silver ul li, .main .pricing-plans .plan-gold ul li, .main .pricing-plans .plan-platinum ul li {
+  font-size: 0.938rem;
+  line-height: 25px;
+  padding-bottom: 24px;
+}
+.main .pricing-plans .plan-silver .fa-check, .main .pricing-plans .plan-silver .fa-solid, .main .pricing-plans .plan-gold .fa-check, .main .pricing-plans .plan-gold .fa-solid, .main .pricing-plans .plan-platinum .fa-check, .main .pricing-plans .plan-platinum .fa-solid {
   padding-right: 19px;
 }
-.main .pricing-plans .plan-gold {
-  padding-top: 16px;
+.main .pricing-plans .plan-silver .fa-check, .main .pricing-plans .plan-gold .fa-check, .main .pricing-plans .plan-platinum .fa-check {
+  color: #2C1258;
 }
+.main .pricing-plans .plan-silver .fa-solid, .main .pricing-plans .plan-gold .fa-solid, .main .pricing-plans .plan-platinum .fa-solid {
+  color: #ED6436;
+  font-size: 20px;
+}
+.main .pricing-plans .plan-silver .btn, .main .pricing-plans .plan-gold .btn, .main .pricing-plans .plan-platinum .btn {
+  margin: 0 96px 0 96px;
+}
+.main .pricing-plans .plan-silver button, .main .pricing-plans .plan-gold button, .main .pricing-plans .plan-platinum button {
+  font-family: "Nunito Regular";
+}
+.main .pricing-plans .plan-silver .btn, .main .pricing-plans .plan-gold .btn, .main .pricing-plans .plan-platinum .btn {
+  background-color: #F4AB00;
+  color: #fff;
+}
+.main .pricing-plans .plan-silver .btn_main-content, .main .pricing-plans .plan-gold .btn_main-content, .main .pricing-plans .plan-platinum .btn_main-content {
+  width: 100px;
+  height: 41px;
+  border-radius: 27px;
+}
+.main .pricing-plans .plan-silver .btn_main-content a, .main .pricing-plans .plan-gold .btn_main-content a, .main .pricing-plans .plan-platinum .btn_main-content a {
+  color: #fff;
+}
+.main .pricing-plans .plan-silver .btn_main-content:hover, .main .pricing-plans .plan-gold .btn_main-content:hover, .main .pricing-plans .plan-platinum .btn_main-content:hover {
+  transition: 0s all;
+  background-color: #111;
+}
+.main .pricing-plans .plan-silver .btn_main-content:active, .main .pricing-plans .plan-gold .btn_main-content:active, .main .pricing-plans .plan-platinum .btn_main-content:active {
+  transition: 0s all;
+  background-color: #fff;
+  color: #000;
+  transition: 0s all;
+}
+.main .pricing-plans .plan-silver .btn, .main .pricing-plans .plan-gold .btn, .main .pricing-plans .plan-platinum .btn {
+  font-size: 1rem;
+  border: 2px solid #2C1258;
+  background-color: transparent;
+}
+.main .pricing-plans .plan-silver .btn_main-content, .main .pricing-plans .plan-gold .btn_main-content, .main .pricing-plans .plan-platinum .btn_main-content {
+  width: 168px;
+  height: 54px;
+  margin-left: 65px;
+  justify-content: center;
+  align-items: center;
+  color: #2C1258;
+}
+.main .pricing-plans .plan-silver .btn_main-content:hover, .main .pricing-plans .plan-gold .btn_main-content:hover, .main .pricing-plans .plan-platinum .btn_main-content:hover {
+  transition: 0s all;
+  background-color: #F4AB00;
+  color: #fff;
+}
+.main .pricing-plans .plan-silver .btn_main-content:active, .main .pricing-plans .plan-gold .btn_main-content:active, .main .pricing-plans .plan-platinum .btn_main-content:active {
+  transition: 0s all;
+  background-color: #000;
+  color: #F4AB00;
+  transition: 0s all;
+}
+.main .pricing-plans .plan-gold {
+  padding-top: 13px;
+}
+.main .pricing-plans .plan-gold svg {
+  position: relative;
+  left: -31px;
+}
+.main .pricing-plans .plan-gold .pt {
+  height: 30px;
+}
+.main .pricing-plans .plan-gold .row_type {
+  margin-bottom: 30px;
+}
+.main .client-review {
+  padding: 0 140px 0 140px;
+  margin-bottom: 250px;
+  text-align: center;
+  justify-content: center;
+}
+.main .client-review h2 {
+  padding-left: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 21px;
+}
+.main .client-review .col {
+  max-width: 34px;
+  margin: 0 0px 30px 15px;
+}
+.main .client-review p {
+  width: 64%;
+  margin: 0 0px 0 215px;
+  font-size: 1.5rem;
+  line-height: 43px;
+  margin-bottom: 10px;
+}
+.main .client-review #carouselExampleCaptions .carousel-indicators {
+  margin-bottom: -45px;
+}
+.main .client-review #carouselExampleCaptions .carousel-control-next, .main .client-review #carouselExampleCaptions .carousel-control-prev {
+  max-width: 100px;
+}
+.main .client-review #carouselExampleCaptions .client span {
+  padding-left: 10px;
+}
+.main .client-review #carouselExampleCaptions .client span:nth-child(1) {
+  font-size: 1.188rem;
+  padding-top: 10px;
+  line-height: 30px;
+}
+.main .client-review #carouselExampleCaptions .client span:nth-child(2) {
+  font-size: 0.938rem;
+  line-height: 24px;
+}
+.main .companies {
+  padding: 50px 195px 0 195px;
+  margin-bottom: 202px;
+}
+.main .companies .col, .main .companies .col-xxl {
+  display: flex;
+}
+.main .companies .col_2 .oh_tb {
+  padding-left: 40px;
+}
+.main .companies .col_2 .smart_box {
+  padding-left: 120px;
+}
+.main .companies .col_3 .col {
+  justify-content: flex-end;
+}
+
 .footer {
   --bs-gutter-x: 0rem;
   display: flex;
@@ -866,7 +988,6 @@ header .media {
 .footer ul {
   display: flex;
   width: auto;
-  padding: 0;
   gap: 20px;
 }
 .footer ul a {

@@ -60,6 +60,16 @@
     display: flex;
     flex: 1 0 0%;
   }
+  .main .client-review p {
+    max-width: 55%;
+    margin: 0 auto;
+  }
+  .main .client-review .carousel-control-next {
+    margin-right: 350px;
+  }
+  .main .client-review .carousel-control-prev {
+    margin-left: 350px;
+  }
 }
 @media (max-width: 1500px) {
   .main .title-text_col {
@@ -71,6 +81,12 @@
   }
   .main .title-text_col p {
     text-align: start;
+  }
+  .main .client-review .carousel-control-next {
+    margin-right: 300px;
+  }
+  .main .client-review .carousel-control-prev {
+    margin-left: 300px;
   }
 }
 @media (min-width: 1441px) {
@@ -90,12 +106,6 @@
   }
   .main .conversion-rate .title_col .border-wrapper p {
     max-width: 100%;
-  }
-  .main .marketing-team {
-    margin: 0px;
-  }
-  .main .pricing-plans {
-    padding: 60px 125px 110px 140px;
   }
 }
 @media (min-width: 1400px) {
@@ -158,9 +168,6 @@
   }
   .main .appear-fp .check_col {
     height: 154px;
-  }
-  .main .appear-fp .check_col ul {
-    margin: 0;
   }
   .main .reasons-choosing-seo {
     margin: 0 40px 10px 40px;
@@ -276,10 +283,44 @@
     margin-left: 20px;
   }
   .main .pricing-plans {
-    padding: 60px 125px 110px 140px;
+    padding: 60px 20px 110px 20px;
+    margin-bottom: 40px;
   }
   .main .pricing-plans .plans {
     justify-content: center;
+    gap: 20px;
+  }
+  .main .client-review {
+    margin-bottom: 100px;
+  }
+  .main .client-review p {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .main .client-review .carousel-control-next {
+    margin-right: 250px;
+  }
+  .main .client-review .carousel-control-prev {
+    margin-left: 250px;
+  }
+  .main .companies {
+    justify-content: center;
+    gap: 10px;
+  }
+  .main .companies .col, .main .companies .col-xxl {
+    gap: 20px;
+  }
+  .main .companies .col-xxl .col {
+    padding: 0;
+  }
+  .main .companies .col_1 {
+    max-width: 213px;
+  }
+  .main .companies .col_2 {
+    max-width: 161px;
+  }
+  .main .companies .col_3 {
+    max-width: 183px;
   }
 }
 @media (max-width: 1199.98px) {
@@ -346,6 +387,12 @@
     flex: 1 0 0%;
     max-width: 80%;
   }
+  .main .client-review .carousel-control-next {
+    margin-right: 200px;
+  }
+  .main .client-review .carousel-control-prev {
+    margin-left: 200px;
+  }
 }
 @media (max-width: 991.98px) {
   body, .wrapper {
@@ -395,6 +442,15 @@
     margin: 0;
     justify-content: flex-start;
   }
+  .main .client-review .carousel-control-next {
+    margin-right: 100px;
+  }
+  .main .client-review .carousel-control-prev {
+    margin-left: 100px;
+  }
+  .main .companies {
+    padding: 0 40px 0 40px;
+  }
 
   .footer {
     flex-direction: column;
@@ -413,8 +469,11 @@
     background-color: #1aa179;
   }
 
-  .marketing-team .col-xxl {
+  .main .marketing-team .col-xxl {
     flex-direction: column;
+  }
+  .main .client-review .carousel-control-next, .main .client-review .carousel-control-prev {
+    margin: 0px;
   }
 }
 @media (max-width: 575.98px) {
