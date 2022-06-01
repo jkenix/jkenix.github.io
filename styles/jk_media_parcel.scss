@@ -21,9 +21,18 @@
     gap: 10px;
   }
 }
+@media (max-width: 1670px) {
+  .main .hsw .row_content {
+    .line {left: 445px;}
+  }
+}
 @media (min-width: 1501px) {
   .main {
-    .title-text_col {max-width: 800px;}
+    .title {
+      padding-left: 200px;
+      padding-right: 130px;
+      .title-text_col {max-width: 650px;}
+    }
     .reasons-choosing-seo .text_col {padding-left: 120px;}
     .conversion-rate {
       margin-bottom: 60px;
@@ -39,15 +48,13 @@
       margin-bottom: 0px; // Good for 1400px + breakpoints
       .text_col .btn_main-content {margin: 0 0 100px 0;} // Good for 1400px + breakpoints
     }
-    .hsw .row_content {
-      gap: 40px;
-      padding: 0 350px 0 350px;
+    .hsw  {
+     
+     
+    }
+    .pricing-plans .plans {
+      gap: 50px;
       justify-content: center;
-      .cb_1 {
-        max-width: 100%;
-        display: flex;
-        flex: 1 0 0%;
-      }
     }
     .client-review {
       p {max-width: 55%; margin: 0 auto;}
@@ -63,6 +70,10 @@
       width: 480px;
       h2 {align-items: flex-start;}
       p {text-align: start;}
+    }
+    .hsw .row {
+      .line {left: 385px;}
+      .line_2 {right: 375px;}
     }
     .client-review {
       .carousel-control-next {margin-right: 300px;}
@@ -193,6 +204,10 @@
         .row_content {
           justify-content: center; 
           padding: 0;
+          .line, .line_2 {margin-top: 28px; max-width: 140px;}
+          .line {left: 400px;}
+          .line_2 {right: 455px;}
+          .cb_1 {max-width:55%;}
         }
       }
       .marketing-team {
@@ -233,6 +248,14 @@
       }
     }
 }
+@media (max-width: 1300px) {
+  .main .hsw {
+    .row_content {
+      .line {left: 360px;}
+      .line_2 {right: 455px;}
+    }
+  }
+}
 @include media-breakpoint-down(xl)  { // 1200px
     body, .wrapper {background-color: $indigo-200;}
     .nav-wrapper {
@@ -272,12 +295,8 @@
     .hsw {
       .row_content {
         gap: 20px;
-        .cb_1 {
-          display: flex; 
-          justify-content: space-between;
-          flex: 1 0 0%;
-          max-width: 80%;
-        }
+        .line, .line_2 {display: none;}
+        .cb_1 {max-width: 80%;}
       }
     }
     .client-review {

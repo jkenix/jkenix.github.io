@@ -159,10 +159,6 @@ ul {
   list-style: none;
 }
 
-li {
-  font-size: 1rem;
-}
-
 input {
   font-family: "Nunito Regular";
 }
@@ -173,17 +169,8 @@ input {
   margin: 0 auto;
 }
 
-.w__bg {
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-
-.header-wrapper, .p__bg {
-  background-color: #6f42c1;
-}
-
-.dv__bg {
-  background-color: #421B81;
+.header-wrapper {
+  background-color: #5B25B3;
 }
 
 .img__resp {
@@ -293,9 +280,10 @@ header .media {
 }
 .main .title {
   display: flex;
+  justify-content: space-between;
   width: 100%;
   padding: 75px 7px 76px 140px;
-  justify-content: space-between;
+  background-color: #5B25B3;
 }
 .main .title-text_col {
   color: #fff;
@@ -310,7 +298,7 @@ header .media {
   margin: 30px 0 41px 0;
   white-space: nowrap;
   line-height: 70px;
-  font-size: 60px;
+  font-size: 3.75rem;
 }
 .main .title-text_col h2 span {
   color: #F4AB00;
@@ -356,13 +344,16 @@ header .media {
 }
 .main .about-seo-wrapper {
   width: 100%;
-  padding: 0 123px 0 140px;
   height: 124px;
+  padding: 0 123px 0 140px;
   margin-bottom: 463px;
+  background-color: #5B25B3;
 }
 .main .about-seo-wrapper .as-title {
   padding: 0px 80px 0px 80px;
   border-radius: 10px 10px 0 0;
+  background-color: #fff;
+  border: 1px solid #fff;
 }
 .main .about-seo-wrapper .as-title .col-xxl {
   padding: 100px 0 40px 0;
@@ -402,7 +393,7 @@ header .media {
   padding: 8px 0 0 0;
 }
 .main .appear-fp {
-  padding: 75.41px 5px 150px 31px;
+  padding: 75.41px 5px 153px 31px;
   margin: 0 110px 0 140px;
 }
 .main .appear-fp .text_col {
@@ -474,6 +465,7 @@ header .media {
   padding: 96px 125px 99.69px 140px;
   margin-bottom: 185.5px;
   color: #fff;
+  background-color: #5B25B3;
 }
 .main .conversion-rate .title_col {
   padding: 157.69px 0 0 0;
@@ -653,6 +645,10 @@ header .media {
   margin-bottom: 176px;
   color: #fff;
   justify-content: center;
+  background-color: #421B81;
+}
+.main .hsw h2, .main .hsw h3 {
+  padding: 0 0px 0 150px;
 }
 .main .hsw h2 {
   padding-left: 15px;
@@ -682,11 +678,26 @@ header .media {
   line-height: 28px;
   font-size: 1rem;
 }
+.main .hsw .row_content .line, .main .hsw .row_content .line_2 {
+  display: flex;
+  position: absolute;
+  max-width: 267px;
+  width: auto;
+  margin-top: 200px;
+}
+.main .hsw .row_content .line, .main .hsw .row_content .line_2 {
+  margin-top: 28px;
+}
+.main .hsw .row_content .line {
+  left: 485px;
+}
+.main .hsw .row_content .line_2 {
+  right: 420px;
+}
 .main .hsw .row_content .cb_1 {
   max-width: 60%;
   display: flex;
   justify-content: space-between;
-  flex: 1 0 0%;
 }
 .main .hsw .row_content .cb_1 .col_content-1, .main .hsw .row_content .cb_1 .col_content-2 {
   width: 266px;
@@ -785,6 +796,7 @@ header .media {
 .main .pricing-plans {
   padding: 130px 125px 110px 140px;
   margin-bottom: 225px;
+  background-color: #5B25B3;
 }
 .main .pricing-plans h2, .main .pricing-plans h3 {
   text-align: center;
@@ -800,14 +812,14 @@ header .media {
 .main .pricing-plans .plans {
   justify-content: space-between;
 }
-.main .pricing-plans .w__bg {
-  border-radius: 20px;
-}
 .main .pricing-plans .col, .main .pricing-plans .col-xxl {
   max-width: 360px;
+  background-color: #fff;
+  border: 1px solid #fff;
 }
 .main .pricing-plans .plan-silver, .main .pricing-plans .plan-gold, .main .pricing-plans .plan-platinum {
   padding: 35px 38px 51px 30px;
+  border-radius: 20px;
 }
 .main .pricing-plans .plan-silver .pt, .main .pricing-plans .plan-gold .pt, .main .pricing-plans .plan-platinum .pt {
   color: #F4AB00;
@@ -943,21 +955,21 @@ header .media {
   line-height: 43px;
   margin-bottom: 10px;
 }
-.main .client-review #carouselExampleCaptions .carousel-indicators {
+.main .client-review .carousel .carousel-indicators {
   margin-bottom: -45px;
 }
-.main .client-review #carouselExampleCaptions .carousel-control-next, .main .client-review #carouselExampleCaptions .carousel-control-prev {
+.main .client-review .carousel .carousel-control-next, .main .client-review .carousel .carousel-control-prev {
   max-width: 100px;
 }
-.main .client-review #carouselExampleCaptions .client span {
+.main .client-review .carousel .client span {
   padding-left: 10px;
 }
-.main .client-review #carouselExampleCaptions .client span:nth-child(1) {
+.main .client-review .carousel .client span:nth-child(1) {
   font-size: 1.188rem;
   padding-top: 10px;
   line-height: 30px;
 }
-.main .client-review #carouselExampleCaptions .client span:nth-child(2) {
+.main .client-review .carousel .client span:nth-child(2) {
   font-size: 0.938rem;
   line-height: 24px;
 }
@@ -977,7 +989,6 @@ header .media {
 .main .companies .col_3 .col {
   justify-content: flex-end;
 }
-
 .footer {
   --bs-gutter-x: 0rem;
   display: flex;

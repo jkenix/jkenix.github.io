@@ -25,9 +25,18 @@
     gap: 10px;
   }
 }
+@media (max-width: 1670px) {
+  .main .hsw .row_content .line {
+    left: 445px;
+  }
+}
 @media (min-width: 1501px) {
-  .main .title-text_col {
-    max-width: 800px;
+  .main .title {
+    padding-left: 200px;
+    padding-right: 130px;
+  }
+  .main .title .title-text_col {
+    max-width: 650px;
   }
   .main .reasons-choosing-seo .text_col {
     padding-left: 120px;
@@ -50,15 +59,9 @@
   .main .seo-marketing .text_col .btn_main-content {
     margin: 0 0 100px 0;
   }
-  .main .hsw .row_content {
-    gap: 40px;
-    padding: 0 350px 0 350px;
+  .main .pricing-plans .plans {
+    gap: 50px;
     justify-content: center;
-  }
-  .main .hsw .row_content .cb_1 {
-    max-width: 100%;
-    display: flex;
-    flex: 1 0 0%;
   }
   .main .client-review p {
     max-width: 55%;
@@ -81,6 +84,12 @@
   }
   .main .title-text_col p {
     text-align: start;
+  }
+  .main .hsw .row .line {
+    left: 385px;
+  }
+  .main .hsw .row .line_2 {
+    right: 375px;
   }
   .main .client-review .carousel-control-next {
     margin-right: 300px;
@@ -261,6 +270,19 @@
     justify-content: center;
     padding: 0;
   }
+  .main .hsw .row_content .line, .main .hsw .row_content .line_2 {
+    margin-top: 28px;
+    max-width: 140px;
+  }
+  .main .hsw .row_content .line {
+    left: 400px;
+  }
+  .main .hsw .row_content .line_2 {
+    right: 455px;
+  }
+  .main .hsw .row_content .cb_1 {
+    max-width: 55%;
+  }
   .main .marketing-team {
     margin: 0px;
   }
@@ -323,6 +345,14 @@
     max-width: 183px;
   }
 }
+@media (max-width: 1300px) {
+  .main .hsw .row_content .line {
+    left: 360px;
+  }
+  .main .hsw .row_content .line_2 {
+    right: 455px;
+  }
+}
 @media (max-width: 1199.98px) {
   body, .wrapper {
     background-color: #c29ffa;
@@ -381,10 +411,10 @@
   .main .hsw .row_content {
     gap: 20px;
   }
+  .main .hsw .row_content .line, .main .hsw .row_content .line_2 {
+    display: none;
+  }
   .main .hsw .row_content .cb_1 {
-    display: flex;
-    justify-content: space-between;
-    flex: 1 0 0%;
     max-width: 80%;
   }
   .main .client-review .carousel-control-next {
