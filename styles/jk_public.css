@@ -100,7 +100,7 @@
   opacity: 0.5;
 }
 #scroll_top a {
-  background-color: #fff !important;
+  background-color: #fff;
 }
 #scroll_top:hover {
   opacity: 1;
@@ -131,6 +131,7 @@ h2 {
 }
 
 h3 {
+  margin: 0;
   font-family: "Nunito Regular";
   line-height: 34px;
 }
@@ -138,7 +139,6 @@ h3 {
 p {
   font-family: "Nunito Regular";
   font-size: 1.125rem;
-  font-weight: 400;
 }
 
 a {
@@ -308,7 +308,7 @@ header .media {
   text-align: center;
   font-size: 1.125rem;
   line-height: 34px;
-  margin: 0 0 25px 0;
+  margin-bottom: 25px;
 }
 .main .title-text_col button {
   font-family: "Nunito Regular";
@@ -346,28 +346,25 @@ header .media {
   width: 100%;
   height: 124px;
   padding: 0 123px 0 140px;
-  margin-bottom: 463px;
+  margin-bottom: 20px;
   background-color: #5B25B3;
 }
 .main .about-seo-wrapper .as-title {
-  padding: 0px 80px 0px 80px;
+  padding: 0 80px 0 80px;
   border-radius: 10px 10px 0 0;
   background-color: #fff;
   border: 1px solid #fff;
 }
-.main .about-seo-wrapper .as-title .col-xxl {
-  padding: 100px 0 40px 0;
+.main .about-seo-wrapper .as-title .col, .main .about-seo-wrapper .as-title .col-xxl {
+  padding-top: 100px;
 }
-.main .about-seo-wrapper .as-title .col-xxl span {
+.main .about-seo-wrapper .as-title .col span, .main .about-seo-wrapper .as-title .col-xxl span {
   color: #F4AB00;
   font-size: 1.188rem;
 }
-.main .about-seo-wrapper .as-title .col_content-1 {
-  padding: 100px 0 40px 0;
-}
 .main .about-seo-wrapper .as-title .col_content-1 h2 {
-  padding: 20px 0 0 0;
-  margin: 0 0 25px 0;
+  padding-top: 20px;
+  margin-bottom: 25px;
 }
 .main .about-seo-wrapper .as-title .col_content-1 p {
   line-height: 34px;
@@ -375,7 +372,6 @@ header .media {
 }
 .main .about-seo-wrapper .as-title .col_content-2 .row {
   margin-left: 60px;
-  padding-bottom: 50px;
   gap: 25px;
 }
 .main .about-seo-wrapper .as-title .col_content-2 .row .img__resp {
@@ -390,7 +386,52 @@ header .media {
   font-size: 0.938rem;
   line-height: 28px;
   max-width: 80%;
-  padding: 8px 0 0 0;
+  padding-top: 10px;
+}
+.main .as-content-wrapper {
+  padding: 0 123px 0 140px;
+  margin-bottom: 147px;
+}
+.main .as-content-wrapper .as-content {
+  padding: 0 80px 0 80px;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+.main .as-content-wrapper .col_content-1 {
+  padding-top: 5px;
+}
+.main .as-content-wrapper .col_content-1 h2 {
+  margin: 0 0 25px 0;
+}
+.main .as-content-wrapper .col_content-1 p {
+  line-height: 34px;
+  max-width: 96%;
+}
+.main .as-content-wrapper .col_content-2 {
+  padding-top: 100px;
+}
+.main .as-content-wrapper .col_content-2 .row {
+  margin-left: 60px;
+  padding-top: 45px;
+  gap: 25px;
+}
+.main .as-content-wrapper .col_content-2 .row .img__resp {
+  padding: 0;
+  max-width: 86px;
+  max-height: 86px;
+}
+.main .as-content-wrapper .col_content-2 .row .text_col {
+  padding: 0;
+}
+.main .as-content-wrapper .col_content-2 .row .text_col span {
+  color: #F4AB00;
+  font-size: 1.188rem;
+}
+.main .as-content-wrapper .col_content-2 .row .text_col p {
+  font-size: 0.938rem;
+  line-height: 28px;
+  max-width: 80%;
+  padding-top: 10px;
 }
 .main .appear-fp {
   padding: 75.41px 5px 153px 31px;
@@ -407,7 +448,7 @@ header .media {
   margin-bottom: 25px;
 }
 .main .appear-fp .text_col p {
-  width: 96%;
+  width: 95%;
   line-height: 34px;
   margin-bottom: 26px;
 }
@@ -470,14 +511,14 @@ header .media {
 .main .conversion-rate .title_col {
   padding: 157.69px 0 0 0;
 }
-.main .conversion-rate .title_col h2 {
+.main .conversion-rate .title_col span {
   max-width: 93%;
   margin-bottom: 26px;
 }
 .main .conversion-rate .title_col p {
   max-width: 91%;
   line-height: 34px;
-  margin-bottom: 25px;
+  margin: 28px 0 24px 0px;
 }
 .main .conversion-rate button {
   font-family: "Nunito Regular";
@@ -516,6 +557,23 @@ header .media {
   height: 662px;
   padding: 3px 0 0 0;
 }
+.main .conversion-rate .content_col .border-wrapper {
+  background-color: #fff;
+  color: #2C1258;
+  padding: 35px 0 0 37px;
+}
+.main .conversion-rate .content_col .border-wrapper span {
+  font-size: 1.188rem;
+  margin: 25px 0 15px 0;
+}
+.main .conversion-rate .content_col .border-wrapper p {
+  font-size: 0.938rem;
+  max-width: 92%;
+  line-height: 28px;
+}
+.main .conversion-rate .content_col svg {
+  width: 50px;
+}
 .main .conversion-rate .content_col .row_content {
   flex-wrap: wrap;
   gap: 30px;
@@ -524,22 +582,12 @@ header .media {
   max-width: 318px;
   height: 286px;
 }
+.main .conversion-rate .content_col .imc_2 .st p {
+  font-size: 1rem;
+  max-width: 92%;
+}
 .main .conversion-rate .content_col .br__m {
   margin: 30px 0 0 0;
-}
-.main .conversion-rate .content_col .border-wrapper {
-  background-color: #fff;
-  color: #2C1258;
-  padding: 35px 0 0 37px;
-}
-.main .conversion-rate .content_col .border-wrapper h2 {
-  font-size: 1.188rem;
-  margin: 10px 0 5px 0;
-}
-.main .conversion-rate .content_col .border-wrapper p {
-  font-size: 0.938rem;
-  max-width: 92%;
-  line-height: 26px;
 }
 .main .our-services {
   padding: 0 120px 0 140px;
@@ -648,21 +696,18 @@ header .media {
   background-color: #421B81;
 }
 .main .hsw h2, .main .hsw h3 {
-  padding: 0 0px 0 150px;
-}
-.main .hsw h2 {
   padding-left: 15px;
   text-align: center;
+}
+.main .hsw h2 {
   width: 425px;
 }
 .main .hsw h2 span {
   color: #F4AB00;
 }
 .main .hsw h3 {
-  text-align: center;
-  padding-left: 15px;
   line-height: 9px;
-  margin: 42px 0 90px 0;
+  margin: 44px 0 90px 0;
 }
 .main .hsw .row_content {
   padding: 0 0px 0 60px;
@@ -734,9 +779,6 @@ header .media {
 }
 .main .marketing-team h3 {
   margin: 10px 0 60px 0;
-}
-.main .marketing-team .team {
-  display: flex;
 }
 .main .marketing-team .block_top {
   margin-bottom: 60px;
@@ -818,8 +860,8 @@ header .media {
   border: 1px solid #fff;
 }
 .main .pricing-plans .plan-silver, .main .pricing-plans .plan-gold, .main .pricing-plans .plan-platinum {
-  padding: 35px 38px 51px 30px;
-  border-radius: 20px;
+  padding: 35px 38px 47px 30px;
+  border-radius: 15px;
 }
 .main .pricing-plans .plan-silver .pt, .main .pricing-plans .plan-gold .pt, .main .pricing-plans .plan-platinum .pt {
   color: #F4AB00;
@@ -950,10 +992,9 @@ header .media {
 }
 .main .client-review p {
   width: 64%;
-  margin: 0 0px 0 215px;
+  margin: 0 0px 10px 215px;
   font-size: 1.5rem;
   line-height: 43px;
-  margin-bottom: 10px;
 }
 .main .client-review .carousel .carousel-indicators {
   margin-bottom: -45px;
@@ -989,6 +1030,126 @@ header .media {
 .main .companies .col_3 .col {
   justify-content: flex-end;
 }
+.main .news-case-studies {
+  padding: 79px 118px 0 140px;
+  text-align: center;
+  justify-content: center;
+  background-color: #E5D8FA;
+}
+.main .news-case-studies h2, .main .news-case-studies h3 {
+  padding-right: 10px;
+}
+.main .news-case-studies h3 {
+  padding-top: 10px;
+  margin-bottom: 49px;
+}
+.main .news-case-studies .content {
+  gap: 16px;
+  margin-bottom: 60px;
+}
+.main .news-case-studies .col, .main .news-case-studies .col-xxl {
+  background-color: #fff;
+  max-width: 376px;
+}
+.main .news-case-studies img {
+  margin-bottom: 20px;
+}
+.main .news-case-studies span {
+  font-size: 0.75rem;
+}
+.main .news-case-studies .fa-angle-right {
+  padding-left: 5px;
+  font-size: 0.625rem;
+  color: #0059ff;
+}
+.main .news-case-studies p {
+  font-size: 1.375rem;
+  line-height: 34px;
+  width: 90%;
+  margin: 18px auto 0 auto;
+  padding-bottom: 27px;
+}
+.main .news-case-studies button {
+  font-family: "Nunito Regular";
+}
+.main .news-case-studies .btn {
+  background-color: #F4AB00;
+  color: #fff;
+}
+.main .news-case-studies .btn_main-content {
+  width: 100px;
+  height: 41px;
+  border-radius: 27px;
+}
+.main .news-case-studies .btn_main-content a {
+  color: #fff;
+}
+.main .news-case-studies .btn_main-content:hover {
+  transition: 0s all;
+  background-color: #111;
+}
+.main .news-case-studies .btn_main-content:active {
+  transition: 0s all;
+  background-color: #fff;
+  color: #000;
+  transition: 0s all;
+}
+.main .news-case-studies .btn {
+  font-size: 1rem;
+  border: 2px solid #2C1258;
+  background-color: transparent;
+}
+.main .news-case-studies .btn_main-content {
+  width: 179px;
+  height: 54px;
+  margin: 0 0 140px 0;
+  justify-content: center;
+  align-items: center;
+  color: #2C1258;
+}
+.main .news-case-studies .btn_main-content:hover {
+  transition: 0s all;
+  background-color: #F4AB00;
+  color: #fff;
+}
+.main .news-case-studies .btn_main-content:active {
+  transition: 0s all;
+  background-color: #000;
+  color: #F4AB00;
+  transition: 0s all;
+}
+.main .get-in-touch {
+  text-align: center;
+  justify-content: center;
+  padding: 110px 0 0 0;
+}
+.main .get-in-touch h2 {
+  margin-bottom: 11px;
+}
+.main .get-in-touch h3 {
+  font-size: 1.125rem;
+  margin-bottom: 55px;
+}
+.main .get-in-touch .gin-title {
+  padding: 0 125px 0 140px;
+  justify-content: space-between;
+}
+.main .get-in-touch .gin-title .col, .main .get-in-touch .gin-title .col-xxl {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 15px 15px 0 0;
+  max-width: 367px;
+  padding-top: 40px;
+}
+.main .gin-content {
+  padding: 0 125px 0 140px;
+  justify-content: space-between;
+}
+.main .gin-content .col, .main .gin-content .col-xxl {
+  max-width: 367px;
+  text-align: center;
+}
+
 .footer {
   --bs-gutter-x: 0rem;
   display: flex;

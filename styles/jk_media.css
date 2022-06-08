@@ -44,7 +44,7 @@
   .main .conversion-rate {
     margin-bottom: 60px;
   }
-  .main .conversion-rate .title_col h2, .main .conversion-rate .title_col p {
+  .main .conversion-rate .title_col span, .main .conversion-rate .title_col p {
     margin: 0 auto 25px auto;
   }
   .main .conversion-rate .title_col p {
@@ -72,6 +72,9 @@
   }
   .main .client-review .carousel-control-prev {
     margin-left: 350px;
+  }
+  .main .news-case-studies .row {
+    justify-content: center;
   }
 }
 @media (max-width: 1500px) {
@@ -107,7 +110,7 @@
   .main .conversion-rate .title_col {
     padding: 0 0 0 0;
   }
-  .main .conversion-rate .title_col h2 {
+  .main .conversion-rate .title_col span {
     width: 100%;
   }
   .main .conversion-rate .title_col .btn_main-content {
@@ -133,22 +136,13 @@
 
   .main .about-seo-wrapper {
     padding: 75px 40px 76px 40px;
-    margin-bottom: 820px;
   }
   .main .about-seo-wrapper .as-title {
     padding: 0 145px 0 145px;
     text-align: center;
   }
-  .main .about-seo-wrapper .as-title .col-xxl p {
-    margin: 0 auto;
-    width: 60%;
-  }
-  .main .about-seo-wrapper .as-title .col-xxl h2 {
-    width: 50%;
-    margin: 0 auto 25px auto;
-  }
   .main .about-seo-wrapper .as-title .col_content-1 {
-    padding: 40px 0 40px 0;
+    padding: 40px 0 280px 0;
   }
   .main .about-seo-wrapper .as-title .col_content-2 {
     padding: 0;
@@ -157,6 +151,37 @@
     justify-content: center;
     padding: 0 0 40px 0;
     margin: 0;
+  }
+  .main .about-seo-wrapper .as-title .col_content-2 .row p {
+    margin: 0 auto;
+    width: 60%;
+  }
+  .main .as-content-wrapper {
+    padding: 0 40px 0 40px;
+  }
+  .main .as-content-wrapper .as-content h2, .main .as-content-wrapper .as-content p {
+    text-align: center;
+  }
+  .main .as-content-wrapper .as-content h2 {
+    width: 50%;
+    margin: 0 auto 25px auto;
+  }
+  .main .as-content-wrapper .as-content p {
+    margin: 0 auto;
+    width: 60%;
+  }
+  .main .as-content-wrapper .as-content .col_content-2 {
+    padding-top: 230px;
+  }
+  .main .as-content-wrapper .as-content .col_content-2 .row {
+    text-align: center;
+    justify-content: center;
+    padding: 0 0 40px 0;
+    margin: 0;
+  }
+  .main .as-content-wrapper .as-content .col_content-2 .col-xxl p {
+    margin: 0 auto;
+    width: 60%;
   }
   .main .appear-fp {
     justify-content: center;
@@ -212,7 +237,7 @@
   .main .conversion-rate .title_col {
     padding: 80px 40px 40px 80px;
   }
-  .main .conversion-rate .title_col h2 {
+  .main .conversion-rate .title_col span {
     max-width: 100%;
   }
   .main .conversion-rate .title_col p {
@@ -232,6 +257,9 @@
   }
   .main .conversion-rate .content_col .border-wrapper {
     padding: 35px 0 0 0;
+  }
+  .main .conversion-rate .content_col .border-wrapper .row {
+    justify-content: center;
   }
   .main .conversion-rate .content_col .border-wrapper p {
     max-width: 80%;
@@ -344,6 +372,9 @@
   .main .companies .col_3 {
     max-width: 183px;
   }
+  .main .news-case-studies .row {
+    justify-content: center;
+  }
 }
 @media (max-width: 1300px) {
   .main .hsw .row_content .line {
@@ -389,9 +420,6 @@
   }
   .main .title .col {
     max-width: 100%;
-  }
-  .main .about-seo-wrapper {
-    margin-bottom: 920px;
   }
   .main .reasons-choosing-seo {
     margin: 0 40px 10px 40px;
@@ -444,9 +472,6 @@
     align-items: center;
   }
 
-  .main .about-seo-wrapper {
-    margin-bottom: 920px;
-  }
   .main .conversion-rate {
     padding: 0 40px 30px 40px;
   }
@@ -489,11 +514,6 @@
     gap: 10px;
   }
 }
-@media (max-width: 929px) {
-  .main .about-seo-wrapper {
-    margin-bottom: 1180px;
-  }
-}
 @media (max-width: 767.98px) {
   body, .wrapper {
     background-color: #1aa179;
@@ -503,7 +523,7 @@
     flex-direction: column;
   }
   .main .client-review .carousel-control-next, .main .client-review .carousel-control-prev {
-    margin: 0px;
+    margin: 0;
   }
 }
 @media (max-width: 575.98px) {
