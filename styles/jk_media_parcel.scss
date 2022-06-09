@@ -57,8 +57,24 @@
       .carousel-control-next {margin-right: 350px; }
       .carousel-control-prev {margin-left: 350px;}
     }
-    .news-case-studies {
-      .row {justify-content: center;}
+    .news-case-studies .row {justify-content: center;}
+    .get-in-touch {
+      .contacts-wr .git-contacts {justify-content: center; gap: 30px;}
+    }
+    .enquiry-form .form_col {
+      h2 {text-align: center;}
+      p {
+        width: 75%; 
+        margin: 0 auto 26px auto; 
+        text-align: center;
+      }
+      form {
+        justify-content: center;
+        .row {
+          justify-content: center;
+          gap: 20px;
+        }
+      }
     }
   }
 }
@@ -266,14 +282,37 @@
       .news-case-studies {
         .row {justify-content: center;}
       }
+      .get-in-touch .contacts-wr {
+        padding: 0 31.5px 0 31.5px;
+        .row  {
+          justify-content: center;
+          gap: 10px;
+        }
+      }
+      .enquiry-form {
+        h2 {text-align: center;}
+      p {
+        width: 45%; 
+        margin: 0 auto 26px auto; 
+        text-align: center;
+      }
+        .form_col {
+          padding: 0;
+          form  {
+            justify-content: center;
+            .row {
+              justify-content: center;
+              gap: 10px;
+            }
+          }
+        }
+      }
     }
 }
 @media (max-width: 1300px) {
-  .main .hsw {
-    .row_content {
-      .line {left: 360px;}
-      .line_2 {right: 455px;}
-    }
+  .main .hsw .row_content {
+    .line {left: 360px;}
+    .line_2 {right: 455px;}
   }
 }
 @include media-breakpoint-down(xl)  { // 1200px
@@ -323,6 +362,11 @@
       .carousel-control-next {margin-right: 200px;}
       .carousel-control-prev {margin-left: 200px;}
     }
+    .get-in-touch .contacts-wr {
+    }
+    .enquiry-form {
+       padding-top: 280px;
+    }
   }
 }
 @include media-breakpoint-down(lg)  { // 992px
@@ -362,8 +406,9 @@
         .carousel-control-next {margin-right: 100px;}
         .carousel-control-prev {margin-left: 100px;}
       }
-      .companies {
-        padding: 0 40px 0 40px;
+      .companies {padding: 0 40px 0 40px;}
+      .get-in-touch .contacts-wr {
+        padding: 0 4px 0 4px;
       }
     }
     .footer {

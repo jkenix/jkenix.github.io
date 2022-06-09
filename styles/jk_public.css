@@ -115,6 +115,23 @@
   width: 100%;
 }
 
+.copy-notification {
+  color: #000;
+  background-color: #F4AB00;
+  padding: 20px;
+  border-radius: 30px;
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  width: 200px;
+  font-size: 25px;
+  margin-top: -30px;
+  margin-left: -85px;
+  display: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
 /* Global */
 h1 {
   margin: 0;
@@ -137,6 +154,7 @@ h3 {
 }
 
 p {
+  margin: 0;
   font-family: "Nunito Regular";
   font-size: 1.125rem;
 }
@@ -159,8 +177,16 @@ ul {
   list-style: none;
 }
 
-input {
+input, textarea {
   font-family: "Nunito Regular";
+  font-size: 1.125rem;
+  line-height: 34px;
+}
+
+.img__resp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrapper {
@@ -171,12 +197,6 @@ input {
 
 .header-wrapper {
   background-color: #5B25B3;
-}
-
-.img__resp {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 header {
@@ -1046,6 +1066,7 @@ header .media {
 .main .news-case-studies .content {
   gap: 16px;
   margin-bottom: 60px;
+  justify-content: center;
 }
 .main .news-case-studies .col, .main .news-case-studies .col-xxl {
   background-color: #fff;
@@ -1119,9 +1140,12 @@ header .media {
   transition: 0s all;
 }
 .main .get-in-touch {
+  background-color: #2C1258;
+  color: #fff;
   text-align: center;
   justify-content: center;
-  padding: 110px 0 0 0;
+  padding-top: 110px;
+  margin-bottom: 145px;
 }
 .main .get-in-touch h2 {
   margin-bottom: 11px;
@@ -1130,42 +1154,179 @@ header .media {
   font-size: 1.125rem;
   margin-bottom: 55px;
 }
-.main .get-in-touch .gin-title {
+.main .get-in-touch .contacts-wr {
   padding: 0 125px 0 140px;
+  height: 100px;
+}
+.main .get-in-touch .contacts-wr .git-contacts {
+  color: #2C1258;
   justify-content: space-between;
 }
-.main .get-in-touch .gin-title .col, .main .get-in-touch .gin-title .col-xxl {
+.main .get-in-touch .contacts-wr .git-contacts .col, .main .get-in-touch .contacts-wr .git-contacts .col-xxl {
   background-color: #fff;
   border: 1px solid #fff;
   border-radius: 15px 15px 0 0;
   max-width: 367px;
   padding-top: 40px;
+  text-align: center;
 }
-.main .gin-content {
-  padding: 0 125px 0 140px;
+.main .get-in-touch .contacts-wr .git-contacts .c_title {
+  padding-bottom: 16px;
+}
+.main .get-in-touch .contacts-wr .git-contacts .git-address .address {
+  font-size: 1.25rem;
+}
+.main .get-in-touch .contacts-wr .git-contacts .git-address .row {
+  padding-top: 18px;
+}
+.main .get-in-touch .contacts-wr .git-contacts .git-address span {
+  font-size: 1.25rem;
+}
+.main .get-in-touch .contacts-wr .git-contacts .git-address p {
+  font-size: 0.938rem;
+  max-width: 65%;
+  margin: 0 auto;
+  line-height: 28px;
+}
+.main .get-in-touch .contacts-wr .git-contacts .git-phone .phone {
+  font-size: 1.25rem;
+}
+.main .get-in-touch .contacts-wr .git-contacts .git-phone .row {
+  padding-top: 23px;
+}
+.main .get-in-touch .contacts-wr .git-contacts .git-phone span {
+  font-size: 1rem;
+  line-height: 28px;
+}
+.main .get-in-touch .contacts-wr .git-contacts .git-email span {
+  font-size: 1.188rem;
+}
+.main .get-in-touch .contacts-wr .git-contacts .git-email .row {
+  padding-top: 20px;
+}
+.main .get-in-touch .contacts-wr .git-contacts .git-email a {
+  font-size: 0.938rem;
+  line-height: 28px;
+}
+.main .enquiry-form {
+  padding: 136px 137px 0 140px;
+  margin-bottom: 180px;
+}
+.main .enquiry-form .form_col {
+  padding-left: 60px;
+}
+.main .enquiry-form .form_col h2 {
+  margin-bottom: 16px;
+}
+.main .enquiry-form .form_col p {
+  line-height: 34px;
+  margin-bottom: 26px;
+}
+.main .enquiry-form .form_col a {
+  font-size: 1.125rem;
+}
+.main .enquiry-form .form_col form {
+  display: flex;
+  gap: 24px;
+}
+.main .enquiry-form .form_col form .row {
   justify-content: space-between;
 }
-.main .gin-content .col, .main .gin-content .col-xxl {
-  max-width: 367px;
-  text-align: center;
+.main .enquiry-form .form_col form .col {
+  max-width: 255px;
+}
+.main .enquiry-form .form_col form .col input {
+  height: 52px;
+  width: 255px;
+  padding-left: 17px;
+}
+.main .enquiry-form .form_col form textarea {
+  max-width: 533px;
+  padding: 19px 0 5px 21px;
+}
+.main .enquiry-form .form_col form button {
+  font-family: "Nunito Regular";
+}
+.main .enquiry-form .form_col form .btn {
+  background-color: #F4AB00;
+  color: #fff;
+}
+.main .enquiry-form .form_col form .btn_main-content {
+  width: 100px;
+  height: 41px;
+  border-radius: 27px;
+}
+.main .enquiry-form .form_col form .btn_main-content a {
+  color: #fff;
+}
+.main .enquiry-form .form_col form .btn_main-content:hover {
+  transition: 0s all;
+  background-color: #111;
+}
+.main .enquiry-form .form_col form .btn_main-content:active {
+  transition: 0s all;
+  background-color: #fff;
+  color: #000;
+  transition: 0s all;
+}
+.main .enquiry-form .form_col form .btn_main-content {
+  width: 159px;
+  height: 57px;
 }
 
 .footer {
   --bs-gutter-x: 0rem;
   display: flex;
   flex-direction: row;
-  padding: 71.27px 20px 40.73px 20px;
+  padding: 0px 140px 0 140px;
   justify-content: space-between;
 }
-.footer ul {
+.footer .contacts {
+  gap: 20px;
+  padding-bottom: 90px;
+}
+.footer .contacts .seoflow {
+  width: 285px;
+}
+.footer .contacts .seoflow span {
+  font-size: 1.2rem;
+}
+.footer .contacts .seoflow p {
+  font-size: 0.938rem;
+  margin-top: 20px;
+  line-height: 28px;
+}
+.footer .contacts .ql {
+  padding: 5px 0 0 80px;
+}
+.footer .contacts .ql span {
+  font-size: 1.188rem;
+  line-height: 28px;
+}
+.footer .contacts .ql .row {
+  gap: 15px;
+}
+.footer .footer-bottom {
+  justify-content: space-between;
+}
+.footer .footer-bottom li, .footer .footer-bottom span {
+  font-size: 0.875rem;
+}
+.footer .footer-bottom ul {
   display: flex;
   width: auto;
   gap: 20px;
 }
-.footer ul a {
+.footer .footer-bottom ul a {
   text-decoration: underline;
 }
-.footer .info_col {
+.footer .footer-bottom .info_col {
+  justify-content: flex-end;
+}
+.footer .footer-bottom span {
+  width: auto;
+}
+.footer .footer-bottom .info_col {
   padding: 0;
   display: flex;
 }

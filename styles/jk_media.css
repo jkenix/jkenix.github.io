@@ -76,6 +76,25 @@
   .main .news-case-studies .row {
     justify-content: center;
   }
+  .main .get-in-touch .contacts-wr .git-contacts {
+    justify-content: center;
+    gap: 30px;
+  }
+  .main .enquiry-form .form_col h2 {
+    text-align: center;
+  }
+  .main .enquiry-form .form_col p {
+    width: 75%;
+    margin: 0 auto 26px auto;
+    text-align: center;
+  }
+  .main .enquiry-form .form_col form {
+    justify-content: center;
+  }
+  .main .enquiry-form .form_col form .row {
+    justify-content: center;
+    gap: 20px;
+  }
 }
 @media (max-width: 1500px) {
   .main .title-text_col {
@@ -375,6 +394,31 @@
   .main .news-case-studies .row {
     justify-content: center;
   }
+  .main .get-in-touch .contacts-wr {
+    padding: 0 31.5px 0 31.5px;
+  }
+  .main .get-in-touch .contacts-wr .row {
+    justify-content: center;
+    gap: 10px;
+  }
+  .main .enquiry-form h2 {
+    text-align: center;
+  }
+  .main .enquiry-form p {
+    width: 45%;
+    margin: 0 auto 26px auto;
+    text-align: center;
+  }
+  .main .enquiry-form .form_col {
+    padding: 0;
+  }
+  .main .enquiry-form .form_col form {
+    justify-content: center;
+  }
+  .main .enquiry-form .form_col form .row {
+    justify-content: center;
+    gap: 10px;
+  }
 }
 @media (max-width: 1300px) {
   .main .hsw .row_content .line {
@@ -451,6 +495,9 @@
   .main .client-review .carousel-control-prev {
     margin-left: 200px;
   }
+  .main .enquiry-form {
+    padding-top: 280px;
+  }
 }
 @media (max-width: 991.98px) {
   body, .wrapper {
@@ -505,6 +552,9 @@
   }
   .main .companies {
     padding: 0 40px 0 40px;
+  }
+  .main .get-in-touch .contacts-wr {
+    padding: 0 4px 0 4px;
   }
 
   .footer {
