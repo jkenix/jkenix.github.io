@@ -61,18 +61,22 @@
     .get-in-touch {
       .contacts-wr .git-contacts {justify-content: center; gap: 30px;}
     }
-    .enquiry-form .form_col {
-      h2 {text-align: center;}
-      p {
-        width: 75%; 
-        margin: 0 auto 26px auto; 
-        text-align: center;
-      }
-      form {
-        justify-content: center;
-        .row {
+    .enquiry-form {
+      .img__resp {justify-content: flex-end;}
+      .form_col {
+        padding: 0;
+        h2 {text-align: center;}
+        p {
+          width: 75%; 
+          margin: 0 auto 26px auto; 
+          text-align: center;
+        }
+        form {
           justify-content: center;
-          gap: 20px;
+          .row {
+            justify-content: center;
+            gap: 20px;
+          }
         }
       }
     }
@@ -94,7 +98,6 @@
       .carousel-control-next {margin-right: 300px;}
       .carousel-control-prev {margin-left: 300px;}
     }
-    
   }
 }
 @media (min-width: 1441px) {
@@ -119,37 +122,38 @@
       // padding: 60px 125px 110px 140px;
     }
   }
+  .footer .contacts {justify-content: center; }
 }
 @include media-breakpoint-up(xxl) {body, .wrapper {background-color: $gray-500;}} // 1400px + // Only demonstrative class
 @include media-breakpoint-down(xxl)  { // 1400px
-    body, .wrapper {background-color: $green-500;}
-    .nav-wrapper .border-wrapper .menu {padding-right: 0px;}
-    .main {
-      .about-seo-wrapper {
-        padding: 75px 40px 76px 40px;
-          .as-title {
-            padding: 0 145px 0 145px; 
-            text-align: center; 
-              .col_content-1 {padding: 40px 0 280px 0;}
-              .col_content-2 {
-                padding: 0;
-                .row {
-                  justify-content: center;
-                  padding: 0 0 40px 0;
-                  margin: 0;
-                    p {margin: 0 auto; width: 60%;}
-                }
-              } 
-          }
-      }
-      .as-content-wrapper {
-        padding: 0 40px 0 40px;
-        .as-content {
-          h2, p {text-align: center;}
-          h2 {width: 50%; margin: 0 auto 25px auto;}
-          p {margin: 0 auto; width: 60%;}
+  body, .wrapper {background-color: $green-500;}
+  .nav-wrapper .border-wrapper .menu {padding-right: 0px;}
+  .main {
+    .about-seo-wrapper {
+      padding: 75px 40px 76px 40px;
+      .as-title {
+        padding: 0 145px 0 145px; 
+        text-align: center; 
+          .col_content-1 {padding: 40px 0 280px 0;}
           .col_content-2 {
-            padding-top: 230px;
+            padding: 0;
+            .row {
+              justify-content: center;
+              padding: 0 0 40px 0;
+              margin: 0;
+                p {margin: 0 auto; width: 60%;}
+            }
+          } 
+      }
+    }
+    .as-content-wrapper {
+      padding: 0 40px 0 40px;
+      .as-content {
+        h2, p {text-align: center;}
+        h2 {width: 50%; margin: 0 auto 25px auto;}
+        p {margin: 0 auto; width: 60%;}
+        .col_content-2 {
+          padding-top: 230px;
             .row {
               text-align: center;
               justify-content: center;
@@ -159,28 +163,28 @@
             .col-xxl {
               p {margin: 0 auto; width: 60%;}
             }
-          }
         }
       }
-      .appear-fp {
-        justify-content: center;
-        gap: 55px;
-        padding: 0;
-        margin: 0 40px 0 40px;
-          .text_col {
-            padding: 0 60px 0 60px;
-            text-align: center;
-            p {width: 60%; margin: 0 auto 30px auto;}
-            .row {width: 100%;}
-          }
-          .check_col {height: 154px;}
+    }
+    .appear-fp {
+      justify-content: center;
+      gap: 55px;
+      padding: 0;
+      margin: 0 40px 0 40px;
+      .text_col {
+        padding: 0 60px 0 60px;
+        text-align: center;
+        p {width: 60%; margin: 0 auto 30px auto;}
+        .row {width: 100%;}
       }
-      .reasons-choosing-seo {
-        margin: 0 40px 10px 40px;
-        padding: 0 0px 10px 0px;
-        .text_col {
-          width: 65%; margin: 0 auto;
-          text-align: center;
+      .check_col {height: 154px;}
+    }
+    .reasons-choosing-seo {
+      margin: 0 40px 10px 40px;
+      padding: 0 0px 10px 0px;
+      .text_col {
+        width: 65%; margin: 0 auto;
+        text-align: center;
           p {width: 65%; margin: 0 auto 30px auto;}
             .stat_col {
               padding: 20px 0 0 0;
@@ -188,116 +192,112 @@
               .img_2 {margin: 0;}
             }
             .row {width: 60%; margin: 0 auto;}
-        }
-       
       }
-      .conversion-rate {
-        padding: 0px 125px 80px 140px;
-        margin-bottom: 20px;
-        text-align: center;
-        .title_col {
-          padding: 80px 40px 40px 80px;
-          span {max-width: 100%;} 
-          p {width: 55%; margin: 0 auto;}
-          .btn {margin: 20px auto 0 auto;}
-        }
-        .content_col {
-          width: 100%; height: 100%;
-          padding: 0;
-          .row_content {justify-content: center;}
-          .border-wrapper {
-            padding: 35px 0 0 0;
-            .row {justify-content: center;}
-            p {max-width: 80%; margin: 0 auto;}
-          } 
-        }
+    }
+    .conversion-rate {
+      padding: 0px 125px 80px 140px;
+      margin-bottom: 20px;
+      text-align: center;
+      .title_col {
+        padding: 80px 40px 40px 80px;
+        span {max-width: 100%;} 
+        p {width: 55%; margin: 0 auto;}
+        .btn {margin: 20px auto 0 auto;}
       }
-      .our-services {
-        padding: 0 40px 0 40px;
-        margin-bottom: 30px;
+      .content_col {
+        width: 100%; height: 100%;
+        padding: 0;
+        .row_content {justify-content: center;}
+        .border-wrapper {
+          padding: 35px 0 0 0;
+          .row {justify-content: center;}
+          p {max-width: 80%; margin: 0 auto;}
+        } 
+      }
+    }
+    .our-services {
+      padding: 0 40px 0 40px;
+      margin-bottom: 30px;
+      justify-content: center;
+      .row a {width: auto;}
+    }
+    .seo-marketing {
+      text-align: center;
+      margin: 0;
+      gap: 30px;
+      .col-xxl {padding: 0;}
+      .text_col {
+        p {
+          margin: 20px auto 20px auto; 
+          max-width: 50%;
+        } 
+        .btn {margin: 0 auto 0 auto;}
+      }
+      .img_col {padding-bottom: 40px;}
+    }
+    .hsw {
+      margin-bottom: 60px;
+      .row_content {
+        justify-content: center; 
+        padding: 0;
+        .line, .line_2 {margin-top: 28px; max-width: 140px;}
+        .line {left: 400px;}
+        .line_2 {right: 455px;}
+        .cb_1 {max-width:55%;}
+      }
+    }
+    .marketing-team {
+      margin: 0px;
+      .col {margin-bottom: 30px;}
+      .col, .col-xxl {
+        .block_bottom {margin-bottom: 0;}
+        .col {justify-content: center;}
+      }
+      .col_3 {
+        display: flex;
+        .block_bottom {margin-left: 40px;}
+        .block_top {margin-left: 20px;}
+      }
+    }
+    .pricing-plans {
+      padding: 60px 20px 110px 20px;
+      margin-bottom: 40px;
+      .plans {
         justify-content: center;
-          .row a {width: auto;}
+        gap: 20px;
       }
-      .seo-marketing {
-        text-align: center;
-        margin: 0;
-        gap: 30px;
-        .col-xxl {padding: 0;}
-        .text_col {
-          p {
-            margin: 20px auto 20px auto; 
-            max-width: 50%;
-          } 
-          .btn {margin: 0 auto 0 auto;}
-        }
-        .img_col {padding-bottom: 40px;}
+    }
+    .client-review {
+      margin-bottom: 100px;
+      p {width: 80%; margin: 0 auto;}
+      .carousel-control-next {margin-right: 250px;}
+      .carousel-control-prev {margin-left: 250px;}
+    }
+    .companies {
+      justify-content: center;
+      gap: 10px;
+      .col, .col-xxl {gap: 20px;}
+      .col-xxl .col {padding: 0;}
+      .col_1 {max-width: 213px;}
+      .col_2 {max-width: 161px;}
+      .col_3 {max-width: 183px;}
+    }
+    .news-case-studies .row {justify-content: center;}
+    .get-in-touch .contacts-wr {
+      padding: 0 31.5px 0 31.5px;
+      .row  {
+        justify-content: center;  gap: 10px;
       }
-      .hsw {
-        margin-bottom: 60px;
-        .row_content {
-          justify-content: center; 
-          padding: 0;
-          .line, .line_2 {margin-top: 28px; max-width: 140px;}
-          .line {left: 400px;}
-          .line_2 {right: 455px;}
-          .cb_1 {max-width:55%;}
-        }
-      }
-      .marketing-team {
-        margin: 0px;
-        .col {margin-bottom: 30px;}
-        .col, .col-xxl {
-          .block_bottom {margin-bottom: 0;}
-          .col {justify-content: center;}
-        }
-        .col_3 {
-          display: flex;
-          .block_bottom {margin-left: 40px;}
-          .block_top {margin-left: 20px;}
-        }
-      }
-      .pricing-plans {
-        padding: 60px 20px 110px 20px;
-        margin-bottom: 40px;
-        .plans {
-          justify-content: center;
-          gap: 20px;
-        }
-      }
-      .client-review {
-        margin-bottom: 100px;
-        p {width: 80%; margin: 0 auto;}
-        .carousel-control-next {margin-right: 250px;}
-        .carousel-control-prev {margin-left: 250px;}
-      }
-      .companies {
-        justify-content: center;
-        gap: 10px;
-        .col, .col-xxl {gap: 20px;}
-        .col-xxl .col {padding: 0;}
-        .col_1 {max-width: 213px;}
-        .col_2 {max-width: 161px;}
-        .col_3 {max-width: 183px;}
-      }
-      .news-case-studies {
-        .row {justify-content: center;}
-      }
-      .get-in-touch .contacts-wr {
-        padding: 0 31.5px 0 31.5px;
-        .row  {
-          justify-content: center;
-          gap: 10px;
-        }
-      }
-      .enquiry-form {
-        h2 {text-align: center;}
+    }
+    .enquiry-form {
+      h2 {text-align: center;}
       p {
         width: 45%; 
         margin: 0 auto 26px auto; 
         text-align: center;
       }
-        .form_col {
-          padding: 0;
+      .form_col {
+        padding: 0;
           form  {
             justify-content: center;
             .row {
@@ -305,9 +305,28 @@
               gap: 10px;
             }
           }
-        }
       }
     }
+  }
+  .footer {
+      .contacts {
+        justify-content: center;
+        gap: 10px; padding: 0;
+          .seoflow {max-width: 220px;}
+          .ql {
+            max-width: 200px;
+            ul li {padding: 0;}
+          }
+          .services {max-width: 150px;}
+          .gin {max-width: 300px;}
+          .fu {
+            max-width: 200px;
+            .row {justify-content: center;}
+            span {width: auto; height: 25px;}
+            .media {width: auto; height: 25px;}
+          }
+      }
+  }
 }
 @media (max-width: 1300px) {
   .main .hsw .row_content {
@@ -345,11 +364,11 @@
     .reasons-choosing-seo {margin: 0 40px 10px 40px;}
     .conversion-rate {
       padding: 50px 60px 50px 60px;
-        .title_col {padding: 0px 0 40px 0;}
+      .title_col {padding: 0px 0 40px 0;}
     }
     .our-services {
       padding: 0 40px 0 40px;
-        .row {justify-content: center;}
+      .row {justify-content: center;}
     }
     .hsw {
       .row_content {
@@ -365,57 +384,56 @@
     .get-in-touch .contacts-wr {
     }
     .enquiry-form {
-       padding-top: 280px;
+      padding-top: 280px;
     }
   }
 }
 @include media-breakpoint-down(lg)  { // 992px
-    body, .wrapper {background-color: $cyan-500;}
-    .header {padding: 20px 20px 0 20px;}
-    .nav-wrapper {padding: 0 20px 0 20px;
-      .menu {padding: 0 0px 0 0px;}
-      .nav {justify-content: center; align-items: center;}
-    }
-    .main {
-      // .about-seo-wrapper {margin-bottom: 920px;}
-      .conversion-rate {padding: 0 40px 30px 40px;}
-      .reasons-choosing-seo {
-        .text_col{
-          width: 100%;
-          p {
-            width: 50%; 
-            margin: 0 auto 20px auto;
-          }
-          .row {justify-content: center; width: 100%;}
-          .text-stat_col {
-            max-width: 15%;
-            margin-right: 60px;
-          }
+  body, .wrapper {background-color: $cyan-500;}
+  .header {padding: 20px 20px 0 20px;}
+  .nav-wrapper {padding: 0 20px 0 20px;
+    .menu {padding: 0 0px 0 0px;}
+    .nav {justify-content: center; align-items: center;}
+  }
+  .main {
+    // .about-seo-wrapper {margin-bottom: 920px;}
+    .conversion-rate {padding: 0 40px 30px 40px;}
+    .reasons-choosing-seo {
+      .text_col{
+        width: 100%;
+        p {
+           width: 50%; 
+          margin: 0 auto 20px auto;
+        }
+        .row {justify-content: center; width: 100%;}
+        .text-stat_col {
+          max-width: 15%;
+          margin-right: 60px;
         }
       }
-      .hsw {
-        .row_content .cb_1 {max-width: 100%;}
-      }
-      .marketing-team {
-        // .row {flex-direction: column;}
-        .col, .col-xxl {
-          .block_top, .block_bottom {margin: 0; justify-content: flex-start;}
-        }
-      }
-      .client-review {
-        .carousel-control-next {margin-right: 100px;}
-        .carousel-control-prev {margin-left: 100px;}
-      }
-      .companies {padding: 0 40px 0 40px;}
-      .get-in-touch .contacts-wr {
-        padding: 0 4px 0 4px;
+    }
+    .hsw {
+      .row_content .cb_1 {max-width: 100%;}
+    }
+    .marketing-team {
+      .col, .col-xxl {
+        .block_top, .block_bottom {margin: 0; justify-content: flex-start;}
       }
     }
-    .footer {
-      flex-direction: column; 
-      justify-content: center; align-items: center;
-      gap: 10px;
+    .client-review {
+      .carousel-control-next {margin-right: 100px;}
+      .carousel-control-prev {margin-left: 100px;}
     }
+    .companies {padding: 0 40px 0 40px;}
+    .get-in-touch .contacts-wr {
+      padding: 0 4px 0 4px;
+    }
+  }
+  .footer {
+    flex-direction: column; 
+    justify-content: center; align-items: center;
+    gap: 10px;
+  }
 }
 @media (max-width: 929px) {
   .main {
@@ -425,43 +443,73 @@
   }
 }
 @include media-breakpoint-down(md)  { // 768px
-    body, .wrapper {background-color: $teal-600;}
-    .main {
-      .marketing-team {
-        .col-xxl {flex-direction: column;}
-      }
-      .client-review {
-        .carousel-control-next, .carousel-control-prev {margin: 0;}
-      }
+  body, .wrapper {background-color: $teal-600;}
+  .main {
+    .marketing-team {
+      .col-xxl {flex-direction: column;}
     }
+    .client-review {
+      .carousel-control-next, .carousel-control-prev {margin: 0;}
+    }
+  }
 }
 @include media-breakpoint-down(sm) { // 576px
-    body, .wrapper {background-color: $pink-600;}
-    
+  body, .wrapper {background-color: $pink-600;}
+  .header-wrapper {
+    .header {
+      justify-content: center;
+      padding-bottom: 75px;
+      gap: 10px;
+      .contacts {justify-content: center;}
+    }
+    .nav-wrapper {
+      .border-wrapper .menu {
+        width: auto;
+        height: auto;
+        .menu {
+          height: 230px;
+          padding: 0px 30px 0 30px;
+          border: 1px solid #000;
+          background-color: #000;
+          color: #F4AB00;
+          user-select: none;
+          .fa-bars {padding-left: 10px;}
+          &:hover {
+            background-color: #F4AB00;
+            color: #fff;
+          }
+        }
+        .nav {
+          display: none;
+        }
+        &:hover { 
+          .nav {
+            display: flex; 
+            flex-direction: column; 
+            position: absolute;
+            li {width: 148px; }
+          }
+        }
+        
+      }
+    }
+  }
 }
 @media (max-width: 450px) {
-    header .contacts{
-      flex-direction: column;
-      gap: 10px;
-      width: auto;
-    }
+  header .contacts{
+    flex-direction: column;
+    gap: 10px;
+    width: auto;
+  }
 }
 @media (max-width: 350px) {
-    .header .header-wrapper {
-      padding: 20px 0px 0 15px; 
-      align-items: flex-end;
-    }
-    .footer {height: auto;}
-    .footer span {flex-direction: column;}
-}
-@media (max-width: 270px) {
-  .wrapper .menu {
-    width: 170px;
-    display: block; padding-bottom: 5px;
-    // header-nav .menu hover
-   
+  .header .header-wrapper {
+    padding: 20px 0px 0 15px; 
+    align-items: flex-end;
   }
-    .header {
-      padding: 0px; 
-    }
+  .footer {height: auto;}
+  .footer span {flex-direction: column;}
+}
+@media (max-width: 320px) {
+  .wrapper {width: 310px;}
 }

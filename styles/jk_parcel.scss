@@ -17,123 +17,8 @@
 @import 'bootstrap/functions';
 @import 'bootstrap/variables.scss'; 
 @import 'bootstrap/mixins.scss';
-// Variables
-$shadow: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
-// Mixins
-@mixin flexc() { // Center flex
-  display: flex; 
-  justify-content: center; 
-  align-items: center;
-} 
-@mixin flexb() {
-  display: flex; justify-content: space-between;
-}
-@mixin btn() {
-  button {
-    font-family: "Nunito Regular";
-  }
-  .btn {background-color:#F4AB00; color: #fff;}
-  .btn_main-content {
-    width: 100px; height: 41px;
-    border-radius: 27px;
-      a {color:#fff;}
-    // btn active/hover
-      &:hover {
-        transition: 0s all; background-color: #111; 
-      }
-      &:active {
-        transition: 0s all; background-color: #fff;
-        color:#000; transition: 0s all;
-      }
-  }
-}
-@mixin w__bg() {
-  background-color: #fff; border: 1px solid #fff;
-}
-// Modal
-.modal-dialog-center {
-  display: flex; align-items: center;
-  min-height: calc(100% - 1rem);
-}
-.modal-body-contact {
-  @include flexc();
-  span {margin: 0 0 10px 15px;}
-  .fa-github {color: #000; margin-right: 10px;}
-  .fa-youtube {color: red; margin-right: 10px;}
-}
-.modal-body-about {
-  @include flexc();
-  span {margin-bottom: 10px;}
-  a {
-    color: #5231FF;
-    &:hover {
-      color: #0a58ca; .fa-figma {color: #0059ff;}
-    }
-  }
-}
-.modal-backdrop {z-index: 1;}
-// Class of fix menu background
-.__scroll {background: rgba(0,0,0,0.8);}
-// Change menu elements background color
-.fa-bars {margin: 0 5px 0 5px; font-size: 35px; color: #000;}
-.__bg-dark-menu {
-  @include flexc();
-    text-decoration: none;
-    background-color: #fff;
-    border: 1px solid #dee2e6;
-    transition: color 0.15s ease-in-out,
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
-      &:hover{background-color: #000;}
-      &:active {
-        background-color: #7C8499 ; 
-        .fa-bars {color: #000 !important;}
-      }
-}
-// Class of sroll top button
-#scroll_top {
-	display: none;
-	position: fixed;
-  justify-content: center;
-  align-items: center;
-  background-color: #F4AB00;
-  color: #fff;
-  font-size: 25px;
-	bottom: 260px;
-	right: 15px;
-	z-index: 1000;
-	width: 40px;
-	height: 40px;
-	opacity: 0.5;
-    a {background-color: #fff;}
-    &:hover {opacity: 1;}
-    &:active {
-      transition: all 0s;
-      color: #F4AB00; 
-      background-color: #000;
-    }
-}
-// Dropdown menu
-.dropdown-menu-dark {width: 100%;}
-// Блок-уведомление о копировании ссылки на страницу // Block notification about copying a link to a page
-// Выходит при нажатии на кнопку share внизу header // Exits when the share button is clicked at the bottom of the header
-.copy-notification {
-  color: #000;
-  background-color: #F4AB00;
-  padding: 20px;
-  border-radius: 30px;
-  position: fixed;
-  top: 90%;
-  left: 50%;
-  width: 200px;
-  font-size: 25px;
-  margin-top: -30px;
-  margin-left: -85px;
-  display: none;
-  text-align:center;
-  white-space: nowrap;
-}
+// Import specify code (var, mixins, modal...)
+@import 'jk_specify.scss';
 /* Global */
 h1 {
   margin: 0; 
@@ -169,8 +54,6 @@ input, textarea {
   font-family: "Nunito Regular"; 
   font-size: 1.125rem; line-height: 34px;
 }
-// Img
-.img__resp {@include flexc();}
 // Wrappers
 .wrapper {
   background-color: #fff;
@@ -211,7 +94,7 @@ header {
       font-size: 0.938rem;
     }
     .media {
-      width: 94.12px; height: 28px;
+      max-width: 94.12px; height: 28px;
       @include flexb();
     }
 }
@@ -251,7 +134,6 @@ header {
             display: flex; align-items: center; 
             flex-direction: column;
             margin: 30px 0 41px 0;
-            white-space: nowrap;
             line-height: 70px;
             font-size: 3.75rem;  
               span {color: #F4AB00;}
@@ -854,40 +736,96 @@ header {
 }
 // Footer
 .footer {
-  --bs-gutter-x: 0rem;
-  display: flex;
-  flex-direction: row;
-  padding: 0px 140px 0 140px; 
-  justify-content: space-between;
+  padding: 0px 140px 40px 140px; 
+  @include flexb();
     .contacts {
-      gap: 20px; padding-bottom: 90px;
+     padding-bottom: 90px; margin-bottom: 12px;
+      .nav_col {
+        padding-top: 5px;
+        span {font-size: 1.188rem; line-height: 28px; width: auto;}
+        a {width: auto; font-size: 1rem; line-height: 28px;}
+      }
       .seoflow {
-        width: 285px;
-        span {font-size: 1.2rem;}
+        
+        span {font-size: 1.3rem;}
         p {
           font-size: 0.938rem; 
-          margin-top: 20px; 
+          margin-top: 17px; 
           line-height: 28px;
         }
       }
       .ql {
-        padding: 5px 0 0 80px;
-        span {font-size: 1.188rem; line-height: 28px;}
-        .row {gap: 15px;}
+        ul {
+          gap: 12px;
+          li {padding-bottom: 10px; padding: 0 0 0 65px;}
+        }
       }
+      .services {
+        ul {
+          gap: 12px;
+          li {padding-left: 10px;}
+        }
+      }
+      .gin {
+        .fa-solid, .fa-regular {color: #F4AB00;}
+        ul {
+          li {padding-left: 15px;}
+          .fa-square-phone {
+            font-size: 30px;
+            padding: 5px 15px 15px 0; 
+          }
+          .fa-location-dot {
+            font-size: 22px;
+            padding: 5px 15px 15px 8px;
+          }
+          p {
+            margin: 0; height: 30px; font-size: 1rem;
+            &:nth-child(2) {
+              padding: 0 0 50px 40px;
+            }
+          }
+          .fa-envelope {
+            font-size: 25px; 
+            padding-right: 15px;
+          }
+          a:nth-child(2) {
+            font-size: 0.900rem;
+          }
+        }
+      }
+      .fu {
+        .row {
+          gap: 10px;
+          text-align: center;
+          padding: 3px 0 0 10px;
+          span {font-size: 1.25rem;}
+          .media {
+            display: flex;
+            justify-content: center; gap: 20px;
+            .fa-brands {
+              font-size: 25px;
+                &:hover {color: #F4AB00;}
+                &:active {color: #0059ff}
+            }
+          }
+        }
+      } 
     }
     .footer-bottom {
       justify-content: space-between;
-      li, span {font-size: 0.875rem;}
-      ul {
+      a, li, span {font-size: 0.875rem;}
+      strong {font-size: 1rem;}
+      .fb_nav {
         display: flex;
         width: auto;
-        gap: 20px;
-          
+        gap: 10px;
           a {text-decoration: underline;}
       }
-      .info_col {justify-content: flex-end;}
       span {width: auto;}
-      .info_col {padding: 0;display: flex;}
+      .info_col {
+        display: flex; 
+        justify-content: flex-end; 
+        padding: 0;
+      }
     }
 }
