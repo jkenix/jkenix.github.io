@@ -144,5 +144,9 @@ $(document).ready(function () {
 $(document).ready(function() {
         if (window.innerWidth < 559)  {
             $(".menu").prepend('<a class="menu __bg-dark-menu">MENU<i class="fa-solid fa-bars"></i></a>');
+            // Add class, if mouse over menu__active block
+            $('.menu .menu').mouseover(function() {
+                $(".nav-item").addClass("page-link __bg-dark-menu");
+            });
         }
 });
