@@ -10,20 +10,21 @@
   font-family: "Nunito ExtraBold";
   src: url(/webfonts/NunitoExtraBold.woff) format("woff");
 }
-.dropdown-menu-dark {
-  width: 100%;
+.dark__bg {
+  background-color: #fff;
 }
-
-.__bg-dark-menu:hover {
-  border: 1px solid #000 !important;
-  background-color: #000 !important;
+.dark__bg:hover {
+  border: 1px solid #000;
+  background-color: #000;
 }
-.__bg-dark-menu:active {
-  background-color: #7C8499 !important;
-  color: #5231FF !important;
+.dark__bg:hover a {
+  color: #fff;
 }
-.__bg-dark-menu:active .fa-bars {
-  color: #000 !important;
+.dark__bg:active {
+  background-color: #F4AB00;
+}
+.dark__bg:active a {
+  color: #000;
 }
 
 .copy-notification {
@@ -41,11 +42,6 @@
   display: none;
   text-align: center;
   white-space: nowrap;
-}
-
-.menu::before {
-  font-family: "Nunito Regular";
-  font-size: 30px;
 }
 
 #scroll_top {
@@ -193,36 +189,28 @@ header {
   height: 68px;
   padding: 20px 140px 0 140px;
 }
-header a:hover {
-  color: #fff;
-  user-select: none;
-}
-header a:active .fa-brands {
-  color: #0059ff;
-}
-header .phone-block {
-  margin-right: 25px;
-}
 header .contacts {
   display: flex;
 }
-header .contacts div {
+header .contacts .col {
   display: flex;
-  flex-wrap: nowrap;
   height: 28px;
 }
-header .contacts div a {
+header .contacts .col a {
   color: #fff;
   padding: 0 0 0 12px;
   line-height: 28px;
 }
-header .contacts div a:hover {
+header .contacts .col a:hover {
   color: #000;
 }
-header .contacts div a:active {
+header .contacts .col a:active {
   color: #0059ff;
 }
-header .mail a {
+header .contacts .phone-block {
+  margin-right: 25px;
+}
+header .contacts .mail a {
   font-size: 0.938rem;
 }
 header .media {
@@ -230,6 +218,13 @@ header .media {
   height: 28px;
   display: flex;
   justify-content: space-between;
+}
+header .media a:hover {
+  color: #fff;
+  user-select: none;
+}
+header .media a:active .fa-brands {
+  color: #0059ff;
 }
 
 .nav-wrapper {
@@ -248,10 +243,15 @@ header .media {
   justify-content: space-between;
   align-items: center;
 }
+.nav-wrapper .border-wrapper .header-logo {
+  max-width: 94px;
+}
+.nav-wrapper .border-wrapper .menu-block {
+  max-width: 582.13px;
+}
 .nav-wrapper .border-wrapper .menu {
-  padding-right: 10px;
-  text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem;
+  display: none;
 }
 .nav-wrapper .border-wrapper button {
   font-family: "Nunito Regular";
