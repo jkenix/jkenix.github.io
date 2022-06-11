@@ -6,9 +6,7 @@ $shadow: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
   justify-content: center; 
   align-items: center;
 } 
-@mixin flexb() {
-  display: flex; justify-content: space-between;
-}
+@mixin flexb() {display: flex; justify-content: space-between;}
 @mixin btn() {
   button {
     font-family: "Nunito Regular";
@@ -17,32 +15,31 @@ $shadow: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
   .btn_main-content {
     width: 100px; height: 41px;
     border-radius: 27px;
-      a {color:#fff;}
+    a {color:#fff;}
     // btn active/hover
-      &:hover {
-        transition: 0s all; background-color: #111; 
-      }
-      &:active {
-        transition: 0s all; background-color: #fff;
-        color:#000; transition: 0s all;
-      }
+    &:hover {
+      transition: 0s all; background-color: #111; 
+    }
+    &:active {
+      transition: 0s all; background-color: #fff;
+      color:#000; transition: 0s all;
+    }
   }
 }
 @mixin w__bg() {
   background-color: #fff; border: 1px solid #fff;
 }
-// Dropdown menu
-.dropdown-menu-dark {width: 100%;}
 // Set background menu
-.__bg-dark-menu {
+.dark__bg {
+  background-color: #fff;
   &:hover {
-    border: 1px solid #000 !important;
-    background-color: #000 !important;
+    border: 1px solid #000 ;
+    background-color: #000;
+    a {color: #fff;}
   }
   &:active {
-    background-color: #7C8499 !important; 
-    color: #5231FF !important;
-    .fa-bars {color: #000 !important;}
+    background-color: #F4AB00; 
+    a {color: #000;}
   }
 }
 // Блок-уведомление о копировании ссылки на страницу // Block notification about copying a link to a page
@@ -63,55 +60,50 @@ $shadow: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
   text-align:center;
   white-space: nowrap;
 }
-// Class of menu background
-.menu::before {
-  font-family: "Nunito Regular";
-  font-size: 30px;
-}
 // Class of sroll top button
 #scroll_top {
-    display: none;
+  display: none;
 	position: fixed;
-    justify-content: center;
-    align-items: center;
-    background-color: #F4AB00;
-    color: #fff;
-    font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  background-color: #F4AB00;
+  color: #fff;
+  font-size: 25px;
 	bottom: 260px;
 	right: 15px;
 	z-index: 1000;
 	width: 40px;
 	height: 40px;
 	opacity: 0.5;
-    a {background-color: #fff;}
-    &:hover {opacity: 1;}
-    &:active {
-      transition: all 0s;
-      color: #F4AB00; 
-      background-color: #000;
-    }
+  a {background-color: #fff;}
+  &:hover {opacity: 1;}
+  &:active {
+    transition: all 0s;
+    color: #F4AB00; 
+    background-color: #000;
+  }
 }
 // Img
 .img__resp {@include flexc();}
 // Modal
 .modal-dialog-center {
-    display: flex; align-items: center;
-    min-height: calc(100% - 1rem);
-  }
+  display: flex; align-items: center;
+  min-height: calc(100% - 1rem);
+}
 .modal-body-contact {
-    @include flexc();
-    span {margin: 0 0 10px 15px;}
-    .fa-github {color: #000; margin-right: 10px;}
-    .fa-youtube {color: red; margin-right: 10px;}
+  @include flexc();
+  span {margin: 0 0 10px 15px;}
+  .fa-github {color: #000; margin-right: 10px;}
+  .fa-youtube {color: red; margin-right: 10px;}
 }
 .modal-body-about {
-    @include flexc();
-    span {margin-bottom: 10px;}
-    a {
-      color: #5231FF;
-      &:hover {
-        color: #0a58ca; .fa-figma {color: #0059ff;}
-      }
+  @include flexc();
+  span {margin-bottom: 10px;}
+  a {
+    color: #5231FF;
+    &:hover {
+      color: #0a58ca; .fa-figma {color: #0059ff;}
     }
+  }
 }
 .modal-backdrop {z-index: 1;}
