@@ -799,7 +799,11 @@
     padding-left: 10px;
   }
   .header-wrapper .nav-wrapper .border-wrapper .menu-block .nav {
+    padding-top: 33px;
     display: none;
+  }
+  .header-wrapper .nav-wrapper .border-wrapper .menu-block:hover .menu {
+    color: #fff;
   }
   .header-wrapper .nav-wrapper .border-wrapper .menu-block:hover .nav {
     display: flex;

@@ -497,13 +497,15 @@
             color: #F4AB00;
             user-select: none;
             .fa-bars {padding-left: 10px;}
-            // &:hover {color: #fff;}
           }
           .nav {
-            // padding-top: 33px;
+            padding-top: 33px;
             display: none;
           }
           &:hover { 
+            .menu {
+              color: #fff;
+            }
             .nav {
               display: flex; 
               flex-direction: column; 
