@@ -3,47 +3,16 @@
 // Define Jquery (If you dont' use node.js comment this lines)
 // var jquery = require("jquery"); window.$ = window.jQuery = jquery;  
 // var bootstrap = require("bootstrap"); 
-// var jBox = require("jBox");
 // ==================================================================
-// Test warning
-// $(document).ready(function(Warning) {
-//     alert("It's page currently in work progress and only adaptive for PC or album mode on phone!");
-// });
-// Jbox
-new jBox('Modal', {
-    width: 300,
-    height: 200,
-    attach: '#myModal',
-    title: 'My Modal Window',
-    content: '<i>Hello there!</i>'
-});
-new jBox('Tooltip', {
-    attach: '.tooltip',
-});
-var dropdownElementList = Array.prototype.slice.call(document.querySelectorAll('.dropdown-toggle'))
-var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
-  return new bootstrap.Dropdown(dropdownToggleEl)
-})
-// Function to switch navigation class to fixed on scroll
-// and change the position of the modal window 
-$(window).scroll(function(){
-    if($(this).scrollTop()>300){
-        $(function(Showmenu){
-            $('.modal-dialog').addClass('modal-dialog-center');
-        });
-    }
-    else if ($(this).scrollTop()<300) {
-        $('.modal-dialog').removeClass('modal-dialog-center');
-    }
-    // Check page reboot
-    else if (window.innerWidth > 300) {
-        return Showmenu();
-    }
-});
-
-   // Function rename default value and add interacive
-$('input, textarea').click(function(){
-    $(this).val('');
+// Func add scroll to page
+$(document).ready(function () {
+    var executed = false;
+    return $(window).scroll(function(){
+        if (!executed) {
+            $("body").append('<a href="#home" id="scroll_top" title="Up"><i class="fa-solid fa-angle-up"></i></a>');
+        }
+        executed = true; // code done. Stop func
+    });
 });
 // Function scroll to top
 $(window).scroll(function(){
@@ -61,92 +30,27 @@ $(window).scroll(function(){
         return Showscroll();
     }
 });
-// If click on h1, page scroll to top
-$('#scroll_top').click(function(){
-	$('html, body').animate({scrollTop: 0}, 600);
-	return false;
-});
-// Copy link
+// Func add classes and remove some class
 $(document).ready(function () {
-    $(".main .enquiry-form .form_col a").click(function (event) { // Header share
-        event.preventDefault();
-        CopyToClipboard("https://jkenix.github.io/", true, "Link copied!");
+    // Add class, if mouse over menu__active block
+    $('.menu-block .menu').mouseover(function() {
+        $(".nav-header .nav-item").addClass("page-link dark__bg");
     });
-    $(".main .enquiry-form .form_col a").click(function (event) { // Footer share
-        event.preventDefault();
-        CopyToClipboard("https://jkenix.github.io/", true, "Link copied!");
-    });
-});
-function CopyToClipboard(value, showNotification, notificationText) {
-    var $temp = $("<input>");
-    $("body").append($temp);
-    $temp.val(value).select();
-    document.execCommand("copy");
-    $temp.remove();
-
-    if (typeof showNotification === 'undefined') {
-        showNotification = true;
-    }
-    if (typeof notificationText === 'undefined') {
-        notificationText = "Copied to clipboard";
-    }
-
-    var notificationTag = $("div.copy-notification");
-    if (showNotification && notificationTag.length == 0) {
-        notificationTag = $("<div/>", { "class": "copy-notification", text: notificationText });
-        $("body").append(notificationTag);
-
-        notificationTag.fadeIn("slow", function () {
-            setTimeout(function () {
-                notificationTag.fadeOut("slow", function () {
-                    notificationTag.remove();
-                });
-            }, 1000);
-        });
-    }
-}
-
-$(document).ready(function () {
-    var executed = false;
-   
-    return $(window).resize(function() {
-            if (document.documentElement.clientWidth < 559) {
-                if ($('.__bg-dark-menu').length) {
-                    return;
-                }
-                else {
-                    $(".__bg-dark-menu").show();
-                    if (!executed) {
-                        $(".menu").prepend('<a class="menu __bg-dark-menu">MENU<i class="fa-solid fa-bars"></i></a>');
-                        // Add class, if mouse over menu__active block
-                        $('.menu .menu').mouseover(function() {
-                            $(".nav-item").addClass("page-link __bg-dark-menu");
-                        });
-                    }
-                    executed = true; // code done. Stop func
-                }
-            }
-            else if (document.documentElement.clientWidth > 559) {
-                $(".__bg-dark-menu").hide();
-            }
-           
-            // Function of add button of menu on width < 201px (Work, ONLY if you load page with this width)
-            // and form .e-name block interactive
-            // $(document).ready(function() {
-            //     if (window.innerWidth < 559)  {
-            //         $(".__bg-dark-menu").show();
-            //     }
-            // });
-    });
-    
-        
-});
-$(document).ready(function() {
-        if (window.innerWidth < 559)  {
-            $(".menu").prepend('<a class="menu __bg-dark-menu">MENU<i class="fa-solid fa-bars"></i></a>');
-            // Add class, if mouse over menu__active block
-            $('.menu .menu').mouseover(function() {
-                $(".nav-item").addClass("page-link __bg-dark-menu");
-            });
+    // Func remove classes of nav-item and add center modal on small devices, if resize window
+    $(window).resize(function() { 
+        if (document.documentElement.clientWidth > 559) {
+            $(".nav-header .nav-item").removeClass("page-link dark__bg");
+            $('.modal-dialog').removeClass('modal-dialog-center');
         }
+        $(document).ready(function () { 
+            if (document.documentElement.clientWidth < 559) {
+                $('.modal-dialog').addClass('modal-dialog-center');
+            }
+        });
+    });
+    // If page load on width < 559
+    if (window.innerWidth < 559) {
+        $('.modal-dialog').addClass('modal-dialog-center');
+    }
 });
+   
