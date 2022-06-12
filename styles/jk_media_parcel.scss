@@ -2,7 +2,6 @@
 @import 'bootstrap/functions';
 @import 'bootstrap/variables.scss'; 
 @import 'bootstrap/mixins.scss';
-@import 'jk_specify.scss';
 // Media
 @media (min-width: 2099px) {
   #scroll_top {
@@ -36,14 +35,28 @@
     }
     .reasons-choosing-seo .text_col {padding-left: 120px;}
     .conversion-rate {
+      text-align: center;
+      align-items: center;
+      gap: 10px;
       margin-bottom: 60px;
       .title_col {
-        span, p {margin: 0 auto 25px auto;}
-        p {width: 60%;}
+        padding: 0;
+        h2 {
+          font-size: 3.438rem; margin-bottom: 35px;
+          width: 80%;
+        }
+        h2, p, span {margin: 0 auto 45px auto;}
+        p {width: 80%; font-size: 1.6rem;}
+        .btn_main-content {
+          margin: 0 auto;
+        }
       }
-     .content_col .border-wrapper {
-      padding: 35px 0 0 20px;
-    }
+     .content_col {
+        .row_content .row {justify-content: center;}
+        .border-wrapper {
+          padding: 35px 0 0 0px;
+        }
+      }
     } // Good for 1400px + breakpoints
     .seo-marketing {
       margin-bottom: 0px; // Good for 1400px + breakpoints
@@ -103,19 +116,7 @@
 }
 @media (min-width: 1441px) {
   .main {
-    .conversion-rate {
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      .title_col {
-        padding: 0 0 0 0;
-        span {width: 100%;}
-        .btn_main-content {
-          margin: 0 auto;
-        }
-      }
-      .title_col .border-wrapper p {max-width: 100%;}
-    }
+    
     .marketing-team {
       // margin: 0px;
     }
@@ -491,7 +492,7 @@
           height: auto;
           .menu {
             display: initial;
-            padding: 0px 30px 0 30px;
+            padding: 0px 50px 0 50px;
             border: 1px solid #000;
             background-color: #000;
             color: #F4AB00;
@@ -510,7 +511,7 @@
               display: flex; 
               flex-direction: column; 
               position: absolute;
-              li {width: 148px;}
+              li {width: 188px;}
             }
           } 
         }
