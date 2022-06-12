@@ -6,7 +6,8 @@
     "jquery": "^3.6.0",
     "js": "^0.1.0",
     "node-sass": "^7.0.1",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^5.0.1",
+    "sass-convert": "^0.5.2"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.5",
@@ -14,9 +15,9 @@
   },
   "scripts": {
     "dev": "run-p main media",
-    "parcel": "parcel index.html",
-    "main": "sass --watch styles/jk_parcel.scss:styles/jk_public.css",
-    "media": "sass --watch styles/jk_media_parcel.scss:styles/jk_media.css",
-    "node-scss": "node-sass -w  --sourcemap true styles/jk_parcel.scss -o styles/"
+    "alpha": "run media",
+    "main": "sass --watch styles/jk_parcel.scss:styles/css/jk_public.css",
+    "media": "sass --watch styles/jk_media_parcel.scss:styles/css/jk_media.css",
+    "parcel": "parcel index.html"
   }
 }
