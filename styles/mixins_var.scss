@@ -1,0 +1,31 @@
+// Variables
+$shadow: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
+// Mixins
+@mixin flexc() { // Center flex
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+} 
+@mixin flexb() {display: flex; justify-content: space-between;}
+@mixin btn() {
+  button {
+    font-family: "Nunito Regular";
+  }
+  .btn {background-color:#F4AB00; color: #fff;}
+  .btn_main-content {
+    width: 100px; height: 41px;
+    border-radius: 27px;
+    a {color:#fff;}
+    // btn active/hover
+    &:hover {
+      transition: 0s all; background-color: #111; 
+    }
+    &:active {
+      transition: 0s all; background-color: #fff;
+      color:#000; transition: 0s all;
+    }
+  }
+}
+@mixin w__bg() {
+  background-color: #fff; border: 1px solid #fff;
+}
