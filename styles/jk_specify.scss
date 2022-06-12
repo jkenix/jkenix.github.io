@@ -1,34 +1,4 @@
-// Variables
-$shadow: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
-// Mixins
-@mixin flexc() { // Center flex
-  display: flex; 
-  justify-content: center; 
-  align-items: center;
-} 
-@mixin flexb() {display: flex; justify-content: space-between;}
-@mixin btn() {
-  button {
-    font-family: "Nunito Regular";
-  }
-  .btn {background-color:#F4AB00; color: #fff;}
-  .btn_main-content {
-    width: 100px; height: 41px;
-    border-radius: 27px;
-    a {color:#fff;}
-    // btn active/hover
-    &:hover {
-      transition: 0s all; background-color: #111; 
-    }
-    &:active {
-      transition: 0s all; background-color: #fff;
-      color:#000; transition: 0s all;
-    }
-  }
-}
-@mixin w__bg() {
-  background-color: #fff; border: 1px solid #fff;
-}
+@import 'mixins_var.scss';
 // Set background menu
 .dark__bg {
   background-color: #fff;
@@ -41,24 +11,6 @@ $shadow: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
     background-color: #F4AB00; 
     a {color: #000;}
   }
-}
-// Блок-уведомление о копировании ссылки на страницу // Block notification about copying a link to a page
-// Выходит при нажатии на кнопку share внизу header // Exits when the share button is clicked at the bottom of the header
-.copy-notification {
-  color: #000;
-  background-color: #F4AB00;
-  padding: 20px;
-  border-radius: 30px;
-  position: fixed;
-  top: 90%;
-  left: 50%;
-  width: 200px;
-  font-size: 25px;
-  margin-top: -30px;
-  margin-left: -85px;
-  display: none;
-  text-align:center;
-  white-space: nowrap;
 }
 // Class of sroll top button
 #scroll_top {
@@ -86,15 +38,10 @@ $shadow: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
 // Img
 .img__resp {@include flexc();}
 // Modal
-.modal-dialog-center {
-  display: flex; align-items: center;
-  min-height: calc(100% - 1rem);
-}
 .modal-body-contact {
   @include flexc();
   span {margin: 0 0 10px 15px;}
   .fa-github {color: #000; margin-right: 10px;}
-  .fa-youtube {color: red; margin-right: 10px;}
 }
 .modal-body-about {
   @include flexc();
@@ -106,4 +53,3 @@ $shadow: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
     }
   }
 }
-.modal-backdrop {z-index: 1;}
