@@ -1,6 +1,4 @@
-// Styles file for layout by jkenix. 
-// Original layout: 
-// ====== Custom fonts ====== \\
+// Styles file for seoflow layout by jkenix. 
 @font-face {
   font-display: swap;
   text-rendering: optimizeLegibility; 
@@ -17,9 +15,11 @@
 @import 'bootstrap/functions';
 @import 'bootstrap/variables.scss'; 
 @import 'bootstrap/mixins.scss';
-// Import specify code (var, mixins, modal...)
+// Import mixins, variables
+@import 'mixins_var.scss';
+// Import specify classes styles
 @import 'jk_specify.scss';
-/* Global */
+/* Global selectors styles */
 h1 {
   margin: 0; 
   text-align: start;
@@ -312,7 +312,6 @@ header {
       }
       svg {width: 50px;}
       .row_content {
-        flex-wrap: wrap;
         gap: 30px;
       }
       .imc_1, .imc_2 {

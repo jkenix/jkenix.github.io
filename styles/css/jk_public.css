@@ -551,7 +551,6 @@ header .media a:active .fa-brands {
   width: 50px;
 }
 .main .conversion-rate .content_col .row_content {
-  flex-wrap: wrap;
   gap: 30px;
 }
 .main .conversion-rate .content_col .imc_1 .border-wrapper, .main .conversion-rate .content_col .imc_2 .border-wrapper {
