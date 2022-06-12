@@ -45,17 +45,17 @@ $(document).ready(function () {
     $(window).resize(function() { 
         if (document.documentElement.clientWidth > 559) {
             $(".nav-header .nav-item").removeClass("page-link dark__bg");
-            $('.modal-dialog').removeClass('modal-dialog-center');
+            $('.modal-dialog').removeClass('modal-dialog-centered');
         }
         $(document).ready(function () { 
             if (document.documentElement.clientWidth < 559) {
-                $('.modal-dialog').addClass('modal-dialog-center');
+                $('.modal-dialog').addClass('modal-dialog-centered');
             }
         });
     });
     // If page load on width < 559
     if (window.innerWidth < 559) {
-        $('.modal-dialog').addClass('modal-dialog-center');
+        $('.modal-dialog').addClass('modal-dialog-centered');
     }
 });
    
