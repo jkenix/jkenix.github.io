@@ -736,16 +736,15 @@ header {
 // Footer
 .footer {
   padding: 0px 140px 40px 140px; 
-  @include flexb();
+  @include flexb(); gap: 12px;
     .contacts {
-     padding-bottom: 90px; margin-bottom: 12px;
+     padding-bottom: 90px;
       .nav_col {
         padding-top: 5px;
         span {font-size: 1.188rem; line-height: 28px; width: auto;}
         a {width: auto; font-size: 1rem; line-height: 28px;}
       }
       .seoflow {
-        
         span {font-size: 1.3rem;}
         p {
           font-size: 0.938rem; 
@@ -765,7 +764,7 @@ header {
           li {padding-left: 10px;}
         }
       }
-      .gin {
+      .git {
         .fa-solid, .fa-regular {color: #F4AB00;}
         ul {
           li {padding-left: 15px;}

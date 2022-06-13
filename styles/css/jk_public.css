@@ -1233,10 +1233,10 @@ header .media a:active .fa-brands {
   padding: 0px 140px 40px 140px;
   display: flex;
   justify-content: space-between;
+  gap: 12px;
 }
 .footer .contacts {
   padding-bottom: 90px;
-  margin-bottom: 12px;
 }
 .footer .contacts .nav_col {
   padding-top: 5px;
@@ -1272,33 +1272,33 @@ header .media a:active .fa-brands {
 .footer .contacts .services ul li {
   padding-left: 10px;
 }
-.footer .contacts .gin .fa-solid, .footer .contacts .gin .fa-regular {
+.footer .contacts .git .fa-solid, .footer .contacts .git .fa-regular {
   color: #F4AB00;
 }
-.footer .contacts .gin ul li {
+.footer .contacts .git ul li {
   padding-left: 15px;
 }
-.footer .contacts .gin ul .fa-square-phone {
+.footer .contacts .git ul .fa-square-phone {
   font-size: 30px;
   padding: 5px 15px 15px 0;
 }
-.footer .contacts .gin ul .fa-location-dot {
+.footer .contacts .git ul .fa-location-dot {
   font-size: 22px;
   padding: 5px 15px 15px 8px;
 }
-.footer .contacts .gin ul p {
+.footer .contacts .git ul p {
   margin: 0;
   height: 30px;
   font-size: 1rem;
 }
-.footer .contacts .gin ul p:nth-child(2) {
+.footer .contacts .git ul p:nth-child(2) {
   padding: 0 0 50px 40px;
 }
-.footer .contacts .gin ul .fa-envelope {
+.footer .contacts .git ul .fa-envelope {
   font-size: 25px;
   padding-right: 15px;
 }
-.footer .contacts .gin ul a:nth-child(2) {
+.footer .contacts .git ul a:nth-child(2) {
   font-size: 0.9rem;
 }
 .footer .contacts .fu .row {
