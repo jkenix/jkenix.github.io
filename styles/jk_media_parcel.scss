@@ -140,51 +140,39 @@
 @include media-breakpoint-down(xxl)  { // 1400px
   .nav-wrapper .border-wrapper .menu {padding-right: 0px;}
   .main {
+    .about-seo-wrapper .as-content, // Common classes
+    .as-content-wrapper .as-content { 
+      padding: 0 40px 0 40px;
+      .col_content-2 .row {
+        margin-left: 30px;
+        .text_col p {max-width: 100%; font-size: 1rem;}
+      }
+    }
     .about-seo-wrapper {
-      padding: 75px 40px 76px 40px;
-      .as-title {
-        padding: 0 145px 0 145px; 
-        text-align: center; 
-          .col_content-1 {padding: 40px 0 280px 0;}
-          .col_content-2 {
-            padding: 40px 0 0 0;
-            .row {
-              justify-content: center;
-              padding: 0 0 40px 0;
-              margin: 0;
-                p {margin: 0 auto; width: 60%;}
-            }
-          } 
+      padding: 0 123px 76px 140px;
+      margin: 0; height: 70px;
+      .as-content {
+        .col, .col-xl {padding-top: 60px;}
       }
     }
     .as-content-wrapper {
-      margin-bottom: 0px;
-      padding: 0 40px 0 40px;
+      padding-top: 30px;
+      margin-bottom: 0;
       .as-content {
-        h2, p {text-align: center;}
-        h2 {width: 50%; margin: 0 auto 25px auto;}
-        p {margin: 0 auto; width: 60%;}
-        .col_content-2 {
-          padding-top: 260px;
-            .row {
-              text-align: center;
-              justify-content: center;
-              padding: 0 0 40px 0;
-              margin: 0;
-            }
-            .col-xxl {
-              p {margin: 0 auto; width: 60%;}
-            }
+        .col_content-1 {padding: 0;}
+        .col_content-2 .row {
+          padding-top: 0;
         }
       }
     }
     .appear-fp {
       justify-content: center;
       gap: 55px;
-      padding: 0;
-      margin: 0 40px 0 40px;
+      margin: 0 40px 0 100px;
+      padding-left: 0; padding-right: 0;
+      .img__resp {max-width: 500px;}
       .text_col {
-        padding: 0 60px 0 60px;
+        padding: 0;
         text-align: center;
         p {width: 60%; margin: 0 auto 30px auto;}
         .row {width: 100%;}
@@ -370,16 +358,16 @@
   }
   .main {
     .title {
-      padding: 0; 
-      flex-direction: column;
-      justify-content: center;
+      padding: 0 10px 0 0; 
+      // flex-direction: column;
+      // justify-content: center;
         &-text_col {
           display: flex; width: 100%;
           h2 {align-items: center;}
           p {
-            text-align: center; 
+            // text-align: center; 
             margin: 0 auto 25px auto; 
-            width: 50%;
+            width: 80%;
           }
           button {
             margin: 0 auto 30px auto; 
@@ -388,7 +376,48 @@
         }
         .col {max-width: 100%;}
     }
-    // .about-seo-wrapper {margin-bottom: 920px;}
+    .about-seo-wrapper, // Common classes
+    .as-content-wrapper  { 
+      padding: 0 60px 0 60px;
+      .as-content {
+        padding-left: 60px; padding-right: 60px;
+        .col_content-2 .row {
+          text-align: center; 
+          justify-content: center;  
+          gap: 10px; margin: 0;
+          .img__resp {max-height: initial;}
+          .text_col {
+            max-width: 450px;
+            span {font-size: 1.5rem;}
+            p {
+              width: 80%; 
+              margin: 0 auto; 
+              font-size: 1.25rem;
+              padding-top: 20px;
+            }
+          }
+        }
+      }
+    }
+    .about-seo-wrapper {
+      .as-content {
+        .col, .col-xl {padding-top: 0px;}
+        .col_content-1 {
+          text-align: center;
+          padding: 40px 0 230px 0;
+          span {font-size: 1.5rem;}
+        }
+      }
+    }
+    .as-content-wrapper {
+      padding-top: 0px;
+      h2 {text-align: center;}
+      p {width: 90%; margin: 0 auto; font-size: 1.25rem;}
+      .as-content {
+        padding-bottom: 40px;
+        .col_content-2 {padding-top: 210px;}
+      }
+    }
     .reasons-choosing-seo {margin: 0 40px 10px 40px;}
     .conversion-rate {
       padding: 50px 60px 50px 60px;
@@ -447,15 +476,23 @@
   }
   .main {
     .title {
-      .title-text_col, .img__resp {
-        max-width: 95%; margin: 0 auto;
-        p {
-          margin: 0 auto 25px auto;
-          min-width: 75%;
-        }
+      padding: 0;
+      h2 {display: initial; text-align: center; width: 80%;}
+      p {
+        margin: 0 auto 25px auto;
+        width: 65%;
       }
+      .img__resp {display: none;}
     }
-    // .about-seo-wrapper {margin-bottom: 920px;}
+    .about-seo-wrapper, // Common classes
+    .as-content-wrapper  { 
+      padding: 0 20px 0 20px;
+      .as-content {padding-left: 20px; padding-right: 20px;}
+    }
+    .as-content-wrapper {
+      p {width: 85%;}
+      .as-content .col_content-2 {padding-top: 210px;}
+    }
     .conversion-rate {padding: 0 40px 30px 40px;}
     .reasons-choosing-seo {
       .text_col{
@@ -525,6 +562,39 @@
   body, .wrapper {background-color: $teal-600;}
   .nav-wrapper .border-wrapper .header-logo {max-width: 80px;}
   .main {
+    .title {
+      h2 {width: 80%; font-size: 3rem;}
+      p {
+        margin: 0 auto 25px auto;
+        width: 75%;
+      }
+    }
+    .about-seo-wrapper, // Common classes
+    .as-content-wrapper  { 
+      .as-content {
+        .col_content-2 .row .text_col {
+          max-width: 350px;
+          p {width: 85%;}
+        }
+      }
+    }
+    .about-seo-wrapper .as-content {
+        .col_content-1 {padding: 40px 0 290px 0;}
+    }
+    .as-content-wrapper {
+      .as-content {
+        .col_content-1 {
+          h2 {
+            width: 75%; 
+            margin: 0 auto;
+            line-height: initial;
+            padding: 20px 0 15px 0;
+          }
+          p {width: 90%;}
+        }
+        .col_content-2 {padding-top: 230px;}
+      }
+    }
     .marketing-team {
       .col_1 {margin-right: 0;}
       .col .col, .col-xxl .col {justify-content: center;}
@@ -609,8 +679,31 @@
   }
  .main {
     .title-text_col {
-      h2 {font-size: 2.55rem;}
-      p {width: 100%; font-size: 1rem;}
+      h2 {font-size: 2.55rem; width: 100%;}
+      p {width: 85%; font-size: 1rem;}
+    }
+    .about-seo-wrapper, // Common classes
+    .as-content-wrapper { 
+      .col_content-2 {.img__resp {display: none;}}
+    }
+    .about-seo-wrapper {
+      .as-content {
+        .col, .col-xl {padding-top: 0px;}
+        .col_content-1 {
+          padding: 40px 70px 330px 70px;
+        }
+      }
+    }
+    .as-content-wrapper {
+      .as-content {
+        .col_content-1 {
+          h2 {padding-top: 45px;}
+          p {width: 90%;}
+        }
+        .col_content-2 {
+          padding-top: 220px;
+        }
+      }
     }
     .enquiry-form {
       padding-left: 15px; padding-right: 15px; 
@@ -627,6 +720,49 @@
  }
 }
 @media (max-width: 466px) {
+  .main  {
+    .title-text_col {
+      h2 {
+        font-size: 2rem; 
+        width: 80%; 
+        margin-bottom: 25px; 
+        line-height: initial;
+      }
+    }
+    .about-seo-wrapper, // Common classes
+    .as-content-wrapper  { 
+      .as-content {
+        .col_content-2 .row .text_col {
+          p {
+            font-size: 1rem; 
+            line-height: initial; 
+            text-align: start; 
+            width: 100%;
+          }
+        }
+      }
+    }
+    .about-seo-wrapper  .as-content{
+      .col_content-1 {
+        padding: 40px 0px 310px 0px;
+      }
+    }
+    .as-content-wrapper {
+      .as-content {
+        .col_content-1 {
+          h2 {padding-top: 45px; width: 100%;}
+          p {
+            line-height: initial; 
+            max-width: 100%; 
+            width: 100%; 
+          }
+        }
+        .col_content-2 {
+          padding-top: 160px;
+        }
+      }
+    }
+  }
   .nav-wrapper .border-wrapper {
     justify-content: center; gap: 10px;
     padding-top: 5px;
@@ -639,6 +775,20 @@
   }
   .main .enquiry-form p {
     width: 100%; font-size: 0.938rem;
+  }
+}
+@media (max-width: 364px) {
+  .main {
+    .about-seo-wrapper  .as-content{
+      .col_content-1 {
+        padding: 40px 0px 370px 0px;
+      }
+    }
+    .as-content-wrapper {
+      .as-content .col_content-2 {
+          padding-top: 220px;
+      }
+    }
   }
 }
 @media (max-width: 320px) {
