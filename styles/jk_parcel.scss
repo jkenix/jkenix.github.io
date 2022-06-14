@@ -155,11 +155,11 @@ header {
     padding: 0 123px 0 140px;
     margin-bottom: 20px;
     background-color: #5B25B3;
-    .as-title {
+    .as-content {
       padding: 0 80px 0 80px;
       border-radius: 10px 10px 0 0;
       @include w__bg();
-        .col, .col-xxl { // common col
+        .col, .col-xl { // common col
           padding-top: 100px;
           span {color: #F4AB00; font-size: 1.188rem;}
         }

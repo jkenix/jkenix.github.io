@@ -325,40 +325,40 @@ header .media a:active .fa-brands {
   margin-bottom: 20px;
   background-color: #5B25B3;
 }
-.main .about-seo-wrapper .as-title {
+.main .about-seo-wrapper .as-content {
   padding: 0 80px 0 80px;
   border-radius: 10px 10px 0 0;
   background-color: #fff;
   border: 1px solid #fff;
 }
-.main .about-seo-wrapper .as-title .col, .main .about-seo-wrapper .as-title .col-xxl {
+.main .about-seo-wrapper .as-content .col, .main .about-seo-wrapper .as-content .col-xl {
   padding-top: 100px;
 }
-.main .about-seo-wrapper .as-title .col span, .main .about-seo-wrapper .as-title .col-xxl span {
+.main .about-seo-wrapper .as-content .col span, .main .about-seo-wrapper .as-content .col-xl span {
   color: #F4AB00;
   font-size: 1.188rem;
 }
-.main .about-seo-wrapper .as-title .col_content-1 h2 {
+.main .about-seo-wrapper .as-content .col_content-1 h2 {
   padding-top: 20px;
   margin-bottom: 25px;
 }
-.main .about-seo-wrapper .as-title .col_content-1 p {
+.main .about-seo-wrapper .as-content .col_content-1 p {
   line-height: 34px;
   max-width: 97%;
 }
-.main .about-seo-wrapper .as-title .col_content-2 .row {
+.main .about-seo-wrapper .as-content .col_content-2 .row {
   margin-left: 60px;
   gap: 25px;
 }
-.main .about-seo-wrapper .as-title .col_content-2 .row .img__resp {
+.main .about-seo-wrapper .as-content .col_content-2 .row .img__resp {
   padding: 0;
   max-width: 86px;
   max-height: 86px;
 }
-.main .about-seo-wrapper .as-title .col_content-2 .row .text_col {
+.main .about-seo-wrapper .as-content .col_content-2 .row .text_col {
   padding: 0;
 }
-.main .about-seo-wrapper .as-title .col_content-2 .row .text_col p {
+.main .about-seo-wrapper .as-content .col_content-2 .row .text_col p {
   font-size: 0.938rem;
   line-height: 28px;
   max-width: 80%;
