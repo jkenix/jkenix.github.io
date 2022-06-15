@@ -266,11 +266,9 @@ header .media a:active .fa-brands {
   color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .main .title-text_col h2 {
   display: flex;
-  align-items: center;
   flex-direction: column;
   margin: 30px 0 41px 0;
   line-height: 70px;
@@ -281,7 +279,6 @@ header .media a:active .fa-brands {
 }
 .main .title-text_col p {
   width: 84%;
-  text-align: center;
   font-size: 1.125rem;
   line-height: 34px;
   margin-bottom: 25px;
@@ -575,21 +572,12 @@ header .media a:active .fa-brands {
 .main .our-services .row {
   justify-content: space-between;
 }
-.main .our-services .row a {
-  width: 167px;
-  height: 110px;
-}
-.main .our-services .row a:hover {
-  background-color: #F4AB00;
-  color: #fff;
+.main .our-services .row .col-xl {
+  text-align: center;
+  max-height: 110px;
 }
 .main .our-services .row .border-wrapper {
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 24px 20px 29px 22px;
-  width: auto;
 }
 .main .our-services .row .border-wrapper span {
   font-size: 1rem;
@@ -597,6 +585,15 @@ header .media a:active .fa-brands {
 }
 .main .our-services .row .border-wrapper svg {
   margin-bottom: 10px;
+}
+.main .our-services .row .border-wrapper:hover {
+  background-color: #F4AB00;
+}
+.main .our-services .row .border-wrapper:hover a {
+  color: #fff;
+}
+.main .our-services .row .border-wrapper:active a {
+  color: #000;
 }
 .main .seo-marketing {
   padding: 0 120px 0 140px;

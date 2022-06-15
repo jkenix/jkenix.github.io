@@ -127,28 +127,26 @@ header {
     padding: 75px 7px 76px 140px;
     background-color: #5B25B3;
     &-text_col {
-      color: #fff; 
-      display: flex; flex-direction: column;
-      align-items: center;
-        h2 {
-          display: flex; align-items: center; 
-          flex-direction: column;
-          margin: 30px 0 41px 0;
-          line-height: 70px;
-            font-size: 3.75rem;  
-              span {color: #F4AB00;}
-          }
-          p {
-            width: 84%;
-            text-align: center;
-            font-size: 1.125rem;
-            line-height: 34px;
-            margin-bottom: 25px;
-          }
-          @include btn();
-          .btn_main-content {width: 186px; height: 52px;}
+      color: #fff; display: flex; flex-direction: column;
+      h2 {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0 41px 0;
+        line-height: 70px;
+        font-size: 3.75rem;  
+          span {color: #F4AB00;}
       }
-      .img__resp {max-width: 738px;}
+      p {
+        width: 84%;
+        font-size: 1.125rem;
+        line-height: 34px;
+        margin-bottom: 25px;
+      }
+      @include btn();
+      .btn_main-content {width: 186px; height: 52px;}
+    }
+    .img__resp {max-width: 738px;}
+    // .img-fluid {max-width: initial;}
   }
   .about-seo-wrapper { 
     width: 100%; height: 124px;
@@ -336,20 +334,21 @@ header {
     h2 {text-align: center; margin-bottom: 30.5px;}
     .row {
       justify-content: space-between;
-      a {
-        width: 167px; height: 110px;
-        &:hover {
-          background-color: #F4AB00; 
-          color: #fff;
-        }
+      .col-xl {
+        text-align: center;
+        max-height: 110px;
       }
       .border-wrapper {
-        flex-direction: column;
-        display: flex; justify-content: center; align-items: center;
         padding: 24px 20px 29px 22px;
-        width: auto;
           span {font-size: 1rem; line-height: 16px;}
           svg {margin-bottom: 10px;}
+          &:hover {
+            background-color: #F4AB00; 
+            a {color: #fff;}
+          }
+          &:active {
+            a {color: #000;}
+          }
       }
     }
   }

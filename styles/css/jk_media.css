@@ -32,7 +32,7 @@
 }
 @media (min-width: 1501px) {
   .main .title {
-    padding-left: 200px;
+    padding-left: 150px;
     padding-right: 130px;
   }
   .main .title .title-text_col {
@@ -79,6 +79,9 @@
   }
   .main .conversion-rate .content_col .border-wrapper {
     padding: 35px 0 0 0px;
+  }
+  .main .our-services .row .col-xl {
+    max-width: 200px;
   }
   .main .seo-marketing {
     margin-bottom: 0px;
@@ -156,14 +159,7 @@
 }
 @media (max-width: 1500px) {
   .main .title-text_col {
-    display: block;
-    width: 480px;
-  }
-  .main .title-text_col h2 {
-    align-items: flex-start;
-  }
-  .main .title-text_col p {
-    text-align: start;
+    max-width: 480px;
   }
   .main .hsw .row .line {
     left: 385px;
@@ -211,44 +207,37 @@
   .main .as-content-wrapper .as-content .col_content-1 {
     padding: 0;
   }
-  .main .as-content-wrapper .as-content .col_content-2 .row {
-    padding-top: 0;
+  .main .appear-fp .img__resp, .main .reasons-choosing-seo .img__resp {
+    max-width: 400px;
+  }
+  .main .appear-fp .text_col, .main .reasons-choosing-seo .text_col {
+    padding: 0;
+  }
+  .main .appear-fp .text_col p, .main .reasons-choosing-seo .text_col p {
+    width: 100%;
+    padding-right: 40px;
+  }
+  .main .appear-fp .text_col .ul-col li, .main .reasons-choosing-seo .text_col .ul-col li {
+    padding-left: 0;
   }
   .main .appear-fp {
-    justify-content: center;
     gap: 55px;
-    margin: 0 40px 0 100px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .main .appear-fp .img__resp {
-    max-width: 500px;
-  }
-  .main .appear-fp .text_col {
-    padding: 0;
-    text-align: center;
+    margin: 0 123px 0 140px;
+    padding: 75.41px 0 40px 0;
   }
   .main .appear-fp .text_col p {
-    width: 60%;
-    margin: 0 auto 30px auto;
-  }
-  .main .appear-fp .text_col .row {
     width: 100%;
+    padding-right: 40px;
+  }
+  .main .appear-fp .text_col .ul-col li {
+    padding-left: 0;
   }
   .main .appear-fp .check_col {
-    height: 154px;
+    height: auto;
   }
   .main .reasons-choosing-seo {
-    margin: 0 40px 40px 40px;
-  }
-  .main .reasons-choosing-seo .text_col {
-    width: 65%;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .main .reasons-choosing-seo .text_col p {
-    width: 65%;
-    margin: 0 auto 30px auto;
+    gap: 55px;
+    margin: 0 123px 60px 140px;
   }
   .main .reasons-choosing-seo .text_col .stat_col {
     padding: 20px 0 0 0;
@@ -258,10 +247,6 @@
   }
   .main .reasons-choosing-seo .text_col .stat_col .img_2 {
     margin: 0;
-  }
-  .main .reasons-choosing-seo .text_col .row {
-    width: 60%;
-    margin: 0 auto;
   }
   .main .conversion-rate {
     padding: 0px 125px 80px 140px;
@@ -300,12 +285,11 @@
     margin: 0 auto;
   }
   .main .our-services {
-    padding: 0 40px 0 40px;
+    padding: 0 110px 0 110px;
     margin-bottom: 30px;
-    justify-content: center;
   }
-  .main .our-services .row a {
-    width: auto;
+  .main .our-services .border-wrapper {
+    max-height: 110px;
   }
   .main .seo-marketing {
     text-align: center;
@@ -524,18 +508,18 @@
   }
 
   .main .title {
-    padding: 0 10px 0 0;
+    padding: 0;
   }
   .main .title-text_col {
     display: flex;
-    width: 100%;
+    flex-direction: column;
   }
   .main .title-text_col h2 {
     align-items: center;
   }
   .main .title-text_col p {
     margin: 0 auto 25px auto;
-    width: 80%;
+    width: 60%;
   }
   .main .title-text_col button {
     margin: 0 auto 30px auto;
@@ -543,6 +527,9 @@
   }
   .main .title .col {
     max-width: 100%;
+  }
+  .main .title .img__resp {
+    display: none;
   }
   .main .about-seo-wrapper,
 .main .as-content-wrapper {
@@ -606,8 +593,30 @@
   .main .as-content-wrapper .as-content .col_content-2 {
     padding-top: 210px;
   }
+  .main .appear-fp {
+    gap: 55px;
+    margin: 0 60px 0 60px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .main .appear-fp .img__resp {
+    max-width: 400px;
+  }
+  .main .appear-fp .text_col {
+    padding: 0;
+  }
+  .main .appear-fp .text_col p {
+    width: 100%;
+    padding-right: 40px;
+  }
+  .main .appear-fp .text_col .row {
+    width: 100%;
+  }
+  .main .appear-fp .check_col {
+    height: 154px;
+  }
   .main .reasons-choosing-seo {
-    margin: 0 40px 10px 40px;
+    margin: 0 60px 40px 60px;
   }
   .main .conversion-rate {
     padding: 50px 60px 50px 60px;
@@ -616,10 +625,17 @@
     padding: 0px 0 40px 0;
   }
   .main .our-services {
-    padding: 0 40px 0 40px;
+    padding: 0 60px 0 60px;
   }
   .main .our-services .row {
     justify-content: center;
+  }
+  .main .our-services .row .col-xl {
+    max-width: 270px;
+  }
+  .main .our-services .row .border-wrapper {
+    width: 167px;
+    margin: 0 auto;
   }
   .main .hsw .row_content {
     gap: 20px;
@@ -697,20 +713,15 @@
     width: 80px;
   }
 
-  .main .title {
-    padding: 0;
-  }
   .main .title h2 {
     display: initial;
     text-align: center;
     width: 80%;
+    margin: 30px auto 41px auto;
   }
   .main .title p {
     margin: 0 auto 25px auto;
     width: 65%;
-  }
-  .main .title .img__resp {
-    display: none;
   }
   .main .about-seo-wrapper,
 .main .as-content-wrapper {
@@ -857,6 +868,12 @@
   .main .as-content-wrapper .as-content .col_content-2 {
     padding-top: 230px;
   }
+  .main .our-services {
+    padding: 0 20px 0 20px;
+  }
+  .main .our-services .row .col-xl {
+    max-width: 170px;
+  }
   .main .marketing-team .col_1 {
     margin-right: 0;
   }
@@ -988,6 +1005,19 @@
   }
   .main .as-content-wrapper .as-content .col_content-2 {
     padding-top: 220px;
+  }
+  .main .our-services {
+    padding: 0 10px 0 10px;
+  }
+  .main .our-services .row {
+    gap: 2px;
+  }
+  .main .our-services .row .col-xl {
+    max-width: 140px;
+  }
+  .main .our-services .row .border-wrapper {
+    padding: 24px 0px 29px 0;
+    width: 140px;
   }
   .main .enquiry-form {
     padding-left: 15px;
