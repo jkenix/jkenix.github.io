@@ -31,13 +31,6 @@
   }
 }
 @media (min-width: 1501px) {
-  .main .title {
-    padding-left: 150px;
-    padding-right: 130px;
-  }
-  .main .title .title-text_col {
-    max-width: 650px;
-  }
   .main .as-content-wrapper {
     margin-bottom: 50px;
   }
@@ -47,25 +40,18 @@
   .main .reasons-choosing-seo {
     margin-bottom: 60px;
   }
-  .main .reasons-choosing-seo .text_col {
-    padding-left: 120px;
-  }
   .main .conversion-rate {
-    text-align: center;
-    align-items: center;
+    justify-content: center;
     gap: 10px;
     margin-bottom: 60px;
   }
   .main .conversion-rate .title_col {
-    padding: 0;
+    max-width: 500px;
   }
   .main .conversion-rate .title_col h2 {
     font-size: 3.438rem;
     margin-bottom: 35px;
-    width: 80%;
-  }
-  .main .conversion-rate .title_col h2, .main .conversion-rate .title_col p, .main .conversion-rate .title_col span {
-    margin: 0 auto 45px auto;
+    width: 90%;
   }
   .main .conversion-rate .title_col p {
     width: 80%;
@@ -73,6 +59,7 @@
   }
   .main .conversion-rate .title_col .btn_main-content {
     margin: 0 auto;
+    max-width: 80%;
   }
   .main .conversion-rate .content_col .row_content .row {
     justify-content: center;
@@ -80,8 +67,15 @@
   .main .conversion-rate .content_col .border-wrapper {
     padding: 35px 0 0 0px;
   }
-  .main .our-services .row .col-xl {
-    max-width: 200px;
+  .main .conversion-rate .content_col .border-wrapper p, .main .conversion-rate .content_col .border-wrapper span {
+    margin: 15px auto 0 auto;
+    width: 85%;
+  }
+  .main .conversion-rate .content_col .border-wrapper span {
+    text-align: center;
+  }
+  .main .our-services .col-xl {
+    max-width: 167px;
   }
   .main .seo-marketing {
     margin-bottom: 0px;
@@ -158,8 +152,11 @@
   }
 }
 @media (max-width: 1500px) {
-  .main .title-text_col {
-    max-width: 480px;
+  .main .title {
+    padding: 75px 10px 76px 140px;
+  }
+  .main .title .row_content {
+    max-width: 100%;
   }
   .main .hsw .row .line {
     left: 385px;
@@ -172,6 +169,9 @@
   }
   .main .client-review .carousel-control-prev {
     margin-left: 300px;
+  }
+  .main .our-services .col-xl {
+    max-width: 167px;
   }
 }
 @media (max-width: 1399.98px) {
@@ -239,22 +239,13 @@
     gap: 55px;
     margin: 0 123px 60px 140px;
   }
-  .main .reasons-choosing-seo .text_col .stat_col {
-    padding: 20px 0 0 0;
-  }
-  .main .reasons-choosing-seo .text_col .stat_col .col_img {
-    margin: 0;
-  }
   .main .reasons-choosing-seo .text_col .stat_col .img_2 {
-    margin: 0;
+    margin: 0 20px 0 35px;
   }
   .main .conversion-rate {
-    padding: 0px 125px 80px 140px;
+    padding: 96px 125px 80px 140px;
     margin-bottom: 60px;
     text-align: center;
-  }
-  .main .conversion-rate .title_col {
-    padding: 80px 40px 40px 80px;
   }
   .main .conversion-rate .title_col span {
     max-width: 100%;
@@ -285,8 +276,7 @@
     margin: 0 auto;
   }
   .main .our-services {
-    padding: 0 110px 0 110px;
-    margin-bottom: 30px;
+    margin: 0 110px 30px 110px;
   }
   .main .our-services .border-wrapper {
     max-height: 110px;
@@ -625,7 +615,7 @@
     padding: 0px 0 40px 0;
   }
   .main .our-services {
-    padding: 0 60px 0 60px;
+    margin: 0 60px 30px 60px;
   }
   .main .our-services .row {
     justify-content: center;
@@ -740,6 +730,12 @@
   }
   .main .conversion-rate {
     padding: 0 40px 30px 40px;
+  }
+  .main .our-services {
+    margin: 0 20px 30px 20px;
+  }
+  .main .our-services .row .col-xl {
+    max-width: 235px;
   }
   .main .reasons-choosing-seo .text_col {
     width: 100%;
@@ -869,10 +865,10 @@
     padding-top: 230px;
   }
   .main .our-services {
-    padding: 0 20px 0 20px;
+    margin: 0 5px 30px 5px;
   }
   .main .our-services .row .col-xl {
-    max-width: 170px;
+    max-width: 160px;
   }
   .main .marketing-team .col_1 {
     margin-right: 0;
@@ -926,8 +922,10 @@
   }
 
   .header-wrapper .header {
-    justify-content: center;
     padding-bottom: 110px;
+  }
+  .header-wrapper .header .row_content {
+    justify-content: center;
     gap: 10px;
   }
   .header-wrapper .header .contacts {
@@ -1007,7 +1005,7 @@
     padding-top: 220px;
   }
   .main .our-services {
-    padding: 0 10px 0 10px;
+    margin: 0 10px 30px 10px;
   }
   .main .our-services .row {
     gap: 2px;

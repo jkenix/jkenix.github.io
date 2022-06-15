@@ -28,46 +28,36 @@
 }
 @media (min-width: 1501px) {
   .main {
-    .title {
-      padding-left: 150px;
-      padding-right: 130px;
-      .title-text_col {max-width: 650px;}
-    }
-    .as-content-wrapper {
-      margin-bottom: 50px;
-    }
-    .appear-fp {
-      padding-bottom: 60px;
-    }
+    .as-content-wrapper {margin-bottom: 50px;}
+    .appear-fp {padding-bottom: 60px;}
     .reasons-choosing-seo {
       margin-bottom: 60px;
-      .text_col {padding-left: 120px;}
+      // .text_col {padding-left: 120px;}
     }
     .conversion-rate {
-      text-align: center;
-      align-items: center;
-      gap: 10px;
+      justify-content: center; gap: 10px;
       margin-bottom: 60px;
       .title_col {
-        padding: 0;
+      max-width: 500px;
         h2 {
           font-size: 3.438rem; margin-bottom: 35px;
-          width: 80%;
+          width: 90%;
         }
-        h2, p, span {margin: 0 auto 45px auto;}
         p {width: 80%; font-size: 1.6rem;}
         .btn_main-content {
-          margin: 0 auto;
+          margin: 0 auto; max-width: 80%;
         }
       }
      .content_col {
         .row_content .row {justify-content: center;}
         .border-wrapper {
           padding: 35px 0 0 0px;
+          p, span {margin: 15px auto 0 auto; width: 85%;}
+          span {text-align: center;}
         }
       }
     } 
-    .our-services .row .col-xl {max-width: 200px;}
+    .our-services .col-xl {max-width: 167px;}
     .seo-marketing {
       margin-bottom: 0px; 
       .text_col .btn_main-content {margin-bottom: 100px;} 
@@ -122,7 +112,10 @@
 }
 @media (max-width: 1500px) { 
   .main {
-    .title-text_col {max-width: 480px;}
+    .title {
+      padding: 75px 10px 76px 140px;
+      .row_content {max-width: 100%; }
+    }
     .hsw .row {
       .line {left: 385px;}
       .line_2 {right: 375px;}
@@ -131,6 +124,7 @@
       .carousel-control-next {margin-right: 300px;}
       .carousel-control-prev {margin-left: 300px;}
     }
+    .our-services .col-xl {max-width: 167px;}
   }
 }
 @include media-breakpoint-down(xxl)  { // 1400px
@@ -177,30 +171,20 @@
     .reasons-choosing-seo {
       gap: 55px;
       margin: 0 123px 60px 140px;
-      .text_col {
-        // width: 65%; margin: 0 auto;
-        // text-align: center;
-          // p {width: 65%; margin: 0 auto 30px auto;}
-            .stat_col {
-              padding: 20px 0 0 0;
-              .col_img {margin: 0;}
-              .img_2 {margin: 0;}
-            }
-            // .row {width: 60%; margin: 0 auto;}
-      }
+      .text_col .stat_col .img_2 {margin: 0 20px 0 35px;}
     }
     .conversion-rate {
-      padding: 0px 125px 80px 140px;
+      padding: 96px 125px 80px 140px;
       margin-bottom: 60px;
       text-align: center;
       .title_col {
-        padding: 80px 40px 40px 80px;
+        // padding: 80px 40px 40px 80px;
         span {max-width: 100%;} 
         p {width: 55%; margin: 0 auto;}
         .btn {margin: 20px auto 0 auto;}
       }
       .content_col {
-        width: 100%; height: 100%;
+        width: 100%; height: 100%; // Удалить эту строку!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         padding: 0;
         .row_content {justify-content: center;}
         .border-wrapper {
@@ -211,8 +195,7 @@
       }
     }
     .our-services {
-      padding: 0 110px 0 110px;
-      margin-bottom: 30px;
+      margin: 0 110px 30px 110px;
       .border-wrapper {max-height: 110px;}
     }
     .seo-marketing {
@@ -429,13 +412,11 @@
       .title_col {padding: 0px 0 40px 0;}
     }
     .our-services {
-      padding: 0 60px 0 60px;
+      margin: 0 60px 30px 60px;
       .row {
         justify-content: center;
         .col-xl {max-width: 270px;}
-        .border-wrapper {
-          width: 167px; margin: 0 auto;
-        }
+        .border-wrapper {width: 167px; margin: 0 auto;}
       }
     }
     .hsw {
@@ -508,6 +489,10 @@
       .as-content .col_content-2 {padding-top: 210px;}
     }
     .conversion-rate {padding: 0 40px 30px 40px;}
+    .our-services {
+      margin: 0 20px 30px 20px;
+      .row .col-xl {max-width: 235px;}
+    }
     .reasons-choosing-seo {
       .text_col{
         width: 100%;
@@ -610,9 +595,9 @@
       }
     }
     .our-services {
-      padding: 0 20px 0 20px;
+      margin: 0 5px 30px 5px;
       .row {
-        .col-xl {max-width: 170px;}
+        .col-xl {max-width: 160px;}
       }
     }
     .marketing-team {
@@ -648,9 +633,12 @@
   body, .wrapper {background-color: $pink-600;}
   .header-wrapper {
     .header {
-      justify-content: center;
       padding-bottom: 110px;
-      gap: 10px;
+      .row_content {
+        justify-content: center;
+        gap: 10px;
+
+      }
       .contacts {
         justify-content: center;
         .row {
@@ -726,7 +714,7 @@
       }
     }
     .our-services {
-      padding: 0 10px 0 10px;
+      margin: 0 10px 30px 10px;
       .row{
         gap: 2px;
           .col-xl {max-width: 140px;}

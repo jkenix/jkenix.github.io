@@ -153,46 +153,49 @@ input, textarea {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
   height: 68px;
-  padding: 20px 140px 0 140px;
+  padding: 0 123px 0 140px;
+  padding-top: 20px;
 }
-header .contacts {
+header .row_content {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+header .row_content .contacts {
   display: flex;
 }
-header .contacts .col {
+header .row_content .contacts .col {
   display: flex;
   height: 28px;
 }
-header .contacts .col a {
+header .row_content .contacts .col a {
   color: #fff;
   padding: 0 0 0 12px;
   line-height: 28px;
 }
-header .contacts .col a:hover {
+header .row_content .contacts .col a:hover {
   color: #000;
 }
-header .contacts .col a:active {
+header .row_content .contacts .col a:active {
   color: #0059ff;
 }
-header .contacts .phone-block {
+header .row_content .contacts .phone-block {
   margin-right: 25px;
 }
-header .contacts .mail a {
+header .row_content .contacts .mail a {
   font-size: 0.938rem;
 }
-header .media {
+header .row_content .media {
   max-width: 94.12px;
   height: 28px;
   display: flex;
   justify-content: space-between;
 }
-header .media a:hover {
+header .row_content .media a:hover {
   color: #fff;
   user-select: none;
 }
-header .media a:active .fa-brands {
+header .row_content .media a:active .fa-brands {
   color: #0059ff;
 }
 
@@ -204,6 +207,8 @@ header .media a:active .fa-brands {
 .nav-wrapper .border-wrapper {
   height: 94px;
   width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
   padding: 0 15px 0 15px;
   border: 1px solid #fff;
   border-radius: 10px;
@@ -251,18 +256,17 @@ header .media a:active .fa-brands {
   font-size: 0.813rem;
 }
 
-.main {
-  width: 100%;
-  height: 100%;
-}
 .main .title {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 75px 7px 76px 140px;
+  padding: 75px 123px 112px 140px;
   background-color: #5B25B3;
 }
+.main .title .row_content {
+  max-width: 1160px;
+  margin: 0 auto;
+  gap: 55px;
+}
 .main .title-text_col {
+  max-width: 480px;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -279,7 +283,6 @@ header .media a:active .fa-brands {
 }
 .main .title-text_col p {
   width: 84%;
-  font-size: 1.125rem;
   line-height: 34px;
   margin-bottom: 25px;
 }
@@ -312,9 +315,6 @@ header .media a:active .fa-brands {
   width: 186px;
   height: 52px;
 }
-.main .title .img__resp {
-  max-width: 738px;
-}
 .main .about-seo-wrapper {
   width: 100%;
   height: 124px;
@@ -323,6 +323,8 @@ header .media a:active .fa-brands {
   background-color: #5B25B3;
 }
 .main .about-seo-wrapper .as-content {
+  max-width: 1160px;
+  margin: 0 auto;
   padding: 0 80px 0 80px;
   border-radius: 10px 10px 0 0;
   background-color: #fff;
@@ -366,6 +368,8 @@ header .media a:active .fa-brands {
   margin-bottom: 147px;
 }
 .main .as-content-wrapper .as-content {
+  max-width: 1160px;
+  margin: 0 auto;
   padding: 0 80px 0 80px;
   background-color: #fff;
   border: 1px solid #fff;
@@ -407,11 +411,12 @@ header .media a:active .fa-brands {
   padding-top: 10px;
 }
 .main .appear-fp {
-  padding: 75.41px 5px 153px 31px;
-  margin: 0 110px 0 140px;
+  padding: 75.41px 5px 153px 39px;
+  margin: 0 auto;
+  max-width: 1160px;
 }
 .main .appear-fp .text_col {
-  padding: 0 0 0 79px;
+  padding: 0 0 0 80px;
 }
 .main .appear-fp .text_col span {
   font-size: 1.25rem;
@@ -436,21 +441,23 @@ header .media a:active .fa-brands {
   max-width: 552px;
 }
 .main .reasons-choosing-seo {
-  margin: 0 110px 190px 140px;
+  margin: 0 auto 201px auto;
+  max-width: 1160px;
+  padding-left: 8px;
+  gap: 65px;
 }
 .main .reasons-choosing-seo .text_col {
-  padding: 22px 0 0 0;
+  padding-top: 22px;
 }
 .main .reasons-choosing-seo .text_col span {
   font-size: 1.25rem;
   line-height: 30px;
 }
 .main .reasons-choosing-seo .text_col h2 {
-  padding: 19px 0 0px 0;
+  padding-top: 19px;
   margin-bottom: 25px;
 }
 .main .reasons-choosing-seo .text_col p {
-  width: 95%;
   line-height: 34px;
 }
 .main .reasons-choosing-seo .text_col .stat_col {
@@ -461,7 +468,7 @@ header .media a:active .fa-brands {
   margin: 0 20px 0 0;
 }
 .main .reasons-choosing-seo .text_col .stat_col .img_2 {
-  margin: 0 20px 0 60px;
+  margin: 0 20px 0 110px;
 }
 .main .reasons-choosing-seo .text_col .stat_col .text-stat_col {
   display: flex;
@@ -474,6 +481,9 @@ header .media a:active .fa-brands {
 }
 .main .reasons-choosing-seo .text_col .stat_col .text-stat_col span:last-child {
   font-size: 0.938rem;
+}
+.main .reasons-choosing-seo .img__resp {
+  max-width: 555px;
 }
 .main .conversion-rate {
   padding: 96px 125px 99.69px 140px;
@@ -562,8 +572,8 @@ header .media a:active .fa-brands {
   margin: 30px 0 0 0;
 }
 .main .our-services {
-  padding: 0 120px 0 140px;
-  margin-bottom: 90px;
+  margin: 0 auto 90px auto;
+  max-width: 1160px;
 }
 .main .our-services h2 {
   text-align: center;

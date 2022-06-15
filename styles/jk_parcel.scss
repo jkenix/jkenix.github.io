@@ -63,9 +63,11 @@ input, textarea {
 // Header
 .header-wrapper {background-color: #5B25B3;}
 header {
-  @include flexb();
-  height: 68px;
-  padding: 20px 140px 0 140px;
+  height: 68px;  
+  padding: 0 123px 0 140px;
+  padding-top: 20px;
+  .row_content {
+    max-width: 1160px; margin: 0 auto;
     .contacts {
       display: flex; 
       .col {
@@ -82,8 +84,8 @@ header {
       .mail a {
         font-size: 0.938rem;
       }
-    }
-    .media {
+  }
+  .media {
       max-width: 94.12px; height: 28px;
       @include flexb();
       a {
@@ -95,7 +97,9 @@ header {
           .fa-brands{color:#0059ff;}
         }
       }
-    }
+  }
+  }
+  
 }
 .nav-wrapper {
   width: 100%; height: 94px;
@@ -103,6 +107,7 @@ header {
     .border-wrapper {
       height: 94px;
       width: 100%;
+      max-width: 1160px; margin: 0 auto;
       padding: 0 15px 0 15px;
       border: 1px solid #fff; 
       border-radius: 10px; background-color: #fff;
@@ -120,13 +125,12 @@ header {
 }
 // Main
 .main {
-  width: 100%; height: 100%;
   .title {
-    @include flexb();
-    width: 100%;
-    padding: 75px 7px 76px 140px;
+    padding: 75px 123px 112px 140px;
     background-color: #5B25B3;
+    .row_content {max-width: 1160px; margin: 0 auto;  gap: 55px;}
     &-text_col {
+      max-width: 480px;
       color: #fff; display: flex; flex-direction: column;
       h2 {
         display: flex;
@@ -134,26 +138,26 @@ header {
         margin: 30px 0 41px 0;
         line-height: 70px;
         font-size: 3.75rem;  
-          span {color: #F4AB00;}
+        span {color: #F4AB00;}
       }
       p {
         width: 84%;
-        font-size: 1.125rem;
         line-height: 34px;
         margin-bottom: 25px;
       }
       @include btn();
       .btn_main-content {width: 186px; height: 52px;}
     }
-    .img__resp {max-width: 738px;}
     // .img-fluid {max-width: initial;}
   }
+  // Create common classes !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   .about-seo-wrapper { 
     width: 100%; height: 124px;
     padding: 0 123px 0 140px;
     margin-bottom: 20px;
     background-color: #5B25B3;
     .as-content {
+      max-width: 1160px; margin: 0 auto;
       padding: 0 80px 0 80px;
       border-radius: 10px 10px 0 0;
       @include w__bg();
@@ -190,6 +194,7 @@ header {
     padding: 0 123px 0 140px;
     margin-bottom: 147px;
     .as-content {
+      max-width: 1160px; margin: 0 auto;
       padding: 0 80px 0 80px;
       @include w__bg();
     }
@@ -222,10 +227,12 @@ header {
     }
   }
   .appear-fp {
-    padding: 75.41px 5px 153px 31px;
-    margin: 0 110px 0 140px;
+    padding: 75.41px 5px 153px 39px;
+    // margin: 0 123px 0 140px;
+    margin: 0 auto;
+    max-width: 1160px;
     .text_col {
-      padding: 0 0 0 79px;
+      padding: 0 0 0 80px;
         span {font-size: 1.25rem;}
         h2 {padding: 20px 0 0 0; margin-bottom: 25px;}
         p {
@@ -237,27 +244,22 @@ header {
           .fa-check {padding: 0 19px 0 0;}
         }
       } // text_col end
-      .img__resp {
-         max-width: 552px;
-      }
+      .img__resp {max-width: 552px;}
   } 
   .reasons-choosing-seo {
-    margin: 0 110px 190px 140px;
+    margin: 0 auto 201px auto; // 200px ??????????
+    max-width: 1160px; 
+    padding-left: 8px; gap: 65px;
+    // margin: 0 110px 190px 140px;
     .text_col {
-      padding: 22px 0 0 0;
-        span {
-          font-size: 1.25rem; line-height: 30px;
-        }
-        h2 {
-          padding: 19px 0 0px 0; margin-bottom: 25px;
-        }
-        p {
-          width: 95%; line-height: 34px;
-        }
+      padding-top: 22px;
+        span {font-size: 1.25rem; line-height: 30px;}
+        h2 {padding-top: 19px; margin-bottom: 25px;}
+        p {line-height: 34px;}
         .stat_col {
           padding: 33px 66.5px 0 24px;
             .col_img {flex: 0 0 0%; margin: 0 20px 0 0;}
-            .img_2 {margin: 0 20px 0 60px;}
+            .img_2 {margin: 0 20px 0 110px;}
             .text-stat_col{
               display: flex;
               flex-direction: column;
@@ -270,6 +272,7 @@ header {
             }
         }
     } // text_col end
+    .img__resp {max-width: 555px;}
   }
   .conversion-rate {
     padding: 96px 125px 99.69px 140px;
@@ -329,8 +332,8 @@ header {
     } //content_col end
   }
   .our-services {
-    padding: 0 120px 0 140px;  
-    margin-bottom: 90px;
+    margin: 0 auto 90px auto;
+    max-width: 1160px;
     h2 {text-align: center; margin-bottom: 30.5px;}
     .row {
       justify-content: space-between;
