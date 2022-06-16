@@ -1,4 +1,8 @@
 @import 'mixins_var.scss';
+// Common classes
+.news-case-studies, .pricing-plans {
+  .btn__transparent {border-radius: 27px;}
+}
 // Set background menu
 .dark__bg {
   background-color: #fff;
