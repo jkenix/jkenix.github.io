@@ -2,7 +2,25 @@
 @import 'bootstrap/functions';
 @import 'bootstrap/variables.scss'; 
 @import 'bootstrap/mixins.scss';
-// Media
+// Media buttons and a (Mobile hover)
+.news-case-studies, .pricing-plans {
+  .btn__transparent{
+    @media (hover: none) {
+      &:hover {background-color: #F4AB00 !important; color:#000 !important;}
+    }
+  }
+}
+header .row a {
+  @media (hover: none) {
+    &:hover {color:#fff !important;}
+  }
+}
+footer .contacts .fu .row .media a {
+  @media (hover: none) {
+    &:hover {color:#F4AB00 !important;}
+  }
+}
+// Media main
 @media (min-width: 2099px) {
   #scroll_top {
     width: 100px; height: 100px; font-size: 100px;
@@ -28,10 +46,10 @@
 }
 @media (min-width: 1501px) {
   .main {
-    .as-content-wrapper {margin-bottom: 50px;}
+    .building-conversion-strategy {margin-bottom: 50px;}
     .appear-fp {padding-bottom: 60px;}
     .reasons-choosing-seo {
-      margin-bottom: 60px;
+      padding-bottom: 60px;
       // .text_col {padding-left: 120px;}
     }
     .conversion-rate {
@@ -57,7 +75,7 @@
         }
       }
     } 
-    .our-services .col-xl {max-width: 167px;}
+    // .our-services .col-xl {max-width: 165px;}
     .seo-marketing {
       margin-bottom: 0px; 
       .text_col .btn_main-content {margin-bottom: 100px;} 
@@ -112,9 +130,9 @@
 }
 @media (max-width: 1500px) { 
   .main {
-    .title {
+    .strategic-seo-marketing {
       padding: 75px 10px 76px 140px;
-      .row_content {max-width: 100%; }
+      .row_content {max-width: 100%;}
     }
     .hsw .row {
       .line {left: 385px;}
@@ -124,28 +142,32 @@
       .carousel-control-next {margin-right: 300px;}
       .carousel-control-prev {margin-left: 300px;}
     }
-    .our-services .col-xl {max-width: 167px;}
+    // .our-services .col-xl {max-width: 167px;}
   }
 }
 @include media-breakpoint-down(xxl)  { // 1400px
   .nav-wrapper .border-wrapper .menu {padding-right: 0px;}
   .main {
-    .about-seo-wrapper .as-content, // Common classes
-    .as-content-wrapper .as-content { 
+    .strategic-seo-marketing {
+      padding: 75px 10px 76px 140px;
+      .row_content {gap: 0px;}
+    }
+    .seo-marketing-agency .as-content, // Common classes
+    .building-conversion-strategy .as-content { 
       padding: 0 40px 0 40px;
       .col_content-2 .row {
         margin-left: 30px;
         .text_col p {max-width: 100%; font-size: 1rem;}
       }
     }
-    .about-seo-wrapper {
+    .seo-marketing-agency {
       padding: 0 123px 76px 140px;
       margin: 0; height: 70px;
       .as-content {
         .col, .col-xl {padding-top: 60px;}
       }
     }
-    .as-content-wrapper {
+    .building-conversion-strategy {
       padding-top: 30px;
       margin-bottom: 0;
       .as-content .col_content-1 {padding: 0;}
@@ -170,20 +192,26 @@
     }
     .reasons-choosing-seo {
       gap: 55px;
-      margin: 0 123px 60px 140px;
+      margin: 0 123px 0 140px;
+      padding-bottom: 60px;
       .text_col .stat_col .img_2 {margin: 0 20px 0 35px;}
+      
     }
     .conversion-rate {
-      padding: 96px 125px 80px 140px;
+      padding: 96px 123px 80px 140px;
       margin-bottom: 60px;
-      text-align: center;
+      gap: 40px;
       .title_col {
+        padding: 0;
+        display: flex;
+        flex-direction: column; align-items: center;
         // padding: 80px 40px 40px 80px;
         span {max-width: 100%;} 
-        p {width: 55%; margin: 0 auto;}
-        .btn {margin: 20px auto 0 auto;}
+        p {width: 55%; margin: 26px 0 25px;}
+        .btn {margin: 0 ;}
       }
       .content_col {
+        text-align: center;
         width: 100%; height: 100%; // Удалить эту строку!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         padding: 0;
         .row_content {justify-content: center;}
@@ -199,15 +227,12 @@
       .border-wrapper {max-height: 110px;}
     }
     .seo-marketing {
-      text-align: center;
       gap: 30px;
       .col-xxl {padding: 0;}
       .text_col {
         p {
-          margin: 20px auto 20px auto; 
-          max-width: 50%;
         } 
-        .btn {margin: 0 auto 0 auto;}
+        .btn {margin: 0;}
       }
       .img_col {padding-bottom: 40px;}
     }
@@ -335,9 +360,9 @@
     .nav {justify-content: center; align-items: center;}
   }
   .main {
-    .title {
+    .strategic-seo-marketing {
       padding: 0; 
-      &-text_col {
+      .text_col {
         display: flex; flex-direction: column;
         h2 {align-items: center;}
         p {
@@ -352,8 +377,8 @@
       .col {max-width: 100%;}
       .img__resp {display: none;}
     }
-    .about-seo-wrapper, // Common classes
-    .as-content-wrapper  { 
+    .seo-marketing-agency, // Common classes
+    .building-conversion-strategy  { 
       padding: 0 60px 0 60px;
       .as-content {
         padding-left: 60px; padding-right: 60px;
@@ -375,7 +400,7 @@
         }
       }
     }
-    .about-seo-wrapper {
+    .seo-marketing-agency {
       .as-content {
         .col, .col-xl {padding-top: 0px;}
         .col_content-1 {
@@ -385,7 +410,7 @@
         }
       }
     }
-    .as-content-wrapper {
+    .building-conversion-strategy {
       padding-top: 0px;
       h2 {text-align: center;}
       p {width: 90%; margin: 0 auto; font-size: 1.25rem;}
@@ -394,22 +419,39 @@
         .col_content-2 {padding-top: 210px;}
       }
     }
+    .appear-fp, .reasons-choosing-seo {
+
+    }
     .appear-fp {
       gap: 55px;
       margin: 0 60px 0 60px;
       padding-left: 0; padding-right: 0;
-      .img__resp {max-width: 400px;}
+      .img__resp {display: none;}
       .text_col {
-        padding: 0;
-        p {width: 100%; padding-right: 40px;}
-        .row {width: 100%;}
+        display: flex; flex-direction: column;
+        align-items: center;
+        p {
+          width: 70%; padding: 0px; 
+          font-size: 1.25rem; 
+          
+        }
+        .row {
+          text-align: center; gap: 5px;
+          ul li {font-size: 1.25rem;}
+        }
       }
       .check_col {height: 154px;}
     }
-    .reasons-choosing-seo {margin: 0 60px 40px 60px;}
+    .reasons-choosing-seo {
+      margin: 0 60px 40px 60px;
+      .img__resp {display: none;}
+    }
     .conversion-rate {
       padding: 50px 60px 50px 60px;
-      .title_col {padding: 0px 0 40px 0;}
+      .title_col {
+        padding: 0px 0 40px 0;
+        
+      }
     }
     .our-services {
       margin: 0 60px 30px 60px;
@@ -418,6 +460,9 @@
         .col-xl {max-width: 270px;}
         .border-wrapper {width: 167px; margin: 0 auto;}
       }
+    }
+    .seo-marketing {
+      .img__resp {display: none;}
     }
     .hsw {
       .row_content {
@@ -467,11 +512,10 @@
     .border-wrapper .btn_main-content {width: 80px;}
   }
   .main {
-    .title {
+    .strategic-seo-marketing {
       h2 {
         display: initial; 
         text-align: center; 
-        width: 80%; 
         margin: 30px auto 41px auto;
       }
       p {
@@ -479,12 +523,12 @@
         width: 65%;
       }
     }
-    .about-seo-wrapper, // Common classes
-    .as-content-wrapper  { 
+    .seo-marketing-agency, // Common classes
+    .building-conversion-strategy  { 
       padding: 0 20px 0 20px;
       .as-content {padding-left: 20px; padding-right: 20px;}
     }
-    .as-content-wrapper {
+    .building-conversion-strategy {
       p {width: 85%;}
       .as-content .col_content-2 {padding-top: 210px;}
     }
@@ -561,15 +605,15 @@
   body, .wrapper {background-color: $teal-600;}
   .nav-wrapper .border-wrapper .header-logo {max-width: 80px;}
   .main {
-    .title {
-      h2 {width: 80%; font-size: 3rem;}
+    .strategic-seo-marketing {
+      h2 {font-size: 3rem;}
       p {
         margin: 0 auto 25px auto;
         width: 75%;
       }
     }
-    .about-seo-wrapper, // Common classes
-    .as-content-wrapper  { 
+    .seo-marketing-agency, // Common classes
+    .building-conversion-strategy  { 
       .as-content {
         .col_content-2 .row .text_col {
           max-width: 350px;
@@ -577,10 +621,10 @@
         }
       }
     }
-    .about-seo-wrapper .as-content {
+    .seo-marketing-agency .as-content {
         .col_content-1 {padding: 40px 0 290px 0;}
     }
-    .as-content-wrapper {
+    .building-conversion-strategy {
       .as-content {
         .col_content-1 {
           h2 {
@@ -686,15 +730,16 @@
     .btn_main-content {max-width: 80px;}
   }
  .main {
-    .title-text_col {
-      h2 {font-size: 2.55rem; width: 100%;}
+    .strategic-seo-marketing .text_col {
+      h2 {font-size: 2.55rem;}
       p {width: 85%; font-size: 1rem;}
+      .btn_main-content {width: 140px;}
     }
-    .about-seo-wrapper, // Common classes
-    .as-content-wrapper { 
+    .seo-marketing-agency, // Common classes
+    .building-conversion-strategy { 
       .col_content-2 {.img__resp {display: none;}}
     }
-    .about-seo-wrapper {
+    .seo-marketing-agency {
       .as-content {
         .col, .col-xl {padding-top: 0px;}
         .col_content-1 {
@@ -702,7 +747,7 @@
         }
       }
     }
-    .as-content-wrapper {
+    .building-conversion-strategy {
       .as-content {
         .col_content-1 {
           h2 {padding-top: 45px;}
@@ -740,16 +785,15 @@
 }
 @media (max-width: 466px) {
   .main  {
-    .title-text_col {
+    .strategic-seo-marketing .text_col {
       h2 {
         font-size: 2rem; 
-        width: 80%; 
         margin-bottom: 25px; 
         line-height: initial;
       }
     }
-    .about-seo-wrapper, // Common classes
-    .as-content-wrapper  { 
+    .seo-marketing-agency, // Common classes
+    .building-conversion-strategy  { 
       .as-content {
         .col_content-2 .row .text_col {
           p {
@@ -761,12 +805,12 @@
         }
       }
     }
-    .about-seo-wrapper  .as-content{
+    .seo-marketing-agency  .as-content{
       .col_content-1 {
         padding: 40px 0px 310px 0px;
       }
     }
-    .as-content-wrapper {
+    .building-conversion-strategy {
       .as-content {
         .col_content-1 {
           h2 {padding-top: 45px; width: 100%;}
@@ -798,15 +842,11 @@
 }
 @media (max-width: 364px) {
   .main {
-    .about-seo-wrapper  .as-content{
-      .col_content-1 {
-        padding: 40px 0px 370px 0px;
-      }
+    .seo-marketing-agency .as-content {
+      .col_content-1 {padding: 40px 0px 370px 0px;}
     }
-    .as-content-wrapper {
-      .as-content .col_content-2 {
-          padding-top: 220px;
-      }
+    .building-conversion-strategy {
+      .as-content .col_content-2 {padding-top: 220px;}
     }
   }
 }

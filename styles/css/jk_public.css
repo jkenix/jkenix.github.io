@@ -10,6 +10,10 @@
   font-family: "Nunito ExtraBold";
   src: url(/webfonts/NunitoExtraBold.woff) format("woff");
 }
+.news-case-studies .btn__transparent, .pricing-plans .btn__transparent {
+  border-radius: 27px;
+}
+
 .dark__bg {
   background-color: #fff;
 }
@@ -128,6 +132,10 @@ span {
   font-family: "Nunito Regular";
 }
 
+button {
+  font-family: "Nunito Regular";
+}
+
 img {
   user-select: none;
 }
@@ -193,9 +201,8 @@ header .row_content .media {
 }
 header .row_content .media a:hover {
   color: #fff;
-  user-select: none;
 }
-header .row_content .media a:active .fa-brands {
+header .row_content .media a:active {
   color: #0059ff;
 }
 
@@ -206,13 +213,12 @@ header .row_content .media a:active .fa-brands {
 }
 .nav-wrapper .border-wrapper {
   height: 94px;
-  width: 100%;
+  padding: 0 15px 0 15px;
   max-width: 1160px;
   margin: 0 auto;
-  padding: 0 15px 0 15px;
+  background-color: #fff;
   border: 1px solid #fff;
   border-radius: 10px;
-  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -227,16 +233,11 @@ header .row_content .media a:active .fa-brands {
   font-size: 1.25rem;
   display: none;
 }
-.nav-wrapper .border-wrapper button {
-  font-family: "Nunito Regular";
-}
 .nav-wrapper .border-wrapper .btn {
   background-color: #F4AB00;
   color: #fff;
 }
 .nav-wrapper .border-wrapper .btn_main-content {
-  width: 100px;
-  height: 41px;
   border-radius: 27px;
 }
 .nav-wrapper .border-wrapper .btn_main-content a {
@@ -246,174 +247,150 @@ header .row_content .media a:active .fa-brands {
   transition: 0s all;
   background-color: #111;
 }
+@media (hover: none) {
+  .nav-wrapper .border-wrapper .btn_main-content:hover {
+    background-color: #F4AB00;
+    color: #000;
+    transition: 0s all;
+  }
+}
 .nav-wrapper .border-wrapper .btn_main-content:active {
   transition: 0s all;
   background-color: #fff;
   color: #000;
-  transition: 0s all;
 }
-.nav-wrapper .border-wrapper .btn {
+.nav-wrapper .border-wrapper .btn_main-content {
+  width: 100px;
+  height: 41px;
   font-size: 0.813rem;
 }
 
-.main .title {
+.main .strategic-seo-marketing {
   padding: 75px 123px 112px 140px;
   background-color: #5B25B3;
 }
-.main .title .row_content {
+.main .strategic-seo-marketing .row_content {
   max-width: 1160px;
   margin: 0 auto;
   gap: 55px;
 }
-.main .title-text_col {
+.main .strategic-seo-marketing .text_col {
   max-width: 480px;
   color: #fff;
   display: flex;
   flex-direction: column;
 }
-.main .title-text_col h2 {
+.main .strategic-seo-marketing .text_col h2 {
   display: flex;
   flex-direction: column;
   margin: 30px 0 41px 0;
   line-height: 70px;
   font-size: 3.75rem;
 }
-.main .title-text_col h2 span {
+.main .strategic-seo-marketing .text_col h2 span {
   color: #F4AB00;
 }
-.main .title-text_col p {
+.main .strategic-seo-marketing .text_col p {
   width: 84%;
   line-height: 34px;
   margin-bottom: 25px;
 }
-.main .title-text_col button {
-  font-family: "Nunito Regular";
-}
-.main .title-text_col .btn {
+.main .strategic-seo-marketing .text_col .btn {
   background-color: #F4AB00;
   color: #fff;
 }
-.main .title-text_col .btn_main-content {
-  width: 100px;
-  height: 41px;
+.main .strategic-seo-marketing .text_col .btn_main-content {
   border-radius: 27px;
 }
-.main .title-text_col .btn_main-content a {
+.main .strategic-seo-marketing .text_col .btn_main-content a {
   color: #fff;
 }
-.main .title-text_col .btn_main-content:hover {
+.main .strategic-seo-marketing .text_col .btn_main-content:hover {
   transition: 0s all;
   background-color: #111;
 }
-.main .title-text_col .btn_main-content:active {
+@media (hover: none) {
+  .main .strategic-seo-marketing .text_col .btn_main-content:hover {
+    background-color: #F4AB00;
+    color: #000;
+    transition: 0s all;
+  }
+}
+.main .strategic-seo-marketing .text_col .btn_main-content:active {
   transition: 0s all;
   background-color: #fff;
   color: #000;
-  transition: 0s all;
 }
-.main .title-text_col .btn_main-content {
+.main .strategic-seo-marketing .text_col .btn_main-content {
   width: 186px;
   height: 52px;
 }
-.main .about-seo-wrapper {
+.main .seo-marketing-agency .as-content, .main .building-conversion-strategy .as-content {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 80px 0 80px;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+.main .seo-marketing-agency .as-content span, .main .building-conversion-strategy .as-content span {
+  color: #F4AB00;
+  font-size: 1.188rem;
+}
+.main .seo-marketing-agency .as-content .col_content-2 .row, .main .building-conversion-strategy .as-content .col_content-2 .row {
+  margin-left: 60px;
+  gap: 25px;
+}
+.main .seo-marketing-agency .as-content .col_content-2 .row .img__resp, .main .building-conversion-strategy .as-content .col_content-2 .row .img__resp {
+  padding: 0;
+  max-width: 86px;
+  max-height: 86px;
+}
+.main .seo-marketing-agency .as-content .col_content-2 .row .text_col, .main .building-conversion-strategy .as-content .col_content-2 .row .text_col {
+  padding: 0;
+}
+.main .seo-marketing-agency .as-content .col_content-2 .row .text_col p, .main .building-conversion-strategy .as-content .col_content-2 .row .text_col p {
+  font-size: 0.938rem;
+  line-height: 28px;
+  max-width: 80%;
+  padding-top: 10px;
+}
+.main .seo-marketing-agency {
   width: 100%;
   height: 124px;
   padding: 0 123px 0 140px;
   margin-bottom: 20px;
   background-color: #5B25B3;
 }
-.main .about-seo-wrapper .as-content {
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 0 80px 0 80px;
+.main .seo-marketing-agency .as-content {
   border-radius: 10px 10px 0 0;
-  background-color: #fff;
-  border: 1px solid #fff;
 }
-.main .about-seo-wrapper .as-content .col, .main .about-seo-wrapper .as-content .col-xl {
+.main .seo-marketing-agency .as-content .col, .main .seo-marketing-agency .as-content .col-xl {
   padding-top: 100px;
 }
-.main .about-seo-wrapper .as-content .col span, .main .about-seo-wrapper .as-content .col-xl span {
-  color: #F4AB00;
-  font-size: 1.188rem;
-}
-.main .about-seo-wrapper .as-content .col_content-1 h2 {
-  padding-top: 20px;
-  margin-bottom: 25px;
-}
-.main .about-seo-wrapper .as-content .col_content-1 p {
-  line-height: 34px;
-  max-width: 97%;
-}
-.main .about-seo-wrapper .as-content .col_content-2 .row {
-  margin-left: 60px;
-  gap: 25px;
-}
-.main .about-seo-wrapper .as-content .col_content-2 .row .img__resp {
-  padding: 0;
-  max-width: 86px;
-  max-height: 86px;
-}
-.main .about-seo-wrapper .as-content .col_content-2 .row .text_col {
-  padding: 0;
-}
-.main .about-seo-wrapper .as-content .col_content-2 .row .text_col p {
-  font-size: 0.938rem;
-  line-height: 28px;
-  max-width: 80%;
-  padding-top: 10px;
-}
-.main .as-content-wrapper {
+.main .building-conversion-strategy {
   padding: 0 123px 0 140px;
   margin-bottom: 147px;
 }
-.main .as-content-wrapper .as-content {
-  max-width: 1160px;
-  margin: 0 auto;
-  padding: 0 80px 0 80px;
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-.main .as-content-wrapper .col_content-1 {
+.main .building-conversion-strategy .col_content-1 {
   padding-top: 5px;
 }
-.main .as-content-wrapper .col_content-1 h2 {
+.main .building-conversion-strategy .col_content-1 h2 {
   margin: 0 0 25px 0;
 }
-.main .as-content-wrapper .col_content-1 p {
+.main .building-conversion-strategy .col_content-1 p {
   line-height: 34px;
   max-width: 96%;
 }
-.main .as-content-wrapper .col_content-2 {
+.main .building-conversion-strategy .col_content-2 {
   padding-top: 100px;
 }
-.main .as-content-wrapper .col_content-2 .row {
-  margin-left: 60px;
+.main .building-conversion-strategy .col_content-2 .row {
   padding-top: 45px;
-  gap: 25px;
-}
-.main .as-content-wrapper .col_content-2 .row .img__resp {
-  padding: 0;
-  max-width: 86px;
-  max-height: 86px;
-}
-.main .as-content-wrapper .col_content-2 .row .text_col {
-  padding: 0;
-}
-.main .as-content-wrapper .col_content-2 .row .text_col span {
-  color: #F4AB00;
-  font-size: 1.188rem;
-}
-.main .as-content-wrapper .col_content-2 .row .text_col p {
-  font-size: 0.938rem;
-  line-height: 28px;
-  max-width: 80%;
-  padding-top: 10px;
 }
 .main .appear-fp {
   padding: 75.41px 5px 153px 39px;
-  margin: 0 auto;
   max-width: 1160px;
+  margin: 0 auto;
 }
 .main .appear-fp .text_col {
   padding: 0 0 0 80px;
@@ -422,7 +399,7 @@ header .row_content .media a:active .fa-brands {
   font-size: 1.25rem;
 }
 .main .appear-fp .text_col h2 {
-  padding: 20px 0 0 0;
+  padding-top: 20px;
   margin-bottom: 25px;
 }
 .main .appear-fp .text_col p {
@@ -431,18 +408,24 @@ header .row_content .media a:active .fa-brands {
   margin-bottom: 26px;
 }
 .main .appear-fp .text_col .ul-col li {
-  padding: 0 0 13px 7px;
   line-height: 28px;
 }
 .main .appear-fp .text_col .ul-col .fa-check {
-  padding: 0 19px 0 0;
+  padding-right: 19px;
+}
+.main .appear-fp .text_col .ulc_1 li {
+  padding: 0 0 13px 7px;
+}
+.main .appear-fp .text_col .ulc_2 li {
+  padding: 0 0 13px 15px;
 }
 .main .appear-fp .img__resp {
   max-width: 552px;
 }
 .main .reasons-choosing-seo {
-  margin: 0 auto 201px auto;
   max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 0 201px 8px;
   padding-left: 8px;
   gap: 65px;
 }
@@ -486,13 +469,13 @@ header .row_content .media a:active .fa-brands {
   max-width: 555px;
 }
 .main .conversion-rate {
-  padding: 96px 125px 99.69px 140px;
+  padding: 96px 123px 99.69px 140px;
   margin-bottom: 185.5px;
   color: #fff;
   background-color: #5B25B3;
 }
 .main .conversion-rate .title_col {
-  padding: 157.69px 0 0 0;
+  padding-top: 157.69px;
 }
 .main .conversion-rate .title_col span {
   max-width: 93%;
@@ -501,18 +484,13 @@ header .row_content .media a:active .fa-brands {
 .main .conversion-rate .title_col p {
   max-width: 91%;
   line-height: 34px;
-  margin: 28px 0 24px 0px;
-}
-.main .conversion-rate button {
-  font-family: "Nunito Regular";
+  margin: 26px 0 25px 0px;
 }
 .main .conversion-rate .btn {
   background-color: #F4AB00;
   color: #fff;
 }
 .main .conversion-rate .btn_main-content {
-  width: 100px;
-  height: 41px;
   border-radius: 27px;
 }
 .main .conversion-rate .btn_main-content a {
@@ -522,11 +500,17 @@ header .row_content .media a:active .fa-brands {
   transition: 0s all;
   background-color: #111;
 }
+@media (hover: none) {
+  .main .conversion-rate .btn_main-content:hover {
+    background-color: #F4AB00;
+    color: #000;
+    transition: 0s all;
+  }
+}
 .main .conversion-rate .btn_main-content:active {
   transition: 0s all;
   background-color: #fff;
   color: #000;
-  transition: 0s all;
 }
 .main .conversion-rate .btn_main-content {
   width: 186px;
@@ -542,8 +526,10 @@ header .row_content .media a:active .fa-brands {
 }
 .main .conversion-rate .content_col .border-wrapper {
   background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
   color: #2C1258;
-  padding: 35px 0 0 37px;
+  padding: 34px 0 0 35px;
 }
 .main .conversion-rate .content_col .border-wrapper span {
   font-size: 1.188rem;
@@ -584,9 +570,11 @@ header .row_content .media a:active .fa-brands {
 }
 .main .our-services .row .col-xl {
   text-align: center;
+  max-width: 167px;
   max-height: 110px;
 }
 .main .our-services .row .border-wrapper {
+  max-height: 110px;
   padding: 24px 20px 29px 22px;
 }
 .main .our-services .row .border-wrapper span {
@@ -635,16 +623,11 @@ header .row_content .media a:active .fa-brands {
 .main .seo-marketing .text_col ul li:last-child {
   padding: 0;
 }
-.main .seo-marketing .text_col button {
-  font-family: "Nunito Regular";
-}
 .main .seo-marketing .text_col .btn {
   background-color: #F4AB00;
   color: #fff;
 }
 .main .seo-marketing .text_col .btn_main-content {
-  width: 100px;
-  height: 41px;
   border-radius: 27px;
 }
 .main .seo-marketing .text_col .btn_main-content a {
@@ -654,11 +637,17 @@ header .row_content .media a:active .fa-brands {
   transition: 0s all;
   background-color: #111;
 }
+@media (hover: none) {
+  .main .seo-marketing .text_col .btn_main-content:hover {
+    background-color: #F4AB00;
+    color: #000;
+    transition: 0s all;
+  }
+}
 .main .seo-marketing .text_col .btn_main-content:active {
   transition: 0s all;
   background-color: #fff;
   color: #000;
-  transition: 0s all;
 }
 .main .seo-marketing .text_col .btn_main-content {
   width: 186px;
@@ -895,54 +884,26 @@ header .row_content .media a:active .fa-brands {
 .main .pricing-plans .plan-silver .btn, .main .pricing-plans .plan-gold .btn, .main .pricing-plans .plan-platinum .btn {
   margin: 0 96px 0 96px;
 }
-.main .pricing-plans .plan-silver button, .main .pricing-plans .plan-gold button, .main .pricing-plans .plan-platinum button {
-  font-family: "Nunito Regular";
-}
-.main .pricing-plans .plan-silver .btn, .main .pricing-plans .plan-gold .btn, .main .pricing-plans .plan-platinum .btn {
-  background-color: #F4AB00;
-  color: #fff;
-}
-.main .pricing-plans .plan-silver .btn_main-content, .main .pricing-plans .plan-gold .btn_main-content, .main .pricing-plans .plan-platinum .btn_main-content {
-  width: 100px;
-  height: 41px;
-  border-radius: 27px;
-}
-.main .pricing-plans .plan-silver .btn_main-content a, .main .pricing-plans .plan-gold .btn_main-content a, .main .pricing-plans .plan-platinum .btn_main-content a {
-  color: #fff;
-}
-.main .pricing-plans .plan-silver .btn_main-content:hover, .main .pricing-plans .plan-gold .btn_main-content:hover, .main .pricing-plans .plan-platinum .btn_main-content:hover {
-  transition: 0s all;
-  background-color: #111;
-}
-.main .pricing-plans .plan-silver .btn_main-content:active, .main .pricing-plans .plan-gold .btn_main-content:active, .main .pricing-plans .plan-platinum .btn_main-content:active {
-  transition: 0s all;
-  background-color: #fff;
-  color: #000;
-  transition: 0s all;
-}
 .main .pricing-plans .plan-silver .btn, .main .pricing-plans .plan-gold .btn, .main .pricing-plans .plan-platinum .btn {
   font-size: 1rem;
   border: 2px solid #2C1258;
   background-color: transparent;
 }
-.main .pricing-plans .plan-silver .btn_main-content, .main .pricing-plans .plan-gold .btn_main-content, .main .pricing-plans .plan-platinum .btn_main-content {
+.main .pricing-plans .plan-silver .btn__transparent, .main .pricing-plans .plan-gold .btn__transparent, .main .pricing-plans .plan-platinum .btn__transparent {
   width: 168px;
   height: 54px;
   margin-left: 65px;
-  justify-content: center;
-  align-items: center;
   color: #2C1258;
 }
-.main .pricing-plans .plan-silver .btn_main-content:hover, .main .pricing-plans .plan-gold .btn_main-content:hover, .main .pricing-plans .plan-platinum .btn_main-content:hover {
+.main .pricing-plans .plan-silver .btn__transparent:hover, .main .pricing-plans .plan-gold .btn__transparent:hover, .main .pricing-plans .plan-platinum .btn__transparent:hover {
   transition: 0s all;
   background-color: #F4AB00;
   color: #fff;
 }
-.main .pricing-plans .plan-silver .btn_main-content:active, .main .pricing-plans .plan-gold .btn_main-content:active, .main .pricing-plans .plan-platinum .btn_main-content:active {
+.main .pricing-plans .plan-silver .btn__transparent:active, .main .pricing-plans .plan-gold .btn__transparent:active, .main .pricing-plans .plan-platinum .btn__transparent:active {
   transition: 0s all;
   background-color: #000;
   color: #F4AB00;
-  transition: 0s all;
 }
 .main .pricing-plans .plan-gold {
   padding-top: 13px;
@@ -1052,54 +1013,26 @@ header .row_content .media a:active .fa-brands {
   margin: 18px auto 0 auto;
   padding-bottom: 27px;
 }
-.main .news-case-studies button {
-  font-family: "Nunito Regular";
-}
-.main .news-case-studies .btn {
-  background-color: #F4AB00;
-  color: #fff;
-}
-.main .news-case-studies .btn_main-content {
-  width: 100px;
-  height: 41px;
-  border-radius: 27px;
-}
-.main .news-case-studies .btn_main-content a {
-  color: #fff;
-}
-.main .news-case-studies .btn_main-content:hover {
-  transition: 0s all;
-  background-color: #111;
-}
-.main .news-case-studies .btn_main-content:active {
-  transition: 0s all;
-  background-color: #fff;
-  color: #000;
-  transition: 0s all;
-}
 .main .news-case-studies .btn {
   font-size: 1rem;
   border: 2px solid #2C1258;
   background-color: transparent;
 }
-.main .news-case-studies .btn_main-content {
+.main .news-case-studies .btn__transparent {
   width: 179px;
   height: 54px;
   margin: 0 0 140px 0;
-  justify-content: center;
-  align-items: center;
   color: #2C1258;
 }
-.main .news-case-studies .btn_main-content:hover {
+.main .news-case-studies .btn__transparent:hover {
   transition: 0s all;
   background-color: #F4AB00;
   color: #fff;
 }
-.main .news-case-studies .btn_main-content:active {
+.main .news-case-studies .btn__transparent:active {
   transition: 0s all;
   background-color: #000;
   color: #F4AB00;
-  transition: 0s all;
 }
 .main .get-in-touch {
   background-color: #2C1258;
@@ -1206,16 +1139,11 @@ header .row_content .media a:active .fa-brands {
   max-width: 533px;
   padding: 19px 0 5px 21px;
 }
-.main .enquiry-form .form_col form button {
-  font-family: "Nunito Regular";
-}
 .main .enquiry-form .form_col form .btn {
   background-color: #F4AB00;
   color: #fff;
 }
 .main .enquiry-form .form_col form .btn_main-content {
-  width: 100px;
-  height: 41px;
   border-radius: 27px;
 }
 .main .enquiry-form .form_col form .btn_main-content a {
@@ -1225,11 +1153,17 @@ header .row_content .media a:active .fa-brands {
   transition: 0s all;
   background-color: #111;
 }
+@media (hover: none) {
+  .main .enquiry-form .form_col form .btn_main-content:hover {
+    background-color: #F4AB00;
+    color: #000;
+    transition: 0s all;
+  }
+}
 .main .enquiry-form .form_col form .btn_main-content:active {
   transition: 0s all;
   background-color: #fff;
   color: #000;
-  transition: 0s all;
 }
 .main .enquiry-form .form_col form .btn_main-content {
   width: 159px;
@@ -1321,13 +1255,13 @@ header .row_content .media a:active .fa-brands {
   justify-content: center;
   gap: 20px;
 }
-.footer .contacts .fu .row .media .fa-brands {
+.footer .contacts .fu .row .media a {
   font-size: 25px;
 }
-.footer .contacts .fu .row .media .fa-brands:hover {
+.footer .contacts .fu .row .media a:hover {
   color: #F4AB00;
 }
-.footer .contacts .fu .row .media .fa-brands:active {
+.footer .contacts .fu .row .media a:active {
   color: #0059ff;
 }
 .footer .footer-bottom {

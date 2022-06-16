@@ -48,6 +48,7 @@ a {
   color: #000;
 }
 span {font-family: "Nunito Regular";}
+button {font-family: "Nunito Regular";}
 img {user-select: none;}
 ul {list-style: none;}
 input, textarea {
@@ -67,7 +68,7 @@ header {
   padding: 0 123px 0 140px;
   padding-top: 20px;
   .row_content {
-    max-width: 1160px; margin: 0 auto;
+    @include maxw();
     .contacts {
       display: flex; 
       .col {
@@ -81,55 +82,53 @@ header {
         }
       }
       .phone-block {margin-right: 25px;}
-      .mail a {
-        font-size: 0.938rem;
-      }
-  }
-  .media {
+      .mail a {font-size: 0.938rem;}
+    }
+    .media {
       max-width: 94.12px; height: 28px;
       @include flexb();
       a {
         &:hover {
           color:#fff;
-          user-select: none;
         }
         &:active {
-          .fa-brands{color:#0059ff;}
+          color:#0059ff;
         }
       }
+    }
   }
-  }
-  
 }
 .nav-wrapper {
   width: 100%; height: 94px;
   padding: 0 123px 0 140px;
-    .border-wrapper {
-      height: 94px;
-      width: 100%;
-      max-width: 1160px; margin: 0 auto;
-      padding: 0 15px 0 15px;
-      border: 1px solid #fff; 
-      border-radius: 10px; background-color: #fff;
-      @include flexb(); align-items: center;
-      .header-logo {max-width: 94px;}
-      .menu-block {max-width: 582.13px;}
-      // Menu
-      .menu {
-        font-size: 1.25rem;
-        display: none;
-      }
-      @include btn();
-      .btn {font-size: 0.813rem;}
+  .border-wrapper {
+    height: 94px;
+    padding: 0 15px 0 15px;
+    @include maxw();
+    @include w__bg();
+    border-radius: 10px;
+    @include flexb(); align-items: center;
+    .header-logo {max-width: 94px;}
+    .menu-block {max-width: 582.13px;}
+    // Menu
+    .menu {
+      font-size: 1.25rem;
+      display: none;
     }
+    @include btn();
+    .btn_main-content {
+      width: 100px; height: 41px; 
+      font-size: 0.813rem;
+    }
+  }
 }
 // Main
 .main {
-  .title {
+  .strategic-seo-marketing {
     padding: 75px 123px 112px 140px;
     background-color: #5B25B3;
-    .row_content {max-width: 1160px; margin: 0 auto;  gap: 55px;}
-    &-text_col {
+    .row_content {@include maxw(); gap: 55px;}
+    .text_col {
       max-width: 480px;
       color: #fff; display: flex; flex-direction: column;
       h2 {
@@ -148,56 +147,48 @@ header {
       @include btn();
       .btn_main-content {width: 186px; height: 52px;}
     }
-    // .img-fluid {max-width: initial;}
   }
-  // Create common classes !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  .about-seo-wrapper { 
+  .seo-marketing-agency, .building-conversion-strategy { // Common classes
+    .as-content {
+      @include maxw();
+      padding: 0 80px 0 80px; @include w__bg();
+      span {color: #F4AB00; font-size: 1.188rem;}
+      .col_content-2 {
+        .row {
+          margin-left: 60px;
+          gap: 25px;
+          .img__resp {
+            padding: 0;
+            max-width: 86px; max-height: 86px;
+          }
+          .text_col {
+            padding: 0;
+            p {
+              font-size: 0.938rem; 
+              line-height: 28px; 
+              max-width: 80%;
+              padding-top: 10px;
+            }
+          }
+        } 
+      }
+    }
+  }
+  .seo-marketing-agency { 
     width: 100%; height: 124px;
     padding: 0 123px 0 140px;
     margin-bottom: 20px;
     background-color: #5B25B3;
     .as-content {
-      max-width: 1160px; margin: 0 auto;
-      padding: 0 80px 0 80px;
       border-radius: 10px 10px 0 0;
-      @include w__bg();
-        .col, .col-xl { // common col
-          padding-top: 100px;
-          span {color: #F4AB00; font-size: 1.188rem;}
-        }
-        .col_content-1 {
-          h2 {padding-top: 20px; margin-bottom: 25px;}
-          p {line-height: 34px; max-width: 97%;}
-        }
-        .col_content-2 {
-          .row {
-            margin-left: 60px;
-            gap: 25px;
-            .img__resp {
-              padding: 0;
-              max-width: 86px; max-height: 86px;
-            }
-            .text_col {
-              padding: 0;
-              p {
-                font-size: 0.938rem; 
-                line-height: 28px; 
-                max-width: 80%;
-                padding-top: 10px;
-              }
-            }
-          } 
-        }
+      .col, .col-xl {padding-top: 100px;}  // common col
     }
+    
   }
-  .as-content-wrapper {
+  .building-conversion-strategy {
     padding: 0 123px 0 140px;
     margin-bottom: 147px;
-    .as-content {
-      max-width: 1160px; margin: 0 auto;
-      padding: 0 80px 0 80px;
-      @include w__bg();
-    }
+    
     .col_content-1 {
       padding-top: 5px;
       h2 {margin: 0 0 25px 0;}
@@ -205,50 +196,34 @@ header {
     }
     .col_content-2 {
       padding-top: 100px;
-      .row {
-        margin-left: 60px;
-        padding-top: 45px;
-        gap: 25px;
-        .img__resp {
-          padding: 0;
-          max-width: 86px; max-height: 86px;
-        }
-        .text_col {
-          padding: 0;
-          span {color: #F4AB00; font-size: 1.188rem;}
-          p {
-            font-size: 0.938rem; 
-            line-height: 28px; 
-            max-width: 80%;
-            padding-top: 10px;
-          }
-        }
-      } 
+      .row {padding-top: 45px;} 
     }
   }
+  // Create common classes
   .appear-fp {
     padding: 75.41px 5px 153px 39px;
     // margin: 0 123px 0 140px;
-    margin: 0 auto;
-    max-width: 1160px;
+    @include maxw();
     .text_col {
       padding: 0 0 0 80px;
         span {font-size: 1.25rem;}
-        h2 {padding: 20px 0 0 0; margin-bottom: 25px;}
+        h2 {padding-top: 20px; margin-bottom: 25px;}
         p {
           width: 95%;
           line-height: 34px; margin-bottom: 26px;
         }
         .ul-col {
-          li {padding: 0 0 13px 7px; line-height: 28px;}
-          .fa-check {padding: 0 19px 0 0;}
+          li {line-height: 28px;}
+          .fa-check {padding-right: 19px;}
         }
+        .ulc_1 li {padding: 0 0 13px 7px;}
+        .ulc_2 li {padding: 0 0 13px 15px;}
       } // text_col end
       .img__resp {max-width: 552px;}
   } 
   .reasons-choosing-seo {
-    margin: 0 auto 201px auto; // 200px ??????????
-    max-width: 1160px; 
+    @include maxw();
+    padding: 0 0 201px 8px; // 200px ??????????
     padding-left: 8px; gap: 65px;
     // margin: 0 110px 190px 140px;
     .text_col {
@@ -275,16 +250,16 @@ header {
     .img__resp {max-width: 555px;}
   }
   .conversion-rate {
-    padding: 96px 125px 99.69px 140px;
+    padding: 96px 123px 99.69px 140px;
     margin-bottom: 185.5px; color: #fff;
     background-color: #5B25B3;
     .title_col {
-      padding: 157.69px 0 0 0;
+      padding-top: 157.69px;
         span {max-width: 93%; margin-bottom: 26px;}
         p {
           max-width: 91%; 
           line-height: 34px; 
-          margin: 28px 0 24px 0px;
+          margin: 26px 0 25px 0px;
         }
     }
     @include btn();
@@ -298,9 +273,9 @@ header {
       width: 671px; height: 662px;
       padding: 3px 0 0 0;
       .border-wrapper {
-        background-color: #fff; 
+        @include w__bg(); border-radius: 4px; 
         color: #2C1258;
-        padding: 35px 0 0 37px;
+        padding: 34px 0 0 35px;
           span {
             font-size: 1.188rem; 
             margin: 25px 0 15px 0;
@@ -339,9 +314,11 @@ header {
       justify-content: space-between;
       .col-xl {
         text-align: center;
+        max-width: 167px;
         max-height: 110px;
       }
       .border-wrapper {
+        max-height: 110px;
         padding: 24px 20px 29px 22px;
           span {font-size: 1rem; line-height: 16px;}
           svg {margin-bottom: 10px;}
@@ -545,24 +522,22 @@ header {
       .fa-check {color: #2C1258;}
       .fa-solid {color: #ED6436; font-size: 20px;}
       .btn {margin: 0 96px 0 96px;}
-      @include btn();
       .btn {
         font-size: 1rem; 
         border: 2px solid #2C1258; 
         background-color: transparent;
       }
-      .btn_main-content {
+      .btn__transparent {
         width: 168px; height: 54px;
         margin-left: 65px;
-        justify-content: center; align-items: center;
         color: #2C1258;
-          &:hover {
-            transition: 0s all; background-color: #F4AB00; color: #fff; 
-          }
-          &:active {
-            transition: 0s all; background-color: #000;
-            color:#F4AB00; transition: 0s all;
-          }
+        &:hover {
+          transition: 0s all; background-color: #F4AB00; color: #fff; 
+        }
+        &:active {
+          transition: 0s all; background-color: #000;
+          color:#F4AB00;
+        }
       }
     }
       // Main classes
@@ -638,23 +613,21 @@ header {
       width: 90%; margin: 18px auto 0 auto;
       padding-bottom: 27px;
     }
-    @include btn();
     .btn {
       font-size: 1rem; 
       border: 2px solid #2C1258; 
       background-color: transparent;
     }
-    .btn_main-content {
+    .btn__transparent {
       width: 179px; height: 54px;
       margin: 0 0 140px 0;
-      justify-content: center; align-items: center;
       color: #2C1258;
         &:hover {
           transition: 0s all; background-color: #F4AB00; color: #fff; 
         }
         &:active {
           transition: 0s all; background-color: #000;
-          color:#F4AB00; transition: 0s all;
+          color:#F4AB00;
         }
     }
   }
@@ -802,7 +775,7 @@ header {
           .media {
             display: flex;
             justify-content: center; gap: 20px;
-            .fa-brands {
+            a {
               font-size: 25px;
                 &:hover {color: #F4AB00;}
                 &:active {color: #0059ff}
