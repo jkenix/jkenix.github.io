@@ -1,4 +1,10 @@
 @import 'mixins_var.scss';
+// General wrapper
+.wrapper {
+  background-color: #fff;
+  max-width: 1920px;
+  margin: 0 auto;
+}
 // Common classes
 .news-case-studies, .pricing-plans {
   .btn__transparent {border-radius: 27px;}
