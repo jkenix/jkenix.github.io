@@ -55,14 +55,8 @@ input, textarea {
   font-family: "Nunito Regular"; 
   font-size: 1.125rem; line-height: 34px;
 }
-// Wrappers
-.wrapper {
-  background-color: #fff;
-  max-width: 1920px;
-  margin: 0 auto;
-}
 // Header
-.header-wrapper {background-color: #5B25B3;}
+.header-wr {background-color: #5B25B3;}
 header {
   height: 68px;  
   padding: 0 123px 0 140px;
@@ -98,10 +92,10 @@ header {
     }
   }
 }
-.nav-wrapper {
+.nav-wr {
   width: 100%; height: 94px;
   padding: 0 123px 0 140px;
-  .border-wrapper {
+  .b-wr {
     height: 94px;
     padding: 0 15px 0 15px;
     @include maxw();
@@ -183,12 +177,10 @@ header {
       border-radius: 10px 10px 0 0;
       .col, .col-xl {padding-top: 100px;}  // common col
     }
-    
   }
   .building-conversion-strategy {
     padding: 0 123px 0 140px;
     margin-bottom: 147px;
-    
     .col_content-1 {
       padding-top: 5px;
       h2 {margin: 0 0 25px 0;}
@@ -200,26 +192,29 @@ header {
     }
   }
   // Create common classes
+  .appear-fp, .reasons-choosing-seo {
+
+  }
   .appear-fp {
     padding: 75.41px 5px 153px 39px;
     // margin: 0 123px 0 140px;
     @include maxw();
     .text_col {
       padding: 0 0 0 80px;
-        span {font-size: 1.25rem;}
-        h2 {padding-top: 20px; margin-bottom: 25px;}
-        p {
-          width: 95%;
-          line-height: 34px; margin-bottom: 26px;
-        }
-        .ul-col {
-          li {line-height: 28px;}
-          .fa-check {padding-right: 19px;}
-        }
-        .ulc_1 li {padding: 0 0 13px 7px;}
-        .ulc_2 li {padding: 0 0 13px 15px;}
-      } // text_col end
-      .img__resp {max-width: 552px;}
+      span {font-size: 1.25rem;}
+      h2 {padding-top: 20px; margin-bottom: 25px;}
+      p {
+        width: 95%;
+        line-height: 34px; margin-bottom: 26px;
+      }
+      .ul-col {
+        li {line-height: 28px;}
+        .fa-check {padding-right: 19px;}
+      }
+      .ulc_1 li {padding: 0 0 13px 7px;}
+      .ulc_2 li {padding: 0 0 13px 15px;}
+    } // text_col end
+    .img__resp {max-width: 552px;}
   } 
   .reasons-choosing-seo {
     @include maxw();
@@ -228,24 +223,24 @@ header {
     // margin: 0 110px 190px 140px;
     .text_col {
       padding-top: 22px;
-        span {font-size: 1.25rem; line-height: 30px;}
-        h2 {padding-top: 19px; margin-bottom: 25px;}
-        p {line-height: 34px;}
-        .stat_col {
-          padding: 33px 66.5px 0 24px;
-            .col_img {flex: 0 0 0%; margin: 0 20px 0 0;}
-            .img_2 {margin: 0 20px 0 110px;}
-            .text-stat_col{
-              display: flex;
-              flex-direction: column;
-              padding: 3px 0 0px 0;
-              span {
-                color: #2C1258;
-                font-size: 1.75rem;
-                &:last-child {font-size: 0.938rem}
-              }
-            }
+      span {font-size: 1.25rem; line-height: 30px;}
+      h2 {padding-top: 19px; margin-bottom: 25px;}
+      p {line-height: 34px;}
+      .stat_col {
+        padding: 33px 66.5px 0 24px;
+        .col_img {flex: 0 0 0%; margin: 0 20px 0 0;}
+        .img_2 {margin: 0 20px 0 110px;}
+        .text-stat_col {
+          display: flex;
+          flex-direction: column;
+          padding: 3px 0 0px 0;
+          span {
+            color: #2C1258;
+            font-size: 1.75rem;
+            &:last-child {font-size: 0.938rem}
+          }
         }
+      }
     } // text_col end
     .img__resp {max-width: 555px;}
   }
@@ -253,58 +248,54 @@ header {
     padding: 96px 123px 99.69px 140px;
     margin-bottom: 185.5px; color: #fff;
     background-color: #5B25B3;
-    .title_col {
+    .cr-info_col {
       padding-top: 157.69px;
-        span {max-width: 93%; margin-bottom: 26px;}
-        p {
-          max-width: 91%; 
-          line-height: 34px; 
-          margin: 26px 0 25px 0px;
-        }
+      span {max-width: 93%; margin-bottom: 26px;}
+      p {
+        max-width: 91%; 
+        line-height: 34px; 
+        margin: 26px 0 25px 0px;
+      }
+      @include btn();
+      .btn_main-content {
+        width: 186px;
+        height: 52px;
+        margin-bottom: 156.31px;
+      }
     }
-    @include btn();
-    .btn_main-content {
-      width: 186px;
-      height: 52px;
-      margin: 0 0 156.31px 0;
-      justify-content: center; align-items: center;
-    }
-    .content_col {
+    .cards_col {
       width: 671px; height: 662px;
       padding: 3px 0 0 0;
-      .border-wrapper {
+      .b-wr {
         @include w__bg(); border-radius: 4px; 
         color: #2C1258;
         padding: 34px 0 0 35px;
-          span {
-            font-size: 1.188rem; 
-            margin: 25px 0 15px 0;
-          }
-          p {
-            font-size: 0.938rem; 
-            max-width: 92%; 
-            line-height: 28px;
-          }
+        span {
+          font-size: 1.188rem; 
+          margin: 25px 0 15px 0;
+        }
+        p {
+          font-size: 0.938rem; 
+          max-width: 92%; 
+          line-height: 28px;
+        }
       }
       svg {width: 50px;}
-      .row_content {
-        gap: 30px;
-      }
-      .imc_1, .imc_2 {
-        .border-wrapper {
+      .row_content {gap: 30px;}
+      .cards-block_1, .cards-block_2 {
+        .b-wr {
           max-width: 318px;
           height: 286px;
         }
       }
-      .imc_2 .st {
+      .cards-block_2 .st {
         p {
           font-size: 1rem;
           max-width: 92%; 
         }
       }
-      .br__m {margin: 30px 0 0 0;}
-      
-    } //content_col end
+      .br__m {margin-top: 30px;}
+    } //cards_col end
   }
   .our-services {
     margin: 0 auto 90px auto;
@@ -317,50 +308,53 @@ header {
         max-width: 167px;
         max-height: 110px;
       }
-      .border-wrapper {
+      .b-wr {
         max-height: 110px;
         padding: 24px 20px 29px 22px;
-          span {font-size: 1rem; line-height: 16px;}
-          svg {margin-bottom: 10px;}
-          &:hover {
-            background-color: #F4AB00; 
-            a {color: #fff;}
-          }
-          &:active {
-            a {color: #000;}
-          }
+        span {font-size: 1rem; line-height: 16px;}
+        svg {margin-bottom: 10px;}
+        &:hover {
+          background-color: #F4AB00; 
+          a {color: #fff;}
+        }
+        &:active {
+          a {color: #000;}
+        }
       }
     }
   }
   .seo-marketing {
-    padding: 0 120px 0 140px;  margin-bottom: 30px;
+    max-width: 1160px;
+    margin: 0 auto 30px auto;
+    margin-bottom: 30px;
+    // @include maxw();
     .text_col {
-      padding: 50.5px 0 0 0;
-        h2 {font-size: 2.125rem; line-height: 54px;}
-        p {
-          margin: 15px 0 19.5px 0; line-height: 34px;
-          max-width: 73%;
+      padding: 50.5px 0 0 10px;
+      h2 {font-size: 2.125rem; line-height: 54px;}
+      p {
+        margin: 15px 0 19.5px 0; line-height: 34px;
+        max-width: 73%;
+      }
+      ul {
+        padding-left: 8px;
+        margin-bottom: 43px;
+        li {
+          padding-bottom: 13px; line-height: 28px; 
+          .fa-regular {padding-right: 17px;}
+          &:last-child {padding: 0;}
         }
-        ul {
-          padding-left: 8px;
-          margin-bottom: 43px;
-            li {
-              padding-bottom: 13px; line-height: 28px; 
-              .fa-regular {padding-right: 17px;}
-              &:last-child {padding: 0;}
-            }
-          }
-        @include btn();
-        .btn_main-content {
-          width: 186px;
-          height: 52px;
-          margin: 0 0 156.31px 0;
-          justify-content: center; align-items: center;
-        }
+      }
+      @include btn();
+      .btn_main-content {
+        width: 186px;
+        height: 52px;
+        margin: 0 0 156.31px 0;
+        justify-content: center; align-items: center;
+      }
     }
     .img__resp {display: block;}
   }
-  .hsw {
+  .how-seo-work {
     padding: 58px 140px 100px 140px;
     margin-bottom: 176px;
     color: #fff;
@@ -377,50 +371,50 @@ header {
     }
     .row_content {
       padding: 0 0px 0 60px;
+      @include maxw();
       text-align: center;
       justify-content: space-between; 
-        // Common code 
-        .col_content-1, .col_content-2, .cb_2 {
-          .col {padding-bottom: 26px;}
+      // Common code 
+      .business-strategy, .keyword-analysis, .cb_2 {
+        .col {padding-bottom: 26px;}
+        p {
+          width: 245px;
+          text-align: center; 
+          line-height: 28px;
+          font-size: 1rem;
+        }
+      }
+      .line, .line_2 {
+        display: flex;
+        position: absolute; 
+        max-width: 267px;
+        width: auto;
+        margin-top: 200px;
+      }
+      .line, .line_2 {margin-top: 28px;}
+      .line {left: 485px;}
+      .line_2 {right: 420px;}
+      .cb_1 {
+        max-width: 60%;
+        @include flexb();
+        .business-strategy, .keyword-analysis {
+          width: 266px;
           p {
-            width: 245px;
-            text-align: center; 
-            line-height: 28px;
             font-size: 1rem;
+            width: 90%; margin: 10px auto 0 auto;
           }
         }
-        .line, .line_2 {
+        span {font-size: 1.25rem;}
+      }
+      .cb_2 {
+        width: 356px;
+        .col_img {
+          justify-content: center;
           display: flex;
-          position: absolute; 
-          max-width: 267px;
-          width: auto;
-          margin-top: 200px;
         }
-        .line, .line_2 {margin-top: 28px;}
-        .line {left: 485px;}
-        .line_2 {right: 420px;}
-        .cb_1 {
-          max-width: 60%;
-          display: flex; 
-          justify-content: space-between;
-            .col_content-1, .col_content-2 {
-              width: 266px;
-              p {
-                font-size: 1rem;
-                  width: 90%; margin: 10px auto 0 auto;
-              }
-            }
-            span {font-size: 1.25rem;}
-        }
-        .cb_2 {
-          width: 356px;
-            .col_img {
-              justify-content: center;
-              display: flex;
-            }
-            span {font-size: 1.188rem;}
-            p {width: 64%; margin: 10px auto 0 auto;}
-        }
+        span {font-size: 1.188rem;}
+        p {width: 64%; margin: 10px auto 0 auto;}
+      }
     }
   }
   .marketing-team {
@@ -464,9 +458,7 @@ header {
         &:nth-child(1) {font-size: 1.25rem;}
         &:nth-child(2) {font-size: 0.938rem;}
       }
-      .block_top, .block_bottom {
-        margin-left: 35px;
-      }
+      .block_top, .block_bottom {margin-left: 35px;}
       .block_bottom {
         span:nth-child(1) {font-size: 1.188rem;}
       }
@@ -495,7 +487,8 @@ header {
       .row_price {
         color: #5B25B3;
         padding-left: 60px;
-        font-size: 3.125rem; line-height: 36px;
+        font-size: 3.125rem; 
+        line-height: 36px;
       }
       .row_type {
         color: #5B25B3;
@@ -506,9 +499,7 @@ header {
           padding-left: 40px; 
           max-width: 146px; 
         }
-        span {
-          font-size: 1.25rem; line-height: 26px;
-        }
+        span {font-size: 1.25rem; line-height: 26px;}
       }
       ul {
         padding: 0 0 40px 7px;
@@ -521,18 +512,16 @@ header {
       .fa-check, .fa-solid {padding-right: 19px;}
       .fa-check {color: #2C1258;}
       .fa-solid {color: #ED6436; font-size: 20px;}
-      .btn {margin: 0 96px 0 96px;}
-      .btn {
-        font-size: 1rem; 
-        border: 2px solid #2C1258; 
-        background-color: transparent;
-      }
       .btn__transparent {
         width: 168px; height: 54px;
-        margin-left: 65px;
-        color: #2C1258;
+        margin: 0 auto;
+        font-size: 1rem; color: #2C1258; 
+        border: 2px solid #2C1258; 
+        background-color: transparent;
+        @include flexc();
         &:hover {
-          transition: 0s all; background-color: #F4AB00; color: #fff; 
+          transition: 0s all; background-color: #F4AB00; 
+          color: #fff; 
         }
         &:active {
           transition: 0s all; background-color: #000;
@@ -578,7 +567,8 @@ header {
     }
   }
   .companies {
-    padding: 50px 195px 0 195px;
+    padding: 50px 50px 0 60px;
+    @include maxw();
     margin-bottom: 202px;
     .col, .col-xxl {display: flex;}
     .col_2 {
@@ -622,13 +612,14 @@ header {
       width: 179px; height: 54px;
       margin: 0 0 140px 0;
       color: #2C1258;
-        &:hover {
-          transition: 0s all; background-color: #F4AB00; color: #fff; 
-        }
-        &:active {
-          transition: 0s all; background-color: #000;
-          color:#F4AB00;
-        }
+      &:hover {
+        transition: 0s all; background-color: #F4AB00; 
+        color: #fff; 
+      }
+      &:active {
+        transition: 0s all; background-color: #000;
+        color:#F4AB00;
+      }
     }
   }
   .get-in-touch {
@@ -645,26 +636,31 @@ header {
       .git-contacts {
         color: #2C1258;
         justify-content: space-between;
-        .col, .col-xxl {
+        .col-xxl {
           @include w__bg();
           border-radius: 15px 15px 0 0;
           max-width: 367px;
           padding-top: 40px;
           text-align: center;
+          &:hover {
+            transform: scale(1.03);
+            box-shadow: $box-shadow;
+          }
         }
         .c_title {padding-bottom: 16px;}
         .git-address {
-          .address {font-size: 1.25rem; }
+          .address {font-size: 1.25rem;}
           .row {padding-top: 18px;}
-          span {font-size: 1.25rem; }
+          span {font-size: 1.25rem;}
           p {
-            font-size: 0.938rem; max-width: 65%; 
-            margin: 0 auto; line-height: 28px;
+            font-size: 0.938rem; 
+            max-width: 65%; 
+            margin: 0 auto; 
+            line-height: 28px;
           }
-  
         }
         .git-phone {
-          .phone {font-size: 1.25rem; }
+          .phone {font-size: 1.25rem;}
           .row {padding-top: 23px;}
           span {font-size: 1rem; line-height: 28px;}
         } 
@@ -685,8 +681,7 @@ header {
       p {line-height: 34px; margin-bottom: 26px;}
       a {font-size: 1.125rem;}
       form {
-        display: flex;
-        gap: 24px;
+        display: flex; gap: 24px;
         .row {justify-content: space-between;}
           .col {
             max-width: 255px;
@@ -712,20 +707,21 @@ header {
 .footer {
   padding: 0px 140px 40px 140px; 
   @include flexb(); gap: 12px;
-    .contacts {
-     padding-bottom: 90px;
-      .nav_col {
-        padding-top: 5px;
-        span {font-size: 1.188rem; line-height: 28px; width: auto;}
-        a {width: auto; font-size: 1rem; line-height: 28px;}
+  .contacts, .footer-bottom {@include maxw();}
+  .contacts {
+    padding-bottom: 90px;
+    .nav_col {
+      padding-top: 5px;
+      span {font-size: 1.188rem; line-height: 28px; width: auto;}
+      a {width: auto; font-size: 1rem; line-height: 28px;}
+    }
+    .seoflow {
+      span {font-size: 1.3rem;}
+      p {
+        font-size: 0.938rem; 
+        margin-top: 17px; 
+        line-height: 28px;
       }
-      .seoflow {
-        span {font-size: 1.3rem;}
-        p {
-          font-size: 0.938rem; 
-          margin-top: 17px; 
-          line-height: 28px;
-        }
       }
       .ql {
         ul {
@@ -753,17 +749,13 @@ header {
           }
           p {
             margin: 0; height: 30px; font-size: 1rem;
-            &:nth-child(2) {
-              padding: 0 0 50px 40px;
-            }
+            &:nth-child(2) {padding: 0 0 50px 40px;}
           }
           .fa-envelope {
             font-size: 25px; 
             padding-right: 15px;
           }
-          a:nth-child(2) {
-            font-size: 0.900rem;
-          }
+          a:nth-child(2) {font-size: 0.900rem;}
         }
       }
       .fu {
@@ -777,28 +769,28 @@ header {
             justify-content: center; gap: 20px;
             a {
               font-size: 25px;
-                &:hover {color: #F4AB00;}
-                &:active {color: #0059ff}
+              &:hover {color: #F4AB00;}
+              &:active {color: #0059ff}
             }
           }
         }
       } 
     }
-    .footer-bottom {
-      justify-content: space-between;
-      a, li, span {font-size: 0.875rem;}
-      strong {font-size: 1rem;}
-      .fb_nav {
-        display: flex;
-        width: auto;
-        gap: 10px;
-          a {text-decoration: underline;}
-      }
-      span {width: auto;}
-      .info_col {
-        display: flex; 
-        justify-content: flex-end; 
-        padding: 0;
-      }
+  .footer-bottom {
+    justify-content: space-between;
+    a, li, span {font-size: 0.875rem;}
+    strong {font-size: 1rem;}
+    .fb_nav {
+      display: flex;
+      width: auto;
+      gap: 10px;
+        a {text-decoration: underline;}
     }
+    span {width: auto;}
+    .info_col {
+      display: flex; 
+      justify-content: flex-end; 
+      padding: 0;
+    }
+  }
 }

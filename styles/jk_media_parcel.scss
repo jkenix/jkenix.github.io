@@ -2,17 +2,25 @@
 @import 'bootstrap/functions';
 @import 'bootstrap/variables.scss'; 
 @import 'bootstrap/mixins.scss';
-// Media buttons and a (Mobile hover)
-.news-case-studies, .pricing-plans {
-  .btn__transparent{
+// Media for mobile devices
+.header .row  {
+  .contacts .col a {
     @media (hover: none) {
-      &:hover {background-color: #F4AB00 !important; color:#000 !important;}
+      &:hover {color:#000 !important;}
+    }
+  }
+  .media a {
+    @media (hover: none) {
+      &:hover {color:#fff !important;}
     }
   }
 }
-header .row a {
+.get-in-touch .contacts-wr .git-contacts .col-xxl {
   @media (hover: none) {
-    &:hover {color:#fff !important;}
+    &:active {
+      transform: scale(1.03);
+      box-shadow: $box-shadow;
+    }
   }
 }
 footer .contacts .fu .row .media a {
@@ -40,12 +48,15 @@ footer .contacts .fu .row .media a {
   }
 }
 @media (max-width: 1670px) {
-  .main .hsw .row_content {
+  .main .how-seo-work .row_content {
     .line {left: 445px;}
   }
 }
 @media (min-width: 1501px) {
   .main {
+    h2 {font-size: 3.438rem;}
+    h3 {font-size: 1.25rem;}
+    p {font-size: 1.25rem;}
     .building-conversion-strategy {margin-bottom: 50px;}
     .appear-fp {padding-bottom: 60px;}
     .reasons-choosing-seo {
@@ -55,20 +66,20 @@ footer .contacts .fu .row .media a {
     .conversion-rate {
       justify-content: center; gap: 10px;
       margin-bottom: 60px;
-      .title_col {
+      .cr-info_col {
       max-width: 500px;
         h2 {
-          font-size: 3.438rem; margin-bottom: 35px;
+          margin-bottom: 35px;
           width: 90%;
         }
-        p {width: 80%; font-size: 1.6rem;}
+        p {width: 80%;}
         .btn_main-content {
           margin: 0 auto; max-width: 80%;
         }
       }
-     .content_col {
+     .cards_col {
         .row_content .row {justify-content: center;}
-        .border-wrapper {
+        .b-wr {
           padding: 35px 0 0 0px;
           p, span {margin: 15px auto 0 auto; width: 85%;}
           span {text-align: center;}
@@ -78,10 +89,31 @@ footer .contacts .fu .row .media a {
     // .our-services .col-xl {max-width: 165px;}
     .seo-marketing {
       margin-bottom: 0px; 
-      .text_col .btn_main-content {margin-bottom: 100px;} 
+      .text_col {
+        h2 {font-size: 3.438rem;}
+        p {margin-top: 30px;}
+        .btn_main-content {margin-bottom: 100px;} 
+      }
     }
-    .hsw {margin-bottom: 60px;}
-    .marketing-team {margin-bottom: 100px;}
+    .how-seo-work {margin-bottom: 60px;
+      .row_content  {
+        .cb_1 {
+          .business-strategy, .keyword-analysis {
+            p {font-size: 1.25rem; margin-top: 20px;}
+          }
+        }
+        .cb_2 {
+          p {font-size: 1.25rem; margin-top: 20px;}
+        }
+      }
+    }
+    .marketing-team {
+      margin: 0 auto 100px; max-width: 1160px;
+      .col_1 {margin: 0;}
+      .col_3 {
+        .block_top, .block_bottom {margin-left: 0;} 
+      }
+    }
     .pricing-plans {
       padding-top: 60px;
       margin-bottom: 100px;
@@ -99,8 +131,8 @@ footer .contacts .fu .row .media a {
     .companies {margin-bottom: 100px;}
     .news-case-studies {
       .btn_main-content {margin-bottom: 60px;}
-      .row {justify-content: center;
-      }
+      .row {justify-content: center;}
+      span {font-size: 1rem;}
     }
     .get-in-touch {
       padding-top: 60px;
@@ -108,7 +140,7 @@ footer .contacts .fu .row .media a {
     }
     .enquiry-form {
       padding-top: 80px;
-      .img__resp {justify-content: flex-end;}
+      // .img__resp {justify-content: flex-end;}
       .form_col {
         padding: 0;
         h2 {text-align: center;}
@@ -134,7 +166,8 @@ footer .contacts .fu .row .media a {
       padding: 75px 10px 76px 140px;
       .row_content {max-width: 100%;}
     }
-    .hsw .row {
+    .conversion-rate .cr-info_col h2 {max-width: 97%;}
+    .how-seo-work .row {
       .line {left: 385px;}
       .line_2 {right: 375px;}
     }
@@ -146,7 +179,7 @@ footer .contacts .fu .row .media a {
   }
 }
 @include media-breakpoint-down(xxl)  { // 1400px
-  .nav-wrapper .border-wrapper .menu {padding-right: 0px;}
+  .nav-wr .b-wr .menu {padding-right: 0px;}
   .main {
     .strategic-seo-marketing {
       padding: 75px 10px 76px 140px;
@@ -200,34 +233,38 @@ footer .contacts .fu .row .media a {
     .conversion-rate {
       padding: 96px 123px 80px 140px;
       margin-bottom: 60px;
-      gap: 40px;
-      .title_col {
+      // gap: 40px;
+      .cr-info_col {
         padding: 0;
         display: flex;
-        flex-direction: column; align-items: center;
-        // padding: 80px 40px 40px 80px;
+        flex-direction: column; justify-content: center;
         span {max-width: 100%;} 
-        p {width: 55%; margin: 26px 0 25px;}
+        p {margin: 26px 0 25px;}
         .btn {margin: 0 ;}
       }
-      .content_col {
+      .cards_col {
         text-align: center;
-        width: 100%; height: 100%; // Удалить эту строку!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        width: 600px;
+        // width: 100%; height: 100%; // Удалить эту строку!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         padding: 0;
         .row_content {justify-content: center;}
-        .border-wrapper {
+        .b-wr {
           padding: 35px 0 0 0;
           .row {justify-content: center;}
           p {max-width: 80%; margin: 0 auto;}
-        } 
+        }
+        .cards-block_1, .cards-block_2 {
+          .b-wr {max-width: 280px;}
+        }
       }
     }
     .our-services {
-      margin: 0 110px 30px 110px;
-      .border-wrapper {max-height: 110px;}
+      // margin: 0 110px 30px 110px;
+      margin: 0 123px 30px 140px;
+      .b-wr {max-height: 110px;}
     }
     .seo-marketing {
-      gap: 30px;
+      gap: 30px; margin: 0 123px 30px 140px;
       .col-xxl {padding: 0;}
       .text_col {
         p {
@@ -235,8 +272,9 @@ footer .contacts .fu .row .media a {
         .btn {margin: 0;}
       }
       .img_col {padding-bottom: 40px;}
+      .img__resp {display: flex;}
     }
-    .hsw {
+    .how-seo-work {
       margin-bottom: 60px;
       .row_content {
         justify-content: center; 
@@ -248,16 +286,16 @@ footer .contacts .fu .row .media a {
       }
     }
     .marketing-team {
-      margin: 0px;
-      .col {margin-bottom: 30px;}
-      .col, .col-xxl {
+      padding: 0 60px 0 60px;
+      margin: 0 auto 70px;
+      max-width: 1160px;
+      .col, .col-lg {
+        
         .block_bottom {margin-bottom: 0;}
         .col {justify-content: center;}
       }
       .col_3 {
-        display: flex;
-        .block_bottom {margin-left: 40px;}
-        .block_top {margin-left: 20px;}
+        .block_top, .block_bottom {margin-left: 20px;}
       }
     }
     .pricing-plans {
@@ -327,7 +365,7 @@ footer .contacts .fu .row .media a {
       justify-content: center;
       gap: 10px;
         .nav_col {padding-top: 0; text-align: center;}
-        .seoflow {max-width: 220px; text-align: center;}
+        .seoflow {max-width: 220px;}
         .ql {
           ul li {padding: 0;}
         }
@@ -346,7 +384,7 @@ footer .contacts .fu .row .media a {
   }
 }
 @media (max-width: 1300px) {
-  .main .hsw .row_content {
+  .main .how-seo-work .row_content {
     .line {left: 360px;}
     .line_2 {right: 455px;}
   }
@@ -354,7 +392,7 @@ footer .contacts .fu .row .media a {
 @include media-breakpoint-down(xl)  { // 1200px
   body, .wrapper {background-color: $indigo-200;}
   header {padding: 20px 60px 0 60px;}
-  .nav-wrapper {
+  .nav-wr {
     padding: 0 60px 0 60px;
     .menu {padding: 0 75px 0 75px;}
     .nav {justify-content: center; align-items: center;}
@@ -433,7 +471,6 @@ footer .contacts .fu .row .media a {
         p {
           width: 70%; padding: 0px; 
           font-size: 1.25rem; 
-          
         }
         .row {
           text-align: center; gap: 5px;
@@ -448,7 +485,7 @@ footer .contacts .fu .row .media a {
     }
     .conversion-rate {
       padding: 50px 60px 50px 60px;
-      .title_col {
+      .cr-info_col {
         padding: 0px 0 40px 0;
         
       }
@@ -458,13 +495,14 @@ footer .contacts .fu .row .media a {
       .row {
         justify-content: center;
         .col-xl {max-width: 270px;}
-        .border-wrapper {width: 167px; margin: 0 auto;}
+        .b-wr {width: 167px; margin: 0 auto;}
       }
     }
     .seo-marketing {
       .img__resp {display: none;}
     }
-    .hsw {
+    .how-seo-work {
+      padding: 58px 60px 100px 60px;
       .row_content {
         gap: 20px;
         .line, .line_2 {display: none;}
@@ -490,12 +528,8 @@ footer .contacts .fu .row .media a {
     padding: 0 40px 10px 80px;
     .contacts {
       gap: 5px;
-        .seoflow, .git {
-          max-width: 200px;
-        }
-        .ql, .services {
-          max-width: 140px;
-        }
+      .seoflow, .git {max-width: 200px;}
+      .ql, .services {max-width: 140px;}
     }
     .footer-bottom {
       justify-content: center;
@@ -506,10 +540,10 @@ footer .contacts .fu .row .media a {
 @include media-breakpoint-down(lg)  { // 992px
   body, .wrapper {background-color: $cyan-500;}
   .header {padding: 20px 20px 0 20px;}
-  .nav-wrapper {padding: 0 20px 0 20px;
+  .nav-wr {padding: 0 20px 0 20px;
     .menu {padding: 0 0px 0 0px;}
     .nav {justify-content: center; align-items: center;}
-    .border-wrapper .btn_main-content {width: 80px;}
+    .b-wr .btn_main-content {width: 80px;}
   }
   .main {
     .strategic-seo-marketing {
@@ -551,10 +585,15 @@ footer .contacts .fu .row .media a {
         }
       }
     }
-    .hsw {
+    .how-seo-work {
+      padding: 58px 20px 100px 20px;
       .row_content .cb_1 {max-width: 100%;}
+      h3 {
+        line-height: initial;
+      }
     }
     .marketing-team {
+      padding: 0 20px 0 20px;
       .col, .col-xxl {
         .block_top, .block_bottom {margin: 0; justify-content: flex-start;}
       }
@@ -587,8 +626,8 @@ footer .contacts .fu .row .media a {
       padding-bottom: 10px;
       justify-content: center;
       gap: 10px;
-      .nav_col {padding-top: 0; text-align: center;}
-      .seoflow {max-width: 220px; text-align: center;}
+      .nav_col {padding-top: 0;}
+      .seoflow {max-width: 220px;}
       .ql {
         ul li {padding: 0;}
       }
@@ -603,7 +642,7 @@ footer .contacts .fu .row .media a {
 }
 @include media-breakpoint-down(md)  { // 768px
   body, .wrapper {background-color: $teal-600;}
-  .nav-wrapper .border-wrapper .header-logo {max-width: 80px;}
+  .nav-wr .b-wr .header-logo {max-width: 80px;}
   .main {
     .strategic-seo-marketing {
       h2 {font-size: 3rem;}
@@ -640,9 +679,7 @@ footer .contacts .fu .row .media a {
     }
     .our-services {
       margin: 0 5px 30px 5px;
-      .row {
-        .col-xl {max-width: 160px;}
-      }
+      .row .col-xl {max-width: 160px;}
     }
     .marketing-team {
       .col_1 {margin-right: 0;}
@@ -675,56 +712,49 @@ footer .contacts .fu .row .media a {
 }
 @include media-breakpoint-down(sm) { // 576px
   body, .wrapper {background-color: $pink-600;}
-  .header-wrapper {
+  .header-wr {
     .header {
       padding-bottom: 110px;
       .row_content {
-        justify-content: center;
-        gap: 10px;
-
+        justify-content: center; gap: 10px;
       }
       .contacts {
         justify-content: center;
         .row {
-          flex-direction: column;
-          gap: 10px;
+          flex-direction: column; gap: 10px;
         }
       }
     }
-    .nav-wrapper {
-      height: auto;
-      .border-wrapper {
-        .header-logo {min-width: 90px;}
-        .menu-block {
-          display: flex;
-          width: auto;
-          text-align: center;
-          height: auto;
+    .nav-wr .b-wr {
+      .header-logo {min-width: 90px;}
+      .menu-block {
+        display: flex;
+        width: auto; height: auto;
+        text-align: center;
+        .menu {
+          display: initial;
+          padding: 0px 50px 0 50px;
+          border: 1px solid #000;
+          background-color: #000;
+          color: #F4AB00;
+          user-select: none;
+          .fa-bars {padding-left: 10px;}
+        }
+        .nav {
+          padding-top: 33px;
+          display: none;
+        }
+        &:hover { 
           .menu {
-            display: initial;
-            padding: 0px 50px 0 50px;
-            border: 1px solid #000;
-            background-color: #000;
-            color: #F4AB00;
-            user-select: none;
-            .fa-bars {padding-left: 10px;}
+            color: #fff;
           }
           .nav {
-            padding-top: 33px;
-            display: none;
+            display: flex; 
+            flex-direction: column; 
+            position: absolute;
+            li {width: 188px;}
           }
-          &:hover { 
-            .menu {
-              color: #fff;
-            }
-            .nav {
-              display: flex; 
-              flex-direction: column; 
-              position: absolute;
-              li {width: 188px;}
-            }
-          } 
-        }
+        } 
       }
     }
     .btn_main-content {max-width: 80px;}
@@ -760,13 +790,13 @@ footer .contacts .fu .row .media a {
     }
     .our-services {
       margin: 0 10px 30px 10px;
-      .row{
+      .row {
         gap: 2px;
-          .col-xl {max-width: 140px;}
-          .border-wrapper {
-            padding: 24px 0px 29px 0;
-            width: 140px;
-          }
+        .col-xl {max-width: 140px;}
+        .b-wr {
+          padding: 24px 0px 29px 0;
+          width: 140px;
+        }
       }
     }
     .enquiry-form {
@@ -826,7 +856,7 @@ footer .contacts .fu .row .media a {
       }
     }
   }
-  .nav-wrapper .border-wrapper {
+  .nav-wr .b-wr {
     justify-content: center; gap: 10px;
     padding-top: 5px;
     .header-logo {

@@ -1,13 +1,18 @@
 @media (hover: none) {
-  .news-case-studies .btn__transparent:hover, .pricing-plans .btn__transparent:hover {
-    background-color: #F4AB00 !important;
+  .header .row .contacts .col a:hover {
     color: #000 !important;
+  }
+}
+@media (hover: none) {
+  .header .row .media a:hover {
+    color: #fff !important;
   }
 }
 
 @media (hover: none) {
-  header .row a:hover {
-    color: #fff !important;
+  .get-in-touch .contacts-wr .git-contacts .col-xxl:active {
+    transform: scale(1.03);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -45,11 +50,20 @@
   }
 }
 @media (max-width: 1670px) {
-  .main .hsw .row_content .line {
+  .main .how-seo-work .row_content .line {
     left: 445px;
   }
 }
 @media (min-width: 1501px) {
+  .main h2 {
+    font-size: 3.438rem;
+  }
+  .main h3 {
+    font-size: 1.25rem;
+  }
+  .main p {
+    font-size: 1.25rem;
+  }
   .main .building-conversion-strategy {
     margin-bottom: 50px;
   }
@@ -64,46 +78,65 @@
     gap: 10px;
     margin-bottom: 60px;
   }
-  .main .conversion-rate .title_col {
+  .main .conversion-rate .cr-info_col {
     max-width: 500px;
   }
-  .main .conversion-rate .title_col h2 {
-    font-size: 3.438rem;
+  .main .conversion-rate .cr-info_col h2 {
     margin-bottom: 35px;
     width: 90%;
   }
-  .main .conversion-rate .title_col p {
+  .main .conversion-rate .cr-info_col p {
     width: 80%;
-    font-size: 1.6rem;
   }
-  .main .conversion-rate .title_col .btn_main-content {
+  .main .conversion-rate .cr-info_col .btn_main-content {
     margin: 0 auto;
     max-width: 80%;
   }
-  .main .conversion-rate .content_col .row_content .row {
+  .main .conversion-rate .cards_col .row_content .row {
     justify-content: center;
   }
-  .main .conversion-rate .content_col .border-wrapper {
+  .main .conversion-rate .cards_col .b-wr {
     padding: 35px 0 0 0px;
   }
-  .main .conversion-rate .content_col .border-wrapper p, .main .conversion-rate .content_col .border-wrapper span {
+  .main .conversion-rate .cards_col .b-wr p, .main .conversion-rate .cards_col .b-wr span {
     margin: 15px auto 0 auto;
     width: 85%;
   }
-  .main .conversion-rate .content_col .border-wrapper span {
+  .main .conversion-rate .cards_col .b-wr span {
     text-align: center;
   }
   .main .seo-marketing {
     margin-bottom: 0px;
   }
+  .main .seo-marketing .text_col h2 {
+    font-size: 3.438rem;
+  }
+  .main .seo-marketing .text_col p {
+    margin-top: 30px;
+  }
   .main .seo-marketing .text_col .btn_main-content {
     margin-bottom: 100px;
   }
-  .main .hsw {
+  .main .how-seo-work {
     margin-bottom: 60px;
   }
+  .main .how-seo-work .row_content .cb_1 .business-strategy p, .main .how-seo-work .row_content .cb_1 .keyword-analysis p {
+    font-size: 1.25rem;
+    margin-top: 20px;
+  }
+  .main .how-seo-work .row_content .cb_2 p {
+    font-size: 1.25rem;
+    margin-top: 20px;
+  }
   .main .marketing-team {
-    margin-bottom: 100px;
+    margin: 0 auto 100px;
+    max-width: 1160px;
+  }
+  .main .marketing-team .col_1 {
+    margin: 0;
+  }
+  .main .marketing-team .col_3 .block_top, .main .marketing-team .col_3 .block_bottom {
+    margin-left: 0;
   }
   .main .pricing-plans {
     padding-top: 60px;
@@ -135,6 +168,9 @@
   .main .news-case-studies .row {
     justify-content: center;
   }
+  .main .news-case-studies span {
+    font-size: 1rem;
+  }
   .main .get-in-touch {
     padding-top: 60px;
   }
@@ -144,9 +180,6 @@
   }
   .main .enquiry-form {
     padding-top: 80px;
-  }
-  .main .enquiry-form .img__resp {
-    justify-content: flex-end;
   }
   .main .enquiry-form .form_col {
     padding: 0;
@@ -174,10 +207,13 @@
   .main .strategic-seo-marketing .row_content {
     max-width: 100%;
   }
-  .main .hsw .row .line {
+  .main .conversion-rate .cr-info_col h2 {
+    max-width: 97%;
+  }
+  .main .how-seo-work .row .line {
     left: 385px;
   }
-  .main .hsw .row .line_2 {
+  .main .how-seo-work .row .line_2 {
     right: 375px;
   }
   .main .client-review .carousel-control-next {
@@ -188,7 +224,7 @@
   }
 }
 @media (max-width: 1399.98px) {
-  .nav-wrapper .border-wrapper .menu {
+  .nav-wr .b-wr .menu {
     padding-right: 0px;
   }
 
@@ -265,51 +301,52 @@
   .main .conversion-rate {
     padding: 96px 123px 80px 140px;
     margin-bottom: 60px;
-    gap: 40px;
   }
-  .main .conversion-rate .title_col {
+  .main .conversion-rate .cr-info_col {
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
   }
-  .main .conversion-rate .title_col span {
+  .main .conversion-rate .cr-info_col span {
     max-width: 100%;
   }
-  .main .conversion-rate .title_col p {
-    width: 55%;
+  .main .conversion-rate .cr-info_col p {
     margin: 26px 0 25px;
   }
-  .main .conversion-rate .title_col .btn {
+  .main .conversion-rate .cr-info_col .btn {
     margin: 0;
   }
-  .main .conversion-rate .content_col {
+  .main .conversion-rate .cards_col {
     text-align: center;
-    width: 100%;
-    height: 100%;
+    width: 600px;
     padding: 0;
   }
-  .main .conversion-rate .content_col .row_content {
+  .main .conversion-rate .cards_col .row_content {
     justify-content: center;
   }
-  .main .conversion-rate .content_col .border-wrapper {
+  .main .conversion-rate .cards_col .b-wr {
     padding: 35px 0 0 0;
   }
-  .main .conversion-rate .content_col .border-wrapper .row {
+  .main .conversion-rate .cards_col .b-wr .row {
     justify-content: center;
   }
-  .main .conversion-rate .content_col .border-wrapper p {
+  .main .conversion-rate .cards_col .b-wr p {
     max-width: 80%;
     margin: 0 auto;
   }
-  .main .our-services {
-    margin: 0 110px 30px 110px;
+  .main .conversion-rate .cards_col .cards-block_1 .b-wr, .main .conversion-rate .cards_col .cards-block_2 .b-wr {
+    max-width: 280px;
   }
-  .main .our-services .border-wrapper {
+  .main .our-services {
+    margin: 0 123px 30px 140px;
+  }
+  .main .our-services .b-wr {
     max-height: 110px;
   }
   .main .seo-marketing {
     gap: 30px;
+    margin: 0 123px 30px 140px;
   }
   .main .seo-marketing .col-xxl {
     padding: 0;
@@ -320,45 +357,41 @@
   .main .seo-marketing .img_col {
     padding-bottom: 40px;
   }
-  .main .hsw {
+  .main .seo-marketing .img__resp {
+    display: flex;
+  }
+  .main .how-seo-work {
     margin-bottom: 60px;
   }
-  .main .hsw .row_content {
+  .main .how-seo-work .row_content {
     justify-content: center;
     padding: 0;
   }
-  .main .hsw .row_content .line, .main .hsw .row_content .line_2 {
+  .main .how-seo-work .row_content .line, .main .how-seo-work .row_content .line_2 {
     margin-top: 28px;
     max-width: 140px;
   }
-  .main .hsw .row_content .line {
+  .main .how-seo-work .row_content .line {
     left: 400px;
   }
-  .main .hsw .row_content .line_2 {
+  .main .how-seo-work .row_content .line_2 {
     right: 455px;
   }
-  .main .hsw .row_content .cb_1 {
+  .main .how-seo-work .row_content .cb_1 {
     max-width: 55%;
   }
   .main .marketing-team {
-    margin: 0px;
+    padding: 0 60px 0 60px;
+    margin: 0 auto 70px;
+    max-width: 1160px;
   }
-  .main .marketing-team .col {
-    margin-bottom: 30px;
-  }
-  .main .marketing-team .col .block_bottom, .main .marketing-team .col-xxl .block_bottom {
+  .main .marketing-team .col .block_bottom, .main .marketing-team .col-lg .block_bottom {
     margin-bottom: 0;
   }
-  .main .marketing-team .col .col, .main .marketing-team .col-xxl .col {
+  .main .marketing-team .col .col, .main .marketing-team .col-lg .col {
     justify-content: center;
   }
-  .main .marketing-team .col_3 {
-    display: flex;
-  }
-  .main .marketing-team .col_3 .block_bottom {
-    margin-left: 40px;
-  }
-  .main .marketing-team .col_3 .block_top {
+  .main .marketing-team .col_3 .block_top, .main .marketing-team .col_3 .block_bottom {
     margin-left: 20px;
   }
   .main .pricing-plans {
@@ -462,7 +495,6 @@
   }
   .footer .contacts .seoflow {
     max-width: 220px;
-    text-align: center;
   }
   .footer .contacts .ql ul li {
     padding: 0;
@@ -492,10 +524,10 @@
   }
 }
 @media (max-width: 1300px) {
-  .main .hsw .row_content .line {
+  .main .how-seo-work .row_content .line {
     left: 360px;
   }
-  .main .hsw .row_content .line_2 {
+  .main .how-seo-work .row_content .line_2 {
     right: 455px;
   }
 }
@@ -508,13 +540,13 @@
     padding: 20px 60px 0 60px;
   }
 
-  .nav-wrapper {
+  .nav-wr {
     padding: 0 60px 0 60px;
   }
-  .nav-wrapper .menu {
+  .nav-wr .menu {
     padding: 0 75px 0 75px;
   }
-  .nav-wrapper .nav {
+  .nav-wr .nav {
     justify-content: center;
     align-items: center;
   }
@@ -643,7 +675,7 @@
   .main .conversion-rate {
     padding: 50px 60px 50px 60px;
   }
-  .main .conversion-rate .title_col {
+  .main .conversion-rate .cr-info_col {
     padding: 0px 0 40px 0;
   }
   .main .our-services {
@@ -655,20 +687,23 @@
   .main .our-services .row .col-xl {
     max-width: 270px;
   }
-  .main .our-services .row .border-wrapper {
+  .main .our-services .row .b-wr {
     width: 167px;
     margin: 0 auto;
   }
   .main .seo-marketing .img__resp {
     display: none;
   }
-  .main .hsw .row_content {
+  .main .how-seo-work {
+    padding: 58px 60px 100px 60px;
+  }
+  .main .how-seo-work .row_content {
     gap: 20px;
   }
-  .main .hsw .row_content .line, .main .hsw .row_content .line_2 {
+  .main .how-seo-work .row_content .line, .main .how-seo-work .row_content .line_2 {
     display: none;
   }
-  .main .hsw .row_content .cb_1 {
+  .main .how-seo-work .row_content .cb_1 {
     max-width: 80%;
   }
   .main .client-review .carousel-control-next {
@@ -724,17 +759,17 @@
     padding: 20px 20px 0 20px;
   }
 
-  .nav-wrapper {
+  .nav-wr {
     padding: 0 20px 0 20px;
   }
-  .nav-wrapper .menu {
+  .nav-wr .menu {
     padding: 0 0px 0 0px;
   }
-  .nav-wrapper .nav {
+  .nav-wr .nav {
     justify-content: center;
     align-items: center;
   }
-  .nav-wrapper .border-wrapper .btn_main-content {
+  .nav-wr .b-wr .btn_main-content {
     width: 80px;
   }
 
@@ -786,8 +821,17 @@
     max-width: 15%;
     margin-right: 60px;
   }
-  .main .hsw .row_content .cb_1 {
+  .main .how-seo-work {
+    padding: 58px 20px 100px 20px;
+  }
+  .main .how-seo-work .row_content .cb_1 {
     max-width: 100%;
+  }
+  .main .how-seo-work h3 {
+    line-height: initial;
+  }
+  .main .marketing-team {
+    padding: 0 20px 0 20px;
   }
   .main .marketing-team .col .block_top, .main .marketing-team .col .block_bottom, .main .marketing-team .col-xxl .block_top, .main .marketing-team .col-xxl .block_bottom {
     margin: 0;
@@ -836,11 +880,9 @@
   }
   .footer .contacts .nav_col {
     padding-top: 0;
-    text-align: center;
   }
   .footer .contacts .seoflow {
     max-width: 220px;
-    text-align: center;
   }
   .footer .contacts .ql ul li {
     padding: 0;
@@ -863,7 +905,7 @@
     background-color: #1aa179;
   }
 
-  .nav-wrapper .border-wrapper .header-logo {
+  .nav-wr .b-wr .header-logo {
     max-width: 80px;
   }
 
@@ -954,33 +996,30 @@
     background-color: #ab296a;
   }
 
-  .header-wrapper .header {
+  .header-wr .header {
     padding-bottom: 110px;
   }
-  .header-wrapper .header .row_content {
+  .header-wr .header .row_content {
     justify-content: center;
     gap: 10px;
   }
-  .header-wrapper .header .contacts {
+  .header-wr .header .contacts {
     justify-content: center;
   }
-  .header-wrapper .header .contacts .row {
+  .header-wr .header .contacts .row {
     flex-direction: column;
     gap: 10px;
   }
-  .header-wrapper .nav-wrapper {
-    height: auto;
-  }
-  .header-wrapper .nav-wrapper .border-wrapper .header-logo {
+  .header-wr .nav-wr .b-wr .header-logo {
     min-width: 90px;
   }
-  .header-wrapper .nav-wrapper .border-wrapper .menu-block {
+  .header-wr .nav-wr .b-wr .menu-block {
     display: flex;
     width: auto;
-    text-align: center;
     height: auto;
+    text-align: center;
   }
-  .header-wrapper .nav-wrapper .border-wrapper .menu-block .menu {
+  .header-wr .nav-wr .b-wr .menu-block .menu {
     display: initial;
     padding: 0px 50px 0 50px;
     border: 1px solid #000;
@@ -988,25 +1027,25 @@
     color: #F4AB00;
     user-select: none;
   }
-  .header-wrapper .nav-wrapper .border-wrapper .menu-block .menu .fa-bars {
+  .header-wr .nav-wr .b-wr .menu-block .menu .fa-bars {
     padding-left: 10px;
   }
-  .header-wrapper .nav-wrapper .border-wrapper .menu-block .nav {
+  .header-wr .nav-wr .b-wr .menu-block .nav {
     padding-top: 33px;
     display: none;
   }
-  .header-wrapper .nav-wrapper .border-wrapper .menu-block:hover .menu {
+  .header-wr .nav-wr .b-wr .menu-block:hover .menu {
     color: #fff;
   }
-  .header-wrapper .nav-wrapper .border-wrapper .menu-block:hover .nav {
+  .header-wr .nav-wr .b-wr .menu-block:hover .nav {
     display: flex;
     flex-direction: column;
     position: absolute;
   }
-  .header-wrapper .nav-wrapper .border-wrapper .menu-block:hover .nav li {
+  .header-wr .nav-wr .b-wr .menu-block:hover .nav li {
     width: 188px;
   }
-  .header-wrapper .btn_main-content {
+  .header-wr .btn_main-content {
     max-width: 80px;
   }
 
@@ -1048,7 +1087,7 @@
   .main .our-services .row .col-xl {
     max-width: 140px;
   }
-  .main .our-services .row .border-wrapper {
+  .main .our-services .row .b-wr {
     padding: 24px 0px 29px 0;
     width: 140px;
   }
@@ -1102,20 +1141,20 @@
     padding-top: 160px;
   }
 
-  .nav-wrapper .border-wrapper {
+  .nav-wr .b-wr {
     justify-content: center;
     gap: 10px;
     padding-top: 5px;
   }
-  .nav-wrapper .border-wrapper .header-logo {
+  .nav-wr .b-wr .header-logo {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  .nav-wrapper .border-wrapper .menu-block {
+  .nav-wr .b-wr .menu-block {
     order: 3;
   }
-  .nav-wrapper .border-wrapper .btn_main-content {
+  .nav-wr .b-wr .btn_main-content {
     max-width: 80px;
   }
 
