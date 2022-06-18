@@ -17,9 +17,9 @@
     &:hover {
       transition: 0s all; background-color: #111; 
     }
-    @media (hover: none) {
-      &:hover {background-color: #F4AB00; color:initial; transition: 0s all;}
-    }
+    // @media (hover: none) {
+    //   &:hover {background-color: #F4AB00; color:initial; transition: 0s all;}
+    // }
     &:active {
       transition: 0s all; background-color: #fff;
       color:#000;
