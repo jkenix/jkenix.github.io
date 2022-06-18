@@ -247,13 +247,6 @@ header .row_content .media a:active {
   transition: 0s all;
   background-color: #111;
 }
-@media (hover: none) {
-  .nav-wr .b-wr .btn_main-content:hover {
-    background-color: #F4AB00;
-    color: initial;
-    transition: 0s all;
-  }
-}
 .nav-wr .b-wr .btn_main-content:active {
   transition: 0s all;
   background-color: #fff;
@@ -308,13 +301,6 @@ header .row_content .media a:active {
 .main .strategic-seo-marketing .text_col .btn_main-content:hover {
   transition: 0s all;
   background-color: #111;
-}
-@media (hover: none) {
-  .main .strategic-seo-marketing .text_col .btn_main-content:hover {
-    background-color: #F4AB00;
-    color: initial;
-    transition: 0s all;
-  }
 }
 .main .strategic-seo-marketing .text_col .btn_main-content:active {
   transition: 0s all;
@@ -500,13 +486,6 @@ header .row_content .media a:active {
   transition: 0s all;
   background-color: #111;
 }
-@media (hover: none) {
-  .main .conversion-rate .cr-info_col .btn_main-content:hover {
-    background-color: #F4AB00;
-    color: initial;
-    transition: 0s all;
-  }
-}
 .main .conversion-rate .cr-info_col .btn_main-content:active {
   transition: 0s all;
   background-color: #fff;
@@ -636,13 +615,6 @@ header .row_content .media a:active {
   transition: 0s all;
   background-color: #111;
 }
-@media (hover: none) {
-  .main .seo-marketing .text_col .btn_main-content:hover {
-    background-color: #F4AB00;
-    color: initial;
-    transition: 0s all;
-  }
-}
 .main .seo-marketing .text_col .btn_main-content:active {
   transition: 0s all;
   background-color: #fff;
@@ -680,65 +652,43 @@ header .row_content .media a:active {
   margin: 44px 0 90px 0;
 }
 .main .how-seo-work .row_content {
-  padding: 0 0px 0 60px;
+  padding: 0 40px 0 60px;
   max-width: 1160px;
   margin: 0 auto;
   text-align: center;
   justify-content: space-between;
 }
-.main .how-seo-work .row_content .business-strategy .col, .main .how-seo-work .row_content .keyword-analysis .col, .main .how-seo-work .row_content .cb_2 .col {
+.main .how-seo-work .row_content span {
+  font-size: 1.25rem;
+}
+.main .how-seo-work .row_content .business-strategy, .main .how-seo-work .row_content .keyword-analysis, .main .how-seo-work .row_content .optimization {
+  max-width: 266px;
+}
+.main .how-seo-work .row_content .business-strategy .col, .main .how-seo-work .row_content .keyword-analysis .col, .main .how-seo-work .row_content .optimization .col {
   padding-bottom: 26px;
 }
-.main .how-seo-work .row_content .business-strategy p, .main .how-seo-work .row_content .keyword-analysis p, .main .how-seo-work .row_content .cb_2 p {
-  width: 245px;
-  text-align: center;
+.main .how-seo-work .row_content .business-strategy p, .main .how-seo-work .row_content .keyword-analysis p, .main .how-seo-work .row_content .optimization p {
   line-height: 28px;
-  font-size: 1rem;
-}
-.main .how-seo-work .row_content .line, .main .how-seo-work .row_content .line_2 {
-  display: flex;
-  position: absolute;
-  max-width: 267px;
-  width: auto;
-  margin-top: 200px;
-}
-.main .how-seo-work .row_content .line, .main .how-seo-work .row_content .line_2 {
-  margin-top: 28px;
-}
-.main .how-seo-work .row_content .line {
-  left: 485px;
-}
-.main .how-seo-work .row_content .line_2 {
-  right: 420px;
-}
-.main .how-seo-work .row_content .cb_1 {
-  max-width: 60%;
-  display: flex;
-  justify-content: space-between;
-}
-.main .how-seo-work .row_content .cb_1 .business-strategy, .main .how-seo-work .row_content .cb_1 .keyword-analysis {
-  width: 266px;
-}
-.main .how-seo-work .row_content .cb_1 .business-strategy p, .main .how-seo-work .row_content .cb_1 .keyword-analysis p {
   font-size: 1rem;
   width: 90%;
   margin: 10px auto 0 auto;
 }
-.main .how-seo-work .row_content .cb_1 span {
-  font-size: 1.25rem;
+.main .how-seo-work .row_content .business-strategy p, .main .how-seo-work .row_content .keyword-analysis p {
+  font-size: 1rem;
+  width: 90%;
+  margin: 10px auto 0 auto;
 }
-.main .how-seo-work .row_content .cb_2 {
-  width: 356px;
+.main .how-seo-work .row_content .optimization {
+  max-width: 266px;
 }
-.main .how-seo-work .row_content .cb_2 .col_img {
+.main .how-seo-work .row_content .optimization .col_img {
   justify-content: center;
   display: flex;
 }
-.main .how-seo-work .row_content .cb_2 span {
+.main .how-seo-work .row_content .optimization span {
   font-size: 1.188rem;
 }
-.main .how-seo-work .row_content .cb_2 p {
-  width: 64%;
+.main .how-seo-work .row_content .optimization p {
   margin: 10px auto 0 auto;
 }
 .main .marketing-team {
@@ -808,7 +758,7 @@ header .row_content .media a:active {
   max-width: 157px;
 }
 .main .pricing-plans {
-  padding: 130px 125px 110px 140px;
+  padding: 130px 123px 110px 140px;
   margin-bottom: 225px;
   background-color: #5B25B3;
 }
@@ -820,26 +770,26 @@ header .row_content .media a:active {
   font-size: 2.375rem;
 }
 .main .pricing-plans h3 {
-  margin-bottom: 55px;
+  margin-bottom: 53px;
   line-height: 50px;
 }
 .main .pricing-plans .plans {
   justify-content: space-between;
 }
-.main .pricing-plans .col, .main .pricing-plans .col-xxl {
+.main .pricing-plans .col-xl {
   max-width: 360px;
   background-color: #fff;
   border: 1px solid #fff;
 }
 .main .pricing-plans .plan-silver, .main .pricing-plans .plan-gold, .main .pricing-plans .plan-platinum {
-  padding: 35px 38px 47px 30px;
+  padding: 35px 38px 52px 30px;
   border-radius: 15px;
 }
 .main .pricing-plans .plan-silver .pt, .main .pricing-plans .plan-gold .pt, .main .pricing-plans .plan-platinum .pt {
   color: #F4AB00;
   display: flex;
-  font-size: 1.375rem;
   justify-content: center;
+  font-size: 1.375rem;
 }
 .main .pricing-plans .plan-silver .row_price, .main .pricing-plans .plan-gold .row_price, .main .pricing-plans .plan-platinum .row_price {
   color: #5B25B3;
@@ -975,7 +925,7 @@ header .row_content .media a:active {
   justify-content: flex-end;
 }
 .main .news-case-studies {
-  padding: 79px 118px 0 140px;
+  padding: 79px 123px 141px 140px;
   text-align: center;
   justify-content: center;
   background-color: #E5D8FA;
@@ -992,7 +942,7 @@ header .row_content .media a:active {
   margin-bottom: 60px;
   justify-content: center;
 }
-.main .news-case-studies .col, .main .news-case-studies .col-xxl {
+.main .news-case-studies .col-xl {
   background-color: #fff;
   max-width: 376px;
 }
@@ -1022,7 +972,6 @@ header .row_content .media a:active {
 .main .news-case-studies .btn__transparent {
   width: 179px;
   height: 54px;
-  margin: 0 0 140px 0;
   color: #2C1258;
 }
 .main .news-case-studies .btn__transparent:hover {
@@ -1133,7 +1082,7 @@ header .row_content .media a:active {
   justify-content: space-between;
 }
 .main .enquiry-form .form_col form .col {
-  max-width: 255px;
+  max-width: 262px;
 }
 .main .enquiry-form .form_col form .col input {
   height: 52px;
@@ -1157,13 +1106,6 @@ header .row_content .media a:active {
 .main .enquiry-form .form_col form .btn_main-content:hover {
   transition: 0s all;
   background-color: #111;
-}
-@media (hover: none) {
-  .main .enquiry-form .form_col form .btn_main-content:hover {
-    background-color: #F4AB00;
-    color: initial;
-    transition: 0s all;
-  }
 }
 .main .enquiry-form .form_col form .btn_main-content:active {
   transition: 0s all;

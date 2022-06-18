@@ -3,31 +3,31 @@
 @import 'bootstrap/variables.scss'; 
 @import 'bootstrap/mixins.scss';
 // Media for mobile devices
-.header .row  {
-  .contacts .col a {
-    @media (hover: none) {
-      &:hover {color:#000 !important;}
-    }
-  }
-  .media a {
-    @media (hover: none) {
-      &:hover {color:#fff !important;}
-    }
-  }
-}
-.get-in-touch .contacts-wr .git-contacts .col-xxl {
-  @media (hover: none) {
-    &:active {
-      transform: scale(1.03);
-      box-shadow: $box-shadow;
-    }
-  }
-}
-footer .contacts .fu .row .media a {
-  @media (hover: none) {
-    &:hover {color:#F4AB00 !important;}
-  }
-}
+// .header .row  {
+//   .contacts .col a {
+//     @media (hover: none) {
+//       &:hover {color:#000 !important;}
+//     }
+//   }
+//   .media a {
+//     @media (hover: none) {
+//       &:hover {color:#fff !important;}
+//     }
+//   }
+// }
+// .get-in-touch .contacts-wr .git-contacts .col-xxl {
+//   @media (hover: none) {
+//     &:active {
+//       transform: scale(1.03);
+//       box-shadow: $box-shadow;
+//     }
+//   }
+// }
+// footer .contacts .fu .row .media a {
+//   @media (hover: none) {
+//     &:hover {color:#F4AB00 !important;}
+//   }
+// }
 // Media main
 @media (min-width: 2099px) {
   #scroll_top {
@@ -45,11 +45,6 @@ footer .contacts .fu .row .media a {
     flex-direction: column; 
     justify-content: center; align-items: center;
     gap: 10px;
-  }
-}
-@media (max-width: 1670px) {
-  .main .how-seo-work .row_content {
-    .line {left: 445px;}
   }
 }
 @media (min-width: 1501px) {
@@ -86,7 +81,6 @@ footer .contacts .fu .row .media a {
         }
       }
     } 
-    // .our-services .col-xl {max-width: 165px;}
     .seo-marketing {
       margin-bottom: 0px; 
       .text_col {
@@ -95,16 +89,12 @@ footer .contacts .fu .row .media a {
         .btn_main-content {margin-bottom: 100px;} 
       }
     }
-    .how-seo-work {margin-bottom: 60px;
+    .how-seo-work {
+      margin-bottom: 60px;
       .row_content  {
-        .cb_1 {
-          .business-strategy, .keyword-analysis {
+          .business-strategy, .keyword-analysis, .optimization {
             p {font-size: 1.25rem; margin-top: 20px;}
           }
-        }
-        .cb_2 {
-          p {font-size: 1.25rem; margin-top: 20px;}
-        }
       }
     }
     .marketing-team {
@@ -167,10 +157,6 @@ footer .contacts .fu .row .media a {
       .row_content {max-width: 100%;}
     }
     .conversion-rate .cr-info_col h2 {max-width: 97%;}
-    .how-seo-work .row {
-      .line {left: 385px;}
-      .line_2 {right: 375px;}
-    }
     .client-review {
       .carousel-control-next {margin-right: 300px;}
       .carousel-control-prev {margin-left: 300px;}
@@ -240,7 +226,7 @@ footer .contacts .fu .row .media a {
         flex-direction: column; justify-content: center;
         span {max-width: 100%;} 
         p {margin: 26px 0 25px;}
-        .btn {margin: 0 ;}
+        .btn {margin: 0;}
       }
       .cards_col {
         text-align: center;
@@ -259,7 +245,6 @@ footer .contacts .fu .row .media a {
       }
     }
     .our-services {
-      // margin: 0 110px 30px 110px;
       margin: 0 123px 30px 140px;
       .b-wr {max-height: 110px;}
     }
@@ -279,31 +264,33 @@ footer .contacts .fu .row .media a {
       .row_content {
         justify-content: center; 
         padding: 0;
-        .line, .line_2 {margin-top: 28px; max-width: 140px;}
-        .line {left: 400px;}
-        .line_2 {right: 455px;}
-        .cb_1 {max-width:55%;}
       }
     }
     .marketing-team {
-      padding: 0 60px 0 60px;
       margin: 0 auto 70px;
       max-width: 1160px;
       .col, .col-lg {
-        
         .block_bottom {margin-bottom: 0;}
         .col {justify-content: center;}
       }
+      .col_1 {margin: 0;}
       .col_3 {
-        .block_top, .block_bottom {margin-left: 20px;}
+        .block_top, .block_bottom {margin-left: 10px;}
       }
     }
     .pricing-plans {
-      padding: 60px 20px 110px 20px;
+      padding-top: 60px; padding-bottom: 60px;
       margin-bottom: 40px;
+      h3 {margin-bottom: 20px;}
       .plans {
         justify-content: center;
         gap: 20px;
+        .row_price {padding-left: 50px; font-size: 2.5rem;}
+        .row_type .val {max-width: 115px;}
+        .ul-col {
+          padding-bottom: 10px; 
+          li {padding-bottom: 15px;}
+        }
       }
     }
     .client-review {
@@ -323,9 +310,8 @@ footer .contacts .fu .row .media a {
       .col_3 {max-width: 183px;}
     }
     .news-case-studies {
-      padding: 79px 11.5px 0 11.5px;
+      padding: 79px 11.5px 60px 11.5px;
       .row {justify-content: center;}
-      .btn_main-content {margin-bottom: 60px;}
     }
     .get-in-touch {
       padding-top: 60px;
@@ -381,12 +367,6 @@ footer .contacts .fu .row .media a {
           .media {width: auto; height: 25px;}
         }
     }
-  }
-}
-@media (max-width: 1300px) {
-  .main .how-seo-work .row_content {
-    .line {left: 360px;}
-    .line_2 {right: 455px;}
   }
 }
 @include media-breakpoint-down(xl)  { // 1200px
@@ -457,25 +437,24 @@ footer .contacts .fu .row .media a {
         .col_content-2 {padding-top: 210px;}
       }
     }
-    .appear-fp, .reasons-choosing-seo {
-
+    .appear-fp, .reasons-choosing-seo { // Common classes
+      .text_col {
+        display: flex; flex-direction: column;
+        align-items: center;
+        p {
+          width: 55%; padding: 0px; 
+          font-size: 1.25rem; 
+        }
+      }
     }
     .appear-fp {
       gap: 55px;
       margin: 0 60px 0 60px;
       padding-left: 0; padding-right: 0;
       .img__resp {display: none;}
-      .text_col {
-        display: flex; flex-direction: column;
-        align-items: center;
-        p {
-          width: 70%; padding: 0px; 
-          font-size: 1.25rem; 
-        }
-        .row {
-          text-align: center; gap: 5px;
-          ul li {font-size: 1.25rem;}
-        }
+      .text_col .row {
+        text-align: center; gap: 5px;
+        ul li {font-size: 1.25rem;}
       }
       .check_col {height: 154px;}
     }
@@ -485,13 +464,17 @@ footer .contacts .fu .row .media a {
     }
     .conversion-rate {
       padding: 50px 60px 50px 60px;
+      margin-bottom: 30px;
+      justify-content: center;
       .cr-info_col {
-        padding: 0px 0 40px 0;
-        
+        padding-bottom: 40px; 
+        max-width: 489px; 
+        align-items: center;
+        p {width: 80%; margin: 26px auto 26px;}
       }
     }
     .our-services {
-      margin: 0 60px 30px 60px;
+      margin: 0 60px 0px 60px;
       .row {
         justify-content: center;
         .col-xl {max-width: 270px;}
@@ -499,24 +482,30 @@ footer .contacts .fu .row .media a {
       }
     }
     .seo-marketing {
+      margin-left: 60px; margin-right: 60px;
+      
+      .text_col {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0 0 0;
+        p {width: 55%;}
+      }
       .img__resp {display: none;}
     }
     .how-seo-work {
-      padding: 58px 60px 100px 60px;
-      .row_content {
-        gap: 20px;
-        .line, .line_2 {display: none;}
-        .cb_1 {max-width: 80%;}
-      }
+      padding: 40px 60px 60px 60px;
+      margin-bottom: 30px;
     }
+    .marketing-team {padding: 0 60px 0 60px;}
+    .pricing-plans {padding: 60px}
     .client-review {
       .carousel-control-next {margin-right: 200px;}
       .carousel-control-prev {margin-left: 200px;}
     }
     .news-case-studies {
-      padding: 60px 30px 0 30px;
+      padding: 60px 30px 40px 30px;
       .content {margin-bottom: 30px;}
-      .btn_main-content {margin-bottom: 40px;}
     }
     .enquiry-form {
       padding-top: 280px;
@@ -566,37 +555,48 @@ footer .contacts .fu .row .media a {
       p {width: 85%;}
       .as-content .col_content-2 {padding-top: 210px;}
     }
-    .conversion-rate {padding: 0 40px 30px 40px;}
+    .appear-fp, .reasons-choosing-seo  { // Common classes
+      .text_col p {
+        margin: 0 auto 20px auto;
+      }
+    }
+    .appear-fp {}
+    .reasons-choosing-seo {
+      .text_col {
+        .row {justify-content: center; width: 100%;}
+        .text-stat_col {
+          max-width: 15%;
+        }
+      }
+    }
+    .conversion-rate {
+      padding: 50px 40px 30px 40px;
+    }
     .our-services {
       margin: 0 20px 30px 20px;
       .row .col-xl {max-width: 235px;}
     }
-    .reasons-choosing-seo {
-      .text_col{
-        width: 100%;
-        p {
-           width: 50%; 
-          margin: 0 auto 20px auto;
-        }
-        .row {justify-content: center; width: 100%;}
-        .text-stat_col {
-          max-width: 15%;
-          margin-right: 60px;
-        }
-      }
-    }
+   
     .how-seo-work {
-      padding: 58px 20px 100px 20px;
-      .row_content .cb_1 {max-width: 100%;}
-      h3 {
-        line-height: initial;
-      }
+      padding: 40px 20px 40px 20px;
+      h3 {line-height: initial;}
     }
     .marketing-team {
-      padding: 0 20px 0 20px;
-      .col, .col-xxl {
-        .block_top, .block_bottom {margin: 0; justify-content: flex-start;}
+      // padding: 0 20px 0 20px;
+      .team {gap: 15px;}
+      .col_1, .col_2, .col_3 { // Common classes
+        .block_top {margin-bottom: 10px;}
       }
+      .col_1 {
+        .block_top, .block_bottom {justify-content: flex-end;}
+      }
+      .col_2 {
+        .block_top, .block_bottom {justify-content: flex-start;}
+      }
+    }
+    .pricing-plans {
+      padding: 60px 20px 60px 20px;
+      .col-xl {max-width: 345.5px;}
     }
     .client-review {
       .carousel-control-next {margin-right: 100px;}
@@ -677,14 +677,23 @@ footer .contacts .fu .row .media a {
         .col_content-2 {padding-top: 230px;}
       }
     }
+    .reasons-choosing-seo {}
     .our-services {
       margin: 0 5px 30px 5px;
-      .row .col-xl {max-width: 160px;}
+      .row .col-xl {max-width: 170px;}
     }
-    .marketing-team {
-      .col_1 {margin-right: 0;}
-      .col .col, .col-xxl .col {justify-content: center;}
-      .col-xxl {flex-direction: column;}
+    .how-seo-work {
+      .row {gap: 20px;}
+      h3 {margin-bottom: 30px;}
+    }
+    .marketing-team {padding: 0 20px 0 20px;}
+    .pricing-plans {
+      padding-top: 40px; padding-bottom: 40px;
+      .col-xl {
+        padding: 15px 38px 15px 30px;
+        .row_type {margin-bottom: 15px;}
+        .ul-col {padding: 0;}
+      }
     }
     .client-review {
       .carousel-control-next, .carousel-control-prev {margin: 0;}
@@ -693,9 +702,7 @@ footer .contacts .fu .row .media a {
       img {width: 450px;}
       .content {.col-xxl, .col, .row {max-width: 450px;}}
     }
-    .get-in-touch .contacts-wr .git-contacts .col-xxl {
-      max-width: 340px;
-    }
+    .get-in-touch .contacts-wr .git-contacts .col-xxl {max-width: 340px;}
     .enquiry-form {
       padding-top: 550px;
       padding-left: 20px;
@@ -745,9 +752,7 @@ footer .contacts .fu .row .media a {
           display: none;
         }
         &:hover { 
-          .menu {
-            color: #fff;
-          }
+          .menu {color: #fff;}
           .nav {
             display: flex; 
             flex-direction: column; 
@@ -772,9 +777,7 @@ footer .contacts .fu .row .media a {
     .seo-marketing-agency {
       .as-content {
         .col, .col-xl {padding-top: 0px;}
-        .col_content-1 {
-          padding: 40px 70px 330px 70px;
-        }
+        .col_content-1 {padding: 40px 70px 330px 70px;}
       }
     }
     .building-conversion-strategy {
@@ -783,9 +786,12 @@ footer .contacts .fu .row .media a {
           h2 {padding-top: 45px;}
           p {width: 90%;}
         }
-        .col_content-2 {
-          padding-top: 220px;
-        }
+        .col_content-2 {padding-top: 220px;}
+      }
+    }
+    .marketing-team {
+      .col_1, .col_2 {
+        .block_top, .block_bottom {justify-content: center;}
       }
     }
     .our-services {
@@ -836,9 +842,7 @@ footer .contacts .fu .row .media a {
       }
     }
     .seo-marketing-agency  .as-content{
-      .col_content-1 {
-        padding: 40px 0px 310px 0px;
-      }
+      .col_content-1 {padding: 40px 0px 310px 0px;}
     }
     .building-conversion-strategy {
       .as-content {
@@ -850,9 +854,7 @@ footer .contacts .fu .row .media a {
             width: 100%; 
           }
         }
-        .col_content-2 {
-          padding-top: 160px;
-        }
+        .col_content-2 {padding-top: 160px;}
       }
     }
   }
