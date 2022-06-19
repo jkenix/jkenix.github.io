@@ -964,15 +964,13 @@ header .row_content .media a:active {
   margin: 18px auto 0 auto;
   padding-bottom: 27px;
 }
-.main .news-case-studies .btn {
-  font-size: 1rem;
-  border: 2px solid #2C1258;
-  background-color: transparent;
-}
 .main .news-case-studies .btn__transparent {
   width: 179px;
   height: 54px;
   color: #2C1258;
+  font-size: 1rem;
+  border: 2px solid #2C1258;
+  background-color: transparent;
 }
 .main .news-case-studies .btn__transparent:hover {
   transition: 0s all;

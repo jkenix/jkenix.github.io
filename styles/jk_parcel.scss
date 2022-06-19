@@ -589,15 +589,12 @@ header {
       width: 90%; margin: 18px auto 0 auto;
       padding-bottom: 27px;
     }
-    .btn {
+    .btn__transparent {
+      width: 179px; height: 54px;
+      color: #2C1258;
       font-size: 1rem; 
       border: 2px solid #2C1258; 
       background-color: transparent;
-    }
-    .btn__transparent {
-      width: 179px; height: 54px;
-      // margin: 0 0 140px 0;
-      color: #2C1258;
       &:hover {
         transition: 0s all; background-color: #F4AB00; 
         color: #fff; 

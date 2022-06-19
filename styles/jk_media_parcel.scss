@@ -2,36 +2,11 @@
 @import 'bootstrap/functions';
 @import 'bootstrap/variables.scss'; 
 @import 'bootstrap/mixins.scss';
-// Media for mobile devices
-// .header .row  {
-//   .contacts .col a {
-//     @media (hover: none) {
-//       &:hover {color:#000 !important;}
-//     }
-//   }
-//   .media a {
-//     @media (hover: none) {
-//       &:hover {color:#fff !important;}
-//     }
-//   }
-// }
-// .get-in-touch .contacts-wr .git-contacts .col-xxl {
-//   @media (hover: none) {
-//     &:active {
-//       transform: scale(1.03);
-//       box-shadow: $box-shadow;
-//     }
-//   }
-// }
-// footer .contacts .fu .row .media a {
-//   @media (hover: none) {
-//     &:hover {color:#F4AB00 !important;}
-//   }
-// }
 // Media main
 @media (min-width: 2099px) {
   #scroll_top {
-    width: 100px; height: 100px; font-size: 100px;
+    width: 100px; height: 100px; 
+    font-size: 100px;
   }
 }
 @media (min-width: 1921px) {
@@ -54,23 +29,18 @@
     p {font-size: 1.25rem;}
     .building-conversion-strategy {margin-bottom: 50px;}
     .appear-fp {padding-bottom: 60px;}
-    .reasons-choosing-seo {
-      padding-bottom: 60px;
-      // .text_col {padding-left: 120px;}
-    }
+    .reasons-choosing-seo {padding-bottom: 60px;}
     .conversion-rate {
       justify-content: center; gap: 10px;
       margin-bottom: 60px;
       .cr-info_col {
-      max-width: 500px;
+        max-width: 500px;
         h2 {
           margin-bottom: 35px;
           width: 90%;
         }
         p {width: 80%;}
-        .btn_main-content {
-          margin: 0 auto; max-width: 80%;
-        }
+        .btn_main-content {margin: 0 auto; max-width: 80%;}
       }
      .cards_col {
         .row_content .row {justify-content: center;}
@@ -92,9 +62,9 @@
     .how-seo-work {
       margin-bottom: 60px;
       .row_content  {
-          .business-strategy, .keyword-analysis, .optimization {
-            p {font-size: 1.25rem; margin-top: 20px;}
-          }
+        .business-strategy, .keyword-analysis, .optimization {
+          p {font-size: 1.25rem; margin-top: 20px;}
+        }
       }
     }
     .marketing-team {
@@ -107,10 +77,7 @@
     .pricing-plans {
       padding-top: 60px;
       margin-bottom: 100px;
-      .plans {
-        gap: 50px;
-        justify-content: center;
-      }
+      .plans {justify-content: center; gap: 50px;}
     }
     .client-review {
       margin-bottom: 100px;
@@ -130,7 +97,6 @@
     }
     .enquiry-form {
       padding-top: 80px;
-      // .img__resp {justify-content: flex-end;}
       .form_col {
         padding: 0;
         h2 {text-align: center;}
@@ -141,10 +107,7 @@
         }
         form {
           justify-content: center;
-          .row {
-            justify-content: center;
-            gap: 20px;
-          }
+          .row {justify-content: center; gap: 20px;}
         }
       }
     }
@@ -161,7 +124,6 @@
       .carousel-control-next {margin-right: 300px;}
       .carousel-control-prev {margin-left: 300px;}
     }
-    // .our-services .col-xl {max-width: 167px;}
   }
 }
 @include media-breakpoint-down(xxl)  { // 1400px
@@ -195,7 +157,7 @@
       .img__resp {max-width: 400px;}
       .text_col {
         padding: 0;
-          p {width: 100%; padding-right: 40px;}
+        p {width: 100%; padding-right: 40px;}
         .ul-col li {padding-left: 0;}
       }
     }
@@ -207,19 +169,16 @@
         p {width: 100%; padding-right: 40px;}
         .ul-col li {padding-left: 0;}
       }
-      .check_col {height: auto;}
     }
     .reasons-choosing-seo {
       gap: 55px;
       margin: 0 123px 0 140px;
       padding-bottom: 60px;
       .text_col .stat_col .img_2 {margin: 0 20px 0 35px;}
-      
     }
     .conversion-rate {
       padding: 96px 123px 80px 140px;
       margin-bottom: 60px;
-      // gap: 40px;
       .cr-info_col {
         padding: 0;
         display: flex;
@@ -231,7 +190,6 @@
       .cards_col {
         text-align: center;
         width: 600px;
-        // width: 100%; height: 100%; // Удалить эту строку!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         padding: 0;
         .row_content {justify-content: center;}
         .b-wr {
@@ -249,22 +207,15 @@
       .b-wr {max-height: 110px;}
     }
     .seo-marketing {
-      gap: 30px; margin: 0 123px 30px 140px;
+      margin: 0 123px 30px 140px;
       .col-xxl {padding: 0;}
-      .text_col {
-        p {
-        } 
-        .btn {margin: 0;}
-      }
+      .text_col .btn {margin: 0;}
       .img_col {padding-bottom: 40px;}
       .img__resp {display: flex;}
     }
     .how-seo-work {
       margin-bottom: 60px;
-      .row_content {
-        justify-content: center; 
-        padding: 0;
-      }
+      .row_content {justify-content: center; }
     }
     .marketing-team {
       margin: 0 auto 70px;
@@ -295,7 +246,7 @@
     }
     .client-review {
       margin-bottom: 100px;
-      p {width: 80%; margin: 0 auto;}
+      p {width: 85%; margin: 0 auto;}
       .carousel-control-next {margin-right: 250px;}
       .carousel-control-prev {margin-left: 250px;}
     }
@@ -482,8 +433,7 @@
       }
     }
     .seo-marketing {
-      margin-left: 60px; margin-right: 60px;
-      
+      margin: 0 60px 30px 60px;
       .text_col {
         display: flex; 
         flex-direction: column;
@@ -496,10 +446,13 @@
     .how-seo-work {
       padding: 40px 60px 60px 60px;
       margin-bottom: 30px;
+      .row_content {padding: 0;}
     }
     .marketing-team {padding: 0 60px 0 60px;}
     .pricing-plans {padding: 60px}
     .client-review {
+      padding: 0 60px 0 60px;
+      p {width: 80%;}
       .carousel-control-next {margin-right: 200px;}
       .carousel-control-prev {margin-left: 200px;}
     }
@@ -576,13 +529,15 @@
       margin: 0 20px 30px 20px;
       .row .col-xl {max-width: 235px;}
     }
-   
+    .seo-marketing {
+      margin: 0 20px 30px 20px;
+    }
     .how-seo-work {
       padding: 40px 20px 40px 20px;
       h3 {line-height: initial;}
     }
     .marketing-team {
-      // padding: 0 20px 0 20px;
+      padding: 0 20px 0 20px;
       .team {gap: 15px;}
       .col_1, .col_2, .col_3 { // Common classes
         .block_top {margin-bottom: 10px;}
@@ -599,6 +554,7 @@
       .col-xl {max-width: 345.5px;}
     }
     .client-review {
+      padding: 0 20px 0 20px;
       .carousel-control-next {margin-right: 100px;}
       .carousel-control-prev {margin-left: 100px;}
     }
@@ -682,11 +638,16 @@
       margin: 0 5px 30px 5px;
       .row .col-xl {max-width: 170px;}
     }
+    .seo-marketing .text_col p {width: 70%;}
     .how-seo-work {
       .row {gap: 20px;}
       h3 {margin-bottom: 30px;}
     }
-    .marketing-team {padding: 0 20px 0 20px;}
+    .marketing-team .row {
+      .col_1, .col_2 {
+        .block_top, .block_bottom {justify-content: center;}
+      }
+    }
     .pricing-plans {
       padding-top: 40px; padding-bottom: 40px;
       .col-xl {
@@ -789,11 +750,6 @@
         .col_content-2 {padding-top: 220px;}
       }
     }
-    .marketing-team {
-      .col_1, .col_2 {
-        .block_top, .block_bottom {justify-content: center;}
-      }
-    }
     .our-services {
       margin: 0 10px 30px 10px;
       .row {
@@ -804,6 +760,10 @@
           width: 140px;
         }
       }
+    }
+    .seo-marketing .text_col p {max-width: 95%; width: 95%; font-size: 1rem;}
+    .client-review {
+      p {font-size: 1rem; width: 95%;}
     }
     .enquiry-form {
       padding-left: 15px; padding-right: 15px; 
