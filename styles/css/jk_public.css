@@ -229,6 +229,10 @@ header .row_content .media a:active {
 .nav-wr .b-wr .menu-block {
   max-width: 582.13px;
 }
+.nav-wr .b-wr .menu-block ul li a:active {
+  color: #F4AB00;
+  transition: all 0s;
+}
 .nav-wr .b-wr .menu {
   font-size: 1.25rem;
   display: none;
@@ -373,23 +377,28 @@ header .row_content .media a:active {
 .main .building-conversion-strategy .col_content-2 .row {
   padding-top: 45px;
 }
+.main .appear-fp span, .main .reasons-choosing-seo span {
+  font-size: 1.25rem;
+  line-height: 30px;
+}
+.main .appear-fp .text_col h2, .main .reasons-choosing-seo .text_col h2 {
+  margin-bottom: 25px;
+}
+.main .appear-fp .text_col p, .main .reasons-choosing-seo .text_col p {
+  line-height: 34px;
+}
 .main .appear-fp {
   padding: 75.41px 5px 153px 39px;
   max-width: 1160px;
   margin: 0 auto;
 }
 .main .appear-fp .text_col {
-  padding: 0 0 0 80px;
-}
-.main .appear-fp .text_col span {
-  font-size: 1.25rem;
+  padding-left: 80px;
 }
 .main .appear-fp .text_col h2 {
-  padding-top: 20px;
-  margin-bottom: 25px;
+  padding-top: 21px;
 }
 .main .appear-fp .text_col p {
-  width: 95%;
   line-height: 34px;
   margin-bottom: 26px;
 }
@@ -418,26 +427,25 @@ header .row_content .media a:active {
 .main .reasons-choosing-seo .text_col {
   padding-top: 22px;
 }
-.main .reasons-choosing-seo .text_col span {
-  font-size: 1.25rem;
-  line-height: 30px;
-}
 .main .reasons-choosing-seo .text_col h2 {
   padding-top: 19px;
-  margin-bottom: 25px;
 }
 .main .reasons-choosing-seo .text_col p {
   line-height: 34px;
 }
 .main .reasons-choosing-seo .text_col .stat_col {
   padding: 33px 66.5px 0 24px;
+  justify-content: space-between;
 }
-.main .reasons-choosing-seo .text_col .stat_col .col_img {
+.main .reasons-choosing-seo .text_col .stat_col .row {
+  max-width: 210px;
+}
+.main .reasons-choosing-seo .text_col .stat_col .col_img, .main .reasons-choosing-seo .text_col .stat_col .col_img-2 {
   flex: 0 0 0%;
   margin: 0 20px 0 0;
 }
-.main .reasons-choosing-seo .text_col .stat_col .img_2 {
-  margin: 0 20px 0 110px;
+.main .reasons-choosing-seo .text_col .stat_col .conversion .col_img-2 {
+  padding-left: 35px;
 }
 .main .reasons-choosing-seo .text_col .stat_col .text-stat_col {
   display: flex;
@@ -527,7 +535,7 @@ header .row_content .media a:active {
   max-width: 318px;
   height: 286px;
 }
-.main .conversion-rate .cards_col .cards-block_2 .st p {
+.main .conversion-rate .cards_col .cards-block_2 .ast p {
   font-size: 1rem;
   max-width: 92%;
 }
@@ -907,25 +915,30 @@ header .row_content .media a:active {
   line-height: 24px;
 }
 .main .companies {
-  padding: 50px 50px 0 60px;
   max-width: 1160px;
-  margin: 0 auto;
-  margin-bottom: 202px;
+  margin: 0 140px 138px 140px;
+  padding: 50px 40px 64px 55px;
 }
-.main .companies .col, .main .companies .col-xxl {
+.main .companies .col-sm, .main .companies .col-md {
+  display: flex;
+}
+.main .companies .col-sm .col, .main .companies .col-md .col {
   display: flex;
 }
 .main .companies .col_2 .oh_tb {
-  padding-left: 40px;
+  padding-left: 30px;
 }
 .main .companies .col_2 .airtable {
   padding-left: 120px;
 }
-.main .companies .col_3 .col {
-  justify-content: flex-end;
+.main .companies .col_3 .gravel {
+  padding-left: 75px;
+}
+.main .companies .col_3 .flick {
+  justify-content: end;
 }
 .main .news-case-studies {
-  padding: 79px 123px 141px 140px;
+  padding: 79px 123px 140px 140px;
   text-align: center;
   justify-content: center;
   background-color: #E5D8FA;
@@ -942,7 +955,7 @@ header .row_content .media a:active {
   margin-bottom: 60px;
   justify-content: center;
 }
-.main .news-case-studies .col-xl {
+.main .news-case-studies .col-lg {
   background-color: #fff;
   max-width: 376px;
 }
@@ -961,8 +974,7 @@ header .row_content .media a:active {
   font-size: 1.375rem;
   line-height: 34px;
   width: 90%;
-  margin: 18px auto 0 auto;
-  padding-bottom: 27px;
+  margin: 18px auto 28px auto;
 }
 .main .news-case-studies .btn__transparent {
   width: 179px;
@@ -987,7 +999,7 @@ header .row_content .media a:active {
   color: #fff;
   text-align: center;
   justify-content: center;
-  padding-top: 110px;
+  padding-top: 109px;
   margin-bottom: 145px;
 }
 .main .get-in-touch h2 {
@@ -998,38 +1010,41 @@ header .row_content .media a:active {
   margin-bottom: 55px;
 }
 .main .get-in-touch .contacts-wr {
-  padding: 0 125px 0 140px;
+  padding: 0 123px 0 140px;
   height: 100px;
 }
 .main .get-in-touch .contacts-wr .git-contacts {
   color: #2C1258;
   justify-content: space-between;
 }
-.main .get-in-touch .contacts-wr .git-contacts .col-xxl {
+.main .get-in-touch .contacts-wr .git-contacts .col-lg {
   background-color: #fff;
   border: 1px solid #fff;
-  border-radius: 15px 15px 0 0;
+  border-radius: 16px 16px 0 0;
   max-width: 367px;
   padding-top: 40px;
   text-align: center;
 }
-.main .get-in-touch .contacts-wr .git-contacts .col-xxl:hover {
+.main .get-in-touch .contacts-wr .git-contacts .col-lg:hover {
   transform: scale(1.03);
   box-shadow: 0 13px 40px -5px hsla(240deg, 30.1%, 28%, 0.12), 0 8px 32px -8px hsla(0deg, 0%, 0%, 0.14), 0 -6px 32px -6px hsla(0deg, 0%, 0%, 0.02);
 }
 .main .get-in-touch .contacts-wr .git-contacts .c_title {
   padding-bottom: 16px;
 }
+.main .get-in-touch .contacts-wr .git-contacts a:active {
+  color: #F4AB00;
+}
 .main .get-in-touch .contacts-wr .git-contacts .git-address .address {
   font-size: 1.25rem;
 }
 .main .get-in-touch .contacts-wr .git-contacts .git-address .row {
-  padding-top: 18px;
+  padding-top: 20px;
 }
 .main .get-in-touch .contacts-wr .git-contacts .git-address span {
   font-size: 1.25rem;
 }
-.main .get-in-touch .contacts-wr .git-contacts .git-address p {
+.main .get-in-touch .contacts-wr .git-contacts .git-address a {
   font-size: 0.938rem;
   max-width: 65%;
   margin: 0 auto;
@@ -1056,7 +1071,7 @@ header .row_content .media a:active {
   line-height: 28px;
 }
 .main .enquiry-form {
-  padding: 136px 137px 0 140px;
+  padding: 136px 135px 0 140px;
   margin-bottom: 180px;
 }
 .main .enquiry-form .form_col {
@@ -1079,10 +1094,10 @@ header .row_content .media a:active {
 .main .enquiry-form .form_col form .row {
   justify-content: space-between;
 }
-.main .enquiry-form .form_col form .col {
+.main .enquiry-form .form_col form .col-sm {
   max-width: 262px;
 }
-.main .enquiry-form .form_col form .col input {
+.main .enquiry-form .form_col form .col-sm input {
   height: 52px;
   width: 255px;
   padding-left: 17px;
@@ -1121,6 +1136,9 @@ header .row_content .media a:active {
   justify-content: space-between;
   gap: 12px;
 }
+.footer a:active {
+  color: #F4AB00;
+}
 .footer .contacts, .footer .footer-bottom {
   max-width: 1160px;
   margin: 0 auto;
@@ -1145,6 +1163,7 @@ header .row_content .media a:active {
   font-size: 1.3rem;
 }
 .footer .contacts .seoflow p {
+  width: 99%;
   font-size: 0.938rem;
   margin-top: 17px;
   line-height: 28px;
@@ -1153,8 +1172,7 @@ header .row_content .media a:active {
   gap: 12px;
 }
 .footer .contacts .ql ul li {
-  padding-bottom: 10px;
-  padding: 0 0 0 65px;
+  padding-left: 65px;
 }
 .footer .contacts .services ul {
   gap: 12px;
@@ -1206,12 +1224,6 @@ header .row_content .media a:active {
 }
 .footer .contacts .fu .row .media a {
   font-size: 25px;
-}
-.footer .contacts .fu .row .media a:hover {
-  color: #F4AB00;
-}
-.footer .contacts .fu .row .media a:active {
-  color: #0059ff;
 }
 .footer .footer-bottom {
   justify-content: space-between;
