@@ -651,7 +651,10 @@ header {
       padding-left: 60px;
       h2 {margin-bottom: 16px;}
       p {line-height: 34px; margin-bottom: 26px;}
-      a {font-size: 1.125rem;}
+      a {
+        font-size: 1.125rem;
+        &:active {color: #F4AB00;}
+      }
       form {
         display: flex; gap: 24px;
         .row {justify-content: space-between;}

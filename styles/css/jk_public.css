@@ -1087,6 +1087,9 @@ header .row_content .media a:active {
 .main .enquiry-form .form_col a {
   font-size: 1.125rem;
 }
+.main .enquiry-form .form_col a:active {
+  color: #F4AB00;
+}
 .main .enquiry-form .form_col form {
   display: flex;
   gap: 24px;
