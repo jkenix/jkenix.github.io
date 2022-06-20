@@ -30,12 +30,11 @@ $(window).scroll(function(){
         return Showscroll();
     }
 });
-// Func add classes and remove some class
+// Func add classes and remove some classes
 $(document).ready(function () {
     // Add class, if mouse over menu__active block (Mobile)
     $('.menu-block .menu').bind('touchstart', function () {
         $(".nav-header .nav-item").addClass("page-link dark__bg");
-
     });
     // For mouse devices
     $('.menu-block .menu').mouseover(function() {
