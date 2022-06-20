@@ -479,7 +479,6 @@
   }
 }
 @include media-breakpoint-down(lg)  { // 992px
-  body, .wrapper {background-color: $cyan-500;}
   .header {padding: 20px 20px 0 20px;}
   .nav-wr {padding: 0 20px 0 20px;
     .menu {padding: 0 0px 0 0px;}
@@ -577,7 +576,6 @@
   }
 }
 @include media-breakpoint-down(md)  { // 768px
-  body, .wrapper {background-color: $teal-600;}
   .nav-wr .b-wr .header-logo {max-width: 80px;}
   .main {
     .strategic-seo-marketing {
@@ -698,7 +696,6 @@
   }
 }
 @include media-breakpoint-down(sm) { // 576px
-  body, .wrapper {background-color: $pink-600;}
   .header-wr {
     .header {
       padding-bottom: 110px;

@@ -732,10 +732,6 @@
   }
 }
 @media (max-width: 991.98px) {
-  body, .wrapper {
-    background-color: #0dcaf0;
-  }
-
   .header {
     padding: 20px 20px 0 20px;
   }
@@ -889,10 +885,6 @@
   }
 }
 @media (max-width: 767.98px) {
-  body, .wrapper {
-    background-color: #1aa179;
-  }
-
   .nav-wr .b-wr .header-logo {
     max-width: 80px;
   }
@@ -1046,10 +1038,6 @@
   }
 }
 @media (max-width: 575.98px) {
-  body, .wrapper {
-    background-color: #ab296a;
-  }
-
   .header-wr .header {
     padding-bottom: 110px;
   }
