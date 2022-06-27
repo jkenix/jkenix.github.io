@@ -1,0 +1,49 @@
+// Styles file for seoflow layout by jkenix. 
+// @font-face {
+//   font-display: swap;
+//   text-rendering: optimizeLegibility;
+//   font-family: "Nunito Regular";
+//   src: url(/webfonts/NunitoRegular.woff) format("woff");
+// }
+// @font-face {
+//   font-display: swap;
+//   text-rendering: optimizeLegibility;
+//   font-family: "Nunito ExtraBold";
+//   src: url(/webfonts/NunitoExtraBold.woff) format("woff");
+// }
+// Import mixins, variables
+@import 'mixins_var.scss';
+// Global selectors styles
+h1 {
+  margin: 0;
+  font-family: "Nunito ExtraBold";
+}
+h2 {
+  margin: 0;
+  font-family: "Nunito Regular";
+}
+h3  {
+  margin: 0;
+  font-family: "Nunito Regular";
+}
+p  {
+  margin: 0;
+  font-family: "Nunito Regular";
+}
+a  {
+  font-size: 1rem;
+  font-family: "Nunito Regular";
+  color: #000;
+}
+span, button  {
+  font-family: "Nunito Regular";
+}
+img  {
+  user-select: none;
+}
+ul  {
+  list-style: none;
+}
+input, textarea  {
+  font-family: "Nunito Regular";
+}

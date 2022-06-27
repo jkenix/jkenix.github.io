@@ -14,10 +14,13 @@
     "sass": "^1.51.0"
   },
   "scripts": {
-    "dev": "run-p main media",
-    "alpha": "run media",
-    "main": "sass --watch styles/jk_parcel.scss:styles/css/jk_public.css",
-    "media": "sass --watch styles/jk_media_parcel.scss:styles/css/jk_media.css",
+    "dev": "run-p layout media base theme state module",
+    "base": "sass --watch styles/base.scss:styles/css/base.css",
+    "layout": "sass --watch styles/layout.scss:styles/css/layout.css",
+    "module": "sass --watch styles/module.scss:styles/css/module.css",
+    "state": "sass --watch styles/state.scss:styles/css/state.css",
+    "theme": "sass --watch styles/theme.scss:styles/css/theme.css",
+    "media": "sass --watch styles/media.scss:styles/css/media.css",
     "parcel": "parcel index.html"
   }
 }

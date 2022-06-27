@@ -1,0 +1,14 @@
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.main {
+  max-width: 100%;
+}
+
+.footer-bottom {
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=layout.css.map */

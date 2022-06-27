@@ -30,6 +30,8 @@ $(window).scroll(function(){
         return Showscroll();
     }
 });
+// Func menu
+
 // Func add classes and remove some classes
 $(document).ready(function () {
     // Add class, if mouse over menu__active block (Mobile)
