@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title></title>
+  <title>Pulstar</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="https://github.com/jkenix">
@@ -9,32 +9,50 @@
   <link rel="stylesheet" media="screen" href="/styles_jk.css"/>
   <link rel="apple-touch-icon" href="/img/jklogo_apple.webp">
   <meta name="theme-color" content="#000"/>
-  <meta property="og:title" content="SEOFlow">
+  <meta property="og:title" content="Pulstar">
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://jkenix.github.io/"/>
-  <meta property="og:image" content="https://jkenix.github.io/img/"/>
-  <meta property="og:image:width" content="738"/>
-  <meta property="og::image:height" content="530"/>
-  <meta property="og:description" content="Page made by jkenix from layout."/>
+  <!-- <meta property="og:image" content="https://jkenix.github.io/img/"/> -->
+  <!-- <meta property="og:image:width" content="738"/> -->
+  <!-- <meta property="og::image:height" content="530"/> -->
+  <meta property="og:description" content="Page made by jkenix from layout pulstar."/>
   <meta property="og:site_name" content="jkenix.github.io"/>
   <script src="/js/jquery-3.6.0.min.js"></script>
   <script src="/js/jBox.all.min.js"></script>
 </head>
 <body>
 <div class="wrapper">
-  <div class="header-wr">
-    <header class="header" id="home">
-      <div id="dd">
-        Войти в аккаунт
-        <ul>
-          <li><a href="#"><em></em>Twitter</a></li>
-          <li><a href="#"><em></em>Github</a></li>
-          <li><a href="#"><em></em>Facebook</a></li>
-        </ul>
+  <header class="header" id="home">
+    <h1>pulstar</h1>
+    <div class="header-menu">
+      <input id="toggle" type="checkbox"></input>
+      <label for="toggle" class="hamburger">
+        <div class="top-bun"></div>
+        <div class="meat"></div>
+        <div class="bottom-bun"></div>
+      </label>
+      <div class="nav">
+        <div class="nav-wrapper">
+          <nav >
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Journal</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+          </nav>
         </div>
-    </header>
-  </div>
-<main class="main">
+      </div>
+    <button>Buy Template</button>
+    <div class="basket-block">
+      <div class="basket">
+        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.60593 2H0V0H4.39407L4.84288 4H16V9.93845L3.76941 12.3694L2.60593 2ZM15.5 17C14.6716 17 14 16.3284 14 15.5C14 14.6716 14.6716 14 15.5 14C16.3284 14 17 14.6716 17 15.5C17 16.3284 16.3284 17 15.5 17ZM5.5 17C4.67157 17 4 16.3284 4 15.5C4 14.6716 4.67157 14 5.5 14C6.32843 14 7 14.6716 7 15.5C7 16.3284 6.32843 17 5.5 17Z" fill="black"/></svg>
+      </div>
+      <div class="count" id="counter-label">0</div>
+    </div>
+    </div>
+  </header>
+<main class="main" style="padding-top: 40px; text-align: center;">
+  <button onclick="incrementClick()">Click Me (Test)</button>
  
 </main>
 <footer class="footer row">

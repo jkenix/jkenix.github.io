@@ -1,5 +1,7 @@
 // Import mixins, variables
 @import 'mixins_var.scss';
+// Common styles
+.header > div {flex-wrap: wrap}
 // State of modules and site skeleton
 #scroll_top {
   display: none;
@@ -26,3 +28,29 @@
   }
 }
 // Menu
+.header-menu {
+  .nav-col {flex-direction: column;}
+  #toggle {display: none;}
+  // Hamburger
+  .hamburger {
+    position: absolute;
+    display: none;
+    // top: 5em;
+    right: 10%;
+    // margin-left: -5em;
+    margin-top: -85px;
+    width: 2em;
+    height: 45px;
+    z-index: 5;
+  }
+  .hamburger div {
+    position: relative;
+    width: 3em;
+    height: 7px;
+    border-radius: 3px;
+    background-color: #000;
+    margin-top: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+}

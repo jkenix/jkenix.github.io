@@ -1,3 +1,7 @@
+.header > div {
+  flex-wrap: wrap;
+}
+
 #scroll_top {
   display: none;
   position: fixed;
@@ -23,6 +27,31 @@
   transition: all 0s;
   color: #f4ab00;
   background-color: #000;
+}
+
+.header-menu .nav-col {
+  flex-direction: column;
+}
+.header-menu #toggle {
+  display: none;
+}
+.header-menu .hamburger {
+  position: absolute;
+  display: none;
+  right: 10%;
+  margin-top: -85px;
+  width: 2em;
+  height: 45px;
+  z-index: 5;
+}
+.header-menu .hamburger div {
+  position: relative;
+  width: 3em;
+  height: 7px;
+  border-radius: 3px;
+  background-color: #000;
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
 }
 
 /*# sourceMappingURL=state.css.map */

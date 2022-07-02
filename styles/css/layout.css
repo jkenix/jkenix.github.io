@@ -3,8 +3,83 @@
   margin: 0 auto;
 }
 
+.header > div {
+  flex-wrap: wrap;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1328px;
+  margin-left: 56px;
+  margin-right: 56px;
+  padding: 0px 20px 11px 24px;
+}
+.header h1 {
+  font-size: 1.6rem;
+  padding-top: 25px;
+}
+.header-menu {
+  max-width: 612px;
+  padding-top: 13px;
+  display: flex;
+  align-items: center;
+}
+.header-menu .nav nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 20px 20px 19px 20px;
+}
+.header-menu .nav nav a {
+  font-size: 0.875rem;
+  line-height: 19px;
+}
+.header-menu .nav nav a:hover {
+  color: #0d6efd;
+}
+.header-menu .nav nav a:active {
+  color: #F14814;
+}
+.header-menu .nav nav a a:nth-last-child(1) {
+  padding-right: 20px;
+}
+.header-menu button {
+  width: 114px;
+  height: 42px;
+  margin-right: 12px;
+  font-size: 0.75rem;
+  border: none;
+  background: #DDDBDA;
+}
+.header-menu button:hover {
+  background: #000;
+  color: #fff;
+}
+.header-menu button:active {
+  background: #F14814;
+}
+.header-menu .basket-block {
+  display: flex;
+  padding-top: 4px;
+  gap: 10px;
+}
+.header-menu .basket-block .basket {
+  padding-left: 12px;
+}
+.header-menu .basket-block .count {
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  background-color: #3F3B3D;
+  color: #fff;
+  border-radius: 60px;
+}
+
 .main {
-  max-width: 100%;
+  max-width: 1328px;
+  margin-left: 56px;
+  margin-right: 56px;
 }
 
 .footer-bottom {
