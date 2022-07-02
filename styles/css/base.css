@@ -1,31 +1,31 @@
+@font-face {
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+  font-family: "Roboto Regular";
+  src: url(/webfonts/RobotoRegular.woff) format("woff");
+}
+h1, h2, h3, p, a, ul, span, button, input, textarea {
+  font-family: "Roboto Regular";
+  margin: 0;
+}
+
 h1 {
-  margin: 0;
-  font-family: "Nunito ExtraBold";
-}
-
-h2 {
-  margin: 0;
-  font-family: "Nunito Regular";
-}
-
-h3 {
-  margin: 0;
-  font-family: "Nunito Regular";
-}
-
-p {
-  margin: 0;
-  font-family: "Nunito Regular";
+  width: 80px;
 }
 
 a {
-  font-size: 1rem;
-  font-family: "Nunito Regular";
-  color: #000;
+  text-decoration: none;
+  color: #3F3B3D;
+}
+a:hover {
+  color: #0d6efd;
+}
+a:active {
+  color: #F14814;
 }
 
-span, button {
-  font-family: "Nunito Regular";
+button {
+  cursor: pointer;
 }
 
 img {
@@ -34,10 +34,7 @@ img {
 
 ul {
   list-style: none;
-}
-
-input, textarea {
-  font-family: "Nunito Regular";
+  padding: 0;
 }
 
 /*# sourceMappingURL=base.css.map */

@@ -1,49 +1,42 @@
-// Styles file for seoflow layout by jkenix. 
-// @font-face {
-//   font-display: swap;
-//   text-rendering: optimizeLegibility;
-//   font-family: "Nunito Regular";
-//   src: url(/webfonts/NunitoRegular.woff) format("woff");
-// }
-// @font-face {
-//   font-display: swap;
-//   text-rendering: optimizeLegibility;
-//   font-family: "Nunito ExtraBold";
-//   src: url(/webfonts/NunitoExtraBold.woff) format("woff");
-// }
+@font-face {
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+  font-family: "Roboto Regular";
+  src: url(/webfonts/RobotoRegular.woff) format("woff");
+}
 // Import mixins, variables
 @import 'mixins_var.scss';
 // Global selectors styles
-h1 {
+h1, h2, h3, p, a, ul, span, button, input, textarea {
+  font-family: "Roboto Regular";
   margin: 0;
-  font-family: "Nunito ExtraBold";
+}
+h1 {
+  width: 80px;
 }
 h2 {
-  margin: 0;
-  font-family: "Nunito Regular";
 }
 h3  {
-  margin: 0;
-  font-family: "Nunito Regular";
 }
 p  {
-  margin: 0;
-  font-family: "Nunito Regular";
 }
 a  {
-  font-size: 1rem;
-  font-family: "Nunito Regular";
-  color: #000;
+  text-decoration: none;
+  color: #3F3B3D;
+  &:hover {color: #0d6efd;}
+  &:active {color: #F14814;}
 }
 span, button  {
-  font-family: "Nunito Regular";
+
 }
+button {cursor: pointer;}
 img  {
   user-select: none;
 }
 ul  {
   list-style: none;
+  padding: 0;
 }
 input, textarea  {
-  font-family: "Nunito Regular";
+
 }
