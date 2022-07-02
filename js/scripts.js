@@ -59,4 +59,20 @@ $(document).ready(function () {
         $('.modal-dialog').addClass('modal-dialog-centered');
     }
 });
-   
+// Count   
+var counterVal = 0;
+
+function incrementClick() {
+    if (counterVal < 99) {
+        updateDisplay(++counterVal);
+    }
+}
+
+function resetCounter() {
+    counterVal = 0;
+    updateDisplay(counterVal);
+}
+
+function updateDisplay(val) {
+    document.getElementById("counter-label").innerHTML = val;
+}
