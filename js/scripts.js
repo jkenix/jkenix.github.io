@@ -1,9 +1,3 @@
-// Import styles
-// import '/styles/jk_parcel.scss'; // Comment, if don't use parcel
-// Define Jquery (If you dont' use node.js comment this lines)
-// var jquery = require("jquery"); window.$ = window.jQuery = jquery;  
-// var bootstrap = require("bootstrap"); 
-// ==================================================================
 // Func add scroll to page
 $(document).ready(function () {
     var executed = false;
@@ -65,6 +59,9 @@ var counterVal = 0;
 function incrementClick() {
     if (counterVal < 99) {
         updateDisplay(++counterVal);
+    }
+    if (counterVal > 99) {
+        alert('The limit for adding items to the cart has been exceeded');
     }
 }
 
