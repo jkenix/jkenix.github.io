@@ -68,17 +68,26 @@
   }
 
   .header {
-    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    gap: 10px;
     padding: 0;
+  }
+  .header h1 {
+    padding-top: 15px;
+    font-size: 2rem;
+    width: auto;
+  }
+  .header .header-menu .basket-block #counter-label {
+    width: 22px;
+    height: 20px;
   }
   .header .header-menu .hamburger {
     display: block;
+    margin-top: -105px;
   }
-  .header .header-menu nav a {
-    font-size: 3rem;
-  }
-  .header .nav {
+  .header .header-menu .nav {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -91,20 +100,23 @@
     transition: all 0.3s ease-in-out;
     transform: scale(0);
   }
-  .header .nav nav {
+  .header .header-menu .nav nav {
     gap: 0;
   }
-  .header .nav-wrapper {
+  .header .header-menu .nav nav a {
+    font-size: 3rem;
+  }
+  .header .header-menu .nav-wrapper {
     position: relative;
     overflow: hidden;
     overflow-y: auto;
     height: 100%;
   }
-  .header nav {
+  .header .header-menu nav {
     text-align: center;
     flex-direction: column;
   }
-  .header nav a {
+  .header .header-menu nav a {
     position: relative;
     text-decoration: none;
     color: #fff;
@@ -114,7 +126,7 @@
     transition: color 0s ease-in-out;
     letter-spacing: 1px;
   }
-  .header nav a:before {
+  .header .header-menu nav a:before {
     content: "";
     height: 0;
     position: absolute;
@@ -123,25 +135,22 @@
     left: -0.5em;
     transition: all 0.2s ease-in-out;
   }
-  .header nav a:hover {
-    color: white;
-  }
-  .header nav a:hover:before {
+  .header .header-menu nav a:hover:before {
     height: 100%;
   }
-  .header #toggle:checked + .hamburger .top-bun {
+  .header .header-menu #toggle:checked + .hamburger .top-bun {
     transform: rotate(-45deg);
     margin-top: 25px;
   }
-  .header #toggle:checked + .hamburger .bottom-bun {
+  .header .header-menu #toggle:checked + .hamburger .bottom-bun {
     opacity: 0;
     transform: rotate(45deg);
   }
-  .header #toggle:checked + .hamburger .meat {
+  .header .header-menu #toggle:checked + .hamburger .meat {
     transform: rotate(45deg);
     margin-top: -7px;
   }
-  .header #toggle:checked + .hamburger + .nav {
+  .header .header-menu #toggle:checked + .hamburger + .nav {
     top: 0;
     transform: scale(1);
   }

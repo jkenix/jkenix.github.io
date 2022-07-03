@@ -7,7 +7,7 @@
   position: fixed;
   justify-content: center;
   align-items: center;
-  background-color: #f4ab00;
+  background-color: #000;
   color: #fff;
   font-size: 25px;
   bottom: 260px;
@@ -20,13 +20,13 @@
 #scroll_top a {
   background-color: #fff;
 }
-#scroll_top a:hover {
+#scroll_top:hover {
   opacity: 1;
 }
-#scroll_top a:active {
+#scroll_top:active {
   transition: all 0s;
-  color: #f4ab00;
-  background-color: #000;
+  color: #000;
+  background-color: #fff;
 }
 
 .header-menu .nav-col {
@@ -39,8 +39,8 @@
   position: absolute;
   display: none;
   right: 10%;
-  margin-top: -85px;
-  width: 2em;
+  margin-top: -10px;
+  width: 3em;
   height: 45px;
   z-index: 5;
 }
