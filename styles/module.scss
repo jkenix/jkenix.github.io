@@ -1,6 +1,4 @@
 // Import mixins, variables
 @import 'mixins_var.scss';
 // Modules
-.img__resp {
-    @include flexc();
-}
+.img__resp {max-width: 100%; height: auto;}
