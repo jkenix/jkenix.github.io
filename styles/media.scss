@@ -9,7 +9,6 @@
   }
 }
 @media (min-width: 1921px) {
-  body {background-color: #495057 !important;}
   #scroll_top {
     min-width: 80px; min-height: 80px;
     max-width: 100px; max-height: 100px;
@@ -22,22 +21,23 @@
     gap: 10px;
   }
 }
-@media (min-width: 1501px) {
-  .header {
-    margin: 0 auto;
-  }
+@media (min-width: 1441px) {
+  .header, .main, .footer {margin: 0 auto;}
   .main {
-    
   }
 }
 @media (max-width: 1500px) { 
   .main {
-   
+   .shop-block .shop-preview { max-width: 40%; height: auto; padding: 0;}
   }
 }
 @include media-breakpoint-down(xxl)  { // 1400px
-  body, .wrapper {background-color: #0dcaf0 !important;}
+  body {background-color: #0dcaf0 !important;}
   .main {
+    .shop-block {
+      justify-content: center;
+      .shop-preview {max-width: 400px;}
+    }
 
   }
   .footer {
@@ -45,7 +45,7 @@
   }
 }
 @include media-breakpoint-down(xl) { // 1200px
-  body, .wrapper {background-color: #20c997 !important;}
+  body {background-color: #20c997 !important;}
   header {
   }
   .main {
@@ -56,12 +56,11 @@
   }
 }
 @include media-breakpoint-down(lg)  { // 992px
-  body, .wrapper {background-color: #495057 !important;}
+  body {background-color: #d0d8e0 !important;}
   .header {
     margin: 0;
     padding: 0 10px 11px 10px;
     &-menu {
-     
       button {margin: 0;}
     }
   }
@@ -73,8 +72,8 @@
   }
 }
 @include media-breakpoint-down(md)  { // 768px
-  body, .wrapper {background-color: #6610f2 !important;}
-  .header-menu .nav nav {gap: 15px;}
+  body {background-color: #6610f2 !important;}
+  .header-menu .nav nav {gap: 15px; padding-right: 20px;}
   .main {
   
   }
@@ -83,7 +82,7 @@
   }
 }
 @include media-breakpoint-down(sm) { // 576px
-  body, .wrapper {background-color: #d63384 !important;}
+  body {background-color: #d63384 !important;}
   .header {
     justify-content: center;
     flex-direction: column; align-items: center;
@@ -161,12 +160,6 @@
  
   }
 }
-@media (max-width: 480px) {
-  .header {
-    
-    .header-menu .hamburger {}
-  }
-}
 @media (max-width: 320px) {
-  .wrapper {width: 320px;}
+  body {width: 320px;}
 }
