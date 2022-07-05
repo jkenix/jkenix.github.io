@@ -7,12 +7,8 @@
   display: flex;
   justify-content: space-between;
   max-width: 1328px;
-  margin-left: 56px;
-  margin-right: 56px;
+  margin: 0 56px;
   padding: 0px 20px 11px 24px;
-}
-.header > div {
-  flex-wrap: wrap;
 }
 .header h1 {
   font-size: 1.6rem;
@@ -32,6 +28,7 @@
 .header-menu .nav nav a {
   font-size: 0.875rem;
   line-height: 19px;
+  color: #3F3B3D;
 }
 .header-menu .nav nav a:hover {
   color: #0d6efd;
@@ -42,19 +39,16 @@
 .header-menu .nav nav a a:nth-last-child(1) {
   padding-right: 20px;
 }
-.header-menu button {
+.header-menu .btn {
   width: 114px;
   height: 42px;
   margin-right: 12px;
+  padding-right: 10px;
   font-size: 0.75rem;
-  border: none;
+  color: #3F3B3D;
   background: #DDDBDA;
 }
-.header-menu button:hover {
-  background: #000;
-  color: #fff;
-}
-.header-menu button:active {
+.header-menu .btn:active {
   background: #F14814;
 }
 .header-menu .basket-block {
@@ -76,27 +70,24 @@
 
 .main {
   max-width: 1328px;
-  margin-left: 56px;
-  margin-right: 56px;
+  margin: 0 56px;
 }
 .main .shop-block {
   display: flex;
-  padding: 0 24px 0 24px;
-}
-.main .shop-block > div {
-  flex-wrap: wrap;
+  padding-left: 24px;
 }
 .main .shop-block .shop-preview {
   max-width: 512px;
   height: 482px;
   background: #3F3B3D;
-  padding-top: 80px;
+  margin-top: 80px;
   display: flex;
 }
 .main .shop-block .shop-preview-content {
-  padding: 260px 78px 64px 64px;
+  padding: 261px 78px 64px 64px;
 }
 .main .shop-block .shop-preview-content h2 {
+  color: #fff;
   font-size: 2.063rem;
   line-height: 42px;
   margin-bottom: 28px;
@@ -111,12 +102,10 @@
 }
 .main .shop-block .shop-preview-pic {
   display: flex;
-  align-items: center;
 }
 .main .rest-of-the-story-block {
   max-width: 1328px;
-  margin-left: 56px;
-  margin-right: 56px;
+  margin: 0 56px;
 }
 .footer-bottom {
   justify-content: space-between;
