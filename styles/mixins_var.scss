@@ -1,7 +1,7 @@
 // Mixins
 @mixin maxw1328() {
   max-width: 1328px;
-  margin-left: 56px; margin-right: 56px;
+  margin: 0 56px;
 }
 @mixin flexc() { // Center flex
   display: flex;
