@@ -7,6 +7,7 @@
 // Import mixins, variables
 @import 'mixins_var.scss';
 // Global selectors styles
+html {scroll-behavior: smooth;}
 h1, h2, h3, p, a, ul, span, button, input, textarea {
   font-family: "Roboto Regular";
   margin: 0;
@@ -16,27 +17,27 @@ h1 {
 }
 h2 {
 }
-h3  {
+h3 {
 }
-p  {
+p {
 }
-a  {
+a {
   text-decoration: none;
-  color: #3F3B3D;
+  color: #fff;
   &:hover {color: #0d6efd;}
   &:active {color: #F14814;}
 }
-span, button  {
-
+button {
+  cursor: pointer; 
+  border: none; 
 }
-button {cursor: pointer;}
-img  {
+img {
   user-select: none;
 }
-ul  {
+ul {
   list-style: none;
   padding: 0;
 }
-input, textarea  {
+input, textarea {
 
 }

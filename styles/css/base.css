@@ -4,6 +4,10 @@
   font-family: "Roboto Regular";
   src: url(/webfonts/RobotoRegular.woff) format("woff");
 }
+html {
+  scroll-behavior: smooth;
+}
+
 h1, h2, h3, p, a, ul, span, button, input, textarea {
   font-family: "Roboto Regular";
   margin: 0;
@@ -15,7 +19,7 @@ h1 {
 
 a {
   text-decoration: none;
-  color: #3F3B3D;
+  color: #fff;
 }
 a:hover {
   color: #0d6efd;
@@ -26,6 +30,7 @@ a:active {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 img {
