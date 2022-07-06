@@ -5,12 +5,12 @@
   max-width: 1920px;
   margin: 0 auto;
 }
-.header {
+.l-header {
   @include flexb();
   @include maxw1328();
   padding: 0px 20px 11px 24px;
   h1 {font-size: 1.6rem; padding-top: 25px;}
-  &-menu {
+  .header-menu {
     max-width: 612px;
     padding-top: 13px;
     display: flex;
@@ -53,9 +53,9 @@
     }
   }
 }
-.main {
+.l-main {
   @include maxw1328();
- .shop-block {
+ .l-shop-block {
   display: flex;
   padding-left: 24px;
   .shop-preview {
@@ -87,15 +87,64 @@
     
   }
  }
- .rest-of-the-story-block {
-  @include maxw1328();
+ .l-features-block {
+  padding: 63px 56px 64px;
+  .rts {
+    text-align: center;
+    margin: 0 240px 59px 260px;
+    h2 {
+      color: #F14814;
+      font-size: 0.75rem; 
+      line-height: 16px; 
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 1.688rem;
+      line-height: 37px;
+      letter-spacing: 0.56px;
+
+    }
+  }
+  .features {
+    margin: 0 198px 64px 220px;
+    @include flexw();
+    justify-content: space-between;
+    .f-block {
+      max-width: 245.33px; height: 150px;
+      text-align: center;
+      h2 {
+        font-size: 1.313rem; 
+        line-height: 25px;
+        margin: 13px 0 11px;
+      }
+      p {font-size: 0.75rem; line-height: 16px;}
+    }    
+    .free-artwork, .lower-minimum {
+      h2 {margin: 10px 0 11px;}
+    }
+    .oh-guarantee {
+      h2 {margin: 5px 0 8px;}
+      p {max-width: 95%; margin: 0 auto;}
+    }
+  }
  }
- .journal-block {
+ .l-collection-block {
+  padding: 64px 24px;
+  .collection {
+    display: flex; gap: 8.33px;
+    &-item {
+      max-width: 421.33px;
+      height: 421.33px;
+    }
+  }
+ }
+ .l-journal-block {
 
  }
 }
 
-.footer {
+.l-footer {
   &-bottom {
     justify-content: space-between;
   }

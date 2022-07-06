@@ -3,6 +3,10 @@
   max-width: 1328px;
   margin: 0 56px;
 }
+@mixin flexw() {
+  display: flex; 
+  flex-wrap: wrap;
+}
 @mixin flexc() { // Center flex
   display: flex;
   justify-content: center;

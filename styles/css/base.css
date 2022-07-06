@@ -17,6 +17,10 @@ h1 {
   width: 80px;
 }
 
+h2 {
+  font-weight: 400;
+}
+
 a {
   text-decoration: none;
   color: #fff;
