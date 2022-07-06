@@ -109,8 +109,14 @@
   .l-main .l-shop-block {
     padding: 0;
   }
+  .l-main .l-features-block {
+    padding: 63px 56px 0;
+  }
   .l-main .l-features-block .rts {
     max-width: 85%;
+  }
+  .l-main .l-collection-block {
+    padding: 0 56px;
   }
 }
 @media (max-width: 767.98px) {

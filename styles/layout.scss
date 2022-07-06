@@ -130,12 +130,29 @@
   }
  }
  .l-collection-block {
-  padding: 64px 24px;
+  padding-left: 24px;
   .collection {
     display: flex; gap: 8.33px;
     &-item {
+      // background: #e9e9e7;
       max-width: 421.33px;
       height: 421.33px;
+      &-image {
+        display: flex;
+        // background: #e9e9e7;
+        // background: #e7e7e5;
+        height: 381px; 
+        // padding: 0 12px;
+        // img { box-shadow: $box-shadow; }
+      }
+      &-desc {
+        display: flex; justify-content: space-between;
+        padding: 12px;
+        span {font-size: 0.75rem; line-height: 16px;}
+        .price {
+          display: flex; gap: 3px;
+        }
+      }
     }
   }
  }

@@ -94,7 +94,11 @@
   .l-main {
     margin: 0;
    .l-shop-block {padding: 0;}
-   .l-features-block .rts {max-width: 85%;}
+   .l-features-block {
+    padding: 63px 56px 0;
+    .rts {max-width: 85%;}
+   }
+   .l-collection-block {padding: 0 56px;}
   }
   .footer {
    
@@ -107,6 +111,7 @@
   }
   .l-main {
     .l-features-block {margin: 0 30px; padding: 63px 0 64px;}
+    
   }
   .l-footer {
    
