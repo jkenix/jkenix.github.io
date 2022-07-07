@@ -26,5 +26,11 @@
 // Button
 .btn {
   &:hover {background: #000; color: #fff;}
-  &:focus {box-shadow: 0 0 0 0.15rem rgba(153, 54, 84, 0.5);}
+  &:focus {box-shadow: $f-box-shadow rgba(153, 54, 84, 0.5);}
+}
+// Main
+// Market item collection-block
+.l-main .l-collection-block .collection-item {
+  &:hover {border: 1px solid #000; border-radius: 1px;}
+  // &:focus {box-shadow: $f-box-shadow rgba(255, 4, 4, 0.171);}
 }
