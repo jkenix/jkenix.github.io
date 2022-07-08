@@ -200,6 +200,10 @@
   font-size: 0.869rem;
   line-height: 19px;
 }
+.l-main .l-collection-block .shop-categories .shop-all-wr, .l-main .l-collection-block .shop-categories .browse-collection-wr {
+  display: flex;
+  height: 477px;
+}
 .l-main .l-collection-block .shop-categories .shop-all {
   background: url("/img/shop-all.png") no-repeat center;
 }

@@ -150,7 +150,8 @@
         }
       }
       .shop-categories {
-        
+        flex-wrap: wrap; justify-content: center;
+        // .shop-all {height: auto;}
       }
     }
   }

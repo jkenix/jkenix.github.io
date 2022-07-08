@@ -167,6 +167,10 @@
   .l-main .l-collection-block .collection-item .collection-item-desc .price {
     gap: 10px;
   }
+  .l-main .l-collection-block .shop-categories {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 @media (max-width: 575.98px) {
   body {
