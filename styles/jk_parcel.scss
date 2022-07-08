@@ -229,7 +229,6 @@ header {
         .row {max-width: 210px;}
         .col_img, .col_img-2 {flex: 0 0 0%; margin: 0 20px 0 0;}
         .conversion .col_img-2 {padding-left: 35px;}
-        // .img_2 {margin: 0 20px 0 110px;}
         .text-stat_col {
           display: flex;
           flex-direction: column;
@@ -753,7 +752,8 @@ header {
     .fb_nav {
       display: flex; width: auto;
       gap: 10px;
-        a {text-decoration: underline;}
+      a {text-decoration: underline;}
+      .info-links {display: flex; gap: 8px;}
     }
     span {width: auto;}
     .info_col {

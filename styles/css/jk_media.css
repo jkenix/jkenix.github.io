@@ -1203,6 +1203,13 @@
   .footer .contacts .seoflow p {
     margin: 0;
   }
+  .footer .footer-bottom .nav {
+    gap: 0;
+    flex-direction: column;
+  }
+  .footer .footer-bottom .nav .info-links {
+    justify-content: center;
+  }
 }
 @media (max-width: 466px) {
   .nav-wr .b-wr {

@@ -1245,6 +1245,10 @@ header .row_content .media a:active {
 .footer .footer-bottom .fb_nav a {
   text-decoration: underline;
 }
+.footer .footer-bottom .fb_nav .info-links {
+  display: flex;
+  gap: 8px;
+}
 .footer .footer-bottom span {
   width: auto;
 }

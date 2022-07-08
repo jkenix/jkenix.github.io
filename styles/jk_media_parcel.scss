@@ -809,11 +809,18 @@
       }
     }
  }
- .footer .contacts {
-  .nav_col span {font-size: 1.5rem;}
-  .seoflow {
-    text-align: center;
-    p {margin: 0;}
+ .footer {
+  .contacts {
+    .nav_col span {font-size: 1.5rem;}
+    .seoflow {
+      text-align: center;
+      p {margin: 0;}
+    }
+  }
+  .footer-bottom .nav {
+    gap: 0;
+    flex-direction: column;
+    .info-links {justify-content: center;}
   }
  }
 }
