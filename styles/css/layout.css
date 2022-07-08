@@ -224,6 +224,42 @@
   font-size: 2.55rem;
   margin-bottom: 8px;
 }
+.l-main .l-gtrs-block {
+  padding: 128.33px 24px 60px;
+}
+.l-main .l-gtrs-block .review-block {
+  padding: 0 82px 0px 100px;
+}
+.l-main .l-gtrs-block .review-block h2 {
+  font-size: 1.813rem;
+  line-height: 35px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.l-main .l-gtrs-block .review-block-content {
+  display: flex;
+  gap: 8px;
+}
+.l-main .l-gtrs-block .review-block-content img {
+  height: auto;
+}
+.l-main .l-gtrs-block .review-block-content .review-img, .l-main .l-gtrs-block .review-block-content .review-text {
+  width: 536px;
+}
+.l-main .l-gtrs-block .review-block-content .review-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 204px 63px 159px;
+}
+.l-main .l-gtrs-block .review-block-content .review-text q {
+  font-size: 1.67rem;
+  line-height: 32px;
+  margin-bottom: 29px;
+}
+.l-main .l-gtrs-block .review-block-content .review-text span {
+  font-size: 0.75rem;
+}
 .l-footer-bottom {
   justify-content: space-between;
 }

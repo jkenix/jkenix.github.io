@@ -176,6 +176,34 @@
       }
   }
  }
+ .l-gtrs-block {
+    padding: 128.33px 24px 60px;
+    .review-block {
+      padding: 0 82px 0px 100px;
+      h2 {
+        font-size: 1.813rem; 
+        line-height: 35px;
+        margin-bottom: 32px;
+        text-align: center;
+      }
+      &-content {
+        display: flex; gap: 8px;
+        img {height: auto;}
+        .review-img, .review-text {width: 536px;}
+        .review-text {
+         display: flex; flex-direction: column;
+         text-align: center;
+         padding: 204px 63px 159px;
+         q {
+          font-size: 1.67rem; 
+          line-height: 32px; 
+          margin-bottom: 29px;
+        }
+         span {font-size: 0.75rem;}
+        }
+      }      
+    }
+ }
  .l-journal-block {
 
  }
