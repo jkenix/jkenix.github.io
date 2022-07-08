@@ -26,11 +26,20 @@
 // Button
 .btn {
   &:hover {background: #000; color: #fff;}
-  &:focus {box-shadow: $f-box-shadow rgba(153, 54, 84, 0.5);}
+  &:focus {box-shadow: $b-box-shadow rgba(153, 54, 84, 0.5);}
 }
 // Main
 // Market item collection-block
-.l-main .l-collection-block .collection-item {
-  &:hover {border: 1px solid #000; border-radius: 1px;}
-  // &:focus {box-shadow: $f-box-shadow rgba(255, 4, 4, 0.171);}
+.l-main .l-collection-block{
+  .collection-item, .shop-all, .browse-collection {
+    // &:active {border: 1px solid #F14814;}
+    // &:hover {border: 1px solid #000; border-radius: 1px;}
+    &:focus-within {box-shadow: $ci-box-shadow rgba(16, 22, 14, 0.164);}
+  }
+  .shop-all, .browse-collection {
+    a {
+      &:hover {color: #fff;}
+      &:active {color: #0d6efd;}
+    }
+  }
 }

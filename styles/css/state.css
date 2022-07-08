@@ -33,9 +33,14 @@
   box-shadow: 0 0 0 0.15rem rgba(153, 54, 84, 0.5);
 }
 
-.l-main .l-collection-block .collection-item:hover {
-  border: 1px solid #000;
-  border-radius: 1px;
+.l-main .l-collection-block .collection-item:focus-within, .l-main .l-collection-block .shop-all:focus-within, .l-main .l-collection-block .browse-collection:focus-within {
+  box-shadow: 0 0 0 0.35rem rgba(16, 22, 14, 0.164);
+}
+.l-main .l-collection-block .shop-all a:hover, .l-main .l-collection-block .browse-collection a:hover {
+  color: #fff;
+}
+.l-main .l-collection-block .shop-all a:active, .l-main .l-collection-block .browse-collection a:active {
+  color: #0d6efd;
 }
 
 /*# sourceMappingURL=state.css.map */
