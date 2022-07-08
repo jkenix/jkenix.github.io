@@ -1,5 +1,6 @@
 // Import mixins, variables
 @import 'mixins_var.scss';
+@import "lib/breakpoints";
 // State of modules and site skeleton
 #scroll_top {
   display: none;
@@ -37,9 +38,10 @@
     &:focus-within {box-shadow: $ci-box-shadow rgba(16, 22, 14, 0.164);}
   }
   .shop-all, .browse-collection {
-    a {
-      &:hover {color: #fff;}
-      &:active {color: #0d6efd;}
+    @include media-breakpoint-down(sm) {
+      &:hover {
+        background: linear-gradient(to bottom right, blue, #000, blue);
+      }
     }
   }
 }

@@ -36,11 +36,10 @@
 .l-main .l-collection-block .collection-item:focus-within, .l-main .l-collection-block .shop-all:focus-within, .l-main .l-collection-block .browse-collection:focus-within {
   box-shadow: 0 0 0 0.35rem rgba(16, 22, 14, 0.164);
 }
-.l-main .l-collection-block .shop-all a:hover, .l-main .l-collection-block .browse-collection a:hover {
-  color: #fff;
-}
-.l-main .l-collection-block .shop-all a:active, .l-main .l-collection-block .browse-collection a:active {
-  color: #0d6efd;
+@media (max-width: 575.98px) {
+  .l-main .l-collection-block .shop-all:hover, .l-main .l-collection-block .browse-collection:hover {
+    background: linear-gradient(to bottom right, blue, #000, blue);
+  }
 }
 
 /*# sourceMappingURL=state.css.map */
