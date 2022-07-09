@@ -33,7 +33,106 @@
   box-shadow: 0 0 0 0.15rem rgba(153, 54, 84, 0.5);
 }
 
-.l-main .l-collection-block .collection-item:focus-within, .l-main .l-collection-block .shop-all:focus-within, .l-main .l-collection-block .browse-collection:focus-within {
+@media (max-width: 575.98px) {
+  .l-header {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+  }
+  .l-header h1 {
+    padding-top: 15px;
+    font-size: 2rem;
+    width: auto;
+  }
+  .l-header .header-menu .basket-block #counter-label {
+    width: 22px;
+    height: 20px;
+  }
+  .l-header .header-menu .hamburger {
+    display: block;
+    margin-top: -105px;
+  }
+  .l-header .header-menu .nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #3F3B3D;
+    top: -100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+  }
+  .l-header .header-menu .nav nav {
+    gap: 0;
+  }
+  .l-header .header-menu .nav nav a {
+    font-size: 3rem;
+    color: #fff;
+  }
+  .l-header .header-menu .nav-wrapper {
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  .l-header .header-menu nav {
+    text-align: center;
+    flex-direction: column;
+  }
+  .l-header .header-menu nav a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 3rem;
+    display: inline-block;
+    margin-top: 1.85em;
+    transition: color 0s ease-in-out;
+    letter-spacing: 1px;
+  }
+  .l-header .header-menu nav a:before {
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 0.25em;
+    background-color: white;
+    left: -0.5em;
+    transition: all 0.2s ease-in-out;
+  }
+  .l-header .header-menu nav a:hover:before {
+    height: 100%;
+  }
+  .l-header .header-menu #toggle:checked + .hamburger .top-bun {
+    transform: rotate(-45deg);
+    margin-top: 25px;
+  }
+  .l-header .header-menu #toggle:checked + .hamburger .bottom-bun {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+  .l-header .header-menu #toggle:checked + .hamburger .meat {
+    transform: rotate(45deg);
+    margin-top: -7px;
+  }
+  .l-header .header-menu #toggle:checked + .hamburger + .nav {
+    top: 0;
+    transform: scale(1);
+  }
+}
+.l-header .header-menu .nav nav a:hover,
+.l-main .l-journal-block .top-news-content a:hover {
+  color: #0d6efd;
+}
+.l-header .header-menu .nav nav a:active,
+.l-main .l-journal-block .top-news-content a:active {
+  color: #F14814;
+}
+
+.l-main .l-collection-block .fw:focus-within, .l-main .l-journal-block .fw:focus-within {
   box-shadow: 0 0 0 0.35rem rgba(16, 22, 14, 0.164);
 }
 @media (max-width: 575.98px) {
