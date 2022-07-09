@@ -8,35 +8,19 @@
 @import 'mixins_var.scss';
 // Global selectors styles
 html {scroll-behavior: smooth;}
-h1, h2, h3, p, a, ul, span, button, input, textarea {
+h1, h2, h3, p, a, ul, span, button, q, input, textarea {
   font-family: "Roboto Regular";
+  font-weight: 400;
   margin: 0;
 }
-h1 {
-  width: 80px;
-}
-h2 {
-  font-weight: 400;
-}
-h3 {
-}
-p {
-}
-a {
-  text-decoration: none;
-  color: #fff;
-}
+h1 {width: 80px; font-weight: 900;}
+a {text-decoration: none;}
 button {
   cursor: pointer; 
   border: none; 
 }
-img {
-  user-select: none;
-}
+img {user-select: none;}
 ul {
   list-style: none;
   padding: 0;
-}
-input, textarea {
-
 }
