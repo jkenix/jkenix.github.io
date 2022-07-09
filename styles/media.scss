@@ -50,8 +50,7 @@
       }
       .features {
         justify-content: center;
-        margin: 0;
-        gap: 30px;
+        margin: 0; gap: 30px;
       }
     }
     .l-gtrs-block .review-block {
@@ -60,6 +59,10 @@
         img {max-width: 100%;}
       }
       .review-text {justify-content: center; padding: 0 20px;}
+    }
+    .l-journal-block {
+      padding: 46px 0px 64px;
+      justify-content: center;
     }
   }
   .footer {
@@ -105,6 +108,11 @@
     .l-gtrs-block .review-block {
       .review-text q {font-size: 1.45rem;}
     }
+    .l-journal-block {
+      gap: 40px;
+      .top-news, .last-news-list {width: 487px;} // Common classes
+      .top-news-content {width: auto; padding: 10px;}
+    }
   }
   .footer {
   
@@ -126,14 +134,34 @@
    }
    .l-collection-block {
       padding: 40px 52px 64px;
-      .collection {
-        .collection-item-desc .price {gap: 65px;}
-      }
+      .collection .collection-item-desc .price {gap: 65px;}
     }
     .l-gtrs-block {
       padding: 0;
       .review-block {padding: 0 52px;}
-
+    }
+    .l-companies-block {
+      padding: 40px 24px 63.67px;
+      .companies-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        .cleo, .arial {width: 325px;}
+        .arial {padding: 0;}
+        .cleo q {padding-left: 20px; padding-right: 20px;}
+      }
+    }
+    .l-journal-block {
+      flex-direction: column;
+      align-items: center;
+      .top-news {
+        width: auto; max-width: 100%;
+        &-content {
+          padding: 30px 0px 30px;
+          margin: 0;
+          p {max-width: 60%; margin: 0 auto 10px;}
+        }
+      }
+      .last-news-list {margin: 10px 0;}
     }
   }
   .footer {
@@ -158,11 +186,11 @@
           .collection-item-desc .price {gap: 10px;}
         }
         .ci-md {
-         max-width: 100%; 
-         .collection-item-image {
-          height: 250px;
-          img {width: 500px;}
-         }
+          max-width: 100%; 
+          .collection-item-image {
+            height: 250px;
+            img {width: 500px;}
+          }
         }
       }
       .shop-categories {flex-wrap: wrap; justify-content: center;}
@@ -178,11 +206,13 @@
           display: flex; justify-content: center;
           img {width: 500px;}
         } 
-        .review-text {
-          padding: 0; width: 500px;
-          // q {max-width: 95%; margin: 0 auto 29px;}
-        }
+        .review-text {padding: 0; width: 500px;}
       }
+    }
+    .l-companies-block .companies-list {
+      gap: 10px;
+      .cleo {width: 350px;}
+      .arial, .walden {width: 250.5px;}
     }
   }
   .l-footer {
@@ -191,80 +221,6 @@
 }
 @include media-breakpoint-down(sm) { // 576px
   body {background-color: #d63384 !important;}
-  .l-header {
-    justify-content: center;
-    flex-direction: column; 
-    align-items: center;
-    gap: 10px;
-    padding: 0;
-    h1 {padding-top: 15px; font-size: 2rem; width: auto;}
-    .header-menu {
-      .basket-block #counter-label {width: 22px; height: 20px;}
-      .hamburger {display: block; margin-top: -105px;}
-      // Nav Styles
-      .nav {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background-color: #3F3B3D;
-        top: -100%; left: 0; right: 0; bottom: 0;
-        overflow: hidden;
-        transition: all 0.3s ease-in-out;
-        transform: scale(0);
-        nav {
-          gap: 0;
-          a {font-size: 3rem;}
-        }
-      }
-      .nav-wrapper {
-        position: relative;
-        overflow: hidden;
-        overflow-y: auto;
-        height: 100%;
-      }
-      nav {
-        text-align: center;
-        flex-direction: column;
-        a {
-          position: relative;
-          text-decoration: none;
-          color: #fff;
-          font-size: 3rem;
-          display: inline-block;
-          margin-top: 1.85em;
-          transition: color 0s ease-in-out;
-          letter-spacing: 1px;
-          &:before {
-            content: '';
-            height: 0;
-            position: absolute;
-            width: 0.25em;
-            background-color: white;
-            left: -0.5em;
-            transition: all 0.2s ease-in-out;
-          }
-          &:hover:before {height: 100%;}
-        }
-      }
-      // Animations
-      #toggle:checked + .hamburger .top-bun {
-        transform: rotate(-45deg);
-        margin-top: 25px;
-      }
-      #toggle:checked + .hamburger .bottom-bun {
-        opacity: 0;
-        transform: rotate(45deg);
-      }
-      #toggle:checked + .hamburger .meat {
-        transform: rotate(45deg);
-        margin-top: -7px;
-      }
-      #toggle:checked + .hamburger + .nav {
-        top: 0;
-        transform: scale(1);
-      }
-    }
-  }
   .l-main {
     .l-shop-block .shop-preview {
       margin-top: 20px; 
@@ -276,6 +232,7 @@
     .l-features-block {
       .rts {
         max-width: 100%; text-align: initial;
+        margin: 0 0 20px;
         h2 {text-align: center;}
         p {font-size: 1.1rem;}
       }
@@ -287,7 +244,6 @@
         .collection-item {
           max-width: 100%;
           .collection-item-image {
-            // height: 250px;
             height: 190px;
             img {width: 420px;}
           }
@@ -306,16 +262,14 @@
     .l-gtrs-block .review-block {
       padding: 0 30px;
       .review-block-content {
-        .review-img {
-          max-width: 100%;
-          img {width: 350px;}
-        }
-        .review-text {
-          max-width: 100%;
-          q {font-size: 1.2rem;}
-        }
+        .review-img, .review-text {max-width: 100%;} // Common classes
+        .review-img img {width: 350px;}
+        .review-text q {font-size: 1.1rem;}
       }
-      
+    }
+    .l-companies-block .companies-list {
+      gap: 15px;
+      .cb {width: 272px;}
     }
   }
 }

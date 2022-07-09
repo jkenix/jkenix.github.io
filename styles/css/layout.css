@@ -30,12 +30,6 @@
   line-height: 19px;
   color: #3F3B3D;
 }
-.l-header .header-menu .nav nav a:hover {
-  color: #0d6efd;
-}
-.l-header .header-menu .nav nav a:active {
-  color: #F14814;
-}
 .l-header .header-menu .nav nav a a:nth-last-child(1) {
   padding-right: 20px;
 }
@@ -190,7 +184,6 @@
   padding-top: 8px;
 }
 .l-main .l-collection-block .shop-categories .shop-all, .l-main .l-collection-block .shop-categories .browse-collection {
-  color: #fff;
   text-align: center;
   max-width: 100%;
   width: 636px;
@@ -203,6 +196,7 @@
 .l-main .l-collection-block .shop-categories .shop-all-wr, .l-main .l-collection-block .shop-categories .browse-collection-wr {
   display: flex;
   height: 477px;
+  color: #fff;
 }
 .l-main .l-collection-block .shop-categories .shop-all {
   background: url("/img/shop-all.png") no-repeat center;
@@ -250,15 +244,137 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 204px 63px 159px;
+  padding: 204px 64px 159px;
 }
 .l-main .l-gtrs-block .review-block-content .review-text q {
-  font-size: 1.67rem;
+  font-size: 1.5rem;
   line-height: 32px;
   margin-bottom: 29px;
 }
 .l-main .l-gtrs-block .review-block-content .review-text span {
   font-size: 0.75rem;
+}
+.l-main .l-companies-block {
+  padding: 0 24px 63.67px;
+}
+.l-main .l-companies-block .companies-list {
+  display: flex;
+  justify-content: space-between;
+}
+.l-main .l-companies-block .companies-list .cb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+  width: 272px;
+  height: 111px;
+}
+.l-main .l-companies-block .companies-list .cb q {
+  font-size: 16px;
+  line-height: 21px;
+}
+.l-main .l-companies-block .companies-list .cleo q {
+  padding: 18px 13px 18.33px;
+}
+.l-main .l-companies-block .companies-list .arial {
+  padding: 0 20px 18.33px 21px;
+}
+.l-main .l-companies-block .companies-list .arial q {
+  padding: 18px 5px 0;
+}
+.l-main .l-companies-block .companies-list .walden q {
+  padding-top: 18px;
+}
+.l-main .l-companies-block .companies-list .petsplay q {
+  padding: 18px 10px 0;
+}
+.l-main .l-journal-block {
+  display: flex;
+  gap: 64px;
+  padding: 46px 124px 64px;
+}
+.l-main .l-journal-block .top-news, .l-main .l-journal-block .last-news-list {
+  width: 508px;
+}
+.l-main .l-journal-block .top-news p, .l-main .l-journal-block .last-news-list p {
+  font-size: 1rem;
+  line-height: 21px;
+}
+.l-main .l-journal-block .top-news span, .l-main .l-journal-block .last-news-list span {
+  font-size: 0.75rem;
+  line-height: 16px;
+}
+.l-main .l-journal-block .top-news {
+  background: url("/img/journal-top-pic.png") center no-repeat;
+}
+.l-main .l-journal-block .top-news-content {
+  width: 407px;
+  margin: 420px 16px 16px;
+  padding: 30px 34px 30px 35px;
+  text-align: center;
+}
+.l-main .l-journal-block .top-news-content span {
+  font-size: 0.75rem;
+}
+.l-main .l-journal-block .top-news-content h2 {
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+}
+.l-main .l-journal-block .top-news-content p {
+  margin-bottom: 10px;
+}
+.l-main .l-journal-block .top-news-content a {
+  font-size: 1rem;
+  line-height: 21px;
+  font-weight: 700;
+  color: #3F3B3D;
+}
+.l-main .l-journal-block .last-news-top h2 {
+  font-size: 3.25rem;
+  line-height: 56px;
+  letter-spacing: 0.56px;
+  margin-bottom: 14.33px;
+}
+.l-main .l-journal-block .last-news-top h3 {
+  font-size: 1rem;
+  line-height: 21px;
+}
+.l-main .l-journal-block .last-news-list {
+  margin: 193px 0 0;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.l-main .l-journal-block .last-news-list .ls-1 h2 {
+  font-size: 0.938rem;
+}
+.l-main .l-journal-block .last-news-list .ls-2 h2 {
+  width: 278px;
+}
+.l-main .l-journal-block .last-news-list .ls-2 p {
+  width: 311px;
+}
+.l-main .l-journal-block .last-news-list .ls-2 h2, .l-main .l-journal-block .last-news-list .ls-3 h2 {
+  font-size: 1rem;
+}
+.l-main .l-journal-block .last-news-list .ln-section {
+  display: flex;
+}
+.l-main .l-journal-block .last-news-list .ln-section .lns-img {
+  padding-top: 3px;
+}
+.l-main .l-journal-block .last-news-list .ln-section .ls-link {
+  display: flex;
+  gap: 31.66px;
+  color: #3F3B3D;
+}
+.l-main .l-journal-block .last-news-list .ln-section span {
+  color: #5D6E67;
+}
+.l-main .l-journal-block .last-news-list .ln-section h2 {
+  line-height: 21px;
+  margin-bottom: 5px;
 }
 .l-footer-bottom {
   justify-content: space-between;

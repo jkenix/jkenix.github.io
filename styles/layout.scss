@@ -17,18 +17,14 @@
     align-items: center;
     .nav {
       nav {
-        display: flex; 
-        gap: 40px;
+        display: flex; gap: 40px;
         padding: 20px 30px 19px 20px;
         a {
           font-size: 0.875rem; 
           line-height: 19px; color: #3F3B3D;
-          &:hover {color: #0d6efd;}
-          &:active {color: #F14814;}
           a:nth-last-child(1) {padding-right: 20px;}
         }
       }
-      
     }
     .btn { 
       width: 114px; height: 42px;
@@ -133,10 +129,7 @@
       max-width: 421.33px;
       height: 421.33px;
       a {color: #3F3B3D;}
-      &-image {
-        display: flex;
-        height: 381px; 
-      }
+      &-image {display: flex; height: 381px;}
       &-desc {
         @include flexb();
         padding: 12px;
@@ -150,14 +143,14 @@
     display: flex; gap: 8.33px;
     padding-top: 8px;
       .shop-all, .browse-collection { // Common classes
-        color: #fff;
         text-align: center;
         max-width: 100%;
         width: 636px;
         height: 477px;
         span {font-size: 0.869rem; line-height: 19px;}
         &-wr {
-          display: flex;  height: 477px;
+          display: flex; height: 477px;
+          color: #fff;
         }
       }
       .shop-all {
@@ -193,9 +186,9 @@
         .review-text {
          display: flex; flex-direction: column;
          text-align: center;
-         padding: 204px 63px 159px;
+         padding: 204px 64px 159px;
          q {
-          font-size: 1.67rem; 
+          font-size: 1.5rem; 
           line-height: 32px; 
           margin-bottom: 29px;
         }
@@ -204,9 +197,90 @@
       }      
     }
  }
- .l-journal-block {
+ .l-companies-block {
+  padding: 0 24px 63.67px;
+  .companies-list {
+   @include flexb();
+    .cb {
+      display: flex;
+      flex-direction: column;
+      align-items: center; text-align: center;
+      max-width: 100%;
+      width: 272px;
+      height: 111px;
+      q {font-size: 16px; line-height: 21px;}
+    }
+    .cleo q {padding: 18px 13px 18.33px;}
+    .arial {
+      padding: 0 20px 18.33px 21px;
+      q {padding: 18px 5px 0;}
+    }
+    .walden q {padding-top: 18px;}
+    .petsplay q {padding: 18px 10px 0;}
 
+  }
  }
+ .l-journal-block {
+    display: flex; gap: 64px;
+    padding: 46px 124px 64px;
+    .top-news, .last-news-list {
+      width: 508px;
+      p {font-size: 1rem; line-height: 21px;}
+      span {font-size: 0.75rem; line-height: 16px;}
+    }
+    .top-news {
+      background: url("/img/journal-top-pic.png") center no-repeat;
+      &-content {
+        width: 407px;
+        margin: 420px 16px 16px;
+        padding: 30px 34px 30px 35px;
+        text-align: center;
+        span {font-size: 0.75rem;}
+        h2 {margin-bottom: 8px; font-size: 1.5rem;}
+        p {margin-bottom: 10px;}
+        a {
+          font-size: 1rem; 
+          line-height: 21px; 
+          font-weight: 700;
+          color: #3F3B3D;
+        }
+      }
+    }
+    .last-news {
+      &-top {
+        h2 {
+          font-size: 3.25rem;
+          line-height: 56px;
+          letter-spacing: 0.56px;
+          margin-bottom: 14.33px;
+        }
+        h3 {font-size: 1rem; line-height: 21px;}
+      }
+      &-list {
+        margin: 193px 0 0; gap: 8px;
+        display: flex; flex-direction: column;
+        .ls-1 h2 {font-size: 0.938rem;}
+        .ls-2 {
+          h2 {width: 278px;}
+          p {width: 311px;}
+        } 
+        .ls-2, .ls-3 { // Common classes
+          h2 {font-size: 1rem;}
+        }
+        .ln-section {
+          display: flex;
+          .lns-img {padding-top: 3px;}
+          .ls-link {
+            display: flex; gap: 31.66px; 
+            color: #3F3B3D;
+          }
+          span {color: #5D6E67;}
+          h2 {line-height: 21px; margin-bottom: 5px;}
+          p {}
+        }
+      }
+    }
+  }
 }
 
 .l-footer {
