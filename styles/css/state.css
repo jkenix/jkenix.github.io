@@ -123,6 +123,11 @@
     transform: scale(1);
   }
 }
+.db {
+  max-width: 1328px;
+  margin: 0 56px;
+}
+
 .l-header .header-menu .nav nav a:hover,
 .l-main .l-journal-block .top-news-content a:hover {
   color: #0d6efd;
@@ -132,8 +137,13 @@
   color: #F14814;
 }
 
-.l-main .l-collection-block .fw:focus-within, .l-main .l-journal-block .fw:focus-within {
+.l-main .l-journal-block .fw:focus-within {
   box-shadow: 0 0 0 0.35rem rgba(16, 22, 14, 0.164);
+}
+@media (max-width: 575.98px) {
+  .l-main .l-journal-block .fw:focus-within {
+    box-shadow: none;
+  }
 }
 @media (max-width: 575.98px) {
   .l-main .l-collection-block .shop-all:hover, .l-main .l-collection-block .browse-collection:hover {

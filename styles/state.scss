@@ -106,6 +106,10 @@
     }
   }
 }
+// Margin global
+.db { // Blocks width margin 0 56px;
+  @include maxw1328();
+}
 // A :hover and :active elements in header/main/footer
 .l-header .header-menu .nav nav,
 .l-main .l-journal-block .top-news-content {
@@ -114,16 +118,17 @@
   &:active {color: #F14814;}
  }
 }
-
-// Main
-// Market item collection-block
+// Effects
 .l-main {
-  .l-collection-block, .l-journal-block { // Common classes
+  .l-journal-block { // Common classes
     .fw { // Class of add box-shadow effect
       &:focus-within {box-shadow: $ci-box-shadow rgba(16, 22, 14, 0.164);}
+      @include media-breakpoint-down(sm) { // Off box-shadow
+        &:focus-within {box-shadow: none;}
+      }
     }
   }
-  .l-collection-block {
+  .l-collection-block { // Market item collection-block
     .shop-all, .browse-collection {
       @include media-breakpoint-down(sm) {
         &:hover {
