@@ -50,16 +50,14 @@
   }
 }
 .l-main {
-  @include maxw1328();
  .l-shop-block {
   display: flex;
   padding-left: 24px;
   .shop-preview {
+    display: flex;
     max-width: 512px;
     height: 482px;
-    background: #3F3B3D;
     margin-top: 80px;
-    display: flex;
     &-content {
       padding: 261px 78px 64px 64px;
       h2 {
@@ -128,12 +126,10 @@
     &-item {
       max-width: 421.33px;
       height: 421.33px;
-      a {color: #3F3B3D;}
       &-image {display: flex; height: 381px;}
       &-desc {
         @include flexb();
         padding: 12px;
-        background: #e9e9e7;
         span {font-size: 0.75rem; line-height: 16px;}
         .price {display: flex; gap: 3px;}
       }
@@ -222,8 +218,8 @@
  }
  .l-journal-block {
     display: flex; gap: 64px;
-    padding: 46px 124px 64px;
-    .top-news, .last-news-list {
+    padding: 46px 124px 60px;
+    .top-news, .last-news-list { // Common classes
       width: 508px;
       p {font-size: 1rem; line-height: 21px;}
       span {font-size: 0.75rem; line-height: 16px;}
@@ -268,22 +264,41 @@
           h2 {font-size: 1rem;}
         }
         .ln-section {
-          display: flex;
           .lns-img {padding-top: 3px;}
-          .ls-link {
+          .lns-link {
             display: flex; gap: 31.66px; 
             color: #3F3B3D;
           }
           span {color: #5D6E67;}
           h2 {line-height: 21px; margin-bottom: 5px;}
-          p {}
         }
       }
     }
   }
+ .l-celebrating-imperfect {
+    padding: 96.33px 36px 64px 80px;
+    display: flex; flex-direction: column;
+    gap: 32px;
+    .products-top {
+      display: flex;
+      h2 {
+        width: 320px; height: 64px;
+        font-size: 1.813rem; 
+        line-height: 32px;
+        color: #fff;
+      }
+    }
+    .products-img-line {
+      display: flex; gap: 32px;
+      .product-img  img {height: auto;}
+    }
+  }
 }
-
 .l-footer {
+  @include maxw1328();
+  .l-contacts-block {
+
+  }
   &-bottom {
     justify-content: space-between;
   }

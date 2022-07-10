@@ -22,7 +22,7 @@
   }
 }
 @media (min-width: 1441px) {
-  .l-header, .l-main {margin: 0 auto;}
+  .l-header, .l-main .db {margin: 0 auto;}
   .l-header {padding: 0 0 11px 0px;}
   .l-main {
     .l-shop-block {
@@ -32,6 +32,7 @@
         &-content {padding: 260px 159px 64px 64px;}
       }
     }
+    .l-celebrating-imperfect {align-items: center;}
   }
 }
 @include media-breakpoint-down(xxl)  { // 1400px
@@ -79,11 +80,12 @@
         height: auto;
         margin-top: 0px;
         &-content {
-          h2 {max-width: 80%; text-align: center;}
           display: flex;
           flex-direction: column;
           align-items: center;
           padding: 64px 20px;
+          h2 {max-width: 80%; text-align: center;}
+          .btn {margin: 0; padding: 0;}
         }
       }
       .shop-preview-pic {display: none;}
@@ -113,6 +115,16 @@
       .top-news, .last-news-list {width: 487px;} // Common classes
       .top-news-content {width: auto; padding: 10px;}
     }
+    .l-celebrating-imperfect {
+      padding-right: 80px;
+      .products-top {justify-content: center;}
+      .products-img-line {
+        flex-wrap: wrap; justify-content: center;
+        gap: 20px;
+        .product-img img {width: 330px;}
+      }
+      
+    }    
   }
   .footer {
   
@@ -126,7 +138,7 @@
     .header-menu .btn {margin: 0;}
   }
   .l-main {
-    margin: 0;
+    .db {margin: 0;}
    .l-shop-block {padding: 0;}
    .l-features-block {
       padding: 63px 56px 0;
@@ -138,7 +150,7 @@
     }
     .l-gtrs-block {
       padding: 0;
-      .review-block {padding: 0 52px;}
+      .review-block {padding: 0 52px;}   
     }
     .l-companies-block {
       padding: 40px 24px 63.67px;
@@ -158,10 +170,14 @@
         &-content {
           padding: 30px 0px 30px;
           margin: 0;
+          h2 {max-width: 50%; margin: 0 auto 8px;}
           p {max-width: 60%; margin: 0 auto 10px;}
         }
       }
       .last-news-list {margin: 10px 0;}
+    }
+    .l-celebrating-imperfect {
+      padding: 96.33px 0px 64px;
     }
   }
   .footer {
@@ -206,13 +222,20 @@
           display: flex; justify-content: center;
           img {width: 500px;}
         } 
-        .review-text {padding: 0; width: 500px;}
+        .review-text {
+          padding: 0; width: 500px;
+          q {max-width: 90%; margin: 0 auto 10px;}
+          span {font-size: 1rem;}
+        }
       }
     }
     .l-companies-block .companies-list {
       gap: 10px;
       .cleo {width: 350px;}
       .arial, .walden {width: 250.5px;}
+    }
+    .l-celebrating-imperfect .products-img-line .product-img img {
+      width: 250px;
     }
   }
   .l-footer {
@@ -251,9 +274,8 @@
       }
       .shop-categories {
         .shop-all, .browse-collection {
-          height: 250px; width: 421.33px;
+          height: 250px; width: 420px;
           background-image: none;
-          background: #3F3B3D;
           &-wr {height: 250px;}
         }
         .shop-all-desc, .browse-collection-desc {margin: 70px auto 0 auto;}
@@ -264,12 +286,68 @@
       .review-block-content {
         .review-img, .review-text {max-width: 100%;} // Common classes
         .review-img img {width: 350px;}
-        .review-text q {font-size: 1.1rem;}
+        .review-text q {font-size: 1.1rem; max-width: 100%;}
       }
     }
     .l-companies-block .companies-list {
       gap: 15px;
       .cb {width: 272px;}
+    }
+    .l-journal-block {
+      .top-news {
+        h2 {max-width: 70%;}
+        p {max-width: 75%;}
+      }
+      .last-news {
+        max-width: 100%;
+        &-top {text-align: center;}
+        &-list {
+          max-width: 100%; 
+          align-items: center;
+          gap: 30px;
+          .ln-section  {
+            h2 {
+              max-width: 60%;
+              width: auto;
+              margin: 0 auto;
+              font-weight: 700;
+            }
+            p {
+              max-width: 70%;
+              width: auto;
+              margin: 0 auto;
+            }
+            .lns-img {
+              padding: 0; height: auto; 
+              max-width: 100%;
+              img {
+                width: 250px; 
+                // max-width: 100%; 
+                height: auto;}
+            }
+            .lns-link {
+              flex-direction: column; gap: 0px;
+              align-items: center;
+              .lns-block {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+              }
+            }
+          }
+        }
+      }
+    }
+    .l-celebrating-imperfect {
+      padding: 40px 30px 40px; gap: 45px;
+      h2 {text-align: center;}
+      .products-img-line {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        .product-img img {width: initial; height: auto;}
+      }
     }
   }
 }

@@ -22,7 +22,7 @@
   }
 }
 @media (min-width: 1441px) {
-  .l-header, .l-main {
+  .l-header, .l-main .db {
     margin: 0 auto;
   }
 
@@ -38,6 +38,9 @@
   }
   .l-main .l-shop-block .shop-preview-content {
     padding: 260px 159px 64px 64px;
+  }
+  .l-main .l-celebrating-imperfect {
+    align-items: center;
   }
 }
 @media (max-width: 1399.98px) {
@@ -97,6 +100,10 @@
     max-width: 80%;
     text-align: center;
   }
+  .l-main .l-shop-block .shop-preview-content .btn {
+    margin: 0;
+    padding: 0;
+  }
   .l-main .l-shop-block .shop-preview-pic {
     display: none;
   }
@@ -134,6 +141,20 @@
     width: auto;
     padding: 10px;
   }
+  .l-main .l-celebrating-imperfect {
+    padding-right: 80px;
+  }
+  .l-main .l-celebrating-imperfect .products-top {
+    justify-content: center;
+  }
+  .l-main .l-celebrating-imperfect .products-img-line {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .l-main .l-celebrating-imperfect .products-img-line .product-img img {
+    width: 330px;
+  }
 }
 @media (max-width: 991.98px) {
   body {
@@ -148,7 +169,7 @@
     margin: 0;
   }
 
-  .l-main {
+  .l-main .db {
     margin: 0;
   }
   .l-main .l-shop-block {
@@ -201,12 +222,19 @@
     padding: 30px 0px 30px;
     margin: 0;
   }
+  .l-main .l-journal-block .top-news-content h2 {
+    max-width: 50%;
+    margin: 0 auto 8px;
+  }
   .l-main .l-journal-block .top-news-content p {
     max-width: 60%;
     margin: 0 auto 10px;
   }
   .l-main .l-journal-block .last-news-list {
     margin: 10px 0;
+  }
+  .l-main .l-celebrating-imperfect {
+    padding: 96.33px 0px 64px;
   }
 }
 @media (max-width: 767.98px) {
@@ -271,6 +299,13 @@
     padding: 0;
     width: 500px;
   }
+  .l-main .l-gtrs-block .review-block-content .review-text q {
+    max-width: 90%;
+    margin: 0 auto 10px;
+  }
+  .l-main .l-gtrs-block .review-block-content .review-text span {
+    font-size: 1rem;
+  }
   .l-main .l-companies-block .companies-list {
     gap: 10px;
   }
@@ -279,6 +314,9 @@
   }
   .l-main .l-companies-block .companies-list .arial, .l-main .l-companies-block .companies-list .walden {
     width: 250.5px;
+  }
+  .l-main .l-celebrating-imperfect .products-img-line .product-img img {
+    width: 250px;
   }
 }
 @media (max-width: 575.98px) {
@@ -324,9 +362,8 @@
   }
   .l-main .l-collection-block .shop-categories .shop-all, .l-main .l-collection-block .shop-categories .browse-collection {
     height: 250px;
-    width: 421.33px;
+    width: 420px;
     background-image: none;
-    background: #3F3B3D;
   }
   .l-main .l-collection-block .shop-categories .shop-all-wr, .l-main .l-collection-block .shop-categories .browse-collection-wr {
     height: 250px;
@@ -345,12 +382,77 @@
   }
   .l-main .l-gtrs-block .review-block .review-block-content .review-text q {
     font-size: 1.1rem;
+    max-width: 100%;
   }
   .l-main .l-companies-block .companies-list {
     gap: 15px;
   }
   .l-main .l-companies-block .companies-list .cb {
     width: 272px;
+  }
+  .l-main .l-journal-block .top-news h2 {
+    max-width: 70%;
+  }
+  .l-main .l-journal-block .top-news p {
+    max-width: 75%;
+  }
+  .l-main .l-journal-block .last-news {
+    max-width: 100%;
+  }
+  .l-main .l-journal-block .last-news-top {
+    text-align: center;
+  }
+  .l-main .l-journal-block .last-news-list {
+    max-width: 100%;
+    align-items: center;
+    gap: 30px;
+  }
+  .l-main .l-journal-block .last-news-list .ln-section h2 {
+    max-width: 60%;
+    width: auto;
+    margin: 0 auto;
+    font-weight: 700;
+  }
+  .l-main .l-journal-block .last-news-list .ln-section p {
+    max-width: 70%;
+    width: auto;
+    margin: 0 auto;
+  }
+  .l-main .l-journal-block .last-news-list .ln-section .lns-img {
+    padding: 0;
+    height: auto;
+    max-width: 100%;
+  }
+  .l-main .l-journal-block .last-news-list .ln-section .lns-img img {
+    width: 250px;
+    height: auto;
+  }
+  .l-main .l-journal-block .last-news-list .ln-section .lns-link {
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+  }
+  .l-main .l-journal-block .last-news-list .ln-section .lns-link .lns-block {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .l-main .l-celebrating-imperfect {
+    padding: 40px 30px 40px;
+    gap: 45px;
+  }
+  .l-main .l-celebrating-imperfect h2 {
+    text-align: center;
+  }
+  .l-main .l-celebrating-imperfect .products-img-line {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .l-main .l-celebrating-imperfect .products-img-line .product-img img {
+    width: initial;
+    height: auto;
   }
 }
 @media (max-width: 320px) {
