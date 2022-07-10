@@ -1,12 +1,29 @@
+// Include mixins
+@import 'mixins_var.scss';
+@import "lib/breakpoints";
 // Theme classes
-.wrapper {
-  background-color: #fff;
-}
-.header-wr {
-  background-color: #5B25B3;
-}
+.wrapper {background-color: #fff;}
+.header-wr {background-color: #5B25B3;}
 // Main
 .l-main {
-  .l-journal-block .top-news-content {background: #fff;}
-  
+  .l-collection-block {
+    .collection-item { // Production text and bg color
+      a {color: #3F3B3D;}
+      &-desc {
+        background: #e9e9e7;
+      }
+    }
+    @include media-breakpoint-down(sm) { // 576px // Shop-categories blocks bg
+        .shop-categories {
+          .shop-all, .browse-collection {background: #3F3B3D;} 
+        }
+      }
+  }
+  .l-journal-block .top-news-content {
+    background: #fff;
+    a {color: #3F3B3D;}
+  } 
 }
+.l-main .l-shop-block .shop-preview,
+.l-main .l-celebrating-imperfect, // Common classes
+.l-footer {background: #3F3B3D;}
