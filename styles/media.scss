@@ -154,7 +154,7 @@
       .review-block {padding: 0 52px;}   
     }
     .l-companies-block {
-      padding: 40px 24px 63.67px;
+      padding: 40px 24px 20px;
       .companies-list {
         flex-wrap: wrap;
         justify-content: center;
@@ -164,6 +164,7 @@
       }
     }
     .l-journal-block {
+      padding: 0 0 64px;
       flex-direction: column;
       align-items: center;
       .top-news {
@@ -372,14 +373,17 @@
     }
   }
   .l-footer {
+    gap: 40px;
     .l-contacts-block {
       gap: 10px;
       .sub .line {padding: 0 0 25px;}
       .contacts {
-        flex-wrap: wrap; gap: 0;
+        flex-wrap: wrap; gap: 15px;
         & > div {height: auto;}
-        ul li {font-size: 1.5rem; padding-bottom: 20px;}
-        &-nav-title {color: #F14814;}
+        &-nav  {
+          .contacts-nav-title {font-size: 2rem;}
+          .contacts-nav-content {font-size: 1.5rem;}
+        }
       }
     }
     &-bottom {
