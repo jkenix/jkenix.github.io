@@ -16,7 +16,7 @@
   width: 40px;
   height: 40px;
   opacity: 0.5;
-  a { background-color: #fff;}
+  a {background-color: #fff;}
   &:hover {opacity: 1;}
   &:active {
     transition: all 0s;
@@ -24,22 +24,35 @@
     background-color: #fff;
   }
 }
-// Button
-.btn {
-  &:hover {background: #000; color: #fff;}
-  &:focus {box-shadow: $b-box-shadow rgba(153, 54, 84, 0.5);}
+// Button hover/focus/active common classes header/main/footer
+.btn-buy:active {background: #925745;}
+.l-header .header-menu, 
+.l-main .l-shop-block .shop-preview-content,
+.l-footer-bottom .btn-block {
+  .btn {
+    &:hover {background: #000; color: #fff;}
+    &:focus {box-shadow: $b-box-shadow rgba(153, 54, 84, 0.5);}
+    &:active {background: #864734;}
+  }
 }
 // Header Menu
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(sm) { // Add menu on mobile devices
   .l-header {
     justify-content: center;
     flex-direction: column; 
     align-items: center;
     gap: 10px;
     padding: 0;
-    h1 {padding-top: 15px; font-size: 2rem; width: auto;}
+    h1 {
+      padding-top: 15px; 
+      font-size: 2rem; 
+      width: auto;
+    }
     .header-menu {
-      .basket-block #counter-label {width: 22px; height: 20px;}
+      .basket-block #counter-label {
+        width: 22px; 
+        height: 20px;
+      }
       .hamburger {display: block; margin-top: -105px;}
       // Nav Styles
       .nav {
@@ -114,12 +127,16 @@
 .l-header .header-menu .nav nav,
 .l-main .l-journal-block .top-news-content,
 .l-footer .contacts {
- a {
-  &:hover {color: #0d6efd;}
-  &:active {color: #F14814;}
- }
+  a {
+    &:hover {color: #0d6efd;}
+    &:active {color: #F14814;}
+  }
 }
-// Effects
+.l-footer .l-author a {
+  &:hover {color: #0d6efd;}
+  &:active {color: rgba(255, 255, 255, 0.692);}
+}
+// Effects (box shadow and gradient)
 .l-main {
   .l-journal-block .fw { // Class of add box-shadow effect
       &:focus-within {box-shadow: $ci-box-shadow rgba(16, 22, 14, 0.164);}
@@ -127,7 +144,7 @@
         &:focus-within {box-shadow: none;}
       }
   }
-  .l-collection-block { // Market item collection-block
+  .l-collection-block { // Market item collection-block gradient
     .shop-all, .browse-collection {
       @include media-breakpoint-down(sm) {
         &:hover {
