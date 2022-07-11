@@ -112,7 +112,8 @@
 }
 // A :hover and :active elements in header/main/footer
 .l-header .header-menu .nav nav,
-.l-main .l-journal-block .top-news-content {
+.l-main .l-journal-block .top-news-content,
+.l-footer .contacts {
  a {
   &:hover {color: #0d6efd;}
   &:active {color: #F14814;}
@@ -120,13 +121,11 @@
 }
 // Effects
 .l-main {
-  .l-journal-block { // Common classes
-    .fw { // Class of add box-shadow effect
+  .l-journal-block .fw { // Class of add box-shadow effect
       &:focus-within {box-shadow: $ci-box-shadow rgba(16, 22, 14, 0.164);}
       @include media-breakpoint-down(sm) { // Off box-shadow
         &:focus-within {box-shadow: none;}
       }
-    }
   }
   .l-collection-block { // Market item collection-block
     .shop-all, .browse-collection {

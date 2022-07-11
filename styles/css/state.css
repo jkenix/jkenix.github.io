@@ -129,11 +129,13 @@
 }
 
 .l-header .header-menu .nav nav a:hover,
-.l-main .l-journal-block .top-news-content a:hover {
+.l-main .l-journal-block .top-news-content a:hover,
+.l-footer .contacts a:hover {
   color: #0d6efd;
 }
 .l-header .header-menu .nav nav a:active,
-.l-main .l-journal-block .top-news-content a:active {
+.l-main .l-journal-block .top-news-content a:active,
+.l-footer .contacts a:active {
   color: #F14814;
 }
 
