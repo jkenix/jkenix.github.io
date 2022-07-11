@@ -4,11 +4,9 @@
   font-family: "Roboto Regular";
   src: url(/webfonts/RobotoRegular.woff) format("woff");
 }
-// Import mixins, variables
-@import 'mixins_var.scss';
 // Global selectors styles
 html {scroll-behavior: smooth;}
-h1, h2, h3, p, a, ul, span, button, q, input, textarea {
+h1, h2, h3, p, a, ul, li, span, button, q, input, textarea {
   font-family: "Roboto Regular";
   font-weight: 400;
   margin: 0;
