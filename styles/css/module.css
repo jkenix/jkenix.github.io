@@ -24,7 +24,8 @@
   height: 45px;
   z-index: 5;
 }
-.header-menu .hamburger div {
+.header-menu .hamburger span {
+  display: block;
   position: relative;
   width: 3em;
   height: 7px;
