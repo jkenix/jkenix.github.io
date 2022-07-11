@@ -148,7 +148,7 @@
     .shop-all, .browse-collection {
       @include media-breakpoint-down(sm) {
         &:hover {
-          background: linear-gradient(to bottom right, blue, #000, blue);
+          background: linear-gradient(to bottom right, #F14814, #000, #F14814);
         }
       }
     }
