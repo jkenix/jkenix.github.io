@@ -11,9 +11,6 @@
   color: #fff;
   padding-right: 18px;
 }
-.btn-buy:active {
-  background: #925745;
-}
 
 .header-menu .nav-col {
   flex-direction: column;
