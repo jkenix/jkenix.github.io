@@ -1,5 +1,4 @@
 // Include mixins
-@import 'mixins_var.scss';
 @import "lib/breakpoints";
 // Theme classes
 .wrapper {background-color: #fff;}
@@ -9,9 +8,7 @@
   .l-collection-block {
     .collection-item { // Production text and bg color
       a {color: #3F3B3D;}
-      &-desc {
-        background: #e9e9e7;
-      }
+      &-desc {background: #e9e9e7;}
     }
     @include media-breakpoint-down(sm) { // 576px // Shop-categories blocks bg
         .shop-categories {
@@ -26,4 +23,8 @@
 }
 .l-main .l-shop-block .shop-preview,
 .l-main .l-celebrating-imperfect, // Common classes
-.l-footer {background: #3F3B3D;}
+.l-footer {
+  background: #3F3B3D;
+  color: #fff;
+  .contacts a {color: #fff;}
+}

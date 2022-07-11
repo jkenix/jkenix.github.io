@@ -28,6 +28,12 @@
 .l-main .l-celebrating-imperfect,
 .l-footer {
   background: #3F3B3D;
+  color: #fff;
+}
+.l-main .l-shop-block .shop-preview .contacts a,
+.l-main .l-celebrating-imperfect .contacts a,
+.l-footer .contacts a {
+  color: #fff;
 }
 
 /*# sourceMappingURL=theme.css.map */
