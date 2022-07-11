@@ -12,9 +12,6 @@
   padding-right: 18px;
 }
 
-.header-menu .nav-col {
-  flex-direction: column;
-}
 .header-menu #toggle {
   display: none;
 }
