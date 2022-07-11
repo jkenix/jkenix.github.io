@@ -39,6 +39,11 @@
     .top-news-content {
       background: #fff;
       a {color: #3F3B3D;}
+      @include media-breakpoint-down(lg) {
+        background: #3F3B3D;
+        color: #fff;
+        a {color: #F14814;}
+      }
     }
     .last-news-list .ln-section .lns-link {
       color: #3F3B3D;
@@ -52,11 +57,12 @@
   background: #3F3B3D;
   .sub {color: #fff;}
   .contacts {
-    li {color: red;} // Titles
+    li {color: #F14814;} // Titles
     a {color: #fff;} // Links in nav
   }
   .copyright, .l-author { // Common classes change color of span:child(2)
     span:nth-child(1) {color: #fff;}
-    span:nth-child(2), a {color: #F14814;}
+    span:nth-child(2), .layout-link a {color: #F14814;}
   }
+  .l-author span strong {color: #00f7ff;}
 }
