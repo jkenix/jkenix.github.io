@@ -492,9 +492,14 @@
   }
   .l-footer .l-contacts-block .contacts-nav .contacts-nav-title {
     font-size: 2rem;
+    padding: 0 0 20px;
   }
   .l-footer .l-contacts-block .contacts-nav .contacts-nav-content {
     font-size: 1.5rem;
+    padding-bottom: 25px;
+  }
+  .l-footer .l-contacts-block .contacts-nav .contacts-nav-content:nth-last-child(1) {
+    padding-bottom: 10px;
   }
   .l-footer-bottom {
     flex-direction: column;

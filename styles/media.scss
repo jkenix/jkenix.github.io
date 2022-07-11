@@ -381,8 +381,11 @@
         flex-wrap: wrap; gap: 15px;
         & > div {height: auto;}
         &-nav  {
-          .contacts-nav-title {font-size: 2rem;}
-          .contacts-nav-content {font-size: 1.5rem;}
+          .contacts-nav-title {font-size: 2rem; padding: 0 0 20px;}
+          .contacts-nav-content {
+            font-size: 1.5rem; padding-bottom: 25px;
+            &:nth-last-child(1) {padding-bottom: 10px;}
+          }
         }
       }
     }
