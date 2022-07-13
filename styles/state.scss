@@ -24,3 +24,9 @@
     background-color: #fff;
   }
 }
+// Header menu
+.l-header a {
+  &:hover {color:blue;}
+  &:active {color: #F2AE4D;}
+}
+// Main
