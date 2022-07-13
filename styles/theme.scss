@@ -4,5 +4,17 @@
 .wrapper {background-color: #fff;}
 .header-wr {background-color: #5B25B3;}
 // Header
-
+.l-header {
+    background: #fff;
+    a {color: #011F3A;}
+}
 // Main
+.l-main {
+    .l-custom-box-title {
+        background: #F2AE4D;
+        &-content .btn {background: #3D5675;}
+    }
+    .l-specifications {
+        
+    }
+}
