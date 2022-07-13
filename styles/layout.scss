@@ -6,10 +6,58 @@
   margin: 0 auto;
 }
 .l-header {
- 
+  @include flexb();
+  flex-wrap: wrap;
+  padding: 19px 13px 0px 24px;
+  a { // Common class
+    height: 44px; 
+    font-size: 0.875rem; 
+    line-height: 18px;
+    letter-spacing: 1.96px; 
+  }
+  .header-menu, .user-block {height: 42px;} // Common classes
+  .header-menu {
+    width: 706.91px; 
+    display: flex;
+    .nav {display: flex;}
+    .nav ul {
+      display: flex;
+      gap: 52px;
+      width: 706.91px; 
+      height: 42px;
+      padding-left: 27px;
+      .syd {
+        padding-top: 2px;
+        a {text-decoration: underline;}
+        img {margin-right: 13px;}
+      }
+      .allprod,  .inspiration, .about {padding-top: 3px;} // Common classes
+    }
+  }
+  .user-block {
+    width: 156.73px;
+    display: flex;
+    a {height: auto;}
+    .profile {
+      padding: 3px 30px 20px; 
+    }
+  }
 }
 .l-main {
- 
+ .l-custom-box-title {
+    @include flexb();
+    &-content {
+      width: 500px;
+      height: 339px;
+      p {
+        color: #011F3A;  
+        font-size: 0.938rem;
+        line-height: 24px;
+      }
+      
+    }
+    &-img {}
+ }
 }
 .l-footer {
  

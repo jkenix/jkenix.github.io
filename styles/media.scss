@@ -35,6 +35,10 @@
 }
 @include media-breakpoint-down(lg)  { // 992px
   body {background-color: #8cc9d8 !important;}
+  .l-header {
+    .header-menu {}
+    .user-block {}
+  }
 }
 @include media-breakpoint-down(md)  { // 768px
   body {background-color: #6610f2 !important;}
