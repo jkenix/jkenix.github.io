@@ -15,8 +15,11 @@ h1, h2, h3, p, a, ul, li, span, button, q, input, textarea {
 }
 
 h1 {
-  width: 80px;
-  font-weight: 900;
+  font-size: 3rem;
+  line-height: 56px;
+  height: 168px;
+  color: #011F3A;
+  margin-bottom: 33px;
 }
 
 a {
