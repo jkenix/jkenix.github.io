@@ -1,5 +1,19 @@
 // Import mixins, variables
 @import 'mixins_var.scss';
-// Modules
-.img__resp {max-width: 100%;}
-.btn {border-radius: 3px;}
+// Header/Footer logo
+.logo {width: 85px; height: 24px;}
+// Main
+.img__resp {max-width: 100%; height: auto;} // Images
+// Buttons
+.btn-main {
+    font-size: 0.875rem; 
+    font-weight: 700;
+    letter-spacing: 1.96px;
+    line-height: 18px;
+    border-radius: 30px;
+}
+.btn-join {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 21px;
+}
