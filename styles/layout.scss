@@ -64,6 +64,32 @@
     }
     &-img {display: flex;}
  }
+ .l-specifications {
+    padding: 20px 105px 0 120px;
+    &-content {
+      @include flexb();
+      & > div {display: flex;}
+      span {
+        font-size: 0.938rem; 
+        line-height: 19px; 
+        letter-spacing: 0.6px;
+        padding: 21px 0;
+        max-width: 45%;
+      }
+      .shopify {
+        gap: 16px;
+        span {max-width: 45%;}
+      }
+      .amazon span {padding-left: 20px;}
+      .eco div {
+        @include flexcolumn();
+        width: 67px; height: 38px; 
+        padding: 21px 0 0 13px;
+        span {max-width: 100%; padding: 0;}
+      }
+      
+    }
+ }
 }
 .l-footer {
  

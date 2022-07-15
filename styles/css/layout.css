@@ -78,6 +78,43 @@
 .l-main .l-custom-box-title-img {
   display: flex;
 }
+.l-main .l-specifications {
+  padding: 20px 105px 0 120px;
+}
+.l-main .l-specifications-content {
+  display: flex;
+  justify-content: space-between;
+}
+.l-main .l-specifications-content > div {
+  display: flex;
+}
+.l-main .l-specifications-content span {
+  font-size: 0.938rem;
+  line-height: 19px;
+  letter-spacing: 0.6px;
+  padding: 21px 0;
+  max-width: 45%;
+}
+.l-main .l-specifications-content .shopify {
+  gap: 16px;
+}
+.l-main .l-specifications-content .shopify span {
+  max-width: 45%;
+}
+.l-main .l-specifications-content .amazon span {
+  padding-left: 20px;
+}
+.l-main .l-specifications-content .eco div {
+  display: flex;
+  flex-direction: column;
+  width: 67px;
+  height: 38px;
+  padding: 21px 0 0 13px;
+}
+.l-main .l-specifications-content .eco div span {
+  max-width: 100%;
+  padding: 0;
+}
 
 .l-footer .l-author {
   display: flex;
