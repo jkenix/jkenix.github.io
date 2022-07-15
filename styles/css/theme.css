@@ -2,10 +2,6 @@
   background-color: #fff;
 }
 
-.header-wr {
-  background-color: #5B25B3;
-}
-
 .l-header {
   background: #fff;
 }
@@ -13,11 +9,22 @@
   color: #011F3A;
 }
 
+.l-main .btn-wt {
+  color: #fff;
+  background: #3D5675;
+}
+.l-main .btn-wbg {
+  background: #fff;
+  color: #3D5675;
+}
 .l-main .l-custom-box-title {
   background: #F2AE4D;
 }
-.l-main .l-custom-box-title-content .btn {
-  background: #3D5675;
+.l-main .l-specifications {
+  background: #fff;
+}
+.l-main .l-specifications span {
+  color: #A1A1A1;
 }
 
 /*# sourceMappingURL=theme.css.map */

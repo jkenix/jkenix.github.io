@@ -2,7 +2,6 @@
 @import "lib/breakpoints";
 // Theme classes
 .wrapper {background-color: #fff;}
-.header-wr {background-color: #5B25B3;}
 // Header
 .l-header {
     background: #fff;
@@ -19,6 +18,7 @@
         }
     }
     .l-specifications {
-        
+        background: #fff;
+        span {color: #A1A1A1;}
     }
 }
