@@ -30,3 +30,14 @@
   &:active {color: #F2AE4D;}
 }
 // Main
+.l-main {
+  .l-custom-box-title-content { // Button .btn-wt hover/active effects
+    button:hover {
+      background: #fff; color: #3D5675;
+    }
+    button:active {
+      background: rgba(255, 255, 255, 0.61);
+    }
+  }
+
+}

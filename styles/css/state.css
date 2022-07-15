@@ -32,4 +32,12 @@
   color: #F2AE4D;
 }
 
+.l-main .l-custom-box-title-content button:hover {
+  background: #fff;
+  color: #3D5675;
+}
+.l-main .l-custom-box-title-content button:active {
+  background: rgba(255, 255, 255, 0.61);
+}
+
 /*# sourceMappingURL=state.css.map */
