@@ -3,7 +3,7 @@ $(document).ready(function () {
     var executed = false;
     return $(window).scroll(function(){
         if (!executed) {
-            $("body").append('<a href="#home" id="scroll_top" title="Up"><i class="fa-solid fa-angle-up"></i></a>');
+            $("body").append('<a href="#top" id="scroll_top" title="Up"><i class="fa-solid fa-angle-up"></i></a>');
         }
         executed = true; // code done. Stop func
     });
