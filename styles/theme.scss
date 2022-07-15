@@ -10,9 +10,13 @@
 }
 // Main
 .l-main {
+    .btn-wt {color: #fff; background: #3D5675;} 
+    .btn-wbg {background: #fff; color: #3D5675;}
     .l-custom-box-title {
         background: #F2AE4D;
-        &-content .btn {background: #3D5675;}
+        &-content button {
+            
+        }
     }
     .l-specifications {
         

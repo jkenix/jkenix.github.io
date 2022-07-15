@@ -69,7 +69,16 @@
   font-size: 0.938rem;
   line-height: 24px;
   max-width: 64%;
+  margin-bottom: 15px;
 }
+.l-main .l-custom-box-title-content button {
+  width: 228px;
+  height: 56px;
+}
+.l-main .l-custom-box-title-img {
+  display: flex;
+}
+
 .l-footer .l-author {
   display: flex;
   align-items: center;

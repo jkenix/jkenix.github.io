@@ -21,6 +21,11 @@
     gap: 10px;
   }
 }
+@media (min-width: 1441px) {
+  .l-main .l-custom-box-title {
+    justify-content: center;
+  }
+}
 @media (max-width: 1399.98px) {
   body {
     background-color: #0dcaf0 !important;
@@ -53,6 +58,28 @@
   }
   .l-header .user-block .profile {
     padding: 5px 20px 0 30px;
+  }
+
+  .l-main .l-custom-box-title {
+    padding: 40px 0 40px 0;
+    justify-content: center;
+  }
+  .l-main .l-custom-box-title-content {
+    padding: 0;
+    text-align: center;
+  }
+  .l-main .l-custom-box-title-content h1 {
+    font-size: 2.5rem;
+    max-width: 80%;
+    margin: 0 auto 15px;
+  }
+  .l-main .l-custom-box-title-content p {
+    font-size: 1.5rem;
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  .l-main .l-custom-box-title-img {
+    display: none;
   }
 }
 @media (max-width: 767.98px) {
@@ -94,6 +121,21 @@
   }
   .l-header .header-menu .nav ul .syd img {
     margin-right: 3px;
+  }
+
+  .l-main .l-custom-box-title-content {
+    height: auto;
+  }
+  .l-main .l-custom-box-title-content h1 {
+    font-size: 2rem;
+    max-width: 80%;
+    line-height: 40px;
+    height: auto;
+    margin-bottom: 35px;
+  }
+  .l-main .l-custom-box-title-content p {
+    max-width: 90%;
+    margin: 0 auto 25px;
   }
 }
 @media (max-width: 320px) {

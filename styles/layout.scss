@@ -55,12 +55,14 @@
         font-size: 0.938rem;
         line-height: 24px;
         max-width: 64%;
+        margin-bottom: 15px;
       }
       button {
-        
+        width: 228px;
+        height: 56px;
       }
     }
-    &-img {}
+    &-img {display: flex;}
  }
 }
 .l-footer {
