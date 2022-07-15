@@ -30,20 +30,70 @@
   body {
     background-color: #20c997 !important;
   }
+
+  .l-header .user-block .profile {
+    padding: 3px 20px 20px 30px;
+  }
 }
 @media (max-width: 991.98px) {
   body {
     background-color: #8cc9d8 !important;
+  }
+
+  .l-header .header-menu {
+    width: 480px;
+  }
+  .l-header .header-menu .nav ul {
+    gap: 10px;
+    width: 480px;
+    padding-left: 20px;
+  }
+  .l-header .header-menu .nav ul a {
+    letter-spacing: 1.36px;
+  }
+  .l-header .user-block .profile {
+    padding: 5px 20px 0 30px;
   }
 }
 @media (max-width: 767.98px) {
   body {
     background-color: #6610f2 !important;
   }
+
+  .l-header {
+    padding: 19px 0 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .l-header .header-menu .nav ul {
+    padding-top: 15px;
+    padding-left: 0;
+    height: auto;
+  }
 }
 @media (max-width: 575.98px) {
   body {
     background-color: #969294 !important;
+  }
+
+  .l-header .header-menu {
+    width: auto;
+    height: auto;
+  }
+  .l-header .header-menu .nav ul {
+    /* align-items: center; */
+    padding-top: 15px;
+    padding-left: 0;
+    height: auto;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+    padding: 15px 85px 10px;
+    text-align: center;
+  }
+  .l-header .header-menu .nav ul .syd img {
+    margin-right: 3px;
   }
 }
 @media (max-width: 320px) {

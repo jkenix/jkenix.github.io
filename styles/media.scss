@@ -32,19 +32,60 @@
 }
 @include media-breakpoint-down(xl) { // 1200px
   body {background-color: #20c997 !important;}
+  .l-header .user-block .profile {
+    padding: 3px 20px 20px 30px;
+  }
 }
 @include media-breakpoint-down(lg)  { // 992px
   body {background-color: #8cc9d8 !important;}
   .l-header {
-    .header-menu {}
-    .user-block {}
+    .header-menu {
+      width: 480px;
+      .nav ul {
+        gap: 10px;
+        width: 480px;
+        padding-left: 20px;
+        a {letter-spacing:  1.36px;}
+      }
+    }
+    .user-block .profile {
+      padding: 5px 20px 0 30px;
+    }
   }
 }
 @include media-breakpoint-down(md)  { // 768px
   body {background-color: #6610f2 !important;}
+  .l-header {
+    padding: 19px 0 0;
+    flex-direction:  column;
+    align-items: center;
+    .header-menu .nav ul {
+      padding-top: 15px; 
+      padding-left: 0;
+      height: auto;
+    }
+  }
 }
 @include media-breakpoint-down(sm) { // 576px
   body {background-color: #969294 !important;}
+  .l-header .header-menu {
+    width: auto; height: auto;
+    .nav ul {
+      /* align-items: center; */
+      padding-top: 15px;
+      padding-left: 0;
+      height: auto;
+      /* flex-direction: column; */
+      flex-wrap: wrap;
+      width: auto;
+      justify-content: center;
+      padding: 15px 85px 10px;
+      text-align: center;
+      .syd img {
+        margin-right: 3px;
+      }
+    }
+  }
 }
 @media (max-width: 320px) {
   body {width: 320px;}

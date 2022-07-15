@@ -6,7 +6,6 @@
 .l-header {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   padding: 19px 13px 0px 24px;
 }
 .l-header a {
@@ -52,14 +51,16 @@
   height: auto;
 }
 .l-header .user-block .profile {
-  padding: 3px 30px 20px;
+  padding: 5px 30px 0;
 }
 
 .l-main .l-custom-box-title {
   display: flex;
   justify-content: space-between;
+  padding: 87px 0 98px 120px;
 }
 .l-main .l-custom-box-title-content {
+  padding-top: 77px;
   width: 500px;
   height: 339px;
 }
@@ -67,6 +68,7 @@
   color: #011F3A;
   font-size: 0.938rem;
   line-height: 24px;
+  max-width: 64%;
 }
 .l-footer .l-author {
   display: flex;
