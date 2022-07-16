@@ -1,5 +1,5 @@
-.wrapper {
-  background-color: #fff;
+.sw-bg {
+  background: #EEEEEE;
 }
 
 .l-header {
@@ -9,6 +9,9 @@
   color: #011F3A;
 }
 
+.l-main h2 {
+  color: #011F3A;
+}
 .l-main .btn-wt {
   color: #fff;
   background: #3D5675;
@@ -24,6 +27,15 @@
   background: #fff;
 }
 .l-main .l-specifications span {
+  color: #A1A1A1;
+}
+.l-main .l-customize-products-catalog .product-desc .p-name {
+  color: #011F3A;
+}
+.l-main .l-customize-products-catalog .product p {
+  color: #777777;
+}
+.l-main .l-customize-products-catalog .product span {
   color: #A1A1A1;
 }
 

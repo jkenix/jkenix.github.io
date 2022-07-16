@@ -1,7 +1,7 @@
 // Include mixins
 @import "lib/breakpoints";
 // Theme classes
-.wrapper {background-color: #fff;}
+.sw-bg {background: #EEEEEE;}
 // Header
 .l-header {
     background: #fff;
@@ -9,16 +9,20 @@
 }
 // Main
 .l-main {
+    h2 {color: #011F3A;}
     .btn-wt {color: #fff; background: #3D5675;} 
     .btn-wbg {background: #fff; color: #3D5675;}
-    .l-custom-box-title {
-        background: #F2AE4D;
-        &-content button {
-            
-        }
-    }
+    .l-custom-box-title {background: #F2AE4D;}
     .l-specifications {
         background: #fff;
         span {color: #A1A1A1;}
     }
+    .l-customize-products-catalog {
+        .product-desc .p-name {color:#011F3A;}
+        .product {
+            p {color: #777777;}
+            span {color: #A1A1A1;}
+        }
+    }
+    
 }
