@@ -39,5 +39,12 @@
 .l-main .l-custom-box-title-content button:active {
   background: rgba(255, 255, 255, 0.61);
 }
+.l-main .l-customize-products-title button:hover, .l-main .l-customize-products-shock-items button:hover {
+  color: #fff;
+  background: #000;
+}
+.l-main .l-customize-products-title button:active, .l-main .l-customize-products-shock-items button:active {
+  background: #788899;
+}
 
 /*# sourceMappingURL=state.css.map */
