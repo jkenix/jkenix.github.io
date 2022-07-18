@@ -146,6 +146,54 @@
       .btn-main {width: 158px; height: 44px;}
     }
   }
+ .l-steps-products {
+    padding: 70px 103px 70px 120px;
+    &-content {
+      padding: 88px 50px;
+      text-align: center;
+      h2 {
+        font-size: 2rem; 
+        line-height: 41px; 
+        margin-bottom: 46.31px;
+      }
+      .steps-products {
+        @include flexb();
+        padding-bottom: 75.69px;
+        .sp {
+          width: 300px; 
+          height: 391px;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          &-img {
+            display: flex;
+            height: auto;
+            width: auto;
+            img {height: auto;}
+          }
+          span {
+            padding: 12px 0 10px;
+            font-size: 1.125rem;
+            line-height: 23px;
+            text-align: center;
+            letter-spacing: 0.36px;
+          }
+          p {
+            max-width: 63%; 
+            margin: 0 auto;
+            font-size: 0.938rem; 
+            line-height: 23px;
+          }
+        }
+      }
+      .btn-main {
+        width: 220px;
+        height: 44px;
+        margin-bottom: 88px;
+      }
+    }
+  }
+
 }
 .l-footer {
  

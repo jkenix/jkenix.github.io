@@ -208,6 +208,56 @@
   width: 158px;
   height: 44px;
 }
+.l-main .l-steps-products {
+  padding: 70px 103px 70px 120px;
+}
+.l-main .l-steps-products-content {
+  padding: 88px 50px;
+  text-align: center;
+}
+.l-main .l-steps-products-content h2 {
+  font-size: 2rem;
+  line-height: 41px;
+  margin-bottom: 46.31px;
+}
+.l-main .l-steps-products-content .steps-products {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 75.69px;
+}
+.l-main .l-steps-products-content .steps-products .sp {
+  width: 300px;
+  height: 391px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.l-main .l-steps-products-content .steps-products .sp-img {
+  display: flex;
+  height: auto;
+  width: auto;
+}
+.l-main .l-steps-products-content .steps-products .sp-img img {
+  height: auto;
+}
+.l-main .l-steps-products-content .steps-products .sp span {
+  padding: 12px 0 10px;
+  font-size: 1.125rem;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.36px;
+}
+.l-main .l-steps-products-content .steps-products .sp p {
+  max-width: 63%;
+  margin: 0 auto;
+  font-size: 0.938rem;
+  line-height: 23px;
+}
+.l-main .l-steps-products-content .btn-main {
+  width: 220px;
+  height: 44px;
+  margin-bottom: 88px;
+}
 
 .l-footer .l-author {
   display: flex;
