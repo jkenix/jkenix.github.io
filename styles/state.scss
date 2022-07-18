@@ -39,18 +39,13 @@
       background: rgba(255, 255, 255, 0.61);
     }
   }
-  .l-customize-products {
-    &-title,  &-shock-items { // Common classes
-      button { 
-        &:hover {
-          color: #fff;
-          background: #000; 
-        }
-        &:active {
-          background: #788899;
-        }
-      }
-    } 
-  }
-  
+  .btn-hbbg { // btn-hbbg hover/active effects
+    &:hover {
+      color: #fff;
+      background: #000; 
+    }
+    &:active {
+      background: #788899;
+    }
+  } 
 }
