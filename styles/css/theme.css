@@ -38,5 +38,12 @@
 .l-main .l-customize-products-catalog .product span {
   color: #A1A1A1;
 }
+.l-main .l-steps-products-content .steps-products .sp span,
+.l-main .l-arka-advantage-content .advantage-column-desc span {
+  color: #011F3A;
+}
+.l-main .l-arka-advantage-content .advantage-column-desc p {
+  color: #A1A1A1;
+}
 
 /*# sourceMappingURL=theme.css.map */

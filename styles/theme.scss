@@ -24,5 +24,13 @@
             span {color: #A1A1A1;}
         }
     }
-    
+    .l-steps-products-content .steps-products .sp,
+    .l-arka-advantage-content .advantage-column-desc { // Common classes span title
+        span {
+            color: #011F3A;
+        }
+    }
+    .l-arka-advantage-content .advantage-column-desc p {
+        color: #A1A1A1;
+    }
 }

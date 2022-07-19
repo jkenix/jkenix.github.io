@@ -193,7 +193,45 @@
       }
     }
   }
-
+  .l-arka-advantage {
+    padding: 0 145px 141.69px 162px;
+    h2 {
+      font-size: 2rem; 
+      line-height: 41px; 
+      font-weight: 700;
+      margin-bottom: 82.31px;
+    }
+    &-content {
+      @include flexb();
+      .advantage-column {
+        width: 254px; 
+        height: 413px;
+        display: flex;
+        flex-direction: column;
+        &-img {
+          display: flex;
+          height: auto;
+          width: auto;
+          img {height: auto;}
+        }
+        &-desc {
+          margin-top: 54px;
+          span {
+            font-size: 1.125rem;
+            font-weight: 700;
+            line-height: 23px;
+            letter-spacing: 0.56px;
+          }
+          p {
+            font-size: 0.938rem;
+            line-height: 24px;
+            margin-top: 12px;
+          }
+        }
+      }
+      .ac-2 p {max-width: 97%;}
+    }
+  }
 }
 .l-footer {
  

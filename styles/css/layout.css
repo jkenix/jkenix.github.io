@@ -258,6 +258,50 @@
   height: 44px;
   margin-bottom: 88px;
 }
+.l-main .l-arka-advantage {
+  padding: 0 145px 141.69px 162px;
+}
+.l-main .l-arka-advantage h2 {
+  font-size: 2rem;
+  line-height: 41px;
+  font-weight: 700;
+  margin-bottom: 82.31px;
+}
+.l-main .l-arka-advantage-content {
+  display: flex;
+  justify-content: space-between;
+}
+.l-main .l-arka-advantage-content .advantage-column {
+  width: 254px;
+  height: 413px;
+  display: flex;
+  flex-direction: column;
+}
+.l-main .l-arka-advantage-content .advantage-column-img {
+  display: flex;
+  height: auto;
+  width: auto;
+}
+.l-main .l-arka-advantage-content .advantage-column-img img {
+  height: auto;
+}
+.l-main .l-arka-advantage-content .advantage-column-desc {
+  margin-top: 54px;
+}
+.l-main .l-arka-advantage-content .advantage-column-desc span {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.56px;
+}
+.l-main .l-arka-advantage-content .advantage-column-desc p {
+  font-size: 0.938rem;
+  line-height: 24px;
+  margin-top: 12px;
+}
+.l-main .l-arka-advantage-content .ac-2 p {
+  max-width: 97%;
+}
 
 .l-footer .l-author {
   display: flex;
