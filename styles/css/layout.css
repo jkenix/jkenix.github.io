@@ -302,6 +302,44 @@
 .l-main .l-arka-advantage-content .ac-2 p {
   max-width: 97%;
 }
+.l-main .l-faq-block {
+  padding: 60px 103px 60px 120px;
+}
+.l-main .l-faq-block-content {
+  display: flex;
+}
+.l-main .l-faq-block-content .faq-article {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 600px;
+  height: 410px;
+  padding: 110px 120px 90px;
+}
+.l-main .l-faq-block-content .faq-article h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 24px 0 14px;
+}
+.l-main .l-faq-block-content .faq-article p {
+  font-size: 0.938rem;
+  line-height: 24px;
+  margin-bottom: 10px;
+  width: 95%;
+}
+.l-main .l-faq-block-content .faq-article button {
+  width: 204px;
+  height: 44px;
+}
+.l-main .l-faq-block-content .faq-line {
+  padding-top: 110.31px;
+}
+.l-main .l-faq-block-content .faq-2 button {
+  width: 196px;
+  height: 44px;
+}
 
 .l-footer .l-author {
   display: flex;
@@ -309,6 +347,9 @@
   flex-direction: column;
   gap: 5px;
   padding-bottom: 32px;
+}
+.l-footer .l-author strong {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=layout.css.map */

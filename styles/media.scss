@@ -25,7 +25,7 @@
   }
 }
 @media (min-width: 1500px) {
-  .l-header, .l-main, .l-footer {justify-content: center;}
+  .l-header, .l-footer {justify-content: center;}
   .l-header .header-menu .nav ul {
     justify-content: center;
   }
@@ -34,7 +34,8 @@
     .l-specifications-content,
     .l-customize-products-title {justify-content: center; gap: 60px;}
     
-    .l-customize-products-catalog {justify-content: center;}
+    .l-customize-products-catalog,
+    .l-faq-block-content {justify-content: center;} // Only center
 
     .l-steps-products-content .steps-products,
     .l-arka-advantage-content {
@@ -52,7 +53,7 @@
    .l-customize-products-catalog {
       .products-column .product {
         width: auto; 
-        &-img {width: auto; display: flex; justify-content: center;}
+        &-img {display: flex; width: auto;}
         &-desc {
           p {max-width: 64%;}
           &-content {
@@ -61,6 +62,10 @@
           }
         }
       }
+    }
+   .l-faq-block-content .faq-article {
+      padding: 110px 0 90px;
+      p {max-width: 55%;}
     }
   }
 }
@@ -91,6 +96,10 @@
     }
     .l-arka-advantage {
       padding: 0 80px 141.69px;
+    }
+    .l-faq-block {
+      padding: 60px 80px;
+      &-content .faq-article {height: auto;}
     }
   }
 }
@@ -162,7 +171,7 @@
         h2 {max-width: 70%; margin: 0 auto;}
         .steps-products {
           justify-content: center;
-          .sp {width: 275px;}
+          .sp {width: 275px; height: auto;}
         }
       }
     }
@@ -176,6 +185,10 @@
           &-desc {margin: 0;}
         }
       }
+    }
+    .l-faq-block {
+      padding: 60px 0;
+      &-content .faq-article {height: auto;}
     }
   }
 }
@@ -197,16 +210,28 @@
       &-content {flex-wrap: wrap;}
     }
     .l-steps-products {
-      padding: 70px 0px;
-      .steps-products {flex-wrap: wrap;}
+      padding: 70px 0 40px;
+      .steps-products {
+        flex-wrap: wrap;
+        padding-bottom: 40px;
+      }
     }
     .l-arka-advantage {
-      padding: 0 0 141.69px;
+      padding: 0;
+      h2 {margin-bottom: 20px;}
       p {max-width: 80%; margin: 0 auto;}
       &-content {
         gap: 0; flex-wrap: wrap;
         justify-content: center;
       }
+    }
+    .l-faq-block-content {
+      align-items: center;
+      flex-direction: column;
+      .faq-article {width: auto;}
+      .faq-1 {padding: 60px 0 0;}
+      .faq-line {display: none;}
+      .faq-2 {padding: 60px 0;}
     }
   }
 }
@@ -290,11 +315,15 @@
     }
     .l-arka-advantage {
       h2 {max-width: 50%; margin: 0 auto;}
-      &-advantage-content {
+      &-content {
         flex-direction: column;
         align-items: center;
         p {max-width: 95%;}
       }
+    }
+    .l-faq-block-content .faq-article{
+      h2 {max-width: 60%;}
+      p {max-width: 65%;}
     }
   }
 }
