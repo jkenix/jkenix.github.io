@@ -3,6 +3,15 @@
   height: 24px;
 }
 
+.img__resp-block {
+  display: flex;
+  height: auto;
+  width: auto;
+}
+.img__resp-block img {
+  height: auto;
+}
+
 .img__resp {
   max-width: 100%;
 }
