@@ -10,9 +10,11 @@
 // Main
 .l-main {
     h2 {color: #011F3A;}
+    // Button color classes
     .btn-wt {color: #fff; background: #3D5675;} 
     .btn-wbg {background: #fff; color: #3D5675;}
-    .l-custom-box-title {background: #F2AE4D;}
+    // Main classes
+    .l-custom-box-title {background: #F2AE4D;} // Background
     .l-specifications {
         background: #fff;
         span {color: #A1A1A1;}
@@ -26,11 +28,25 @@
     }
     .l-steps-products-content .steps-products .sp,
     .l-arka-advantage-content .advantage-column-desc { // Common classes span title
-        span {
-            color: #011F3A;
-        }
+        span {color: #011F3A;}
     }
     .l-arka-advantage-content .advantage-column-desc p {
         color: #A1A1A1;
+    }
+    .l-faq-block-content {background: #FFCA3A;} // Background
+    .reviews-section {
+        background: #FFFFFF; 
+        .rbt-content {
+            q, .r-name {color: #011F3A;}
+            .r-desc {color: #A1A1A1;}
+            a {color: #3D5675;}
+        }
+    }
+}
+.l-footer {
+    .l-author {
+        span {color: #3D5675;}
+        strong {color: #00e1ff;}
+        a {color: #F2AE4D;}
     }
 }
