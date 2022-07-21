@@ -166,12 +166,6 @@
           display: flex;
           flex-direction: column;
           text-align: center;
-          &-img { // Добавить класс
-            display: flex;
-            height: auto;
-            width: auto;
-            img {height: auto;}
-          }
           span {
             padding: 12px 0 10px;
             font-size: 1.125rem;
@@ -209,12 +203,6 @@
         height: 413px;
         display: flex;
         flex-direction: column;
-        &-img {                // ДОБАВИТЬ КЛАСС И ВЫШЕ ТОЖЕ РЕСПОНСИВ БЛОК ИМГ
-          display: flex;
-          height: auto;
-          width: auto;
-          img {height: auto;}
-        }
         &-desc {
           margin-top: 54px;
           span {
@@ -265,6 +253,90 @@
       .faq-line {padding-top: 110.31px;}
       .faq-2 button {width: 196px; height: 44px;}
     }
+  }
+  .l-reviews {
+    padding: 88px 103px 57px 120px;
+    &-content {
+      box-shadow: $box-shadow;
+      h2 {
+        font-size: 2rem; 
+        font-weight: 700;
+        line-height: 38px;
+        margin: 0 auto 59px;
+        text-align: center;
+      }
+      .companies-reviews { // Companies block
+        height: 314px; gap: 4px;
+        .cb {height: 114px;}
+      }
+      .reviews-section { // Common classes
+        align-items: center;
+        display: flex; 
+        .img__resp-block {justify-content: center;}
+        .reviews-block {
+          width: 588px;
+          height: 294px;
+          display: flex;
+        }
+        .rbt-content {
+          padding: 63.69px 106px 62.5px;
+          @include flexcolumn(); 
+          gap: 13px;
+          q {
+            font-size: 1.5rem; 
+            line-height: 32px;
+          }
+          .about-reviewer {
+            display: flex; gap: 45px;
+            .reviewer {
+              display: flex; gap: 17px;
+              &-info {
+                @include flexcolumn(); 
+                gap: 5px;
+                padding-top: 5.19px;
+                .r-name {
+                  font-size: 1.125rem;
+                  line-height: 22px;
+                }
+                .r-desc {
+                  font-size: 0.938rem;
+                  line-height: 24px;
+                }
+              }
+            }
+            a {
+             font-size: 0.875rem;
+             line-height: 18px;
+             letter-spacing: 1.96px;
+             padding-top: 22px;
+            }
+          }
+        }
+      }
+      .js, .ls {margin-bottom: 55px;} // Jessie and Leslie review section 
+      .ls, .as { // Common classes gap reviewer
+        .rbt-content .about-reviewer .reviewer {
+          gap: 20px;
+        }
+      }
+      .ls {
+        gap: 24px;
+        .rbt-content {
+          padding: 63.69px 95px 62.5px 106px;
+          .about-reviewer {
+            gap: 0; gap: 94px;
+          }
+        }
+      }
+      .as .rbt-content .about-reviewer {
+        gap: 85px;
+      }
+    }
+  }
+  .l-start-design {
+    align-items: center;
+    display: flex; 
+    h2 {}
   }
 }
 .l-footer {

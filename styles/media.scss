@@ -32,18 +32,25 @@
   .l-main {
     .l-custom-box-title,
     .l-specifications-content,
-    .l-customize-products-title {justify-content: center; gap: 60px;}
+    .l-customize-products-title { // Gap 60px + center
+      justify-content: center; 
+      gap: 60px;
+    }
     
     .l-customize-products-catalog,
     .l-faq-block-content {justify-content: center;} // Only center
 
-    .l-steps-products-content .steps-products,
+    .l-steps-products-content .steps-products, // Gap 160px + center
     .l-arka-advantage-content {
       justify-content: center; 
       gap: 160px;
     }
     .l-arka-advantage h2 {text-align: center;}
-
+    
+    .l-reviews-content {
+      align-items: center;
+      @include flexcolumn();
+    }
 
   }
 }
@@ -66,6 +73,9 @@
    .l-faq-block-content .faq-article {
       padding: 110px 0 90px;
       p {max-width: 55%;}
+    }
+    .l-reviews-content {
+      .ls {gap: 0;}
     }
   }
 }
