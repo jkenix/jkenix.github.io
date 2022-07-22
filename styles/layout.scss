@@ -334,14 +334,72 @@
   .l-start-design {
     align-items: center;
     display: flex; 
-    h2 {}
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 9px 136.6px 18px;
+    gap: 55.31px;
+    h2 {
+      font-size: 1.938rem; 
+      font-weight: 700;
+      line-height: 36px;
+      padding-left: 6px;
+    }
+    .button-blocks {
+      display: flex; gap: 13px;
+      .syd {width: 220px; height: 44px;}
+      .bap {width: 247px; height: 44px;}
+    }
   }
 }
 .l-footer {
- 
-  .l-author {
+  &-contacts {
     display: flex; 
+    gap: 91.75px;
+    padding: 60px 103px 59.69px 120px;
+    .contacts-block {
+      height: 245px; gap: 17px;
+      @include flexcolumn();
+      li, span, input {
+        font-size: 0.938rem; 
+        line-height: 18px;
+      }
+      .social-links {
+        display: flex; gap: 11px;
+      }
+    }
+    .custom-design {
+      width: 164px;
+    }
+    .about-us {
+      width: 134px;
+    }
+    .shopify-app {
+      width: 170px;
+    }
+    .email {
+      width: 280px; gap: 13px;
+      form {
+        @include flexcolumn(); gap: 13px;
+        input {
+          width: 255px;
+          height: 30px;
+          border-radius: 25px;
+          padding: 3px 0 0 24px;
+        }
+        button {
+          border-radius: 30px;
+          width: 187px; 
+          height: 44px;
+          font-size: 1.125rem;
+          font-weight: 700;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+  .l-author {
     align-items: center;
+    display: flex; 
     flex-direction: column;
     gap: 5px;
     padding-bottom: 32px;

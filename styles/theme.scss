@@ -7,12 +7,12 @@
     background: #fff;
     a {color: #011F3A;}
 }
+// Button color classes
+.btn-wt {color: #fff; background: #3D5675;} 
+.btn-wbg {background: #fff; color: #3D5675;}
 // Main
 .l-main {
     h2 {color: #011F3A;}
-    // Button color classes
-    .btn-wt {color: #fff; background: #3D5675;} 
-    .btn-wbg {background: #fff; color: #3D5675;}
     // Main classes
     .l-custom-box-title {background: #F2AE4D;} // Background
     .l-specifications {
@@ -44,6 +44,18 @@
     }
 }
 .l-footer {
+    &-contacts {
+        .contacts-block {
+            li, a, span {color: #3D5675;}
+            form {color: rgba(61, 86, 117, 0.4);}
+            @include media-breakpoint-down(sm) {
+                .contacts-block-title {color: #000;}
+            }
+        }
+        .email form input {
+            border: 1px solid #3D5675;
+        }
+    }
     .l-author {
         span {color: #3D5675;}
         strong {color: #00e1ff;}

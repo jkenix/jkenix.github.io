@@ -24,12 +24,21 @@
     background-color: #fff;
   }
 }
-// Header menu and common classes
+// Header menu and common classes blue hover, orange active
 .l-header, 
-.l-main .rbt-content {
+.l-main .rbt-content,
+.l-footer-contacts .contacts-block {
   a:hover {color:blue;}
   a:active {color: #F2AE4D;}
 }
+// btn-hbbg hover/active effects
+.btn-hbbg {
+  &:hover {
+    color: #fff;
+    background: #000; 
+  }
+  &:active {background: #788899;}
+} 
 // Main
 .l-main {
   .l-custom-box-title-content button { // Button .btn-wt hover/active effects
@@ -41,17 +50,10 @@
       background: rgba(255, 255, 255, 0.61);
     }
   }
-  .btn-hbbg { // btn-hbbg hover/active effects
-    &:hover {
-      color: #fff;
-      background: #000; 
-    }
-    &:active {background: #788899;}
-  } 
 }
 .l-footer {
-  .layout-link a {
-    &:hover {color: #000;}
-    &:active {color: #788899;}
+ .layout-link {
+    a:hover {color: #000;}
+    a:active {color: #788899;}
   }
 }

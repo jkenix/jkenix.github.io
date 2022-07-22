@@ -53,9 +53,11 @@
     }
 
   }
+  .l-footer-contacts {
+   justify-content: center;
+  }
 }
 @include media-breakpoint-down(xxl)  { // 1400px
-  body {background-color: #0dcaf0 !important;}
   .l-main {
    .l-customize-products-catalog {
       .products-column .product {
@@ -81,9 +83,12 @@
       .ls {gap: 0;}
     }
   }
+  .l-footer-contacts {
+    justify-content: space-between; 
+    gap: 0;
+  }
 }
 @include media-breakpoint-down(xl) { // 1200px
-  body {background-color: #20c997 !important;}
   .l-header .user-block .profile {
     padding: 3px 20px 20px 30px;
   }
@@ -124,9 +129,12 @@
       }
     }
   }
+  .l-footer-contacts {
+    padding: 60px 30px 59.69px;
+    flex-wrap: wrap;
+  }
 }
 @include media-breakpoint-down(lg)  { // 992px
-  body {background-color: #8cc9d8 !important;}
   .l-header {
     .header-menu {
       width: 480px;
@@ -223,9 +231,28 @@
       }
     }
   }
+  .l-footer-contacts {
+    justify-content: center;
+    gap: 15px;
+    padding: 60px 0 40px;
+    .contacts-block {
+      flex-direction: column;
+      height: 245px;
+      gap: 17px;
+      padding-left: 36px;
+      height: auto;
+    }
+    .email {
+      width: 334px;
+      height: 150px;
+      span {text-align: center;}
+      form {align-items: center;
+        input {height: 40px;}
+      }
+    }
+  }
 }
 @include media-breakpoint-down(md)  { // 768px
-  body {background-color: #6610f2 !important;}
   .l-header {
     padding: 19px 0 0;
     flex-direction:  column;
@@ -266,7 +293,7 @@
       .faq-2 {padding: 60px 0;}
     }
     .l-reviews {
-      padding: 0 0 57px;
+      padding: 0;
       &-content {
         .companies-reviews {padding-top: 20px;}
         .reviews-section {
@@ -288,9 +315,18 @@
       }
     }
   }
+  .l-footer-contacts {
+    .contacts-block {
+      padding-left: 51px;
+    }
+    .shopify-app {padding-left: 51px;}
+    .email {
+      width: 293px; 
+      padding-left: 10px;
+    }
+  }
 }
 @include media-breakpoint-down(sm) { // 576px
-  body {background-color: #969294 !important;}
   .l-header .header-menu {
     width: auto; height: auto;
     .nav ul {
@@ -379,14 +415,55 @@
       h2 {max-width: 60%;}
       p {max-width: 65%;}
     }
-    .l-reviews-content {
-      .reviews-section .rbt-content {
-        gap: 15px;
-        q {}
+    .l-reviews {
+      &-content {
+        .reviews-section .rbt-content {
+          gap: 15px;
+        }
+        .js {height: 280px;} //Height reviews blocks
+        .ls {height: 320px;}
+        .as {height: auto;}
       }
-      .js {height: 280px;} //Height reviews blocks
-      .ls {height: 320px;}
-      .as {height: auto;}
+    }
+    .l-start-design {
+      padding: 120px 0 136.6px;
+      .button-blocks {
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+  }
+  .l-footer-contacts {
+    gap: 30px;
+    padding: 60px 0 59.69px;
+    flex-direction: column;
+    align-items: center;
+    .custom-design, .about-us, .shopify-app {
+      width: auto;
+      align-items: center;
+      width: 154px;
+      text-align: center;
+    }
+    .contacts-block {
+      padding: 0;
+      width: auto;
+      gap: 25px;
+      .contacts-block-title {
+        font-size: 1.5rem; 
+        font-weight: 700; 
+        line-height: 27px;
+      }
+      .contacts-block-link {font-size: 1.25rem;}
+    } 
+    .email {
+      span {
+        font-size: 1.25rem;
+        text-align: center;
+      }
+      form {
+        align-items: center;
+        input {width: 220px;}
+      }
     }
   }
 }
