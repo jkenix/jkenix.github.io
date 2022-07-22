@@ -75,6 +75,9 @@
       p {max-width: 55%;}
     }
     .l-reviews-content {
+      .reviews-section {
+        .rbt-content, .ls {padding: 63.69px 40px 62.5px;}
+    }
       .ls {gap: 0;}
     }
   }
@@ -110,6 +113,15 @@
     .l-faq-block {
       padding: 60px 80px;
       &-content .faq-article {height: auto;}
+    }
+    .l-reviews {
+      padding: 88px 80px 57px;
+      &-content  {
+        .reviews-section .rbt-content .about-reviewer {
+          gap: 10px; 
+          justify-content: space-between;
+        }
+      }
     }
   }
 }
@@ -186,6 +198,7 @@
       }
     }
     .l-arka-advantage {
+      padding: 0 40px 141.69px;
       h2 {text-align: center;}
       &-content {
         gap: 10px;
@@ -199,6 +212,15 @@
     .l-faq-block {
       padding: 60px 0;
       &-content .faq-article {height: auto;}
+    }
+    .l-reviews {
+      padding: 88px 0 57px;
+      &-content {
+        box-shadow: none;
+        .reviews-section {
+          .rbt-content, .ls {padding: 63.69px 30px 62.5px;}
+        }
+      }
     }
   }
 }
@@ -242,6 +264,28 @@
       .faq-1 {padding: 60px 0 0;}
       .faq-line {display: none;}
       .faq-2 {padding: 60px 0;}
+    }
+    .l-reviews {
+      padding: 0 0 57px;
+      &-content {
+        .companies-reviews {padding-top: 20px;}
+        .reviews-section {
+          flex-direction: column;
+          margin-bottom: 20px;
+          .imgs-block {display: none;}
+          .reviews-block {
+            width: auto;
+            .rbt-content {
+              align-items: center;
+              text-align: center;
+              padding: 0;
+              q {max-width: 80%;}
+              .about-reviewer {flex-direction: column;}
+            }
+          }
+        }
+        .js, .ls, .as {height: 210px; padding-top: 20px;} //Height reviews blocks
+      }
     }
   }
 }
@@ -334,6 +378,15 @@
     .l-faq-block-content .faq-article{
       h2 {max-width: 60%;}
       p {max-width: 65%;}
+    }
+    .l-reviews-content {
+      .reviews-section .rbt-content {
+        gap: 15px;
+        q {}
+      }
+      .js {height: 280px;} //Height reviews blocks
+      .ls {height: 320px;}
+      .as {height: auto;}
     }
   }
 }
