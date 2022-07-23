@@ -16,7 +16,6 @@
   height: 40px;
   opacity: 0.5;
   &:hover {opacity: 1;}
-  &:active {background-color: #fff;}
 }
 .arrow-top {
   width: 40px;
@@ -24,7 +23,7 @@
   transform: rotate(270deg);
   cursor: pointer;
   &:active {
-    path {fill: #000;}
+    path {fill: #F2AE4D;}
   }
   path {
     fill: #fff;

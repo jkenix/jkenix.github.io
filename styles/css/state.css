@@ -14,9 +14,6 @@
 #scroll_top:hover {
   opacity: 1;
 }
-#scroll_top:active {
-  background-color: #fff;
-}
 
 .arrow-top {
   width: 40px;
@@ -25,7 +22,7 @@
   cursor: pointer;
 }
 .arrow-top:active path {
-  fill: #000;
+  fill: #F2AE4D;
 }
 .arrow-top path {
   fill: #fff;
