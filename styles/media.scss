@@ -1,12 +1,10 @@
 // Import mixins
-@import 'mixins_var.scss';
 @import "lib/breakpoints";
 // Media main
 @media (min-width: 2099px) {
   #scroll_top {
     width: 300px; 
     height: 200px; 
-    font-size: 100px;
   }
 }
 @media (min-width: 1921px) {
@@ -15,7 +13,6 @@
     min-height: 80px;
     max-width: 100px; 
     max-height: 100px;
-    font-size: 50px;
   }
   .l-footer {
     flex-direction: column; 
@@ -49,13 +46,12 @@
     
     .l-reviews-content {
       align-items: center;
-      @include flexcolumn();
+      display: flex;
+      flex-direction: column;
     }
 
   }
-  .l-footer-contacts {
-   justify-content: center;
-  }
+  .l-footer-contacts {justify-content: center;}
 }
 @include media-breakpoint-down(xxl)  { // 1400px
   .l-main {
@@ -78,7 +74,9 @@
     }
     .l-reviews-content {
       .reviews-section {
-        .rbt-content, .ls {padding: 63.69px 40px 62.5px;}
+        .rbt-content, .ls {
+          padding: 63.69px 40px 62.5px;
+        }
     }
       .ls {gap: 0;}
     }
@@ -102,7 +100,11 @@
           p {max-width: 100%; text-align: center;}
           &-content {
             flex-direction: column; gap: 0;
-            .price {gap: 5px; flex-direction: row; justify-content: center;}
+            .price {
+              gap: 5px; 
+              flex-direction: row; 
+              justify-content: center;
+            }
           }
         }
         .cpm .product-desc p {max-width: 100%;}
@@ -189,7 +191,10 @@
           .product {
             height: auto; gap: 0;
             &-img {height: auto;}
-            &-desc p {max-width: 75%; margin: 0 auto;}
+            &-desc p {
+              max-width: 75%; 
+              margin: 0 auto;
+            }
           }
         }
       }
@@ -226,7 +231,9 @@
       &-content {
         box-shadow: none;
         .reviews-section {
-          .rbt-content, .ls {padding: 63.69px 30px 62.5px;}
+          .rbt-content, .ls {
+            padding: 63.69px 30px 62.5px;
+          }
         }
       }
     }

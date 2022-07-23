@@ -8,7 +8,7 @@
 .l-header {
   @include flexb();
   padding: 19px 13px 0px 24px;
-  a { // Common class
+  a { // Common classes nav
     height: 44px; 
     font-size: 0.875rem; 
     line-height: 18px;
@@ -37,9 +37,7 @@
     width: 156.73px;
     display: flex;
     a {height: auto;}
-    .profile {
-      padding: 5px 30px 0; 
-    }
+    .profile {padding: 5px 30px 0;}
   }
 }
 .l-main {
@@ -56,7 +54,7 @@
         line-height: 24px;
         max-width: 64%;
         margin-bottom: 15px;
-        }
+      }
       button {
         width: 228px;
         height: 56px;
@@ -108,8 +106,12 @@
       .products-column {
         @include flexcolumn();
         .product {
-          width: 400px; height: 432px;
-          a {@include flexcolumn(); gap: 26px;}
+          width: 400px; 
+          height: 432px;
+          a {
+            @include flexcolumn(); 
+            gap: 26px;
+          }
           &-img {
             width: 398px; 
             height: 302px; 
@@ -163,8 +165,7 @@
         .sp {
           width: 300px; 
           height: 391px;
-          display: flex;
-          flex-direction: column;
+          @include flexcolumn();
           text-align: center;
           span {
             padding: 12px 0 10px;
@@ -201,8 +202,7 @@
       .advantage-column {
         width: 254px; 
         height: 413px;
-        display: flex;
-        flex-direction: column;
+        @include flexcolumn();
         &-desc {
           margin-top: 54px;
           span {
@@ -227,8 +227,7 @@
       display: flex;
       .faq-article {
         align-items: center;
-        display: flex; 
-        flex-direction: column;
+        @include flexcolumn();
         text-align: center;
         width: 600px; 
         height: 410px;
@@ -333,8 +332,7 @@
   }
   .l-start-design {
     align-items: center;
-    display: flex; 
-    flex-direction: column;
+    @include flexcolumn();
     justify-content: center;
     padding: 120px 9px 136.6px 18px;
     gap: 55.31px;
@@ -399,8 +397,7 @@
   }
   .l-author {
     align-items: center;
-    display: flex; 
-    flex-direction: column;
+    @include flexcolumn();
     gap: 5px;
     padding-bottom: 32px;
     strong {font-weight: 700;}
