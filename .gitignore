@@ -9,3 +9,4 @@ node_modules/
 *.zip
 Test/
 README.md
+.vscode/settings.json
