@@ -110,7 +110,7 @@
       }
     }
     .l-gtrs-block .review-block {
-      .review-text q {font-size: 1.45rem;}
+      .review-text p {font-size: 1.45rem;}
     }
     .l-journal-block {
       gap: 40px;
@@ -159,7 +159,7 @@
         justify-content: center;
         .cleo, .arial {width: 325px;}
         .arial {padding: 0;}
-        .cleo q {padding-left: 20px; padding-right: 20px;}
+        .cleo p {padding-left: 20px; padding-right: 20px;}
       }
     }
     .l-journal-block {
@@ -233,7 +233,7 @@
         } 
         .review-text {
           padding: 0; width: 500px;
-          q {max-width: 90%; margin: 0 auto 10px;}
+          p {max-width: 90%; margin: 0 auto 10px;}
           span {font-size: 1rem;}
         }
       }
@@ -306,7 +306,7 @@
       .review-block-content {
         .review-img, .review-text {max-width: 100%;} // Common classes
         .review-img img {width: 350px;}
-        .review-text q {font-size: 1.1rem; max-width: 100%;}
+        .review-text p {font-size: 1.1rem; max-width: 100%;}
       }
     }
     .l-companies-block .companies-list {

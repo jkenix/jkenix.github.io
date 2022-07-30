@@ -228,7 +228,7 @@
   text-align: center;
   padding: 204px 64px 159px;
 }
-.l-main .l-gtrs-block .review-block-content .review-text q {
+.l-main .l-gtrs-block .review-block-content .review-text p {
   font-size: 1.5rem;
   line-height: 32px;
   margin-bottom: 29px;
@@ -252,23 +252,23 @@
   width: 272px;
   height: 111px;
 }
-.l-main .l-companies-block .companies-list .cb q {
+.l-main .l-companies-block .companies-list .cb p {
   font-size: 16px;
   line-height: 21px;
 }
-.l-main .l-companies-block .companies-list .cleo q {
+.l-main .l-companies-block .companies-list .cleo p {
   padding: 18px 13px 18.33px;
 }
 .l-main .l-companies-block .companies-list .arial {
   padding: 0 20px 18.33px 21px;
 }
-.l-main .l-companies-block .companies-list .arial q {
+.l-main .l-companies-block .companies-list .arial p {
   padding: 18px 5px 0;
 }
-.l-main .l-companies-block .companies-list .walden q {
+.l-main .l-companies-block .companies-list .walden p {
   padding-top: 18px;
 }
-.l-main .l-companies-block .companies-list .petsplay q {
+.l-main .l-companies-block .companies-list .petsplay p {
   padding: 18px 10px 0;
 }
 .l-main .l-journal-block {
