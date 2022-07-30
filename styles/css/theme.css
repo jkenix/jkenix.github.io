@@ -53,7 +53,7 @@
 .l-main .reviews-section {
   background: #FFFFFF;
 }
-.l-main .reviews-section .rbt-content q, .l-main .reviews-section .rbt-content .r-name {
+.l-main .reviews-section .rbt-content p, .l-main .reviews-section .rbt-content .r-name {
   color: #011F3A;
 }
 .l-main .reviews-section .rbt-content .r-desc {

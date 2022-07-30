@@ -370,8 +370,9 @@
     text-align: center;
     padding: 0;
   }
-  .l-main .l-reviews-content .reviews-section .reviews-block .rbt-content q {
+  .l-main .l-reviews-content .reviews-section .reviews-block .rbt-content p {
     max-width: 80%;
+    margin: 0 auto;
   }
   .l-main .l-reviews-content .reviews-section .reviews-block .rbt-content .about-reviewer {
     flex-direction: column;

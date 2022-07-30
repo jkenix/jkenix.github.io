@@ -362,7 +362,7 @@
   flex-direction: column;
   gap: 13px;
 }
-.l-main .l-reviews-content .reviews-section .rbt-content q {
+.l-main .l-reviews-content .reviews-section .rbt-content p {
   font-size: 1.5rem;
   line-height: 32px;
 }
