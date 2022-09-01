@@ -10,8 +10,8 @@
   color: #3F3B3D;
 }
 .l-header .header-menu .btn {
-  color: #3F3B3D;
   background: #DDDBDA;
+  color: #3F3B3D;
 }
 .l-header .header-menu #counter-label {
   background-color: #3F3B3D;
@@ -92,9 +92,9 @@
 .l-footer .l-author .layout-link a {
   color: #F14814;
 }
-.l-main .l-shop-block .shop-preview .l-author span strong,
-.l-main .l-celebrating-imperfect .l-author span strong,
-.l-footer .l-author span strong {
+.l-main .l-shop-block .shop-preview .l-author span a,
+.l-main .l-celebrating-imperfect .l-author span a,
+.l-footer .l-author span a {
   color: #00f7ff;
 }
 

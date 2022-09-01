@@ -7,8 +7,8 @@
 .l-header .header-menu {
   .nav nav a {color: #3F3B3D;}
   .btn { 
-    color: #3F3B3D;
     background: #DDDBDA;
+    color: #3F3B3D;
   }
   #counter-label {
     background-color: #3F3B3D;
@@ -64,5 +64,5 @@
     span:nth-child(1) {color: #fff;}
     span:nth-child(2), .layout-link a {color: #F14814;}
   }
-  .l-author span strong {color: #00f7ff;}
+  .l-author span a {color: #00f7ff;}
 }
