@@ -1,11 +1,12 @@
 .wrapper {
-  max-width: 1920px;
   margin: 0 auto;
+  max-width: 1920px;
 }
 
 .l-header {
   display: flex;
   justify-content: space-between;
+  height: 42px;
   padding: 19px 13px 0px 24px;
 }
 .l-header a {
@@ -15,7 +16,7 @@
   letter-spacing: 1.96px;
 }
 .l-header .header-menu, .l-header .user-block {
-  height: 42px;
+  height: 20px;
 }
 .l-header .header-menu {
   width: 706.91px;
@@ -459,6 +460,9 @@
   display: flex;
   gap: 11px;
 }
+.l-footer-contacts .contacts-block .social-links a {
+  height: 24px;
+}
 .l-footer-contacts .custom-design {
   width: 164px;
 }
@@ -478,18 +482,18 @@
   gap: 13px;
 }
 .l-footer-contacts .email form input {
-  width: 255px;
-  height: 30px;
   border-radius: 25px;
+  height: 30px;
   padding: 3px 0 0 24px;
+  width: 255px;
 }
 .l-footer-contacts .email form button {
   border-radius: 30px;
-  width: 187px;
-  height: 44px;
   font-size: 1.125rem;
   font-weight: 700;
+  height: 44px;
   line-height: 21px;
+  width: 187px;
 }
 .l-footer .l-author {
   align-items: center;

@@ -80,7 +80,7 @@
 .l-footer .l-author span {
   color: #3D5675;
 }
-.l-footer .l-author strong {
+.l-footer .l-author span a {
   color: #00e1ff;
 }
 .l-footer .l-author a {

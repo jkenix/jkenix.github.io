@@ -13,10 +13,10 @@
   }
 
   .l-footer {
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 10px;
+    justify-content: center;
   }
 }
 @media (min-width: 1500px) {
@@ -31,8 +31,8 @@
   .l-main .l-custom-box-title,
 .l-main .l-specifications-content,
 .l-main .l-customize-products-title {
-    justify-content: center;
     gap: 60px;
+    justify-content: center;
   }
   .l-main .l-customize-products-catalog,
 .l-main .l-faq-block-content {
@@ -40,8 +40,8 @@
   }
   .l-main .l-steps-products-content .steps-products,
 .l-main .l-arka-advantage-content {
-    justify-content: center;
     gap: 160px;
+    justify-content: center;
   }
   .l-main .l-arka-advantage h2 {
     text-align: center;
@@ -112,8 +112,8 @@
     gap: 0;
   }
   .l-main .l-customize-products-catalog .products-column .product-desc-content .price {
-    gap: 5px;
     flex-direction: row;
+    gap: 5px;
     justify-content: center;
   }
   .l-main .l-customize-products-catalog .products-column .cpm .product-desc p {
@@ -153,8 +153,8 @@
   }
   .l-header .header-menu .nav ul {
     gap: 10px;
-    width: 480px;
     padding-left: 20px;
+    width: 480px;
   }
   .l-header .header-menu .nav ul a {
     letter-spacing: 1.36px;
@@ -192,8 +192,8 @@
     padding: 57px 40px 49.69px;
   }
   .l-main .l-customize-products-title {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     gap: 20px;
     padding-bottom: 40px;
   }
@@ -215,8 +215,8 @@
     height: auto;
   }
   .l-main .l-customize-products-catalog .products-column .product-desc p {
-    max-width: 75%;
     margin: 0 auto;
+    max-width: 75%;
   }
   .l-main .l-steps-products {
     padding: 70px 40px 0;
@@ -225,15 +225,15 @@
     padding: 0;
   }
   .l-main .l-steps-products-content h2 {
-    max-width: 70%;
     margin: 0 auto;
+    max-width: 70%;
   }
   .l-main .l-steps-products-content .steps-products {
     justify-content: center;
   }
   .l-main .l-steps-products-content .steps-products .sp {
-    width: 275px;
     height: auto;
+    width: 275px;
   }
   .l-main .l-arka-advantage {
     padding: 0 40px 141.69px;
@@ -274,7 +274,6 @@
   }
   .l-footer-contacts .contacts-block {
     flex-direction: column;
-    height: 245px;
     gap: 17px;
     padding-left: 36px;
     height: auto;
@@ -295,13 +294,20 @@
 }
 @media (max-width: 767.98px) {
   .l-header {
-    padding: 19px 0 0;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    height: auto;
+    padding: 19px 0 0;
+  }
+  .l-header .header-menu {
+    height: auto;
   }
   .l-header .header-menu .nav ul {
+    height: auto;
     padding-top: 15px;
     padding-left: 0;
+  }
+  .l-header .user-block {
     height: auto;
   }
 
@@ -396,17 +402,14 @@
 @media (max-width: 575.98px) {
   .l-header .header-menu {
     width: auto;
-    height: auto;
   }
   .l-header .header-menu .nav ul {
-    padding-top: 15px;
-    padding-left: 0;
-    height: auto;
     flex-wrap: wrap;
-    width: auto;
+    height: auto;
     justify-content: center;
     padding: 15px 85px 10px;
     text-align: center;
+    width: auto;
   }
   .l-header .header-menu .nav ul .syd img {
     margin-right: 3px;
@@ -417,9 +420,9 @@
   }
   .l-main .l-custom-box-title-content h1 {
     font-size: 2rem;
+    height: auto;
     max-width: 80%;
     line-height: 40px;
-    height: auto;
     margin-bottom: 35px;
   }
   .l-main .l-custom-box-title-content p {
@@ -430,17 +433,17 @@
     padding: 20px 0px 40px 0px;
   }
   .l-main .l-specifications-content {
-    gap: 10px;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    gap: 10px;
   }
   .l-main .l-specifications-content .shopify {
     gap: 0;
   }
   .l-main .l-specifications-content > div {
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
   .l-main .l-specifications-content span {
     padding: 0;
@@ -453,10 +456,10 @@
     padding-left: 0;
   }
   .l-main .l-specifications-content .eco div {
-    padding: 0;
     flex-direction: initial;
-    width: auto;
     height: auto;
+    padding: 0;
+    width: auto;
   }
   .l-main .l-customize-products-title .btn-main {
     width: 200px;
@@ -485,16 +488,16 @@
     max-width: 85%;
   }
   .l-main .l-steps-products-content .steps-products {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
   .l-main .l-arka-advantage h2 {
     max-width: 50%;
     margin: 0 auto;
   }
   .l-main .l-arka-advantage-content {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
   .l-main .l-arka-advantage-content p {
     max-width: 95%;
@@ -526,10 +529,10 @@
   }
 
   .l-footer-contacts {
+    align-items: center;
+    flex-direction: column;
     gap: 30px;
     padding: 60px 0 59.69px;
-    flex-direction: column;
-    align-items: center;
   }
   .l-footer-contacts .custom-design, .l-footer-contacts .about-us, .l-footer-contacts .shopify-app {
     width: auto;
@@ -538,9 +541,9 @@
     text-align: center;
   }
   .l-footer-contacts .contacts-block {
+    gap: 25px;
     padding: 0;
     width: auto;
-    gap: 25px;
   }
   .l-footer-contacts .contacts-block .contacts-block-title {
     font-size: 1.5rem;

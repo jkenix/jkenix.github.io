@@ -55,8 +55,10 @@
         }
     }
     .l-author {
-        span {color: #3D5675;}
-        strong {color: #00e1ff;}
+        span {
+            color: #3D5675;
+            a {color: #00e1ff;}
+        }
         a {color: #F2AE4D;}
     }
 }

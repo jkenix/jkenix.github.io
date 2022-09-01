@@ -15,10 +15,10 @@
     max-height: 100px;
   }
   .l-footer {
-    flex-direction: column; 
-    justify-content: center; 
     align-items: center;
+    flex-direction: column; 
     gap: 10px;
+    justify-content: center; 
   }
 }
 @media (min-width: 1500px) {
@@ -30,8 +30,8 @@
     .l-custom-box-title,
     .l-specifications-content,
     .l-customize-products-title { // Gap 60px + center
-      justify-content: center; 
       gap: 60px;
+      justify-content: center; 
     }
     
     .l-customize-products-catalog,
@@ -39,8 +39,8 @@
 
     .l-steps-products-content .steps-products, // Gap 160px + center
     .l-arka-advantage-content {
-      justify-content: center; 
       gap: 160px;
+      justify-content: center; 
     }
     .l-arka-advantage h2 {text-align: center;}
     
@@ -99,10 +99,11 @@
           span {text-align: center;}
           p {max-width: 100%; text-align: center;}
           &-content {
-            flex-direction: column; gap: 0;
+            flex-direction: column; 
+            gap: 0;
             .price {
-              gap: 5px; 
               flex-direction: row; 
+              gap: 5px; 
               justify-content: center;
             }
           }
@@ -142,9 +143,9 @@
       width: 480px;
       .nav ul {
         gap: 10px;
-        width: 480px;
         padding-left: 20px;
-        a {letter-spacing:  1.36px;}
+        width: 480px;
+        a {letter-spacing: 1.36px;}
       }
     }
     .user-block .profile {
@@ -177,8 +178,8 @@
     .l-customize-products {
       padding: 57px 40px 49.69px;
       &-title {
-        flex-direction: column;
         align-items: center; 
+        flex-direction: column;
         gap: 20px;
         padding-bottom: 40px;
         h2 {text-align: center;}
@@ -192,8 +193,8 @@
             height: auto; gap: 0;
             &-img {height: auto;}
             &-desc p {
-              max-width: 75%; 
               margin: 0 auto;
+              max-width: 75%; 
             }
           }
         }
@@ -203,10 +204,10 @@
       padding: 70px 40px 0;
       &-content {
         padding: 0;
-        h2 {max-width: 70%; margin: 0 auto;}
+        h2 {margin: 0 auto; max-width: 70%; }
         .steps-products {
           justify-content: center;
-          .sp {width: 275px; height: auto;}
+          .sp {height: auto; width: 275px;}
         }
       }
     }
@@ -244,7 +245,6 @@
     padding: 60px 0 40px;
     .contacts-block {
       flex-direction: column;
-      height: 245px;
       gap: 17px;
       padding-left: 36px;
       height: auto;
@@ -261,14 +261,19 @@
 }
 @include media-breakpoint-down(md)  { // 768px
   .l-header {
-    padding: 19px 0 0;
-    flex-direction:  column;
     align-items: center;
-    .header-menu .nav ul {
-      padding-top: 15px; 
-      padding-left: 0;
+    flex-direction: column;
+    height: auto;
+    padding: 19px 0 0;
+    .header-menu {
       height: auto;
+      .nav ul {
+        height: auto;
+        padding-top: 15px; 
+        padding-left: 0;
+      }
     }
+    .user-block {height: auto;}
   }
   .l-main {
     .l-specifications {
@@ -335,16 +340,14 @@
 }
 @include media-breakpoint-down(sm) { // 576px
   .l-header .header-menu {
-    width: auto; height: auto;
+    width: auto;
     .nav ul {
-      padding-top: 15px;
-      padding-left: 0;
-      height: auto;
       flex-wrap: wrap;
-      width: auto;
+      height: auto;
       justify-content: center;
       padding: 15px 85px 10px;
       text-align: center;
+      width: auto;
       .syd img {
         margin-right: 3px;
       }
@@ -355,9 +358,9 @@
       height: auto;
       h1 {
         font-size: 2rem; 
+        height: auto;
         max-width: 80%; 
         line-height: 40px;
-        height: auto;
         margin-bottom: 35px;
       }
       p {max-width: 90%; margin: 0 auto 25px;}
@@ -365,23 +368,23 @@
     .l-specifications {
       padding: 20px 0px 40px 0px;
       &-content {
-        gap: 10px;
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
+        gap: 10px;
         .shopify {gap: 0}
         & > div {
-          justify-content: center;
-          flex-direction: column;
           align-items: center;
+          flex-direction: column;
+          justify-content: center;
         }
         span {padding: 0; max-width: 100%;}
         .shopify span {max-width: 100%;}
         .amazon span {padding-left: 0;}
         .eco div {
-          padding: 0; 
           flex-direction: initial;
-          width: auto; 
           height: auto;
+          padding: 0; 
+          width: auto; 
         }
       }
     }
@@ -406,15 +409,18 @@
     .l-steps-products-content {
       h2 {max-width: 85%;}
       .steps-products {
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
       }
     }
     .l-arka-advantage {
-      h2 {max-width: 50%; margin: 0 auto;}
+      h2 {
+        max-width: 50%; 
+        margin: 0 auto;
+      }
       &-content {
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
         p {max-width: 95%;}
       }
     }
@@ -441,10 +447,10 @@
     }
   }
   .l-footer-contacts {
+    align-items: center;
+    flex-direction: column;
     gap: 30px;
     padding: 60px 0 59.69px;
-    flex-direction: column;
-    align-items: center;
     .custom-design, .about-us, .shopify-app {
       width: auto;
       align-items: center;
@@ -452,9 +458,9 @@
       text-align: center;
     }
     .contacts-block {
+      gap: 25px;
       padding: 0;
       width: auto;
-      gap: 25px;
       .contacts-block-title {
         font-size: 1.5rem; 
         font-weight: 700; 

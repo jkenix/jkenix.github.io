@@ -1,13 +1,13 @@
 @font-face {
   font-display: swap;
-  text-rendering: optimizeLegibility;
   font-family: "Roboto Regular";
+  text-rendering: optimizeLegibility;
   src: url(/webfonts/RobotoRegular.woff) format("woff");
 }
 @font-face {
   font-display: swap;
-  text-rendering: optimizeLegibility;
   font-family: "Lato Regular";
+  text-rendering: optimizeLegibility;
   src: url(/webfonts/LatoRegular.woff) format("woff");
 }
 // Global selectors styles
@@ -18,16 +18,16 @@ h1, h2, h3, p, a, ul, li, span, button, blockquote, input, textarea {
   margin: 0;
 }
 h1 {
-  font-size: 3rem;
-  line-height: 56px;
-  height: 168px;
   color: #011F3A;
+  font-size: 3rem;
+  height: 168px;
+  line-height: 56px;
   margin-bottom: 33px;
 }
 a {text-decoration: none;}
 button {
-  cursor: pointer; 
   border: none; 
+  cursor: pointer; 
 }
 img {user-select: none;}
 ul {

@@ -2,11 +2,12 @@
 @import 'mixins_var.scss';
 // Layout classes
 .wrapper {
-  max-width: 1920px;
   margin: 0 auto;
+  max-width: 1920px;
 }
 .l-header {
   @include flexb();
+  height: 42px;
   padding: 19px 13px 0px 24px;
   a { // Common classes nav
     height: 44px; 
@@ -14,7 +15,7 @@
     line-height: 18px;
     letter-spacing: 1.96px; 
   }
-  .header-menu, .user-block {height: 42px;} // Common classes
+  .header-menu, .user-block {height: 20px;} // Common classes
   .header-menu {
     width: 706.91px; 
     display: flex;
@@ -355,7 +356,8 @@
     gap: 91.75px;
     padding: 60px 103px 59.69px 120px;
     .contacts-block {
-      height: 245px; gap: 17px;
+      height: 245px; 
+      gap: 17px;
       @include flexcolumn();
       li, span, input {
         font-size: 0.938rem; 
@@ -363,6 +365,7 @@
       }
       .social-links {
         display: flex; gap: 11px;
+        a {height: 24px;}
       }
     }
     .custom-design {
@@ -379,18 +382,18 @@
       form {
         @include flexcolumn(); gap: 13px;
         input {
-          width: 255px;
-          height: 30px;
           border-radius: 25px;
+          height: 30px;
           padding: 3px 0 0 24px;
+          width: 255px;
         }
         button {
           border-radius: 30px;
-          width: 187px; 
-          height: 44px;
           font-size: 1.125rem;
           font-weight: 700;
+          height: 44px;
           line-height: 21px;
+          width: 187px; 
         }
       }
     }

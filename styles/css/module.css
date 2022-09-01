@@ -17,11 +17,11 @@
 }
 
 .btn-main {
+  border-radius: 30px;
   font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 1.96px;
   line-height: 18px;
-  border-radius: 30px;
 }
 
 /*# sourceMappingURL=module.css.map */

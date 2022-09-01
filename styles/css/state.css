@@ -56,10 +56,10 @@
   background: rgba(255, 255, 255, 0.61);
 }
 
-.l-footer .layout-link a:hover {
+.l-footer .l-author a:hover {
   color: #000;
 }
-.l-footer .layout-link a:active {
+.l-footer .l-author a:active {
   color: #788899;
 }
 
