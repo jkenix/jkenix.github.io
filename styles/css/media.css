@@ -28,15 +28,28 @@
     justify-content: center;
   }
 
+  .l-main .l-custom-box-title-content p {
+    font-size: 1.2rem;
+    max-width: 80%;
+    margin-bottom: 25px;
+  }
   .l-main .l-custom-box-title,
 .l-main .l-specifications-content,
 .l-main .l-customize-products-title {
     gap: 60px;
     justify-content: center;
   }
+  .l-main .l-customize-products-shock-items span {
+    font-size: 1rem;
+  }
   .l-main .l-customize-products-catalog,
 .l-main .l-faq-block-content {
     justify-content: center;
+  }
+  .l-main .l-steps-products-content .steps-products .sp p,
+.l-main .l-customize-products-catalog .products-column .product-desc-content p,
+.l-main .l-arka-advantage-content .advantage-column-desc p {
+    font-size: 1.2rem;
   }
   .l-main .l-steps-products-content .steps-products,
 .l-main .l-arka-advantage-content {
@@ -46,6 +59,13 @@
   .l-main .l-arka-advantage h2 {
     text-align: center;
   }
+  .l-main .l-faq-block-content .faq-article {
+    height: auto;
+  }
+  .l-main .l-faq-block-content .faq-article p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
   .l-main .l-reviews-content {
     align-items: center;
     display: flex;
@@ -54,6 +74,12 @@
 
   .l-footer-contacts {
     justify-content: center;
+  }
+  .l-footer-contacts .contacts-block li {
+    font-size: 1rem;
+  }
+  .l-footer-contacts .contacts-block a, .l-footer-contacts .contacts-block span {
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 1399.98px) {
@@ -96,25 +122,14 @@
 
   .l-main .l-customize-products {
     padding: 57px 80px 49.69px;
+    gap: 30px;
   }
   .l-main .l-customize-products-catalog .products-column .product-desc {
     padding: 0;
   }
-  .l-main .l-customize-products-catalog .products-column .product-desc span {
-    text-align: center;
-  }
-  .l-main .l-customize-products-catalog .products-column .product-desc p {
-    max-width: 100%;
-    text-align: center;
-  }
   .l-main .l-customize-products-catalog .products-column .product-desc-content {
     flex-direction: column;
     gap: 0;
-  }
-  .l-main .l-customize-products-catalog .products-column .product-desc-content .price {
-    flex-direction: row;
-    gap: 5px;
-    justify-content: center;
   }
   .l-main .l-customize-products-catalog .products-column .cpm .product-desc p {
     max-width: 100%;
@@ -136,6 +151,9 @@
   }
   .l-main .l-reviews {
     padding: 88px 80px 57px;
+  }
+  .l-main .l-reviews-content .companies-reviews {
+    gap: 0;
   }
   .l-main .l-reviews-content .reviews-section .rbt-content .about-reviewer {
     gap: 10px;
@@ -159,6 +177,9 @@
   .l-header .header-menu .nav ul a {
     letter-spacing: 1.36px;
   }
+  .l-header .header-menu .nav ul .syd svg {
+    margin: 0;
+  }
   .l-header .user-block .profile {
     padding: 5px 20px 0 30px;
   }
@@ -169,17 +190,18 @@
   }
   .l-main .l-custom-box-title-content {
     padding: 0;
-    text-align: center;
   }
   .l-main .l-custom-box-title-content h1 {
     font-size: 2.5rem;
-    max-width: 80%;
-    margin: 0 auto 15px;
+    max-inline-size: 400px;
   }
   .l-main .l-custom-box-title-content p {
     font-size: 1.5rem;
     max-width: 100%;
     margin-bottom: 25px;
+  }
+  .l-main .l-custom-box-title-content .button-block {
+    justify-content: center;
   }
   .l-main .l-custom-box-title-img {
     display: none;
@@ -190,6 +212,7 @@
   }
   .l-main .l-customize-products {
     padding: 57px 40px 49.69px;
+    gap: 0;
   }
   .l-main .l-customize-products-title {
     align-items: center;
@@ -206,6 +229,7 @@
   }
   .l-main .l-customize-products-catalog .products-column {
     flex-direction: row;
+    max-inline-size: 796px;
   }
   .l-main .l-customize-products-catalog .products-column .product {
     height: auto;
@@ -213,10 +237,6 @@
   }
   .l-main .l-customize-products-catalog .products-column .product-img {
     height: auto;
-  }
-  .l-main .l-customize-products-catalog .products-column .product-desc p {
-    margin: 0 auto;
-    max-width: 75%;
   }
   .l-main .l-steps-products {
     padding: 70px 40px 0;
@@ -246,10 +266,12 @@
   }
   .l-main .l-arka-advantage-content .advantage-column {
     height: auto;
-    text-align: center;
   }
   .l-main .l-arka-advantage-content .advantage-column-desc {
     margin: 0;
+  }
+  .l-main .l-arka-advantage-content .advantage-column p {
+    max-width: 100%;
   }
   .l-main .l-faq-block {
     padding: 60px 0;
@@ -309,8 +331,13 @@
   }
   .l-header .user-block {
     height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
+  .l-main .l-custom-box-title-content {
+    padding: 0 30px;
+  }
   .l-main .l-specifications {
     padding: 20px 20px 0 20px;
   }
@@ -358,12 +385,18 @@
   .l-main .l-reviews {
     padding: 0;
   }
-  .l-main .l-reviews-content .companies-reviews {
-    padding-top: 20px;
+  .l-main .l-reviews h2 {
+    margin-bottom: 40px;
   }
-  .l-main .l-reviews-content .reviews-section {
+  .l-main .l-reviews-content .companies-reviews {
+    height: auto;
+  }
+  .l-main .l-reviews-content .companies-reviews, .l-main .l-reviews-content .reviews-section {
     flex-direction: column;
     margin-bottom: 20px;
+  }
+  .l-main .l-reviews-content .reviews-section {
+    padding-top: 20px;
   }
   .l-main .l-reviews-content .reviews-section .imgs-block {
     display: none;
@@ -373,19 +406,21 @@
   }
   .l-main .l-reviews-content .reviews-section .reviews-block .rbt-content {
     align-items: center;
-    text-align: center;
     padding: 0;
   }
   .l-main .l-reviews-content .reviews-section .reviews-block .rbt-content p {
+    font-size: 1.2rem;
     max-width: 80%;
     margin: 0 auto;
   }
   .l-main .l-reviews-content .reviews-section .reviews-block .rbt-content .about-reviewer {
     flex-direction: column;
   }
-  .l-main .l-reviews-content .js, .l-main .l-reviews-content .ls, .l-main .l-reviews-content .as {
-    height: 210px;
-    padding-top: 20px;
+  .l-main .l-reviews-content .js {
+    height: 250px;
+  }
+  .l-main .l-reviews-content .ls, .l-main .l-reviews-content .as {
+    height: 220px;
   }
 
   .l-footer-contacts .contacts-block {
@@ -421,13 +456,13 @@
   .l-main .l-custom-box-title-content h1 {
     font-size: 2rem;
     height: auto;
-    max-width: 80%;
     line-height: 40px;
+    max-inline-size: 350px;
     margin-bottom: 35px;
   }
   .l-main .l-custom-box-title-content p {
     max-width: 90%;
-    margin: 0 auto 25px;
+    margin-bottom: 25px;
   }
   .l-main .l-specifications {
     padding: 20px 0px 40px 0px;
@@ -460,9 +495,6 @@
     height: auto;
     padding: 0;
     width: auto;
-  }
-  .l-main .l-customize-products-title .btn-main {
-    width: 200px;
   }
   .l-main .l-customize-products-catalog .products-column {
     flex-direction: column;
@@ -508,17 +540,20 @@
   .l-main .l-faq-block-content .faq-article p {
     max-width: 65%;
   }
-  .l-main .l-reviews-content .reviews-section .rbt-content {
+  .l-main .l-reviews h2 {
+    font-size: 1.7rem;
+  }
+  .l-main .l-reviews-content .reviews-section .reviews-block .rbt-content {
     gap: 15px;
   }
-  .l-main .l-reviews-content .js {
-    height: 280px;
+  .l-main .l-reviews-content .reviews-section .reviews-block .rbt-content p {
+    font-size: 1rem;
   }
-  .l-main .l-reviews-content .ls {
-    height: 320px;
+  .l-main .l-reviews-content .js, .l-main .l-reviews-content .ls {
+    height: 240px;
   }
   .l-main .l-reviews-content .as {
-    height: auto;
+    height: 230px;
   }
   .l-main .l-start-design {
     padding: 120px 0 136.6px;

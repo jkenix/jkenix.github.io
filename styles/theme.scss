@@ -1,26 +1,30 @@
 // Theme classes
-.sw-bg {background: #EEEEEE;}
+.sw-bg {background-color: #EEEEEE;}
 // Header
 .l-header {
-    background: #fff;
+    background-color: #fff;
     a {color: #011F3A;}
 }
 // Button color classes
-.btn-wt {color: #fff; background: #3D5675;} 
-.btn-wbg {background: #fff; color: #3D5675;}
+.btn-wt {color: #fff; background-color: #3D5675;} 
+.btn-wbg {background-color: #fff; color: #3D5675;}
 // Main
 .l-main {
     h2 {color: #011F3A;}
     // Main classes
-    .l-custom-box-title {background: #F2AE4D;} // Background
+    .l-custom-box-title {background-color: #F2AE4D;} // Background
     .l-specifications {
-        background: #fff;
+        background-color: #fff;
         span {color: #A1A1A1;}
     }
-    .l-customize-products-catalog {
-        .product-desc .p-name {color:#011F3A;}
-        .product {
-            p {color: #777777;}
+    .l-customize-products {
+        &-catalog {
+            .product-desc .p-name {color:#011F3A;}
+            .product {
+                p {color: #777777;}
+            }
+        }
+        &-catalog, &-shock-items { // Common class span color
             span {color: #A1A1A1;}
         }
     }
@@ -28,12 +32,21 @@
     .l-arka-advantage-content .advantage-column-desc { // Common classes span title
         span {color: #011F3A;}
     }
+
+    .l-steps-products-content .steps-products .sp p {
+        color: #3D5675;
+    }
     .l-arka-advantage-content .advantage-column-desc p {
         color: #A1A1A1;
     }
-    .l-faq-block-content {background: #FFCA3A;} // Background
+    .l-faq-block-content {
+        background-color: #FFCA3A;
+        .faq-article p {
+            color: #3D5675;
+        }
+    } 
     .reviews-section {
-        background: #FFFFFF; 
+        background-color: #FFFFFF; 
         .rbt-content {
             p, .r-name {color: #011F3A;}
             .r-desc {color: #A1A1A1;}
@@ -55,7 +68,7 @@
         }
     }
     .l-author {
-        span {
+        address {
             color: #3D5675;
             a {color: #00e1ff;}
         }

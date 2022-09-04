@@ -31,13 +31,18 @@
 
 .l-header a:hover,
 .l-main .rbt-content a:hover,
-.l-footer-contacts .contacts-block a:hover {
+.l-footer a:hover {
   color: blue;
 }
 .l-header a:active,
 .l-main .rbt-content a:active,
-.l-footer-contacts .contacts-block a:active {
+.l-footer a:active {
   color: #F2AE4D;
+}
+.l-header a:focus-visible,
+.l-main .rbt-content a:focus-visible,
+.l-footer a:focus-visible {
+  outline: 3px solid blue;
 }
 
 .btn-hbbg:hover {

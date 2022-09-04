@@ -29,7 +29,7 @@
       .syd {
         padding-top: 2px;
         a {text-decoration: underline;}
-        img {margin-right: 13px;}
+        svg {margin-right: 13px;}
       }
       .allprod,  .inspiration, .about {padding-top: 3px;} // Common classes
     }
@@ -56,10 +56,14 @@
         max-width: 64%;
         margin-bottom: 15px;
       }
-      button {
-        width: 228px;
-        height: 56px;
+      .button-block {
+        display: flex;
+        button {
+          width: 228px;
+          height: 56px;
+        }
       }
+     
     }
     &-img {
       display: flex;
@@ -244,6 +248,7 @@
           line-height: 24px;
           margin-bottom: 10px;
           width: 95%;
+          max-inline-size: 400px;
         }
         button {
           width: 204px;
@@ -256,22 +261,28 @@
   }
   .l-reviews {
     padding: 88px 103px 57px 120px;
+    h2 {
+      font-size: 2rem; 
+      font-weight: 700;
+      line-height: 38px;
+      margin: 0 auto 59px;
+      text-align: center;
+    }
     &-content {
       box-shadow: $box-shadow;
-      h2 {
-        font-size: 2rem; 
-        font-weight: 700;
-        line-height: 38px;
-        margin: 0 auto 59px;
-        text-align: center;
-      }
       .companies-reviews { // Companies block
-        height: 314px; gap: 4px;
+        height: 314px;
+        justify-content: space-evenly;
+        gap: 175px;
         .cb {height: 114px;}
       }
-      .reviews-section { // Common classes
+
+      .companies-reviews, .reviews-section { // Common classes flex
         align-items: center;
         display: flex; 
+      }
+
+      .reviews-section { // Common classes
         .img__resp-block {justify-content: center;}
         .reviews-block {
           width: 588px;
