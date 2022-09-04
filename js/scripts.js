@@ -14,13 +14,10 @@ $(window).scroll(function(){
         $(function(Showscroll){
             $('#scroll_top').show();
             $('#scroll_top').css({"display": "flex"},);
+            history.pushState("", document.title, window.location.pathname);
         });
 	} 
     else if ($(this).scrollTop() < 50) {
 		$('#scroll_top').hide();
 	} 
-    // Check page reboot
-    else if (window.innerHeight > 50) {
-        return Showscroll();
-    }
 });
