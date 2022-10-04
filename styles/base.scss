@@ -1,40 +1,65 @@
 @font-face {
   font-display: swap;
   text-rendering: optimizeLegibility;
-  font-family: "Roboto Regular";
-  src: url(/webfonts/RobotoRegular.woff) format("woff");
+  font-family: "JostRegular";
+  src: url(/webfonts/JostRegular.woff) format("woff");
 }
 @font-face {
   font-display: swap;
   text-rendering: optimizeLegibility;
-  font-family: "Lato Regular";
-  src: url(/webfonts/LatoRegular.woff) format("woff");
+  font-family: "DMSerifDisplayRegular";
+  src: url(/webfonts/DMSerifDisplayRegular.woff) format("woff");
 }
 // Global selectors styles
-html {scroll-behavior: smooth;}
-h1, h2, h3, p, a, ul, li, span, button, input, textarea {
-  font-family: "Roboto Regular";
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 2.51rem;
+  line-height: 36px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: "DMSerifDisplayRegular";
+}
+
+p,
+a,
+ul,
+li,
+span,
+button,
+input,
+textarea,
+address {
+  font-family: "JostRegular";
   font-weight: 400;
   margin: 0;
 }
-h1 {
-  font-size: 3rem;
-  line-height: 56px;
-  height: 168px;
-  color: #011F3A;
-  margin-bottom: 33px;
+
+a {
+  text-decoration: none;
 }
-a {text-decoration: none;}
+
 button {
-  cursor: pointer; 
-  border: none; 
+  cursor: pointer;
+  border: none;
 }
-img {user-select: none;}
+
+img {
+  user-select: none;
+}
+
 ul {
   list-style: none;
   padding: 0;
 }
-q {
-  font-family: "Lato Regular";
-  font-weight: 400;
+
+address {
+  font-size: 1.5rem;
+  font-style: normal;
 }

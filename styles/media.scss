@@ -1,472 +1,76 @@
 // Import mixins
-@import 'mixins_var.scss';
-@import "lib/breakpoints";
+@import "mixins_var.scss";
 // Media main
 @media (min-width: 2099px) {
   #scroll_top {
-    width: 300px; 
-    height: 200px; 
+    width: 300px;
+    height: 200px;
     font-size: 100px;
   }
 }
 @media (min-width: 1921px) {
   #scroll_top {
-    min-width: 80px; 
+    min-width: 80px;
     min-height: 80px;
-    max-width: 100px; 
+    max-width: 100px;
     max-height: 100px;
     font-size: 50px;
   }
   .l-footer {
-    flex-direction: column; 
-    justify-content: center; 
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 10px;
   }
 }
 @media (min-width: 1500px) {
-  .l-header, .l-footer {justify-content: center;}
-  .l-header .header-menu .nav ul {
+  .l-main .l-create-dream-inter {
+    max-width: 100%;
+    margin: 0 105px 0 120px;
+    background-size: cover;
+  }
+  .l-footer-contacts {
     justify-content: center;
   }
-  .l-main {
-    .l-custom-box-title,
-    .l-specifications-content,
-    .l-customize-products-title { // Gap 60px + center
-      justify-content: center; 
-      gap: 60px;
-    }
-    
-    .l-customize-products-catalog,
-    .l-faq-block-content {justify-content: center;} // Only center
-
-    .l-steps-products-content .steps-products, // Gap 160px + center
-    .l-arka-advantage-content {
-      justify-content: center; 
-      gap: 160px;
-    }
-    .l-arka-advantage h2 {text-align: center;}
-    
-    .l-reviews-content {
-      align-items: center;
-      @include flexcolumn();
-    }
-
-  }
-  .l-footer-contacts {
-   justify-content: center;
-  }
 }
-@include media-breakpoint-down(xxl)  { // 1400px
+@media (max-width: 1399.98px) {
+  // 1400px
   .l-main {
-   .l-customize-products-catalog {
-      .products-column .product {
-        width: auto; 
-        &-img {display: flex; width: auto;}
-        &-desc {
-          p {max-width: 64%;}
-          &-content {
-            display: flex;
-            gap: 10px;
-          }
-        }
-      }
-    }
-   .l-faq-block-content .faq-article {
-      padding: 110px 0 90px;
-      p {max-width: 55%;}
-    }
-    .l-reviews-content {
-      .reviews-section {
-        .rbt-content, .ls {padding: 63.69px 40px 62.5px;}
-    }
-      .ls {gap: 0;}
-    }
   }
   .l-footer-contacts {
-    justify-content: space-between; 
+    justify-content: space-between;
     gap: 0;
   }
 }
-@include media-breakpoint-down(xl) { // 1200px
-  .l-header .user-block .profile {
-    padding: 3px 20px 20px 30px;
-  }
-  .l-main {
-    .l-customize-products {
-      padding: 57px 80px 49.69px;
-      &-catalog .products-column {
-        .product-desc {
-          padding: 0;
-          span {text-align: center;}
-          p {max-width: 100%; text-align: center;}
-          &-content {
-            flex-direction: column; gap: 0;
-            .price {gap: 5px; flex-direction: row; justify-content: center;}
-          }
-        }
-        .cpm .product-desc p {max-width: 100%;}
-      }
-    }
-    .l-steps-products {
-      padding: 70px 80px 0;
-      &-content {padding: 88px 0;}
-    }
-    .l-arka-advantage {
-      padding: 0 80px 141.69px;
-    }
-    .l-faq-block {
-      padding: 60px 80px;
-      &-content .faq-article {height: auto;}
-    }
-    .l-reviews {
-      padding: 88px 80px 57px;
-      &-content  {
-        .reviews-section .rbt-content .about-reviewer {
-          gap: 10px; 
-          justify-content: space-between;
-        }
-      }
-    }
-  }
-  .l-footer-contacts {
-    padding: 60px 30px 59.69px;
-    flex-wrap: wrap;
-  }
+@media (max-width: 1199.98px) {
+  // 1200px
 }
-@include media-breakpoint-down(lg)  { // 992px
+@media (max-width: 991.98px) {
+  // 992px
   .l-header {
-    .header-menu {
-      width: 480px;
-      .nav ul {
-        gap: 10px;
-        width: 480px;
-        padding-left: 20px;
-        a {letter-spacing:  1.36px;}
-      }
-    }
-    .user-block .profile {
-      padding: 5px 20px 0 30px;
-    }
-  }
-  .l-main {
-    .l-custom-box-title  {
-      padding: 40px 0 40px 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    .header-menu nav {
       justify-content: center;
-      &-content {
-        padding: 0;
-        text-align: center;
-        h1 {
-          font-size: 2.5rem;
-          max-width: 80%; 
-          margin: 0 auto 15px;
-        }
-        p {
-          font-size: 1.5rem; 
-          max-width: 100%;
-          margin-bottom: 25px;
-        }
-      }
-      &-img {display: none;}
-    }
-    .l-specifications-content {
-      justify-content: center; gap: 20px;
-    }
-    .l-customize-products {
-      padding: 57px 40px 49.69px;
-      &-title {
-        flex-direction: column;
-        align-items: center; 
-        gap: 20px;
-        padding-bottom: 40px;
-        h2 {text-align: center;}
-      }
-      &-catalog {
-        flex-wrap: wrap;
-        justify-content: center;
-        .products-column {
-          flex-direction: row;
-          .product {
-            height: auto; gap: 0;
-            &-img {height: auto;}
-            &-desc p {max-width: 75%; margin: 0 auto;}
-          }
-        }
-      }
-    }
-    .l-steps-products {
-      padding: 70px 40px 0;
-      &-content {
-        padding: 0;
-        h2 {max-width: 70%; margin: 0 auto;}
-        .steps-products {
-          justify-content: center;
-          .sp {width: 275px; height: auto;}
-        }
-      }
-    }
-    .l-arka-advantage {
-      padding: 0 40px 141.69px;
-      h2 {text-align: center;}
-      &-content {
-        gap: 10px;
-        .advantage-column {
-          height: auto;
-          text-align: center;
-          &-desc {margin: 0;}
-        }
-      }
-    }
-    .l-faq-block {
-      padding: 60px 0;
-      &-content .faq-article {height: auto;}
-    }
-    .l-reviews {
-      padding: 88px 0 57px;
-      &-content {
-        box-shadow: none;
-        .reviews-section {
-          .rbt-content, .ls {padding: 63.69px 30px 62.5px;}
-        }
-      }
-    }
-  }
-  .l-footer-contacts {
-    justify-content: center;
-    gap: 15px;
-    padding: 60px 0 40px;
-    .contacts-block {
-      flex-direction: column;
-      height: 245px;
-      gap: 17px;
-      padding-left: 36px;
-      height: auto;
-    }
-    .email {
-      width: 334px;
-      height: 150px;
-      span {text-align: center;}
-      form {align-items: center;
-        input {height: 40px;}
-      }
-    }
-  }
-}
-@include media-breakpoint-down(md)  { // 768px
-  .l-header {
-    padding: 19px 0 0;
-    flex-direction:  column;
-    align-items: center;
-    .header-menu .nav ul {
-      padding-top: 15px; 
-      padding-left: 0;
-      height: auto;
-    }
-  }
-  .l-main {
-    .l-specifications {
-      padding: 20px 20px 0 20px;
-      &-content {flex-wrap: wrap;}
-    }
-    .l-steps-products {
-      padding: 70px 0 40px;
-      .steps-products {
-        flex-wrap: wrap;
-        padding-bottom: 40px;
-      }
-    }
-    .l-arka-advantage {
-      padding: 0;
-      h2 {margin-bottom: 20px;}
-      p {max-width: 80%; margin: 0 auto;}
-      &-content {
-        gap: 0; flex-wrap: wrap;
-        justify-content: center;
-      }
-    }
-    .l-faq-block-content {
-      align-items: center;
-      flex-direction: column;
-      .faq-article {width: auto;}
-      .faq-1 {padding: 60px 0 0;}
-      .faq-line {display: none;}
-      .faq-2 {padding: 60px 0;}
-    }
-    .l-reviews {
-      padding: 0;
-      &-content {
-        .companies-reviews {padding-top: 20px;}
-        .reviews-section {
-          flex-direction: column;
-          margin-bottom: 20px;
-          .imgs-block {display: none;}
-          .reviews-block {
-            width: auto;
-            .rbt-content {
-              align-items: center;
-              text-align: center;
-              padding: 0;
-              q {max-width: 80%;}
-              .about-reviewer {flex-direction: column;}
-            }
-          }
-        }
-        .js, .ls, .as {height: 210px; padding-top: 20px;} //Height reviews blocks
-      }
-    }
-  }
-  .l-footer-contacts {
-    .contacts-block {
-      padding-left: 51px;
-    }
-    .shopify-app {padding-left: 51px;}
-    .email {
-      width: 293px; 
-      padding-left: 10px;
-    }
-  }
-}
-@include media-breakpoint-down(sm) { // 576px
-  .l-header .header-menu {
-    width: auto; height: auto;
-    .nav ul {
-      padding-top: 15px;
-      padding-left: 0;
-      height: auto;
-      flex-wrap: wrap;
-      width: auto;
-      justify-content: center;
-      padding: 15px 85px 10px;
-      text-align: center;
-      .syd img {
-        margin-right: 3px;
-      }
-    }
-  }
-  .l-main {
-    .l-custom-box-title-content {
-      height: auto;
-      h1 {
-        font-size: 2rem; 
-        max-width: 80%; 
-        line-height: 40px;
-        height: auto;
-        margin-bottom: 35px;
-      }
-      p {max-width: 90%; margin: 0 auto 25px;}
-    }
-    .l-specifications {
-      padding: 20px 0px 40px 0px;
-      &-content {
-        gap: 10px;
-        flex-direction: column;
-        align-items: center;
-        .shopify {gap: 0}
-        & > div {
-          justify-content: center;
-          flex-direction: column;
-          align-items: center;
-        }
-        span {padding: 0; max-width: 100%;}
-        .shopify span {max-width: 100%;}
-        .amazon span {padding-left: 0;}
-        .eco div {
-          padding: 0; 
-          flex-direction: initial;
-          width: auto; 
-          height: auto;
-        }
-      }
-    }
-    .l-customize-products {
-      &-title  .btn-main {width: 200px;}
-      &-catalog .products-column {
-        flex-direction: column;
-        .product-desc {
-          padding: 0;
-          p {font-size: 1rem;}
-        }
-      }
-      &-shock-items {
-        align-items: center;
-        flex-direction: column;
-        width: auto;
-        height: auto;
-        gap: 10px;
-        span {font-size: 1.125rem; text-align: center;}
-      }
-    }
-    .l-steps-products-content {
-      h2 {max-width: 85%;}
-      .steps-products {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-    .l-arka-advantage {
-      h2 {max-width: 50%; margin: 0 auto;}
-      &-content {
-        flex-direction: column;
-        align-items: center;
-        p {max-width: 95%;}
-      }
-    }
-    .l-faq-block-content .faq-article{
-      h2 {max-width: 60%;}
-      p {max-width: 65%;}
-    }
-    .l-reviews {
-      &-content {
-        .reviews-section .rbt-content {
-          gap: 15px;
-        }
-        .js {height: 280px;} //Height reviews blocks
-        .ls {height: 320px;}
-        .as {height: auto;}
-      }
-    }
-    .l-start-design {
-      padding: 120px 0 136.6px;
-      .button-blocks {
-        align-items: center;
-        flex-direction: column;
-      }
-    }
-  }
-  .l-footer-contacts {
-    gap: 30px;
-    padding: 60px 0 59.69px;
-    flex-direction: column;
-    align-items: center;
-    .custom-design, .about-us, .shopify-app {
-      width: auto;
-      align-items: center;
-      width: 154px;
-      text-align: center;
-    }
-    .contacts-block {
-      padding: 0;
-      width: auto;
       gap: 25px;
-      .contacts-block-title {
-        font-size: 1.5rem; 
-        font-weight: 700; 
-        line-height: 27px;
-      }
-      .contacts-block-link {font-size: 1.25rem;}
-    } 
-    .email {
-      span {
-        font-size: 1.25rem;
-        text-align: center;
-      }
-      form {
-        align-items: center;
-        input {width: 220px;}
-      }
     }
   }
+  .l-main {
+  }
+}
+@media (max-width: 767.98px) {
+  // 768px
+  .l-header {
+    justify-content: center;
+  }
+  .l-main {
+  }
+}
+@media (max-width: 575.98px) {
+  // 576px
 }
 @media (max-width: 320px) {
-  body {width: 320px;}
+  body {
+    width: 320px;
+  }
 }

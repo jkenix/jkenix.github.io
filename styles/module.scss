@@ -1,25 +1,33 @@
 // Import mixins, variables
-@import 'mixins_var.scss';
+@import "mixins_var.scss";
 // Header/Footer logo
-.logo {width: 85px; height: 24px;}
+.logo {
+  width: 177px;
+  height: 50px;
+}
 // Main
 .img__resp-block {
-    display: flex;
+  display: flex;
+  height: auto;
+  width: auto;
+  img {
     height: auto;
-    width: auto;
-    img {height: auto;}
+  }
 }
-.img__resp {max-width: 100%;} // Images
+.img__resp {
+  max-width: 100%;
+  object-fit: cover;
+} // Images
 // Buttons
 .btn-main {
-    font-size: 0.875rem; 
-    font-weight: 700;
-    letter-spacing: 1.96px;
-    line-height: 18px;
-    border-radius: 30px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 1.96px;
+  line-height: 18px;
+  border-radius: 30px;
 }
 .btn-join {
-    font-size: 1.125rem;
-    font-weight: 700;
-    line-height: 21px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 21px;
 }

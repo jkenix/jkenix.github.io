@@ -22,44 +22,17 @@
   cursor: pointer;
 }
 .arrow-top:active path {
-  fill: #F2AE4D;
+  fill: #f2ae4d;
 }
 .arrow-top path {
   fill: #fff;
   transition: fill 0s ease-out;
 }
 
-.l-header a:hover,
-.l-main .rbt-content a:hover,
-.l-footer-contacts .contacts-block a:hover {
-  color: blue;
+.l-footer .l-author a:hover {
+  color: rgb(60, 31, 161);
 }
-.l-header a:active,
-.l-main .rbt-content a:active,
-.l-footer-contacts .contacts-block a:active {
-  color: #F2AE4D;
-}
-
-.btn-hbbg:hover {
-  color: #fff;
-  background: #000;
-}
-.btn-hbbg:active {
-  background: #788899;
-}
-
-.l-main .l-custom-box-title-content button:hover {
-  background: #fff;
-  color: #3D5675;
-}
-.l-main .l-custom-box-title-content button:active {
-  background: rgba(255, 255, 255, 0.61);
-}
-
-.l-footer .layout-link a:hover {
-  color: #000;
-}
-.l-footer .layout-link a:active {
+.l-footer .l-author a:active {
   color: #788899;
 }
 

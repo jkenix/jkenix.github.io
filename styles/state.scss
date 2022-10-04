@@ -1,6 +1,5 @@
 // Import mixins, variables
-@import 'mixins_var.scss';
-@import "lib/breakpoints";
+@import "mixins_var.scss";
 // State of modules and site skeleton
 // Scroll
 #scroll_top {
@@ -15,7 +14,9 @@
   width: 40px;
   height: 40px;
   opacity: 0.5;
-  &:hover {opacity: 1;}
+  &:hover {
+    opacity: 1;
+  }
 }
 .arrow-top {
   width: 40px;
@@ -23,43 +24,25 @@
   transform: rotate(270deg);
   cursor: pointer;
   &:active {
-    path {fill: #F2AE4D;}
+    path {
+      fill: #f2ae4d;
+    }
   }
   path {
     fill: #fff;
     transition: fill 0s ease-out;
   }
 }
-// Header menu and common classes blue hover, orange active
-.l-header, 
-.l-main .rbt-content,
-.l-footer-contacts .contacts-block {
-  a:hover {color:blue;}
-  a:active {color: #F2AE4D;}
-}
-// btn-hbbg hover/active effects
-.btn-hbbg {
-  &:hover {
-    color: #fff;
-    background: #000; 
-  }
-  &:active {background: #788899;}
-} 
+// Header
+
 // Main
-.l-main {
-  .l-custom-box-title-content button { // Button .btn-wt hover/active effects
-    &:hover {
-      background: #fff; 
-      color: #3D5675;
-    }
-    &:active {
-      background: rgba(255, 255, 255, 0.61);
-    }
+
+// Footer
+.l-footer .l-author {
+  a:hover {
+    color: rgb(60, 31, 161);
   }
-}
-.l-footer {
- .layout-link {
-    a:hover {color: #000;}
-    a:active {color: #788899;}
+  a:active {
+    color: #788899;
   }
 }
