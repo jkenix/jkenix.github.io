@@ -13,27 +13,12 @@
     max-height: 100px;
     font-size: 50px;
   }
-  .l-footer {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
 }
 @media (min-width: 1500px) {
   .l-main .l-create-dream-inter {
     max-width: 100%;
-    margin: 0 105px 0 120px;
     background-size: cover;
-  }
-  .l-footer-contacts {
-    justify-content: center;
-  }
-}
-@media (max-width: 1399.98px) {
-  .l-footer-contacts {
-    justify-content: space-between;
-    gap: 0;
+    background-position: center;
   }
 }
 @media (max-width: 991.98px) {

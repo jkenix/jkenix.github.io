@@ -17,12 +17,17 @@
   object-fit: cover;
 }
 
-.btn-main {
-  font-size: 0.875rem;
-  font-weight: 700;
-  letter-spacing: 1.96px;
-  line-height: 18px;
-  border-radius: 30px;
+.btn-connect {
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  font-size: 1.125rem;
+  height: 71px;
+  line-height: 27px;
+  border: 2px solid #292f36;
+  border-radius: 18px;
+  background-color: #292f36;
+  letter-spacing: 0.72px;
 }
 
 .btn-join {

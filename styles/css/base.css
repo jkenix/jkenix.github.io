@@ -22,8 +22,13 @@ h1 {
 h1,
 h2,
 h3 {
-  margin: 0;
   font-family: "DMSerifDisplayRegular";
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  letter-spacing: 0.22px;
 }
 
 p,

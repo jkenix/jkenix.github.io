@@ -3,11 +3,6 @@
   margin: 0 auto;
 }
 
-div[class^=l-] {
-  margin-left: 120px;
-  margin-right: 105px;
-}
-
 .l-header {
   display: flex;
   justify-content: space-between;
@@ -34,14 +29,37 @@ div[class^=l-] {
   letter-spacing: 0.4px;
 }
 
+.l-main div[class*=-m-] {
+  margin-left: 120px;
+  margin-right: 105px;
+}
 .l-main .l-create-dream-inter {
-  max-width: 100%;
+  max-width: 1440px;
   height: 831px;
-  background-image: url("/img/Dream-interior-bg-xxl.jpg");
+  background-image: url("/img/Dream-interior-bg.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  border-radius: 0px 0px 0px 290px;
-  margin: 0;
+}
+.l-main .l-create-dream-inter-content {
+  padding-top: 188px;
+  padding-left: 120px;
+  max-inline-size: 600px;
+}
+.l-main .l-create-dream-inter-content h2 {
+  font-size: 5rem;
+  line-height: 96px;
+  margin-bottom: 19px;
+}
+.l-main .l-create-dream-inter-content p {
+  font-size: 1.375rem;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+  margin-bottom: 35px;
+}
+.l-main .l-create-dream-inter-content button {
+  gap: 31px;
+  width: 207px;
+  padding-left: 32px;
 }
 
 .l-footer .l-author {
@@ -50,6 +68,7 @@ div[class^=l-] {
   flex-direction: column;
   gap: 5px;
   padding-bottom: 32px;
+  white-space: nowrap;
 }
 .l-footer .l-author span,
 .l-footer .l-author a {
