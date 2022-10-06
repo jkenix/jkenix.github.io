@@ -14,11 +14,28 @@
     font-size: 50px;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1457px) {
   .l-main .l-create-dream-inter {
     max-width: 100%;
     background-size: cover;
     background-position: center;
+  }
+  .l-main .l-create-dream-inter-content {
+    padding-left: 250px;
+  }
+  .l-main .l-create-dream-inter-content p {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 1399.98px) {
+  .l-main .l-create-dream-inter-content {
+    padding-left: 80px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .l-main .l-create-dream-inter {
+    height: 692px;
+    background-size: cover;
   }
 }
 @media (max-width: 991.98px) {
@@ -30,10 +47,33 @@
     justify-content: center;
     gap: 25px;
   }
+  .l-main .l-create-dream-inter {
+    background-position: center;
+  }
+  .l-main .l-create-dream-inter-content {
+    max-inline-size: 500px;
+  }
+  .l-main .l-create-dream-inter-content h2 {
+    font-size: 4rem;
+  }
 }
 @media (max-width: 767.98px) {
   .l-header {
     justify-content: center;
+  }
+  .l-main .l-create-dream-inter-content {
+    padding-left: 40px;
+    padding-right: 30px;
+  }
+}
+@media (max-width: 575.98px) {
+  .l-main .l-create-dream-inter-content {
+    padding-top: 170px;
+    max-inline-size: 380px;
+  }
+  .l-main .l-create-dream-inter-content h2 {
+    font-size: 2.5rem;
+    line-height: 50px;
   }
 }
 @media (max-width: 320px) {

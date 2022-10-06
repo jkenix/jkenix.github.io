@@ -33,16 +33,31 @@
     transition: fill 0s ease-out;
   }
 }
-// Header
-
-// Main
-
-// Footer
-.l-footer .l-author {
+// Common
+.l-header,
+.l-main,
+.l-footer {
   a:hover {
     color: rgb(60, 31, 161);
   }
   a:active {
     color: #788899;
   }
+  a:focus-visible {
+    outline: 3px solid blue;
+  }
+}
+// Main
+.btn-get {
+  &:hover, &:focus-visible {
+    color: #000;
+    background-color: #fff;
+  }
+  &:active {
+    color: #fff;
+    background-color: #788899;
+  }
+}
+// Footer
+.l-footer .l-author {
 }

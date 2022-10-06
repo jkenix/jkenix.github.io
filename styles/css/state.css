@@ -29,11 +29,29 @@
   transition: fill 0s ease-out;
 }
 
-.l-footer .l-author a:hover {
+.l-header a:hover,
+.l-main a:hover,
+.l-footer a:hover {
   color: rgb(60, 31, 161);
 }
-.l-footer .l-author a:active {
+.l-header a:active,
+.l-main a:active,
+.l-footer a:active {
   color: #788899;
+}
+.l-header a:focus-visible,
+.l-main a:focus-visible,
+.l-footer a:focus-visible {
+  outline: 3px solid blue;
+}
+
+.btn-get:hover, .btn-get:focus-visible {
+  color: #000;
+  background-color: #fff;
+}
+.btn-get:active {
+  color: #fff;
+  background-color: #788899;
 }
 
 /*# sourceMappingURL=state.css.map */

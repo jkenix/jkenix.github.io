@@ -19,20 +19,31 @@
   .l-footer {
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1457px) {
   .l-main .l-create-dream-inter {
     max-width: 100%;
     background-size: cover;
     background-position: center;
+    &-content {
+      padding-left: 250px;
+      p {font-size: 1.7rem;}
+    }
   }
 }
 @media (max-width: 1399.98px) {
   // 1400px
   .l-main {
+    .l-create-dream-inter-content {
+      padding-left: 80px;
+    }
   }
 }
 @media (max-width: 1199.98px) {
   // 1200px
+  .l-main .l-create-dream-inter {
+    height: 692px;
+    background-size: cover;
+  }
 }
 @media (max-width: 991.98px) {
   // 992px
@@ -45,6 +56,15 @@
     }
   }
   .l-main {
+    .l-create-dream-inter {
+      background-position: center;
+      &-content {
+        max-inline-size: 500px;
+        h2 {
+          font-size: 4rem;
+        }
+      }
+    }
   }
 }
 @media (max-width: 767.98px) {
@@ -53,10 +73,26 @@
     justify-content: center;
   }
   .l-main {
+    .l-create-dream-inter {
+      &-content {
+        padding-left: 40px;
+        padding-right: 30px;
+      }
+    }
   }
 }
 @media (max-width: 575.98px) {
   // 576px
+  .l-main {
+      .l-create-dream-inter-content {
+        padding-top: 170px;
+        max-inline-size: 380px;
+        h2 {
+          font-size: 2.5rem;
+          line-height: 50px;
+        }
+      }
+  }
 }
 @media (max-width: 320px) {
   body {
