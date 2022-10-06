@@ -8,15 +8,14 @@
 // Main
 .img__resp-block {
   display: flex;
-  height: auto;
-  width: auto;
+  // height: auto;
+  // width: auto;
   img {
     height: auto;
   }
 }
 .img__resp {
   max-width: 100%;
-  object-fit: cover;
 } // Images
 // Buttons
 .btn-connect {

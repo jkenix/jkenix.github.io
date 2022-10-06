@@ -59,7 +59,7 @@
 }
 .l-main .l-m-design-offers {
   margin-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 169px;
   margin-right: 20px;
   margin-left: 20px;
 }
@@ -81,7 +81,6 @@
   font-size: 1.375rem;
   line-height: 33px;
   letter-spacing: 0.22px;
-  width: 90%;
   margin: 17px auto 15px;
 }
 .l-main .l-m-design-offers .l-design-offers-content .design-offer button {
@@ -95,7 +94,33 @@
 .l-main .l-m-design-offers .l-design-offers-content .design-offer button svg {
   margin-left: 6px;
 }
-
+.l-main .l-m-challenging-designs {
+  margin-bottom: 80px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.l-main .l-m-challenging-designs .l-challenging-designs-content {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.l-main .l-m-challenging-designs .l-challenging-designs-content .challenging-design-info {
+  width: 592px;
+  height: auto;
+  padding-top: 26.8px;
+}
+.l-main .l-m-challenging-designs .l-challenging-designs-content .challenging-design-info h2 {
+  font-size: 3.125rem;
+  margin-top: 13.2px;
+  margin-bottom: 42px;
+  line-height: 65px;
+  letter-spacing: 0.22px;
+}
+.l-main .l-m-challenging-designs .l-challenging-designs-content .challenging-design-info p {
+  font-size: 1.375rem;
+  line-height: 33px;
+  letter-spacing: 0.22px;
+}
 .l-footer .l-author {
   align-items: center;
   display: flex;

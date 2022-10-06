@@ -8,7 +8,7 @@ h2 {
 }
 
 p {
-  color: #4D5053;
+  color: #4d5053;
 }
 
 .l-header nav a {
@@ -16,6 +16,10 @@ p {
 }
 .l-header nav a:first-child {
   color: #cda274;
+}
+
+.l-main .l-m-design-offers button {
+  background-color: #fff;
 }
 
 .l-footer .l-author span {
