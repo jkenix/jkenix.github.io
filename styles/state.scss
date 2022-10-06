@@ -58,6 +58,19 @@
     background-color: #788899;
   }
 }
+.l-main {
+  .design-offers-content {
+    button {
+      &:hover, &:focus-visible {
+        color: #788899;
+      }
+      &:active {
+        color: rgb(60, 31, 161);
+      }
+    }
+  }
+}
+
 // Footer
 .l-footer .l-author {
 }

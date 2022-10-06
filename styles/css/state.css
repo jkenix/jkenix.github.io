@@ -54,4 +54,11 @@
   background-color: #788899;
 }
 
+.l-main .design-offers-content button:hover, .l-main .design-offers-content button:focus-visible {
+  color: #788899;
+}
+.l-main .design-offers-content button:active {
+  color: rgb(60, 31, 161);
+}
+
 /*# sourceMappingURL=state.css.map */

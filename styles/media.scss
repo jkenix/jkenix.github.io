@@ -16,18 +16,24 @@
     max-height: 100px;
     font-size: 50px;
   }
-  .l-footer {
-  }
 }
 @media (min-width: 1457px) {
-  .l-main .l-create-dream-inter {
-    max-width: 100%;
-    background-size: cover;
-    background-position: center;
-    &-content {
-      padding-left: 250px;
-      p {font-size: 1.7rem;}
+  .l-main {
+    .l-create-dream-inter {
+      max-width: 100%;
+      background-position: center;
+      &-content {
+        padding-left: 250px;
+        p {
+          font-size: 1.7rem;
+        }
+      }
     }
+  }
+}
+@media (max-width: 1457px) {
+  .l-design-offers-content p {
+    max-width: 77%;
   }
 }
 @media (max-width: 1399.98px) {
@@ -38,11 +44,21 @@
     }
   }
 }
+@media (min-width: 1199.98px) {
+  // Margin main
+  .l-main {
+    div[class*="-m-"] {
+      margin-left: 120px;
+      margin-right: 105px;
+    }
+  }
+}
 @media (max-width: 1199.98px) {
   // 1200px
-  .l-main .l-create-dream-inter {
-    height: 692px;
-    background-size: cover;
+  .l-main {
+    .l-create-dream-inter {
+      height: 692px;
+    }
   }
 }
 @media (max-width: 991.98px) {
@@ -65,6 +81,17 @@
         }
       }
     }
+    .l-m-design-offers {
+      // margin-right: 40px;
+      // margin-left: 40px;
+      .l-design-offers-content {
+        flex-wrap: wrap;
+        gap: 10px;
+        .design-offer {
+          max-width: 300px;
+        }
+      }
+    }
   }
 }
 @media (max-width: 767.98px) {
@@ -73,10 +100,26 @@
     justify-content: center;
   }
   .l-main {
-    .l-create-dream-inter {
-      &-content {
-        padding-left: 40px;
-        padding-right: 30px;
+    .l-create-dream-inter-content {
+      padding-left: 40px;
+      padding-right: 30px;
+    }
+    .l-m-design-offers .l-design-offers-content {
+      .design-offer {
+        p {
+          font-size: 1.5rem;
+          max-width: 100%;
+        }
+        h2 {
+          font-size: 2rem;
+        }
+        button {padding: 0;}
+      }
+    }
+    .l-design-offers-content {
+      h2 {
+      }
+      p {
       }
     }
   }
@@ -84,14 +127,14 @@
 @media (max-width: 575.98px) {
   // 576px
   .l-main {
-      .l-create-dream-inter-content {
-        padding-top: 170px;
-        max-inline-size: 380px;
-        h2 {
-          font-size: 2.5rem;
-          line-height: 50px;
-        }
+    .l-create-dream-inter-content {
+      padding-top: 170px;
+      max-inline-size: 380px;
+      h2 {
+        font-size: 2.5rem;
+        line-height: 50px;
       }
+    }
   }
 }
 @media (max-width: 320px) {
