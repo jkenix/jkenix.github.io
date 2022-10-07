@@ -147,7 +147,7 @@
 .l-main .l-m-interno-reviews .l-ir-content {
   padding-top: 103px;
   padding-right: 50px;
-  padding-bottom: 209.39px;
+  padding-bottom: 189.39px;
   padding-left: 50px;
 }
 .l-main .l-m-interno-reviews .l-ir-content h2 {
@@ -201,6 +201,32 @@
 .l-main .l-m-companies .l-companies-content .cb-c {
   margin-top: 32.39px;
   margin-bottom: 29.61px;
+}
+.l-main .l-m-recent-projects {
+  margin-top: 105px;
+  margin-bottom: 140px;
+}
+.l-main .l-m-recent-projects h2 {
+  text-align: center;
+  font-size: 2.938rem;
+  line-height: 62px;
+}
+.l-main .l-m-recent-projects p {
+  text-align: center;
+  font-size: 1.375rem;
+  line-height: 33px;
+  margin: 20px auto 70.61px;
+  max-width: 97%;
+}
+.l-main .l-m-recent-projects .l-rp-content {
+  padding: 0 10px 60px;
+  display: flex;
+  gap: 20px;
+}
+.l-main .l-m-recent-projects .l-rp-content .rp-block {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
 
 .l-footer .l-author {

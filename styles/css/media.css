@@ -131,6 +131,9 @@
   .l-main .l-m-challenging-designs p {
     max-width: 86%;
   }
+  .l-main .l-m-recent-projects p {
+    max-width: 68%;
+  }
 }
 @media (max-width: 575.98px) {
   .l-main .l-create-dream-inter-content {
