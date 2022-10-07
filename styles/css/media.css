@@ -25,10 +25,20 @@
   .l-main .l-create-dream-inter-content p {
     font-size: 1.7rem;
   }
+  .l-main .reviews-block {
+    justify-content: center;
+  }
 }
 @media (max-width: 1399.98px) {
   .l-main .l-create-dream-inter-content {
     padding-left: 80px;
+  }
+  .l-main .l-m-interno-reviews .l-ir-content .reviews-block .review {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .l-main .l-m-interno-reviews .l-ir-content .reviews-block .review p {
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1199.98px) {
@@ -81,8 +91,24 @@
   .l-main .l-m-challenging-designs .l-challenging-designs-content .challenging-design-info p {
     margin: 0 auto;
   }
+  .l-main .l-m-challenging-designs .l-challenging-designs-content .challenging-design-info .contact-block {
+    justify-content: center;
+  }
+  .l-main .l-m-challenging-designs .l-challenging-designs-content .challenging-design-info button {
+    margin: 0 auto;
+  }
   .l-main .l-m-challenging-designs .l-challenging-designs-content .challenging-design-img {
     display: none;
+  }
+  .l-main .l-m-interno-reviews .l-ir-content {
+    padding-top: 0;
+  }
+  .l-main .l-m-interno-reviews .l-ir-content .reviews-block {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .l-main .l-m-interno-reviews .l-ir-content .reviews-block .review {
+    margin-left: 0;
   }
 }
 @media (max-width: 767.98px) {
@@ -92,12 +118,6 @@
   .l-main .l-create-dream-inter-content {
     padding-left: 40px;
     padding-right: 30px;
-  }
-  .l-main .l-m-design-offers .l-design-offers-content .design-offer p {
-    font-size: 1.5rem;
-  }
-  .l-main .l-m-design-offers .l-design-offers-content .design-offer h2 {
-    font-size: 2rem;
   }
   .l-main .l-m-design-offers .l-design-offers-content .design-offer button {
     padding: 0;
@@ -119,6 +139,21 @@
   .l-main .l-create-dream-inter-content h2 {
     font-size: 2.5rem;
     line-height: 50px;
+  }
+  .l-main .l-m-challenging-designs .l-challenging-designs-content .challenging-design-info h2 {
+    font-size: 2rem;
+    max-inline-size: 461px;
+    margin: 0 auto;
+  }
+  .l-main .l-m-interno-reviews .l-ir-content {
+    margin: 0;
+  }
+  .l-main .l-m-interno-reviews .l-ir-content h2 {
+    font-size: 2rem;
+    max-inline-size: 435px;
+  }
+  .l-main .l-m-interno-reviews .l-ir-content .review {
+    text-align: center;
   }
 }
 @media (max-width: 320px) {

@@ -22,6 +22,10 @@ p {
   background-color: #fff;
 }
 
+.l-main .number-block a, .l-main .number-block span {
+  color: #4D5053;
+}
+
 .l-footer .l-author span {
   color: #3d5675;
 }

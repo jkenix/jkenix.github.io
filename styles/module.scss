@@ -20,13 +20,14 @@
 // Buttons
 .btn-connect {
   align-items: center;
+  border: 2px solid #292f36;
+  border-radius: 18px;
+  background-color: #292f36;
   color: #ffffff;
   display: flex;
   font-size: 1.125rem;
   height: 71px;
   line-height: 27px;
-  border: 2px solid #292f36;
-  border-radius: 18px;
-  background-color: #292f36;
   letter-spacing: 0.72px;
+  
 }

@@ -27,7 +27,7 @@ h3 {
   margin: 0;
 }
 
-h2 {
+h2, p, span {
   letter-spacing: 0.22px;
 }
 
