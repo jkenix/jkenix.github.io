@@ -55,7 +55,7 @@
   .l-main .l-create-dream-inter {
     height: 692px;
   }
-  .l-main .l-challenging-designs-content .challenging-design-info {
+  .l-main .l-cd-content .challenging-design-info {
     padding-left: 40px;
   }
 }
@@ -68,6 +68,12 @@
     justify-content: center;
     gap: 25px;
   }
+  .l-main div[class*=wr-block] {
+    flex-wrap: wrap;
+  }
+  .l-main div[class*=jcc] {
+    justify-content: center;
+  }
   .l-main .l-create-dream-inter {
     background-position: center;
   }
@@ -77,38 +83,33 @@
   .l-main .l-create-dream-inter-content h2 {
     font-size: 4rem;
   }
-  .l-main .l-m-design-offers .l-design-offers-content {
-    flex-wrap: wrap;
+  .l-main .l-m-design-offers .l-do-content {
     gap: 10px;
+    padding-top: 0;
   }
-  .l-main .l-m-design-offers .l-design-offers-content .design-offer {
+  .l-main .l-m-design-offers .l-do-content .design-offer {
     max-width: 300px;
   }
-  .l-main .l-m-challenging-designs .l-challenging-designs-content .challenging-design-info {
+  .l-main .l-m-challenging-designs .l-cd-content .challenging-design-info {
     text-align: center;
     padding: 0;
   }
-  .l-main .l-m-challenging-designs .l-challenging-designs-content .challenging-design-info p {
+  .l-main .l-m-challenging-designs .l-cd-content .challenging-design-info p,
+.l-main .l-m-challenging-designs .l-cd-content .challenging-design-info button {
     margin: 0 auto;
   }
-  .l-main .l-m-challenging-designs .l-challenging-designs-content .challenging-design-info .contact-block {
-    justify-content: center;
-  }
-  .l-main .l-m-challenging-designs .l-challenging-designs-content .challenging-design-info button {
-    margin: 0 auto;
-  }
-  .l-main .l-m-challenging-designs .l-challenging-designs-content .challenging-design-img {
+  .l-main .l-m-challenging-designs .l-cd-content .challenging-design-img {
     display: none;
   }
   .l-main .l-m-interno-reviews .l-ir-content {
-    padding-top: 0;
-  }
-  .l-main .l-m-interno-reviews .l-ir-content .reviews-block {
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 0;
   }
   .l-main .l-m-interno-reviews .l-ir-content .reviews-block .review {
     margin-left: 0;
+  }
+  .l-main .l-m-companies .l-companies-content {
+    justify-content: center;
+    gap: 20px;
   }
 }
 @media (max-width: 767.98px) {
@@ -119,12 +120,12 @@
     padding-left: 40px;
     padding-right: 30px;
   }
-  .l-main .l-m-design-offers .l-design-offers-content .design-offer button {
+  .l-main .l-m-design-offers .l-do-content .design-offer button {
     padding: 0;
   }
 }
 @media (min-width: 575.98px) {
-  .l-main .l-design-offers-content p {
+  .l-main .l-do-content p {
     max-width: 77%;
   }
   .l-main .l-m-challenging-designs p {
@@ -140,13 +141,13 @@
     font-size: 2.5rem;
     line-height: 50px;
   }
-  .l-main .l-m-challenging-designs .l-challenging-designs-content .challenging-design-info h2 {
+  .l-main .l-m-challenging-designs .l-cd-content .challenging-design-info h2 {
     font-size: 2rem;
     max-inline-size: 461px;
-    margin: 0 auto;
+    margin: 0 auto 42px;
   }
   .l-main .l-m-interno-reviews .l-ir-content {
-    margin: 0;
+    padding: 0;
   }
   .l-main .l-m-interno-reviews .l-ir-content h2 {
     font-size: 2rem;

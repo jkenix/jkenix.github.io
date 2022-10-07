@@ -44,7 +44,9 @@
       .reviews-block .review {
         margin-right: 0;
         margin-bottom: 0;
-        p {margin-bottom: 0;}
+        p {
+          margin-bottom: 0;
+        }
       }
     }
   }
@@ -68,11 +70,12 @@
     .l-create-dream-inter {
       height: 692px;
     }
-    .l-challenging-designs-content {
+    .l-cd-content {
       .challenging-design-info {
         padding-left: 40px;
       }
     }
+    
   }
 }
 @media (max-width: 991.98px) {
@@ -86,6 +89,12 @@
     }
   }
   .l-main {
+    div[class*="wr-block"] {
+      flex-wrap: wrap;
+    }
+    div[class*="jcc"] {
+      justify-content: center;
+    }
     .l-create-dream-inter {
       background-position: center;
       &-content {
@@ -96,25 +105,20 @@
       }
     }
     .l-m-design-offers {
-      .l-design-offers-content {
-        flex-wrap: wrap;
+      .l-do-content {
         gap: 10px;
+        padding-top: 0;
         .design-offer {
           max-width: 300px;
         }
       }
     }
     .l-m-challenging-designs {
-      .l-challenging-designs-content {
+      .l-cd-content {
         .challenging-design-info {
           text-align: center;
           padding: 0;
-          p {
-            margin: 0 auto;
-          }
-          .contact-block {
-            justify-content: center;
-          }
+          p,
           button {
             margin: 0 auto;
           }
@@ -125,14 +129,14 @@
       }
     }
     .l-m-interno-reviews .l-ir-content {
-      padding-top: 0;
-      .reviews-block {
-        flex-wrap: wrap;
-        justify-content: center;
-        .review {
-          margin-left: 0;
-        }
+      padding: 0;
+      .reviews-block .review {
+        margin-left: 0;
       }
+    }
+    .l-m-companies .l-companies-content {
+      justify-content: center;
+      gap: 20px;
     }
   }
 }
@@ -146,7 +150,7 @@
       padding-left: 40px;
       padding-right: 30px;
     }
-    .l-m-design-offers .l-design-offers-content {
+    .l-m-design-offers .l-do-content {
       .design-offer {
         button {
           padding: 0;
@@ -158,7 +162,7 @@
 @media (min-width: 575.98px) {
   // Max width p
   .l-main {
-    .l-design-offers-content p {
+    .l-do-content p {
       max-width: 77%;
     }
     .l-m-challenging-designs p {
@@ -177,15 +181,15 @@
         line-height: 50px;
       }
     }
-    .l-m-challenging-designs .l-challenging-designs-content {
+    .l-m-challenging-designs .l-cd-content {
       .challenging-design-info h2 {
         font-size: 2rem;
         max-inline-size: 461px;
-        margin: 0 auto;
+        margin: 0 auto 42px;
       }
     }
     .l-m-interno-reviews .l-ir-content {
-      margin: 0;
+      padding: 0;
       h2 {
         font-size: 2rem;
         max-inline-size: 435px;

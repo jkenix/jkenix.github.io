@@ -62,7 +62,7 @@
     margin-bottom: 169px;
     margin-right: 20px;
     margin-left: 20px;
-    .l-design-offers-content {
+    .l-do-content {
       display: flex;
       padding-top: 96px;
       justify-content: center;
@@ -93,13 +93,12 @@
     }
   }
   .l-m-challenging-designs {
-    .l-challenging-designs-content {
+    .l-cd-content {
       display: flex;
       justify-content: center;
       gap: 16px;
       .challenging-design-info {
         width: 592px;
-        height: auto;
         padding-top: 26.8px;
         h2 {
           font-size: 3.125rem;
@@ -146,11 +145,12 @@
   }
   .l-m-interno-reviews {
     margin-top: 140.39px;
-    margin-bottom: 139.61px;
+    margin-bottom: 40px;
     .l-ir-content {
       padding-top: 103px;
-      margin-left: 50px;
-      margin-right: 50px;
+      padding-right: 50px;
+      padding-bottom: 209.39px;
+      padding-left: 50px;
       h2 {
         font-size: 2.813rem;
         max-inline-size: 479px;
@@ -160,11 +160,8 @@
       }
       .reviews-block {
         display: flex;
-        margin-bottom: 120.39px;
         gap: 16px;
         .review {
-          background: #ffffff;
-          border-radius: 30px;
           margin-top: 51.61px;
           margin-right: 30px;
           margin-left: 35px;
@@ -195,6 +192,18 @@
             margin-bottom: 45px;
           }
         }
+      }
+    }
+  }
+  .l-m-companies {
+    .l-companies-content {
+      @include flexb();
+      max-width: 1200px;
+      padding-left: 48px;
+      padding-right: 55px;
+      .cb-c {
+        margin-top: 32.39px;
+        margin-bottom: 29.61px;
       }
     }
   }

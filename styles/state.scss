@@ -34,7 +34,17 @@
   }
 }
 // Common
-.l-header,
+.l-header nav {
+  a:hover {
+    color: rgb(60, 31, 161);
+  }
+  a:active {
+    color: #788899;
+  }
+  a:focus-visible {
+    outline: 3px solid blue;
+  }
+}
 .l-main,
 .l-footer {
   a:hover {
@@ -47,6 +57,7 @@
     outline: 3px solid blue;
   }
 }
+// Header
 // Main
 .btn-get {
   &:hover, &:focus-visible {

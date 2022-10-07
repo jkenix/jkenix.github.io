@@ -29,17 +29,24 @@
   transition: fill 0s ease-out;
 }
 
-.l-header a:hover,
+.l-header nav a:hover {
+  color: rgb(60, 31, 161);
+}
+.l-header nav a:active {
+  color: #788899;
+}
+.l-header nav a:focus-visible {
+  outline: 3px solid blue;
+}
+
 .l-main a:hover,
 .l-footer a:hover {
   color: rgb(60, 31, 161);
 }
-.l-header a:active,
 .l-main a:active,
 .l-footer a:active {
   color: #788899;
 }
-.l-header a:focus-visible,
 .l-main a:focus-visible,
 .l-footer a:focus-visible {
   outline: 3px solid blue;
