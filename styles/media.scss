@@ -19,7 +19,8 @@
 }
 @media (min-width: 1457px) {
   .l-main {
-    div[class*="jcc"] {
+    // Center content
+    div[class*="jcc+"] {
       justify-content: center;
     }
     .l-create-dream-inter {
@@ -41,12 +42,7 @@
       padding-left: 80px;
     }
     .l-m-interno-reviews .l-ir-content {
-      .reviews-block .review {
-        margin-right: 0;
-        margin-bottom: 0;
-        p {
-          margin-bottom: 0;
-        }
+      .reviews-block .review p {
       }
     }
   }
@@ -74,6 +70,9 @@
       .challenging-design-info {
         padding-left: 40px;
       }
+    }
+    .l-m-interno-reviews .l-ir-content {
+      border-radius: 0;
     }
   }
 }
@@ -127,12 +126,6 @@
         }
       }
     }
-    .l-m-interno-reviews .l-ir-content {
-      padding: 0;
-      .reviews-block .review {
-        margin-left: 0;
-      }
-    }
     .l-m-companies .l-companies-content {
       justify-content: center;
       gap: 20px;
@@ -142,6 +135,7 @@
     }
     .l-m-stats .l-stats-content {
       padding-top: 0;
+      padding-bottom: 30px;
       .sb-line {
         border-right: none;
       }
@@ -159,10 +153,8 @@
       padding-right: 30px;
     }
     .l-m-design-offers .l-do-content {
-      .design-offer {
-        button {
-          padding: 0;
-        }
+      .design-offer button {
+        padding: 0;
       }
     }
   }
@@ -200,7 +192,8 @@
       }
     }
     .l-m-interno-reviews .l-ir-content {
-      padding: 0;
+      padding-left: 0;
+      padding-right: 0;
       h2 {
         font-size: 2rem;
         max-inline-size: 435px;

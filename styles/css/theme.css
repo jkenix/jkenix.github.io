@@ -26,8 +26,28 @@ p {
 .l-main .number-block span {
   color: #4d5053;
 }
-.l-main .l-m-stats .sb-number span {
-  color: #CDA274;
+.l-main .l-m-challenging-designs .phone-img {
+  background-color: #f4f0ec;
+}
+.l-main .l-ir-wr .l-m-interno-reviews .l-ir-content {
+  background-color: #f4f0ec;
+}
+.l-main .l-ir-wr .l-m-interno-reviews .l-ir-content .reviews-block .review {
+  background-color: #ffffff;
+}
+.l-main .l-m-recent-projects .desc-arrow {
+  background-color: #f4f0ec;
+}
+.l-main .l-stats-wr {
+  background-color: #f4f0ec;
+}
+.l-main .l-stats-wr .l-m-stats .sb-number span {
+  color: #cda274;
+}
+@media (max-width: 1199.98px) {
+  .l-main .l-ir-wr {
+    background-color: #f4f0ec;
+  }
 }
 
 .l-footer .l-author span {

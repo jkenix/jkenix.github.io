@@ -12,12 +12,10 @@ p {
 }
 // Header
 .l-header {
-  nav {
-    a {
-      color: #292f36;
-      &:first-child {
-        color: #cda274;
-      }
+  nav a {
+    color: #292f36;
+    &:first-child {
+      color: #cda274;
     }
   }
 }
@@ -33,8 +31,28 @@ p {
       color: #4d5053;
     }
   }
-  .l-m-stats .sb-number span {
-    color: #CDA274;
+  .l-m-challenging-designs .phone-img {
+    background-color: #f4f0ec;
+  }
+  .l-ir-wr .l-m-interno-reviews .l-ir-content {
+    background-color: #f4f0ec;
+    .reviews-block .review {
+      background-color: #ffffff;
+    }
+  }
+  .l-m-recent-projects .desc-arrow {
+    background-color: #f4f0ec;
+  }
+  .l-stats-wr {
+    background-color: #f4f0ec;
+    .l-m-stats .sb-number span {
+      color: #cda274;
+    }
+  }
+  @media (max-width: 1199.98px) {
+    .l-ir-wr {
+      background-color: #f4f0ec;
+    }
   }
 }
 .l-footer {

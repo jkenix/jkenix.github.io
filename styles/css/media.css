@@ -15,7 +15,7 @@
   }
 }
 @media (min-width: 1457px) {
-  .l-main div[class*=jcc] {
+  .l-main div[class*="jcc+"] {
     justify-content: center;
   }
   .l-main .l-create-dream-inter {
@@ -32,13 +32,6 @@
 @media (max-width: 1399.98px) {
   .l-main .l-create-dream-inter-content {
     padding-left: 80px;
-  }
-  .l-main .l-m-interno-reviews .l-ir-content .reviews-block .review {
-    margin-right: 0;
-    margin-bottom: 0;
-  }
-  .l-main .l-m-interno-reviews .l-ir-content .reviews-block .review p {
-    margin-bottom: 0;
   }
 }
 @media (min-width: 1199.98px) {
@@ -57,6 +50,9 @@
   }
   .l-main .l-cd-content .challenging-design-info {
     padding-left: 40px;
+  }
+  .l-main .l-m-interno-reviews .l-ir-content {
+    border-radius: 0;
   }
 }
 @media (max-width: 991.98px) {
@@ -101,12 +97,6 @@
   .l-main .l-m-challenging-designs .l-cd-content .challenging-design-img {
     display: none;
   }
-  .l-main .l-m-interno-reviews .l-ir-content {
-    padding: 0;
-  }
-  .l-main .l-m-interno-reviews .l-ir-content .reviews-block .review {
-    margin-left: 0;
-  }
   .l-main .l-m-companies .l-companies-content {
     justify-content: center;
     gap: 20px;
@@ -116,6 +106,7 @@
   }
   .l-main .l-m-stats .l-stats-content {
     padding-top: 0;
+    padding-bottom: 30px;
   }
   .l-main .l-m-stats .l-stats-content .sb-line {
     border-right: none;
@@ -159,7 +150,8 @@
     margin: 0 auto 42px;
   }
   .l-main .l-m-interno-reviews .l-ir-content {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
   .l-main .l-m-interno-reviews .l-ir-content h2 {
     font-size: 2rem;
