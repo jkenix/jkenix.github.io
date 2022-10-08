@@ -29,25 +29,15 @@
   transition: fill 0s ease-out;
 }
 
-.l-header nav a:hover {
-  color: rgb(60, 31, 161);
-}
-.l-header nav a:active {
-  color: #788899;
-}
-.l-header nav a:focus-visible {
-  outline: 3px solid blue;
-}
-
-.l-main a:hover,
+.l-header nav a:hover,
 .l-footer a:hover {
   color: rgb(60, 31, 161);
 }
-.l-main a:active,
+.l-header nav a:active,
 .l-footer a:active {
   color: #788899;
 }
-.l-main a:focus-visible,
+.l-header nav a:focus-visible,
 .l-footer a:focus-visible {
   outline: 3px solid blue;
 }
@@ -61,11 +51,24 @@
   background-color: #788899;
 }
 
-.l-main .design-offers-content button:hover, .l-main .design-offers-content button:focus-visible {
+.l-main .l-do-content button:hover, .l-main .l-do-content button:focus-visible {
   color: #788899;
 }
-.l-main .design-offers-content button:active {
+.l-main .l-do-content button:active {
   color: rgb(60, 31, 161);
+}
+.l-main .l-m-challenging-designs .number-block a:hover {
+  color: rgb(60, 31, 161);
+}
+.l-main .l-m-challenging-designs .number-block a:active {
+  color: #788899;
+}
+.l-main .l-m-challenging-designs .number-block a:focus-visible {
+  outline: 3px solid blue;
+}
+.l-main .l-m-recent-projects .l-rp-content .rp-block .desc-block:hover {
+  outline: 3px solid #cda274;
+  border-radius: 2px;
 }
 
 /*# sourceMappingURL=state.css.map */

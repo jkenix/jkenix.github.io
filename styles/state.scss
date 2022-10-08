@@ -34,33 +34,14 @@
   }
 }
 // Common
-.l-header nav {
-  a:hover {
-    color: rgb(60, 31, 161);
-  }
-  a:active {
-    color: #788899;
-  }
-  a:focus-visible {
-    outline: 3px solid blue;
-  }
+.l-header nav a,
+.l-footer a {
+  @include a-state();
 }
-.l-main,
-.l-footer {
-  a:hover {
-    color: rgb(60, 31, 161);
-  }
-  a:active {
-    color: #788899;
-  }
-  a:focus-visible {
-    outline: 3px solid blue;
-  }
-}
-// Header
 // Main
 .btn-get {
-  &:hover, &:focus-visible {
+  &:hover,
+  &:focus-visible {
     color: #000;
     background-color: #fff;
   }
@@ -70,9 +51,10 @@
   }
 }
 .l-main {
-  .design-offers-content {
+  .l-do-content {
     button {
-      &:hover, &:focus-visible {
+      &:hover,
+      &:focus-visible {
         color: #788899;
       }
       &:active {
@@ -80,8 +62,18 @@
       }
     }
   }
+  .l-m-challenging-designs .number-block a {
+    @include a-state();
+  }
+  .l-m-recent-projects .l-rp-content   {
+    .rp-block .desc-block {
+      &:hover {
+        outline: 3px solid #cda274;
+        border-radius: 2px;
+      }
+    }
+  }
 }
-
 // Footer
-.l-footer .l-author {
+.l-footer {
 }

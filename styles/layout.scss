@@ -198,7 +198,6 @@
   .l-m-companies {
     .l-companies-content {
       @include flexb();
-      max-width: 1200px;
       padding-left: 48px;
       padding-right: 55px;
       .cb-c {
@@ -223,12 +222,36 @@
       max-width: 97%;
     }
     .l-rp-content {
-      padding: 0 10px 60px;
+      padding-bottom: 60px;
       display: flex;
       gap: 20px;
       .rp-block {
         @include flexcolumn();
         gap: 60px;
+        .desc-block {
+          margin-top: 24px;
+          @include flexb();
+          .desc-text-block {
+            .desc-title span {
+              color: #292f36;
+              font-size: 1.5rem;
+              font-family: "DMSerifDisplayRegular";
+              line-height: 38px;
+            }
+            span {
+              color: #4d5053;
+              font-size: 1.375rem;
+              line-height: 33px;
+            }
+          }
+          .desc-arrow {
+            display: flex;
+            align-items: center;
+            padding: 27px 31px;
+            background-color: #f4f0ec;
+            border-radius: 100px;
+          }
+        }
       }
     }
   }

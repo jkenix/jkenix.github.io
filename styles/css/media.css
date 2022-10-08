@@ -28,6 +28,9 @@
   .l-main .reviews-block {
     justify-content: center;
   }
+  .l-main .l-m-recent-projects .l-rp-content {
+    justify-content: center;
+  }
 }
 @media (max-width: 1399.98px) {
   .l-main .l-create-dream-inter-content {
@@ -109,6 +112,9 @@
   }
   .l-main .l-m-companies .l-companies-content {
     justify-content: center;
+    gap: 20px;
+  }
+  .l-main .l-m-recent-projects .l-rp-content .rp-block {
     gap: 20px;
   }
 }
