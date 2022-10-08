@@ -3,6 +3,7 @@
   background: #eeeeee;
 }
 // Common prop
+span {color: #4d5053;}
 h1,
 h2 {
   color: #292f36;
@@ -25,12 +26,20 @@ p {
 }
 // Main
 .l-main {
+  // Common
+  .desc-arrow {
+    background-color: #f4f0ec;
+  }
+  #desc-title {
+    color: #292f36;
+  }
   .number-block {
     a,
     span {
       color: #4d5053;
     }
   }
+  // All
   .l-m-challenging-designs .phone-img {
     background-color: #f4f0ec;
   }
@@ -40,15 +49,16 @@ p {
       background-color: #ffffff;
     }
   }
-  .l-m-recent-projects .desc-arrow {
-    background-color: #f4f0ec;
-  }
   .l-stats-wr {
     background-color: #f4f0ec;
     .l-m-stats .sb-number span {
       color: #cda274;
     }
   }
+  .l-m-recent-blogs .l-rb-content .recent-blog {
+    border: 1px solid #e7e7e7;
+  }
+  // Change bg-color
   @media (max-width: 1199.98px) {
     .l-ir-wr {
       background-color: #f4f0ec;
@@ -57,12 +67,6 @@ p {
 }
 .l-footer {
   .l-author {
-    span {
-      color: #3d5675;
-    }
-    strong {
-      color: #cda274;
-    }
     a {
       color: #cda274;
     }

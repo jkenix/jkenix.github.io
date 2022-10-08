@@ -28,6 +28,10 @@
   .l-main .l-create-dream-inter-content p {
     font-size: 1.7rem;
   }
+  .l-main .l-m-recent-blogs .l-rb-content {
+    grid-template-columns: repeat(auto-fit, minmax(378.2px, 1fr));
+    padding: 0 20px 0 20px;
+  }
 }
 @media (max-width: 1399.98px) {
   .l-main .l-create-dream-inter-content {

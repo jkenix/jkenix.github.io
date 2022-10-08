@@ -2,6 +2,10 @@
   background: #eeeeee;
 }
 
+span {
+  color: #4d5053;
+}
+
 h1,
 h2 {
   color: #292f36;
@@ -22,6 +26,12 @@ p {
   background-color: #fff;
 }
 
+.l-main .desc-arrow {
+  background-color: #f4f0ec;
+}
+.l-main #desc-title {
+  color: #292f36;
+}
 .l-main .number-block a,
 .l-main .number-block span {
   color: #4d5053;
@@ -35,14 +45,14 @@ p {
 .l-main .l-ir-wr .l-m-interno-reviews .l-ir-content .reviews-block .review {
   background-color: #ffffff;
 }
-.l-main .l-m-recent-projects .desc-arrow {
-  background-color: #f4f0ec;
-}
 .l-main .l-stats-wr {
   background-color: #f4f0ec;
 }
 .l-main .l-stats-wr .l-m-stats .sb-number span {
   color: #cda274;
+}
+.l-main .l-m-recent-blogs .l-rb-content .recent-blog {
+  border: 1px solid #e7e7e7;
 }
 @media (max-width: 1199.98px) {
   .l-main .l-ir-wr {
@@ -50,12 +60,6 @@ p {
   }
 }
 
-.l-footer .l-author span {
-  color: #3d5675;
-}
-.l-footer .l-author strong {
-  color: #cda274;
-}
 .l-footer .l-author a {
   color: #cda274;
 }
