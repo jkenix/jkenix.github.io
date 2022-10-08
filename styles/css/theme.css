@@ -22,8 +22,12 @@ p {
   background-color: #fff;
 }
 
-.l-main .number-block a, .l-main .number-block span {
-  color: #4D5053;
+.l-main .number-block a,
+.l-main .number-block span {
+  color: #4d5053;
+}
+.l-main .l-m-stats .sb-number span {
+  color: #CDA274;
 }
 
 .l-footer .l-author span {

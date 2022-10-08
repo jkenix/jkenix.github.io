@@ -15,6 +15,9 @@
   }
 }
 @media (min-width: 1457px) {
+  .l-main div[class*=jcc] {
+    justify-content: center;
+  }
   .l-main .l-create-dream-inter {
     max-width: 100%;
     background-position: center;
@@ -24,12 +27,6 @@
   }
   .l-main .l-create-dream-inter-content p {
     font-size: 1.7rem;
-  }
-  .l-main .reviews-block {
-    justify-content: center;
-  }
-  .l-main .l-m-recent-projects .l-rp-content {
-    justify-content: center;
   }
 }
 @media (max-width: 1399.98px) {
@@ -116,6 +113,12 @@
   }
   .l-main .l-m-recent-projects .l-rp-content .rp-block {
     gap: 20px;
+  }
+  .l-main .l-m-stats .l-stats-content {
+    padding-top: 0;
+  }
+  .l-main .l-m-stats .l-stats-content .sb-line {
+    border-right: none;
   }
 }
 @media (max-width: 767.98px) {

@@ -19,6 +19,9 @@
 }
 @media (min-width: 1457px) {
   .l-main {
+    div[class*="jcc"] {
+      justify-content: center;
+    }
     .l-create-dream-inter {
       max-width: 100%;
       background-position: center;
@@ -28,12 +31,6 @@
           font-size: 1.7rem;
         }
       }
-    }
-    .reviews-block {
-      justify-content: center;
-    }
-    .l-m-recent-projects .l-rp-content {
-      justify-content: center;
     }
   }
 }
@@ -142,6 +139,12 @@
     }
     .l-m-recent-projects .l-rp-content .rp-block {
       gap: 20px;
+    }
+    .l-m-stats .l-stats-content {
+      padding-top: 0;
+      .sb-line {
+        border-right: none;
+      }
     }
   }
 }

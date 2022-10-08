@@ -70,5 +70,8 @@
   outline: 3px solid #cda274;
   border-radius: 2px;
 }
+.l-main .l-m-recent-projects .l-rp-content .rp-block .desc-block:active {
+  outline: 3px solid #000;
+}
 
 /*# sourceMappingURL=state.css.map */

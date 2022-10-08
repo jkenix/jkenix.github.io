@@ -71,6 +71,9 @@
         outline: 3px solid #cda274;
         border-radius: 2px;
       }
+      &:active {
+        outline: 3px solid #000;
+      }
     }
   }
 }

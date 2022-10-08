@@ -28,10 +28,13 @@ p {
 // Main
 .l-main {
   .number-block {
-    a, span {
-      color: #4D5053;
+    a,
+    span {
+      color: #4d5053;
     }
-
+  }
+  .l-m-stats .sb-number span {
+    color: #CDA274;
   }
 }
 .l-footer {
