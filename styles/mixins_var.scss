@@ -1,12 +1,4 @@
 // Mixins
-@mixin flexw() {
-  display: flex; 
-  flex-wrap: wrap;
-}
-@mixin flexc() { // Center flex
-  display: flex;
-  justify-content: center;
-}
 @mixin flexcolumn() {
   display: flex;
   flex-direction: column;

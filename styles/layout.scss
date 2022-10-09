@@ -277,7 +277,7 @@
   }
   .l-m-recent-blogs {
     margin-top: 145px;
-    margin-bottom: 100.22px;
+    margin-bottom: 142.22px;
     h2 {
       text-align: center;
       font-size: 3rem;
@@ -291,12 +291,11 @@
     }
     .l-rb-content {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(298.2px, 1fr));
-      grid-gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(286.7px, 1fr));
+      grid-gap: 37px;
       .recent-blog {
         border-radius: 62px;
-        // max-width: 387px;
-        padding: 21.02px 19.34px 40.59px 21px;
+        padding: 21.02px 16.34px 40.34px 21px;
         // Bg images
         .ib {
           &-1 {
@@ -373,7 +372,7 @@
         line-height: 50px;
       }
       button {
-        margin: 31px auto 0;
+        margin: 23px auto 0;
         gap: 21px;
         width: 241px;
         padding-left: 34px;
@@ -382,9 +381,56 @@
   }
 }
 .l-footer {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin: 79.68px 105px 32px 120px;
+  &-contacts {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    gap: 16px;
+    p,
+    a {
+      font-size: 1.375rem;
+      line-height: 33px;
+    }
+    .social-block {
+      max-width: 326px;
+      padding-right: 67.36px;
+      p {
+        margin: 15px 0 22.8px;
+        max-width: 96%;
+      }
+      .media-links {
+        display: flex;
+        max-width: 333.36px;
+        gap: 40px;
+      }
+    }
+    .contact-block {
+      // Common class
+      padding-top: 5px;
+    }
+    .pages-block {
+      padding-right: 60px;
+      padding-bottom: 30px;
+      max-width: 210.72px;
+      ul {
+        @include flexcolumn();
+        padding-top: 21px;
+        gap: 30px;
+        white-space: nowrap;
+      }
+    }
+    .links-block {
+      max-width: 318.16px;
+      .c-info {
+        @include flexcolumn();
+        gap: 29px;
+        padding-top: 21.8px;
+      }
+    }
+  }
   .l-author {
+    margin-top: 32px;
     align-items: center;
     display: flex;
     flex-direction: column;

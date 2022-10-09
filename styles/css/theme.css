@@ -83,6 +83,9 @@ p {
   }
 }
 
+.l-footer .contact-block a {
+  color: #4d5053;
+}
 .l-footer .l-author a {
   color: #cda274;
 }

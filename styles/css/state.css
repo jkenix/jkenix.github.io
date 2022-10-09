@@ -50,11 +50,14 @@
   outline: 3px solid #000;
 }
 
-.btn-get:hover, .btn-get:focus-visible, .btn-connect:hover, .btn-connect:focus-visible {
+.btn-get:hover, .btn-get:focus-visible,
+.btn-connect:hover,
+.btn-connect:focus-visible {
   color: #000;
   background-color: #fff;
 }
-.btn-get:active, .btn-connect:active {
+.btn-get:active,
+.btn-connect:active {
   color: #fff;
   background-color: #788899;
 }

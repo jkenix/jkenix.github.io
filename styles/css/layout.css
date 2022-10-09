@@ -270,7 +270,7 @@
 }
 .l-main .l-m-recent-blogs {
   margin-top: 145px;
-  margin-bottom: 100.22px;
+  margin-bottom: 142.22px;
 }
 .l-main .l-m-recent-blogs h2 {
   text-align: center;
@@ -285,12 +285,12 @@
 }
 .l-main .l-m-recent-blogs .l-rb-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(298.2px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(286.7px, 1fr));
+  grid-gap: 37px;
 }
 .l-main .l-m-recent-blogs .l-rb-content .recent-blog {
   border-radius: 62px;
-  padding: 21.02px 19.34px 40.59px 21px;
+  padding: 21.02px 16.34px 40.34px 21px;
 }
 .l-main .l-m-recent-blogs .l-rb-content .recent-blog .ib-1 {
   background-image: url("/img/Kitchen-design-bg.svg");
@@ -362,17 +362,65 @@
   line-height: 50px;
 }
 .l-main .l-m-join-the-interno .l-jti-content button {
-  margin: 31px auto 0;
+  margin: 23px auto 0;
   gap: 21px;
   width: 241px;
   padding-left: 34px;
 }
 
 .l-footer {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin: 79.68px 105px 32px 120px;
+}
+.l-footer-contacts {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  gap: 16px;
+}
+.l-footer-contacts p,
+.l-footer-contacts a {
+  font-size: 1.375rem;
+  line-height: 33px;
+}
+.l-footer-contacts .social-block {
+  max-width: 326px;
+  padding-right: 67.36px;
+}
+.l-footer-contacts .social-block p {
+  margin: 15px 0 22.8px;
+  max-width: 96%;
+}
+.l-footer-contacts .social-block .media-links {
+  display: flex;
+  max-width: 333.36px;
+  gap: 40px;
+}
+.l-footer-contacts .contact-block {
+  padding-top: 5px;
+}
+.l-footer-contacts .pages-block {
+  padding-right: 60px;
+  padding-bottom: 30px;
+  max-width: 210.72px;
+}
+.l-footer-contacts .pages-block ul {
+  display: flex;
+  flex-direction: column;
+  padding-top: 21px;
+  gap: 30px;
+  white-space: nowrap;
+}
+.l-footer-contacts .links-block {
+  max-width: 318.16px;
+}
+.l-footer-contacts .links-block .c-info {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  padding-top: 21.8px;
 }
 .l-footer .l-author {
+  margin-top: 32px;
   align-items: center;
   display: flex;
   flex-direction: column;

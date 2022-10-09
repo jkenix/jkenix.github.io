@@ -8,6 +8,7 @@
     font-size: 100px;
   }
 }
+
 @media (min-width: 1921px) {
   #scroll_top {
     min-width: 80px;
@@ -17,12 +18,14 @@
     font-size: 50px;
   }
 }
+
 @media (min-width: 1457px) {
+  // Center content
+  div[class*="jcc+"] {
+    justify-content: center;
+  }
+  // Main
   .l-main {
-    // Center content
-    div[class*="jcc+"] {
-      justify-content: center;
-    }
     .l-create-dream-inter {
       max-width: 100%;
       background-position: center;
@@ -42,11 +45,13 @@
     }
   }
 }
+
 @media (min-width: 1399.98px) {
   // Img-desc height and indent
   .l-main .l-m-recent-blogs .img-desc {
   }
 }
+
 @media (max-width: 1399.98px) {
   // 1400px
   .l-main {
@@ -59,6 +64,7 @@
     }
   }
 }
+
 @media (min-width: 1199.98px) {
   // Margin main
   .l-main {
@@ -68,6 +74,7 @@
     }
   }
 }
+
 @media (max-width: 1199.98px) {
   // 1200px
   .l-main {
@@ -91,6 +98,14 @@
 
 @media (max-width: 991.98px) {
   // 992px
+  // Common classes
+  div[class*="wr-block"] {
+    flex-wrap: wrap;
+  }
+  div[class*="jcc"] {
+    justify-content: center;
+  }
+  // Header
   .l-header {
     margin-left: 40px;
     margin-right: 40px;
@@ -99,13 +114,8 @@
       gap: 25px;
     }
   }
+  // Main
   .l-main {
-    div[class*="wr-block"] {
-      flex-wrap: wrap;
-    }
-    div[class*="jcc"] {
-      justify-content: center;
-    }
     .l-create-dream-inter {
       background-position: center;
       &-content {
@@ -163,7 +173,15 @@
       }
     }
   }
+  .l-footer {
+    margin-left: 40px;
+    margin-right: 40px;
+    &-contacts .pages-block {
+      padding-right: 20px;
+    }
+  }
 }
+
 @media (max-width: 767.98px) {
   // 768px
   .l-header {
@@ -180,7 +198,13 @@
       }
     }
   }
+  .l-footer .l-footer-contacts {
+    .social-block {
+      padding-right: 0;
+    }
+  }
 }
+
 @media (min-width: 575.98px) {
   // Max width p
   .l-main {
@@ -198,6 +222,7 @@
     }
   }
 }
+
 @media (max-width: 575.98px) {
   // 576px
   .l-main {
@@ -230,6 +255,30 @@
     .l-m-recent-blogs .l-rb-content {
       grid-template-columns: repeat(auto-fit, minmax(284.2px, 1fr));
       justify-items: center;
+    }
+  }
+  .l-footer {
+    #desc-title {
+      font-size: 2rem;
+    }
+    &-contacts {
+      .social-block {
+        max-width: 100%;
+      }
+      .pages-block {
+        max-width: 100%;
+
+        ul {
+          flex-direction: row;
+          flex-wrap: wrap;
+          a {
+            font-size: 1.5rem;
+          }
+        }
+      }
+      .contact-block {
+        max-width: 100%;
+      }
     }
   }
 }
