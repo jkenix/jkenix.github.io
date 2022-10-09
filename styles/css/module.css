@@ -1,4 +1,7 @@
 .logo {
+  align-items: center;
+  display: flex;
+  gap: 10.88px;
   width: 177px;
   height: 50px;
 }
@@ -14,12 +17,11 @@
   max-width: 100%;
 }
 
-.btn-connect {
+.btn {
   align-items: center;
-  border: 2px solid #292f36;
+  border-width: 2px;
+  border-style: solid;
   border-radius: 18px;
-  background-color: #292f36;
-  color: #ffffff;
   display: flex;
   font-size: 1.125rem;
   height: 71px;

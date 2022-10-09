@@ -3,7 +3,9 @@
   background: #eeeeee;
 }
 // Common prop
-span {color: #4d5053;}
+span {
+  color: #4d5053;
+}
 h1,
 h2 {
   color: #292f36;
@@ -21,8 +23,22 @@ p {
   }
 }
 // Buttons
-.l-main .l-m-design-offers button {
-  background-color: #fff;
+.l-main {
+  // Common
+  .btn-get {
+    background-color: #292f36;
+    border-color: #292f36;
+    color: #ffffff;
+  }
+  .btn-connect {
+    color: #ffffff;
+    background-color: #cda274;
+    border-color: #cda274;
+  }
+  // Others
+  .l-m-design-offers button {
+    background-color: #fff;
+  }
 }
 // Main
 .l-main {
@@ -57,18 +73,29 @@ p {
   }
   .l-m-recent-blogs .l-rb-content .recent-blog {
     border: 1px solid #e7e7e7;
+    .img-block .img-desc {
+      background-color: #ffffff;
+    }
+  }
+  .l-m-join-the-interno .l-jti-content {
+    background-color: #292f36;
+    h2,
+    span {
+      color: #ffffff;
+    }
   }
   // Change bg-color
   @media (max-width: 1199.98px) {
     .l-ir-wr {
       background-color: #f4f0ec;
     }
+    .jti-wr {
+      background-color: #292f36;
+    }
   }
 }
 .l-footer {
-  .l-author {
-    a {
-      color: #cda274;
-    }
+  .l-author a {
+    color: #cda274;
   }
 }

@@ -9,11 +9,6 @@
   flex-wrap: wrap;
   margin: 26px 105px 18px 120px;
 }
-.l-header .logo {
-  align-items: center;
-  display: flex;
-  gap: 10.88px;
-}
 .l-header .header-menu {
   max-width: 538.02px;
 }
@@ -286,8 +281,7 @@
   text-align: center;
   font-size: 1.375rem;
   line-height: 33px;
-  margin: 21px auto 70.02px;
-  max-width: 97%;
+  margin: 21px auto 66.02px;
 }
 .l-main .l-m-recent-blogs .l-rb-content {
   display: grid;
@@ -296,18 +290,82 @@
 }
 .l-main .l-m-recent-blogs .l-rb-content .recent-blog {
   border-radius: 62px;
-  max-width: 387px;
-  padding: 21.02px 21.34px 40.59px 21px;
+  padding: 21.02px 19.34px 40.59px 21px;
+}
+.l-main .l-m-recent-blogs .l-rb-content .recent-blog .ib-1 {
+  background-image: url("/img/Kitchen-design-bg.svg");
+}
+.l-main .l-m-recent-blogs .l-rb-content .recent-blog .ib-2 {
+  background-image: url("/img/Living-room-bg.svg");
+}
+.l-main .l-m-recent-blogs .l-rb-content .recent-blog .ib-3 {
+  background-image: url("/img/Minimalist-Interior-bg.svg");
+}
+.l-main .l-m-recent-blogs .l-rb-content .recent-blog .ib-4 {
+  background-image: url("/img/Kitchen-design-2-bg.svg");
+}
+.l-main .l-m-recent-blogs .l-rb-content .recent-blog .ib-5 {
+  background-image: url("/img/Living-Room-2-bg.svg");
+}
+.l-main .l-m-recent-blogs .l-rb-content .recent-blog .ib-6 {
+  background-image: url("/img/Minimalist-Interior-2-bg.svg");
+}
+.l-main .l-m-recent-blogs .l-rb-content .recent-blog .img-block {
+  position: relative;
+  height: 295px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 45px 45px 0px 0px;
+  margin-bottom: 14.59px;
+}
+.l-main .l-m-recent-blogs .l-rb-content .recent-blog .img-block .img-desc {
+  border-radius: 8px 8px 8px 0px;
+  left: 6.96%;
+  right: 56.77%;
+  top: 222.98px;
+  position: absolute;
+  padding: 9px 10px 0 10px;
+}
+.l-main .l-m-recent-blogs .l-rb-content .recent-blog .img-block .img-desc span {
+  font-size: 1rem;
+  line-height: 24px;
 }
 .l-main .l-m-recent-blogs .l-rb-content .recent-blog .desc-text-block {
   gap: 10.41px;
 }
 .l-main .l-m-recent-blogs .l-rb-content .recent-blog .desc-text-block #desc-title {
+  margin-bottom: 10.41px;
   line-height: 35px;
+  letter-spacing: 0.5px;
+}
+.l-main .l-m-recent-blogs .l-rb-content .recent-blog .desc-text-block .desc-data {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 .l-main .l-m-recent-blogs .l-rb-content .recent-blog .desc-text-block .desc-arrow {
   height: 52px;
   width: 52px;
+}
+.l-main .l-m-join-the-interno .l-jti-content {
+  border-radius: 70px;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 95px;
+}
+.l-main .l-m-join-the-interno .l-jti-content h2 {
+  font-size: 3.125rem;
+  line-height: 75px;
+}
+.l-main .l-m-join-the-interno .l-jti-content span {
+  font-size: 1.375rem;
+  line-height: 50px;
+}
+.l-main .l-m-join-the-interno .l-jti-content button {
+  margin: 31px auto 0;
+  gap: 21px;
+  width: 241px;
+  padding-left: 34px;
 }
 
 .l-footer {

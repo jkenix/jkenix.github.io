@@ -29,8 +29,10 @@
     font-size: 1.7rem;
   }
   .l-main .l-m-recent-blogs .l-rb-content {
-    grid-template-columns: repeat(auto-fit, minmax(378.2px, 1fr));
-    padding: 0 20px 0 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .l-main .l-m-recent-blogs .l-rb-content .recent-blog .img-block {
+    background-position: center;
   }
 }
 @media (max-width: 1399.98px) {
@@ -115,6 +117,15 @@
   .l-main .l-m-stats .l-stats-content .sb-line {
     border-right: none;
   }
+  .l-main .l-m-recent-blogs .l-rb-content {
+    justify-items: center;
+  }
+  .l-main .l-m-recent-blogs .l-rb-content .recent-blog .img-block {
+    background-position: center;
+  }
+  .l-main .l-m-recent-blogs .l-rb-content .recent-blog .img-block .img-desc {
+    text-align: center;
+  }
 }
 @media (max-width: 767.98px) {
   .l-header {
@@ -137,6 +148,9 @@
   }
   .l-main .l-m-recent-projects p {
     max-width: 68%;
+  }
+  .l-main .l-m-recent-blogs p {
+    max-width: 53%;
   }
 }
 @media (max-width: 575.98px) {
@@ -163,6 +177,10 @@
   }
   .l-main .l-m-interno-reviews .l-ir-content .review {
     text-align: center;
+  }
+  .l-main .l-m-recent-blogs .l-rb-content {
+    grid-template-columns: repeat(auto-fit, minmax(284.2px, 1fr));
+    justify-items: center;
   }
 }
 @media (max-width: 320px) {

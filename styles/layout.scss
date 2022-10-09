@@ -9,11 +9,6 @@
   @include flexb();
   flex-wrap: wrap;
   margin: 26px 105px 18px 120px;
-  .logo {
-    align-items: center;
-    display: flex;
-    gap: 10.88px;
-  }
   .header-menu {
     max-width: 538.02px;
     nav {
@@ -292,8 +287,7 @@
       text-align: center;
       font-size: 1.375rem;
       line-height: 33px;
-      margin: 21px auto 70.02px;
-      max-width: 97%;
+      margin: 21px auto 66.02px;
     }
     .l-rb-content {
       display: grid;
@@ -301,18 +295,88 @@
       grid-gap: 20px;
       .recent-blog {
         border-radius: 62px;
-        max-width: 387px;
-        padding: 21.02px 21.34px 40.59px 21px;
+        // max-width: 387px;
+        padding: 21.02px 19.34px 40.59px 21px;
+        // Bg images
+        .ib {
+          &-1 {
+            background-image: url("/img/Kitchen-design-bg.svg");
+          }
+          &-2 {
+            background-image: url("/img/Living-room-bg.svg");
+          }
+          &-3 {
+            background-image: url("/img/Minimalist-Interior-bg.svg");
+          }
+          &-4 {
+            background-image: url("/img/Kitchen-design-2-bg.svg");
+          }
+          &-5 {
+            background-image: url("/img/Living-Room-2-bg.svg");
+          }
+          &-6 {
+            background-image: url("/img/Minimalist-Interior-2-bg.svg");
+          }
+        }
+        // Main blocks
+        .img-block {
+          position: relative;
+          height: 295px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          border-radius: 45px 45px 0px 0px;
+          margin-bottom: 14.59px;
+          .img-desc {
+            border-radius: 8px 8px 8px 0px;
+            left: 6.96%;
+            right: 56.77%;
+            top: 222.98px;
+            position: absolute;
+            padding: 9px 10px 0 10px;
+            span {
+              font-size: 1rem;
+              line-height: 24px;
+            }
+          }
+        }
         .desc-text-block {
           gap: 10.41px;
           #desc-title {
+            margin-bottom: 10.41px;
             line-height: 35px;
+            letter-spacing: 0.5px;
+          }
+          .desc-data {
+            align-items: center;
+            @include flexb();
           }
           .desc-arrow {
             height: 52px;
             width: 52px;
           }
         }
+      }
+    }
+  }
+  .l-m-join-the-interno {
+    .l-jti-content {
+      border-radius: 70px;
+      text-align: center;
+      padding-top: 100px;
+      padding-bottom: 95px;
+      h2 {
+        font-size: 3.125rem;
+        line-height: 75px;
+      }
+      span {
+        font-size: 1.375rem;
+        line-height: 50px;
+      }
+      button {
+        margin: 31px auto 0;
+        gap: 21px;
+        width: 241px;
+        padding-left: 34px;
       }
     }
   }

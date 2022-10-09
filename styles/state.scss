@@ -38,8 +38,18 @@
 .l-footer a {
   @include a-state();
 }
+// Hover desc block
+.desc-block {
+  &:hover {
+    outline: 3px solid #cda274;
+    border-radius: 2px;
+  }
+  &:active {
+    outline: 3px solid #000;
+  }
+}
 // Main
-.btn-get {
+.btn-get, .btn-connect {
   &:hover,
   &:focus-visible {
     color: #000;
@@ -64,17 +74,6 @@
   }
   .l-m-challenging-designs .number-block a {
     @include a-state();
-  }
-  .l-m-recent-projects .l-rp-content   {
-    .rp-block .desc-block {
-      &:hover {
-        outline: 3px solid #cda274;
-        border-radius: 2px;
-      }
-      &:active {
-        outline: 3px solid #000;
-      }
-    }
   }
 }
 // Footer

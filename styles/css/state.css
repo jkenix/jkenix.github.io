@@ -42,11 +42,19 @@
   outline: 3px solid blue;
 }
 
-.btn-get:hover, .btn-get:focus-visible {
+.desc-block:hover {
+  outline: 3px solid #cda274;
+  border-radius: 2px;
+}
+.desc-block:active {
+  outline: 3px solid #000;
+}
+
+.btn-get:hover, .btn-get:focus-visible, .btn-connect:hover, .btn-connect:focus-visible {
   color: #000;
   background-color: #fff;
 }
-.btn-get:active {
+.btn-get:active, .btn-connect:active {
   color: #fff;
   background-color: #788899;
 }
@@ -65,13 +73,6 @@
 }
 .l-main .l-m-challenging-designs .number-block a:focus-visible {
   outline: 3px solid blue;
-}
-.l-main .l-m-recent-projects .l-rp-content .rp-block .desc-block:hover {
-  outline: 3px solid #cda274;
-  border-radius: 2px;
-}
-.l-main .l-m-recent-projects .l-rp-content .rp-block .desc-block:active {
-  outline: 3px solid #000;
 }
 
 /*# sourceMappingURL=state.css.map */
