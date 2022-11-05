@@ -34,7 +34,7 @@
   flex-direction: column;
 }
 
-#desc-title {
+.desc-title {
   font-size: 1.5rem;
   font-family: "DMSerifDisplayRegular";
 }

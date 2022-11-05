@@ -171,7 +171,7 @@
             gap: 20px;
             .desc-text-block {
               padding-top: 6.5px;
-              #desc-title {
+              .desc-title {
                 line-height: 38px;
               }
               span {
@@ -227,7 +227,7 @@
           margin-top: 24px;
           @include flexb();
           .desc-text-block {
-            #desc-title {
+            .desc-title {
               line-height: 38px;
             }
             span {
@@ -340,7 +340,7 @@
         }
         .desc-text-block {
           gap: 10.41px;
-          #desc-title {
+          .desc-title {
             margin-bottom: 10.41px;
             line-height: 35px;
             letter-spacing: 0.5px;
