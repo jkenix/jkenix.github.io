@@ -1,14 +1,8 @@
 @font-face {
   font-display: swap;
   text-rendering: optimizeLegibility;
-  font-family: "";
-  src: url(/webfonts/.woff) format("woff");
-}
-@font-face {
-  font-display: swap;
-  text-rendering: optimizeLegibility;
-  font-family: "";
-  src: url(/webfonts/.woff) format("woff");
+  font-family: "JostRegular";
+  src: url(../webfonts/JostRegular.woff) format("woff");
 }
 // Global selectors styles
 html {
@@ -26,7 +20,7 @@ button,
 input,
 textarea,
 address {
-  font-family: "";
+  font-family: "JostRegular";
   font-weight: 400;
   margin: 0;
 }

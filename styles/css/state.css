@@ -29,53 +29,14 @@
   transition: fill 0s ease-out;
 }
 
-.l-header nav a:hover,
-.l-footer a:hover {
+.l-footer .l-author a:hover {
   color: rgb(60, 31, 161);
 }
-.l-header nav a:active,
-.l-footer a:active {
+.l-footer .l-author a:active {
   color: #788899;
 }
-.l-header nav a:focus-visible,
-.l-footer a:focus-visible {
-  outline: 3px solid blue;
-}
-
-.desc-block:hover {
-  outline: 3px solid #cda274;
-  border-radius: 2px;
-}
-.desc-block:active {
-  outline: 3px solid #000;
-}
-
-.btn-get:hover, .btn-get:focus-visible,
-.btn-connect:hover,
-.btn-connect:focus-visible {
-  color: #000;
-  background-color: #fff;
-}
-.btn-get:active,
-.btn-connect:active {
-  color: #fff;
-  background-color: #788899;
-}
-
-.l-main .l-do-content button:hover, .l-main .l-do-content button:focus-visible {
-  color: #788899;
-}
-.l-main .l-do-content button:active {
-  color: rgb(60, 31, 161);
-}
-.l-main .l-m-challenging-designs .number-block a:hover {
-  color: rgb(60, 31, 161);
-}
-.l-main .l-m-challenging-designs .number-block a:active {
-  color: #788899;
-}
-.l-main .l-m-challenging-designs .number-block a:focus-visible {
-  outline: 3px solid blue;
+.l-footer .l-author a:focus-visible {
+  outline: 2px solid blue;
 }
 
 /*# sourceMappingURL=state.css.map */
