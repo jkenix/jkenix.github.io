@@ -1,19 +1,24 @@
 // Import mixins, variables
-@import 'mixins_var.scss';
+@import "mixins_var.scss";
 // Layout classes
 .wrapper {
   max-width: 1920px;
   margin: 0 auto;
 }
 .l-header {
- 
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 120px 0;
 }
 .l-main {
- 
+  .l-kemenger-about {
+    text-align: center;
+  }
 }
 .l-footer {
   .l-author {
-    margin-top: 32px;
+    margin: 32px 0 32px;
     align-items: center;
     display: flex;
     flex-direction: column;

@@ -1,8 +1,8 @@
 @font-face {
   font-display: swap;
   text-rendering: optimizeLegibility;
-  font-family: "JostRegular";
-  src: url(../webfonts/JostRegular.woff) format("woff");
+  font-family: "Commissioner";
+  src: url(../webfonts/CommissionerRegular.woff) format("woff");
 }
 // Global selectors styles
 html {
@@ -20,7 +20,7 @@ button,
 input,
 textarea,
 address {
-  font-family: "JostRegular";
+  font-family: "Commissioner";
   font-weight: 400;
   margin: 0;
 }
@@ -40,11 +40,6 @@ ul {
   list-style: none;
   padding: 0;
 }
-q {
-  font-family: "";
-  font-weight: 400;
-}
-
 address {
   font-style: normal;
   font-size: 1.5rem;
