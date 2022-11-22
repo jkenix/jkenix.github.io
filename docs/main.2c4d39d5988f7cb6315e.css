@@ -1,4 +1,0 @@
-.App{text-align:center}.App-logo{height:40vmin;pointer-events:none}@media(prefers-reduced-motion: no-preference){.App-logo{animation:App-logo-spin infinite 20s linear}}.App-header{background-color:#282c34;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:calc(10px + 2vmin);color:#fff}@keyframes App-logo-spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
-@font-face{font-display:swap;text-rendering:optimizeLegibility;font-family:"JostRegular";src:url(assets/33bdca0f80c0c266eca5.woff) format("woff")}html{scroll-behavior:smooth}h1,h2,h3,p,a,ul,li,span,button,input,textarea,address{font-family:"JostRegular";font-weight:400;margin:0}a{text-decoration:none}button{cursor:pointer;border:none}img{user-select:none}ul{list-style:none;padding:0}q{font-family:"";font-weight:400}address{font-style:normal;font-size:1.5rem}
-
-/*# sourceMappingURL=main.2c4d39d5988f7cb6315e.css.map*/

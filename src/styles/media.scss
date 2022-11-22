@@ -24,7 +24,6 @@
   }
 }
 @media (min-width: 1500px) {
-  
 }
 @media (max-width: 1399.98px) {
   // 1400px
@@ -37,6 +36,22 @@
 }
 @media (max-width: 1199.98px) {
   // 1200px
+}
+@media (max-width: 1024.98px) {
+  // 1024px
+  .l-header {
+    align-items: center;
+    padding-left: 30px;
+    .logo {
+      padding-left: 0;
+    }
+    .hamburger {
+      display: block;
+    }
+    .header-menu {
+      display: none;
+    } /* */
+  }
 }
 @media (max-width: 991.98px) {
   // 992px
@@ -54,6 +69,15 @@
 }
 @media (max-width: 575.98px) {
   // 576px
+  .l-header {
+    gap: 71px;
+    justify-content: normal;
+    .lang-sw {
+      position: absolute;
+      width: 98px;
+      height: 98px;
+    }
+  }
 }
 @media (max-width: 320px) {
   body {

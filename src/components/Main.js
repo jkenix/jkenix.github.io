@@ -6,12 +6,12 @@ function Main() {
   return (
     <main className="l-main">
       <div className="l-kemenger-about">
-        <p>Work in progress!</p>
+        <p style={{fontSize: "5.5rem"}}>Work in progress!</p>
         <div>
-        <h1>
-          <b></b>
-        </h1>
-      </div>
+          <h1>
+            <b></b>
+          </h1>
+        </div>
       </div>
     </main>
   );

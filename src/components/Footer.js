@@ -16,7 +16,7 @@ function Footer() {
         <a
           href="https://www.figma.com/file/6kFNHvBorfCJrZ81w9gF82/%D0%9A%D0%B5%D0%BC%D0%B5%D0%BD%D0%B3%D0%B5%D1%80-%2B"
           title="Figma original layout link">
-          Copyright © Kemenger
+          Copyright © Toy.Stream, Inc.
         </a>
         <a
           href="https://github.com/jkenix/jkenix.github.io/tree/interno"

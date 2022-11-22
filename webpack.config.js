@@ -30,7 +30,12 @@ module.exports = {
   devtool: "source-map",
   entry: "./src/index.js",
   devServer: {
-    static: "./docs",
+    static: {
+      directory: path.join(__dirname, 'src'),
+      watch: true,
+    },
+    // static: "./docs",
+    // watchFiles: ["./src"],
     hot: true,
     open: true,
   },
@@ -47,12 +52,7 @@ module.exports = {
       {
         test: /\.(s[ac]|c)ss$/i,
         exclude: /node_modules/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader",
-          "postcss-loader",
-          "sass-loader",
-        ],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
         test: /\.(png|jpe?g|gif|svg|webp|ico)$/i,

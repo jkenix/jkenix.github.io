@@ -1,16 +1,24 @@
 @font-face {
   font-display: swap;
   text-rendering: optimizeLegibility;
-  font-family: "Commissioner";
-  src: url(../webfonts/CommissionerRegular.woff) format("woff");
+  font-family: "AkrobatRegular";
+  src: url(./webfonts/AkrobatRegular.woff) format("woff");
+}
+@font-face {
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+  font-family: "ZonaPro-ExtraBold";
+  src: url(./webfonts/ZonaPro-ExtraBold.woff) format("woff");
 }
 // Global selectors styles
 html {
   scroll-behavior: smooth;
 }
-h1,
-h2,
-h3,
+
+h2, h3 {
+  font-family: "ZonaPro-ExtraBold, sans-serif";
+}
+
 p,
 a,
 ul,
@@ -20,7 +28,7 @@ button,
 input,
 textarea,
 address {
-  font-family: "Commissioner";
+  font-family: "AkrobatRegular", sans-serif;
   font-weight: 400;
   margin: 0;
 }

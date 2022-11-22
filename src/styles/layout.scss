@@ -1,7 +1,7 @@
 // Import mixins, variables
 @import "mixins_var.scss";
 // Layout classes
-.wrapper {
+#wrapper {
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -9,7 +9,31 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 20px 120px 0;
+  .header-menu {
+    max-width: 643px;
+    padding-top: 48px;
+    a {
+      font-size: 1.25rem;
+      margin-right: 56px;
+      &:nth-last-child(1) {
+        margin: 0;
+      }
+    }
+  }
+  .lang-sw {
+    background-color: #ce0002;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+
+    a {
+
+    }
+  }
 }
 .l-main {
   .l-kemenger-about {

@@ -27,11 +27,10 @@
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.19",
-    "postcss-loader": "^7.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-refresh": "^0.14.0",
+    "react-router-dom": "^6.4.3",
     "sass": "^1.56.1",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
@@ -52,11 +51,11 @@
     "parcel": "parcel index.html",
     "parcelbuild": "parcel build src/index.html --no-optimize",
     "eslint": "eslint --init",
-    "base": "sass --watch styles/base.scss:styles/css/base.css",
-    "layout": "sass --watch styles/layout.scss:styles/css/layout.css",
-    "module": "sass --watch styles/module.scss:styles/css/module.css",
-    "state": "sass --watch styles/state.scss:styles/css/state.css",
-    "theme": "sass --watch styles/theme.scss:styles/css/theme.css",
-    "media": "sass --watch styles/media.scss:styles/css/media.css"
+    "base": "sass --watch src/styles/base.scss:src/styles/css/base.css",
+    "layout": "sass --watch src/styles/layout.scss:src/styles/css/layout.css",
+    "module": "sass --watch src/styles/module.scss:src/styles/css/module.css",
+    "state": "sass --watch src/styles/state.scss:src/styles/css/state.css",
+    "theme": "sass --watch src/styles/theme.scss:src/styles/css/theme.css",
+    "media": "sass --watch src/styles/media.scss:src/styles/css/media.css"
   }
 }
