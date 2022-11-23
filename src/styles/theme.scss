@@ -4,6 +4,12 @@
 }
 // Header
 .l-header {
+  nav a {
+    color: #000000;
+  }
+  .lang-sw a {
+    color: #ffffff;
+  }
 }
 // Buttons
 
@@ -13,7 +19,7 @@
 .l-footer {
   .l-author {
     a {
-      color: #7E7E7E;
+      color: #7e7e7e;
     }
   }
 }

@@ -1,14 +1,11 @@
 // Import mixins, variables
 @import "mixins_var.scss";
-// Header/Footer logo
-.logo {
-  padding: 23px 0 19px 84px;
-}
 // Hamburger
 .hamburger {
   width: 34px;
   height: 29px;
   z-index: 11;
+  margin-right: auto;
   cursor: pointer;
   display: none;
   .hamburger-item {
@@ -38,9 +35,20 @@
       bottom: -13px;
     }
   }
-  
 }
-.ham-active {background-color: red;}
+.ham-active {
+  margin-right: 57px;
+  .hamburger-item {
+    transform: rotate(45deg) translate3D(8px, 10px, 0);
+    &::before {
+      transform: rotate(-90deg) translate3D(27px, 1px, 0);
+    }
+    &::after {
+      display: none;
+    }
+  }
+}
+
 // Main
 .img__resp-block {
   display: flex;

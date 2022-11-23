@@ -44,13 +44,39 @@
     padding-left: 30px;
     .logo {
       padding-left: 0;
+      margin-right: auto;
     }
     .hamburger {
       display: block;
     }
     .header-menu {
-      display: none;
-    } /* */
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      gap: 62px;
+      overflow: auto;
+      padding: 30px 15px 20px 15px;
+      position: fixed;
+      top: 120px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(255, 255, 255, 0.9);
+      z-index: 9;
+      visibility: hidden;
+      a {
+        font-size: 3.25rem;
+        line-height: 120%;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-family: "ZonaPro-ExtraBold";
+        padding-left: 79px;
+      }
+    }
+    .nav-active {
+      visibility: visible;
+      transform: translateX(0);
+    }
   }
 }
 @media (max-width: 991.98px) {
@@ -70,17 +96,20 @@
 @media (max-width: 575.98px) {
   // 576px
   .l-header {
-    gap: 71px;
-    justify-content: normal;
+    padding-left: 15px;
+    // gap: 71px;
+    // justify-content: normal;
+    .logo {
+      padding: 0;
+    }
     .lang-sw {
-      position: absolute;
+      // position: absolute;
       width: 98px;
       height: 98px;
     }
   }
 }
 @media (max-width: 400.98px) {
-  
 }
 @media (max-width: 320px) {
   body {

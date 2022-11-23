@@ -34,20 +34,28 @@
   }
 }
 // Header
-
+.l-header {
+  a {
+    &:focus-visible {
+      outline: 2px solid #ff0000;
+    }
+  }
+  nav a {
+    &:hover {
+      color: #ff0000;
+    }
+  }
+}
 // Main
 
 // Footer
 .l-footer {
   .l-author a {
     &:hover {
-      color: rgb(60, 31, 161);
-    }
-    &:active {
-      color: #788899;
+      color: #ff0000;
     }
     &:focus-visible {
-      outline: 2px solid blue;
+      outline: 2px solid #ff0000;
     }
   }
 }

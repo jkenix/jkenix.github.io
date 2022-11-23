@@ -7,16 +7,19 @@
 }
 .l-header {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  padding-left: 84px;
+  .logo {
+    padding: 23px 0 19px;
+    margin-right: auto;
+  }
   .header-menu {
-    max-width: 643px;
+    // max-width: 643px;
     padding-top: 48px;
     a {
       font-size: 1.25rem;
       margin-right: 56px;
       &:nth-last-child(1) {
-        margin: 0;
+        // margin-right: 45px;
       }
     }
   }
@@ -24,14 +27,15 @@
     background-color: #ce0002;
     top: 0;
     right: 0;
-    width: 120px;
+    width: 103px;
     height: 120px;
     display: flex;
     justify-content: center;
     place-items: center;
 
     a {
-
+      font-weight: 700;
+      font-size: 1.25rem;
     }
   }
 }
