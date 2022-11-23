@@ -12,10 +12,11 @@ import "./styles/state.scss";
 import "./styles/theme.scss";
 
 import "./js/scripts.js";
-import Header from "./components/Header.js";
-import Main from "./components/Main.js";
-import Footer from "./components/Footer.js";
-import About from "./About";
+
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
+import Home from "./pages/Home.jsx";
+import Company from "./pages/Company.jsx";
 
 const container = document.getElementById("wrapper");
 const root = createRoot(container);
@@ -23,12 +24,11 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Header />
-      <Main />
-      <Footer />
       <Routes>
-        <Route path="/" element></Route>
-        <Route path="/About" element={<About />}></Route>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/company" element={<Company />}></Route>
       </Routes>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );
