@@ -1,11 +1,8 @@
 import logo from "../img/Company-logo.svg";
-import { useEffect, useState } from "react";
-import Ccomponent from "./Ccomponent.js";
-import Afcomponent from "./Afcomponent.js";
-import Fcomponent from "./Fcomponent.js";
+import { React, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-function Header() {
+export default function Header() {
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = (event) => {
@@ -18,14 +15,17 @@ function Header() {
       <header className="l-header">
         <div
           className={`hamburger ${isActive ? "ham-active" : ""}`}
-          onClick={handleClick}>
+          onClick={handleClick}
+        >
           <span className="hamburger-item"></span>
         </div>
         <Link className="logo" to="/">
           <img src={logo} alt="Toy.Stream logo" width="135" height="75" />
         </Link>
         <nav
-          className={`header-menu ${isActive ? "nav-active" : ""}`} onClick={handleClick}>
+          className={`header-menu ${isActive ? "nav-active" : ""}`}
+          onClick={handleClick}
+        >
           <Link to="/">Главная</Link>
           <Link to="/company">Компания</Link>
           <Link to="/games">Игры</Link>
@@ -40,5 +40,3 @@ function Header() {
     </>
   );
 }
-
-export default Header;

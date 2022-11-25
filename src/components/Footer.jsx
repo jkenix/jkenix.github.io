@@ -1,6 +1,4 @@
-import Ccomponent from "./Ccomponent.js";
-import Afcomponent from "./Afcomponent.js";
-import Fcomponent from "./Fcomponent.js";
+import React from "react";
 
 function Footer() {
   return (
