@@ -1,5 +1,5 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
+import { createRoot, hydrateRoot } from "react-dom/client";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import App from "./App.jsx";
 import "./styles/lib/normalize.css";
@@ -18,11 +18,12 @@ import "./js/scripts.js";
 // import Company from "./pages/Company.jsx";
 
 const container = document.getElementById("wrapper");
-const root = createRoot(container);
+const defroot = createRoot(container);
+// const root = hydrateRoot(domNode, reactNode);
 if (container.hasChildNodes()) {
   // …Если в корневом элементе есть контент, то…
-  root.hydrateRoot(<App />, container); // …"цепляем" приложение на существующий DOM.
+  hydrateRoot(container, <App />); // …"цепляем" приложение на существующий DOM.
 } else {
   // …Иначе рендерим приложение стандартным образом
-  root.render(<App />);
+  defroot.render(<App />);
 }
