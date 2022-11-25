@@ -32,7 +32,7 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     static: {
-      directory: path.join(__dirname, 'src'),
+      directory: path.join(__dirname, "src"),
       watch: true,
     },
     // static: "./docs",
@@ -45,7 +45,7 @@ module.exports = {
     path: path.resolve(__dirname, "docs"),
     assetModuleFilename: "assets/[hash][ext][query]",
     clean: true,
-    publicPath: "/"
+    publicPath: "/",
   },
 
   module: {

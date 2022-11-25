@@ -4,7 +4,6 @@ import Ccomponent from "./Ccomponent.js";
 import Afcomponent from "./Afcomponent.js";
 import Fcomponent from "./Fcomponent.js";
 import { Link } from "react-router-dom";
-import Hamburger from "./Hamburger.jsx";
 
 function Header() {
   const [isActive, setIsActive] = useState(false);
@@ -25,9 +24,6 @@ function Header() {
         <Link className="logo" to="/">
           <img src={logo} alt="Toy.Stream logo" width="135" height="75" />
         </Link>
-        {/* <Link className="logo" to="/About">
-          sdsdds
-        </Link> */}
         <nav
           className={`header-menu ${isActive ? "nav-active" : ""}`} onClick={handleClick}>
           <Link to="/">Главная</Link>
