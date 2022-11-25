@@ -21,7 +21,7 @@ const container = document.getElementById("wrapper");
 const root = createRoot(container);
 if (container.hasChildNodes()) {
   // …Если в корневом элементе есть контент, то…
-  root.hydrate(<App />, container); // …"цепляем" приложение на существующий DOM.
+  root.hydrateRoot(<App />, container); // …"цепляем" приложение на существующий DOM.
 } else {
   // …Иначе рендерим приложение стандартным образом
   root.render(<App />);

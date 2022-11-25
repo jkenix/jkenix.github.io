@@ -41,8 +41,9 @@
     "webpack-dev-server": "^4.11.1"
   },
   "scripts": {
+    "postbuild": "react-snap",
     "start": "cross-env SERVE=true webpack serve",
-    "build": "webpack --mode=production && react-snap",
+    "build": "webpack --mode=production",
     "clean": "rd /s /q docs",
     "scss": "run-p layout media base theme state module",
     "webpack": "webpack",
@@ -60,6 +61,7 @@
     "media": "sass --watch src/styles/media.scss:src/styles/css/media.css"
   },
   "reactSnap": {
+    "inlineCss": true,
     "source": "docs",
     "destination": "docs",
     "include": [
