@@ -48,12 +48,12 @@
     "webpack-dev-server": "^4.11.1"
   },
   "scripts": {
-    "webserver": "cross-env SERVE=true webpack serve",
-    "webprod": "webpack --mode=production",
-    "start": "run-p webserver server",
-    "build": "run-p webprod server",
-    "postbuild": "react-snap",
+    "start": "cross-env SERVE=true webpack serve",
+    "build": "webpack --mode=production && react-snap && nodemon —exec babel-node index.js",
+    "webprod": "webpack --mode=production && react-snap",
     "clean": "rd /s /q docs",
+    "startnode": "run-p webserver server",
+    "buildnode": "run-p webprod server",
     "server": "nodemon —exec babel-node index.js",
     "scss": "run-p layout media base theme state module",
     "webpack": "webpack",
