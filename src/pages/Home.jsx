@@ -12,10 +12,10 @@ export default function Home() {
           name="description"
           content="Toy.Steam - Page made by jkenix from layout."
         />
-        {/* <meta
+        <meta
           property="og:description"
           content="Toy.Steam - Page made by jkenix from layout."
-        /> */}
+        />
       </Helmet>
       <Header />
       <main className="l-main">

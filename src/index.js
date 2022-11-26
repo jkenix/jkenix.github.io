@@ -1,6 +1,5 @@
 import React from "react";
 import { createRoot, hydrateRoot } from "react-dom/client";
-import {Helmet} from "react-helmet";
 
 import App from "./App.jsx";
 import "./styles/lib/normalize.css";
@@ -18,7 +17,6 @@ const defroot = createRoot(container);
 if (container.hasChildNodes()) {
   // …Если в корневом элементе есть контент, то…
   hydrateRoot(container, <App />); // …"цепляем" приложение на существующий DOM.
-  const helmet = Helmet.renderStatic();
 } else {
   // …Иначе рендерим приложение стандартным образом
   defroot.render(<App />);

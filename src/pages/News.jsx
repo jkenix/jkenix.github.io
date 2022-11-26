@@ -14,7 +14,7 @@ export default function News() {
         />
         <meta property="og:url" content="https://jkenix.netlify.app/company" /> */}
 
-        <meta name="description" content="Career in Toy.Stream." />
+        <meta name="description" content="Toy.Stream News." />
       </Helmet>
       <Header />
       <main className="l-main">

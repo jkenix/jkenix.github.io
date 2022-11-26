@@ -8,11 +8,8 @@ export default function Company() {
     <>
       <Helmet>
         <title>About Toy.Stream</title>
-        {/* <meta
-          property="og:description"
-          content="Toy.Steam - About company."
-        />
-        <meta property="og:url" content="https://jkenix.netlify.app/company" /> */}
+        <meta property="og:description" content="Toy.Steam - About company." />
+        <meta property="og:url" content="https://jkenix.netlify.app/company" />
 
         <meta name="description" content="About company Toy.Stream." />
       </Helmet>
