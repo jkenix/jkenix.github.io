@@ -7,11 +7,11 @@ export default function Company() {
   return (
     <>
       <Helmet>
-        <title>About Toy.Stream</title>
-        <meta property="og:description" content="Toy.Steam - About company." />
+        <title>Toy.Stream - Game studio</title>
+        <meta property="og:title" content="Company Toy.Stream" />
         <meta property="og:url" content="https://jkenix.netlify.app/company" />
-
-        <meta name="description" content="About company Toy.Stream." />
+        <meta name="og:description" content="About company Toy.Stream." />
+        <meta name="description" content="Toy.Steam - About company." />
       </Helmet>
       <Header />
       <main className="l-main">

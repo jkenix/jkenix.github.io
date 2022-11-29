@@ -8,13 +8,10 @@ export default function Contacts() {
     <>
       <Helmet>
         <title>Contacts</title>
-        {/* <meta
-          property="og:description"
-          content="Toy.Steam - About company."
-        />
-        <meta property="og:url" content="https://jkenix.netlify.app/company" /> */}
-
-        <meta name="description" content="Toy.Stream Contacts." />
+        <meta property="og:title" content="Toy.Stream Contacts" />
+        <meta property="og:url" content="https://jkenix.netlify.app/contacts" />
+        <meta name="og:description" content="Contacts - Toy.Stream." />
+        <meta name="description" content="Toy.Stream - Contacts." />
       </Helmet>
       <Header />
       <main className="l-main">

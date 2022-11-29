@@ -8,13 +8,15 @@ export default function Home() {
     <>
       <Helmet>
         <title>Toy.Stream</title>
+        <meta property="og:title" content="Toy.Stream - Game studio" />
+        <meta property="og:url" content="https://jkenix.netlify.app/" />
         <meta
-          name="description"
+          name="og:description"
           content="Toy.Steam - Page made by jkenix from layout."
         />
         <meta
-          property="og:description"
-          content="Toy.Steam - Page made by jkenix from layout."
+          name="description"
+          content="Page made by jkenix from layout Toy.Steam."
         />
       </Helmet>
       <Header />

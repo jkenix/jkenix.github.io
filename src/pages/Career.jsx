@@ -7,13 +7,10 @@ export default function Career() {
   return (
     <>
       <Helmet>
-        <title>Career in Toy.Stream</title>
-        {/* <meta
-          property="og:description"
-          content="Toy.Steam - About company."
-        />
-        <meta property="og:url" content="https://jkenix.netlify.app/company" /> */}
-
+        <title>Career</title>
+        <meta property="og:title" content="Career in Toy.Stream" />
+        <meta property="og:url" content="https://jkenix.netlify.app/career" />
+        <meta name="og:description" content="Post a job now!" />
         <meta name="description" content="Career in Toy.Stream." />
       </Helmet>
       <Header />

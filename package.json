@@ -50,11 +50,7 @@
   "scripts": {
     "start": "cross-env SERVE=true webpack serve",
     "build": "webpack --mode=production && react-snap",
-    "webprod": "webpack --mode=production && react-snap",
     "clean": "rd /s /q docs",
-    "buildnode": "webpack --mode=production && react-snap && nodemon —exec babel-node index.js",
-    "startnode": "run-p start server",
-    "server": "nodemon —exec babel-node index.js",
     "scss": "run-p layout media base theme state module",
     "webpack": "webpack",
     "webstart": "webpack serve --open",

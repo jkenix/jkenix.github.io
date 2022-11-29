@@ -7,14 +7,11 @@ export default function Games() {
   return (
     <>
       <Helmet>
-        <title>Games from Toy.Stream</title>
-        {/* <meta
-          property="og:description"
-          content="Toy.Steam - About company."
-        />
-        <meta property="og:url" content="https://jkenix.netlify.app/company" /> */}
-
-        <meta name="description" content="Games from Toy.Stream." />
+        <title>Games</title>
+        <meta property="og:title" content="Games Toy.Stream" />
+        <meta property="og:url" content="https://jkenix.netlify.app/games" />
+        <meta name="og:description" content="Games by Toy.Stream." />
+        <meta name="description" content="Toy.Stream Games." />
       </Helmet>
       <Header />
       <main className="l-main">

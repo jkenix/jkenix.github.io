@@ -13,11 +13,8 @@ import "./styles/theme.scss";
 // import "./js/scripts.js";
 const container = document.getElementById("wrapper");
 const defroot = createRoot(container);
-// const root = hydrateRoot(domNode, reactNode);
 if (container.hasChildNodes()) {
-  // …Если в корневом элементе есть контент, то…
-  hydrateRoot(container, <App />); // …"цепляем" приложение на существующий DOM.
+  hydrateRoot(container, <App />); 
 } else {
-  // …Иначе рендерим приложение стандартным образом
   defroot.render(<App />);
 }
