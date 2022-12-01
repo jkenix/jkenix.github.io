@@ -1,5 +1,4 @@
 import React from "react";
-import { HelmetProvider } from "react-helmet-async";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // import Header from "./components/Header.jsx";
@@ -14,7 +13,6 @@ import Contacts from "./pages/Contacts.jsx";
 export default function App() {
   return (
     <React.StrictMode>
-      <HelmetProvider>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />}></Route>
@@ -25,7 +23,6 @@ export default function App() {
             <Route path="/contacts" element={<Contacts />}></Route>
           </Routes>
         </BrowserRouter>
-      </HelmetProvider>
     </React.StrictMode>
   );
 }
