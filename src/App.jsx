@@ -12,7 +12,7 @@ import Contacts from "./pages/Contacts.jsx";
 
 export default function App() {
   return (
-    // <React.StrictMode>
+    <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -23,6 +23,6 @@ export default function App() {
         <Route path="/contacts" element={<Contacts />}></Route>
       </Routes>
     </BrowserRouter>
-    // </React.StrictMode>
+    </React.StrictMode>
   );
 }
