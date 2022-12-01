@@ -1,4 +1,5 @@
 import React from "react";
+import { HelmetProvider } from "react-helmet-async";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // import Header from "./components/Header.jsx";
@@ -13,16 +14,18 @@ import Contacts from "./pages/Contacts.jsx";
 export default function App() {
   return (
     <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/company" element={<Company />}></Route>
-        <Route path="/games" element={<Games />}></Route>
-        <Route path="/career" element={<Career />}></Route>
-        <Route path="/news" element={<News />}></Route>
-        <Route path="/contacts" element={<Contacts />}></Route>
-      </Routes>
-    </BrowserRouter>
+      <HelmetProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/company" element={<Company />}></Route>
+            <Route path="/games" element={<Games />}></Route>
+            <Route path="/career" element={<Career />}></Route>
+            <Route path="/news" element={<News />}></Route>
+            <Route path="/contacts" element={<Contacts />}></Route>
+          </Routes>
+        </BrowserRouter>
+      </HelmetProvider>
     </React.StrictMode>
   );
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import { renderToString } from "react-dom/server";
 import { createRoot, hydrateRoot } from "react-dom/client";
 
 import App from "./App.jsx";
@@ -15,8 +14,7 @@ import "./styles/theme.scss";
 const container = document.getElementById("wrapper");
 const defroot = createRoot(container);
 if (container.hasChildNodes()) {
-  renderToString(<App />);
-  hydrateRoot(<App />);
+  hydrateRoot(container, <App />);
 } else {
   defroot.render(<App />);
 }
