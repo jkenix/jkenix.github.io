@@ -15,8 +15,8 @@ import "./styles/theme.scss";
 const container = document.getElementById("wrapper");
 const defroot = createRoot(container);
 if (container.hasChildNodes()) {
-  renderToString(<App />, container);
-  hydrateRoot(<App />, container);
+  renderToString(container, <App />);
+  hydrateRoot(container, <App />);
 } else {
   defroot.render(<App />);
 }
