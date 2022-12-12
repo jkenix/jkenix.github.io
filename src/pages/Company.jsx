@@ -18,7 +18,7 @@ export default function Company() {
           <meta name="og:description" content="About company Toy.Stream." />
           <meta name="description" content="Toy.Steam - About company." />
         </Helmet>
-        <Header />
+        <Header comlink="link-active"/>
         <main className="l-main">
           <div className="l-company-about">
             <p style={{ fontSize: "5.5rem" }}>О компании</p>

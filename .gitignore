@@ -10,7 +10,6 @@ node_modules/
 *.txt
 *.zip
 Test/
-README.md
 my-app/
 
 # dependencies

@@ -14,7 +14,7 @@ export default function Games() {
           <meta name="og:description" content="Games by Toy.Stream." />
           <meta name="description" content="Toy.Stream Games." />
         </Helmet>
-        <Header />
+        <Header glink="link-active"/>
         <main className="l-main">
           <div className="l-company-about">
             <p style={{ fontSize: "5.5rem" }}>Игры</p>

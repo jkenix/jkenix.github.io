@@ -47,7 +47,17 @@
   }
 }
 // Main
-
+.l-main .l-ga-wr .check-box {
+  &:hover {
+    background-color: #FE0002;
+  }
+  &:active {
+    background-color: #A60002;
+  }
+}
+.check-box {
+ 
+}
 // Footer
 .l-footer {
   .l-author a {

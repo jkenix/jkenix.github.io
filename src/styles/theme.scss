@@ -2,8 +2,15 @@
 .sw-bg {
   background: #eeeeee;
 }
+.lg-bg {
+  background: linear-gradient(to right, #fff, #fff 275px, #ffea2f 275px);
+}
+
 // Header
 .l-header {
+  .link-active {
+    color: #ff0000;
+  }
   nav a {
     color: #000000;
   }
@@ -15,11 +22,42 @@
 
 // Main
 .l-main {
+  .l-games-about {
+    .title h2 {
+      color: #000000;
+    }
+    .check-box {
+      background-color: #ce0002;
+      color: #ffffff;
+    }
+    p {
+      color: #000000;
+    }
+  }
 }
 .l-footer {
+  .l-contacts {
+    a {
+      color: #7e7e7e;
+    }
+  }
   .l-author {
     a {
       color: #7e7e7e;
     }
+  }
+}
+
+// Media
+
+@media (max-width: 1024.98px) {
+  .lg-bg {
+    background: linear-gradient(to right, #fff, #fff 97px, #ffea2f 97px);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .lg-bg {
+    background: linear-gradient(to right, #fff, #fff 70px, #ffea2f 70px);
   }
 }

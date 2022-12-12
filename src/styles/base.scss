@@ -15,8 +15,10 @@ html {
   scroll-behavior: smooth;
 }
 
-h2, h3 {
-  font-family: "ZonaPro-ExtraBold, sans-serif";
+h2,
+h3 {
+  margin: 0;
+  font-family: "ZonaPro-ExtraBold";
 }
 
 p,
@@ -28,12 +30,11 @@ button,
 input,
 textarea,
 address {
-  font-family: "AkrobatRegular", sans-serif;
+  font-family: "AkrobatRegular";
   font-weight: 400;
   margin: 0;
 }
-h1 {
-}
+
 a {
   text-decoration: none;
 }

@@ -17,7 +17,7 @@ export default function News() {
           />
           <meta name="description" content="Toy.Stream News." />
         </Helmet>
-        <Header />
+        <Header nlink="link-active"/>
         <main className="l-main">
           <div className="l-company-about">
             <p style={{ fontSize: "5.5rem" }}>Новости</p>

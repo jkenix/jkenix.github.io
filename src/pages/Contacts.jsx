@@ -17,7 +17,7 @@ export default function Contacts() {
           <meta name="og:description" content="Contacts - Toy.Stream." />
           <meta name="description" content="Toy.Stream - Contacts." />
         </Helmet>
-        <Header />
+        <Header conlink="link-active"/>
         <main className="l-main">
           <div className="l-company-about">
             <p style={{ fontSize: "5.5rem" }}>Контакты</p>

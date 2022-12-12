@@ -13,14 +13,10 @@
     margin-right: auto;
   }
   .header-menu {
-    // max-width: 643px;
     padding-top: 48px;
     a {
       font-size: 1.25rem;
       margin-right: 56px;
-      &:nth-last-child(1) {
-        // margin-right: 45px;
-      }
     }
   }
   .lang-sw {
@@ -40,14 +36,112 @@
   }
 }
 .l-main {
-  .l-games-about {
-    text-align: center;
+  .l-ga-wr {
+    display: flex;
+    padding: 49px 40px 0 86px;
+    .l-games-about {
+      max-width: 1000px;
+      display: flex;
+      flex-direction: column;
+      gap: 75px;
+      .title {
+        h2 {
+          margin-top: 163px;
+          font-weight: 800;
+          font-size: 4rem;
+          line-height: 85px;
+          text-transform: uppercase;
+        }
+      }
+      .desc {
+        display: flex;
+        .social-links {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+        &-content {
+          display: flex;
+          gap: 66px;
+          padding-top: 28px;
+          padding-left: 97px;
+          .check-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 105px;
+            height: 120px;
+            font-weight: 800;
+            font-size: 1.375rem;
+            line-height: 27px;
+            padding-left: 15px;
+            padding-right: 15px;
+            &::after {
+              content: "";
+              left: 50%;
+              bottom: 10px;
+              width: 90px;
+              height: 15px;
+              transform: translateX(0%);
+              background-image: url("../img/arrow-fm.svg");
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+          }
+          .text-box {
+            p {
+              font-weight: 600;
+              font-size: 1.5rem;
+              line-height: 30px;
+              max-width: 69%;
+              padding-top: 16px;
+            }
+          }
+        }
+      }
+    }
+    .pic-block {
+      min-width: 34%;
+    }
   }
   .l-company-about {
     text-align: center;
   }
 }
 .l-footer {
+  margin-top: 77px;
+  .l-contacts {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    padding-left: 24px;
+    .company {
+      padding-top: 12px;
+      // margin-right: auto;
+      a {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+    .footer-menu {
+      padding-top: 12px;
+      // margin-right: auto;
+      a {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 20px;
+        text-align: center;
+        margin-right: 32px;
+      }
+    }
+    .social-links {
+      padding-top: 9px;
+      a {margin-right: 9px;}
+    }
+  }
   .l-author {
     margin: 32px 0 32px;
     align-items: center;

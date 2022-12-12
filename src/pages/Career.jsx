@@ -14,7 +14,7 @@ export default function Career() {
           <meta name="og:description" content="Post a job now!" />
           <meta name="description" content="Career in Toy.Stream." />
         </Helmet>
-        <Header />
+        <Header carlink="link-active"/>
         <main className="l-main">
           <div className="l-company-about">
             <p style={{ fontSize: "5.5rem" }}>Карьера</p>

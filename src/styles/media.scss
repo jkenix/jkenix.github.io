@@ -24,6 +24,8 @@
   }
 }
 @media (min-width: 1500px) {
+  .l-main .pic-block img {
+  }
 }
 @media (max-width: 1399.98px) {
   // 1400px
@@ -39,6 +41,9 @@
 }
 @media (max-width: 1024.98px) {
   // 1024px
+  div[class=active] { // Доработать
+    color: blue;
+  }
   .l-header {
     align-items: center;
     padding-left: 30px;
@@ -48,11 +53,11 @@
     }
     .hamburger {
       display: block;
+      margin-right: 57px;
     }
     .header-menu {
       display: flex;
       flex-direction: column;
-      // justify-content: center;
       gap: 62px;
       overflow: auto;
       padding: 30px 15px 20px 15px;
@@ -77,6 +82,48 @@
       visibility: visible;
       transform: translateX(0);
     }
+   
+  }
+  .l-main {
+    .l-ga-wr {
+      flex-direction: column;
+      padding: 0 20px 0 47px;
+      gap: 25px;
+      .l-games-about {
+        flex-direction: column;
+        gap: 18px;
+        .title h2 {
+          margin-top: 71px;
+          font-size: 4.5rem;
+          line-height: normal;
+          max-width: 889px;
+        }
+        .desc {
+          flex-direction: column;
+          .social-links {
+            position: absolute;
+            order: 2;
+            top: 723px;
+          }
+          .desc-content {
+            padding-top: 0;
+            padding-left: 0;
+            .text-box p {
+              max-width: 61%;
+            }
+          }
+        }
+      }
+      .pic-block {
+        justify-content: center;
+      }
+    }
+  }
+  .l-footer {
+    margin-top: 114px;
+    .l-contacts {
+      padding-left: 19px;
+    }
   }
 }
 @media (max-width: 991.98px) {
@@ -91,6 +138,9 @@
   .l-header {
   }
   .l-main {
+    .l-ga-wr .l-games-about .title h2 {
+      font-size: 3.1rem; // Ближе к  мобилке
+    }
   }
 }
 @media (max-width: 575.98px) {
@@ -100,6 +150,9 @@
     .logo {
       padding: 0;
     }
+    .hamburger {
+      margin-right: auto;
+    }
     .header-menu a {
       padding-left: 15px;
       font-size: 2.8rem;
@@ -107,6 +160,55 @@
     .lang-sw {
       width: 98px;
       height: 98px;
+    }
+  }
+  .l-main {
+    .l-ga-wr {
+      padding: 0 9px 42px 14px;
+      .l-games-about {
+        .title h2 {
+          font-size: 2rem;
+          margin-top: 53px;
+        }
+        .desc {
+          .social-links {
+            display: none;
+          }
+          .desc-content {
+            flex-direction: column;
+            gap: 25px;
+            &::before {
+              content: "";
+              max-width: 100%;
+              width: 786px;
+              height: 383px;
+              background-image: url("../img/unicorn.svg");
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+            .check-box {
+              width: 91px;
+            }
+            .text-box p {
+              max-width: 100%;
+              font-size: 1rem;
+              line-height: normal;
+              padding-top: 0;
+            }
+          }
+        }
+      }
+      .pic-block {
+        display: none;
+      }
+    }
+  }
+  .l-footer {
+    margin-top: 55px;
+    .l-contacts {
+      .footer-menu {
+        display: none;
+      }
     }
   }
 }
