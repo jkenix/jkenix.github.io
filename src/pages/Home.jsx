@@ -4,6 +4,14 @@ import { Link } from "react-router-dom";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 
+import pinterest from "../img/pinterest.svg";
+import Behance from "../img/Behance.svg";
+import Dribbble from "../img/Dribbble.svg";
+import Snapchat from "../img/Snapchat.svg";
+import Linkedin from "../img/Linkedin.svg";
+import Facebook from "../img/Facebook.svg";
+import unicorn from "../img/unicorn.svg";
+
 export default function Home() {
   return (
     <>
@@ -32,7 +40,7 @@ export default function Home() {
                 <div className="social-links">
                   <Link to="/">
                     <img
-                      src="../img/pinterest.svg"
+                      src={pinterest}
                       width={"32"}
                       height={"32"}
                       alt="pinterest"
@@ -41,7 +49,7 @@ export default function Home() {
                   </Link>
                   <Link to="/">
                     <img
-                      src="../img/Behance.svg"
+                      src={Behance}
                       width={"32"}
                       height={"32"}
                       alt="Behance"
@@ -50,7 +58,7 @@ export default function Home() {
                   </Link>
                   <Link to="/">
                     <img
-                      src="../img/Dribbble.svg"
+                      src={Dribbble}
                       width={"32"}
                       height={"32"}
                       alt="Dribbble"
@@ -59,7 +67,7 @@ export default function Home() {
                   </Link>
                   <Link to="/">
                     <img
-                      src="../img/Snapchat.svg"
+                      src={Snapchat}
                       width={"32"}
                       height={"32"}
                       alt="Snapchat"
@@ -68,7 +76,7 @@ export default function Home() {
                   </Link>
                   <Link to="/">
                     <img
-                      src="../img/Linkedin.svg"
+                      src={Linkedin}
                       width={"32"}
                       height={"32"}
                       alt="Linkedin"
@@ -77,7 +85,7 @@ export default function Home() {
                   </Link>
                   <Link to="/">
                     <img
-                      src="../img/Facebook.svg"
+                      src={Facebook}
                       width={"32"}
                       height={"32"}
                       alt="Facebook"
@@ -98,7 +106,7 @@ export default function Home() {
             </div>
             <div className="pic-block img__resp-block">
               <img
-                src="../img/unicorn.svg"
+                src={unicorn}
                 className="img__resp"
                 width="768"
                 height="733"

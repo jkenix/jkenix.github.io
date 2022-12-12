@@ -1,6 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import pinterest from "../img/pinterest.svg";
+import Behance from "../img/Behance.svg";
+import Dribbble from "../img/Dribbble.svg";
+import Snapchat from "../img/Snapchat.svg";
+import Linkedin from "../img/Linkedin.svg";
+import Facebook from "../img/Facebook.svg";
+
 function Footer() {
   return (
     <footer className="l-footer">
@@ -23,22 +30,22 @@ function Footer() {
         </nav>
         <div className="social-links">
           <Link to="/" title="Контакты">
-            <img src="../img/pinterest.svg" width={"24.99"} height={"24.99"} alt="pinterest" title="pinterest"></img>
+            <img src={pinterest} width={"24.99"} height={"24.99"} alt="pinterest" title="pinterest"></img>
           </Link>
           <Link to="/">
-            <img src="../img/Behance.svg" width={"24.99"} height={"24.99"} alt="Behance" title="Behance"></img>
+            <img src={Behance} width={"24.99"} height={"24.99"} alt="Behance" title="Behance"></img>
           </Link>
           <Link to="/">
-            <img src="../img/Dribbble.svg" width={"24.99"} height={"24.99"} alt="Dribbble" title="Dribbble"></img>
+            <img src={Dribbble} width={"24.99"} height={"24.99"} alt="Dribbble" title="Dribbble"></img>
           </Link>
           <Link to="/">
-            <img src="../img/Snapchat.svg" width={"24.99"} height={"24.99"} alt="Snapchat" title="Snapchat"></img>
+            <img src={Snapchat} width={"24.99"} height={"24.99"} alt="Snapchat" title="Snapchat"></img>
           </Link>
           <Link to="/">
-            <img src="../img/Linkedin.svg" width={"24.99"} height={"24.99"} alt="Linkedin" title="Linkedin"></img>
+            <img src={Linkedin} width={"24.99"} height={"24.99"} alt="Linkedin" title="Linkedin"></img>
           </Link>
           <Link to="/">
-            <img src="../img/Facebook.svg" width={"24.99"} height={"24.99"} alt="Facebook" title="Facebook"></img>
+            <img src={Facebook} width={"24.99"} height={"24.99"} alt="Facebook" title="Facebook"></img>
           </Link>
         </div>
       </div>
