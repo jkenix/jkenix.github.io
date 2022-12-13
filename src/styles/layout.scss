@@ -20,7 +20,6 @@
     }
   }
   .lang-sw {
-    background-color: #ce0002;
     top: 0;
     right: 0;
     width: 103px;
@@ -28,7 +27,7 @@
     display: flex;
     justify-content: center;
     place-items: center;
-
+    cursor: pointer;
     a {
       font-weight: 700;
       font-size: 1.25rem;
@@ -114,12 +113,10 @@
   .l-contacts {
     display: flex;
     flex-wrap: wrap;
-
     justify-content: space-between;
     padding-left: 24px;
     .company {
       padding-top: 12px;
-      // margin-right: auto;
       a {
         font-weight: 500;
         font-size: 16px;
@@ -128,7 +125,6 @@
     }
     .footer-menu {
       padding-top: 12px;
-      // margin-right: auto;
       a {
         font-weight: 500;
         font-size: 1rem;

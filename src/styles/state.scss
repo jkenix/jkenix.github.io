@@ -35,32 +35,39 @@
 }
 // Header
 .l-header {
-  a {
-    &:focus-visible {
-      outline: 2px solid #ff0000;
-    }
-  }
   nav a {
     &:hover {
       color: #ff0000;
     }
   }
+  .lang-sw {
+    &:hover {
+      background-color: #FE0002;
+    }
+    &:active {
+      background-color: #A60002;
+    }
+  }
 }
 // Main
-.l-main .l-ga-wr .check-box {
-  &:hover {
-    background-color: #FE0002;
+.l-main .l-ga-wr {
+  .social-links a {
+    &:focus-visible {
+      outline: 2px solid #ff0000;
+    }
   }
-  &:active {
-    background-color: #A60002;
+  .check-box {
+    &:hover {
+      background-color: #FE0002;
+    }
+    &:active {
+      background-color: #A60002;
+    }
   }
-}
-.check-box {
- 
 }
 // Footer
 .l-footer {
-  .l-author a {
+  .l-contacts a, .l-author a {
     &:hover {
       color: #ff0000;
     }

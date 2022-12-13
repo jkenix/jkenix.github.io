@@ -24,8 +24,7 @@
   }
 }
 @media (min-width: 1500px) {
-  .l-main .pic-block img {
-  }
+  
 }
 @media (max-width: 1399.98px) {
   // 1400px
@@ -41,9 +40,6 @@
 }
 @media (max-width: 1024.98px) {
   // 1024px
-  div[class=active] { // Доработать
-    color: blue;
-  }
   .l-header {
     align-items: center;
     padding-left: 30px;
@@ -59,14 +55,13 @@
       display: flex;
       flex-direction: column;
       gap: 62px;
-      overflow: auto;
-      padding: 30px 15px 20px 15px;
-      position: fixed;
+      padding: 30px 15px 390px 15px;
+      position: absolute;
+      height: 100%;
       top: 120px;
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: rgba(255, 255, 255, 0.9);
       z-index: 9;
       visibility: hidden;
       a {
@@ -80,9 +75,7 @@
     }
     .nav-active {
       visibility: visible;
-      transform: translateX(0);
     }
-   
   }
   .l-main {
     .l-ga-wr {
@@ -135,11 +128,12 @@
 }
 @media (max-width: 767.98px) {
   // 768px
-  .l-header {
+  .l-header .header-menu {
+    padding: 30px 15px 150px 15px;
   }
   .l-main {
     .l-ga-wr .l-games-about .title h2 {
-      font-size: 3.1rem; // Ближе к  мобилке
+      font-size: 3.1rem;
     }
   }
 }
@@ -153,9 +147,13 @@
     .hamburger {
       margin-right: auto;
     }
-    .header-menu a {
-      padding-left: 15px;
-      font-size: 2.8rem;
+    .header-menu {
+      height: 70%;
+      top: 98px;
+      a {
+        padding-left: 15px;
+        font-size: 2.8rem;
+      }
     }
     .lang-sw {
       width: 98px;
@@ -206,13 +204,18 @@
   .l-footer {
     margin-top: 55px;
     .l-contacts {
+      flex-direction: column;
+      align-items: center;
       .footer-menu {
         display: none;
       }
     }
   }
 }
-@media (max-width: 400.98px) {
+@media (max-width: 438.98px) {
+  .l-header .header-menu {
+    padding: 30px 15px 228px 15px;
+  }
 }
 @media (max-width: 320px) {
   body {

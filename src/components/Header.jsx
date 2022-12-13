@@ -8,12 +8,13 @@ export default function Header(props) {
   const handleClick = (event) => {
     // 👇️ toggle isActive state on click
     // event.currentTarget.classList.toggle("ham-active");
+    // const active = (document.body.style.overflow = "hidden");
     setIsActive((current) => !current);
+   
   };
-
   return (
     <>
-      <header className={props.hname}>
+      <header className={`l-header ${isActive ? "" : "lg-bg"}`}>
         <div
           className={`hamburger ${isActive ? "ham-active" : ""}`}
           onClick={handleClick}
@@ -61,5 +62,3 @@ export default function Header(props) {
     </>
   );
 }
-
-Header.defaultProps = { hname: "l-header" };

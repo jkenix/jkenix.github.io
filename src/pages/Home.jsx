@@ -1,4 +1,3 @@
-import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Header from "../components/Header.jsx";
@@ -13,6 +12,7 @@ import Facebook from "../img/Facebook.svg";
 import unicorn from "../img/unicorn.svg";
 
 export default function Home() {
+  
   return (
     <>
       <HelmetProvider>
@@ -29,7 +29,7 @@ export default function Home() {
             content="Page made by jkenix from layout Toy.Steam."
           />
         </Helmet>
-        <Header hname="l-header lg-bg" mlink="link-active" />
+        <Header mlink="link-active" />
         <div className="l-main lg-bg">
           <div className="l-ga-wr">
             <div className="l-games-about">
