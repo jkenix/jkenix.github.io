@@ -55,7 +55,7 @@
       display: flex;
       flex-direction: column;
       gap: 62px;
-      padding: 30px 15px 700px 15px;
+      padding: 30px 15px 680px 15px;
       position: absolute;
       height: 100%;
       top: 120px;
@@ -116,6 +116,7 @@
     margin-top: 114px;
     .l-contacts {
       padding-left: 19px;
+      .footer-menu {display: none;}
     }
   }
 }
@@ -128,6 +129,11 @@
 }
 @media (max-width: 767.98px) {
   // 768px
+  .l-header {
+    .header-menu {
+      padding: 30px 15px 480px 15px;
+    }
+  }
   .l-main {
     .l-ga-wr .l-games-about .title h2 {
       font-size: 3.1rem;
@@ -146,6 +152,7 @@
     }
     .header-menu {
       top: 98px;
+      padding: 30px 15px 260px 15px;
       a {
         padding-left: 15px;
         font-size: 2.8rem;
@@ -202,9 +209,6 @@
     .l-contacts {
       flex-direction: column;
       align-items: center;
-      .footer-menu {
-        display: none;
-      }
     }
   }
 }
