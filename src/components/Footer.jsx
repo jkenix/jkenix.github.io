@@ -14,38 +14,86 @@ function Footer() {
       <div className="l-contacts">
         <div className="company">
           <a
-            href="https://www.figma.com/file/6kFNHvBorfCJrZ81w9gF82/%D0%9A%D0%B5%D0%BC%D0%B5%D0%BD%D0%B3%D0%B5%D1%80-%2B"
+            href="https://www.figma.com/file/0hfNUTOuJDRHGWilFAUkFV/Toy.Stream---%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D1%82%D0%B8%D0%BF-(Copy)?t=TpUfLgFj0ACTCmEa-0"
             title="Figma original layout link"
           >
             © Toy.Stream, Inc.
           </a>
         </div>
         <nav className="footer-menu">
-          <Link to="/" title="Главная">Главная</Link>
-          <Link to="/company" title="Компания">Компания</Link>
-          <Link to="/games" title="Игры">Игры</Link>
-          <Link to="/career" title="Карьера">Карьера</Link>
-          <Link to="/news" title="Новости">Новости</Link>
-          <Link to="/contacts" title="Контакты">Контакты</Link>
+          <Link to="/" title="Главная">
+            Главная
+          </Link>
+          <Link to="/company" title="Компания">
+            Компания
+          </Link>
+          <Link to="/games" title="Игры">
+            Игры
+          </Link>
+          <Link to="/career" title="Карьера">
+            Карьера
+          </Link>
+          <Link to="/news" title="Новости">
+            Новости
+          </Link>
+          <Link to="/contacts" title="Контакты">
+            Контакты
+          </Link>
         </nav>
         <div className="social-links">
           <Link to="/" title="Контакты">
-            <img src={pinterest} width={"24.99"} height={"24.99"} alt="pinterest" title="pinterest"></img>
+            <img
+              src={pinterest}
+              width={"24.99"}
+              height={"24.99"}
+              alt="pinterest"
+              title="pinterest"
+            ></img>
           </Link>
           <Link to="/">
-            <img src={Behance} width={"24.99"} height={"24.99"} alt="Behance" title="Behance"></img>
+            <img
+              src={Behance}
+              width={"24.99"}
+              height={"24.99"}
+              alt="Behance"
+              title="Behance"
+            ></img>
           </Link>
           <Link to="/">
-            <img src={Dribbble} width={"24.99"} height={"24.99"} alt="Dribbble" title="Dribbble"></img>
+            <img
+              src={Dribbble}
+              width={"24.99"}
+              height={"24.99"}
+              alt="Dribbble"
+              title="Dribbble"
+            ></img>
           </Link>
           <Link to="/">
-            <img src={Snapchat} width={"24.99"} height={"24.99"} alt="Snapchat" title="Snapchat"></img>
+            <img
+              src={Snapchat}
+              width={"24.99"}
+              height={"24.99"}
+              alt="Snapchat"
+              title="Snapchat"
+            ></img>
           </Link>
           <Link to="/">
-            <img src={Linkedin} width={"24.99"} height={"24.99"} alt="Linkedin" title="Linkedin"></img>
+            <img
+              src={Linkedin}
+              width={"24.99"}
+              height={"24.99"}
+              alt="Linkedin"
+              title="Linkedin"
+            ></img>
           </Link>
           <Link to="/">
-            <img src={Facebook} width={"24.99"} height={"24.99"} alt="Facebook" title="Facebook"></img>
+            <img
+              src={Facebook}
+              width={"24.99"}
+              height={"24.99"}
+              alt="Facebook"
+              title="Facebook"
+            ></img>
           </Link>
         </div>
       </div>
