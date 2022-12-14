@@ -54,7 +54,7 @@
       }
       .desc {
         display: flex;
-        .social-links {
+        .social-links-vert {
           display: flex;
           flex-direction: column;
           gap: 15px;
@@ -133,7 +133,7 @@
         margin-right: 32px;
       }
     }
-    .social-links {
+    .social-links-hor {
       padding-top: 9px;
       a {margin-right: 9px;}
     }

@@ -10,7 +10,10 @@ export default function Header(props) {
     // event.currentTarget.classList.toggle("ham-active");
     // const active = (document.body.style.overflow = "hidden");
     setIsActive((current) => !current);
-   
+    let body = document.querySelector("body");
+    let sl = document.querySelector(".social-links-vert");
+    body.classList.toggle("overflow-hidden");
+    sl.classList.toggle("slv-active");
   };
   return (
     <>

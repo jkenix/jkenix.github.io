@@ -37,7 +37,7 @@ export default function Home() {
                 <h2>Мы создаем мобильные игры, в которые ты играешь</h2>
               </div>
               <div className="desc">
-                <div className="social-links">
+                <div className="social-links-vert">
                   <Link to="/">
                     <img
                       src={pinterest}

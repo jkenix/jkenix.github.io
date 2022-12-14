@@ -40,7 +40,7 @@ function Footer() {
             Контакты
           </Link>
         </nav>
-        <div className="social-links">
+        <div className="social-links-hor">
           <Link to="/" title="Контакты">
             <img
               src={pinterest}

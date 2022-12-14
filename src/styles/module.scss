@@ -1,5 +1,9 @@
 // Import mixins, variables
 @import "mixins_var.scss";
+// Body
+.overflow-hidden {
+  overflow: hidden;
+}
 // Hamburger
 .hamburger {
   width: 34px;
@@ -48,8 +52,14 @@
     }
   }
 }
-
 // Main
+.l-main .l-ga-wr .l-games-about .desc .slv-active {
+  position: absolute;
+  visibility: visible;
+  flex-direction: row;
+  z-index: 10;
+  
+}
 .img__resp-block {
   display: flex;
   img {
