@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { hydrateRoot } from "react-dom/client";
-import Header from "../components/Header.jsx";
+import Header from "../components/Header-wlg.jsx";
 import Footer from "../components/Footer.jsx";
 
 export default function Company() {
@@ -18,7 +18,7 @@ export default function Company() {
           <meta name="og:description" content="About company Toy.Stream." />
           <meta name="description" content="Toy.Steam - About company." />
         </Helmet>
-        <Header comlink="link-active"/>
+        <Header comlink="link-active" />
         <main className="l-main">
           <div className="l-company-about">
             <p style={{ fontSize: "5.5rem" }}>О компании</p>

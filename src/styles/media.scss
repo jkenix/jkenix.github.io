@@ -37,6 +37,44 @@
 @media (max-width: 1199.98px) {
   // 1200px
 }
+/* Портретная ориентация 1024px*/
+@media (max-width: 1024.98px) and (orientation: portrait) {
+  .l-header .header-menu {
+    // padding-top: 20px;
+    // gap: 20px;
+    gap: 30px;
+    position: fixed;
+    overflow: auto;
+    top: 120px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    visibility: hidden;
+    a {
+      font-size: 3.25rem;
+    }
+  }
+  .l-main .l-ga-wr .l-games-about .desc .slv-active {
+    top: 550px;
+    left: 100px;
+  }
+}
+/* Ландшафтная ориентация 1024px*/
+@media (max-width: 1024.98px) and (orientation: landscape) {
+  .l-header .header-menu {
+    padding-top: 0px;
+    gap: 15px;
+    a {
+      font-size: 2.4rem;
+    }
+  }
+  .l-main .l-ga-wr .l-games-about .desc .slv-active {
+    top: -120px;
+    left: 300px;
+  }
+}
+// Обычный режим 1024px
 @media (max-width: 1024.98px) {
   // 1024px
   .l-header {
@@ -53,12 +91,8 @@
     .header-menu {
       display: flex;
       flex-direction: column;
-      // padding-top: 20px;
-      // gap: 20px;
-      gap: 30px;
       position: fixed;
       overflow: auto;
-      height: 100%;
       top: 120px;
       bottom: 0;
       left: 0;
@@ -66,7 +100,6 @@
       z-index: 9;
       visibility: hidden;
       a {
-        font-size: 3.25rem;
         line-height: 120%;
         text-transform: uppercase;
         font-weight: 800;
@@ -97,11 +130,7 @@
           .social-links-vert {
             position: absolute;
             order: 2;
-            top: 723px;
-          }
-          .slv-active {
-            top: 750px;
-            left: 100px;
+            margin-top: 170px;
           }
           .desc-content {
             padding-top: 0;
@@ -146,6 +175,32 @@
     }
   }
 }
+/* Портретная ориентация 575px */
+@media (max-width: 575.98px) and (orientation: portrait) {
+  .l-header .header-menu {
+    padding-top: 20px;
+    a {
+      font-size: 2.8rem;
+    }
+  }
+  .l-main .l-ga-wr .l-games-about .desc .slv-active {
+    top: 450px;
+    left: 30px;
+  }
+}
+/* Ландшафтная ориентация 575px*/
+@media (max-width: 575.98px) and (orientation: landscape) {
+  .l-header .header-menu {
+    a {
+      font-size: 2.4rem;
+    }
+  }
+  .l-main .l-ga-wr .l-games-about .desc .slv-active {
+    top: -60px;
+    left: 250px;
+  }
+}
+// Обычный режим для мобильных
 @media (max-width: 575.98px) {
   // 576px
   .l-header {
@@ -160,7 +215,6 @@
       top: 98px;
       a {
         padding-left: 15px;
-        font-size: 2.8rem;
       }
     }
     .lang-sw {
@@ -179,10 +233,6 @@
         .desc {
           .social-links-vert {
             visibility: hidden;
-          }
-          .slv-active {
-            top: 650px;
-            left: 30px;
           }
           .desc-content {
             flex-direction: column;
@@ -215,8 +265,6 @@
   }
   .l-footer {
     margin-top: 55px;
-    .l-contacts {
-    }
   }
 }
 @media (max-width: 320px) {

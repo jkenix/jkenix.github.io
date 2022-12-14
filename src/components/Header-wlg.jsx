@@ -8,16 +8,16 @@ export default function Header(props) {
   const handleClick = (event) => {
     // 👇️ toggle isActive state on click
     // event.currentTarget.classList.toggle("ham-active");
-    // const active = (document.body.style.overflow = "hidden");
     setIsActive((current) => !current);
     let body = document.querySelector("body");
     let sl = document.querySelector(".social-links-vert");
     body.classList.toggle("overflow-hidden");
     sl.classList.toggle("slv-active");
   };
+ 
   return (
     <>
-      <header className={`l-header ${isActive ? "" : "lg-bg"}`}>
+      <header className={`l-header ${isActive ? "" : "wlg-bg"}`}>
         <div
           className={`hamburger ${isActive ? "ham-active" : ""}`}
           onClick={handleClick}

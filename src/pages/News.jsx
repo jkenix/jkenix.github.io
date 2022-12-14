@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Header from "../components/Header.jsx";
+import Header from "../components/Header-wlg.jsx";
 import Footer from "../components/Footer.jsx";
 
 export default function News() {
@@ -17,7 +17,7 @@ export default function News() {
           />
           <meta name="description" content="Toy.Stream News." />
         </Helmet>
-        <Header nlink="link-active"/>
+        <Header nlink="link-active" />
         <main className="l-main">
           <div className="l-company-about">
             <p style={{ fontSize: "5.5rem" }}>Новости</p>

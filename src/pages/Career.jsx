@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Header from "../components/Header.jsx";
+import Header from "../components/Header-wlg.jsx";
 import Footer from "../components/Footer.jsx";
 
 export default function Career() {
@@ -14,7 +14,7 @@ export default function Career() {
           <meta name="og:description" content="Post a job now!" />
           <meta name="description" content="Career in Toy.Stream." />
         </Helmet>
-        <Header carlink="link-active"/>
+        <Header carlink="link-active" />
         <main className="l-main">
           <div className="l-company-about">
             <p style={{ fontSize: "5.5rem" }}>Карьера</p>

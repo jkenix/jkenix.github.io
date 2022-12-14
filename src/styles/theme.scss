@@ -1,8 +1,5 @@
 // Theme classes
-.sw-bg {
-  background: #eeeeee;
-}
-.lg-bg {
+.wlg-bg {
   background: linear-gradient(to right, #fff, #fff 275px, #ffea2f 275px);
 }
 
@@ -56,13 +53,13 @@
   .header-menu {
     background-color: rgba(255, 255, 255, 0.9);
   }
-  .lg-bg {
+  .wlg-bg {
     background: linear-gradient(to right, #fff, #fff 97px, #ffea2f 97px);
   }
 }
 
 @media (max-width: 575.98px) {
-  .lg-bg {
+  .wlg-bg {
     background: linear-gradient(to right, #fff, #fff 70px, #ffea2f 70px);
   }
 }
