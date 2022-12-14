@@ -40,17 +40,7 @@
 /* Портретная ориентация 1024px*/
 @media (max-width: 1024.98px) and (orientation: portrait) {
   .l-header .header-menu {
-    // padding-top: 20px;
-    // gap: 20px;
     gap: 30px;
-    position: fixed;
-    overflow: auto;
-    top: 120px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 9;
-    visibility: hidden;
     a {
       font-size: 3.25rem;
     }

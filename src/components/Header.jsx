@@ -1,26 +1,25 @@
 import { React, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../img/Company-logo.svg";
+import headerswy from "../js/scripts";
 
 export default function Header(props) {
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = (event) => {
     // 👇️ toggle isActive state on click
-    // event.currentTarget.classList.toggle("ham-active");
     setIsActive((current) => !current);
     let body = document.querySelector("body");
     let sl = document.querySelector(".social-links-vert");
     body.classList.toggle("overflow-hidden");
     sl.classList.toggle("slv-active");
   };
- 
   return (
     <>
-      <header className={`l-header ${isActive ? "" : "wlg-bg"}`}>
+      <header className="l-header">
         <div
           className={`hamburger ${isActive ? "ham-active" : ""}`}
-          onClick={handleClick}
+          onClick={() => {handleClick(); headerswy()}}
         >
           <span className="hamburger-item"></span>
         </div>

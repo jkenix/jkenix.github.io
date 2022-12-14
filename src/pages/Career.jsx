@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Header from "../components/Header-wlg.jsx";
+import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 
 export default function Career() {
