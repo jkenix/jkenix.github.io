@@ -12,8 +12,8 @@ import Facebook from "../img/Facebook.svg";
 import unicorn from "../img/unicorn.svg";
 
 export default function Home() {
-  
- 
+  let bodyw = document.querySelector("body");
+  bodyw.classList.add("b-ylg-bg");
 
   return (
     <>
