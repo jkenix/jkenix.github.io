@@ -47,7 +47,6 @@
   }
   .slv-active {
     .social-links-vert {
-      flex-direction: row;
       top: 550px;
       left: 100px;
     }
@@ -64,6 +63,7 @@
   }
   .slv-active {
     .social-links-vert {
+      
       top: -40px;
       left: 400px;
     }
@@ -109,6 +109,8 @@
   .l-main {
     .social-links-vert {
       position: absolute;
+      flex-direction: row;
+      flex-wrap: wrap;
       order: 2;
       margin-top: 170px;
     }
@@ -127,7 +129,6 @@
         }
         .desc {
           flex-direction: column;
-
           .desc-content {
             padding-top: 0;
             padding-left: 0;
@@ -192,8 +193,7 @@
     }
   }
   .l-main .social-links-vert {
-    top: -60px;
-    left: 270px;
+    top: 600px;
   }
 }
 // Обычный режим для мобильных
