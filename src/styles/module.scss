@@ -53,12 +53,16 @@
   }
 }
 // Main
-.l-main .l-ga-wr .l-games-about .desc .slv-active {
-  position: absolute;
-  visibility: visible;
-  flex-direction: row;
-  z-index: 10;
-  
+.slv-active {
+  .social-links-vert {
+    visibility: visible;
+    z-index: 10;
+  }
+}
+.social-links-vert {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 .img__resp-block {
   display: flex;

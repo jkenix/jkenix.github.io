@@ -10,9 +10,9 @@ export default function Header(props) {
     // 👇️ toggle isActive state on click
     setIsActive((current) => !current);
     let body = document.querySelector("body");
-    let sl = document.querySelector(".social-links-vert");
+    let main = document.querySelector(".l-main");
     body.classList.toggle("overflow-hidden");
-    sl.classList.toggle("slv-active");
+    main.classList.toggle("slv-active");
   };
   return (
     <>

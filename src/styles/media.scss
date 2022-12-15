@@ -45,9 +45,12 @@
       font-size: 3.25rem;
     }
   }
-  .l-main .l-ga-wr .l-games-about .desc .slv-active {
-    top: 550px;
-    left: 100px;
+  .slv-active {
+    .social-links-vert {
+      flex-direction: row;
+      top: 550px;
+      left: 100px;
+    }
   }
 }
 /* Ландшафтная ориентация 1024px*/
@@ -59,9 +62,11 @@
       font-size: 2.4rem;
     }
   }
-  .l-main .l-ga-wr .l-games-about .desc .slv-active {
-    top: -120px;
-    left: 300px;
+  .slv-active {
+    .social-links-vert {
+      top: -40px;
+      left: 400px;
+    }
   }
 }
 // Обычный режим 1024px
@@ -102,6 +107,11 @@
     }
   }
   .l-main {
+    .social-links-vert {
+      position: absolute;
+      order: 2;
+      margin-top: 170px;
+    }
     .l-ga-wr {
       flex-direction: column;
       padding: 0 20px 0 47px;
@@ -117,11 +127,7 @@
         }
         .desc {
           flex-direction: column;
-          .social-links-vert {
-            position: absolute;
-            order: 2;
-            margin-top: 170px;
-          }
+
           .desc-content {
             padding-top: 0;
             padding-left: 0;
@@ -173,7 +179,7 @@
       font-size: 2.8rem;
     }
   }
-  .l-main .l-ga-wr .l-games-about .desc .slv-active {
+  .l-main .social-links-vert {
     top: 450px;
     left: 30px;
   }
@@ -185,9 +191,9 @@
       font-size: 2.4rem;
     }
   }
-  .l-main .l-ga-wr .l-games-about .desc .slv-active {
+  .l-main .social-links-vert {
     top: -60px;
-    left: 250px;
+    left: 270px;
   }
 }
 // Обычный режим для мобильных
@@ -213,6 +219,9 @@
     }
   }
   .l-main {
+    .social-links-vert {
+      visibility: hidden;
+    }
     .l-ga-wr {
       padding: 0 9px 42px 14px;
       .l-games-about {
@@ -221,9 +230,6 @@
           margin-top: 53px;
         }
         .desc {
-          .social-links-vert {
-            visibility: hidden;
-          }
           .desc-content {
             flex-direction: column;
             gap: 25px;
