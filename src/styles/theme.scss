@@ -1,9 +1,4 @@
 // Theme classes
-.b-ylg-bg {
-  .l-header {
-    background: linear-gradient(to right, #fff, #fff 275px, #ffea2f 275px);
-  }
-}
 .ylg-bg {
   background: linear-gradient(to right, #fff, #fff 275px, #ffea2f 275px);
 }
@@ -61,20 +56,10 @@
   .ylg-bg {
     background: linear-gradient(to right, #fff, #fff 97px, #ffea2f 97px);
   }
-  .b-ylg-bg {
-    .l-header {
-      background: linear-gradient(to right, #fff, #fff 97px, #ffea2f 97px);
-    }
-  }
 }
 
 @media (max-width: 575.98px) {
   .ylg-bg {
     background: linear-gradient(to right, #fff, #fff 70px, #ffea2f 70px);
-  }
-  .b-ylg-bg {
-    .l-header {
-      background: linear-gradient(to right, #fff, #fff 70px, #ffea2f 70px);
-    }
   }
 }
