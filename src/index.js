@@ -10,7 +10,6 @@ import "./styles/mixins_var.scss";
 import "./styles/module.scss";
 import "./styles/state.scss";
 import "./styles/theme.scss";
-// import "./js/scripts.js";
 
 const container = document.getElementById("wrapper");
 const defroot = createRoot(container);

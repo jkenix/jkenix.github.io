@@ -1,5 +1,9 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Link } from "react-router-dom";
+
+import { ShowMenu, ShowMenuylg } from "../js/scripts";
+import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 
 export default function Career() {
@@ -13,7 +17,17 @@ export default function Career() {
           <meta name="og:description" content="Post a job now!" />
           <meta name="description" content="Career in Toy.Stream." />
         </Helmet>
-        <Header carlink="link-active" />
+        <header className="l-header">
+          <div
+            className="hamburger"
+            onClick={() => {
+              ShowMenu();
+            }}
+          >
+            <span className="hamburger-item"></span>
+          </div>
+          <Header carlink="link-active" />
+        </header>
         <main className="l-main">
           <div className="l-company-about">
             <p style={{ fontSize: "5.5rem" }}>Карьера</p>

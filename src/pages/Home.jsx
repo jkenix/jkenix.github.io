@@ -1,7 +1,9 @@
 import { React, useEffect, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import logo from "../img/Company-logo.svg";
+
+import { ShowMenu, ShowMenuylg } from "../js/scripts";
+import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 
 import pinterest from "../img/pinterest.svg";
@@ -13,16 +15,6 @@ import Facebook from "../img/Facebook.svg";
 import unicorn from "../img/unicorn.svg";
 
 export default function Home() {
-  const [isActive, setIsActive] = useState(false);
-  const handleClick = (event) => {
-    // 👇️ toggle isActive state on click
-    setIsActive((current) => !current);
-    let body = document.querySelector("body");
-    let main = document.querySelector(".l-main");
-    body.classList.toggle("overflow-hidden");
-    main.classList.toggle("slv-active");
-  };
-
   return (
     <>
       <HelmetProvider>
@@ -39,52 +31,17 @@ export default function Home() {
             content="Page made by jkenix from layout Toy.Steam."
           />
         </Helmet>
-        <header className={`l-header ${isActive ? "" : "ylg-bg"}`}>
+        <header className="l-header ylg-bg">
           <div
-            className={`hamburger ${isActive ? "ham-active" : ""}`}
+            className="hamburger"
             onClick={() => {
-              handleClick();
+              ShowMenu();
+              ShowMenuylg();
             }}
           >
             <span className="hamburger-item"></span>
           </div>
-          <Link className="logo" to="/">
-            <img
-              src={logo}
-              alt="Toy.Stream logo"
-              width="135"
-              height="75"
-              title="Toy.Stream"
-            />
-          </Link>
-          <nav
-            className={`header-menu ${isActive ? "nav-active" : ""}`}
-            onClick={handleClick}
-          >
-            <Link className="link-active" to="/" title="Главная">
-              Главная
-            </Link>
-            <Link to="/company" title="Компания">
-              Компания
-            </Link>
-            <Link to="/games" title="Игры">
-              Игры
-            </Link>
-            <Link to="/career" title="Карьера">
-              Карьера
-            </Link>
-            <Link to="/news" title="Новости">
-              Новости
-            </Link>
-            <Link to="/contacts" title="Контакты">
-              Контакты
-            </Link>
-          </nav>
-          <div className="lang-sw">
-            <Link to="/" title="Switch language">
-              ENG
-            </Link>
-          </div>
+          <Header mlink="link-active" />
         </header>
         <div className="l-main ylg-bg">
           <div className="l-ga-wr">
