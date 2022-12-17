@@ -174,7 +174,7 @@
 .l-main .l-m-interno-reviews .l-ir-content .reviews-block .review .reviewer-info .desc-text-block {
   padding-top: 6.5px;
 }
-.l-main .l-m-interno-reviews .l-ir-content .reviews-block .review .reviewer-info .desc-text-block #desc-title {
+.l-main .l-m-interno-reviews .l-ir-content .reviews-block .review .reviewer-info .desc-text-block .desc-title {
   line-height: 38px;
 }
 .l-main .l-m-interno-reviews .l-ir-content .reviews-block .review .reviewer-info .desc-text-block span {
@@ -228,7 +228,7 @@
   display: flex;
   justify-content: space-between;
 }
-.l-main .l-m-recent-projects .l-rp-content .rp-block .desc-block .desc-text-block #desc-title {
+.l-main .l-m-recent-projects .l-rp-content .rp-block .desc-block .desc-text-block .desc-title {
   line-height: 38px;
 }
 .l-main .l-m-recent-projects .l-rp-content .rp-block .desc-block .desc-text-block span {
@@ -333,7 +333,7 @@
 .l-main .l-m-recent-blogs .l-rb-content .recent-blog .desc-text-block {
   gap: 10.41px;
 }
-.l-main .l-m-recent-blogs .l-rb-content .recent-blog .desc-text-block #desc-title {
+.l-main .l-m-recent-blogs .l-rb-content .recent-blog .desc-text-block .desc-title {
   margin-bottom: 10.41px;
   line-height: 35px;
   letter-spacing: 0.5px;

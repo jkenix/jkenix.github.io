@@ -192,7 +192,7 @@
     grid-template-columns: repeat(auto-fit, minmax(284.2px, 1fr));
     justify-items: center;
   }
-  .l-footer #desc-title {
+  .l-footer .desc-title {
     font-size: 2rem;
   }
   .l-footer-contacts .social-block {
