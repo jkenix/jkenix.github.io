@@ -10,7 +10,7 @@ import Footer from "../components/Footer.jsx";
 import mountain from "../img/mountain.png";
 import champ from "../img/champ.png";
 import flag from "../img/flag.png";
-import star from "../img/star.png";
+import star from "../img/staricon.png";
 
 export default function Company() {
   return (
