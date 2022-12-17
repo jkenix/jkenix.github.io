@@ -23,7 +23,22 @@
     gap: 10px;
   }
 }
-@media (min-width: 1500px) {
+@media (max-width: 1500px) {
+  // .l-main .l-ca-wr .l-company-about .title h2 {
+  //   font-size: 2rem;
+  // }
+  .l-main .l-ca-wr {
+    gap: 30px;
+    .l-company-about .title h2 {
+      font-size: 3.8rem;
+    }
+    .l-company-stats {
+      gap: 30px;
+      .l-sc-2 {
+        padding-left: 0px;
+      }
+    }
+  }
 }
 @media (max-width: 1399.98px) {
   // 1400px
@@ -36,6 +51,9 @@
 }
 @media (max-width: 1199.98px) {
   // 1200px
+  .l-main .l-ca-wr {
+    padding-left: 40px;
+  }
 }
 /* Портретная ориентация 1024px*/
 @media (max-width: 1024.98px) and (orientation: portrait) {
@@ -47,6 +65,7 @@
   }
   .slv-active {
     .social-links-vert {
+      flex-direction: row;
       top: 550px;
       left: 100px;
     }
@@ -63,7 +82,7 @@
   }
   .slv-active {
     .social-links-vert {
-      
+      flex-direction: row;
       top: -40px;
       left: 400px;
     }
@@ -84,9 +103,8 @@
       margin-right: 57px;
     }
     .header-menu {
-      display: flex;
-      flex-direction: column;
-      position: fixed;
+      @include flexcolumn();
+      position: absolute;
       overflow: auto;
       top: 120px;
       bottom: 0;
@@ -105,15 +123,21 @@
     .nav-active {
       visibility: visible;
     }
+    // .nav-active-ac {
+    //   height: 200vh;
+    // }
   }
   .l-main {
     .social-links-vert {
       position: absolute;
-      flex-direction: row;
       flex-wrap: wrap;
       order: 2;
       margin-top: 170px;
     }
+    .slv-hidden {
+      display: none;
+    }
+    // Main page
     .l-ga-wr {
       flex-direction: column;
       padding: 0 20px 0 47px;
@@ -142,6 +166,29 @@
         justify-content: center;
       }
     }
+    // About Company
+    .l-ca-wr {
+      flex-direction: column;
+      padding-top: 55px;
+      .social-links-vert {
+        padding-top: 0;
+        position: absolute;
+      }
+      .l-company-about {
+        justify-content: center;
+        gap: 0;
+        padding-left: 0;
+        .title h2 {
+          font-size: 4.5rem;
+        }
+      }
+      .l-company-stats {
+        gap: 147px;
+        padding-top: 60px;
+        padding-right: 110px;
+        justify-content: center;
+      }
+    }
   }
   .l-footer {
     margin-top: 114px;
@@ -154,21 +201,20 @@
   }
 }
 @media (max-width: 991.98px) {
-  // 992px
-  .l-header {
-  }
-  .l-main {
-  }
 }
 @media (max-width: 767.98px) {
   // 768px
-  .l-header {
-    .header-menu {
-    }
-  }
   .l-main {
     .l-ga-wr .l-games-about .title h2 {
       font-size: 3.1rem;
+    }
+    .l-ca-wr {
+      .l-company-about .title h2 {
+        font-size: 4.1rem;
+      }
+      .l-company-stats {
+        padding-right: 0;
+      }
     }
   }
 }
@@ -220,8 +266,9 @@
   }
   .l-main {
     .social-links-vert {
-      visibility: hidden;
+      display: none;
     }
+    // Main page
     .l-ga-wr {
       padding: 0 9px 42px 14px;
       .l-games-about {
@@ -256,6 +303,59 @@
       }
       .pic-block {
         display: none;
+      }
+    }
+    // About Company
+    .l-ca-wr {
+      padding-right: 8px;
+      padding-left: 15px;
+      .l-company-about {
+        justify-content: start;
+        .title {
+          padding-top: 3px;
+          padding-left: 0px;
+          h2 {
+            font-size: 2rem;
+          }
+          .text-desc p {
+            font-size: 1rem;
+            line-height: 20px;
+            max-width: 98%;
+            &:nth-child(1) {
+              margin-top: 0;
+            }
+            &:nth-child(3) {
+              margin-top: 15px;
+            }
+          }
+        }
+      }
+      .l-company-stats {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding-top: 23px;
+        .l-scolumn {
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 15px;
+          justify-content: center;
+          .l-sblock {
+            align-items: center;
+            gap: 0;
+            img {
+              width: 100px;
+              height: 101.25px;
+            }
+            .text-block {
+              align-items: center;
+              text-align: center;
+              .num-desc {
+                width: 160px;
+              }
+            }
+          }
+        }
       }
     }
   }

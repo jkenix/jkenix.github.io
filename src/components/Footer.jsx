@@ -8,7 +8,7 @@ import Snapchat from "../img/Snapchat.svg";
 import Linkedin from "../img/Linkedin.svg";
 import Facebook from "../img/Facebook.svg";
 
-function Footer() {
+function Footer(props) {
   return (
     <footer className="l-footer">
       <div className="l-contacts">

@@ -14,13 +14,14 @@
 html {
   scroll-behavior: smooth;
 }
-
+h2 {
+  text-transform: uppercase;
+}
 h2,
 h3 {
   margin: 0;
   font-family: "ZonaPro-ExtraBold";
 }
-
 p,
 a,
 ul,
@@ -34,7 +35,6 @@ address {
   font-weight: 400;
   margin: 0;
 }
-
 a {
   text-decoration: none;
 }

@@ -2,7 +2,12 @@
 .ylg-bg {
   background: linear-gradient(to right, #fff, #fff 275px, #ffea2f 275px);
 }
-
+.ylg-bg-com {
+  background: linear-gradient(to right, #fff, #fff 850px, #ffea2f 850px);
+}
+.ylg-bg-at {
+  background: linear-gradient(to left, #fff, #fff 833px, #ffea2f 833px);
+}
 // Header
 .l-header {
   .link-active {
@@ -22,6 +27,7 @@
 
 // Main
 .l-main {
+  // Main page
   .l-games-about {
     .title h2 {
       color: #000000;
@@ -32,6 +38,15 @@
     }
     p {
       color: #000000;
+    }
+  }
+  // About Company
+  .l-ca-wr {
+    .num-title {
+      color: #000000;
+    }
+    .num-desc {
+      color: #646464;
     }
   }
 }
@@ -56,10 +71,19 @@
   .ylg-bg {
     background: linear-gradient(to right, #fff, #fff 97px, #ffea2f 97px);
   }
+  .ylg-bg-com {
+    background: linear-gradient(to right, #fff, #fff 97px, #ffea2f 97px);
+  }
+  .ylg-bg-at {
+    background: white;
+  }
 }
 
 @media (max-width: 575.98px) {
   .ylg-bg {
+    background: linear-gradient(to right, #fff, #fff 70px, #ffea2f 70px);
+  }
+  .ylg-bg-com {
     background: linear-gradient(to right, #fff, #fff 70px, #ffea2f 70px);
   }
 }
