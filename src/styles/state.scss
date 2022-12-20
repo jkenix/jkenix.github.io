@@ -1,6 +1,7 @@
 // Import mixins, variables
 @import "mixins_var.scss";
-// State of modules and site skeleton
+/* State of modules and site skeleton */
+
 // Scroll
 #scroll_top {
   display: none;
@@ -33,6 +34,17 @@
     transition: fill 0s ease-out;
   }
 }
+// Buttons
+.itc-slider__btn {
+  &:hover,
+  &:focus {
+    &::before {
+      background-image: url("/src/img/btn-slider-white.svg");
+    }
+  }
+}
+
+/* Page content (divs) */
 // Header
 .l-header {
   .link-active {
@@ -46,10 +58,10 @@
   }
   .lang-sw {
     &:hover {
-      background-color: #FE0002;
+      background-color: #fe0002;
     }
     &:active {
-      background-color: #A60002;
+      background-color: #a60002;
     }
   }
 }
@@ -62,16 +74,17 @@
   }
   .check-box {
     &:hover {
-      background-color: #FE0002;
+      background-color: #fe0002;
     }
     &:active {
-      background-color: #A60002;
+      background-color: #a60002;
     }
   }
 }
 // Footer
 .l-footer {
-  .l-contacts a, .l-author a {
+  .l-contacts a,
+  .l-author a {
     &:hover {
       color: #ff0000;
     }

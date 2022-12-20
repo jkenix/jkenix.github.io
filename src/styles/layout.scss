@@ -1,6 +1,6 @@
 // Import mixins, variables
 @import "mixins_var.scss";
-// Layout classes
+/* Layout classes */ 
 #wrapper {
   max-width: 1920px;
   margin: 0 auto;
@@ -139,6 +139,7 @@
     .l-company-stats {
       display: flex;
       padding-top: 5px;
+      padding-bottom: 121px;
       .l-scolumn {
         @include flexcolumn();
         gap: 44px;
@@ -166,9 +167,29 @@
     }
   }
   .l-at-wr {
-    padding-top: 209px;
+    padding-top: 96px;
+    padding-left: 185px;
+    padding-right: 151px;
     .l-about-team {
-
+      .l-at-title {
+        display: flex;
+        padding-right: 106px;
+        justify-content: space-between;
+        h2 {
+          font-size: 4.5rem;
+          font-weight: 800;
+          width: 603px;
+          line-height: 85px;
+        }
+        .sliders-block {
+          align-items: center;
+          display: flex;
+          height: 67px;
+          width: 219px;
+          padding-top: 30px;
+          justify-content: space-between;
+        }
+      }
     }
   }
 }

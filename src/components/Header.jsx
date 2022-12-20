@@ -17,11 +17,7 @@ export default function Header(props) {
         />
       </Link>
       <nav className="header-menu">
-        <Link
-          className={props.mlink}
-          to="/"
-          title="Главная"
-        >
+        <Link className={props.mlink} to="/" title="Главная">
           Главная
         </Link>
         <Link
@@ -76,9 +72,7 @@ export default function Header(props) {
         </Link>
       </nav>
       <div className="lang-sw">
-        <Link to="/" title="Switch language" onClick={() => {
-            bhremove();
-          }}>
+        <Link to="/" title="Switch language">
           ENG
         </Link>
       </div>

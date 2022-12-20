@@ -25,6 +25,18 @@ export default function Home() {
             name="description"
             content="Page made by jkenix from layout Toy.Steam."
           />
+          <meta
+            property="og:image"
+            content="https://jkenix.netlify.app/assets/3d25a8f3ee818996bac1.svg"
+          />
+          <meta
+            property="og:image:width"
+            content="200"
+          />
+          <meta
+            property="og::image:height"
+            content="200"
+          />
         </Helmet>
         <header className="l-header ylg-bg">
           <div

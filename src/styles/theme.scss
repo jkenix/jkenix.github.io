@@ -1,4 +1,4 @@
-// Theme classes
+/* Theme classes */
 .ylg-bg {
   background: linear-gradient(to right, #fff, #fff 275px, #ffea2f 275px);
 }
@@ -8,6 +8,21 @@
 .ylg-bg-at {
   background: linear-gradient(to left, #fff, #fff 833px, #ffea2f 833px);
 }
+
+/* Buttons */
+// Buttons slider
+.itc-slider__btn {
+  &:hover,
+  &:focus {
+    background-color: #ce0002;
+  }
+  &:active:focus {
+    box-shadow: 0 0 0 0.25rem rgb(130 138 145 / 50%);
+    transition: box-shadow 0s ease-in-out;
+  }
+}
+
+/* Color styles for page content */
 // Header
 .l-header {
   .link-active {
@@ -18,13 +33,13 @@
   }
   .lang-sw {
     background-color: #ce0002;
+    color: #ffffff;
     a {
+      // Заменить!
       color: #ffffff;
     }
   }
 }
-// Buttons
-
 // Main
 .l-main {
   // Main page

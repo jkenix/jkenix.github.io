@@ -1,8 +1,12 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Link } from "react-router-dom";
 
-import { ShowMenu, ShowMenuylgcom, NavActive, NavActiveAc } from "../js/scripts";
+import {
+  ShowMenu,
+  ShowMenuylgcom,
+  NavActive,
+  NavActiveAc,
+} from "../js/scripts";
 import Header from "../components/Header.jsx";
 import Sociallinksvert from "../components/Sociallinksvert.jsx";
 import Footer from "../components/Footer.jsx";
@@ -41,7 +45,7 @@ export default function Company() {
           <Header comlink="link-active" />
         </header>
         <main className="l-main">
-          <div className="l-ca-wr ylg-bg-com">
+          {/* <div className="l-ca-wr ylg-bg-com">
           <Sociallinksvert slvname="social-links-vert slv-hidden" />
             <div className="l-company-about">
               <div className="title">
@@ -129,11 +133,15 @@ export default function Company() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="l-at-wr ylg-bg-at">
             <div className="l-about-team">
               <div className="l-at-title">
                 <h2>Наша команда</h2>
+                <div className="sliders-block">
+                  <button class="itc-slider__btn itc-slider__btn_prev"></button>
+                  <button class="itc-slider__btn itc-slider__btn_next"></button>
+                </div>
               </div>
               <div className="l-at-content"></div>
             </div>

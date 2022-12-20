@@ -1,6 +1,7 @@
 // Import mixins
 @import "mixins_var.scss";
-// Media main
+/* Media styles */
+// 2099+ px
 @media (min-width: 2099px) {
   #scroll_top {
     width: 300px;
@@ -8,6 +9,7 @@
     font-size: 100px;
   }
 }
+// 1921+ px
 @media (min-width: 1921px) {
   #scroll_top {
     min-width: 80px;
@@ -23,10 +25,8 @@
     gap: 10px;
   }
 }
+// 1500px
 @media (max-width: 1500px) {
-  // .l-main .l-ca-wr .l-company-about .title h2 {
-  //   font-size: 2rem;
-  // }
   .l-main .l-ca-wr {
     gap: 30px;
     .l-company-about .title h2 {
@@ -40,8 +40,8 @@
     }
   }
 }
+// 1400px
 @media (max-width: 1399.98px) {
-  // 1400px
   .l-main {
   }
   .l-author {
@@ -49,8 +49,8 @@
     gap: 0;
   }
 }
+// 1200px
 @media (max-width: 1199.98px) {
-  // 1200px
   .l-main .l-ca-wr {
     padding-left: 40px;
   }
@@ -90,7 +90,6 @@
 }
 // Обычный режим 1024px
 @media (max-width: 1024.98px) {
-  // 1024px
   .l-header {
     align-items: center;
     padding-left: 30px;
@@ -123,9 +122,6 @@
     .nav-active {
       visibility: visible;
     }
-    // .nav-active-ac {
-    //   height: 200vh;
-    // }
   }
   .l-main {
     .social-links-vert {
@@ -200,10 +196,11 @@
     }
   }
 }
+// 991px
 @media (max-width: 991.98px) {
 }
-@media (max-width: 767.98px) {
-  // 768px
+// 768px
+@media (max-width: 767.98px) { 
   .l-main {
     .l-ga-wr .l-games-about .title h2 {
       font-size: 3.1rem;
@@ -242,7 +239,7 @@
     top: 600px;
   }
 }
-// Обычный режим для мобильных
+// Обычный режим (575px)
 @media (max-width: 575.98px) {
   // 576px
   .l-header {
@@ -363,6 +360,7 @@
     margin-top: 55px;
   }
 }
+// 320px
 @media (max-width: 320px) {
   body {
     width: 320px;
