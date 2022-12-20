@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
-import { ShowMenu, ShowMenuylg } from "../js/scripts";
+import { ShowMenu, NavActive } from "../js/scripts";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 
@@ -25,6 +25,7 @@ export default function News() {
             className="hamburger"
             onClick={() => {
               ShowMenu();
+              NavActive();
             }}
           >
             <span className="hamburger-item"></span>

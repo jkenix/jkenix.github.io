@@ -2,7 +2,7 @@ import { React, useEffect, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
-import { ShowMenu, ShowMenuylg, NavActiveMain } from "../js/scripts";
+import { ShowMenu, ShowMenuylg, NavActive, NavActiveMain } from "../js/scripts";
 import Header from "../components/Header.jsx";
 import Sociallinksvert from "../components/Sociallinksvert.jsx";
 import Footer from "../components/Footer.jsx";
@@ -32,6 +32,7 @@ export default function Home() {
             onClick={() => {
               ShowMenu();
               ShowMenuylg();
+              NavActive();
               NavActiveMain();
             }}
           >

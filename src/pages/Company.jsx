@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
-import { ShowMenu, ShowMenuylgcom, NavActiveAc } from "../js/scripts";
+import { ShowMenu, ShowMenuylgcom, NavActive, NavActiveAc } from "../js/scripts";
 import Header from "../components/Header.jsx";
 import Sociallinksvert from "../components/Sociallinksvert.jsx";
 import Footer from "../components/Footer.jsx";
@@ -32,6 +32,7 @@ export default function Company() {
             onClick={() => {
               ShowMenu();
               ShowMenuylgcom();
+              NavActive();
               NavActiveAc();
             }}
           >

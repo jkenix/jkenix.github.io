@@ -35,6 +35,10 @@
 }
 // Header
 .l-header {
+  .link-active {
+    pointer-events: none;
+    cursor: default;
+  }
   nav a {
     &:hover {
       color: #ff0000;
