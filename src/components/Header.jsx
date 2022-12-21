@@ -17,7 +17,14 @@ export default function Header(props) {
         />
       </Link>
       <nav className="header-menu">
-        <Link className={props.mlink} to="/" title="Главная">
+        <Link
+          className={props.mlink}
+          to="/"
+          title="Главная"
+          onClick={() => {
+            bhremove();
+          }}
+        >
           Главная
         </Link>
         <Link

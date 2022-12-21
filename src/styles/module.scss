@@ -53,19 +53,31 @@
     }
   }
 }
-// Main
+/* Main */
 .l-main {
 }
+// Active menu script
 .slv-active {
   .social-links-vert {
     display: flex;
     z-index: 10;
   }
+  .social-links-vert-at {
+    padding-top: 0;
+    padding-left: 0;
+  }
 }
+// Def sl styles
 .social-links-vert {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+// Sl styles for about team page
+.social-links-vert-at {
+  position: fixed;
+  padding-top: 276px;
+  padding-left: 90px;
 }
 // Images
 .img__resp-block {
@@ -76,4 +88,44 @@
 }
 .img__resp {
   max-width: 100%;
-} 
+}
+// Buttons
+.itc-slider__btn {
+  /* position: absolute; */
+  /* top: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 67px;
+  height: 67px;
+  color: #fff;
+  text-align: center;
+  /* background: rgb(0 0 0 / 20%); */
+  border: none;
+  /* transform: translateY(-50%); */
+  cursor: pointer;
+}
+.itc-slider__btn::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 14px;
+  /* background: transparent no-repeat center center; */
+  background-size: 100% 100%;
+}
+
+.itc-slider__btn_prev::before {
+  background-image: url("/src/img/btn-slider.svg");
+  transform: translate(0%, 0%) scale(-1, -1);
+}
+
+.itc-slider__btn_next::before {
+  background-image: url("/src/img/btn-slider.svg");
+}
+.itc-slider__btn_prev {
+  left: 0;
+}
+
+.itc-slider__btn_next {
+  right: 0;
+}
