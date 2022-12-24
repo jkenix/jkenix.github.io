@@ -1,8 +1,10 @@
 import React from "react";
-import {createRoot} from "react-dom/client";
+import { createRoot } from "react-dom/client";
 
 import App from "./App.jsx";
 import "./styles/lib/normalize.css";
+import "./styles/lib/slick.css";
+import "./styles/lib/slick-theme.css";
 import "./styles/base.scss";
 import "./styles/layout.scss";
 import "./styles/media.scss";

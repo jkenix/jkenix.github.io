@@ -8,20 +8,7 @@
 .ylg-bg-at {
   background: linear-gradient(to left, #fff, #fff 833px, #ffea2f 833px);
 }
-
 /* Buttons */
-// Buttons slider
-.itc-slider__btn {
-  &:hover,
-  &:focus {
-    background-color: #ce0002;
-  }
-  &:active:focus {
-    border: 1px solid transparent;
-    box-shadow: 0 0 0 0.15rem rgb(130 138 145 / 50%);
-    transition: border-color .15s ease-in-out;
-  }
-}
 
 /* Color styles for page content */
 // Header
@@ -62,6 +49,14 @@
       color: #000000;
     }
     .num-desc {
+      color: #646464;
+    }
+  }
+  .l-at-wr {
+    .t-name, .t-spec {
+      color: #000000;
+    }
+    .t-q, q {
       color: #646464;
     }
   }

@@ -1,6 +1,6 @@
 // Import mixins, variables
 @import "mixins_var.scss";
-/* Layout classes */ 
+/* Layout classes */
 #wrapper {
   max-width: 1920px;
   margin: 0 auto;
@@ -166,33 +166,45 @@
     padding-top: 96px;
     padding-left: 185px;
     padding-right: 151px;
+    padding-bottom: 84px;
     .l-about-team {
       @include flexcolumn();
+      gap: 21px;
       .l-at-title {
-        display: flex;
-        padding-right: 106px;
-        justify-content: space-between;
         h2 {
           font-size: 4.5rem;
           font-weight: 800;
           width: 603px;
           line-height: 85px;
         }
-        .sliders-block {
-          align-items: center;
-          display: flex;
-          height: 67px;
-          width: 219px;
-          padding-top: 30px;
-          justify-content: space-between;
-        }
       }
       .l-at-content {
-        // display: flex;
-        // gap: 70px;
         padding-right: 106px;
+        padding-left: 6px;
         .teammate-info-block {
-          width: 342px;
+          max-width: 342px;
+          gap: 16px;
+          .about-teammate {
+            .t-name span {
+              font-weight: 800;
+              font-size: 2rem;
+              line-height: 40px;
+              padding-top: 13px;
+            }
+            .t-desc span {
+              font-weight: 600;
+              font-size: 1.25rem;
+            }
+            .t-q {
+              padding-top: 26px;
+            }
+            q {
+              font-weight: 600;
+              font-size: 1.25rem;
+              line-height: 25px;
+              quotes: "«" "»";
+            }
+          }
         }
       }
     }

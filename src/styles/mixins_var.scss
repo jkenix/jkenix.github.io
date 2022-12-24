@@ -3,7 +3,11 @@
   display: flex;
   flex-direction: column;
 }
-@mixin flexb() {
-  display: flex;
-  justify-content: space-between;
+@mixin hovactive() {
+  &:hover {
+    background-color: #fe0002;
+  }
+  &:active {
+    background-color: #a60002;
+  }
 }

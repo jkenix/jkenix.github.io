@@ -27,14 +27,27 @@
 }
 // 1500px
 @media (max-width: 1500px) {
-  .l-main .l-ca-wr {
-    gap: 30px;
-    .l-company-about .title h2 {
-      font-size: 3.8rem;
+  .l-main {
+    .social-links-vert-at {
+      padding-left: 40px;
     }
-    .l-company-stats {
+    .l-ca-wr {
       gap: 30px;
-      .l-sc-2 {
+      .l-company-about .title h2 {
+        font-size: 3.8rem;
+      }
+      .l-company-stats {
+        gap: 30px;
+        .l-sc-2 {
+          padding-left: 0px;
+        }
+      }
+    }
+    .l-at-wr {
+      padding-left: 80px;
+      padding-right: 80px;
+      .l-about-team .l-at-content {
+        padding-right: 0px;
         padding-left: 0px;
       }
     }
@@ -185,6 +198,10 @@
         justify-content: center;
       }
     }
+    .l-at-wr {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
   }
   .l-footer {
     margin-top: 114px;
@@ -200,7 +217,7 @@
 @media (max-width: 991.98px) {
 }
 // 768px
-@media (max-width: 767.98px) { 
+@media (max-width: 767.98px) {
   .l-main {
     .l-ga-wr .l-games-about .title h2 {
       font-size: 3.1rem;
@@ -212,6 +229,33 @@
       .l-company-stats {
         padding-right: 0;
       }
+    }
+    .l-at-wr {
+      .l-about-team {
+        .l-at-title h2 {
+          font-size: 2rem;
+          line-height: 38px;
+          width: auto;
+        }
+        .l-at-content {
+          .teammate-info-block .about-teammate .t-m,
+          q {
+            font-size: 1rem;
+          }
+          q {
+            line-height: 20px;
+          }
+        }
+      }
+    }
+    .slick-arrow {
+      top: 600px;
+    }
+    .slick-prev {
+      left: 20px;
+    }
+    .slick-next {
+      right: 20px;
     }
   }
 }
@@ -355,9 +399,22 @@
         }
       }
     }
+    .slick-arrow {
+      top: 500px;
+    }
   }
   .l-footer {
     margin-top: 55px;
+  }
+}
+@media (max-width: 469.98px) {
+  .l-main {
+    .l-at-wr {
+      padding-bottom: 100px;
+    }
+    .slick-arrow {
+      top: 575px;
+    }
   }
 }
 // 320px
