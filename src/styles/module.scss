@@ -62,9 +62,14 @@
     display: flex;
     z-index: 10;
   }
-  .social-links-vert-at {
+  .slv-static {
     padding-top: 0;
     padding-left: 0;
+  }
+  @media (max-width: 575.98px) and (orientation: landscape) { 
+    .social-links-vert {
+      display: none;
+    }
   }
 }
 // Def sl styles
@@ -74,7 +79,7 @@
   gap: 15px;
 }
 // Sl styles for about team page
-.social-links-vert-at {
+.slv-static {
   position: fixed;
   padding-top: 276px;
   padding-left: 90px;

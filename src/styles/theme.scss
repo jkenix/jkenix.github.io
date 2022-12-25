@@ -1,6 +1,6 @@
 /* Theme classes */
 .ylg-bg {
-  background: linear-gradient(to right, #fff, #fff 275px, #ffea2f 275px);
+  background: linear-gradient(to right, #fff, #fff 280px, #ffea2f 280px);
 }
 .ylg-bg-com {
   background: linear-gradient(to right, #fff, #fff 850px, #ffea2f 850px);
@@ -8,6 +8,7 @@
 .ylg-bg-at {
   background: linear-gradient(to left, #fff, #fff 833px, #ffea2f 833px);
 }
+
 /* Buttons */
 
 /* Color styles for page content */
@@ -22,10 +23,6 @@
   .lang-sw {
     background-color: #ce0002;
     color: #ffffff;
-    a {
-      // Заменить!
-      color: #ffffff;
-    }
   }
 }
 // Main
@@ -60,6 +57,13 @@
       color: #646464;
     }
   }
+  // Games
+
+  // Career
+
+  // News
+
+  // Contacts
 }
 .l-footer {
   .l-contacts {

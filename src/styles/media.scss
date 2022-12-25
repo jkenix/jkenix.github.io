@@ -28,9 +28,10 @@
 // 1500px
 @media (max-width: 1500px) {
   .l-main {
-    .social-links-vert-at {
+    .slv-static {
       padding-left: 40px;
     }
+    // About Company
     .l-ca-wr {
       gap: 30px;
       .l-company-about .title h2 {
@@ -143,7 +144,7 @@
       order: 2;
       margin-top: 170px;
     }
-    .slv-hidden {
+    .slv-static {
       display: none;
     }
     // Main page
@@ -202,6 +203,13 @@
       padding-left: 40px;
       padding-right: 40px;
     }
+    // Games
+
+    // Career
+
+    // News
+
+    // Contacts
   }
   .l-footer {
     margin-top: 114px;
@@ -222,6 +230,7 @@
     .l-ga-wr .l-games-about .title h2 {
       font-size: 3.1rem;
     }
+    // About company
     .l-ca-wr {
       .l-company-about .title h2 {
         font-size: 4.1rem;
@@ -247,16 +256,24 @@
           }
         }
       }
+      // Slider
+      .slick-arrow {
+        top: 600px;
+      }
+      .slick-prev {
+        left: 20px;
+      }
+      .slick-next {
+        right: 20px;
+      }
     }
-    .slick-arrow {
-      top: 600px;
-    }
-    .slick-prev {
-      left: 20px;
-    }
-    .slick-next {
-      right: 20px;
-    }
+    // Games
+
+    // Career
+
+    // News
+
+    // Contacts
   }
 }
 /* Портретная ориентация 575px */
@@ -278,9 +295,6 @@
     a {
       font-size: 2.4rem;
     }
-  }
-  .l-main .social-links-vert {
-    top: 600px;
   }
 }
 // Обычный режим (575px)
@@ -399,21 +413,32 @@
         }
       }
     }
-    .slick-arrow {
-      top: 500px;
+    .l-at-wr {
+      padding-left: 20px;
+      padding-right: 20px;
+      .slick-arrow {
+        top: 500px;
+      }
     }
+    // Games
+
+    // Career
+
+    // News
+
+    // Contacts
   }
   .l-footer {
     margin-top: 55px;
   }
 }
-@media (max-width: 469.98px) {
+@media (max-width: 412.98px) {
   .l-main {
     .l-at-wr {
-      padding-bottom: 100px;
-    }
-    .slick-arrow {
-      top: 575px;
+      padding-bottom: 120px;
+      .slick-arrow {
+        top: 550px;
+      }
     }
   }
 }

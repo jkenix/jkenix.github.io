@@ -78,11 +78,9 @@ export default function Header(props) {
           Контакты
         </Link>
       </nav>
-      <div className="lang-sw">
-        <Link to="/" title="Switch language">
-          ENG
-        </Link>
-      </div>
+      <Link className="lang-sw" to="/" title="Switch language">
+        ENG
+      </Link>
     </>
   );
 }

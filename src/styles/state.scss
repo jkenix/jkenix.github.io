@@ -34,16 +34,6 @@
     transition: fill 0s ease-out;
   }
 }
-// Buttons
-.itc-slider__btn {
-  &:hover,
-  &:focus {
-    &::before {
-      // Проработать позже
-      // background-image: url("/src/img/btn-slider-white.svg");
-    }
-  }
-}
 
 /* Page content (divs) */
 // Header

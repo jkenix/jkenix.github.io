@@ -56,7 +56,6 @@
     left: 0;
     
     display: flex;
-    gap: 30px;
 
     margin-left: auto;
     margin-right: auto;
@@ -79,7 +78,6 @@
 
 .slick-slide
 {
-    /* max-width: 342px; */
     display: none;
     float: left;
 

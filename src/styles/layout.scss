@@ -27,11 +27,8 @@
     display: flex;
     justify-content: center;
     place-items: center;
-    cursor: pointer;
-    a {
-      font-weight: 700;
-      font-size: 1.25rem;
-    }
+    font-weight: 700;
+    font-size: 1.25rem;
   }
 }
 .l-main {
@@ -207,6 +204,23 @@
           }
         }
       }
+    }
+    // Slider
+    .slick-track {
+      gap: 30px;
+    }
+    // Slider buttons
+    .slick-prev {
+      left: 480px;
+      top: -120px;
+    }
+    .slick-next {
+      right: 40px;
+      top: -120px;
+    }
+    .slick-arrow {
+      width: 67px;
+      height: 67px;
     }
   }
 }
