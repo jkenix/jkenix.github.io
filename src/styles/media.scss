@@ -28,6 +28,7 @@
 // 1500px
 @media (max-width: 1500px) {
   .l-main {
+    // Common class for slv in pages (except Main)
     .slv-static {
       padding-left: 40px;
     }
@@ -52,6 +53,10 @@
         padding-left: 0px;
       }
     }
+    // Games
+    .l-gi-wr {
+      padding-right: 189px;
+    }
   }
 }
 // 1400px
@@ -65,8 +70,11 @@
 }
 // 1200px
 @media (max-width: 1199.98px) {
-  .l-main .l-ca-wr {
-    padding-left: 40px;
+  .l-main {
+    // About Company
+    .l-ca-wr {
+      padding-left: 40px;
+    }
   }
 }
 /* Портретная ориентация 1024px*/
@@ -77,6 +85,7 @@
       font-size: 3.25rem;
     }
   }
+  // Common class for menu slv
   .slv-active {
     .social-links-vert {
       flex-direction: row;
@@ -94,6 +103,7 @@
       font-size: 2.4rem;
     }
   }
+  // Common class for menu slv
   .slv-active {
     .social-links-vert {
       flex-direction: row;
@@ -138,12 +148,14 @@
     }
   }
   .l-main {
+    // Common class
     .social-links-vert {
       position: absolute;
       flex-wrap: wrap;
       order: 2;
       margin-top: 170px;
     }
+    // Common class for slv in pages (except Main)
     .slv-static {
       display: none;
     }
@@ -204,7 +216,23 @@
       padding-right: 40px;
     }
     // Games
-
+    .l-gi-wr {
+      padding-left: 177px;
+      padding-right: 120px;
+      .l-games-info {
+        flex-direction: column;
+        .title {
+          padding-top: 23px;
+          width: auto;
+          .text-desc p {
+            max-width: 85%;
+          }
+        }
+        .pic-block {
+          display: none;
+        }
+      }
+    }
     // Career
 
     // News
@@ -268,7 +296,10 @@
       }
     }
     // Games
-
+    .l-gi-wr {
+      padding-left: 130px;
+      padding-right: 0;
+    }
     // Career
 
     // News
@@ -284,6 +315,7 @@
       font-size: 2.8rem;
     }
   }
+  // Common class
   .l-main .social-links-vert {
     top: 450px;
     left: 30px;
@@ -291,10 +323,8 @@
 }
 /* Ландшафтная ориентация 575px*/
 @media (max-width: 575.98px) and (orientation: landscape) {
-  .l-header .header-menu {
-    a {
-      font-size: 2.4rem;
-    }
+  .l-header .header-menu a {
+    font-size: 2.4rem;
   }
 }
 // Обычный режим (575px)
@@ -320,6 +350,7 @@
     }
   }
   .l-main {
+    // Common class
     .social-links-vert {
       display: none;
     }
@@ -377,10 +408,10 @@
             line-height: 20px;
             max-width: 98%;
             &:nth-child(1) {
-              margin-top: 0;
+              padding-top: 0;
             }
             &:nth-child(3) {
-              margin-top: 15px;
+              padding-top: 15px;
             }
           }
         }
@@ -421,7 +452,31 @@
       }
     }
     // Games
-
+    .l-gi-wr {
+      padding-top: 58px;
+      padding-left: 15px;
+      padding-right: 0;
+      .l-games-info .title {
+        h2 {
+          font-size: 2rem;
+          line-height: 38px;
+        }
+        .text-desc p {
+          font-size: 1rem;
+          line-height: 20px;
+          max-width: 98%;
+          &:nth-child(1) {
+            padding-top: 20px;
+          }
+          &:nth-child(2) {
+            padding-top: 20px;
+          }
+        }
+        .check-works {
+          margin-top: 20px;
+        }
+      }
+    }
     // Career
 
     // News
@@ -434,6 +489,7 @@
 }
 @media (max-width: 412.98px) {
   .l-main {
+    // About Company
     .l-at-wr {
       padding-bottom: 120px;
       .slick-arrow {

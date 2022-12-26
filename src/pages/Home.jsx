@@ -45,7 +45,6 @@ export default function Home() {
               ShowMenu();
               ShowMenuylg();
               NavActive();
-              NavActiveMain();
             }}
           >
             <span className="hamburger-item"></span>
@@ -61,7 +60,7 @@ export default function Home() {
               <div className="desc">
                 <Sociallinksvert slvname="social-links-vert" />
                 <div className="desc-content">
-                  <Link className="check-box">Узнать подробнее</Link>
+                  <Link className="btn check-box" title="Learn more">Узнать подробнее</Link>
                   <div className="text-box">
                     <p>
                       «Оригинальные идеи, качество реализации игровых механик и
@@ -71,7 +70,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="pic-block img__resp-block">
+            <div className="pic-block img__resp-block" aria-hidden="true">
               <img
                 src={unicorn}
                 className="img__resp"

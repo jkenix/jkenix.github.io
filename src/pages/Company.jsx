@@ -1,6 +1,5 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Slider from "react-slick";
 import {
   ShowMenu,
   ShowMenuylgcom,
@@ -31,6 +30,12 @@ export default function Company() {
           />
           <meta name="og:description" content="About company Toy.Stream." />
           <meta name="description" content="Toy.Steam - About company." />
+          <meta
+            property="og:image"
+            content="https://jkenix.netlify.app/assets/e062cf97e78beb184441.png"
+          />
+          <meta property="og:image:width" content="200" />
+          <meta property="og::image:height" content="200" />
         </Helmet>
         <header className="l-header ylg-bg-com">
           <div
@@ -39,7 +44,6 @@ export default function Company() {
               ShowMenu();
               ShowMenuylgcom();
               NavActive();
-              NavActiveAc();
             }}
           >
             <span className="hamburger-item"></span>

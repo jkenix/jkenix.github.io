@@ -1,4 +1,5 @@
 /* Theme classes */
+// Main/Company
 .ylg-bg {
   background: linear-gradient(to right, #fff, #fff 280px, #ffea2f 280px);
 }
@@ -8,8 +9,10 @@
 .ylg-bg-at {
   background: linear-gradient(to left, #fff, #fff 833px, #ffea2f 833px);
 }
-
-/* Buttons */
+// Games/Career
+.bclg-bg-games {
+  background: linear-gradient(to right, #fff, #fff 850px, #D3D1E9 850px);
+}
 
 /* Color styles for page content */
 // Header
@@ -20,10 +23,6 @@
   nav a {
     color: #000000;
   }
-  .lang-sw {
-    background-color: #ce0002;
-    color: #ffffff;
-  }
 }
 // Main
 .l-main {
@@ -31,10 +30,6 @@
   .l-games-about {
     .title h2 {
       color: #000000;
-    }
-    .check-box {
-      background-color: #ce0002;
-      color: #ffffff;
     }
     p {
       color: #000000;
@@ -58,7 +53,7 @@
     }
   }
   // Games
-
+ 
   // Career
 
   // News
@@ -92,6 +87,9 @@
   .ylg-bg-at {
     background: white;
   }
+  .bclg-bg-games {
+    background: linear-gradient(to right, #fff, #fff 97px, #D3D1E9 97px);
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -100,5 +98,8 @@
   }
   .ylg-bg-com {
     background: linear-gradient(to right, #fff, #fff 70px, #ffea2f 70px);
+  }
+  .bclg-bg-games {
+    background: linear-gradient(to right, #fff, #fff 70px, #D3D1E9 70px);
   }
 }

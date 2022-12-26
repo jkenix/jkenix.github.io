@@ -31,21 +31,9 @@ export function bodyhide() {
 }
 // Main func active Nav
 export function NavActive() {
-  Hmenu();
+  window.headermenu = document.querySelector(".header-menu");
   bodyhide();
   headermenu.classList.toggle("nav-active");
-}
-
-/* Nav active specific scripts */
-// Main page nav toggle
-export function NavActiveMain() {
-  Hmenu();
-  headermenu.classList.toggle("nav-active-main");
-}
-// // About company page nav toggle
-export function NavActiveAc() {
-  Hmenu();
-  headermenu.classList.toggle("nav-active-ac");
 }
 
 /* Toggle background on active menu */
@@ -58,4 +46,9 @@ export function ShowMenuylg() {
 export function ShowMenuylgcom() {
   let header = document.querySelector(".l-header"); // Global variable?
   header.classList.toggle("ylg-bg-com");
+}
+// Games/Career pages
+export function ShowMenubclgGames() {
+  let header = document.querySelector(".l-header"); // Global variable?
+  header.classList.toggle("bclg-bg-games");
 }

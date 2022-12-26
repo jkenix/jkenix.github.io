@@ -32,6 +32,7 @@
   }
 }
 .l-main {
+  // Main page
   .l-ga-wr {
     display: flex;
     padding: 49px 40px 0 86px;
@@ -56,7 +57,6 @@
           padding-left: 97px;
           .check-box {
             @include flexcolumn();
-            align-items: center;
             justify-content: center;
             width: 105px;
             height: 120px;
@@ -93,12 +93,14 @@
       min-width: 34%;
     }
   }
+  // About Company
   .l-ca-wr {
     display: flex;
     gap: 140px;
     padding-top: 120px;
     padding-right: 40px;
     padding-left: 86px;
+    padding-bottom: 121px;
     .l-company-about {
       display: flex;
       gap: 64px;
@@ -120,10 +122,10 @@
             line-height: 30px;
             max-width: 92%;
             &:nth-child(1) {
-              margin-top: 30px;
+              padding-top: 30px;
             }
             &:nth-child(3) {
-              margin-top: 30px;
+              padding-top: 30px;
             }
           }
         }
@@ -132,7 +134,6 @@
     .l-company-stats {
       display: flex;
       padding-top: 5px;
-      padding-bottom: 121px;
       .l-scolumn {
         @include flexcolumn();
         gap: 44px;
@@ -223,6 +224,82 @@
       height: 67px;
     }
   }
+  // Games
+  .l-gi-wr {
+    padding-top: 112px;
+    padding-right: 380px;
+    padding-left: 187px;
+    padding-bottom: 48px;
+    .l-games-info {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      .title {
+        @include flexcolumn();
+        width: 607px;
+        padding-top: 61px;
+        h2 {
+          font-weight: 800;
+          font-size: 4.5rem;
+          line-height: 85px;
+        }
+        .text-desc {
+          p {
+            font-weight: 600;
+            font-size: 1.5rem;
+            line-height: 30px;
+            &:nth-child(1) {
+              padding-top: 29px;
+            }
+            &:nth-child(2) {
+              padding-top: 29px;
+            }
+          }
+        }
+        .check-works {
+          align-items: center;
+          display: flex;
+          font-weight: 800;
+          font-size: 1.375rem;
+          justify-content: center;
+          line-height: 27px;
+          margin-top: 45px;
+          padding-left: 10px;
+          height: 94px;
+          width: 192px;
+          &::after {
+            background-image: url("../img/arrow-down-btn.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            content: "";
+            transform: translate(0, 20%) rotate(90deg);
+            width: 101px;
+            height: 10px;
+          }
+        }
+      }
+      .pic-block {
+        min-width: 31%;
+      }
+    }
+    .gi-block {
+      display: flex;
+    }
+    .dm-wr {
+      padding-top: 40px;
+      .l-design-masters {
+        gap: 30px;
+        .l-game-info {
+
+        }
+      }
+    }
+  }
+  // Career
+
+  // News
+
+  // Contacts
 }
 .l-footer {
   margin-top: 77px;
