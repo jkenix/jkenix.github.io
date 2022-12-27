@@ -1,18 +1,17 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Link } from "react-router-dom";
-import {
-  ShowMenu,
-  ShowMenubclgGames,
-  NavActive
-} from "../js/scripts";
+import { ShowMenu, ShowMenubclg, NavActive } from "../js/scripts";
 
 import Header from "../components/Header.jsx";
 import Sociallinksvert from "../components/Sociallinksvert.jsx";
-
+import ResizableSliderGames from "../components/ResizableSliderGames.jsx";
 import Footer from "../components/Footer.jsx";
 
 import gp from "../img/games-preview.svg";
+import dmasters from "../img/design-masters.png";
+import pmakeup from "../img/perfect-makeup-3d.png";
+import emasters from "../img/escape-masters.png";
+import hmasters from "../img/hitmasters.png";
 
 export default function Games() {
   return (
@@ -25,22 +24,22 @@ export default function Games() {
           <meta name="og:description" content="Games by Toy.Stream." />
           <meta name="description" content="Toy.Stream Games." />
         </Helmet>
-        <header className="l-header bclg-bg-games">
+        <header className="l-header bclg-bg">
           <div
             className="hamburger"
             onClick={() => {
               ShowMenu();
-              ShowMenubclgGames();
+              ShowMenubclg();
               NavActive();
             }}
           >
             <span className="hamburger-item"></span>
           </div>
-          <Header glink="link-active" />
+          <Header glink="link-active la-c" />
         </header>
         <main className="l-main">
           <Sociallinksvert slvname="social-links-vert slv-static" />
-          <div className="l-gi-wr bclg-bg-games">
+          <div className="l-gi-wr bclg-bg">
             <div className="l-games-info">
               <div className="title">
                 <h2>игры</h2>
@@ -77,15 +76,127 @@ export default function Games() {
               </div>
             </div>
           </div>
-          <div className="dm-wr" id="work">
+          <div className="l-dm-wr ow-wr" id="work">
             <div className="l-design-masters gi-block">
               <div className="l-game-info">
-                <h2></h2>
-                <div className="gi-content">
-                  <p></p>
-                  <p></p>
+                <h2>Design Masters</h2>
+                <div className="dm-desc gi-desc">
+                  <p>Станьте дизайнером интерьеров!</p>
+                  <p>
+                    Проходите уровни матч-3, создавайте собственные дизайны и
+                    интерьеры, следите за историей и знакомьтесь с персонажами.
+                  </p>
                 </div>
+                <button className="btn check-gi" title="Check Design Masters">
+                  Подробнее
+                </button>
               </div>
+              <div className="pic-block img__resp-block" aria-hidden="true">
+                <img
+                  src={dmasters}
+                  className="img__resp"
+                  width="695"
+                  height="695"
+                  alt="Design Masters"
+                ></img>
+              </div>
+            </div>
+          </div>
+          <div className="l-pm-wr ow-wr" id="work">
+            <div className="l-perfect-makeup gi-block">
+              <div className="pic-block img__resp-block" aria-hidden="true">
+                <img
+                  src={pmakeup}
+                  className="img__resp"
+                  width="695"
+                  height="695"
+                  alt="Perfect Makeup 3D"
+                ></img>
+              </div>
+              <div className="l-game-info">
+                <h2>Perfect Makeup 3D</h2>
+                <div className="pm-desc gi-desc">
+                  <p>Добро пожаловать в мир макияжа!</p>
+                  <p>
+                    Выбирайте кисти, цвета и оттенки губной помады, подводки для
+                    глаз и пудры, чтобы добиться превосходного результата.
+                  </p>
+                </div>
+                <button
+                  className="btn check-gi"
+                  title="Check Perfect Makeup 3D"
+                >
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="l-em-wr ow-wr" id="work">
+            <div className="l-escape-masters gi-block">
+              <div className="l-game-info">
+                <h2>Escape Masters</h2>
+                <div className="em-desc gi-desc">
+                  <p>Совершите идеальный побег!</p>
+                  <p>
+                    Спаси напарников, собери сокровища и прокопай путь к
+                    свободе, но опасайся ловушек.
+                  </p>
+                </div>
+                <button className="btn check-gi" title="Check Escape Masters">
+                  Подробнее
+                </button>
+              </div>
+              <div className="pic-block img__resp-block" aria-hidden="true">
+                <img
+                  src={emasters}
+                  className="img__resp"
+                  width="695"
+                  height="695"
+                  alt="Escape Masters"
+                ></img>
+              </div>
+            </div>
+          </div>
+          <div className="l-hm-wr ow-wr" id="work">
+            <div className="l-hitmasters gi-block">
+              <div className="pic-block img__resp-block" aria-hidden="true">
+                <img
+                  src={hmasters}
+                  className="img__resp"
+                  width="695"
+                  height="695"
+                  alt="Hitmasters"
+                ></img>
+              </div>
+              <div className="l-game-info">
+                <h2>Hitmasters</h2>
+                <div className="hm-desc gi-desc">
+                  <p>Стань стрелком и срази всех врагов!</p>
+                  <p>
+                    Целься метко, используй объекты на уровнях и не дай никому
+                    спастись! Открывай новое оружие, пополняй свой арсенал и
+                    проходи головоломки.
+                  </p>
+                </div>
+                <button className="btn check-gi" title="Check Hitmasters">
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </div>
+          <a
+            href="#lastprojects"
+            title="Check last projects"
+            className="btn more-projects"
+          >
+            Больше проектов
+          </a>
+          <div className="l-lp-wr">
+            <div className="l-last-projects" id="lastprojects">
+              <div className="l-lp-title">
+                <h2>Последние проекты</h2>
+              </div>
+              <ResizableSliderGames />
             </div>
           </div>
         </main>

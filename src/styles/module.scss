@@ -53,6 +53,16 @@
     }
   }
 }
+// Menu active
+.l-header {
+  .nav-active {
+    visibility: visible;
+  }
+  .link-active {
+    pointer-events: none;
+    cursor: default;
+  }
+}
 // Buttons
 .btn {
   color: #ffffff;
@@ -65,9 +75,6 @@
     background-color: #a60002;
   }
 }
-/* Main */
-.l-main {
-}
 // Active menu script
 .slv-active {
   .social-links-vert {
@@ -78,7 +85,7 @@
     padding-top: 0;
     padding-left: 0;
   }
-  @media (max-width: 575.98px) and (orientation: landscape) { 
+  @media (max-width: 575.98px) and (orientation: landscape) {
     .social-links-vert {
       display: none;
     }

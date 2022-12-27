@@ -1,8 +1,9 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
+import { bhremove } from "../js/scripts";
+
 import logo from "../img/Company-logo.svg";
-import { bhremove, NavMainHide } from "../js/scripts";
 
 export default function Header(props) {
   return (
@@ -78,7 +79,11 @@ export default function Header(props) {
           Контакты
         </Link>
       </nav>
-      <Link className="btn lang-sw" to="/" title="Switch language">
+      <Link
+        className="btn lang-sw"
+        to="/"
+        title="Switch language"
+      >
         ENG
       </Link>
     </>

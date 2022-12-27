@@ -30,7 +30,7 @@ export default function News() {
           >
             <span className="hamburger-item"></span>
           </div>
-          <Header nlink="link-active" />
+          <Header nlink="link-active la-c" />
         </header>
         <main className="l-main">
           <div className="l-company-about">

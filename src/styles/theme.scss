@@ -10,14 +10,14 @@
   background: linear-gradient(to left, #fff, #fff 833px, #ffea2f 833px);
 }
 // Games/Career
-.bclg-bg-games {
+.bclg-bg {
   background: linear-gradient(to right, #fff, #fff 850px, #D3D1E9 850px);
 }
 
 /* Color styles for page content */
 // Header
 .l-header {
-  .link-active {
+  .la-c {
     color: #ff0000;
   }
   nav a {
@@ -87,7 +87,7 @@
   .ylg-bg-at {
     background: white;
   }
-  .bclg-bg-games {
+  .bclg-bg {
     background: linear-gradient(to right, #fff, #fff 97px, #D3D1E9 97px);
   }
 }
@@ -99,7 +99,7 @@
   .ylg-bg-com {
     background: linear-gradient(to right, #fff, #fff 70px, #ffea2f 70px);
   }
-  .bclg-bg-games {
+  .bclg-bg {
     background: linear-gradient(to right, #fff, #fff 70px, #D3D1E9 70px);
   }
 }

@@ -29,7 +29,7 @@ export default function Contacts() {
           >
             <span className="hamburger-item"></span>
           </div>
-          <Header conlink="link-active" />
+          <Header conlink="link-active la-c" />
         </header>
         <main className="l-main">
           <div className="l-company-about">

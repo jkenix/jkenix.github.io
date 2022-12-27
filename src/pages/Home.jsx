@@ -49,7 +49,7 @@ export default function Home() {
           >
             <span className="hamburger-item"></span>
           </div>
-          <Header mlink="link-active" />
+          <Header mlink="link-active la-c" />
         </header>
         <div className="l-main ylg-bg">
           <div className="l-ga-wr">

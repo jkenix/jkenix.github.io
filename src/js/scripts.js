@@ -32,8 +32,10 @@ export function bodyhide() {
 // Main func active Nav
 export function NavActive() {
   window.headermenu = document.querySelector(".header-menu");
+  let langsw = document.querySelector(".lang-sw");
   bodyhide();
   headermenu.classList.toggle("nav-active");
+  langsw.classList.toggle("link-active");
 }
 
 /* Toggle background on active menu */
@@ -48,7 +50,7 @@ export function ShowMenuylgcom() {
   header.classList.toggle("ylg-bg-com");
 }
 // Games/Career pages
-export function ShowMenubclgGames() {
+export function ShowMenubclg() {
   let header = document.querySelector(".l-header"); // Global variable?
-  header.classList.toggle("bclg-bg-games");
+  header.classList.toggle("bclg-bg");
 }

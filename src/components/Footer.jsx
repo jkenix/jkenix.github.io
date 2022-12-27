@@ -99,7 +99,7 @@ function Footer(props) {
       </div>
       <div className="l-author">
         <address>
-          Page created by
+          Website created by
           <a href="https://github.com/jkenix" title="Github profile link">
             {" "}
             jkenix
@@ -110,7 +110,7 @@ function Footer(props) {
           href="https://github.com/jkenix/jkenix.github.io/tree/interno"
           title="Github repo"
         >
-          Repo link of this page
+          Website on Github
         </a>
       </div>
     </footer>

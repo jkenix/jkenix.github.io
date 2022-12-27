@@ -48,7 +48,7 @@ export default function Company() {
           >
             <span className="hamburger-item"></span>
           </div>
-          <Header comlink="link-active" />
+          <Header comlink="link-active la-c" />
         </header>
         <main className="l-main">
           <Sociallinksvert slvname="social-links-vert slv-static" />

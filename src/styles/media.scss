@@ -57,6 +57,9 @@
     .l-gi-wr {
       padding-right: 189px;
     }
+    .ow-wr {
+      padding-right: 100px;
+    }
   }
 }
 // 1400px
@@ -74,6 +77,16 @@
     // About Company
     .l-ca-wr {
       padding-left: 40px;
+    }
+    // Games
+    .l-lp-wr {
+      padding-left: 160px;
+      padding-right: 40px;
+    }
+    // Career
+    .l-car-a-wr {
+      padding-left: 177px;
+      padding-right: 60px;
     }
   }
 }
@@ -142,9 +155,6 @@
         font-family: "ZonaPro-ExtraBold";
         padding-left: 79px;
       }
-    }
-    .nav-active {
-      visibility: visible;
     }
   }
   .l-main {
@@ -233,8 +243,42 @@
         }
       }
     }
+    .ow-wr {
+      padding-left: 45px;
+      padding-right: 45px;
+    }
+    .gi-block .l-game-info h2 {
+      font-size: 4rem;
+      line-height: 75px;
+    }
+    .more-projects {
+      margin-left: 45px;
+    }
+    .l-lp-wr {
+      padding-left: 45px;
+      padding-right: 45px;
+    }
     // Career
-
+    .l-car-a-wr {
+      padding-top: 166px;
+      padding-bottom: 165px;
+      .l-career-about {
+        flex-direction: column;
+        gap: 32px;
+        .ca-title {
+          h2 {
+            width: auto;
+          }
+          p {
+            padding-top: 28px;
+            max-width: 78%;
+          }
+        }
+        .ca-pic-block {
+          justify-content: center;
+        }
+      }
+    }
     // News
 
     // Contacts
@@ -299,6 +343,47 @@
     .l-gi-wr {
       padding-left: 130px;
       padding-right: 0;
+    }
+    .gi-block {
+      flex-direction: column;
+      .l-game-info {
+        width: auto;
+      }
+      .pic-block img {
+        height: 450px;
+      }
+    }
+    .l-pm-wr {
+      padding-top: 40px;
+      .pic-block {
+        order: 2;
+      }
+    }
+    .l-em-wr {
+      padding-top: 40px;
+    }
+    .l-hm-wr {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      .pic-block {
+        order: 2;
+      }
+    }
+    .l-lp-wr {
+      padding-top: 40px;
+      padding-bottom: 60px;
+      .slick-track {
+        gap: 0px;
+      }
+      .slick-arrow {
+        top: 870px;
+      }
+      .slick-prev {
+        left: 260px;
+      }
+      .slick-next {
+        right: 50px;
+      }
     }
     // Career
 
@@ -477,6 +562,61 @@
         }
       }
     }
+    .ow-wr {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .gi-block {
+      flex-direction: column;
+      .l-game-info {
+        width: auto;
+        h2 {
+          font-size: 2rem;
+          line-height: 38px;
+        }
+        .gi-desc p {
+          font-size: 1rem;
+          line-height: 20px;
+        }
+      }
+      .pic-block img {
+        height: 344px;
+      }
+    }
+    .more-projects {
+      margin-left: auto;
+      margin-right: 16px;
+    }
+    .l-lp-wr {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 100px;
+      .l-last-projects {
+        .l-lp-title h2 {
+          font-size: 2rem;
+          line-height: 38px;
+        }
+        .game-project {
+          h2 {
+            font-size: 2rem;
+            line-height: 40px;
+          }
+          .gp-desc p {
+            font-size: 1rem;
+            line-height: 20px;
+          }
+        }
+      }
+      .slick-arrow {
+        top: 750px;
+      }
+      .slick-prev {
+        left: 20px;
+      }
+      .slick-next {
+        right: 20px;
+      }
+    }
     // Career
 
     // News
@@ -494,6 +634,12 @@
       padding-bottom: 120px;
       .slick-arrow {
         top: 550px;
+      }
+    }
+    // Games
+    .l-lp-wr {
+      .slick-arrow {
+        top: 720px;
       }
     }
   }
