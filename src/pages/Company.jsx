@@ -4,7 +4,6 @@ import {
   ShowMenu,
   ShowMenuylgcom,
   NavActive,
-  NavActiveAc,
 } from "../js/scripts";
 
 import Header from "../components/Header.jsx";
@@ -30,12 +29,6 @@ export default function Company() {
           />
           <meta name="og:description" content="About company Toy.Stream." />
           <meta name="description" content="Toy.Steam - About company." />
-          <meta
-            property="og:image"
-            content="https://jkenix.netlify.app/assets/e062cf97e78beb184441.png"
-          />
-          <meta property="og:image:width" content="200" />
-          <meta property="og::image:height" content="200" />
         </Helmet>
         <header className="l-header ylg-bg-com">
           <div
@@ -54,9 +47,9 @@ export default function Company() {
           <Sociallinksvert slvname="social-links-vert slv-static" />
           <div className="l-ca-wr ylg-bg-com">
             <div className="l-company-about">
-              <div className="title">
+              <div className="com-title">
                 <h2>О компании</h2>
-                <div className="text-desc">
+                <div className="com-text-desc">
                   <p>
                     Toy.Stream - это компания-разработчик и издатель мобильных
                     игр.

@@ -103,7 +103,7 @@
       display: flex;
       gap: 64px;
       padding-left: 97px;
-      .title {
+      .com-title {
         @include flexcolumn();
         padding-top: 47px;
         padding-left: 3px;
@@ -113,7 +113,7 @@
           font-size: 4.5rem;
           line-height: 85px;
         }
-        .text-desc {
+        .com-text-desc {
           p {
             font-weight: 600;
             font-size: 1.5rem;
@@ -231,7 +231,7 @@
       display: flex;
       justify-content: space-between;
       gap: 40px;
-      .title {
+      .gam-title {
         @include flexcolumn();
         width: 607px;
         padding-top: 61px;
@@ -240,7 +240,7 @@
           font-size: 4.5rem;
           line-height: 85px;
         }
-        .text-desc {
+        .gam-text-desc {
           p {
             font-weight: 600;
             font-size: 1.5rem;
@@ -275,7 +275,7 @@
           }
         }
       }
-      .pic-block {
+      .gam-pic-block {
         min-width: 31%;
       }
     }
@@ -438,25 +438,25 @@
   }
   // Career
   .l-car-a-wr {
-    padding-top: 176px;
+    padding-top: 183px;
     padding-left: 187px;
     padding-right: 187px;
-    padding-bottom: 160px;
+    padding-bottom: 79px;
     .l-career-about {
       display: flex;
-      .ca-title {
+      justify-content: space-between;
+      .car-title {
+        width: 609px;
         h2 {
           font-weight: 800;
           font-size: 4.5rem;
           line-height: 85px;
-          width: 603px;
         }
         p {
           font-weight: 600;
           font-size: 1.5rem;
           line-height: 30px;
-          padding-top: 36px;
-          max-width: 58%;
+          padding-top: 29px;
         }
         .check-vacancy {
           align-items: center;
@@ -465,7 +465,7 @@
           font-size: 1.375rem;
           justify-content: center;
           line-height: 27px;
-          margin-top: 74px;
+          margin-top: 44px;
           padding-left: 10px;
           width: 192px;
           height: 94px;
@@ -477,6 +477,66 @@
             transform: translate(20%, 150%) rotate(90deg);
             width: 88px;
             height: 10px;
+          }
+        }
+      }
+      .car-pic-block {
+        min-width: 39%;
+      }
+    }
+  }
+  .l-ov-wr {
+    padding-top: 123px;
+    padding-right: 114px;
+    padding-left: 185px;
+    h2 {
+      font-size: 4.5rem;
+      line-height: 85px;
+      width: 603px;
+    }
+    .l-our-vacancies {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(505px, 1fr));
+      grid-gap: 31px;
+    margin-top: 33px;
+      .vac-block {
+        @include flexcolumn();
+        justify-content: flex-end;
+        max-width: 505px;
+        height: 505px;
+        .vac-info {
+          display: flex;
+          justify-content: space-between;
+          .vi-spec {
+            display: flex;
+            font-weight: 800;
+            font-size: 2rem;
+            line-height: 40px;
+            width: 254px;
+            padding-left: 40px;
+          }
+          .check-more {
+            @include flexcolumn();
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+            width: 105px;
+            height: 120px;
+            font-weight: 800;
+            font-size: 1.375rem;
+            line-height: 27px;
+            // padding-left: 15px;
+            // padding-right: 15px;
+            width: 192px;
+            height: 94px;
+            &::after {
+              content: "";
+              width: 90px;
+              height: 15px;
+              background-image: url("../img/arrow-fm-black.svg");
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
           }
         }
       }

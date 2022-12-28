@@ -45,7 +45,7 @@ export default class ResizableSliderAt extends Component {
       return (
         <Slider {...settings}>
           <div className="teammate-info-block">
-            <div className="pic-block img__resp-block" aria-hidden="true">
+            <div className="ti-pic-block img__resp-block" aria-hidden="true">
               <img
                 src={ASherman}
                 className="img__resp"
@@ -72,7 +72,7 @@ export default class ResizableSliderAt extends Component {
             </div>
           </div>
           <div className="teammate-info-block">
-            <div className="pic-block img__resp-block" aria-hidden="true">
+            <div className="ti-pic-block img__resp-block" aria-hidden="true">
               <img
                 src={AIsaev}
                 className="img__resp"
@@ -99,7 +99,7 @@ export default class ResizableSliderAt extends Component {
             </div>
           </div>
           <div className="teammate-info-block">
-            <div className="pic-block img__resp-block" aria-hidden="true">
+            <div className="ti-pic-block img__resp-block" aria-hidden="true">
               <img
                 src={ANegreev}
                 className="img__resp"
@@ -125,7 +125,7 @@ export default class ResizableSliderAt extends Component {
             </div>
           </div>
           <div className="teammate-info-block">
-            <div className="pic-block img__resp-block" aria-hidden="true">
+            <div className="ti-pic-block img__resp-block" aria-hidden="true">
               <img
                 src={EImashev}
                 className="img__resp"

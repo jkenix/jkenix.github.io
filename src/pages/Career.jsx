@@ -1,13 +1,14 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { ShowMenu, ShowMenubclg, NavActive } from "../js/scripts";
 import { Link } from "react-router-dom";
 
-import { ShowMenu, ShowMenubclg, NavActive } from "../js/scripts";
 import Header from "../components/Header.jsx";
 import Sociallinksvert from "../components/Sociallinksvert.jsx";
 import Footer from "../components/Footer.jsx";
 
 import lamp from "../img/lamp.svg";
+import lampactive from "../img/lamp-active.svg";
 
 export default function Career() {
   return (
@@ -37,23 +38,29 @@ export default function Career() {
           <Sociallinksvert slvname="social-links-vert slv-static" />
           <div className="l-car-a-wr bclg-bg">
             <div className="l-career-about">
-              <div className="ca-title">
+              <div className="car-title">
                 <h2>Карьера в Toy.Stream</h2>
-                <div className="ca-text-desc">
-                  <p>
-                    Мы всегда рады новым высококлассным специалистам геймдева,
-                    желающим присоединиться к нашей команде.
-                  </p>
-                </div>
+                <p>
+                Мы распределенная команда из более 300 специалистов по всему миру. И расстояния не мешают нам создавать хиты для миллионов игроков.
+                </p>
                 <a
                   className="btn check-vacancy"
-                  href="#vacancy"
-                  title="Check vacancy"
+                  href="#vacancies"
+                  title="Check vacancies"
                 >
                   Вакансия
                 </a>
               </div>
-              <div className="ca-pic-block img__resp-block" aria-hidden="true">
+              <picture
+                className="car-pic-block img__resp-block"
+                aria-hidden="true"
+              >
+                <source
+                  media="(max-width: 1024.98px)"
+                  srcSet={lampactive}
+                  width="833"
+                  height="793"
+                />
                 <img
                   src={lamp}
                   className="img__resp"
@@ -61,7 +68,84 @@ export default function Career() {
                   height="560"
                   alt="Career preview picture"
                 ></img>
-              </div>
+              </picture>
+            </div>
+          </div>
+          <div className="l-ov-wr" id="vacancies">
+            <h2>Наши вакансии</h2>
+            <div className="l-our-vacancies">
+              <Link className="vac-block ua-manager" to="#">
+                <div className="vac-info">
+                  <span className="vi-spec">User Acquisition Manager</span>
+                  <span className="check-more">
+                    Подробнее
+                  </span>
+                </div>
+              </Link>
+              <Link className="vac-block hr-manager" to="#">
+                <div className="vac-info">
+                  <span className="vi-spec">HR Manager (Marketing/Cross)</span>
+                  <span className="check-more">
+                    Подробнее
+                  </span>
+                </div>
+              </Link>
+              <Link className="vac-block techical-artist" to="#">
+                <div className="vac-info">
+                  <span className="vi-spec">Technical Artist 2D</span>
+                  <span className="check-more">
+                    Подробнее
+                  </span>
+                </div>
+              </Link>
+              <Link className="vac-block hr-manager" to="#">
+                <div className="vac-info">
+                  <span className="vi-spec">HR Manager (Marketing/Cross)</span>
+                  <span className="check-more">
+                    Подробнее
+                  </span>
+                </div>
+              </Link>
+              <Link className="vac-block techical-artist" to="#">
+                <div className="vac-info">
+                  <span className="vi-spec">Technical Artist 2D</span>
+                  <span className="check-more">
+                    Подробнее
+                  </span>
+                </div>
+              </Link>
+              <Link className="vac-block hr-manager" to="#">
+                <div className="vac-info">
+                  <span className="vi-spec">HR Manager (Marketing/Cross)</span>
+                  <span className="check-more">
+                    Подробнее
+                  </span>
+                </div>
+              </Link>
+              <Link className="vac-block techical-artist" to="#">
+                <div className="vac-info">
+                  <span className="vi-spec">Technical Artist 2D</span>
+                  <span className="check-more">
+                    Подробнее
+                  </span>
+                </div>
+              </Link>
+              <Link className="vac-block hr-manager" to="#">
+                <div className="vac-info">
+                  <span className="vi-spec">HR Manager (Marketing/Cross)</span>
+                  <span className="check-more">
+                    Подробнее
+                  </span>
+                </div>
+              </Link>
+              <Link className="vac-block techical-artist" to="#">
+                <div className="vac-info">
+                  <span className="vi-spec">Technical Artist 2D</span>
+                  <span className="check-more">
+                    Подробнее
+                  </span>
+                </div>
+              </Link>
             </div>
           </div>
         </main>

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 
-import hmasters from "../img/hitmasters-lp.png";
+import hmasters from "../img/hitmasters.png";
 import pmakeup from "../img/perfect-makeup-3d.png";
 import emasters from "../img/escape-masters.png";
 
@@ -40,7 +40,7 @@ export default class ResizableSliderGames extends Component {
     return (
       <Slider {...settings}>
         <div className="hitmasters game-project">
-          <div className="pic-block img__resp-block" aria-hidden="true">
+          <div className="gi-pic-block img__resp-block" aria-hidden="true">
             <img
               src={hmasters}
               className="img__resp"
@@ -61,7 +61,7 @@ export default class ResizableSliderGames extends Component {
           <button className="btn check-gp">Подробнее</button>
         </div>
         <div className="escape-masters game-project">
-          <div className="pic-block img__resp-block" aria-hidden="true">
+          <div className="gi-pic-block img__resp-block" aria-hidden="true">
             <img
               src={emasters}
               className="img__resp"
@@ -81,7 +81,7 @@ export default class ResizableSliderGames extends Component {
           <button className="btn check-gp">Подробнее</button>
         </div>
         <div className="perfect-makeup-3D game-project">
-          <div className="pic-block img__resp-block" aria-hidden="true">
+          <div className="gi-pic-block img__resp-block" aria-hidden="true">
             <img
               src={pmakeup}
               className="img__resp"

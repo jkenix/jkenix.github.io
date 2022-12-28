@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from "react";
+import { React } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
@@ -25,18 +25,6 @@ export default function Home() {
             name="description"
             content="Page made by jkenix from layout Toy.Steam."
           />
-          <meta
-            property="og:image"
-            content="https://jkenix.netlify.app/assets/3d25a8f3ee818996bac1.svg"
-          />
-          <meta
-            property="og:image:width"
-            content="200"
-          />
-          <meta
-            property="og::image:height"
-            content="200"
-          />
         </Helmet>
         <header className="l-header ylg-bg">
           <div
@@ -60,7 +48,9 @@ export default function Home() {
               <div className="desc">
                 <Sociallinksvert slvname="social-links-vert" />
                 <div className="desc-content">
-                  <Link className="btn check-box" title="Learn more">Узнать подробнее</Link>
+                  <Link className="btn check-box" title="Learn more">
+                    Узнать подробнее
+                  </Link>
                   <div className="text-box">
                     <p>
                       «Оригинальные идеи, качество реализации игровых механик и

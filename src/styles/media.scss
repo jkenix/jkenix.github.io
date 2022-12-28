@@ -35,7 +35,7 @@
     // About Company
     .l-ca-wr {
       gap: 30px;
-      .l-company-about .title h2 {
+      .l-company-about .com-title h2 {
         font-size: 3.8rem;
       }
       .l-company-stats {
@@ -65,7 +65,19 @@
 // 1400px
 @media (max-width: 1399.98px) {
   .l-main {
+    // Career
+    .l-ov-wr {
+      padding-right: 100px;
+      .l-our-vacancies {
+        grid-template-columns: repeat(auto-fit, minmax(346px, 1fr));
+        .vac-block .vac-info {
+          padding-bottom: 10px;
+        }
+      }
+    }
   }
+
+  // Footer
   .l-author {
     justify-content: space-between;
     gap: 0;
@@ -87,6 +99,12 @@
     .l-car-a-wr {
       padding-left: 177px;
       padding-right: 60px;
+      .l-career-about {
+        gap: 10px;
+        .car-pic-block {
+          min-width: auto;
+        }
+      }
     }
   }
 }
@@ -210,7 +228,7 @@
         justify-content: center;
         gap: 0;
         padding-left: 0;
-        .title h2 {
+        .com-title h2 {
           font-size: 4.5rem;
         }
       }
@@ -231,14 +249,14 @@
       padding-right: 120px;
       .l-games-info {
         flex-direction: column;
-        .title {
+        .gam-title {
           padding-top: 23px;
           width: auto;
-          .text-desc p {
+          .gam-text-desc p {
             max-width: 85%;
           }
         }
-        .pic-block {
+        .gam-pic-block {
           display: none;
         }
       }
@@ -261,21 +279,33 @@
     // Career
     .l-car-a-wr {
       padding-top: 166px;
-      padding-bottom: 165px;
+      padding-bottom: 10px;
+      padding-right: 22px;
       .l-career-about {
+        gap: 5px;
         flex-direction: column;
-        gap: 32px;
-        .ca-title {
-          h2 {
-            width: auto;
-          }
+        .car-title {
+          width: auto;
           p {
             padding-top: 28px;
-            max-width: 78%;
+            max-width: 75%;
           }
         }
-        .ca-pic-block {
+        .car-pic-block {
           justify-content: center;
+        }
+      }
+    }
+    .l-ov-wr {
+      padding-top: 110px;
+      padding-left: 45px;
+      padding-right: 32px;
+      .l-our-vacancies {
+        grid-gap: 17px;
+        grid-template-columns: repeat(auto-fit, minmax(328.5px, 1fr));
+        .vac-block {
+          max-width: 450px;
+          height: 450px;
         }
       }
     }
@@ -304,7 +334,7 @@
     }
     // About company
     .l-ca-wr {
-      .l-company-about .title h2 {
+      .l-company-about .com-title h2 {
         font-size: 4.1rem;
       }
       .l-company-stats {
@@ -349,13 +379,13 @@
       .l-game-info {
         width: auto;
       }
-      .pic-block img {
+      .gi-pic-block img {
         height: 450px;
       }
     }
     .l-pm-wr {
       padding-top: 40px;
-      .pic-block {
+      .ow-pic-block {
         order: 2;
       }
     }
@@ -365,7 +395,7 @@
     .l-hm-wr {
       padding-top: 40px;
       padding-bottom: 40px;
-      .pic-block {
+      .ow-pic-block {
         order: 2;
       }
     }
@@ -386,7 +416,23 @@
       }
     }
     // Career
-
+    .l-car-a-wr {
+      .l-career-about .car-title h2 {
+        font-size: 3.5rem;
+        line-height: 54px;
+      }
+    }
+    .l-ov-wr {
+      h2 {
+        width: auto;
+      }
+      .l-our-vacancies {
+        .vac-block .vac-info {
+          flex-direction: column;
+          padding-bottom: 0;
+        }
+      }
+    }
     // News
 
     // Contacts
@@ -482,13 +528,13 @@
       padding-left: 15px;
       .l-company-about {
         justify-content: start;
-        .title {
+        .com-title {
           padding-top: 3px;
           padding-left: 0px;
           h2 {
             font-size: 2rem;
           }
-          .text-desc p {
+          .com-text-desc p {
             font-size: 1rem;
             line-height: 20px;
             max-width: 98%;
@@ -541,12 +587,12 @@
       padding-top: 58px;
       padding-left: 15px;
       padding-right: 0;
-      .l-games-info .title {
+      .l-games-info .gam-title {
         h2 {
           font-size: 2rem;
           line-height: 38px;
         }
-        .text-desc p {
+        .gam-text-desc p {
           font-size: 1rem;
           line-height: 20px;
           max-width: 98%;
@@ -579,7 +625,7 @@
           line-height: 20px;
         }
       }
-      .pic-block img {
+      .ow-pic-block img {
         height: 344px;
       }
     }
@@ -618,7 +664,51 @@
       }
     }
     // Career
-
+    .l-car-a-wr {
+      padding-top: 73px;
+      padding-left: 15px;
+      padding-bottom: 57px;
+      .l-career-about {
+        gap: 31px;
+        .car-title {
+          h2 {
+            font-size: 2rem;
+          }
+          p {
+            font-size: 1rem;
+            line-height: 20px;
+            padding-top: 0px;
+            max-width: 100%;
+          }
+          .check-vacancy {
+            margin-top: 21px;
+          }
+        }
+      }
+    }
+    .l-ov-wr {
+      padding-top: 101px;
+      padding-left: 15px;
+      padding-right: 22px;
+      h2 {
+        font-size: 2rem;
+        line-height: 38px;
+        max-width: 95%;
+      }
+      .l-our-vacancies {
+        grid-template-columns: repeat(auto-fit, minmax(266.5px, 1fr));
+        justify-items: center;
+        grid-gap: 29px;
+        margin-top: 38px;
+        .vac-block {
+          max-width: 345px;
+          height: 345px;
+          .vac-info {
+            span {}
+          }
+        }
+      }
+    }
     // News
 
     // Contacts

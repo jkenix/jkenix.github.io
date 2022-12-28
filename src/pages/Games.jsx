@@ -41,9 +41,9 @@ export default function Games() {
           <Sociallinksvert slvname="social-links-vert slv-static" />
           <div className="l-gi-wr bclg-bg">
             <div className="l-games-info">
-              <div className="title">
+              <div className="gam-title">
                 <h2>игры</h2>
-                <div className="text-desc">
+                <div className="gam-text-desc">
                   <p>
                     Toy.Stream сегодня — это команда из более 500 человек и
                     офисы по всему миру. Мы входим в топ-10 игровых
@@ -65,7 +65,7 @@ export default function Games() {
                   Смотреть наши работы
                 </a>
               </div>
-              <div className="pic-block img__resp-block" aria-hidden="true">
+              <div className="gam-pic-block img__resp-block" aria-hidden="true">
                 <img
                   src={gp}
                   className="img__resp"
@@ -91,7 +91,7 @@ export default function Games() {
                   Подробнее
                 </button>
               </div>
-              <div className="pic-block img__resp-block" aria-hidden="true">
+              <div className="ow-pic-block img__resp-block" aria-hidden="true">
                 <img
                   src={dmasters}
                   className="img__resp"
@@ -104,7 +104,7 @@ export default function Games() {
           </div>
           <div className="l-pm-wr ow-wr" id="work">
             <div className="l-perfect-makeup gi-block">
-              <div className="pic-block img__resp-block" aria-hidden="true">
+              <div className="ow-pic-block img__resp-block" aria-hidden="true">
                 <img
                   src={pmakeup}
                   className="img__resp"
@@ -146,7 +146,7 @@ export default function Games() {
                   Подробнее
                 </button>
               </div>
-              <div className="pic-block img__resp-block" aria-hidden="true">
+              <div className="ow-pic-block img__resp-block" aria-hidden="true">
                 <img
                   src={emasters}
                   className="img__resp"
@@ -159,7 +159,7 @@ export default function Games() {
           </div>
           <div className="l-hm-wr ow-wr" id="work">
             <div className="l-hitmasters gi-block">
-              <div className="pic-block img__resp-block" aria-hidden="true">
+              <div className="ow-pic-block img__resp-block" aria-hidden="true">
                 <img
                   src={hmasters}
                   className="img__resp"

@@ -11,7 +11,7 @@
 }
 // Games/Career
 .bclg-bg {
-  background: linear-gradient(to right, #fff, #fff 850px, #D3D1E9 850px);
+  background: linear-gradient(to right, #fff, #fff 850px, #d3d1e9 850px);
 }
 
 /* Color styles for page content */
@@ -45,15 +45,20 @@
     }
   }
   .l-at-wr {
-    .t-name, .t-spec {
+    .t-name,
+    .t-spec {
       color: #000000;
     }
-    .t-q, q {
+    .t-q,
+    q {
       color: #646464;
     }
   }
   // Games
- 
+  // Career
+  .l-ov-wr .l-our-vacancies .vac-block {
+    color: #000000;
+  }
   // Career
 
   // News
@@ -88,7 +93,7 @@
     background: white;
   }
   .bclg-bg {
-    background: linear-gradient(to right, #fff, #fff 97px, #D3D1E9 97px);
+    background: linear-gradient(to right, #fff, #fff 97px, #d3d1e9 97px);
   }
 }
 
@@ -100,6 +105,6 @@
     background: linear-gradient(to right, #fff, #fff 70px, #ffea2f 70px);
   }
   .bclg-bg {
-    background: linear-gradient(to right, #fff, #fff 70px, #D3D1E9 70px);
+    background: linear-gradient(to right, #fff, #fff 70px, #d3d1e9 70px);
   }
 }

@@ -52,6 +52,22 @@
       outline: 2px solid #ff0000;
     }
   }
+  // Career
+  // Career
+  .l-ov-wr .l-our-vacancies .vac-block {
+    &:hover, &:focus {
+      color: #FFFFFF;
+      background-color: #CE0002;
+      .vac-info {
+        .check-more::after {
+          background-image: url("../img/arrow-fm.svg");
+        }
+      }
+    }
+    &:active {
+      background-color: #a60002;
+    }
+  }
   // Slider arrow
   .slick-arrow {
     &:focus {
