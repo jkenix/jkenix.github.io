@@ -1,41 +1,6 @@
 // Import mixins, variables
 @import "mixins_var.scss";
 /* State of modules and site skeleton */
-
-// Scroll
-#scroll_top {
-  display: none;
-  position: fixed;
-  justify-content: center;
-  align-items: center;
-  background-color: #000;
-  bottom: 260px;
-  right: 15px;
-  z-index: 1000;
-  width: 40px;
-  height: 40px;
-  opacity: 0.5;
-  &:hover {
-    opacity: 1;
-  }
-}
-.arrow-top {
-  width: 40px;
-  height: 30px;
-  transform: rotate(270deg);
-  cursor: pointer;
-  &:active {
-    path {
-      fill: #f2ae4d;
-    }
-  }
-  path {
-    fill: #fff;
-    transition: fill 0s ease-out;
-  }
-}
-
-/* Page content (divs) */
 // Header
 .l-header {
   nav a {
@@ -53,11 +18,11 @@
     }
   }
   // Career
-  // Career
   .l-ov-wr .l-our-vacancies .vac-block {
-    &:hover, &:focus {
-      color: #FFFFFF;
-      background-color: #CE0002;
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      background-color: #ce0002;
       .vac-info {
         .check-more::after {
           background-image: url("../img/arrow-fm.svg");
@@ -66,6 +31,26 @@
     }
     &:active {
       background-color: #a60002;
+    }
+  }
+  // News
+  .l-news-wr .l-news .news-block {
+    &:hover,
+    &:focus {
+      .arrow-img {
+        visibility: visible;
+        transform: translateX(-40px);
+        transition: all 0.2s linear;
+      }
+    }
+  }
+  // Contacts
+  .l-con-wr .l-contacts-content .contacts-info .ci-content a {
+    &:hover, &:focus {
+      color: #ce0002;
+    }
+    &:active {
+      color: #a60002;
     }
   }
   // Slider arrow

@@ -496,9 +496,9 @@
     }
     .l-our-vacancies {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(505px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(379px, 1fr));
       grid-gap: 31px;
-    margin-top: 33px;
+      margin-top: 33px;
       .vac-block {
         @include flexcolumn();
         justify-content: flex-end;
@@ -542,9 +542,166 @@
       }
     }
   }
+  .l-bw-wr {
+    padding-top: 100px;
+    padding-left: 185px;
+    padding-right: 114px;
+    padding-bottom: 169px;
+    .l-benefits-work {
+      display: flex;
+      gap: 179px;
+      .bw-info {
+        max-width: 606px;
+        h2 {
+          font-size: 4.5rem;
+          line-height: 85px;
+        }
+        .bw-desc p {
+          font-weight: 600;
+          font-size: 1.5rem;
+          line-height: 30px;
+          &:nth-child(1) {
+            padding-top: 17px;
+          }
+          &:nth-child(2) {
+            padding-top: 17px;
+          }
+        }
+      }
+      .bw-content {
+        @include flexcolumn();
+        gap: 38px;
+        max-width: 609px;
+        .bw-row {
+          display: flex;
+          .bw-row-content {
+            .bwrc-desc {
+              @include flexcolumn();
+              &-title {
+                font-weight: 900;
+                font-size: 2.75rem;
+                line-height: 55px;
+              }
+              &-info {
+                font-weight: 600;
+                font-size: 1.5rem;
+                line-height: 30px;
+              }
+            }
+          }
+          // Bw-blocks
+          .team {
+            max-width: 170px;
+          }
+          .bonus {
+            max-width: 160px;
+          }
+          .self-realization {
+            max-width: 293px;
+          }
+          .development {
+            max-width: 226px;
+          }
+        }
+        .br-1 {
+          gap: 66px;
+        }
+        .br-2 {
+          gap: 20px;
+        }
+      }
+    }
+  }
   // News
-
+  .l-news-wr {
+    padding-top: 123px;
+    padding-right: 113px;
+    padding-left: 185px;
+    h2 {
+      font-weight: 800;
+      font-size: 4.5rem;
+      line-height: 85px;
+    }
+    .l-news {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(379px, 1fr));
+      grid-gap: 31px;
+      margin-top: 30px;
+      .news-block {
+        max-width: 505px;
+        height: 782px;
+        .news-pic {
+          height: 350px;
+        }
+        .news-content {
+          padding-top: 20px;
+          padding-left: 40px;
+          .news-date {
+            display: flex;
+            gap: 10px;
+            font-weight: 500;
+            font-size: 0.875rem;
+            line-height: 150%;
+            padding-right: 39px;
+          }
+          .news-title {
+            padding-top: 9px;
+            max-width: 83%;
+            span {
+              font-weight: 800;
+              font-size: 2rem;
+              line-height: 40px;
+            }
+          }
+          p {
+            padding-top: 20px;
+            font-weight: 600;
+            font-size: 1.5rem;
+            line-height: 30px;
+            max-width: 92%;
+          }
+          .arrow-img {
+            padding-top: 35px;
+            padding-left: 43px;
+            visibility: hidden;
+          }
+        } // News-content end
+      } // News block end
+    }
+  }
   // Contacts
+  .l-con-wr {
+    padding-top: 131px;
+    padding-left: 185px;
+    .l-contacts-content {
+      display: flex;
+      gap: 239px;
+      .contacts-info {
+        max-width: 606px;
+        padding-top: 157px;
+        h2 {
+          font-size: 4.5rem;
+          line-height: 85px;
+        }
+        .ci-content {
+          @include flexcolumn();
+          padding-top: 55px;
+          a,
+          span {
+            font-size: 26px;
+            line-height: 150%;
+          }
+          .c-number {
+            font-weight: 700;
+          }
+        }
+      }
+        iframe {
+          width: 1070px;
+          height: 625px;
+        }
+    }
+  }
 }
 .l-footer {
   margin-top: 77px;

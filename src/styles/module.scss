@@ -75,6 +75,26 @@
     background-color: #a60002;
   }
 }
+.up-btn {
+  align-items: center;
+  @include flexcolumn();
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.375rem;
+  line-height: 27px;
+  width: 80px;
+  height: 80px;
+  margin-top: 80px;
+  margin-left: auto;
+  &::before {
+    content: "";
+    width: 20px;
+    height: 24px;
+    background-image: url("../img/arrow-up-btn.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 // Active menu script
 .slv-active {
   .social-links-vert {
@@ -97,9 +117,15 @@
   flex-direction: column;
   gap: 15px;
 }
-// Sl styles for about team page
+// Sl styles for About team/Games/Career pages
 .slv-static {
   position: fixed;
+  padding-top: 276px;
+  padding-left: 90px;
+}
+// Sl styles for News/Contacts pages
+.slv-abs {
+  position: absolute;
   padding-top: 276px;
   padding-left: 90px;
 }

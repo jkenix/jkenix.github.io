@@ -28,7 +28,7 @@
 // 1500px
 @media (max-width: 1500px) {
   .l-main {
-    // Common class for slv in pages (except Main)
+    // Class for About team/Games/Career pages
     .slv-static {
       padding-left: 40px;
     }
@@ -60,23 +60,55 @@
     .ow-wr {
       padding-right: 100px;
     }
+    .l-bw-wr {
+      padding-left: 100px;
+      padding-right: 20px;
+      .l-benefits-work {
+        .bw-info h2 {
+          font-size: 3.5rem;
+        }
+      }
+    }
+    // Contacts
+    .slv-con {
+      padding-left: 40px;
+    }
+    .l-con-wr {
+      padding-left: 110px;
+      .l-contacts-content {
+        gap: 20px;
+      }
+    }
   }
 }
 // 1400px
 @media (max-width: 1399.98px) {
   .l-main {
     // Career
+    .l-car-a-wr {
+      padding-left: 177px;
+      padding-right: 60px;
+      .l-career-about {
+        gap: 40px;
+      }
+    }
     .l-ov-wr {
       padding-right: 100px;
       .l-our-vacancies {
         grid-template-columns: repeat(auto-fit, minmax(346px, 1fr));
         .vac-block .vac-info {
           padding-bottom: 10px;
+          gap: 10px;
+          .vi-spec {
+            padding-left: 20px;
+          }
         }
       }
     }
+    .l-bw-wr .l-benefits-work {
+      gap: 100px;
+    }
   }
-
   // Footer
   .l-author {
     justify-content: space-between;
@@ -97,13 +129,30 @@
     }
     // Career
     .l-car-a-wr {
-      padding-left: 177px;
-      padding-right: 60px;
       .l-career-about {
-        gap: 10px;
         .car-pic-block {
           min-width: auto;
         }
+      }
+    }
+    .l-bw-wr {
+      padding-left: 100px;
+      padding-right: 22px;
+      .l-benefits-work {
+        gap: 20px;
+        .bw-info h2 {
+          font-size: 3rem;
+          line-height: 50px;
+        }
+      }
+    }
+    // News
+    .l-news-wr {
+      .l-news {
+        grid-template-columns: repeat(auto-fit, minmax(339px, 1fr));
+      }
+      .up-btn {
+        margin-top: 210px;
       }
     }
   }
@@ -183,9 +232,15 @@
       order: 2;
       margin-top: 170px;
     }
-    // Common class for slv in pages (except Main)
+    // Class for About team/Games/Career pages
     .slv-static {
       display: none;
+    }
+    // News/Contacts class
+    .slv-abs {
+      display: none;
+      padding-top: 0;
+      padding-left: 0;
     }
     // Main page
     .l-ga-wr {
@@ -306,12 +361,66 @@
         .vac-block {
           max-width: 450px;
           height: 450px;
+          .vac-info {
+            .vi-spec {
+            }
+          }
         }
       }
     }
+    .l-bw-wr {
+      padding-left: 47px;
+      .l-benefits-work {
+        flex-direction: column;
+      }
+    }
     // News
-
+    .l-news-wr {
+      padding-top: 53px;
+      padding-left: 47px;
+      padding-right: 19px;
+      .l-news {
+        grid-template-columns: repeat(auto-fit, minmax(330.1px, 1fr));
+        grid-gap: 24px;
+        .news-block {
+          max-width: 450px;
+          height: 764px;
+          .news-pic {
+            height: auto;
+          }
+          .news-content {
+            .news-title {
+              max-width: 95%;
+            }
+            p {
+              font-size: 1.25rem;
+            }
+            .arrow-img {
+              padding-top: 10px;
+            }
+          }
+        }
+      }
+      .up-btn {
+        margin-top: 80px;
+      }
+    }
     // Contacts
+    .l-con-wr {
+      padding-top: 123px;
+      padding-right: 49px;
+      padding-left: 47px;
+      .l-contacts-content {
+        flex-direction: column;
+        .contacts-info {
+          padding-top: 0;
+        }
+        iframe {
+          width: auto;
+          height: 542px;
+        }
+      }
+    }
   }
   .l-footer {
     margin-top: 114px;
@@ -322,9 +431,6 @@
       }
     }
   }
-}
-// 991px
-@media (max-width: 991.98px) {
 }
 // 768px
 @media (max-width: 767.98px) {
@@ -360,7 +466,7 @@
       }
       // Slider
       .slick-arrow {
-        top: 600px;
+        top: 560px;
       }
       .slick-prev {
         left: 20px;
@@ -417,6 +523,7 @@
     }
     // Career
     .l-car-a-wr {
+      padding-left: 128px;
       .l-career-about .car-title h2 {
         font-size: 3.5rem;
         line-height: 54px;
@@ -430,11 +537,19 @@
         .vac-block .vac-info {
           flex-direction: column;
           padding-bottom: 0;
+          gap: 0;
+          .vi-spec {
+            padding-left: 40px;
+          }
         }
       }
     }
     // News
-
+    .l-news-wr {
+      .up-btn {
+        margin-top: 0;
+      }
+    }
     // Contacts
   }
 }
@@ -704,14 +819,82 @@
           max-width: 345px;
           height: 345px;
           .vac-info {
-            span {}
+            span {
+            }
+          }
+        }
+      }
+    }
+    .l-bw-wr {
+      padding-left: 15px;
+      padding-bottom: 100px;
+      .l-benefits-work {
+        .bw-info {
+          h2 {
+            font-size: 2rem;
+            line-height: 38px;
+          }
+          .bw-desc p {
+            font-size: 1rem;
+            line-height: 20px;
+          }
+        }
+        .bw-content {
+          gap: 29.75px;
+          .bw-row {
+            gap: 29.75px;
+            .bw-row-content .bwrc-desc {
+              .bwrc-desc-title {
+                font-size: 1.25rem;
+                line-height: 25px;
+              }
+              .bwrc-desc-info {
+                font-size: 1rem;
+                line-height: 20px;
+              }
+            }
           }
         }
       }
     }
     // News
-
+    .l-news-wr {
+      padding-left: 15px;
+      padding-right: 22px;
+      h2 {
+        font-size: 2rem;
+        line-height: 38px;
+      }
+      .l-news {
+        grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+        grid-gap: 0;
+        .news-block {
+          .news-content {
+            padding-left: 20px;
+            p {
+              font-size: 1rem;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
     // Contacts
+    .l-con-wr {
+      padding-right: 15px;
+      padding-left: 15px;
+      .l-contacts-content {
+        .contacts-info {
+          h2 {
+            font-size: 2rem;
+            line-height: 38px;
+          }
+        }
+        iframe {
+          height: 360px;
+        }
+      }
+    }
   }
   .l-footer {
     margin-top: 55px;

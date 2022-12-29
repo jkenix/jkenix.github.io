@@ -13,7 +13,11 @@
 .bclg-bg {
   background: linear-gradient(to right, #fff, #fff 850px, #d3d1e9 850px);
 }
-
+// Button
+.up-btn {
+  color: #ffffff;
+  background-color: #202020;
+}
 /* Color styles for page content */
 // Header
 .l-header {
@@ -54,16 +58,32 @@
       color: #646464;
     }
   }
-  // Games
   // Career
-  .l-ov-wr .l-our-vacancies .vac-block {
-    color: #000000;
+  .l-ov-wr {
+    .l-our-vacancies .vac-block {
+      color: #000000;
+    }
   }
-  // Career
-
+  .l-bw-wr .l-benefits-work .bwrc-desc-info {
+    color: #7d7a9a;
+  }
   // News
-
+  .l-news-wr .l-news .news-block .news-content {
+    .news-date {
+      color: #c3b6b6;
+    }
+    .news-title span,
+    p {
+      color: #000000;
+    }
+  }
   // Contacts
+  .l-con-wr .ci-content{
+    a, span {
+      color: #000000;
+
+    }
+  }
 }
 .l-footer {
   .l-contacts {

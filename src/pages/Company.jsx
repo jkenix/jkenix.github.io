@@ -9,6 +9,7 @@ import {
 import Header from "../components/Header.jsx";
 import Sociallinksvert from "../components/Sociallinksvert.jsx";
 import ResizableSliderAt from "../components/ResizableSliderAt.jsx";
+import UpBtn from "../components/UpBtn.jsx";
 import Footer from "../components/Footer.jsx";
 
 import mountain from "../img/mountain.png";
@@ -143,6 +144,7 @@ export default function Company() {
               </div>
             </div>
           </div>
+          <UpBtn/>
         </main>
         <Footer />
       </HelmetProvider>

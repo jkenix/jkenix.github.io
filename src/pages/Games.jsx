@@ -5,6 +5,7 @@ import { ShowMenu, ShowMenubclg, NavActive } from "../js/scripts";
 import Header from "../components/Header.jsx";
 import Sociallinksvert from "../components/Sociallinksvert.jsx";
 import ResizableSliderGames from "../components/ResizableSliderGames.jsx";
+import UpBtn from "../components/UpBtn.jsx";
 import Footer from "../components/Footer.jsx";
 
 import gp from "../img/games-preview.svg";
@@ -199,6 +200,7 @@ export default function Games() {
               <ResizableSliderGames />
             </div>
           </div>
+          <UpBtn/>
         </main>
         <Footer />
       </HelmetProvider>

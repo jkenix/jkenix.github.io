@@ -1,4 +1,5 @@
-/* Declaration variables scripts */ 
+/* Declaration variables scripts */
+
 // Header-menu global declaration
 function Hmenu() {
   window.headermenu = document.querySelector(".header-menu");
