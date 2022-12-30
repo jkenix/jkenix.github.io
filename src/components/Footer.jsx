@@ -44,8 +44,8 @@ function Footer(props) {
           <Link to="/" title="Контакты">
             <img
               src={pinterest}
-              width={"24.99"}
-              height={"24.99"}
+              width={"25"}
+              height={"25"}
               alt="pinterest"
               title="pinterest"
             ></img>
@@ -53,8 +53,8 @@ function Footer(props) {
           <Link to="/">
             <img
               src={Behance}
-              width={"24.99"}
-              height={"24.99"}
+              width={"25"}
+              height={"25"}
               alt="Behance"
               title="Behance"
             ></img>
@@ -62,8 +62,8 @@ function Footer(props) {
           <Link to="/">
             <img
               src={Dribbble}
-              width={"24.99"}
-              height={"24.99"}
+              width={"25"}
+              height={"25"}
               alt="Dribbble"
               title="Dribbble"
             ></img>
@@ -71,8 +71,8 @@ function Footer(props) {
           <Link to="/">
             <img
               src={Snapchat}
-              width={"24.99"}
-              height={"24.99"}
+              width={"25"}
+              height={"25"}
               alt="Snapchat"
               title="Snapchat"
             ></img>
@@ -80,8 +80,8 @@ function Footer(props) {
           <Link to="/">
             <img
               src={Linkedin}
-              width={"24.99"}
-              height={"24.99"}
+              width={"25"}
+              height={"25"}
               alt="Linkedin"
               title="Linkedin"
             ></img>
@@ -89,7 +89,7 @@ function Footer(props) {
           <Link to="/">
             <img
               src={Facebook}
-              width={"24.99"}
+              width={"25"}
               height={"24.99"}
               alt="Facebook"
               title="Facebook"

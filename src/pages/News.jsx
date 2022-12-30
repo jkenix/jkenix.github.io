@@ -43,7 +43,7 @@ export default function News() {
           <div className="l-news-wr">
             <h2>Новости</h2>
             <div className="l-news">
-              <Link className="news-block" href="/news">
+              <Link className="news-block" to="/news">
                 <div className="news-pic img__resp-block" aria-hidden="true">
                   <img
                     src={gamenews}
@@ -86,7 +86,7 @@ export default function News() {
                   </div>
                 </div>
               </Link>
-              <Link className="news-block" href="/news">
+              <Link className="news-block" to="/news">
                 <div className="news-pic img__resp-block" aria-hidden="true">
                   <img
                     src={gamenews}
@@ -129,7 +129,7 @@ export default function News() {
                   </div>
                 </div>
               </Link>
-              <Link className="news-block" href="/news">
+              <Link className="news-block" to="/news">
                 <div className="news-pic img__resp-block" aria-hidden="true">
                   <img
                     src={gamenews}
@@ -172,7 +172,7 @@ export default function News() {
                   </div>
                 </div>
               </Link>
-              <Link className="news-block" href="/news">
+              <Link className="news-block" to="/news">
                 <div className="news-pic img__resp-block" aria-hidden="true">
                   <img
                     src={gamenews}
@@ -215,7 +215,7 @@ export default function News() {
                   </div>
                 </div>
               </Link>
-              <Link className="news-block" href="/news">
+              <Link className="news-block" to="/news">
                 <div className="news-pic img__resp-block" aria-hidden="true">
                   <img
                     src={gamenews}
@@ -258,7 +258,7 @@ export default function News() {
                   </div>
                 </div>
               </Link>
-              <Link className="news-block" href="/news">
+              <Link className="news-block" to="/news">
                 <div className="news-pic img__resp-block" aria-hidden="true">
                   <img
                     src={gamenews}

@@ -44,8 +44,8 @@ export default class ResizableSliderGames extends Component {
             <img
               src={hmasters}
               className="img__resp"
-              width="408.42"
-              height="408.42"
+              width="408"
+              height="408"
               alt="Hitmasters"
             ></img>
           </div>
@@ -65,8 +65,8 @@ export default class ResizableSliderGames extends Component {
             <img
               src={emasters}
               className="img__resp"
-              width="408.42"
-              height="408.42"
+              width="408"
+              height="408"
               alt="Escape Masters"
             ></img>
           </div>
@@ -85,8 +85,8 @@ export default class ResizableSliderGames extends Component {
             <img
               src={pmakeup}
               className="img__resp"
-              width="408.42"
-              height="408.42"
+              width="408"
+              height="408"
               alt="Perfect Makeup 3D"
             ></img>
           </div>

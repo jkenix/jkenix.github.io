@@ -48,7 +48,7 @@ export default function Home() {
               <div className="desc">
                 <Sociallinksvert slvname="social-links-vert" />
                 <div className="desc-content">
-                  <Link className="btn check-box" title="Learn more">
+                  <Link to="/games" className="btn check-box" title="Learn more">
                     Узнать подробнее
                   </Link>
                   <div className="text-box">

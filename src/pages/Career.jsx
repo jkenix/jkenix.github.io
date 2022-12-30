@@ -60,7 +60,6 @@ export default function Career() {
               </div>
               <picture
                 className="car-pic-block img__resp-block"
-                aria-hidden="true"
               >
                 <source
                   media="(max-width: 1024.98px)"

@@ -103,7 +103,7 @@ export default function Games() {
               </div>
             </div>
           </div>
-          <div className="l-pm-wr ow-wr" id="work">
+          <div className="l-pm-wr ow-wr">
             <div className="l-perfect-makeup gi-block">
               <div className="ow-pic-block img__resp-block" aria-hidden="true">
                 <img
@@ -132,7 +132,7 @@ export default function Games() {
               </div>
             </div>
           </div>
-          <div className="l-em-wr ow-wr" id="work">
+          <div className="l-em-wr ow-wr">
             <div className="l-escape-masters gi-block">
               <div className="l-game-info">
                 <h2>Escape Masters</h2>
@@ -158,7 +158,7 @@ export default function Games() {
               </div>
             </div>
           </div>
-          <div className="l-hm-wr ow-wr" id="work">
+          <div className="l-hm-wr ow-wr">
             <div className="l-hitmasters gi-block">
               <div className="ow-pic-block img__resp-block" aria-hidden="true">
                 <img
