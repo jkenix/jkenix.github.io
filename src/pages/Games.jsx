@@ -200,7 +200,7 @@ export default function Games() {
               <ResizableSliderGames />
             </div>
           </div>
-          <UpBtn/>
+          <UpBtn btnname="up-btn ub-abs"/>
         </main>
         <Footer />
       </HelmetProvider>

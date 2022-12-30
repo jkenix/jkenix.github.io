@@ -136,7 +136,7 @@ export default function Career() {
                 </div>
               </Link>
             </div>
-           <UpBtn/>
+           <UpBtn btnname="up-btn"/>
           </div>
           <div className="l-bw-wr">
             <div className="l-benefits-work">

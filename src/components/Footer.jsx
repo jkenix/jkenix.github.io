@@ -107,7 +107,7 @@ function Footer(props) {
         </address>
 
         <a
-          href="https://github.com/jkenix/jkenix.github.io/tree/interno"
+          href="https://github.com/jkenix/jkenix.github.io/tree/toystream"
           title="Github repo"
         >
           Website on Github

@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function UpBtn() {
+export default function UpBtn(props) {
   return (
     <button
-      className="up-btn"
+      className={props.btnname}
       title="Up page button"
       onClick={() => {
         window.scrollTo({ top: 0 });

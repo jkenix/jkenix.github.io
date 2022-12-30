@@ -302,7 +302,7 @@ export default function News() {
                 </div>
               </Link>
             </div>
-          <UpBtn/>
+          <UpBtn btnname="up-btn"/>
           </div>
         </main>
         <Footer />

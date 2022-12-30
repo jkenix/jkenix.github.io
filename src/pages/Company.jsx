@@ -144,7 +144,7 @@ export default function Company() {
               </div>
             </div>
           </div>
-          <UpBtn/>
+          <UpBtn btnname="up-btn ub-abs"/>
         </main>
         <Footer />
       </HelmetProvider>

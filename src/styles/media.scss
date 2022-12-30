@@ -547,7 +547,7 @@
     // News
     .l-news-wr {
       .up-btn {
-        margin-top: 0;
+        margin-top: 20px;
       }
     }
     // Contacts
@@ -868,7 +868,9 @@
       .l-news {
         grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
         grid-gap: 0;
+        gap: 40px;
         .news-block {
+          height: auto;
           .news-content {
             padding-left: 20px;
             p {
@@ -881,6 +883,7 @@
     }
     // Contacts
     .l-con-wr {
+      padding-top: 113px;
       padding-right: 15px;
       padding-left: 15px;
       .l-contacts-content {
@@ -888,6 +891,9 @@
           h2 {
             font-size: 2rem;
             line-height: 38px;
+          }
+          .ci-content {
+            padding-top: 22px;
           }
         }
         iframe {
