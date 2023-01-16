@@ -9,10 +9,10 @@ import UpBtn from "../components/UpBtn.jsx";
 import Footer from "../components/Footer.jsx";
 
 import gp from "../img/games-preview.svg";
-import dmasters from "../img/design-masters.png";
-import pmakeup from "../img/perfect-makeup-3d.png";
-import emasters from "../img/escape-masters.png";
-import hmasters from "../img/hitmasters.png";
+import dmasters from "../img/design-masters.webp";
+import pmakeup from "../img/perfect-makeup-3d.webp";
+import emasters from "../img/escape-masters.webp";
+import hmasters from "../img/hitmasters.webp";
 
 export default function Games() {
   return (

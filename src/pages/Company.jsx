@@ -82,7 +82,7 @@ export default function Company() {
                     src={flag}
                     width={160}
                     height={162}
-                    alt="Star icon"
+                    alt="Flag icon"
                     aria-hidden="true"
                   ></img>
                   <div className="text-block">
@@ -95,7 +95,7 @@ export default function Company() {
                     src={champ}
                     width={160}
                     height={162}
-                    alt="Star icon"
+                    alt="champ icon"
                     aria-hidden="true"
                   ></img>
                   <div className="text-block">
@@ -110,7 +110,7 @@ export default function Company() {
                     src={mountain}
                     width={160}
                     height={162}
-                    alt="Star icon"
+                    alt="mountain icon"
                     aria-hidden="true"
                   ></img>
                   <div className="text-block">

@@ -18,8 +18,10 @@
     "@babel/preset-react": "^7.18.6",
     "@babel/register": "^7.18.9",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.9",
+    "autoprefixer": "^10.4.13",
     "babel-loader": "^9.1.0",
     "clean-webpack-plugin": "^4.0.0",
+    "compression-webpack-plugin": "^10.0.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
     "eslint": "^8.23.1",
@@ -27,7 +29,6 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-react": "^7.31.10",
-    "express": "^4.18.2",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "ignore-styles": "^5.0.1",
@@ -84,5 +85,9 @@
       "/news",
       "/contacts"
     ]
-  }
+  },
+  "browserslist": [
+    "defaults and supports es6-module",
+    "maintained node versions"
+  ]
 }

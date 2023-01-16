@@ -78,7 +78,7 @@ export default class ResizableSliderAt extends Component {
                 className="img__resp"
                 width="219"
                 height="219"
-                alt="Alex Sherman"
+                alt="Alex Isaev"
               ></img>
             </div>
             <div className="about-teammate">
@@ -105,7 +105,7 @@ export default class ResizableSliderAt extends Component {
                 className="img__resp"
                 width="219"
                 height="219"
-                alt="Alex Sherman"
+                alt="Alex Negreev"
               ></img>
             </div>
             <div className="about-teammate">
@@ -131,7 +131,7 @@ export default class ResizableSliderAt extends Component {
                 className="img__resp"
                 width="219"
                 height="219"
-                alt="Alex Sherman"
+                alt="Eric Imashev"
               ></img>
             </div>
             <div className="about-teammate">

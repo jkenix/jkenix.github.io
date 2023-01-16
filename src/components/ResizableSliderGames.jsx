@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 
-import hmasters from "../img/hitmasters.png";
-import pmakeup from "../img/perfect-makeup-3d.png";
-import emasters from "../img/escape-masters.png";
+import hmasters from "../img/hitmasters.webp";
+import pmakeup from "../img/perfect-makeup-3d.webp";
+import emasters from "../img/escape-masters.webp";
 
 export default class ResizableSliderGames extends Component {
   render() {

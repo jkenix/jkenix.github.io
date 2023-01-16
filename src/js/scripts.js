@@ -1,14 +1,3 @@
-/* Declaration variables scripts */
-
-// Header-menu global declaration
-function Hmenu() {
-  window.headermenu = document.querySelector(".header-menu");
-}
-// Body global declaration
-function bodyvar() {
-  window.body = document.querySelector("body");
-}
-
 /* Def menu scripts. Common for all pages. */
 // Common show menu script
 export function ShowMenu() {
@@ -20,14 +9,14 @@ export function ShowMenu() {
 }
 // Remove class overflow-hidden from body (on click on other pages except main)
 export function bhremove() {
-  bodyvar();
+   let body = document.querySelector("body");
   body.classList.remove("overflow-hidden");
 }
 
 /* Nav active common scripts */
 // Add and delete class overflow-hidden from body, if click on hamburger
 export function bodyhide() {
-  bodyvar();
+  let body = document.querySelector("body");
   body.classList.toggle("overflow-hidden");
 }
 // Main func active Nav
@@ -42,16 +31,16 @@ export function NavActive() {
 /* Toggle background on active menu */
 // Main page
 export function ShowMenuylg() {
-  let header = document.querySelector(".l-header"); // Global variable?
+  let header = document.querySelector(".l-header");
   header.classList.toggle("ylg-bg");
 }
 // About company page
 export function ShowMenuylgcom() {
-  let header = document.querySelector(".l-header"); // Global variable?
+  let header = document.querySelector(".l-header");
   header.classList.toggle("ylg-bg-com");
 }
 // Games/Career pages
 export function ShowMenubclg() {
-  let header = document.querySelector(".l-header"); // Global variable?
+  let header = document.querySelector(".l-header");
   header.classList.toggle("bclg-bg");
 }

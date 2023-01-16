@@ -1,4 +1,5 @@
 const path = require("path");
+const CompressionPlugin = require("compression-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
@@ -16,6 +17,9 @@ const plugins = [
   }),
   new HtmlWebpackPlugin({
     template: "./index.html",
+  }),
+  new CompressionPlugin({
+    test: /\.js$|\.css$|\.html$/,
   }),
 ];
 
