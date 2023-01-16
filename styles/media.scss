@@ -2,7 +2,7 @@
 @import "mixins_var.scss";
 // Media main
 @media (min-width: 2099px) {
-  #scroll_top {
+  .up-btn {
     width: 300px;
     height: 200px;
     font-size: 100px;
@@ -10,7 +10,7 @@
 }
 
 @media (min-width: 1921px) {
-  #scroll_top {
+  .up-btn {
     min-width: 80px;
     min-height: 80px;
     max-width: 100px;
@@ -46,21 +46,11 @@
   }
 }
 
-@media (min-width: 1399.98px) {
-  // Img-desc height and indent
-  .l-main .l-m-recent-blogs .img-desc {
-  }
-}
-
 @media (max-width: 1399.98px) {
   // 1400px
   .l-main {
     .l-create-dream-inter-content {
       padding-left: 80px;
-    }
-    .l-m-interno-reviews .l-ir-content {
-      .reviews-block .review p {
-      }
     }
   }
 }

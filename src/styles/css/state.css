@@ -1,4 +1,4 @@
-.up-btn {
+#scroll_top {
   display: none;
   position: fixed;
   justify-content: center;
@@ -11,7 +11,7 @@
   height: 40px;
   opacity: 0.5;
 }
-.up-btn:hover {
+#scroll_top:hover {
   opacity: 1;
 }
 

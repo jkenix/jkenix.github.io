@@ -1,12 +1,12 @@
 @media (min-width: 2099px) {
-  .up-btn {
+  #scroll_top {
     width: 300px;
     height: 200px;
     font-size: 100px;
   }
 }
 @media (min-width: 1921px) {
-  .up-btn {
+  #scroll_top {
     min-width: 80px;
     min-height: 80px;
     max-width: 100px;

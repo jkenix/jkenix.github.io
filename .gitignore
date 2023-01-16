@@ -4,7 +4,9 @@ dist/
 .cache/
 cache/
 node_modules/
+docs/
 **package-lock.json
+*json
 *.txt
 *.zip
 Test/
