@@ -1,7 +1,7 @@
 const path = require("path");
+const CompressionPlugin = require("compression-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 
 let mode = "development";
 let target = "web";
@@ -17,26 +17,29 @@ const plugins = [
   new HtmlWebpackPlugin({
     template: "./index.html",
   }),
+  new CompressionPlugin({
+    test: /\.js$|\.css$|\.html$/,
+  }),
 ];
-
-if (process.env.SERVE) {
-  plugins.push(new ReactRefreshWebpackPlugin());
-}
 
 module.exports = {
   mode,
   target,
   plugins,
   devtool: "source-map",
-  entry: "./src/index.js",
+  entry: { main: "./src/index.js" },
   devServer: {
     historyApiFallback: true,
-    static: {
-      directory: path.join(__dirname, "src"),
-      watch: true,
-    },
-    // static: "./docs",
-    // watchFiles: ["./src"],
+    static: [
+      {
+        directory: path.join(__dirname, "src"),
+        watch: true,
+      },
+      {
+        directory: path.join(__dirname, "src/js"),
+        watch: true,
+      },
+    ],
     hot: true,
     open: true,
   },

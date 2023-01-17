@@ -11,67 +11,7 @@
 }
 // Main
 .l-main {
-  // Main page
-  .social-links a {
-    &:focus-visible {
-      outline: 2px solid #ff0000;
-    }
-  }
-  // Career
-  .l-ov-wr .l-our-vacancies .vac-block {
-    &:hover,
-    &:focus {
-      color: #ffffff;
-      background-color: #ce0002;
-      .vac-info {
-        .check-more::after {
-          background-image: url("../img/arrow-fm.svg");
-        }
-      }
-    }
-    &:active {
-      background-color: #a60002;
-    }
-  }
-  // News
-  .l-news-wr .l-news .news-block {
-    &:hover,
-    &:focus {
-      .arrow-img {
-        visibility: visible;
-        transform: translateX(-40px);
-        transition: all 0.2s linear;
-      }
-    }
-  }
-  // Contacts
-  .l-con-wr .l-contacts-content .contacts-info .ci-content a {
-    &:hover, &:focus {
-      color: #ce0002;
-    }
-    &:active {
-      color: #a60002;
-    }
-  }
-  // Slider arrow
-  .slick-arrow {
-    &:focus {
-      border: 3px solid black;
-    }
-    &:hover,
-    &:focus {
-      background-color: #ce0002;
-      &::before {
-        background-image: url("/src/img/btn-slider-white.svg");
-      }
-    }
-    &:active {
-      border: 1px solid transparent;
-      box-shadow: 0 0 0 0.15rem rgb(130 138 145 / 50%);
-      transition: border-color 0.15s ease-in-out;
-      background-color: #a60002;
-    }
-  }
+ 
 }
 // Footer
 .l-footer {

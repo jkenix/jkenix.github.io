@@ -1,18 +1,4 @@
 /* Theme classes */
-// Main/Company
-.ylg-bg {
-  background: linear-gradient(to right, #fff, #fff 280px, #ffea2f 280px);
-}
-.ylg-bg-com {
-  background: linear-gradient(to right, #fff, #fff 850px, #ffea2f 850px);
-}
-.ylg-bg-at {
-  background: linear-gradient(to left, #fff, #fff 833px, #ffea2f 833px);
-}
-// Games/Career
-.bclg-bg {
-  background: linear-gradient(to right, #fff, #fff 850px, #d3d1e9 850px);
-}
 // Button
 .up-btn {
   color: #ffffff;
@@ -21,69 +7,13 @@
 /* Color styles for page content */
 // Header
 .l-header {
-  .la-c {
-    color: #ff0000;
-  }
   nav a {
     color: #000000;
   }
 }
 // Main
 .l-main {
-  // Main page
-  .l-games-about {
-    .title h2 {
-      color: #000000;
-    }
-    p {
-      color: #000000;
-    }
-  }
-  // About Company
-  .l-ca-wr {
-    .num-title {
-      color: #000000;
-    }
-    .num-desc {
-      color: #646464;
-    }
-  }
-  .l-at-wr {
-    .t-name,
-    .t-spec {
-      color: #000000;
-    }
-    .t-q,
-    q {
-      color: #646464;
-    }
-  }
-  // Career
-  .l-ov-wr {
-    .l-our-vacancies .vac-block {
-      color: #000000;
-    }
-  }
-  .l-bw-wr .l-benefits-work .bwrc-desc-info {
-    color: #7d7a9a;
-  }
-  // News
-  .l-news-wr .l-news .news-block .news-content {
-    .news-date {
-      color: #c3b6b6;
-    }
-    .news-title span,
-    p {
-      color: #000000;
-    }
-  }
-  // Contacts
-  .l-con-wr .ci-content{
-    a, span {
-      color: #000000;
-
-    }
-  }
+  
 }
 .l-footer {
   .l-contacts {
@@ -106,25 +36,10 @@
   .ylg-bg {
     background: linear-gradient(to right, #fff, #fff 97px, #ffea2f 97px);
   }
-  .ylg-bg-com {
-    background: linear-gradient(to right, #fff, #fff 97px, #ffea2f 97px);
-  }
-  .ylg-bg-at {
-    background: white;
-  }
-  .bclg-bg {
-    background: linear-gradient(to right, #fff, #fff 97px, #d3d1e9 97px);
-  }
 }
 
 @media (max-width: 575.98px) {
   .ylg-bg {
     background: linear-gradient(to right, #fff, #fff 70px, #ffea2f 70px);
-  }
-  .ylg-bg-com {
-    background: linear-gradient(to right, #fff, #fff 70px, #ffea2f 70px);
-  }
-  .bclg-bg {
-    background: linear-gradient(to right, #fff, #fff 70px, #d3d1e9 70px);
   }
 }

@@ -58,10 +58,6 @@
   .nav-active {
     visibility: visible;
   }
-  .link-active {
-    pointer-events: none;
-    cursor: default;
-  }
 }
 // Buttons
 .btn {
@@ -94,40 +90,6 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-}
-// Active menu script
-.slv-active {
-  .social-links-vert {
-    display: flex;
-    z-index: 10;
-  }
-  .slv-static {
-    padding-top: 0;
-    padding-left: 0;
-  }
-  @media (max-width: 575.98px) and (orientation: landscape) {
-    .social-links-vert {
-      display: none;
-    }
-  }
-}
-// Def sl styles
-.social-links-vert {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-// Sl styles for About team/Games/Career pages
-.slv-static {
-  position: fixed;
-  padding-top: 276px;
-  padding-left: 90px;
-}
-// Sl styles for News/Contacts pages
-.slv-abs {
-  position: absolute;
-  padding-top: 276px;
-  padding-left: 90px;
 }
 // Images
 .img__resp-block {

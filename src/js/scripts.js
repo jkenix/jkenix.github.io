@@ -1,57 +1,32 @@
-/* Declaration variables scripts */
-
-// Header-menu global declaration
-function Hmenu() {
-  window.headermenu = document.querySelector(".header-menu");
-}
-// Body global declaration
-function bodyvar() {
-  window.body = document.querySelector("body");
-}
-
-/* Def menu scripts. Common for all pages. */
+/* Def menu scripts.\*/
 // Common show menu script
-export function ShowMenu() {
-  let ham = document.querySelector(".hamburger");
-  let main = document.querySelector(".l-main");
+let ham = document.querySelector(".hamburger");
 
-  ham.classList.toggle("ham-active");
-  main.classList.toggle("slv-active");
-}
-// Remove class overflow-hidden from body (on click on other pages except main)
-export function bhremove() {
-  bodyvar();
-  body.classList.remove("overflow-hidden");
+/* Toggle background on active menu */
+// Main page
+function ShowMenuylg() {
+  let header = document.querySelector(".l-header");
+  header.classList.toggle("ylg-bg");
 }
 
 /* Nav active common scripts */
 // Add and delete class overflow-hidden from body, if click on hamburger
-export function bodyhide() {
-  bodyvar();
+function bodyhide() {
+  let body = document.querySelector("body");
   body.classList.toggle("overflow-hidden");
 }
 // Main func active Nav
-export function NavActive() {
-  window.headermenu = document.querySelector(".header-menu");
+ham.onclick = function (NavActive) {
+  ham.classList.toggle("ham-active");
+  let headermenu = document.querySelector(".header-menu");
   let langsw = document.querySelector(".lang-sw");
   bodyhide();
+  ShowMenuylg();
   headermenu.classList.toggle("nav-active");
   langsw.classList.toggle("link-active");
-}
 
-/* Toggle background on active menu */
-// Main page
-export function ShowMenuylg() {
-  let header = document.querySelector(".l-header"); // Global variable?
-  header.classList.toggle("ylg-bg");
-}
-// About company page
-export function ShowMenuylgcom() {
-  let header = document.querySelector(".l-header"); // Global variable?
-  header.classList.toggle("ylg-bg-com");
-}
-// Games/Career pages
-export function ShowMenubclg() {
-  let header = document.querySelector(".l-header"); // Global variable?
-  header.classList.toggle("bclg-bg");
-}
+  headermenu.onclick = function () { // Сделать класс внутри h-menu
+    let body = document.querySelector("body");
+    body.classList.remove("overflow-hidden");
+  };
+};
