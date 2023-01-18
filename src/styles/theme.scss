@@ -1,19 +1,29 @@
 /* Theme classes */
 // Button
+.cart {
+  background-color: #1b3764;
+}
 .up-btn {
   color: #ffffff;
   background-color: #202020;
 }
+// Backgrounds
+
 /* Color styles for page content */
 // Header
+.logo {
+  font-family: "Cardo-Regular";
+  color: #f6f8fc;
+  
+}
 .l-header {
+  background-color: #1b3764;
   nav a {
     color: #000000;
   }
 }
 // Main
 .l-main {
-  
 }
 .l-footer {
   .l-contacts {
@@ -31,15 +41,9 @@
 // Media
 @media (max-width: 1024.98px) {
   .header-menu {
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  .ylg-bg {
-    background: linear-gradient(to right, #fff, #fff 97px, #ffea2f 97px);
+    background-color: rgba(255, 255, 255, 0.7);
   }
 }
 
 @media (max-width: 575.98px) {
-  .ylg-bg {
-    background: linear-gradient(to right, #fff, #fff 70px, #ffea2f 70px);
-  }
 }

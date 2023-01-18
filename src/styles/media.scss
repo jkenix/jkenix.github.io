@@ -56,14 +56,6 @@
       font-size: 3.25rem;
     }
   }
-  // Common class for menu slv
-  .slv-active {
-    .social-links-vert {
-      flex-direction: row;
-      top: 550px;
-      left: 100px;
-    }
-  }
 }
 /* Ландшафтная ориентация 1024px*/
 @media (max-width: 1024.98px) and (orientation: landscape) {
@@ -74,23 +66,14 @@
       font-size: 2.4rem;
     }
   }
-  // Common class for menu slv
-  .slv-active {
-    .social-links-vert {
-      flex-direction: row;
-      top: -40px;
-      left: 400px;
-    }
-  }
 }
 // Обычный режим 1024px
 @media (max-width: 1024.98px) {
   .l-header {
     align-items: center;
     padding-left: 30px;
-    .logo {
+    .logo-block {
       padding-left: 0;
-      margin-right: auto;
     }
     .hamburger {
       display: block;
@@ -153,7 +136,7 @@
   // 576px
   .l-header {
     padding-left: 15px;
-    .logo {
+    .logo-block {
       padding: 0;
     }
     .hamburger {

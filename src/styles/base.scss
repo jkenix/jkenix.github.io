@@ -1,27 +1,27 @@
 @font-face {
   font-display: swap;
   text-rendering: optimizeLegibility;
-  font-family: "AkrobatRegular";
-  src: url(./webfonts/AkrobatRegular.woff) format("woff");
+  font-family: "Cardo-Regular";
+  src: url(./webfonts/CardoRegular.woff) format("woff");
 }
 @font-face {
   font-display: swap;
   text-rendering: optimizeLegibility;
-  font-family: "ZonaPro-ExtraBold";
-  src: url(./webfonts/ZonaPro-ExtraBold.woff) format("woff");
+  font-family: "Inter-Regular";
+  src: url(./webfonts/InterRegular.woff) format("woff");
 }
 // Global selectors styles
 html {
   scroll-behavior: smooth;
 }
-h2 {
-  text-transform: uppercase;
-}
+
+h1,
 h2,
 h3 {
   margin: 0;
-  font-family: "ZonaPro-ExtraBold";
+  font-family: "Cardo-Regular";
 }
+
 p,
 a,
 ul,
@@ -30,8 +30,8 @@ span,
 button,
 input,
 textarea,
-address, q {
-  font-family: "AkrobatRegular";
+address,
+q {
   font-weight: 400;
   margin: 0;
 }
@@ -52,4 +52,7 @@ ul {
 address {
   font-style: normal;
   font-size: 1.5rem;
+}
+input {
+  font-family: "Inter-Regular";
 }

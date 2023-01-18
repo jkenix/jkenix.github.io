@@ -5,6 +5,11 @@
 .overflow-hidden {
   overflow: hidden;
 }
+// Logo
+.logo {
+  padding: 23px 0 19px;
+  margin-right: auto;
+}
 // Hamburger
 .hamburger {
   width: 34px;
@@ -41,35 +46,38 @@
     }
   }
 }
-.ham-active {
-  margin-right: 57px;
-  .hamburger-item {
-    transform: rotate(45deg) translate3D(8px, 10px, 0);
-    &::before {
-      transform: rotate(-90deg) translate3D(27px, 1px, 0);
-    }
-    &::after {
-      display: none;
-    }
-  }
-}
 // Menu active
 .l-header {
-  .nav-active {
-    visibility: visible;
-  }
 }
 // Buttons
-.btn {
+.cart {
+  width: 17px;
+  height: 17px;
+  background-image: url("/src/img/cart-icon.svg");
+  margin-right: 51px;
+}
+.btn-order {
+  height: 66px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.btn-yd {
+  color: #1b3764;
+  background-color: #ffca42;
+}
+.btn-white {
   color: #ffffff;
-  background-color: #ce0002;
-  &:hover,
-  &:focus {
-    background-color: #fe0002;
-  }
-  &:active {
-    background-color: #a60002;
-  }
+  // &:hover,
+  // &:focus {
+  //   background-color: #fe0002;
+  // }
+  // &:active {
+  //   background-color: #a60002;
+  // }
 }
 .up-btn {
   align-items: center;

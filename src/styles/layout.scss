@@ -8,10 +8,7 @@
 .l-header {
   display: flex;
   padding-left: 84px;
-  .logo {
-    padding: 23px 0 19px;
-    margin-right: auto;
-  }
+ 
   .header-menu {
     padding-top: 48px;
     a {
@@ -20,15 +17,9 @@
     }
   }
   .lang-sw {
-    top: 0;
-    right: 0;
     width: 103px;
     height: 120px;
-    display: flex;
-    justify-content: center;
-    place-items: center;
-    font-weight: 700;
-    font-size: 1.25rem;
+   
   }
 }
 .l-main {

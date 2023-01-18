@@ -3,15 +3,30 @@
 /* State of modules and site skeleton */
 // Header
 .l-header {
+  .ham-is-active {
+    margin-right: 57px;
+    .hamburger-item {
+      transform: rotate(45deg) translate3D(8px, 10px, 0);
+      &::before {
+        transform: rotate(-90deg) translate3D(27px, 1px, 0);
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .nav-is-active {
+    visibility: visible;
+  }
   nav a {
     &:hover {
-      color: #ff0000;
+      color: #ffca42;
     }
   }
 }
+
 // Main
 .l-main {
- 
 }
 // Footer
 .l-footer {
