@@ -9,4 +9,4 @@ import "./styles/module.scss";
 import "./styles/state.scss";
 import "./styles/theme.scss";
 
-import "./styles/lib/swiper-bundle.css";
+import "./js/scripts.js";

@@ -1,84 +1,110 @@
 // Import mixins, variables
 @import "mixins_var.scss";
-/* Modules. Reusable many times in code. */
-// Body
-.overflow-hidden {
-  overflow: hidden;
-}
+/* Modules */
 // Logo
 .logo {
-  padding: 23px 0 19px;
-  margin-right: auto;
+  margin: 35px 0 19px;
+  margin-right: 35px;
 }
 // Hamburger
 .hamburger {
-  width: 34px;
-  height: 29px;
-  z-index: 11;
-  margin-right: auto;
   cursor: pointer;
   display: none;
-  .hamburger-item {
-    display: block;
-    width: 100%;
-    height: 3px;
-    position: relative;
-    border-radius: 8px;
-    background-color: #000;
-    transition: background 0.2s linear;
-    &::before,
-    &::after {
-      background-color: #000;
-      content: "";
-      width: 100%;
-      height: 3px;
-      position: absolute;
-      left: 0;
-      border-radius: 8px;
-      z-index: 1;
-      transition: transform 0.2s linear, -webkit-transform 0.2s linear;
-    }
-    &::before {
-      top: 26px;
-    }
-    &::after {
-      bottom: -13px;
+  width: 34px;
+  height: 34px;
+  z-index: 11;
+}
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 5px;
+  position: relative;
+  border-radius: 2px;
+  background-color: #ffffff;
+  transition: all 0.4s;
+  &:nth-child(1) {
+    top: 0px;
+    left: 0px;
+    animation: span1_close 0.8s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  }
+  &:nth-child(2) {
+    top: 8px;
+    right: 0px;
+    animation: span2_close 0.8s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  }
+  &:nth-child(3) {
+    animation: span3_close 0.8s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
+    top: 17px;
+    right: 0px;
+  }
+  // &::before,
+  // &::after {
+  //   background-color: #000;
+  //   content: "";
+  //   width: 100%;
+  //   height: 3px;
+  //   position: absolute;
+  //   left: 0;
+  //   border-radius: 8px;
+  //   z-index: 1;
+  //   transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+  // }
+  // &::before {
+  //   top: 26px;
+  // }
+  // &::after {
+  //   bottom: -13px;
+  // }
+}
+// Buttons
+.sn-contacts {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+  margin-right: auto;
+  a {
+    display: flex;
+  }
+}
+// Header Menu
+.header-menu {
+  margin-top: 20px;
+  margin-right: 40px;
+  a {
+    font-size: 1.063rem;
+    font-family: "Inter";
+    margin-right: 56px;
+    width: max-content;
+    &:nth-last-child(1) {
+      margin: 0;
     }
   }
 }
-// Menu active
-.l-header {
-}
-// Buttons
 .cart {
   width: 17px;
   height: 17px;
   background-image: url("/src/img/cart-icon.svg");
+  margin-top: 15px;
   margin-right: 51px;
 }
+.btn-head {
+  margin-top: 16px;
+  width: 222px;
+}
+// Common classes
 .btn-order {
-  height: 66px;
-  text-align: center;
+  align-items: center;
   display: flex;
-  justify-content: center;
-  place-items: center;
+  font-family: "Cardo";
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.188rem;
+  height: 66px;
+  justify-content: center;
+  text-align: center;
 }
-.btn-yd {
-  color: #1b3764;
-  background-color: #ffca42;
-}
-.btn-white {
-  color: #ffffff;
-  // &:hover,
-  // &:focus {
-  //   background-color: #fe0002;
-  // }
-  // &:active {
-  //   background-color: #a60002;
-  // }
-}
+// Scroll button
 .up-btn {
   align-items: center;
   @include flexcolumn();

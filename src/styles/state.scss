@@ -1,28 +1,161 @@
 // Import mixins, variables
 @import "mixins_var.scss";
 /* State of modules and site skeleton */
+// Keyframes
+@keyframes fadeMe {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes menuAnim {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100vh;
+  }
+}
+@keyframes span1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  60% {
+    transform: rotate(-110deg) translate(-7px, -7px);
+  }
+  100% {
+    transform: rotate(-45deg) translate(-13px, 12px);
+  }
+}
+@keyframes span2 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  20% {
+    width: 5px;
+    border-radius: 50%;
+    transform: translate(0, 0) scale(1);
+  }
+  40% {
+    width: 5px;
+    border-radius: 50%;
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    width: 5px;
+    border-radius: 50%;
+    transform: translate(0, 18px) scale(1);
+  }
+  80% {
+    width: 5px;
+    border-radius: 50%;
+    transform: translate(0, -16px) scale(1);
+  }
+  100% {
+    width: 5px;
+    border-radius: 50%;
+    transform: translate(0, 100px) scale(0);
+  }
+}
+@keyframes span3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  60% {
+    transform: rotate(80deg) translate(-7px, -7px);
+  }
+  100% {
+    transform: rotate(45deg) translate(-7px, -7px);
+  }
+}
+@keyframes span1_close {
+  0% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+  }
+  100% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+}
+@keyframes span2_close {
+  0% {
+    transform: translate(0, 40px) scale(0);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+@keyframes span3_close {
+  0% {
+    transform: rotate(45deg) translate(-6px, -7px);
+  }
+  100% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+}
+@keyframes navaactive {
+  50% {
+    transform: translate(0, 18px) scale(1);
+  }
+}
+// Body
+.overflow-is-hidden {
+  overflow: hidden;
+}
+// Buttons
+
 // Header
 .l-header {
-  .ham-is-active {
-    margin-right: 57px;
-    .hamburger-item {
-      transform: rotate(45deg) translate3D(8px, 10px, 0);
-      &::before {
-        transform: rotate(-90deg) translate3D(27px, 1px, 0);
-      }
-      &::after {
-        display: none;
-      }
+  .ham-is-active span {
+    transition: all 0.4s;
+    &:nth-of-type(1) {
+      animation: span1 0.8s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
+      animation-delay: 1.1s;
+    }
+    &:nth-of-type(2) {
+      animation: span2 1.5s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
+    }
+    &:nth-of-type(3) {
+      animation: span3 0.8s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
+      animation-delay: 0.7s;
     }
   }
   .nav-is-active {
-    visibility: visible;
+    animation: fadeMe 300ms linear forwards;
+    animation-name: menuAnim;
+    align-items: center;
+    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 20%);
+    @include flexcolumn();
+    justify-content: flex-start;
+    margin: 0;
+    padding-top: 40px;
+    gap: 30px;
+    top: 92px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    height: 100vh;
+    width: 100%;
+    a {
+      animation: navaactive 1.5s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
+      line-height: 120%;
+      text-transform: uppercase;
+      font-size: 3.25rem;
+      font-weight: 800;
+      margin-right: 0;
+    }
   }
   nav a {
-    &:hover {
+    &:hover,
+    &:focus-visible {
       color: #ffca42;
     }
   }
+  // .bh-is-active {
+  //   display: block;
+  // }
 }
 
 // Main

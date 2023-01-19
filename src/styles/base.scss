@@ -1,13 +1,13 @@
 @font-face {
   font-display: swap;
   text-rendering: optimizeLegibility;
-  font-family: "Cardo-Regular";
+  font-family: 'Cardo';
   src: url(./webfonts/CardoRegular.woff) format("woff");
 }
 @font-face {
   font-display: swap;
   text-rendering: optimizeLegibility;
-  font-family: "Inter-Regular";
+  font-family: 'Inter';
   src: url(./webfonts/InterRegular.woff) format("woff");
 }
 // Global selectors styles
@@ -19,7 +19,7 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-family: "Cardo-Regular";
+  font-family: 'Cardo';
 }
 
 p,
@@ -54,5 +54,5 @@ address {
   font-size: 1.5rem;
 }
 input {
-  font-family: "Inter-Regular";
+  font-family: 'Inter';
 }

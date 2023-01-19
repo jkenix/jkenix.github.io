@@ -28,13 +28,11 @@
 // 1500px
 @media (max-width: 1500px) {
   .l-main {
-
   }
 }
 // 1400px
 @media (max-width: 1399.98px) {
   .l-main {
-
   }
   // Footer
   .l-author {
@@ -44,120 +42,75 @@
 }
 // 1200px
 @media (max-width: 1199.98px) {
-  .l-main {
-
-  }
-}
-/* Портретная ориентация 1024px*/
-@media (max-width: 1024.98px) and (orientation: portrait) {
-  .l-header .header-menu {
-    gap: 30px;
-    a {
-      font-size: 3.25rem;
+  .l-header {
+    padding-left: 20px;
+    padding-right: 20px;
+    .btn-head {
+      width: 100px;
     }
   }
-}
-/* Ландшафтная ориентация 1024px*/
-@media (max-width: 1024.98px) and (orientation: landscape) {
-  .l-header .header-menu {
-    padding-top: 0px;
-    gap: 15px;
-    a {
-      font-size: 2.4rem;
-    }
+  .header-menu a {
+    margin-right: 40px;
   }
 }
-// Обычный режим 1024px
+// 1024px
 @media (max-width: 1024.98px) {
   .l-header {
-    align-items: center;
-    padding-left: 30px;
-    .logo-block {
-      padding-left: 0;
-    }
     .hamburger {
-      display: block;
-      margin-right: 57px;
+      display: none;
     }
     .header-menu {
-      @include flexcolumn();
+      display: flex;
       position: absolute;
-      overflow: auto;
-      top: 120px;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 9;
-      visibility: hidden;
-      height: 100vh;
+      margin: 130px auto 0;
+      width: 95%;
+      justify-content: center;
       a {
-        line-height: 120%;
-        text-transform: uppercase;
-        font-weight: 800;
-        font-family: "ZonaPro-ExtraBold";
-        padding-left: 79px;
+        font-size: 1.5rem;
       }
     }
   }
   .l-main {
     // Common class
-    
-   
   }
   .l-footer {
-   
   }
 }
 // 768px
 @media (max-width: 767.98px) {
   .l-main {
-   
   }
 }
-/* Портретная ориентация 575px */
-@media (max-width: 575.98px) and (orientation: portrait) {
-  .l-header .header-menu {
-    padding-top: 20px;
-    a {
-      font-size: 2.8rem;
-    }
-  }
-  // Common class
- 
-}
-/* Ландшафтная ориентация 575px*/
-@media (max-width: 575.98px) and (orientation: landscape) {
-  .l-header .header-menu a {
-    font-size: 2.4rem;
-  }
-}
-// Обычный режим (575px)
+// 576px
 @media (max-width: 575.98px) {
-  // 576px
   .l-header {
     padding-left: 15px;
-    .logo-block {
-      padding: 0;
-    }
-    .hamburger {
+    padding-right: 15px;
+    .logo {
       margin-right: auto;
     }
-    .header-menu {
-      top: 98px;
-      a {
-        padding-left: 15px;
-      }
+    .hamburger {
+      display: block;
+      margin-top: 10px;
+      margin-right: auto;
     }
-    .lang-sw {
-      width: 98px;
-      height: 98px;
+    .cart {
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0;
+      width: 40px;
+      height: 40px;
+    }
+    .header-menu,
+    .sn-contacts,
+    .btn-head {
+      display: none;
     }
   }
   .l-main {
     // Common class
-   
+
     // Main page
-   
   }
   .l-footer {
     margin-top: 55px;

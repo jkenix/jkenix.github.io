@@ -5,25 +5,20 @@
   max-width: 1920px;
   margin: 0 auto;
 }
+// Header
 .l-header {
   display: flex;
-  padding-left: 84px;
- 
-  .header-menu {
-    padding-top: 48px;
-    a {
-      font-size: 1.25rem;
-      margin-right: 56px;
-    }
-  }
-  .lang-sw {
-    width: 103px;
-    height: 120px;
-   
-  }
+  align-items: center;
+  // justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 53px;
+  position: sticky;
+  top: 0;
 }
+.l-header-menu {
+}
+
 .l-main {
- 
 }
 .l-footer {
   margin-top: 77px;

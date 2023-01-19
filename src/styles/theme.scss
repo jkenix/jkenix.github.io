@@ -1,28 +1,40 @@
 /* Theme classes */
-// Button
-.cart {
-  background-color: #1b3764;
-}
+// Scroll button
 .up-btn {
   color: #ffffff;
   background-color: #202020;
 }
+// Buttons
+.cart {
+  background-color: #1b3764;
+}
+.btn-yd {
+  color: #1b3764;
+  background-color: #ffca42;
+}
+.btn-white {
+  color: #ffffff;
+}
 // Backgrounds
-
+.nav-is-active {
+  background-color: rgba(255, 255, 255, 0.7);
+}
 /* Color styles for page content */
 // Header
 .logo {
   font-family: "Cardo-Regular";
   color: #f6f8fc;
-  
 }
 .l-header {
   background-color: #1b3764;
   nav a {
-    color: #000000;
+    color: #f6f8fc;
   }
 }
 // Main
+body {
+  background-color: #1b3764;
+}
 .l-main {
 }
 .l-footer {
@@ -40,10 +52,10 @@
 
 // Media
 @media (max-width: 1024.98px) {
-  .header-menu {
-    background-color: rgba(255, 255, 255, 0.7);
-  }
 }
 
 @media (max-width: 575.98px) {
+  .l-header .nav-is-active a {
+    color: black;
+  }
 }
