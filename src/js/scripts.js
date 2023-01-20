@@ -1,4 +1,7 @@
 /* Def menu scripts.\*/
+window.onload = function () {
+  document.querySelector(".l-preloader").remove("l-preloader");
+};
 // Common show menu script
 let body = document.querySelector("body");
 let ham = document.querySelector(".hamburger");

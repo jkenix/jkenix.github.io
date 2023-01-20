@@ -1,12 +1,12 @@
 // Import mixins, variables
 @import "mixins_var.scss";
-/* Modules */
+/* Header*/
 // Logo
 .logo {
-  margin: 35px 0 19px;
+  margin-top: 35px;
+  margin-bottom: 19px;
   margin-right: 35px;
 }
-// Hamburger
 .hamburger {
   cursor: pointer;
   display: none;
@@ -56,7 +56,6 @@
   //   bottom: -13px;
   // }
 }
-// Buttons
 .sn-contacts {
   align-items: center;
   display: flex;
@@ -68,7 +67,6 @@
     display: flex;
   }
 }
-// Header Menu
 .header-menu {
   margin-top: 20px;
   margin-right: 40px;
@@ -83,22 +81,47 @@
   }
 }
 .cart {
+  align-items: center;
+  display: flex;
+  justify-content: center;
   width: 17px;
   height: 17px;
-  background-image: url("/src/img/cart-icon.svg");
   margin-top: 15px;
   margin-right: 51px;
 }
 .btn-head {
   margin-top: 16px;
   width: 222px;
+  line-height: 28px;
+  letter-spacing: 0.57px;
+  text-transform: capitalize;
+}
+/* Main */
+// Books preview
+.info-bp {
+  padding-top: 156px;
+  padding-bottom: 147px;
+  padding-left: 23.31px;
+  &-st {
+    align-items: center;
+    display: flex;
+    gap: 14px;
+    &::before {
+      content: "";
+      background-color: #ffca42;
+      height: 2px;
+      width: 35px;
+      position: relative;
+    }
+  }
+}
+.image-bp {
 }
 // Common classes
 .btn-order {
   align-items: center;
   display: flex;
   font-family: "Cardo";
-  font-weight: 700;
   font-size: 1.188rem;
   height: 66px;
   justify-content: center;

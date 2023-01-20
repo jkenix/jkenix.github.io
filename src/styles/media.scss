@@ -45,59 +45,62 @@
   .l-header {
     padding-left: 20px;
     padding-right: 20px;
-    .btn-head {
-      width: 100px;
-    }
-  }
-  .header-menu a {
-    margin-right: 40px;
   }
 }
 // 1024px
 @media (max-width: 1024.98px) {
   .l-header {
     .hamburger {
-      display: none;
+      display: block;
+      margin-top: 10px;
+      margin-right: 20px;
     }
     .header-menu {
       display: flex;
       position: absolute;
       margin: 130px auto 0;
-      width: 95%;
       justify-content: center;
-      a {
-        font-size: 1.5rem;
-      }
+      visibility: hidden;
     }
   }
   .l-main {
-    // Common class
+    .l-books-preview {
+      grid-template-columns: 1fr;
+    }
   }
   .l-footer {
   }
 }
 // 768px
 @media (max-width: 767.98px) {
-  .l-main {
+ .l-header {
+  .logo {
+    margin-right: 20px;
   }
+  .sn-contacts {
+    margin-right: 20px;
+  }
+  .cart {
+    margin-right: auto;
+  }
+  .btn-head {
+    width: 110px;
+   }
+ }
 }
 // 576px
 @media (max-width: 575.98px) {
   .l-header {
     padding-left: 15px;
     padding-right: 15px;
+    .hamburger {
+      margin-right: auto;
+    }
     .logo {
       margin-right: auto;
     }
-    .hamburger {
-      display: block;
-      margin-top: 10px;
-      margin-right: auto;
-    }
     .cart {
-      background-repeat: no-repeat;
-      background-position: center;
-      margin: 0;
+      margin: 15px 0 0;
       width: 40px;
       height: 40px;
     }
@@ -108,9 +111,7 @@
     }
   }
   .l-main {
-    // Common class
 
-    // Main page
   }
   .l-footer {
     margin-top: 55px;

@@ -1,15 +1,18 @@
+// Import mixins
+@import "mixins_var.scss";
 /* Theme classes */
+// Body
+body {
+  background-color: #f5f8fc;
+}
 // Scroll button
 .up-btn {
   color: #ffffff;
   background-color: #202020;
 }
 // Buttons
-.cart {
-  background-color: #1b3764;
-}
 .btn-yd {
-  color: #1b3764;
+  color: $sap;
   background-color: #ffca42;
 }
 .btn-white {
@@ -26,18 +29,17 @@
   color: #f6f8fc;
 }
 .l-header {
-  background-color: #1b3764;
+  background-color: $sap;
   nav a {
     color: #f6f8fc;
   }
 }
 // Main
-body {
-  background-color: #1b3764;
-}
-.l-main {
+.l-books-preview {
+  background-color: $sap;
 }
 .l-footer {
+  background-color: $sap;
   .l-contacts {
     a {
       color: #7e7e7e;
@@ -52,10 +54,11 @@ body {
 
 // Media
 @media (max-width: 1024.98px) {
+  .l-header nav a {
+    color: black;
+  }
 }
 
 @media (max-width: 575.98px) {
-  .l-header .nav-is-active a {
-    color: black;
-  }
+
 }

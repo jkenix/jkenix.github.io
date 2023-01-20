@@ -5,23 +5,40 @@
   max-width: 1920px;
   margin: 0 auto;
 }
+.l-preloader {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
 // Header
 .l-header {
   display: flex;
   align-items: center;
-  // justify-content: space-between;
   padding-left: 70px;
   padding-right: 53px;
   position: sticky;
   top: 0;
 }
-.l-header-menu {
-}
+// Main
+// Books preview
+.l-books-preview {
+  display: grid;
+  grid-template-areas:
+    "info-bp"
+    "image-bp";
+  grid-template-columns: minmax(0, 588.38px) minmax(auto, 592px);
+  // grid-template-columns: repeat(auto-fit, minmax(200px, 588.38px));
 
-.l-main {
+  grid-gap: 75.31px;
+  padding-top: 115px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 100px;
 }
+// Footer
 .l-footer {
-  margin-top: 77px;
+  padding-top: 77px;
   .l-contacts {
     display: flex;
     flex-wrap: wrap;
