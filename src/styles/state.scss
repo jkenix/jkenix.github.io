@@ -44,20 +44,15 @@
     animation: preloader-spin 1.5s linear infinite;
   }
 }
-// Buttons
-.cart {
+// Buttons (Common classes)
+.btn-yd {
   &:hover,
   &:focus-visible {
-    svg {
-    color: transparent;
-      path {
-        fill: white;
-      }
-    }
+    background-color: #ffffff;
   }
 }
 // Header
-.l-header {
+.l-header-wr {
   .ham-is-active span {
     transition: all 0.4s;
     &:nth-of-type(1) {
@@ -89,13 +84,12 @@
     z-index: 9;
     height: 100vh;
     width: 100%;
-    visibility:visible;
+    visibility: visible;
     a {
       animation: navaactive 1.5s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
-      line-height: 120%;
       text-transform: uppercase;
       font-size: 3rem;
-      font-weight: 800;
+      font-weight: 900;
       margin-right: 0;
     }
   }
@@ -106,18 +100,59 @@
     }
   }
 }
+// Links
+.cart {
+  &:hover,
+  &:focus-visible {
+    svg {
+      color: transparent;
+      path {
+        fill: #ffffff;
+      }
+    }
+  }
+}
+.btn-check-demo {
+  &:hover,
+  &:focus-visible {
+    color: gray;
+    &::after {
+      background-color: gray;
+    }
+  }
+}
+// State header of scroll
+.header-scroll {
+  opacity: 0.9;
+  .cart {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    &:hover,
+    &:focus-visible {
+      svg path {
+        fill: initial;
+      }
+    }
+  }
+}
 // Main
+.info-bp {
+  .info-bp-st {
+    color: #ffffff;
+  }
+  .info-bp-content {
+    color: #ffffff;
+  }
+}
 .l-main {
 }
 // Footer
 .l-footer {
-  .l-contacts a,
   .l-author a {
-    &:hover {
-      color: #ff0000;
-    }
+    &:hover,
     &:focus-visible {
-      outline: 2px solid #ff0000;
+      color: #ffca42;
     }
   }
 }

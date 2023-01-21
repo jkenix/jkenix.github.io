@@ -3,20 +3,21 @@
 /* Theme classes */
 // Body
 body {
-  background-color: #f5f8fc;
+  background-color: $whitef5;
 }
 // Scroll button
 .up-btn {
   color: #ffffff;
   background-color: #202020;
 }
-// Buttons
+// Buttons common classes
 .btn-yd {
   color: $sap;
   background-color: #ffca42;
 }
-.btn-white {
-  color: #ffffff;
+// Buttons
+.btn-check-demo {
+  color: $whiteff;
 }
 // Backgrounds
 .nav-is-active {
@@ -28,26 +29,38 @@ body {
   font-family: "Cardo-Regular";
   color: #f6f8fc;
 }
-.l-header {
+.l-header,
+.l-header-wr {
   background-color: $sap;
-  nav a {
-    color: #f6f8fc;
-  }
+}
+.l-header-wr nav a {
+  color: #f6f8fc;
 }
 // Main
+// Books preview
 .l-books-preview {
   background-color: $sap;
+  .info-tc-title {
+    color: $whiteff;
+  }
+  .info-tc-content {
+    color: #b4c7e7;
+  }
 }
+// Author book
+.l-author-book {
+  background-color: $whitef5;
+  .info-tc-title {
+    color: $sap;
+  }
+}
+//
+// Footer
 .l-footer {
   background-color: $sap;
-  .l-contacts {
-    a {
-      color: #7e7e7e;
-    }
-  }
   .l-author {
     a {
-      color: #7e7e7e;
+      color: $whiteff;
     }
   }
 }
@@ -60,5 +73,4 @@ body {
 }
 
 @media (max-width: 575.98px) {
-
 }

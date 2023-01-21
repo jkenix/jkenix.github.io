@@ -1,10 +1,7 @@
 // Import mixins, variables
 @import "mixins_var.scss";
 /* Header*/
-// Logo
 .logo {
-  margin-top: 35px;
-  margin-bottom: 19px;
   margin-right: 35px;
 }
 .hamburger {
@@ -61,14 +58,12 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-top: 16px;
   margin-right: auto;
   a {
     display: flex;
   }
 }
 .header-menu {
-  margin-top: 20px;
   margin-right: 40px;
   a {
     font-size: 1.063rem;
@@ -86,13 +81,10 @@
   justify-content: center;
   width: 17px;
   height: 17px;
-  margin-top: 15px;
   margin-right: 51px;
 }
 .btn-head {
-  margin-top: 16px;
   width: 222px;
-  line-height: 28px;
   letter-spacing: 0.57px;
   text-transform: capitalize;
 }
@@ -100,12 +92,17 @@
 // Books preview
 .info-bp {
   padding-top: 156px;
-  padding-bottom: 147px;
   padding-left: 23.31px;
-  &-st {
+  max-width: 588.3px;
+  .info-bp-st {
     align-items: center;
     display: flex;
     gap: 14px;
+    font-family: "Cardo";
+    font-size: 1.313rem;
+    line-height: 36px;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
     &::before {
       content: "";
       background-color: #ffca42;
@@ -114,16 +111,101 @@
       position: relative;
     }
   }
+  .info-bp-content {
+    padding-top: 10px;
+    padding-bottom: 31px;
+    h1 {
+      font-family: "Cardo";
+      font-size: 4rem;
+      line-height: 78px;
+      letter-spacing: 1.3px;
+    }
+    &-desc {
+      padding-top: 23px;
+      p {
+        font-family: "Inter";
+        font-size: 1.125rem;
+        line-height: 28px;
+        &:nth-child(1) {
+        }
+      }
+    }
+  }
+  .info-bp-check {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 51px;
+    row-gap: 20px;
+    .btn-head {
+      margin-top: 12px;
+    }
+  }
+  .image-bp {
+    max-width: 592px;
+  }
 }
-.image-bp {
-}
-// Common classes
-.btn-order {
-  align-items: center;
+.info-bp-desc {
   display: flex;
+  flex-wrap: wrap;
+  &-content {
+    display: flex;
+    gap: 10px;
+    .info-point {
+      background-color: #ffca42;
+      border-radius: 100px;
+      width: 16px;
+      height: 16px;
+    }
+    .info-tc {
+      display: flex;
+      gap: 12px;
+      .info-tc-title {
+        font-family: "Cardo";
+        font-size: 1.5rem;
+        line-height: 29px;
+        letter-spacing: 0.48px;
+      }
+      .info-tc-content {
+        font-family: "Inter";
+        font-size: 1.063rem;
+        line-height: 27px;
+      }
+    }
+  }
+}
+.btn-check-demo {
+  line-height: 30px;
+  letter-spacing: 0.38px;
+  text-transform: capitalize;
+  &::after {
+    content: "";
+    position: absolute;
+    margin-top: 40px;
+    height: 1px;
+    width: 152.33px;
+    background-color: white;
+  }
+}
+// Author book
+.abc-elem {
+  display: flex;
+  max-width: 630px;
+  gap: 30px;
+  .abc-elem-desc {
+    @include flexcolumn();
+    
+  }
+}
+// Buttons Common classes
+.btn-order {
+  height: 66px;
+  line-height: 28px;
+}
+.btn-link {
+  display: flex;
+  align-items: center;
   font-family: "Cardo";
   font-size: 1.188rem;
-  height: 66px;
   justify-content: center;
   text-align: center;
 }

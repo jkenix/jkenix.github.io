@@ -3,6 +3,7 @@ window.onload = function () {
   document.querySelector(".l-preloader").remove("l-preloader");
 };
 // Common show menu script
+let header = document.querySelector(".l-header");
 let body = document.querySelector("body");
 let ham = document.querySelector(".hamburger");
 
@@ -27,3 +28,15 @@ ham.onclick = function (NavActive) {
     }
   });
 };
+
+window.addEventListener(
+  "scroll",
+  function () {
+    if (window.scrollY > 100) {
+      header.classList.add("header-scroll");
+    } else if (window.scrollY < 100) {
+      header.classList.remove("header-scroll");
+    }
+  },
+  true
+);
