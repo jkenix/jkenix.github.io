@@ -7,17 +7,20 @@ body {
 }
 // Scroll button
 .up-btn {
-  color: #ffffff;
+  color: $whitef5;
   background-color: #202020;
 }
 // Buttons common classes
 .btn-yd {
   color: $sap;
-  background-color: #ffca42;
+  background-color: $ff42;
 }
-// Buttons
-.btn-check-demo {
-  color: $whiteff;
+.btn-w {
+  color: $sap;
+  background-color: $whitef5;
+  border: 2px solid $ff42;
+}
+.btn-sap {
 }
 // Backgrounds
 .nav-is-active {
@@ -40,6 +43,14 @@ body {
 // Books preview
 .l-books-preview {
   background-color: $sap;
+  .info-bp {
+    .info-bp-st {
+      color: $whiteff;
+    }
+    .info-bp-content {
+      color: $whiteff;
+    }
+  }
   .info-tc-title {
     color: $whiteff;
   }
@@ -47,9 +58,23 @@ body {
     color: #b4c7e7;
   }
 }
+.btn-check-demo {
+  color: $whiteff;
+}
 // Author book
 .l-author-book {
   background-color: $whitef5;
+  .abc-elem-desc {
+    .abc-ed-title {
+      color: $sap;
+    }
+    .abc-ed-price {
+      color: $ff42;
+    }
+    p {
+      color: #969aa0;
+    }
+  }
   .info-tc-title {
     color: $sap;
   }

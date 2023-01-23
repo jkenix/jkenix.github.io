@@ -5,9 +5,6 @@
 .overflow-is-hidden {
   overflow: hidden;
 }
-.preloader-remove {
-  display: none;
-}
 // Preloader
 .preloader-content {
   display: block;
@@ -44,11 +41,29 @@
     animation: preloader-spin 1.5s linear infinite;
   }
 }
+.preloader-remove {
+  display: none;
+}
 // Buttons (Common classes)
 .btn-yd {
   &:hover,
   &:focus-visible {
     background-color: #ffffff;
+  }
+}
+// State header of scroll
+.header-scroll {
+  opacity: 0.9;
+  .cart {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    &:hover,
+    &:focus-visible {
+      svg path {
+        fill: initial;
+      }
+    }
   }
 }
 // Header
@@ -77,7 +92,7 @@
     margin: 0;
     padding-top: 40px;
     gap: 30px;
-    top: 92px;
+    top: 80px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -100,7 +115,6 @@
     }
   }
 }
-// Links
 .cart {
   &:hover,
   &:focus-visible {
@@ -121,28 +135,13 @@
     }
   }
 }
-// State header of scroll
-.header-scroll {
-  opacity: 0.9;
-  .cart {
-    width: 30px;
-    height: 30px;
-    background-color: #ffffff;
-    &:hover,
-    &:focus-visible {
-      svg path {
-        fill: initial;
-      }
-    }
-  }
-}
 // Main
-.info-bp {
-  .info-bp-st {
-    color: #ffffff;
-  }
-  .info-bp-content {
-    color: #ffffff;
+// Author book
+.abc-elem-desc .btn-order {
+  &:hover,
+  &:focus-visible {
+    color: $whiteff;
+    background-color: #000;
   }
 }
 .l-main {
