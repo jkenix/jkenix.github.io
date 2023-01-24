@@ -24,9 +24,13 @@ body {
 }
 // Backgrounds
 .nav-is-active {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: $whitef5;
 }
 /* Color styles for page content */
+// Titles h2
+.section-title {
+  color: $sap;
+}
 // Header
 .logo {
   font-family: "Cardo-Regular";
@@ -36,27 +40,25 @@ body {
 .l-header-wr {
   background-color: $sap;
 }
-.l-header-wr nav a {
+.header-menu a {
   color: #f6f8fc;
 }
 // Main
 // Books preview
 .l-books-preview {
   background-color: $sap;
-  .info-bp {
-    .info-bp-st {
-      color: $whiteff;
-    }
-    .info-bp-content {
-      color: $whiteff;
-    }
-  }
-  .info-tc-title {
-    color: $whiteff;
-  }
-  .info-tc-content {
-    color: #b4c7e7;
-  }
+}
+.info-bp-st {
+  color: $whiteff;
+}
+.info-bp-content {
+  color: $whiteff;
+}
+.info-tc-title {
+  color: $whiteff;
+}
+.info-tc-content {
+  color: #b4c7e7;
 }
 .btn-check-demo {
   color: $whiteff;
@@ -64,32 +66,55 @@ body {
 // Author book
 .l-author-book {
   background-color: $whitef5;
-  .abc-elem-desc {
-    .abc-ed-title {
-      color: $sap;
-    }
-    .abc-ed-price {
-      color: $ff42;
-    }
-    p {
-      color: #969aa0;
-    }
-  }
   .info-tc-title {
     color: $sap;
   }
 }
-//
+.abc-elem-desc p {
+  color: #969aa0;
+}
+.abc-ed-title {
+  color: $sap;
+}
+.abc-ed-price {
+  color: $ff42;
+}
+// About author
+.abi-sb-number {
+  color: $sap;
+}
+.abauth-info p,
+.abi-sb-desc {
+  color: #969aa0;
+}
+.abauth-info-contacts {
+  background-color: $sap;
+}
+// Author block
+.abi-cd-name {
+  color: $ff42;
+}
+.abi-cd-mail,
+.abi-cd-num {
+  color: #b4c7e7;
+  a {
+    color: #b4c7e7;
+  }
+}
+// Sponsors
+.sic-title {
+  color: $sap;
+}
+.si-content p {
+  color: #969aa0;
+}
 // Footer
 .l-footer {
   background-color: $sap;
-  .l-author {
-    a {
-      color: $whiteff;
-    }
-  }
 }
-
+.l-author a {
+  color: $whiteff;
+}
 // Media
 @media (max-width: 1024.98px) {
   .l-header nav a {

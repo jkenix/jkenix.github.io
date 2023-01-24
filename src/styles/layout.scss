@@ -56,24 +56,10 @@
   padding-top: 94px;
   padding-left: 70px;
   padding-right: 70px;
-  padding-bottom: 75px;
+  padding-bottom: 166px;
   .ab-title {
-    @include flexcolumn();
-    align-items: center;
-    row-gap: 24px;
-    font-size: 42px;
-    line-height: 50px;
-    text-transform: capitalize;
     margin-top: 32px;
     margin-bottom: 60px;
-    &::after {
-      content: "";
-      position: relative;
-      background-color: $ff42;
-      border-radius: 0px;
-      width: 50px;
-      height: 3px;
-    }
   }
 }
 .l-ab-content {
@@ -81,39 +67,76 @@
   grid-template-areas: "ab-content" "ab-content";
   grid-template-columns: repeat(auto-fit, minmax(464px, auto));
   grid-column-gap: 20px;
-  grid-row-gap: 60px;
-  justify-items: center;
 }
 // About author
 .l-about-author {
-  padding-top: 163px;
+  display: flex;
+  column-gap: 145px;
+  padding-top: 133px;
   padding-left: 40px;
   padding-right: 70px;
   padding-bottom: 140px;
-  .l-ab-content {
-    display: flex;
-    column-gap: 150px;
-  }
+}
+.l-abauth-info-contacts {
+  display: flex;
+  column-gap: 40px;
+  row-gap: 20px;
+  max-width: 484px;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 16px;
+  margin-top: 55px;
+}
+// Sponsors
+.l-sponsors {
+  padding-top: 151px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 130px;
+}
+// Book copy
+.l-book-copy {
+
+}
+// Ww learn
+.l-ww-learn {
+
+}
+// Kvision
+.l-kvision {
+
+}
+// Reviews
+.l-reviews {
+
+}
+// Art res
+.l-art-res {
+
+}
+// Form
+.l-get-updates {
+
 }
 // Footer
 .l-footer {
-  padding-top: 77px;
-  padding-bottom: 32px;
-  .l-author {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 32px;
-    white-space: nowrap;
-    .copyright a {
-      font-weight: 500;
-      line-height: 20px;
-    }
-    .copyright a,
-    span,
-    a {
-      font-size: 1.5rem;
-    }
+  padding-top: 92px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 30px;
+ 
+}
+.l-author {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 32px;
+  white-space: nowrap;
+  flex-wrap: wrap;
+  a {
+    font-size: 1.5rem;
+    text-decoration: underline;
   }
 }

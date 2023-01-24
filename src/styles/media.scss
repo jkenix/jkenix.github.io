@@ -26,14 +26,15 @@
   }
 }
 // 1500px
-@media (max-width: 1500px) {
-  .l-main {
+@media (min-width: 1500px) {
+  .l-about-author {
+    justify-content: center;
   }
 }
 // 1400px
 @media (max-width: 1399.98px) {
   .l-header-wr {
-    nav a {
+    .header-menu a {
       margin-right: 40px;
     }
   }
@@ -41,7 +42,8 @@
   // Common classes
   .l-books-preview,
   .l-author-book,
-  .l-about-author {
+  .l-about-author,
+  .l-sponsors {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -62,18 +64,44 @@
     }
   }
   .l-main {
+    // Books preview
     .info-bp {
       padding-top: 0;
       padding-left: 0;
-      .info-bp-content h1 {
-        font-size: 3.4rem;
-      }
+    }
+    .ibc-title {
+      font-size: 3.4rem;
     }
     .info-bp-desc {
       column-gap: 15px;
       row-gap: 10px;
     }
+    // Author book
+    .abc-elem {
+      column-gap: 20px;
+    }
+    .abc-elem-img img {
+      max-width: 230px;
+    }
   }
+  // About author
+  .l-about-author {
+    column-gap: 80px;
+  }
+  .abauth-img img {
+    max-width: 500px;
+  }
+  .abauth-info-stat {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  // Author block
+  .l-abauth-info-contacts {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+  // Sponsors
 }
 // 1024px
 @media (max-width: 1024.98px) {
@@ -82,20 +110,32 @@
       display: block;
       margin-right: 20px;
     }
-    .header-menu {
-      display: flex;
-      position: absolute;
-      margin: 130px auto 0;
-      justify-content: center;
-      visibility: hidden;
-    }
     .btn-head {
       width: 222px;
     }
+    .header-menu a {
+      margin-right: 0;
+    }
+  }
+  .header-menu {
+    display: flex;
+    position: absolute;
+    margin: 130px auto 0;
+    justify-content: center;
+    visibility: hidden;
   }
   .l-main {
+    // Common classes
+    .l-author-book,
+    .l-about-author,
+    .l-sponsors {
+      padding-bottom: 30px;
+    }
+    .l-author-book, .l-sponsors {
+      padding-top: 30px;
+    }
     // Books preview
-    .info-bp .info-bp-content h1 {
+    .ibc-title {
       font-size: 3.7rem;
     }
     // Author book
@@ -105,16 +145,38 @@
     }
     .abc-elem {
       max-width: 100%;
+      justify-content: center;
+    }
+    .abc-elem-img img {
+      max-width: 260px;
     }
     // About author
+    .l-about-author {
+      padding-top: 0;
+    }
     .abauth-img {
-      display: none
+      display: none;
+    }
+    .abauth-info {
+      max-width: 100%;
+      align-items: center;
+    }
+    .abauth-info-title {
+      align-items: inherit;
+    }
+    // Sponsors
+    .sponsors-info {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .si-content {
+      max-width: 220px;
     }
   }
 }
 // 768px
 @media (max-width: 767.98px) {
-  .l-header {
+  .l-header-wr {
     .logo {
       margin-right: 20px;
     }
@@ -126,12 +188,6 @@
     }
     .btn-head {
       width: 110px;
-    }
-  }
-  .l-footer {
-    .l-author {
-      flex-direction: column;
-      gap: 10px;
     }
   }
 }
@@ -149,18 +205,20 @@
       width: 40px;
       height: 40px;
     }
-    .header-menu,
     .sn-contacts,
     .btn-head {
       display: none;
     }
-  }
-  .l-books-preview {
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    .nav-is-active {
+      top: 80px;
+    }
   }
   .l-main {
     // Books preview
-    .info-bp .info-bp-content h1 {
+    .l-books-preview {
+      grid-template-columns: repeat(auto-fit, minmax(238px, 1fr));
+    }
+    .ibc-title {
       font-size: 2.8rem;
       line-height: 50px;
     }
@@ -178,7 +236,32 @@
     }
     .abc-elem {
       flex-direction: column;
+      align-items: center;
     }
+    .abc-elem-img img {
+      max-width: 100%;
+    }
+    .abc-elem-desc {
+      @include flexcolumn();
+      align-items: center;
+      padding-top: 20px;
+    }
+    // About author
+    .abauth-info p {
+      max-width: 100%;
+    }
+    .abauth-info-stat {
+      flex-direction: column;
+    }
+    .abi-stat-block {
+      border-right: none;
+      border-bottom-width: 2px;
+      border-bottom-style: solid;
+      padding-bottom: 10px;
+      padding-right: 0;
+      margin-right: 0;
+    }
+    // Sponsors
   }
 }
 // 320px
