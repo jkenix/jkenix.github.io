@@ -5,6 +5,12 @@
 body {
   background-color: $whitef5;
 }
+// Backgrounds
+.l-author-book,
+.l-about-author,
+.l-sponsors {
+  background-color: $whitef5;
+}
 // Scroll button
 .up-btn {
   color: $whitef5;
@@ -18,13 +24,13 @@ body {
 .btn-w {
   color: $sap;
   background-color: $whitef5;
-  border: 2px solid $ff42;
 }
 .btn-sap {
+  background-color: $sap;
+  color: $whiteff;
 }
-// Backgrounds
-.nav-is-active {
-  background-color: $whitef5;
+.btn-ff42 {
+  border: 2px solid $ff42;
 }
 /* Color styles for page content */
 // Titles h2
@@ -43,6 +49,12 @@ body {
 .header-menu a {
   color: #f6f8fc;
 }
+.nav-is-active {
+  background-color: $whitef5;
+  a {
+    color: #000;
+  }
+}
 // Main
 // Books preview
 .l-books-preview {
@@ -54,21 +66,20 @@ body {
 .info-bp-content {
   color: $whiteff;
 }
-.info-tc-title {
-  color: $whiteff;
-}
-.info-tc-content {
-  color: #b4c7e7;
-}
 .btn-check-demo {
   color: $whiteff;
 }
-// Author book
-.l-author-book {
-  background-color: $whitef5;
+.info-bp-desc {
   .info-tc-title {
-    color: $sap;
+    color: $whiteff;
   }
+  .info-tc-content {
+    color: #b4c7e7;
+  }
+}
+// Author book
+.l-author-book .info-tc-title {
+  color: $sap;
 }
 .abc-elem-desc p {
   color: #969aa0;
@@ -108,19 +119,43 @@ body {
 .si-content p {
   color: #969aa0;
 }
+// Book copy
+.l-book-copy {
+  background-color: $sap;
+}
+.bci-title {
+  color: $whiteff;
+}
+.book-copy-info p {
+  color: #b4c7e7;
+}
+// Ww learn
+.l-ww-learn {
+  background-color: $whitef5;
+}
+// Kvision
+.l-kvision {
+  background-color: $whitef5;
+}
+// Reviews
+.l-reviews {
+  background-color: $whitef5;
+}
+// Art res
+.l-art-res {
+  background-color: $whitef5;
+}
+// Form
+.l-get-updates {
+  background-color: $whitef5;
+}
+.l-get-updates-content {
+  background-color: $ff42;
+}
 // Footer
 .l-footer {
   background-color: $sap;
 }
 .l-author a {
   color: $whiteff;
-}
-// Media
-@media (max-width: 1024.98px) {
-  .l-header nav a {
-    color: black;
-  }
-}
-
-@media (max-width: 575.98px) {
 }

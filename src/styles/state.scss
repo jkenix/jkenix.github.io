@@ -48,37 +48,33 @@
 .btn-yd {
   &:hover,
   &:focus-visible {
-    background-color: #ffffff;
+    background-color: $whiteff;
+  }
+}
+.btn-sap {
+  &:hover,
+  &:focus-visible {
+    background-color: $whiteff;
+    color: #000;
   }
 }
 // State header of scroll
 .header-scroll {
   opacity: 0.9;
-  .cart {
-    width: 30px;
-    height: 30px;
-    background-color: #ffffff;
-    &:hover,
-    &:focus-visible {
-      svg path {
-        fill: initial;
-      }
-    }
-  }
 }
 // Header
 .ham-is-active span {
   transition: all 0.4s;
   &:nth-of-type(1) {
-    animation: span1 0.8s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
-    animation-delay: 1.1s;
+    animation: span1 0.2s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
+    animation-delay: 0.5s;
   }
   &:nth-of-type(2) {
-    animation: span2 1.5s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
+    animation: span2 0.5s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
   }
   &:nth-of-type(3) {
-    animation: span3 0.8s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
-    animation-delay: 0.7s;
+    animation: span3 0.2s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
+    animation-delay: 0.5s;
   }
 }
 .nav-is-active {
@@ -109,7 +105,7 @@
 .header-menu a {
   &:hover,
   &:focus-visible {
-    color: #ffca42;
+    color: $ff42;
   }
 }
 .cart {
@@ -149,14 +145,12 @@
     color: $ff42;
   }
 }
-.l-main {
-}
 // Footer
 .l-footer {
   .l-author a {
     &:hover,
     &:focus-visible {
-      color: #ffca42;
+      color: $ff42;
     }
   }
 }

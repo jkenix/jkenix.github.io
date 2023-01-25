@@ -19,15 +19,16 @@
     font-size: 50px;
   }
   .l-footer {
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    row-gap: 10px;
   }
 }
 // 1500px
 @media (min-width: 1500px) {
-  .l-about-author {
+  .l-about-author,
+  .sponsors-info,
+  .l-book-copy {
     justify-content: center;
   }
 }
@@ -43,7 +44,8 @@
   .l-books-preview,
   .l-author-book,
   .l-about-author,
-  .l-sponsors {
+  .l-sponsors,
+  .l-book-copy {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -51,7 +53,8 @@
   .l-books-preview {
     grid-column-gap: 40px;
   }
-  .l-main {
+  .l-about-author {
+   column-gap: 110px;
   }
 }
 // 1200px
@@ -64,6 +67,10 @@
     }
   }
   .l-main {
+    // Bord img
+    .bord-img img {
+      max-width: 500px;
+    }
     // Books preview
     .info-bp {
       padding-top: 0;
@@ -86,11 +93,9 @@
   }
   // About author
   .l-about-author {
-    column-gap: 80px;
+    column-gap: 100px;
   }
-  .abauth-img img {
-    max-width: 500px;
-  }
+
   .abauth-info-stat {
     flex-wrap: wrap;
     justify-content: center;
@@ -105,6 +110,22 @@
 }
 // 1024px
 @media (max-width: 1024.98px) {
+  .header-scroll {
+    .cart {
+      width: 30px;
+      height: 30px;
+      background-color: #ffffff;
+      &:hover,
+      &:focus-visible {
+        svg path {
+          fill: initial;
+        }
+      }
+    }
+    .btn-head {
+      width: 100px;
+    }
+  }
   .l-header-wr {
     .hamburger {
       display: block;
@@ -124,15 +145,22 @@
     justify-content: center;
     visibility: hidden;
   }
+  // Common classes
+  .l-author-book,
+  .l-about-author,
+  .l-sponsors,
+  .l-book-copy {
+    padding-bottom: 30px;
+  }
+  .l-author-book,
+  .l-sponsors,
+  .l-book-copy {
+    padding-top: 30px;
+  }
   .l-main {
-    // Common classes
-    .l-author-book,
-    .l-about-author,
-    .l-sponsors {
-      padding-bottom: 30px;
-    }
-    .l-author-book, .l-sponsors {
-      padding-top: 30px;
+    // Bord img
+    .bord-img {
+      display: none;
     }
     // Books preview
     .ibc-title {
@@ -154,9 +182,6 @@
     .l-about-author {
       padding-top: 0;
     }
-    .abauth-img {
-      display: none;
-    }
     .abauth-info {
       max-width: 100%;
       align-items: center;
@@ -170,7 +195,14 @@
       justify-content: center;
     }
     .si-content {
-      max-width: 220px;
+      max-width: 219.6px;
+    }
+    // Book copy
+    .l-book-copy {
+      justify-content: center;
+    }
+    .book-copy-img {
+      display: none;
     }
   }
 }
@@ -224,7 +256,6 @@
     }
     .info-bp-desc {
       padding-top: 40px;
-      column-gap: 15px;
       justify-content: center;
     }
     // Author page
