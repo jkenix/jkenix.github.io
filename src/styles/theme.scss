@@ -34,8 +34,15 @@ body {
 }
 /* Color styles for page content */
 // Titles h2
-.section-title {
+.section-title, .st-con {
   color: $sap;
+}
+// Info-tc common classes
+.info-tc-title {
+  color: $sap;
+}
+.info-tc-content {
+  color: #969aa0;
 }
 // Header
 .logo {
@@ -45,6 +52,9 @@ body {
 .l-header,
 .l-header-wr {
   background-color: $sap;
+}
+.sn-contacts a {
+  background-color: $whiteff;
 }
 .header-menu a {
   color: #f6f8fc;
@@ -78,22 +88,13 @@ body {
   }
 }
 // Author book
-.l-author-book .info-tc-title {
-  color: $sap;
-}
 .abc-elem-desc p {
   color: #969aa0;
-}
-.abc-ed-title {
-  color: $sap;
 }
 .abc-ed-price {
   color: $ff42;
 }
 // About author
-.abi-sb-number {
-  color: $sap;
-}
 .abauth-info p,
 .abi-sb-desc {
   color: #969aa0;
@@ -113,9 +114,6 @@ body {
   }
 }
 // Sponsors
-.sic-title {
-  color: $sap;
-}
 .si-content p {
   color: #969aa0;
 }
@@ -133,9 +131,25 @@ body {
 .l-ww-learn {
   background-color: $whitef5;
 }
+.scp-block {
+  color: $sap;
+  background-color: #f4f8ff;
+}
+.scp-block-num {
+  background-color: $ff42;
+}
 // Kvision
 .l-kvision {
   background-color: $whitef5;
+}
+.kvc-block p {
+  color: #969aa0;
+}
+.kui-desc, .kuic-con {
+  color: #969AA0;
+}
+.kuic-q {
+  color: $sap;
 }
 // Reviews
 .l-reviews {
@@ -155,6 +169,12 @@ body {
 // Footer
 .l-footer {
   background-color: $sap;
+}
+.cb-title {
+  color: $whiteff;
+}
+.cb-link {
+  color: #b4c7e7;
 }
 .l-author a {
   color: $whiteff;

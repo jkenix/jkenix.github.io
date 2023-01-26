@@ -97,13 +97,15 @@
   // }
 }
 .sn-contacts {
-  align-items: center;
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  column-gap: 10px;
   margin-right: auto;
   a {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
   }
 }
 .header-menu {
@@ -244,8 +246,11 @@
   line-height: 33px;
 }
 // About author
-.l-main .abauth-img img {
-  height: 620px;
+.abauth-img {
+  display: flex;
+  img {
+    height: 620px;
+  }
 }
 .abauth-info {
   @include flexcolumn();
@@ -363,20 +368,146 @@
   max-width: 560px;
 }
 // Ww learn
-.section-content {
+.wwl-section-content {
   display: flex;
   column-gap: 60px;
 }
+.wwl-sc-img {
+  display: flex;
+  img {
+    height: 632px;
+    padding-top: 44px;
+  }
+  .img-border {
+    margin-top: 90px;
+    margin-left: 45px;
+  }
+}
+.scp-block {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 37px;
+  padding-bottom: 27px;
+}
+.scp-block-num {
+  align-items: center;
+  border-radius: 25px;
+  display: flex;
+  font-size: 1.438rem;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  line-height: 29px;
+}
+.scp-block-desc {
+  font-size: 1.5rem;
+  line-height: 34px;
+  margin-top: 30px;
+}
 // Kvision
-
+.kvc-block {
+  padding-top: 42px;
+  padding-right: 60px;
+  padding-left: 40px;
+  padding-bottom: 47px;
+}
+.kvc-block-title {
+  font-size: 1.5rem;
+  line-height: 29px;
+}
+.kvc-block p {
+  font-size: 1.188rem;
+  line-height: 32px;
+  margin-top: 21px;
+  margin-bottom: 10px;
+  max-width: 95%;
+}
+.kvc-block-info {
+  display: flex;
+  column-gap: 45px;
+  row-gap: 10px;
+  .info-point {
+    margin-top: 8px;
+  }
+  .info-tc {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
+.kvision-use {
+  align-items: center;
+  @include flexcolumn();
+  justify-content: center;
+  row-gap: 34px;
+  margin-top: 71px;
+}
+.btn-kvu {
+  width: 429px;
+  height: 76px;
+}
+.kui-contact {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-left: 23px;
+}
+.kui-desc,
+.kuic-q,
+.kuic-con {
+  line-height: 28px;
+}
+.kui-desc,
+.kuic-q {
+  font-size: 1.125rem;
+  letter-spacing: 0.19px;
+}
+.kuic-q,
+.kuic-con {
+  font-family: "Inter";
+}
+.kuic-con {
+  font-size: 1.188rem;
+}
 // Reviews
 
 // Form
 
+// Footer
+.footer-contacts {
+  display: flex;
+  column-gap: 30px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+.fc-main {
+  max-width: 277.7px;
+}
+.fc-main-media {
+  display: flex;
+  column-gap: 10px;
+  // flex-wrap: wrap;
+  margin-top: 20px;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    svg path {
+      fill: $whiteff;
+    }
+  }
+}
+.contact-block {
+}
+.cb-title {
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.384px;
+}
 // Buttons Common classes
 .btn-order {
   height: 66px;
-  line-height: 28px;
 }
 .btn-link {
   display: flex;

@@ -100,19 +100,51 @@
   padding-left: 70px;
   padding-right: 70px;
   padding-bottom: 140px;
-
+}
+.l-wwl-sc-points {
+  display: grid;
+  grid-template-areas: "scp-block" "scp-block";
+  grid-template-columns: repeat(auto-fit, minmax(291px, 1fr));
+  grid-row-gap: 30px;
+  padding-top: 120px;
+  justify-items: center;
 }
 // Kvision
 .l-kvision {
+  padding-top: 162px;
+  padding-left: 70px;
+  padding-right: 54px;
+  padding-bottom: 120px;
+}
+.l-kvision-content {
+  display: grid;
+  grid-template-areas: "kvc-block" "kvc-block";
+  grid-template-columns: repeat(auto-fit, minmax(459px, 1fr));
+  grid-column-gap: 30px;
+  grid-row-gap: 39px;
+  padding-top: 70px;
+  justify-items: center;
 }
 // Reviews
 .l-reviews {
+  padding-top: 120px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 13px;
 }
 // Art res
 .l-art-res {
+  padding-top: 110px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 110px;
 }
 // Form
 .l-get-updates {
+  padding-top: 120px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 120px;
 }
 // Footer
 .l-footer {

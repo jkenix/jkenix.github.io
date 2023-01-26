@@ -30,26 +30,41 @@
               height="35" />
           </div>
           <div class="sn-contacts">
-            <a href="#" title="Facebook">
-              <img
-                src="/src/img/facebook-icon.svg"
-                width="45"
-                height="45"
-                alt="Facebook icon" />
+            <a href="#" title="Facebook"
+              ><svg
+                width="9"
+                height="15"
+                viewBox="0 0 9 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.75391 8.625L8.13672 6.10938H5.70312V4.46875C5.70312 3.75781 6.03125 3.10156 7.125 3.10156H8.24609V0.941406C8.24609 0.941406 7.23438 0.75 6.27734 0.75C4.28125 0.75 2.96875 1.98047 2.96875 4.16797V6.10938H0.726562V8.625H2.96875V14.75H5.70312V8.625H7.75391Z"
+                  fill="#141414" />
+              </svg>
             </a>
             <a href="#" title="Twitter">
-              <img
-                src="/src/img/twitter-icon.svg"
-                width="45"
-                height="45"
-                alt="Twitter icon" />
+              <svg
+                width="14"
+                height="12"
+                viewBox="0 0 14 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.5508 2.90625C13.0977 2.49609 13.5898 2.00391 13.9727 1.42969C13.4805 1.64844 12.9062 1.8125 12.332 1.86719C12.9336 1.51172 13.3711 0.964844 13.5898 0.28125C13.043 0.609375 12.4141 0.855469 11.7852 0.992188C11.2383 0.417969 10.5 0.0898438 9.67969 0.0898438C8.09375 0.0898438 6.80859 1.375 6.80859 2.96094C6.80859 3.17969 6.83594 3.39844 6.89062 3.61719C4.51172 3.48047 2.37891 2.33203 0.957031 0.609375C0.710938 1.01953 0.574219 1.51172 0.574219 2.05859C0.574219 3.04297 1.06641 3.91797 1.85938 4.4375C1.39453 4.41016 0.929688 4.30078 0.546875 4.08203V4.10938C0.546875 5.50391 1.53125 6.65234 2.84375 6.92578C2.625 6.98047 2.35156 7.03516 2.10547 7.03516C1.91406 7.03516 1.75 7.00781 1.55859 6.98047C1.91406 8.12891 2.98047 8.94922 4.23828 8.97656C3.25391 9.74219 2.02344 10.207 0.683594 10.207C0.4375 10.207 0.21875 10.1797 0 10.1523C1.25781 10.9727 2.76172 11.4375 4.40234 11.4375C9.67969 11.4375 12.5508 7.08984 12.5508 3.28906C12.5508 3.15234 12.5508 3.04297 12.5508 2.90625Z"
+                  fill="#141414" />
+              </svg>
             </a>
             <a href="#" title="Linkedin">
-              <img
-                src="/src/img/linkdn-icon.svg"
-                width="45"
-                height="45"
-                alt="Linkedin icon" />
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 13 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3.10938 13V4.82422H0.566406V13H3.10938ZM1.82422 3.73047C2.64453 3.73047 3.30078 3.04688 3.30078 2.22656C3.30078 1.43359 2.64453 0.777344 1.82422 0.777344C1.03125 0.777344 0.375 1.43359 0.375 2.22656C0.375 3.04688 1.03125 3.73047 1.82422 3.73047ZM12.5977 13H12.625V8.51562C12.625 6.32812 12.1328 4.63281 9.5625 4.63281C8.33203 4.63281 7.51172 5.31641 7.15625 5.94531H7.12891V4.82422H4.69531V13H7.23828V8.95312C7.23828 7.88672 7.42969 6.875 8.74219 6.875C10.0547 6.875 10.082 8.07812 10.082 9.03516V13H12.5977Z"
+                  fill="#141414" />
+              </svg>
             </a>
           </div>
           <nav class="header-menu">
@@ -131,7 +146,7 @@
               </div>
             </div>
           </div>
-          <div class="image-bp">
+          <div class="image-bp" aria-hidden="true">
             <div class="image-bp-content img__resp-block">
               <img
                 src="/src/img/dark-light-book.png"
@@ -155,7 +170,7 @@
                   class="img__resp" />
               </div>
               <div class="abc-elem-desc">
-                <h2 class="abc-ed-title">Atomic One’s</h2>
+                <h2 class="abc-ed-title st-con">Atomic One’s</h2>
                 <span class="abc-ed-price">$ 13.84 USD</span>
                 <p>
                   As the book contains theoretical content as well as solved
@@ -182,7 +197,7 @@
                   class="img__resp" />
               </div>
               <div class="abc-elem-desc">
-                <h2 class="abc-ed-title">The Dark Light</h2>
+                <h2 class="abc-ed-title st-con">The Dark Light</h2>
                 <span class="abc-ed-price">$ 86.11 USD</span>
                 <p>
                   As the book contains theoretical content as well as solved
@@ -201,14 +216,13 @@
             </div>
           </div>
         </div>
-        <div class="l-about-author">
-          <div class="abauth-img img__resp-block bord-img" aria-hidden="true">
+        <div class="l-about-author" id="about">
+          <div class="abauth-img bord-img" aria-hidden="true">
             <img
               src="/src/img/about-auth-img.png"
               width="525"
               height="620"
-              alt="About author"
-              class="img__resp" />
+              alt="About author" />
             <div class="img-border"></div>
           </div>
           <div class="abauth-info">
@@ -221,20 +235,20 @@
             </p>
             <div class="abauth-info-stat">
               <div class="abi-stat-block">
-                <div class="abi-sb-number">02</div>
+                <div class="abi-sb-number st-con">02</div>
                 <div class="abi-sb-desc">Books Published</div>
               </div>
               <div class="abi-stat-block">
-                <div class="abi-sb-number">4.5</div>
+                <div class="abi-sb-number st-con">4.5</div>
                 <div class="abi-sb-desc">User Reviews</div>
               </div>
               <div class="abi-stat-block">
-                <div class="abi-sb-number">04</div>
+                <div class="abi-sb-number st-con">04</div>
                 <div class="abi-sb-desc">Best Seller Awards</div>
               </div>
             </div>
             <div class="l-abauth-info-contacts">
-              <div class="abi-contacts-img">
+              <div class="abi-contacts-img" aria-hidden="true">
                 <img
                   src="/src/img/qr-john-abraham.svg"
                   width="130"
@@ -261,59 +275,59 @@
           </div>
         </div>
         <div class="l-sponsors">
-          <h2 class="section-title sponsors-title">Trusted By The Best</h2>
+          <h2 class="sponsors-title section-title">Trusted By The Best</h2>
           <div class="sponsors-info">
             <div class="si-content">
-              <div class="sic-img">
+              <div class="sic-img" aria-hidden="true">
                 <img
                   src="/src/img/amazen.svg"
                   width="189"
                   height="100"
                   alt="amazen" />
               </div>
-              <h2 class="sic-title">Amazen Corp.</h2>
+              <h2 class="sic-title st-con">Amazen Corp.</h2>
               <p>
                 They has been helping readers, music lovers, and videophiles
                 find quality material.
               </p>
             </div>
             <div class="si-content">
-              <div class="sic-img">
+              <div class="sic-img" aria-hidden="true">
                 <img
                   src="/src/img/megan-books.svg"
                   width="189"
                   height="100"
                   alt="megan books" />
               </div>
-              <h2 class="sic-title">Megan Books</h2>
+              <h2 class="sic-title st-con">Megan Books</h2>
               <p>
                 We help physical bookstores manage their overstock to the book
                 inventory.
               </p>
             </div>
             <div class="si-content">
-              <div class="sic-img">
+              <div class="sic-img" aria-hidden="true">
                 <img
                   src="/src/img/megan-k.svg"
                   width="189"
                   height="100"
                   alt="/megan-k" />
               </div>
-              <h2 class="sic-title">Megank</h2>
+              <h2 class="sic-title st-con">Megank</h2>
               <p>
                 Bookstore serving up the full spectrum of Black literature and
                 wine black books.
               </p>
             </div>
             <div class="si-content">
-              <div class="sic-img">
+              <div class="sic-img" aria-hidden="true">
                 <img
                   src="/src/img/urban-store.svg"
                   width="189"
                   height="100"
                   alt="urban" />
               </div>
-              <h2 class="sic-title">Urban Store</h2>
+              <h2 class="sic-title st-con">Urban Store</h2>
               <p>
                 We also carry the latest records, issues of all of your favorite
                 comic books.
@@ -332,41 +346,247 @@
               >Order Today</a
             >
           </div>
-          <div class="book-copy-img img__resp-block">
+          <div class="book-copy-img img__resp-block" aria-hidden="true">
             <img
               src="/src/img/get-bc-img.png"
               width="560"
               height="394"
-              alt="Book copy image" 
-              class="img__resp"/>
+              alt="Book copy image"
+              class="img__resp" />
           </div>
         </div>
         <div class="l-ww-learn">
-          <h2 class="section-title">What Will You Learn?</h2>
-          <div class="section-content">
-            <div class="sc-points">
-              <div class="scp-block"></div>
-              <div class="scp-block"></div>
-              <div class="scp-block"></div>
-              <div class="scp-block"></div>
+          <h2 class="ww-learn-title section-title">What Will You Learn?</h2>
+          <div class="wwl-section-content">
+            <div class="l-wwl-sc-points">
+              <div class="scp-block">
+                <div class="scp-block-num st-con">01</div>
+                <p class="scp-block-desc">
+                  Use HDFS & Map Reduce for storing & analyzing data at scale.
+                </p>
+              </div>
+              <div class="scp-block">
+                <div class="scp-block-num st-con">02</div>
+                <p class="scp-block-desc">
+                  Consume streaming data using Spark Streaming, Flink, and
+                  Storm.
+                </p>
+              </div>
+              <div class="scp-block">
+                <div class="scp-block-num st-con">03</div>
+                <p class="scp-block-desc">
+                  Choose an appropriate data storage technology for your
+                  application
+                </p>
+              </div>
+              <div class="scp-block">
+                <div class="scp-block-num st-con">04</div>
+                <p class="scp-block-desc">
+                  Analyze non-relational data using HBase, Cassandra, and
+                  MongoDB.
+                </p>
+              </div>
             </div>
-            <div class="sc-img img__resp-block bord-img" aria-hidden="true">
+            <div class="wwl-sc-img bord-img" aria-hidden="true">
               <img
                 src="/src/img/wwlearn.png"
                 width="525"
-                height="620"
-                alt="wwlearn img"
-                class="img__resp" />
+                height="632"
+                alt="wwlearn img" />
               <div class="img-border"></div>
             </div>
           </div>
         </div>
-        <div class="l-kvision"></div>
-        <div class="l-reviews"></div>
-        <div class="l-art-res"></div>
+        <div class="l-kvision" id="pages">
+          <h2 class="kvision-title section-title">
+            Enhance knowledge & Vision
+          </h2>
+          <div class="l-kvision-content">
+            <div class="kvc-block">
+              <h2 class="kvc-block-title st-con">
+                Chapter-1 Get Started Intro
+              </h2>
+              <p>
+                You can double your knowledge by reading this ever needed book
+                that can last a lifetime.
+              </p>
+              <div class="kvc-block-info">
+                <div class="info-bp-desc-content">
+                  <div class="info-point"></div>
+                  <div class="info-tc">
+                    <span class="info-tc-title">Pages:</span>
+                    <span class="info-tc-content">106pages</span>
+                  </div>
+                </div>
+                <div class="info-bp-desc-content">
+                  <div class="info-point"></div>
+                  <div class="info-tc">
+                    <span class="info-tc-title">Length:</span>
+                    <span class="info-tc-content">2 Hours</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="kvc-block">
+              <h2 class="kvc-block-title st-con">
+                Chapter-2 The Roman Culture
+              </h2>
+              <p>
+                It will help to improve your life career with the perfect and
+                needed knowledge about your life.
+              </p>
+              <div class="kvc-block-info">
+                <div class="info-bp-desc-content">
+                  <div class="info-point"></div>
+                  <div class="info-tc">
+                    <span class="info-tc-title">Pages:</span>
+                    <span class="info-tc-content">180pages</span>
+                  </div>
+                </div>
+                <div class="info-bp-desc-content">
+                  <div class="info-point"></div>
+                  <div class="info-tc">
+                    <span class="info-tc-title">Length:</span>
+                    <span class="info-tc-content">3 Hours</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="kvc-block">
+              <h2 class="kvc-block-title st-con">
+                Chapter-3 How They Servived
+              </h2>
+              <p>
+                We wanted to create an easy, convenient way for you to get your
+                books & support.
+              </p>
+              <div class="kvc-block-info">
+                <div class="info-bp-desc-content">
+                  <div class="info-point"></div>
+                  <div class="info-tc">
+                    <span class="info-tc-title">Pages:</span>
+                    <span class="info-tc-content">250pages</span>
+                  </div>
+                </div>
+                <div class="info-bp-desc-content">
+                  <div class="info-point"></div>
+                  <div class="info-tc">
+                    <span class="info-tc-title">Length:</span>
+                    <span class="info-tc-content">4 Hours</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="kvc-block">
+              <h2 class="kvc-block-title st-con">
+                Chapter-4 The End Of Romans
+              </h2>
+              <p>
+                Promote your book via Pages shop to support your writing &
+                reading career.
+              </p>
+              <div class="kvc-block-info">
+                <div class="info-bp-desc-content">
+                  <div class="info-point"></div>
+                  <div class="info-tc">
+                    <span class="info-tc-title">Pages:</span>
+                    <span class="info-tc-content">175pages</span>
+                  </div>
+                </div>
+                <div class="info-bp-desc-content">
+                  <div class="info-point"></div>
+                  <div class="info-tc">
+                    <span class="info-tc-title">Length:</span>
+                    <span class="info-tc-content">3 Hours</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="kvision-use">
+            <a href="#" class="btn-kvu btn-yd btn-link"
+              >Start a 15-Days Free Trail</a
+            >
+            <div class="kvision-use-info">
+              <p class="kui-desc">Short description about each chapter</p>
+              <div class="kui-contact">
+                <span class="kuic-q">Have any questions?</span>
+                <a href="#" class="kuic-con">Contact us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="l-reviews">
+          <div class="reviews-desc">
+            <h2 class="rev-desc-title section-title">Words From Our Readers</h2>
+            <p></p>
+            <div class=""></div>
+            <span></span>
+          </div>
+          <div class="reviews-content"></div>
+        </div>
+        <div class="l-art-res">
+          <h2 class="art-res-title section-title">Articles & Resources</h2>
+        </div>
+        <div class="l-get-updates">
+          <h2 class="gupd-title section-title">Get The Best Updates</h2>
+        </div>
       </div>
     </div>
     <footer class="l-footer">
+      <div class="footer-contacts">
+        <div class="fc-main">
+          <div class="logo" aria-hidden="true">
+            <img
+              src="/src/img/logo-pages.svg"
+              alt="Pages logo"
+              width="119"
+              height="35" />
+          </div>
+          <div class="fc-main-media">
+            <a href="#" title="Facebook" class="btn-ff42"
+              ><svg
+                width="9"
+                height="15"
+                viewBox="0 0 9 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.75391 8.625L8.13672 6.10938H5.70312V4.46875C5.70312 3.75781 6.03125 3.10156 7.125 3.10156H8.24609V0.941406C8.24609 0.941406 7.23438 0.75 6.27734 0.75C4.28125 0.75 2.96875 1.98047 2.96875 4.16797V6.10938H0.726562V8.625H2.96875V14.75H5.70312V8.625H7.75391Z"
+                  fill="#141414" />
+              </svg>
+            </a>
+            <a href="#" title="Twitter" class="btn-ff42">
+              <svg
+                width="14"
+                height="12"
+                viewBox="0 0 14 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.5508 2.90625C13.0977 2.49609 13.5898 2.00391 13.9727 1.42969C13.4805 1.64844 12.9062 1.8125 12.332 1.86719C12.9336 1.51172 13.3711 0.964844 13.5898 0.28125C13.043 0.609375 12.4141 0.855469 11.7852 0.992188C11.2383 0.417969 10.5 0.0898438 9.67969 0.0898438C8.09375 0.0898438 6.80859 1.375 6.80859 2.96094C6.80859 3.17969 6.83594 3.39844 6.89062 3.61719C4.51172 3.48047 2.37891 2.33203 0.957031 0.609375C0.710938 1.01953 0.574219 1.51172 0.574219 2.05859C0.574219 3.04297 1.06641 3.91797 1.85938 4.4375C1.39453 4.41016 0.929688 4.30078 0.546875 4.08203V4.10938C0.546875 5.50391 1.53125 6.65234 2.84375 6.92578C2.625 6.98047 2.35156 7.03516 2.10547 7.03516C1.91406 7.03516 1.75 7.00781 1.55859 6.98047C1.91406 8.12891 2.98047 8.94922 4.23828 8.97656C3.25391 9.74219 2.02344 10.207 0.683594 10.207C0.4375 10.207 0.21875 10.1797 0 10.1523C1.25781 10.9727 2.76172 11.4375 4.40234 11.4375C9.67969 11.4375 12.5508 7.08984 12.5508 3.28906C12.5508 3.15234 12.5508 3.04297 12.5508 2.90625Z"
+                  fill="#141414" />
+              </svg>
+            </a>
+            <a href="#" title="Linkedin" class="btn-ff42">
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 13 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3.10938 13V4.82422H0.566406V13H3.10938ZM1.82422 3.73047C2.64453 3.73047 3.30078 3.04688 3.30078 2.22656C3.30078 1.43359 2.64453 0.777344 1.82422 0.777344C1.03125 0.777344 0.375 1.43359 0.375 2.22656C0.375 3.04688 1.03125 3.73047 1.82422 3.73047ZM12.5977 13H12.625V8.51562C12.625 6.32812 12.1328 4.63281 9.5625 4.63281C8.33203 4.63281 7.51172 5.31641 7.15625 5.94531H7.12891V4.82422H4.69531V13H7.23828V8.95312C7.23828 7.88672 7.42969 6.875 8.74219 6.875C10.0547 6.875 10.082 8.07812 10.082 9.03516V13H12.5977Z"
+                  fill="#141414" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="contact-block">
+          <h3 class="cb-title"></h3>
+          <ul class=""></ul>
+        </div>
+      </div>
       <div class="l-author">
         <a href="https://github.com/jkenix" title="Github profile link">
           My Github Profile
