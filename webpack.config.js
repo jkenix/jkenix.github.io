@@ -16,7 +16,6 @@ const plugins = [
   }),
   new HtmlWebpackPlugin({
     template: "./index.html",
-    chunks: ["index"]
   }),
   new CompressionPlugin({
     test: /\.js$|\.css$|\.html$/,
@@ -51,11 +50,7 @@ module.exports = {
     clean: true,
     publicPath: "/",
   },
-  optimization: {
-    splitChunks: {
-      chunks: 'all',
-    },
-  },
+
   module: {
     rules: [
       { test: /\.(html)$/, exclude: /node_modules/, use: ["html-loader"] },
