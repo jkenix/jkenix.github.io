@@ -89,7 +89,7 @@
   justify-content: flex-start;
   text-decoration: underline;
   margin: 0;
-  padding-top: 40px;
+  padding-top: 150px;
   gap: 30px;
   top: 107px;
   bottom: 0;
@@ -170,6 +170,13 @@
     color: $ff42;
   }
 }
+// Art res
+.abc-content {
+  &:hover,
+  &:focus-visible {
+    color: $ff42;
+  }
+}
 // Footer
 .fc-main-media a {
   &:hover,
@@ -180,7 +187,7 @@
     }
   }
 }
-.l-author a {
+.cbl-link, .cbic-block-content, .l-author a {
   &:hover,
   &:focus-visible {
     color: $ff42;

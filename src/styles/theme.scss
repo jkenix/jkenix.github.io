@@ -34,7 +34,8 @@ body {
 }
 /* Color styles for page content */
 // Titles h2
-.section-title, .st-con {
+.section-title,
+.st-con {
   color: $sap;
 }
 // Info-tc common classes
@@ -145,8 +146,9 @@ body {
 .kvc-block p {
   color: #969aa0;
 }
-.kui-desc, .kuic-con {
-  color: #969AA0;
+.kui-desc,
+.kuic-con {
+  color: #969aa0;
 }
 .kuic-q {
   color: $sap;
@@ -155,9 +157,33 @@ body {
 .l-reviews {
   background-color: $whitef5;
 }
+.reviews-desc p {
+  color: #969aa0;
+}
+.rds-content,
+.rev-desc-score-about {
+  color: $sap;
+}
+.rc-content {
+  background-color: $sap;
+}
+.rc-cp-info-name,
+.rc-con-title {
+  color: $whiteff;
+}
+.rc-con-desc {
+  color: #b4c7e7;
+}
 // Art res
 .l-art-res {
   background-color: $whitef5;
+}
+.arc-bd-info {
+  color: #969aa0;
+}
+.abc-content,
+.abc-date {
+  color: $sap;
 }
 // Form
 .l-get-updates {
@@ -166,14 +192,25 @@ body {
 .l-get-updates-content {
   background-color: $ff42;
 }
+.gupd-title::after {
+  background-color: $sap;
+}
+@media (max-width: 1024.98px) {
+  .l-get-updates {
+    background-color: $ff42;
+  }
+}
 // Footer
 .l-footer {
   background-color: $sap;
 }
-.cb-title {
+.cb-title, .cbic-block-title {
   color: $whiteff;
 }
-.cb-link {
+.cbl-link {
+  color: #b4c7e7;
+}
+.cbic-block-content {
   color: #b4c7e7;
 }
 .l-author a {

@@ -127,24 +127,36 @@
 }
 // Reviews
 .l-reviews {
+  display: flex;
+  gap: 30px;
   padding-top: 120px;
   padding-left: 70px;
   padding-right: 70px;
-  padding-bottom: 13px;
+  padding-bottom: 153px;
 }
 // Art res
 .l-art-res {
-  padding-top: 110px;
+  padding-top: 127px;
   padding-left: 70px;
-  padding-right: 70px;
+  padding-right: 53px;
   padding-bottom: 110px;
+}
+.l-art-res-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(302.5px, 1fr));
+  grid-gap: 20px;
+  padding-top: 70px;
+  justify-items: center;
 }
 // Form
 .l-get-updates {
-  padding-top: 120px;
+  padding-top: 161px;
   padding-left: 70px;
-  padding-right: 70px;
+  padding-right: 53px;
   padding-bottom: 120px;
+}
+.l-get-updates-content {
+  padding: 96px 150px 115px;
 }
 // Footer
 .l-footer {
@@ -159,7 +171,7 @@
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-top: 32px;
+  margin-top: 30px;
   white-space: nowrap;
   flex-wrap: wrap;
   a {
