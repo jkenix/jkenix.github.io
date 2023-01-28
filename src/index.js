@@ -1,12 +1,12 @@
 if (process.env.NODE_ENV !== "production") {
   require("../index.html");
 }
-import(/* webpackPrefetch: true */ "./styles/lib/normalize.css");
-import(/* webpackPreload: true */ "./styles/base.scss");
-import(/* webpackPreload: true */ "./styles/layout.scss");
-import(/* webpackPrefetch: true */ "./styles/theme.scss");
-import(/* webpackPreload: true */ "./styles/module.scss");
-import(/* webpackPreload: true */ "./styles/media.scss");
-import(/* webpackPrefetch: true */ "./styles/state.scss");
-import(/* webpackPreload: true */ "./styles/mixins_var.scss");
+import "./styles/lib/normalize.css";
+import "./styles/base.scss";
+import "./styles/layout.scss";
+import "./styles/theme.scss";
+import "./styles/module.scss";
+import "./styles/media.scss";
+import "./styles/state.scss";
+import "./styles/mixins_var.scss";
 import "./js/scripts.js";
