@@ -1,5 +1,4 @@
 dist/
-docs/
 **/cache
 **/.cache
 .cache/
@@ -22,7 +21,6 @@ my-app/
 
 # production
 /build
-/docs
 
 # misc
 .DS_Store
