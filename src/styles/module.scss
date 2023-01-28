@@ -202,7 +202,7 @@
     position: absolute;
     margin-top: 40px;
     height: 1px;
-    width: 152.33px;
+    width: 135px;
     background-color: white;
   }
 }
@@ -248,9 +248,6 @@
 // About author
 .abauth-img {
   display: flex;
-  img {
-    height: 620px;
-  }
 }
 .abauth-info {
   @include flexcolumn();
@@ -299,9 +296,13 @@
   row-gap: 10px;
   padding-top: 20px;
 }
+.abi-cd-content {
+  @include flexcolumn();
+}
 .abi-cd-mail,
 .abi-cd-num {
   font-size: 1.125rem;
+  row-gap: 5px;
 }
 .abi-cd-name,
 .abi-cd-mail {
@@ -375,7 +376,6 @@
 .wwl-sc-img {
   display: flex;
   img {
-    height: 632px;
     padding-top: 44px;
   }
   .img-border {
@@ -624,8 +624,9 @@
 }
 .fc-main-media {
   display: flex;
-  column-gap: 10px;
+  gap: 10px;
   margin-top: 15px;
+  flex-wrap: wrap;
   a {
     display: flex;
     justify-content: center;
@@ -648,7 +649,8 @@
 }
 .cb-list {
   @include flexcolumn();
-  gap: 10px;
+  column-gap: 10px;
+  row-gap: 15px;
   margin-top: 24px;
 }
 .cbl-link {
@@ -705,7 +707,6 @@
 .bord-img img {
   filter: drop-shadow(0px 0px 20px rgba(27, 55, 100, 0.3));
   z-index: 1;
-  max-width: 525px;
 }
 .img-border {
   border: 10px solid $ff42;

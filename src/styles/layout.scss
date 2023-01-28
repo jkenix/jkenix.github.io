@@ -104,7 +104,7 @@
 .l-wwl-sc-points {
   display: grid;
   grid-template-areas: "scp-block" "scp-block";
-  grid-template-columns: repeat(auto-fit, minmax(291px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(281px, 1fr));
   grid-row-gap: 30px;
   padding-top: 120px;
   justify-items: center;
@@ -169,10 +169,8 @@
 .l-author {
   align-items: center;
   display: flex;
-  justify-content: center;
   gap: 30px;
   margin-top: 30px;
-  white-space: nowrap;
   flex-wrap: wrap;
   a {
     font-size: 1.5rem;

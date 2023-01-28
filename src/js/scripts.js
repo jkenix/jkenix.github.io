@@ -1,6 +1,6 @@
-window.onload = function (RemovePreloader) {
+window.addEventListener('load', (event) => {
   document.querySelector(".l-preloader").remove("l-preloader");
-};
+});
 /* Def menu scripts.\*/
 // Common show menu variables
 let header = document.querySelector(".l-header");

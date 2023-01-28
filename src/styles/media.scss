@@ -94,7 +94,7 @@
   }
   // About author
   .l-about-author {
-    column-gap: 110px;
+    column-gap: 109px;
   }
   // WWlearn
   .wwl-section-content {
@@ -104,7 +104,6 @@
     }
     .img-border {
       width: 420px;
-      height: 570px;
     }
   }
 }
@@ -138,14 +137,18 @@
       max-width: 230px;
     }
     // About author
-    // Bord img
     .abauth-img img {
-      max-width: 500px;
+      max-width: 469px;
     }
   }
   // About author
   .l-about-author {
-    column-gap: 100px;
+    column-gap: 40px;
+  }
+  .abauth-img {
+    .img-border {
+      display: none;
+    }
   }
   .abauth-info-stat {
     flex-wrap: wrap;
@@ -168,8 +171,38 @@
     }
   }
   // Footer
-  .cb-list li {
-    text-align: center;
+  .l-footer {
+    padding-top: 30px;
+    .footer-contacts {
+      align-items: center;
+      flex-direction: column;
+      row-gap: 30px;
+    }
+    .contact-block {
+      padding-left: 0;
+    }
+    .cb-title {
+      font-size: 2.5rem;
+      text-align: initial;
+      line-height: 36px;
+      text-align: center;
+    }
+    .cb-list {
+      justify-content: center;
+      flex-wrap: wrap;
+      column-gap: 25px;
+      flex-direction: row;
+    }
+    .cbl-link {
+      font-size: 2rem;
+    }
+    .cbic-block-title {
+      font-size: 1.5rem;
+    }
+    .cbic-block-content {
+      font-size: 1.2rem;
+      max-width: 100%;
+    }
   }
 }
 // 1024px
@@ -326,16 +359,6 @@
   .gupd-form .gf-input-wr {
     width: 78%;
   }
-  // Footer
-  .l-footer {
-    .footer-contacts {
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-  }
-  .cb-list li {
-    text-align: initial;
-  }
 }
 // 768px
 @media (max-width: 767.98px) {
@@ -357,31 +380,6 @@
   // WWlearn
   .l-wwl-sc-points {
     grid-template-columns: repeat(auto-fit, minmax(249.2px, 1fr));
-  }
-  // Footer
-  .l-footer {
-    .footer-contacts {
-      justify-content: flex-start;
-      flex-direction: column;
-      row-gap: 30px;
-    }
-    .contact-block {
-      padding-left: 0;
-    }
-    .cb-title {
-      font-size: 2.5rem;
-      text-align: initial;
-    }
-    .cbl-link {
-      font-size: 2rem;
-    }
-    .cbic-block-title {
-      font-size: 1.5rem;
-    }
-    .cbic-block-content {
-      font-size: 1.2rem;
-      max-width: 100%;
-    }
   }
 }
 // 576px
@@ -452,12 +450,19 @@
       padding-right: 0;
       margin-right: 0;
     }
+    .abi-cd-content {
+      row-gap: 10px;
+    }
+    .abi-cd-mail,
+    .abi-cd-num {
+      flex-direction: column;
+    }
     // Kvision
     .kvc-block {
       padding: 0;
     }
     .btn-kvu {
-      width: 250px;
+      width: 230px;
     }
     .kui-contact {
       padding: 0;
@@ -480,11 +485,11 @@
   }
   // Kvision
   .l-kvision-content {
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(244px, 1fr));
   }
   // Artres
   .l-art-res-content {
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(244px, 1fr));
   }
   .arc-bd-check {
     flex-direction: column;
@@ -504,6 +509,19 @@
   }
   .gupd-form {
     flex-direction: column;
+  }
+  // Footer
+  .l-footer {
+    .footer-contacts {
+      align-items: baseline;
+    }
+
+    .cb-list {
+     justify-content: flex-start;
+    }
+    .cb-title {
+      text-align: initial;
+    }
   }
 }
 // 320px
