@@ -192,8 +192,11 @@ body {
 .l-get-updates-content {
   background-color: $ff42;
 }
-.gupd-title::after {
+.l-main .gupd-title::after {
   background-color: $sap;
+}
+.gupd-info-content {
+  color: $sap;
 }
 @media (max-width: 1024.98px) {
   .l-get-updates {
@@ -204,7 +207,8 @@ body {
 .l-footer {
   background-color: $sap;
 }
-.cb-title, .cbic-block-title {
+.cb-title,
+.cbic-block-title {
   color: $whiteff;
 }
 .cbl-link {

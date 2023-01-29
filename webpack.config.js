@@ -4,6 +4,7 @@ const CompressionPlugin = require("compression-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackInjector = require("html-webpack-injector");
 
 let mode = "development";
 let target = "web";
@@ -17,7 +18,9 @@ const plugins = [
   }),
   new HtmlWebpackPlugin({
     template: "./index.html",
+    chunks: ["main"],
   }),
+  new HtmlWebpackInjector(),
   new CompressionPlugin({
     algorithm: "gzip",
     test: /\.(js|css|html|svg)$/i,

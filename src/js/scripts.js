@@ -1,4 +1,4 @@
-window.addEventListener('load', (event) => {
+window.addEventListener("load", (event) => {
   document.querySelector(".l-preloader").remove("l-preloader");
 });
 /* Def menu scripts.\*/
@@ -36,7 +36,7 @@ window.addEventListener(
       header.classList.add("header-scroll");
     } else if (window.scrollY < 100) {
       header.classList.remove("header-scroll");
-      history.pushState("", document.title, window.location.pathname);
+      // history.pushState("", document.title, window.location.pathname);
     }
   },
   true
