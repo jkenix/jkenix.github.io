@@ -41,3 +41,6 @@ window.addEventListener(
   },
   true
 );
+var myLazyLoad = new LazyLoad({
+  container: document.querySelector(".l-wrapper")
+});

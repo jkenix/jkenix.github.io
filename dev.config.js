@@ -1,17 +1,9 @@
 const path = require("path");
-const webpack = require("webpack");
-const CompressionPlugin = require("compression-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const HtmlWebpackInjector = require("html-webpack-injector");
 
 let mode = "development";
 let target = "web";
-if (process.env.NODE_ENV === "production") {
-  mode = "production";
-  target = "browserslist";
-}
 const plugins = [
   new MiniCssExtractPlugin({
     filename: "[name].[contenthash].css",
@@ -19,14 +11,6 @@ const plugins = [
   new HtmlWebpackPlugin({
     template: "./index.html",
     chunks: ["main"],
-  }),
-  new HtmlWebpackInjector(),
-  new CompressionPlugin({
-    algorithm: "gzip",
-    test: /\.(js|css|html|svg)$/i,
-  }),
-  new webpack.DefinePlugin({
-    PRODUCTION: JSON.stringify(true),
   }),
 ];
 
@@ -73,55 +57,7 @@ module.exports = {
         },
       },
     },
-    minimizer: [
-      "...",
-      new ImageMinimizerPlugin({
-        minimizer: {
-          implementation: ImageMinimizerPlugin.squooshMinify,
-          options: {
-            encodeOptions: {
-              mozjpeg: {
-                // That setting might be close to lossless, but it’s not guaranteed
-                // https://github.com/GoogleChromeLabs/squoosh/issues/85
-                quality: 100,
-              },
-              webp: {
-                quality: 80,
-              },
-              avif: {
-                // https://github.com/GoogleChromeLabs/squoosh/blob/dev/codecs/avif/enc/README.md
-                cqLevel: 0,
-              },
-            },
-          },
-        },
-      }),
-      new ImageMinimizerPlugin({
-        minimizer: {
-          implementation: ImageMinimizerPlugin.svgoMinify,
-          options: {
-            encodeOptions: {
-              // Pass over SVGs multiple times to ensure all optimizations are applied. False by default
-              multipass: true,
-              plugins: [
-                // set of built-in plugins enabled by default
-                // see: https://github.com/svg/svgo#default-preset
-                "preset-default",
-              ],
-            },
-          },
-        },
-      }),
-    ],
   },
-  output: {
-    path: path.resolve(__dirname, "docs"),
-    // assetModuleFilename: "assets/[hash][ext][query]",
-    assetModuleFilename: "./[hash][ext][query]",
-    clean: true,
-    publicPath: "/",
-  },
-
   module: {
     rules: [
       { test: /\.(html)$/, exclude: /node_modules/, use: ["html-loader"] },
