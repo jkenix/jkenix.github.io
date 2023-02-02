@@ -1,7 +1,31 @@
+//  Preloader
 window.addEventListener("load", (event) => {
   document.querySelector(".l-preloader").remove("l-preloader");
 });
-/* Def menu scripts.\*/
+/* Lazy load scripts */
+// Init lazyload
+// var lazyLazy = function () {
+  
+// };
+// // Variables delete src elements
+// let bordimg = document.querySelector(".bord-img img");
+// let bookcopy = document.querySelector(".book-copy-img img");
+// let bord = document.querySelector(".bord-img img");
+// // Run Lazy load, if width > 1024
+// if (window.innerWidth > 1024) {
+//   lazyLazy();
+// }
+// // Remove and show src
+// if (window.innerWidth < 1024) {
+//   bordimg.removeAttribute("src");
+//   bookcopy.removeAttribute("src");
+// }
+// window.onresize = function (event) {
+//   if (window.innerWidth > 1024) {
+//     lazyLazy();
+//   }
+// };
+/* Def menu scripts. */
 // Common show menu variables
 let header = document.querySelector(".l-header");
 let body = document.querySelector("body");
@@ -28,6 +52,7 @@ ham.onclick = function (NavActive) {
     }
   });
 };
+
 // Show/Remove scroll
 window.addEventListener(
   "scroll",
@@ -36,11 +61,7 @@ window.addEventListener(
       header.classList.add("header-scroll");
     } else if (window.scrollY < 100) {
       header.classList.remove("header-scroll");
-      // history.pushState("", document.title, window.location.pathname);
     }
   },
   true
 );
-var myLazyLoad = new LazyLoad({
-  container: document.querySelector(".l-wrapper")
-});

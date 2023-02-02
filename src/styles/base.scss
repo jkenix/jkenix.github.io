@@ -24,27 +24,56 @@ q {
   font-weight: 400;
   margin: 0;
 }
+
 p {
   font-family: "Inter";
 }
+
 a {
   text-decoration: none;
 }
+
 button {
   cursor: pointer;
   border: none;
 }
+
 img {
   user-select: none;
 }
+img.lazy {
+  opacity: 0;
+}
+img:not(.initial) {
+  transition: opacity 1s;
+}
+img.initial,
+img.loaded {
+  opacity: 1;
+}
+
+img.error {
+  opacity: 1;
+  color: red;
+  &::before {
+    content: "Loading Error - "; 
+    font-size: 1.25rem;
+  }
+}
+img:not([src]) {
+  visibility: hidden;
+}
+
 ul {
   list-style: none;
   padding: 0;
 }
+
 address {
   font-style: normal;
   font-size: 1.5rem;
 }
+
 input {
   &::placeholder {
     font-family: "Inter";

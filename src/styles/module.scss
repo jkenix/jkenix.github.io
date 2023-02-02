@@ -341,6 +341,9 @@
     text-align: center;
   }
 }
+.sic-img {
+  height: 100px;
+}
 .sic-title {
   margin-top: 15px;
   margin-bottom: 20px;
@@ -595,6 +598,7 @@
   gap: 16px;
   .btn-gupd {
     width: 328px;
+    min-width: 275px;
     height: 68px;
     font-family: "Inter";
     font-size: 1.125rem;
@@ -610,6 +614,7 @@
   height: 63px;
   padding-left: 39px;
   max-width: 611px;
+  min-width: 300px;
   width: 100%;
 }
 // Footer
