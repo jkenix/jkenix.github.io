@@ -1,6 +1,3 @@
-# Каталог проектов, сделанных по макетам.  
-Main ветка является тестовой.  
-Alisayed, dsm, evelin, wooder - не являются адаптивными.  
-Остальные адаптивные!  
-:white_check_mark: Последний готовый проект. -> https://github.com/jkenix/jkenix.github.io/tree/toystream  
-+ Здесь публикую проекты, находящиеся в разработке. -> https://jkenix.netlify.app/
+:white_check_mark: Полностью адаптивная страница, сделанная по макету.
+
+- Макет -> https://www.figma.com/file/srEdFGe5jVsLZtrr9CqUUh/Pages?node-id=0%3A1
