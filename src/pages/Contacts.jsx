@@ -15,7 +15,7 @@ export default function Contacts() {
           <meta property="og:title" content="Toy.Stream Contacts" />
           <meta
             property="og:url"
-            content="https://jkenix.netlify.app/contacts"
+            content="https://jkenix.github.io/contacts"
           />
           <meta name="og:description" content="Contacts - Toy.Stream." />
           <meta name="description" content="Toy.Stream - Contacts." />

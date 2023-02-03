@@ -6,9 +6,13 @@ const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin"
 
 let mode = "development";
 let target = "web";
+
 if (process.env.NODE_ENV === "production") {
   mode = "production";
   target = "browserslist";
+}
+if (process.env.SERVE) {
+  plugins.push(new ReactRefreshWebpackPlugin());
 }
 
 const plugins = [
@@ -17,22 +21,42 @@ const plugins = [
   }),
   new HtmlWebpackPlugin({
     template: "./index.html",
+    chunks: ["main"],
   }),
   new CompressionPlugin({
     test: /\.js$|\.css$|\.html$/,
   }),
 ];
 
-if (process.env.SERVE) {
-  plugins.push(new ReactRefreshWebpackPlugin());
-}
-
 module.exports = {
   mode,
   target,
   plugins,
   devtool: "source-map",
-  entry: "./src/index.js",
+  entry: { main: "./src/index.js" },
+  optimization: {
+    splitChunks: {
+      chunks: "async",
+      minSize: 20000,
+      minRemainingSize: 0,
+      minChunks: 1,
+      maxAsyncRequests: 30,
+      maxInitialRequests: 30,
+      enforceSizeThreshold: 50000,
+      cacheGroups: {
+        defaultVendors: {
+          test: /[\\/]node_modules[\\/]/,
+          priority: -10,
+          reuseExistingChunk: true,
+        },
+        default: {
+          minChunks: 2,
+          priority: -20,
+          reuseExistingChunk: true,
+        },
+      },
+    },
+  },
   devServer: {
     historyApiFallback: true,
     static: {

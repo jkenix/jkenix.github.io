@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import gifcat from "./img/YAgE.gif";
 const Home = lazy(() => import("./pages/Home.jsx"));
@@ -11,7 +11,7 @@ const Contacts = lazy(() => import("./pages/Contacts.jsx"));
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Suspense
         fallback={
           <div
@@ -50,6 +50,6 @@ export default function App() {
           <Route path="/contacts" element={<Contacts />}></Route>
         </Routes>
       </Suspense>
-    </BrowserRouter>
+    </HashRouter>
   );
 }

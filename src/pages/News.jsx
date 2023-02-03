@@ -19,7 +19,7 @@ export default function News() {
         <Helmet>
           <title>News</title>
           <meta property="og:title" content="News Toy.Stream" />
-          <meta property="og:url" content="https://jkenix.netlify.app/news" />
+          <meta property="og:url" content="https://jkenix.github.io/news" />
           <meta
             name="og:description"
             content="Check news from Toy.Stream team."

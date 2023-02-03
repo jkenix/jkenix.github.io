@@ -5,6 +5,8 @@ import {
   ShowMenuylgcom,
   NavActive,
 } from "../js/scripts";
+import "../styles/lib/slick.css";
+import "../styles/lib/slick-theme.css";
 
 import Header from "../components/Header.jsx";
 import Sociallinksvert from "../components/Sociallinksvert.jsx";
@@ -26,7 +28,7 @@ export default function Company() {
           <meta property="og:title" content="Company Toy.Stream" />
           <meta
             property="og:url"
-            content="https://jkenix.netlify.app/company"
+            content="https://jkenix.github.io/company"
           />
           <meta name="og:description" content="About company Toy.Stream." />
           <meta name="description" content="Toy.Steam - About company." />

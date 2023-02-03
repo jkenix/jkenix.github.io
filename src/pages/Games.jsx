@@ -1,6 +1,8 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { ShowMenu, ShowMenubclg, NavActive } from "../js/scripts";
+import "../styles/lib/slick.css";
+import "../styles/lib/slick-theme.css";
 
 import Header from "../components/Header.jsx";
 import Sociallinksvert from "../components/Sociallinksvert.jsx";
@@ -21,7 +23,7 @@ export default function Games() {
         <Helmet>
           <title>Games</title>
           <meta property="og:title" content="Games Toy.Stream" />
-          <meta property="og:url" content="https://jkenix.netlify.app/games" />
+          <meta property="og:url" content="https://jkenix.github.io/games" />
           <meta name="og:description" content="Games by Toy.Stream." />
           <meta name="description" content="Toy.Stream Games." />
         </Helmet>

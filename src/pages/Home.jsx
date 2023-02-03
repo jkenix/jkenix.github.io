@@ -2,7 +2,7 @@ import { React } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
-import { ShowMenu, ShowMenuylg, NavActive, NavActiveMain } from "../js/scripts";
+import { ShowMenu, ShowMenuylg, NavActive} from "../js/scripts";
 import Header from "../components/Header.jsx";
 import Sociallinksvert from "../components/Sociallinksvert.jsx";
 import Footer from "../components/Footer.jsx";
@@ -16,7 +16,7 @@ export default function Home() {
         <Helmet>
           <title>Toy.Stream</title>
           <meta property="og:title" content="Toy.Stream - Game studio" />
-          <meta property="og:url" content="https://jkenix.netlify.app/" />
+          <meta property="og:url" content="https://jkenix.github.io/" />
           <meta
             name="og:description"
             content="Toy.Steam - Page made by jkenix from layout."

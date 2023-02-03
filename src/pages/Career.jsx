@@ -2,6 +2,8 @@ import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { ShowMenu, ShowMenubclg, NavActive} from "../js/scripts";
 import { Link } from "react-router-dom";
+import "../styles/lib/slick.css";
+import "../styles/lib/slick-theme.css";
 
 import Header from "../components/Header.jsx";
 import Sociallinksvert from "../components/Sociallinksvert.jsx";
@@ -22,7 +24,7 @@ export default function Career() {
         <Helmet>
           <title>Career</title>
           <meta property="og:title" content="Career in Toy.Stream" />
-          <meta property="og:url" content="https://jkenix.netlify.app/career" />
+          <meta property="og:url" content="https://jkenix.github.io/career" />
           <meta name="og:description" content="Post a job now!" />
           <meta name="description" content="Career in Toy.Stream." />
         </Helmet>
