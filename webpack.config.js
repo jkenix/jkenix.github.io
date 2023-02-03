@@ -11,9 +11,6 @@ if (process.env.NODE_ENV === "production") {
   mode = "production";
   target = "browserslist";
 }
-if (process.env.SERVE) {
-  plugins.push(new ReactRefreshWebpackPlugin());
-}
 
 const plugins = [
   new MiniCssExtractPlugin({
@@ -27,6 +24,10 @@ const plugins = [
     test: /\.js$|\.css$|\.html$/,
   }),
 ];
+
+if (process.env.SERVE) {
+  plugins.push(new ReactRefreshWebpackPlugin());
+}
 
 module.exports = {
   mode,
