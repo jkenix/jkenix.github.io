@@ -41,31 +41,17 @@
     animation: preloader-spin 1.5s linear infinite;
   }
 }
-.preloader-remove {
+// Global state
+.elem-is-hide {
   display: none;
 }
 // Buttons (Common classes)
-.btn-sap {
-  &:hover,
-  &:focus-visible {
-    background-color: $whiteff;
-    color: #000;
-  }
-}
+
 // State header of scroll
 .header-scroll {
   opacity: 0.9;
 }
 // Header
-.sn-contacts a {
-  &:hover,
-  &:focus-visible {
-    background-color: #000;
-    svg path {
-      fill: $whiteff;
-    }
-  }
-}
 .ham-is-active span {
   transition: all 0.4s;
   &:nth-of-type(1) {
@@ -90,6 +76,7 @@
   text-decoration: underline;
   margin: 0;
   padding-top: 150px;
+  position: absolute;
   gap: 30px;
   top: 107px;
   bottom: 0;
@@ -98,24 +85,16 @@
   z-index: 9;
   width: 100%;
   visibility: visible;
-  a {
+  > .nav-item {
     animation: navaactive 1.5s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
     text-transform: uppercase;
     font-size: 2.8rem;
     font-weight: 900;
   }
 }
-.header-menu a {
-  &:hover,
-  &:focus-visible {
-    color: $ff42;
-  }
-}
-.btn-head {
-  &:hover,
-  &:focus-visible {
-    background-color: $whiteff;
-  }
+.nav-item-is-active {
+  pointer-events: none;
+  cursor: default;
 }
 .cart {
   &:hover,
@@ -129,69 +108,9 @@
   }
 }
 // Main
-// Book preview
-.btn-check-demo {
-  &:hover,
-  &:focus-visible {
-    color: gray;
-    &::after {
-      background-color: gray;
-    }
-  }
-}
-// Author book
-.abc-elem-desc .btn-order {
-  &:hover,
-  &:focus-visible {
-    color: $whiteff;
-    background-color: #000;
-  }
-}
-// About author
-.abi-cd-mail,
-.abi-cd-num {
-  a:hover,
-  a:focus-visible {
-    color: $ff42;
-  }
-}
-// Kvision
-.btn-kvu {
-  &:hover,
-  &:focus-visible {
-    background-color: #000;
-    color: $whiteff;
-  }
-}
-.kuic-con {
-  &:hover,
-  &:focus-visible {
-    color: $ff42;
-  }
-}
-// Art res
-.abc-content {
-  &:hover,
-  &:focus-visible {
-    color: $ff42;
-  }
-}
+
 // Footer
-.fc-main-media a {
-  &:hover,
-  &:focus-visible {
-    background-color: $whiteff;
-    svg path {
-      fill: #000;
-    }
-  }
-}
-.cbl-link, .cbic-block-content, .l-author a {
-  &:hover,
-  &:focus-visible {
-    color: $ff42;
-  }
-}
+
 /* Keyframes */
 // Preloader
 @keyframes preloader-spin {

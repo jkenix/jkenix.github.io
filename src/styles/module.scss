@@ -18,34 +18,19 @@
     height: 3px;
   }
 }
-// Common info-tc
-.info-bp-desc-content {
-  display: flex;
-  column-gap: 10px;
-}
-.info-point {
-  background-color: #ffca42;
-  border-radius: 100px;
-  width: 16px;
-  height: 16px;
-}
-.info-tc {
-  display: flex;
-}
-.info-tc-title {
-  font-family: "Cardo";
-  font-size: 1.5rem;
-  line-height: 29px;
-  letter-spacing: 0.48px;
-}
-.info-tc-content {
-  font-family: "Inter";
-  font-size: 1.063rem;
-  line-height: 27px;
-}
 /* Header*/
+.l-header-wr {
+  .nav-item, .feni-tel {
+    font-weight: 500;
+    font-size: 0.813rem;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
+}
 .logo {
-  margin-right: 35px;
+  width: 65px;
+  height: 65px;
+  margin-right: 80px;
 }
 .hamburger {
   cursor: pointer;
@@ -96,527 +81,25 @@
   //   bottom: -13px;
   // }
 }
-.sn-contacts {
-  display: flex;
-  column-gap: 10px;
-  margin-right: auto;
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45px;
-    height: 45px;
-  }
-}
 .header-menu {
-  margin-right: 40px;
-  a {
-    font-size: 1.063rem;
-    font-family: "Inter";
-    margin-right: 56px;
+  display: flex;
+  width: 50%;
+  > .nav-item {
+    margin-right: 45px;
     &:nth-last-child(1) {
       margin: 0;
     }
+    &:hover,
+    &:focus-visible {
+      color: $ff5;
+    }
   }
 }
-.cart {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  width: 17px;
-  height: 17px;
-  margin-right: 51px;
-}
-.btn-head {
-  width: 222px;
-  letter-spacing: 0.57px;
-  text-transform: capitalize;
+.feni-tel {
+  margin-right: 50px; 
 }
 /* Main */
-// Books preview
-.info-bp {
-  padding-top: 156px;
-  padding-left: 23.31px;
-  max-width: 588.3px;
-}
-.info-bp-st {
-  align-items: center;
-  display: flex;
-  gap: 14px;
-  font-family: "Cardo";
-  font-size: 1.313rem;
-  line-height: 36px;
-  letter-spacing: 1.2px;
-  text-transform: capitalize;
-  &::before {
-    content: "";
-    background-color: #ffca42;
-    height: 2px;
-    width: 35px;
-    position: relative;
-  }
-}
-.info-bp-content {
-  padding-top: 10px;
-  padding-bottom: 31px;
-}
-.ibc-title {
-  font-family: "Cardo";
-  font-size: 4rem;
-  line-height: 78px;
-  letter-spacing: 1.3px;
-}
-.info-bp-content-desc {
-  padding-top: 23px;
-  p {
-    font-size: 1.125rem;
-    line-height: 28px;
-  }
-}
-.info-bp-check {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 51px;
-  row-gap: 20px;
-  .btn-head {
-    margin-top: 12px;
-  }
-}
-.info-bp-desc {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 53px;
-  column-gap: 60px;
-  row-gap: 10px;
-  .info-tc {
-    flex-direction: column;
-    gap: 12px;
-  }
-}
-.btn-check-demo {
-  line-height: 30px;
-  letter-spacing: 0.38px;
-  text-transform: capitalize;
-  &::after {
-    content: "";
-    position: absolute;
-    margin-top: 40px;
-    height: 1px;
-    width: 135px;
-    background-color: white;
-  }
-}
-// Author book
-.abc-elem {
-  display: flex;
-  max-width: 630px;
-  column-gap: 40px;
-}
-.abc-elem-img img {
-  max-width: 285px;
-}
-.abc-elem-desc {
-  padding-top: 50px;
-  p {
-    font-size: 1.188rem;
-    line-height: 28px;
-    margin-top: 16px;
-    margin-bottom: 15px;
-    max-width: 80%;
-  }
-  .info-bp-desc-content {
-    flex-wrap: wrap;
-  }
-  .info-point {
-    margin-top: 9px;
-  }
-  .btn-order {
-    width: 206px;
-    margin-top: 24px;
-  }
-}
-.abc-ed-title {
-  font-size: 2rem;
-  line-height: 38px;
-  letter-spacing: 0.32px;
-  margin-bottom: 7px;
-}
-.abc-ed-price {
-  font-size: 1.313rem;
-  line-height: 33px;
-}
-// About author
-.abauth-img {
-  display: flex;
-}
-.abauth-info {
-  @include flexcolumn();
-  max-width: 605px;
-  padding-top: 65px;
-  p {
-    font-size: 1.188rem;
-    margin-top: 27px;
-    max-width: 88%;
-    line-height: 34px;
-  }
-}
-.abauth-info-title {
-  align-items: flex-start;
-}
-.abauth-info-stat {
-  display: flex;
-  row-gap: 10px;
-  margin-top: 40px;
-}
-.abi-stat-block {
-  border-right-width: 2px;
-  border-color: $ff42;
-  border-right-style: solid;
-  max-width: 181px;
-  padding-right: 20px;
-  margin-right: 25px;
-  &:nth-child(3) {
-    border: none;
-    margin-right: 0;
-  }
-}
-.abi-sb-number {
-  font-family: "Cardo";
-  font-size: 3.375rem;
-  line-height: 77px;
-}
-.abi-sb-desc {
-  font-family: "Inter";
-  font-size: 1.063rem;
-  line-height: 22px;
-}
-// qr block
-.abi-contacts-desc {
-  @include flexcolumn();
-  row-gap: 10px;
-  padding-top: 20px;
-}
-.abi-cd-content {
-  @include flexcolumn();
-}
-.abi-cd-mail,
-.abi-cd-num {
-  font-size: 1.125rem;
-  row-gap: 5px;
-}
-.abi-cd-name,
-.abi-cd-mail {
-  line-height: 26px;
-}
-.abi-cd-mail,
-.abi-cd-num {
-  display: flex;
-  font-family: "Inter";
-  column-gap: 10px;
-  letter-spacing: 0.19px;
-}
-.abi-cd-name {
-  font-family: "Cardo";
-  font-size: 1.375rem;
-}
-.abi-cd-num {
-  line-height: 28px;
-}
-// Sponsors
-.sponsors-title {
-  margin-bottom: 50px;
-}
-.sponsors-info {
-  display: flex;
-  column-gap: 16px;
-  row-gap: 25px;
-}
-.si-content {
-  @include flexcolumn();
-  max-width: 313px;
-  align-items: center;
-  p {
-    font-size: 1.188rem;
-    line-height: 28px;
-    text-align: center;
-  }
-}
-.sic-img {
-  height: 100px;
-}
-.sic-title {
-  margin-top: 15px;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-  line-height: 29px;
-  text-align: center;
-}
-// Book copy
-.book-copy-info {
-  max-width: 610px;
-  padding-top: 75px;
-}
-.bci-title {
-  align-items: flex-start;
-}
-.book-copy-info p {
-  font-size: 1.188rem;
-  line-height: 28px;
-  margin-top: 30px;
-  margin-bottom: 25px;
-}
-.btn-bci {
-  width: 220px;
-}
-.book-copy-img {
-  max-width: 560px;
-}
-// Ww learn
-.wwl-section-content {
-  display: flex;
-  column-gap: 60px;
-}
-.wwl-sc-img {
-  display: flex;
-  img {
-    padding-top: 44px;
-  }
-  .img-border {
-    margin-top: 90px;
-    margin-left: 45px;
-  }
-}
-.scp-block {
-  padding-top: 30px;
-  padding-left: 30px;
-  padding-right: 37px;
-  padding-bottom: 27px;
-}
-.scp-block-num {
-  align-items: center;
-  border-radius: 25px;
-  display: flex;
-  font-size: 1.438rem;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  line-height: 29px;
-}
-.scp-block-desc {
-  font-size: 1.5rem;
-  line-height: 34px;
-  margin-top: 30px;
-}
-// Kvision
-.kvc-block {
-  padding-top: 42px;
-  padding-right: 60px;
-  padding-left: 40px;
-  padding-bottom: 47px;
-}
-.kvc-block-title {
-  font-size: 1.5rem;
-  line-height: 29px;
-}
-.kvc-block p {
-  font-size: 1.188rem;
-  line-height: 32px;
-  margin-top: 21px;
-  margin-bottom: 10px;
-  max-width: 95%;
-}
-.kvc-block-info {
-  display: flex;
-  column-gap: 45px;
-  row-gap: 10px;
-  .info-point {
-    margin-top: 8px;
-  }
-  .info-tc {
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-}
-.kvision-use {
-  align-items: center;
-  @include flexcolumn();
-  justify-content: center;
-  row-gap: 34px;
-  margin-top: 71px;
-}
-.btn-kvu {
-  width: 429px;
-  height: 76px;
-}
-.kui-contact {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  padding-left: 23px;
-}
-.kui-desc,
-.kuic-q,
-.kuic-con {
-  line-height: 28px;
-}
-.kui-desc,
-.kuic-q {
-  font-size: 1.125rem;
-  letter-spacing: 0.19px;
-}
-.kuic-q,
-.kuic-con {
-  font-family: "Inter";
-}
-.kuic-con {
-  font-size: 1.188rem;
-}
-// Reviews
-.reviews-desc {
-  max-width: 448px;
-  padding-top: 122px;
-  padding-right: 20px;
-}
-.reviews-desc p {
-  font-size: 1.188rem;
-  line-height: 34px;
-  margin-top: 34px;
-  margin-bottom: 27px;
-  max-width: 98%;
-}
-.rev-desc-title {
-  text-align: initial;
-}
-.rev-desc-score {
-  display: flex;
-  gap: 10px;
-}
-.rds-content {
-  font-family: "Cardo";
-  font-size: 1.375rem;
-  line-height: 26px;
-}
-.rev-desc-score-about {
-  font-family: "Inter";
-  font-size: 1.125rem;
-  line-height: 28px;
-}
-.reviews-content {
-  display: flex;
-  column-gap: 20px;
-  max-width: 802px;
-}
-.revc-column {
-  @include flexcolumn();
-  row-gap: 24px;
-  padding-top: 21px;
-}
-.revc-column-2 {
-  padding-top: 177px;
-}
-.rc-content {
-  padding: 30px 43px 24px 35px;
-  max-width: 381px;
-}
-.rc-con-profile {
-  display: flex;
-  gap: 20px;
-}
-.rc-cp-info {
-  @include flexcolumn();
-  gap: 15px;
-}
-.rc-cp-info-name {
-  line-height: 29px;
-  font-family: "Cardo";
-  font-size: 1.5rem;
-}
-.rc-con-title {
-  margin-top: 20px;
-  margin-bottom: 13px;
-}
-.rc-con-desc {
-  font-size: 1.125rem;
-  line-height: 29px;
-}
-// Art res
-.arc-block {
-  max-width: 420px;
-}
-.arc-block-desc {
-  padding: 25px 30px 30px 30px;
-}
-.arc-bd-title {
-  font-size: 1.5rem;
-  line-height: 34px;
-  letter-spacing: 0.24px;
-  max-width: 93%;
-}
-.arc-bd-info,
-.abc-date {
-  font-family: "Inter";
-}
-.arc-bd-info,
-.abc-content {
-  font-size: 1.188rem;
-}
-.arc-bd-info {
-  line-height: 30px;
-  margin-top: 19px;
-  margin-bottom: 13px;
-}
-.arc-bd-check {
-  display: flex;
-  justify-content: space-between;
-}
-.abc-content {
-  font-family: "Cardo";
-  line-height: 23px;
-  letter-spacing: 0.38px;
-  text-transform: capitalize;
-  text-decoration: underline;
-}
-.abc-date {
-  font-size: 1rem;
-  line-height: 26px;
-}
-// Form
-.gupd-info {
-  display: flex;
-  justify-content: center;
-  margin-top: 26px;
-  margin-bottom: 50px;
-}
-.gupd-info-content {
-  font-size: 1.125rem;
-  line-height: 28px;
-  text-align: center;
-  max-width: 550px;
-}
-.gupd-form {
-  display: flex;
-  gap: 16px;
-  .btn-gupd {
-    width: 328px;
-    min-width: 275px;
-    height: 68px;
-    font-family: "Inter";
-    font-size: 1.125rem;
-    line-height: 31px;
-    letter-spacing: 0.18px;
-  }
-}
-.gf-input-wr {
-  display: flex;
-  width: 66%;
-}
-.gupd-form-input {
-  height: 63px;
-  padding-left: 39px;
-  max-width: 611px;
-  min-width: 300px;
-  width: 100%;
-}
+
 // Footer
 .footer-contacts {
   display: flex;
@@ -624,100 +107,28 @@
   row-gap: 20px;
   justify-content: space-between;
 }
-.fc-main {
-  max-width: 277.7px;
-}
-.fc-main-media {
-  display: flex;
-  gap: 10px;
-  margin-top: 15px;
-  flex-wrap: wrap;
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 55px;
-    height: 55px;
-    svg path {
-      fill: $whiteff;
-    }
-  }
-}
-.contact-block {
-  padding-left: 30px;
-}
-.cb-title {
-  font-size: 1.5rem;
-  line-height: 34px;
-  letter-spacing: 0.384px;
-  text-align: center;
-}
-.cb-list {
-  @include flexcolumn();
-  column-gap: 10px;
-  row-gap: 15px;
-  margin-top: 24px;
-}
-.cbl-link {
-  font-size: 1.125rem;
-  line-height: 31px;
-  letter-spacing: 0.18px;
-}
-.cb-info-content {
-  @include flexcolumn();
-  margin-top: 27px;
-  row-gap: 10px;
-}
-.cbic-block {
-  display: flex;
-  column-gap: 28px;
-  row-gap: 10px;
-  flex-wrap: wrap;
-}
-.cbic-block-title {
-  font-size: 1.125rem;
-  font-family: "Cardo";
-  line-height: 27px;
-  letter-spacing: 0.36px;
-}
-.cbic-block-content {
-  font-family: "Inter";
-  font-size: 1.063rem;
-  line-height: 27px;
-  max-width: 69%;
-}
+
 // Buttons Common classes
-.btn-order {
-  height: 66px;
-}
 .btn-link {
   display: flex;
   align-items: center;
-  font-family: "Cardo";
-  font-size: 1.188rem;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
   justify-content: center;
   text-align: center;
+  width: 171px;
+  height: 41px;
 }
 // Images
 .img__resp-block {
   display: flex;
   img {
     height: auto;
+    max-width: 100%;
   }
 }
 .img__resp {
   max-width: 100%;
-}
-// Border img
-.bord-img img {
-  filter: drop-shadow(0px 0px 20px rgba(27, 55, 100, 0.3));
-  z-index: 1;
-}
-.img-border {
-  border: 10px solid $ff42;
-  position: absolute;
-  width: 525px;
-  height: 620px;
-  margin-top: 49px;
-  margin-left: 30px;
 }

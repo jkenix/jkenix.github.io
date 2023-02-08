@@ -26,38 +26,8 @@
 }
 // 1500px
 @media (min-width: 1500px) {
-  .l-about-author,
-  .sponsors-info,
-  .l-book-copy,
-  .wwl-section-content,
-  .l-reviews,
-  .art-res-content,
-  .gupd-form {
-    justify-content: center;
-  }
-  .l-ab-content {
-    justify-items: center;
-  }
-  // Kvision
-  .l-kvision-content {
-    grid-template-columns: repeat(2, minmax(600px, 1fr));
-  }
-  .kvc-block {
-    max-width: 540px;
-  }
   // Main
   .l-main {
-    .kvc-block p {
-      max-width: 75%;
-    }
-    // Get contacts
-    .gupd-form-input {
-      max-width: 100%;
-    }
-  }
-  // Get contacts
-  .gf-input-wr {
-    max-width: 50%;
   }
 }
 // 1400px
@@ -67,44 +37,8 @@
       margin-right: 40px;
     }
   }
-  // Common classes
-  .l-books-preview,
-  .l-author-book,
-  .l-about-author,
-  .l-sponsors,
-  .l-book-copy,
-  .l-ww-learn,
-  .l-kvision,
-  .l-reviews,
-  .l-art-res,
-  .l-get-updates,
-  .l-footer {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
   // Main
   .l-main {
-    .wwl-section-content {
-      column-gap: 0;
-    }
-  }
-  // Main classes
-  .l-books-preview {
-    grid-column-gap: 40px;
-  }
-  // About author
-  .l-about-author {
-    column-gap: 109px;
-  }
-  // WWlearn
-  .l-wwl-sc-points {
-    grid-template-columns: repeat(auto-fit, minmax(274px, 1fr));
-  }
-  .wwl-section-content {
-    justify-content: space-between;
-    .img-border {
-      width: 420px;
-    }
   }
 }
 // 1200px
@@ -117,61 +51,6 @@
     }
   }
   .l-main {
-    // Books preview
-    .info-bp {
-      padding-top: 0;
-      padding-left: 0;
-    }
-    .ibc-title {
-      font-size: 3.4rem;
-    }
-    .info-bp-desc {
-      column-gap: 15px;
-      row-gap: 10px;
-    }
-    // Author book
-    .abc-elem {
-      column-gap: 20px;
-    }
-    .abc-elem-img img {
-      max-width: 230px;
-    }
-    // About author
-    .abauth-img img {
-      max-width: 469px;
-    }
-  }
-  // About author
-  .l-about-author {
-    column-gap: 40px;
-  }
-  .abauth-img {
-    .img-border {
-      display: none;
-    }
-  }
-  .abauth-info-stat {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  // Author block
-  .l-abauth-info-contacts {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
-  }
-  // Wwlearn
-  .l-wwl-sc-points {
-    grid-template-columns: repeat(auto-fit, minmax(281px, 1fr));
-  }
-  .wwl-section-content {
-    .wwl-sc-img img {
-      max-width: 100%;
-      height: auto;
-    }
-    .img-border {
-      display: none;
-    }
   }
   // Footer
   .l-footer {
@@ -181,197 +60,29 @@
       flex-direction: column;
       row-gap: 30px;
     }
-    .contact-block {
-      padding-left: 0;
-    }
-    .cb-title {
-      font-size: 2.5rem;
-      text-align: initial;
-      line-height: 36px;
-      text-align: center;
-    }
-    .cb-list {
-      justify-content: center;
-      flex-wrap: wrap;
-      column-gap: 25px;
-      flex-direction: row;
-    }
-    .cbl-link {
-      font-size: 2rem;
-    }
-    .cbic-block-title {
-      font-size: 1.5rem;
-    }
-    .cbic-block-content {
-      font-size: 1.2rem;
-      max-width: 100%;
-    }
   }
 }
 // 1024px
 @media (max-width: 1024.98px) {
-  .header-scroll {
-    .cart {
-      width: 30px;
-      height: 30px;
-      background-color: #ffffff;
-      &:hover,
-      &:focus-visible {
-        svg path {
-          fill: initial;
-        }
-      }
-    }
-  }
   .l-header-wr {
     .hamburger {
       display: block;
-      margin-right: 20px;
+      margin-right: 40px;
+      position: absolute;
+      right: 0;
     }
     .btn-head {
       width: 222px;
     }
-    .header-menu a {
+  }
+  .header-menu {
+    display: none;
+    > .nav-item {
       margin-right: 0;
     }
   }
-  .header-menu {
-    display: flex;
-    position: absolute;
-    margin: 130px auto 0;
-    justify-content: center;
-    visibility: hidden;
-  }
   // Common classes
-  .l-author-book,
-  .l-about-author,
-  .l-sponsors,
-  .l-book-copy,
-  .l-ww-learn,
-  .l-kvision,
-  .l-reviews,
-  .l-art-res {
-    padding-bottom: 30px;
-  }
-  .l-author-book,
-  .l-sponsors,
-  .l-book-copy,
-  .l-kvision,
-  .l-reviews,
-  .l-art-res,
-  .l-get-updates,
-  .l-footer {
-    padding-top: 30px;
-  }
   .l-main {
-    // Bord img
-    .bord-img {
-      display: none;
-    }
-    // Books preview
-    .ibc-title {
-      font-size: 3.7rem;
-    }
-    // Author book
-    .l-ab-content {
-      @include flexcolumn();
-      row-gap: 30px;
-    }
-    .abc-elem {
-      max-width: 100%;
-      justify-content: center;
-    }
-    .abc-elem-img img {
-      max-width: 260px;
-    }
-    // About author
-    .l-about-author {
-      padding-top: 0;
-    }
-    .abauth-info {
-      max-width: 100%;
-      align-items: center;
-    }
-    .abauth-info-title {
-      align-items: inherit;
-    }
-    // Sponsors
-    .sponsors-info {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .si-content {
-      max-width: 219.6px;
-    }
-    // Book copy
-    .l-book-copy {
-      justify-content: center;
-    }
-    .book-copy-img {
-      display: none;
-    }
-    .book-copy-info {
-      padding-top: 0;
-    }
-    // Wwlearn
-    .l-ww-learn {
-      padding-top: 50px;
-    }
-    .wwl-section-content {
-      justify-content: center;
-    }
-    .l-wwl-sc-points {
-      padding-top: 30px;
-      grid-row-gap: 0;
-    }
-    // Kvision
-    .kvc-block-info {
-      flex-direction: column;
-      align-items: center;
-    }
-    .kvc-block p {
-      max-width: 80%;
-      margin: 21px auto 10px;
-    }
-    // Reviews
-    .l-reviews {
-      align-items: center;
-      flex-direction: column;
-    }
-    .reviews-desc {
-      padding: 0;
-      max-width: 75%;
-    }
-    .rc-content {
-      padding: 25px;
-    }
-    // Get updates
-    .gupd-info-content {
-     max-height: 84px;
-    }
-    .gupd-form .gf-input-wr {
-      width: 78%;
-      min-width: 233px;
-    }
-    .gf-input-wr .gupd-form-input {
-      min-width: 180px;
-    }
-    .btn-gupd {
-      width: 150px;
-      min-width: 150px;
-    }
-  }
-  // Kvision
-  .l-kvision-content {
-    padding-top: 30px;
-    text-align: center;
-  }
-  // Get updates
-  .l-get-updates-content {
-    padding: 50px 50px;
-  }
-  .gupd-form .gf-input-wr {
-    width: 78%;
   }
 }
 // 768px
@@ -391,10 +102,6 @@
     }
   }
   // Main
-  // WWlearn
-  .l-wwl-sc-points {
-    grid-template-columns: repeat(auto-fit, minmax(249.2px, 1fr));
-  }
 }
 // 576px
 @media (max-width: 575.98px) {
@@ -418,129 +125,15 @@
       top: 80px;
     }
   }
+  .header-menu {
+    display: none;
+  }
   .l-main {
-    // Books preview
-    .l-books-preview {
-      grid-template-columns: repeat(auto-fit, minmax(238px, 1fr));
-    }
-    .ibc-title {
-      font-size: 2.8rem;
-      line-height: 50px;
-    }
-    .info-bp-desc {
-      padding-top: 40px;
-    }
-    // Author page
-    .l-author-book {
-      padding-top: 30px;
-      .ab-title {
-        margin-bottom: 30px;
-      }
-    }
-    .abc-elem {
-      flex-direction: column;
-      align-items: center;
-    }
-    .abc-elem-img img {
-      max-width: 100%;
-    }
-    .abc-elem-desc {
-      @include flexcolumn();
-      align-items: center;
-      padding-top: 20px;
-    }
-    // About author
-    .abauth-info p {
-      max-width: 100%;
-    }
-    .abauth-info-stat {
-      flex-direction: column;
-    }
-    .abi-stat-block {
-      border-right: none;
-      border-bottom-width: 2px;
-      border-bottom-style: solid;
-      padding-bottom: 10px;
-      padding-right: 0;
-      margin-right: 0;
-      &:nth-child(3) {
-        border-color: $ff42;
-      }
-    }
-    .abi-cd-content {
-      row-gap: 10px;
-    }
-    .abi-cd-mail,
-    .abi-cd-num {
-      flex-direction: column;
-    }
-    // Kvision
-    .kvc-block {
-      padding: 0;
-    }
-    .btn-kvu {
-      width: 230px;
-    }
-    .kui-contact {
-      padding: 0;
-    }
-    // Reviews
-    .reviews-desc {
-      max-width: 100%;
-    }
-    .reviews-content {
-      flex-direction: column;
-      justify-content: center;
-    }
-    .revc-column-2 {
-      padding-top: 24px;
-    }
-    // Artres
-    .arc-block-desc {
-      padding: 10px 0 0;
-    }
-    // Get updates
-    .gupd-info-content {
-      max-height: 112px;
-     }
   }
-  // Kvision
-  .l-kvision-content {
-    grid-template-columns: repeat(auto-fit, minmax(244px, 1fr));
-  }
-  // Artres
-  .l-art-res-content {
-    grid-template-columns: repeat(auto-fit, minmax(244px, 1fr));
-  }
-  .arc-bd-check {
-    flex-direction: column;
-  }
-  // Get updates
-  .l-get-updates {
-    padding-bottom: 50px;
-  }
-  .l-get-updates-content {
-    padding: 0;
-  }
-  .gupd-form {
-    flex-direction: column;
-    align-items: center;
-    .gf-input-wr {
-      width: 100%;
-    }
-  }
-  
   // Footer
   .l-footer {
     .footer-contacts {
       align-items: baseline;
-    }
-
-    .cb-list {
-      justify-content: flex-start;
-    }
-    .cb-title {
-      text-align: initial;
     }
   }
 }

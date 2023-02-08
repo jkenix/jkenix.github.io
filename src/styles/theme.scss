@@ -3,220 +3,65 @@
 /* Theme classes */
 // Body
 body {
-  background-color: $whitef5;
+  background-color: $we5;
 }
 // Backgrounds
-.l-author-book,
-.l-about-author,
-.l-sponsors {
-  background-color: $whitef5;
-}
+
 // Scroll button
 .up-btn {
-  color: $whitef5;
+  color: $we5;
   background-color: #202020;
 }
 // Buttons common classes
-.btn-yd {
-  color: $sap;
-  background-color: $ff42;
+.btn-b55 {
+  color: $wff;
+  background-color: $b55;
+  &:hover,
+  &:focus-visible {
+    background-color: $ff5;
+  }
 }
 .btn-w {
   color: $sap;
-  background-color: $whitef5;
+  background-color: $we5;
 }
 .btn-sap {
   background-color: $sap;
-  color: $whiteff;
+  color: $wff;
 }
 .btn-ff42 {
   border: 2px solid $ff42;
 }
 /* Color styles for page content */
 // Titles h2
-.section-title,
-.st-con {
-  color: $sap;
-}
-// Info-tc common classes
-.info-tc-title {
-  color: $sap;
-}
-.info-tc-content {
-  color: #969aa0;
-}
+
 // Header
-.logo {
-  font-family: "Cardo-Regular";
-  color: #f6f8fc;
-}
 .l-header,
 .l-header-wr {
-  background-color: $sap;
+  background-color: $we5;
 }
-.sn-contacts a {
-  background-color: $whiteff;
-}
-.header-menu a {
-  color: #f6f8fc;
+.l-header-wr > .feni-tel,
+.header-menu > a {
+  color: $b1;
+  &:hover,
+  &:focus-visible {
+    color: $ff5;
+  }
 }
 .nav-is-active {
-  background-color: $whitef5;
-  a {
-    color: #000;
+  background-color: $b55;
+  & > a {
+    color: $wff;
   }
 }
 // Main
-// Books preview
-.l-books-preview {
-  background-color: $sap;
-}
-.info-bp-st {
-  color: $whiteff;
-}
-.info-bp-content {
-  color: $whiteff;
-}
-.btn-check-demo {
-  color: $whiteff;
-}
-.info-bp-desc {
-  .info-tc-title {
-    color: $whiteff;
-  }
-  .info-tc-content {
-    color: #b4c7e7;
-  }
-}
-// Author book
-.abc-elem-desc p {
-  color: #969aa0;
-}
-.abc-ed-price {
-  color: $ff42;
-}
-// About author
-.abauth-info p,
-.abi-sb-desc {
-  color: #969aa0;
-}
-.abauth-info-contacts {
-  background-color: $sap;
-}
-// Author block
-.abi-cd-name {
-  color: $ff42;
-}
-.abi-cd-mail,
-.abi-cd-num {
-  color: #b4c7e7;
-  a {
-    color: #b4c7e7;
-  }
-}
-// Sponsors
-.si-content p {
-  color: #969aa0;
-}
-// Book copy
-.l-book-copy {
-  background-color: $sap;
-}
-.bci-title {
-  color: $whiteff;
-}
-.book-copy-info p {
-  color: #b4c7e7;
-}
-// Ww learn
-.l-ww-learn {
-  background-color: $whitef5;
-}
-.scp-block {
-  color: $sap;
-  background-color: #f4f8ff;
-}
-.scp-block-num {
-  background-color: $ff42;
-}
-// Kvision
-.l-kvision {
-  background-color: $whitef5;
-}
-.kvc-block p {
-  color: #969aa0;
-}
-.kui-desc,
-.kuic-con {
-  color: #969aa0;
-}
-.kuic-q {
-  color: $sap;
-}
-// Reviews
-.l-reviews {
-  background-color: $whitef5;
-}
-.reviews-desc p {
-  color: #969aa0;
-}
-.rds-content,
-.rev-desc-score-about {
-  color: $sap;
-}
-.rc-content {
-  background-color: $sap;
-}
-.rc-cp-info-name,
-.rc-con-title {
-  color: $whiteff;
-}
-.rc-con-desc {
-  color: #b4c7e7;
-}
-// Art res
-.l-art-res {
-  background-color: $whitef5;
-}
-.arc-bd-info {
-  color: #969aa0;
-}
-.abc-content,
-.abc-date {
-  color: $sap;
-}
-// Form
-.l-get-updates {
-  background-color: $whitef5;
-}
-.l-get-updates-content {
-  background-color: $ff42;
-}
-.l-main .gupd-title::after {
-  background-color: $sap;
-}
-.gupd-info-content {
-  color: $sap;
-}
-@media (max-width: 1024.98px) {
-  .l-get-updates {
-    background-color: $ff42;
-  }
+.l-main {
+  background-color: $we5;
 }
 // Footer
 .l-footer {
-  background-color: $sap;
-}
-.cb-title,
-.cbic-block-title {
-  color: $whiteff;
-}
-.cbl-link {
-  color: #b4c7e7;
-}
-.cbic-block-content {
-  color: #b4c7e7;
+  background-color: $b1;
 }
 .l-author a {
-  color: $whiteff;
+  color: $wff;
 }

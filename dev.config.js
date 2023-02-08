@@ -1,6 +1,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 
 let mode = "development";
 let target = "web";
@@ -12,6 +13,7 @@ const plugins = [
     template: "./index.html",
     chunks: ["main"],
   }),
+  new ReactRefreshWebpackPlugin(),
 ];
 
 module.exports = {
@@ -25,10 +27,6 @@ module.exports = {
     static: [
       {
         directory: path.join(__dirname, "src"),
-        watch: true,
-      },
-      {
-        directory: path.join(__dirname, "src/js"),
         watch: true,
       },
     ],
@@ -58,6 +56,7 @@ module.exports = {
       },
     },
   },
+
   module: {
     rules: [
       { test: /\.(html)$/, exclude: /node_modules/, use: ["html-loader"] },
@@ -88,12 +87,12 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg|webp|ico)$/i,
         exclude: /node_modules/,
-        // type: mode === "production" ? "asset" : "asset/resource",
+        type: mode === "production" ? "asset" : "asset/resource",
       },
       {
         test: /\.(woff2?|eot|ttf|otf)$/i,
         exclude: /node_modules/,
-        // type: "asset/resource",
+        type: "asset/resource",
       },
       {
         test: /\.jsx?$/,
