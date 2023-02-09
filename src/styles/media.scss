@@ -1,23 +1,8 @@
 // Import mixins
 @import "mixins_var.scss";
 /* Media styles */
-// 2099+ px
-@media (min-width: 2099px) {
-  .up-btn {
-    width: 300px;
-    height: 200px;
-    font-size: 100px;
-  }
-}
 // 1921+ px
 @media (min-width: 1921px) {
-  .up-btn {
-    min-width: 80px;
-    min-height: 80px;
-    max-width: 100px;
-    max-height: 100px;
-    font-size: 50px;
-  }
   .l-footer {
     justify-content: center;
     align-items: center;
@@ -25,17 +10,15 @@
   }
 }
 // 1500px
-@media (min-width: 1500px) {
+@media (min-width: 1399.98px) {
   // Main
   .l-main {
   }
 }
 // 1400px
 @media (max-width: 1399.98px) {
-  .l-header-wr {
-    .header-menu a {
-      margin-right: 40px;
-    }
+  .header-menu > .nav-item {
+    margin-right: 40px;
   }
   // Main
   .l-main {
@@ -43,12 +26,12 @@
 }
 // 1200px
 @media (max-width: 1199.98px) {
-  .l-header-wr {
-    margin-left: 30px;
-    margin-right: 20px;
-    .btn-head {
-      width: 120px;
-    }
+  .l-header {
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+  .btn-head {
+    width: 140px;
   }
   .l-main {
   }
@@ -64,22 +47,21 @@
 }
 // 1024px
 @media (max-width: 1024.98px) {
-  .l-header-wr {
-    .hamburger {
-      display: block;
-      margin-right: 40px;
-      position: absolute;
-      right: 0;
-    }
-    .btn-head {
-      width: 222px;
-    }
+  .l-header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .logo {
+    margin-right: 25px;
   }
   .header-menu {
-    display: none;
+    width: 45%;
     > .nav-item {
-      margin-right: 0;
+      margin-right: 17px;
     }
+  }
+  .disc-head {
+    width: 44%;
   }
   // Common classes
   .l-main {
@@ -87,47 +69,25 @@
 }
 // 768px
 @media (max-width: 767.98px) {
-  .l-header-wr {
-    .logo {
-      margin-right: 20px;
+  .header-menu {
+    > .nav-item {
+      margin-right: 0;
+      line-height: inherit;
     }
-    .sn-contacts {
-      margin-right: 20px;
-    }
-    .cart {
-      margin-right: auto;
-    }
-    .btn-head {
-      width: 100px;
-    }
+  }
+  .disc-head, .header-menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    margin-right: 40px;
+    position: absolute;
+    right: 0;
   }
   // Main
 }
 // 576px
 @media (max-width: 575.98px) {
-  .l-header-wr {
-    .hamburger {
-      margin-right: auto;
-    }
-    .logo {
-      margin-right: auto;
-    }
-    .cart {
-      margin-right: 0;
-      width: 40px;
-      height: 40px;
-    }
-    .sn-contacts,
-    .btn-head {
-      display: none;
-    }
-    .nav-is-active {
-      top: 80px;
-    }
-  }
-  .header-menu {
-    display: none;
-  }
   .l-main {
   }
   // Footer

@@ -36,11 +36,10 @@ body {
 // Titles h2
 
 // Header
-.l-header,
-.l-header-wr {
+.l-header {
   background-color: $we5;
 }
-.l-header-wr > .feni-tel,
+.disc-head > .feni-tel,
 .header-menu > a {
   color: $b1;
   &:hover,

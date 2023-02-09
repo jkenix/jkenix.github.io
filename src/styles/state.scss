@@ -47,12 +47,19 @@
 }
 // Buttons (Common classes)
 
-// State header of scroll
-.header-scroll {
-  opacity: 0.9;
-}
 // Header
-.ham-is-active span {
+.head-is-switch {
+  background-color: $b55;
+  .logo {
+    background-color: $wff;
+    height: 67px;
+    padding-top: 2px;
+    pointer-events: none;
+    cursor: default;
+  }
+}
+.ham-is-active > span {
+  background-color: $wff;
   transition: all 0.4s;
   &:nth-of-type(1) {
     animation: span1 0.2s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
@@ -70,15 +77,13 @@
   animation: fadeMe 300ms linear forwards;
   animation-name: menuAnim;
   align-items: center;
-  box-shadow: 0 4px 12px 0 rgb(0 0 0 / 20%);
   @include flexcolumn();
   justify-content: flex-start;
-  text-decoration: underline;
   margin: 0;
-  padding-top: 150px;
+  padding-top: 67px;
   position: absolute;
   gap: 30px;
-  top: 107px;
+  top: 100px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -89,22 +94,7 @@
     animation: navaactive 1.5s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
     text-transform: uppercase;
     font-size: 2.8rem;
-    font-weight: 900;
-  }
-}
-.nav-item-is-active {
-  pointer-events: none;
-  cursor: default;
-}
-.cart {
-  &:hover,
-  &:focus-visible {
-    svg {
-      color: transparent;
-      path {
-        fill: #ffffff;
-      }
-    }
+    font-weight: 500;
   }
 }
 // Main

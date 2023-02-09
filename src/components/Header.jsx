@@ -1,4 +1,3 @@
-import { main } from "@popperjs/core";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -19,31 +18,31 @@ export default function Header(props) {
               title="Feni"
             />
           </Link>
-          <nav
-            className="header-menu"
-            >
-            <Link className="nav-item" to="/" title="Главная">
+          <nav className="header-menu">
+            <Link className="nav-item" to="/portfolio">
               Портфолио
             </Link>
-            <Link className="nav-item" to="/company" title="Компания">
+            <Link className="nav-item" to="/services">
               Услуги и цены
             </Link>
-            <Link className="nav-item" to="/games" title="Игры">
+            <Link className="nav-item" to="/about">
               Мы
             </Link>
-            <Link className="nav-item" to="/contacts" title="Контакты">
+            <Link className="nav-item" to="/contacts">
               Контакты
             </Link>
           </nav>
-          <Link className="feni-tel" title="Call" href="#" >
-          +38 (097) 757 51 51
-          </Link>
-          <Link
-            className="btn-head btn-b55 btn-link"
-            title="Click to order"
-            href="#">
-            Обсудить проект
-          </Link>
+          <div className="disc-head">
+            <Link className="feni-tel" title="Call" href="#">
+              +38 (097) 757 51 51
+            </Link>
+            <Link
+              className="btn-head btn-link btn-b55 "
+              title="Обсудить проект"
+              href="#">
+              Обсудить проект
+            </Link>
+          </div>
           <div
             className="hamburger"
             onClick={() => {

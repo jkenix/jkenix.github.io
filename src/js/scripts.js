@@ -11,12 +11,13 @@ var myLazyLoad = new LazyLoad({ threshold: 0 });
 // };
 // Main func active Nav
 export function NavActive() {
-  window.body = document.querySelector("body");
+  let body = document.querySelector("body");
+  let header = document.querySelector(".l-header");
   let headermenu = document.querySelector(".header-menu");
   let ham = document.querySelector(".hamburger");
-  let logo = document.querySelector(".logo");
+
   ham.classList.toggle("ham-is-active");
   body.classList.toggle("overflow-is-hidden");
+  header.classList.toggle("head-is-switch");
   headermenu.classList.toggle("nav-is-active");
-  logo.classList.toggle("elem-is-hide");
 }
