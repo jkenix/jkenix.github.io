@@ -1,13 +1,14 @@
 import React, { Suspense, lazy } from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 
-// import gifcat from "./img/YAgE.gif";
+const NotFound = lazy(() => import("./pages/NotFound.jsx"));
 const Home = lazy(() => import("./pages/Home.jsx"));
-// const Company = lazy(() => import("./pages/Company.jsx"));
-// const Games = lazy(() => import("./pages/Games.jsx"));
-// const Career = lazy(() => import("./pages/Career.jsx"));
-// const News = lazy(() => import("./pages/News.jsx"));
-// const Contacts = lazy(() => import("./pages/Contacts.jsx"));
+const Portfolio = lazy(() => import("./pages/Portfolio.jsx"));
+const Services = lazy(() => import("./pages/Services.jsx"));
+const About = lazy(() => import("./pages/About.jsx"));
+const Contacts = lazy(() => import("./pages/Contacts.jsx"));
 
 export default function App() {
   return (
@@ -19,14 +20,19 @@ export default function App() {
               <div className="preloader-content"></div>
             </div>
           }>
+          <Header />
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            {/* <Route path="/company" element={<Company />}></Route>
-          <Route path="/games" element={<Games />}></Route>
-          <Route path="/career" element={<Career />}></Route>
-          <Route path="/news" element={<News />}></Route>
-          <Route path="/contacts" element={<Contacts />}></Route> */}
+            <Route path="portfolio/*" element={<Portfolio />}>
+              <Route path="dadad" element={<NotFound />} />
+            </Route>
+            <Route path="/services" element={<Services />}></Route>
+            <Route path="about" element={<About />}></Route>
+            <Route path="/contacts" element={<Contacts />}></Route>
+            <Route path="*" element={<NotFound />} />
+            <Route path="" element={<NotFound />} />
           </Routes>
+          <Footer />
         </Suspense>
       </BrowserRouter>
     </React.StrictMode>

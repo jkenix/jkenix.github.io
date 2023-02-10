@@ -146,12 +146,12 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg|webp|ico)$/i,
         exclude: /node_modules/,
-        // type: mode === "production" ? "asset" : "asset/resource",
+        type: mode === "production" ? "asset" : "asset/resource",
       },
       {
         test: /\.(woff2?|eot|ttf|otf)$/i,
         exclude: /node_modules/,
-        // type: "asset/resource",
+        type: "asset/resource",
       },
       {
         test: /\.jsx?$/,

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[609],{609:(e,t,n)=>{n.r(t),n.d(t,{default:()=>r}),n(294);var s=n(405),i=n(893);function r(){return(0,i.jsx)(i.Fragment,{children:(0,i.jsxs)(s.B6,{children:[(0,i.jsxs)(s.ql,{children:[(0,i.jsx)("title",{children:"Контакты - Feni"}),(0,i.jsx)("meta",{property:"og:title",content:"Контакты - Feni Design"}),(0,i.jsx)("meta",{property:"og:url",content:"https://jkenix.github.io/contacts"})]}),(0,i.jsx)("main",{className:"l-main"})]})})}}}]);
+//# sourceMappingURL=609.js.map

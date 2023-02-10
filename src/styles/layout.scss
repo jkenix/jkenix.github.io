@@ -13,18 +13,20 @@
 }
 // Header
 .l-header {
-  padding-right: 120px; 
+  padding-right: 120px;
   padding-left: 120px;
 }
 .l-header-wr {
   display: flex;
   align-items: center;
-  // justify-content: center;
   padding-top: 30px;
   padding-bottom: 121px;
 }
 // Main
-
+.l-feni-preview {
+  padding-right: 185px;
+  padding-left: 185px;
+}
 // Footer
 .l-footer {
   @include flexcolumn();
