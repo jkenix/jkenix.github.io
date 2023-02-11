@@ -24,11 +24,12 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="portfolio/*" element={<Portfolio />}>
-              <Route path="dadad" element={<NotFound />} />
+              <Route path="dadad" element={<Footer />} />
+              <Route path=":id/*" element={<NotFound />} />
             </Route>
-            <Route path="/services" element={<Services />}></Route>
+            <Route path="services" element={<Services />}></Route>
             <Route path="about" element={<About />}></Route>
-            <Route path="/contacts" element={<Contacts />}></Route>
+            <Route path="contacts" element={<Contacts />}></Route>
             <Route path="*" element={<NotFound />} />
             <Route path="" element={<NotFound />} />
           </Routes>

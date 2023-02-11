@@ -22,6 +22,9 @@ module.exports = {
   plugins,
   devtool: "eval-cheap-source-map",
   entry: { main: "./src/index.js" },
+  output: {
+    publicPath: "/",
+  },
   devServer: {
     historyApiFallback: true,
     static: [
@@ -33,7 +36,7 @@ module.exports = {
     hot: true,
     open: true,
   },
-  
+
   optimization: {
     runtimeChunk: true,
   },

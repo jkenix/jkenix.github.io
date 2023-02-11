@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[154],{154:(e,n,s)=>{s.r(n),s.d(n,{default:()=>i}),s(294),s(405);var a=s(893);function r(){return(0,a.jsx)("div",{className:"l-feni-preview"})}function i(e){return(0,a.jsx)(a.Fragment,{children:(0,a.jsx)("main",{className:"l-main",children:(0,a.jsx)(r,{})})})}}}]);
-//# sourceMappingURL=154.js.map

@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Routes, Route, Outlet } from "react-router-dom";
+import {Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
 import NotFound from "./NotFound.jsx";
 
@@ -25,12 +25,6 @@ export default function Portfolio() {
           Порт <Link to={"dadad"}>DA</Link>
           <Outlet></Outlet>
         </main>
-        <Routes>
-          {/* <Route path="dadad" element={<NotFound />} /> */}
-          {/* <Route path="*" element={<NotFound />} /> */}
-          {/* <Route path=":id/" element={<NotFound />} /> */}
-          {/* <Route path="" element={<NotFound />} /> */}
-        </Routes>
       </HelmetProvider>
     </>
   );

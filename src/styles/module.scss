@@ -2,25 +2,14 @@
 @import "mixins_var.scss";
 // Titles h2
 .section-title {
-  @include flexcolumn();
-  align-items: center;
   row-gap: 24px;
   font-size: 2.625rem;
   line-height: 50px;
-  text-align: center;
-  text-transform: capitalize;
-  &::after {
-    content: "";
-    position: relative;
-    background-color: $ff42;
-    border-radius: 0px;
-    width: 50px;
-    height: 3px;
-  }
 }
 /* Header*/
 .l-header-wr {
-  .nav-item, .feni-tel {
+  .nav-item,
+  .feni-tel {
     font-weight: 600;
     font-size: 0.813rem;
     line-height: 16px;
@@ -97,7 +86,18 @@
   }
 }
 /* Main */
-
+.feni-preview-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  > .section-title {
+    padding-left: 40px;
+  }
+}
+.work-tabs {
+  display: flex;
+  padding-left: 40px;
+}
 // Footer
 .footer-contacts {
   display: flex;
@@ -111,13 +111,37 @@
   display: flex;
   align-items: center;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 0.813rem;
   line-height: 16px;
   letter-spacing: 0.02em;
   justify-content: center;
   text-align: center;
   width: 171px;
   height: 41px;
+}
+.btn-tab {
+  position: relative;
+  margin-right: 60px;
+  font-size: 0.938rem;
+  line-height: 145%;
+}
+.btn-tab-num {
+  font-size: 0.625rem;
+  position: absolute;
+  top: -3px;
+  right: -8px;
+}
+.btn-tab-link {
+  align-items: center;
+  display: flex;
+  font-weight: 700;
+  font-size: 15px;
+  gap: 5px;
+  line-height: 145%;
+  letter-spacing: 0.02em;
+  width: 123px;
+  height: 22px;
+  margin-left: auto;
 }
 // Images
 .img__resp-block {

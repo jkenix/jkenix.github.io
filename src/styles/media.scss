@@ -33,6 +33,17 @@
   .btn-head {
     width: 140px;
   }
+  // Main
+  .l-feni-preview {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .work-tabs {
+    justify-content: space-between;
+    > .btn-tab {
+      margin-right: 20px;
+    }
+  }
   .l-main {
   }
   // Footer
@@ -47,10 +58,18 @@
 }
 // 1024px
 @media (max-width: 1024.98px) {
+  // Common classes
   .l-header {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .l-feni-preview {
+    padding-left: 85px;
+    padding-right: 85px;
+    
+  }
+  
+  // Header
   .logo {
     margin-right: 25px;
   }
@@ -75,7 +94,8 @@
       line-height: inherit;
     }
   }
-  .disc-head, .header-menu {
+  .disc-head,
+  .header-menu {
     display: none;
   }
   .hamburger {

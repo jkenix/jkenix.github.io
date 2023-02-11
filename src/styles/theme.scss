@@ -7,11 +7,6 @@ body {
 }
 // Backgrounds
 
-// Scroll button
-.up-btn {
-  color: $we5;
-  background-color: #202020;
-}
 // Buttons common classes
 .btn-b55 {
   color: $wff;
@@ -31,6 +26,18 @@ body {
 }
 .btn-ff42 {
   border: 2px solid $ff42;
+}
+// Main btn
+.btn-tab {
+  background-color: $we5;
+  color: $b1;
+  &:hover,
+  &:focus-visible {
+    color: $ff5;
+  }
+}
+.btn-tab-link {
+  color: $ff5;
 }
 /* Color styles for page content */
 // Titles h2

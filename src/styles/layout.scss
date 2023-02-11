@@ -13,19 +13,21 @@
 }
 // Header
 .l-header {
+  padding-top: 30px;
   padding-right: 120px;
   padding-left: 120px;
 }
 .l-header-wr {
   display: flex;
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 121px;
 }
 // Main
+.l-main {
+  padding-top: 121px;
+}
 .l-feni-preview {
-  padding-right: 185px;
-  padding-left: 185px;
+  // padding-right: 185px;
+  // padding-left: 185px;
 }
 // Footer
 .l-footer {

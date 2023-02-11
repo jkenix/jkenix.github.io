@@ -46,7 +46,12 @@
   display: none;
 }
 // Buttons (Common classes)
-
+.nav-item,
+.btn-tab {
+  &.active {
+    color: $ff5;
+  }
+}
 // Header
 .head-is-switch {
   background-color: $b55;
@@ -93,12 +98,16 @@
   > .nav-item {
     animation: navaactive 1.5s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
     text-transform: uppercase;
+    text-align: center;
     font-size: 2.8rem;
     font-weight: 500;
   }
 }
-// Main
 
+// Main
+.btn-tab.active {
+  text-decoration: underline;
+}
 // Footer
 
 /* Keyframes */
