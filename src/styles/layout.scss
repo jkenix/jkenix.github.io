@@ -6,8 +6,13 @@
   margin: 0 auto;
 }
 .l-preloader {
-  display: flex;
+  @include flexcolumn();
   align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  justify-content: center;
+  text-align: center;
   height: 100vh;
   overflow: hidden;
 }
@@ -26,8 +31,9 @@
   padding-top: 121px;
 }
 .l-feni-preview {
-  // padding-right: 185px;
-  // padding-left: 185px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
 }
 // Footer
 .l-footer {

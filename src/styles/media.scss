@@ -21,6 +21,11 @@
     margin-right: 40px;
   }
   // Main
+  .l-feni-preview {
+    // margin-left: 185px;
+    // margin-right: 185px;
+    width: 70%;
+  }
   .l-main {
   }
 }
@@ -35,11 +40,13 @@
   }
   // Main
   .l-feni-preview {
-    padding-left: 150px;
-    padding-right: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
   }
-  .work-tabs {
-    justify-content: space-between;
+  .feni-preview-section {
+    align-items: flex-start;
+  }
+  .fp-works-tabs {
     > .btn-tab {
       margin-right: 20px;
     }
@@ -64,11 +71,10 @@
     padding-right: 20px;
   }
   .l-feni-preview {
-    padding-left: 85px;
-    padding-right: 85px;
-    
+    margin-left: 85px;
+    margin-right: 85px;
   }
-  
+
   // Header
   .logo {
     margin-right: 25px;

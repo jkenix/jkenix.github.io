@@ -86,17 +86,19 @@
   }
 }
 /* Main */
-.feni-preview-section {
-  align-items: center;
+.fp-section-title {
+  padding-left: 60px; // 40 
+}
+.fp-works-tabs {
   display: flex;
-  flex-direction: column;
-  > .section-title {
-    padding-left: 40px;
+  padding-top: 25px;
+  white-space: nowrap;
+  > .btn-tab-link {
+    margin-left: auto;
   }
 }
-.work-tabs {
-  display: flex;
-  padding-left: 40px;
+.fp-section-content {
+  padding-top: 40px;
 }
 // Footer
 .footer-contacts {
@@ -141,7 +143,7 @@
   letter-spacing: 0.02em;
   width: 123px;
   height: 22px;
-  margin-left: auto;
+  // margin-left: auto;
 }
 // Images
 .img__resp-block {
