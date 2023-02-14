@@ -18,7 +18,7 @@
 // 1400px
 @media (max-width: 1399.98px) {
   .header-menu > .nav-item {
-    margin-right: 40px;
+    margin-right: 35px;
   }
   // Main
   .l-feni-preview {
@@ -48,7 +48,7 @@
   }
   .fp-works-tabs {
     > .btn-tab {
-      margin-right: 20px;
+      margin-right: 19px;
     }
   }
   .l-main {
@@ -73,20 +73,30 @@
   .l-feni-preview {
     margin-left: 85px;
     margin-right: 85px;
+    width: initial;
   }
-
+  .fp-section-title {
+    padding-left: 40px;
+  }
+  .fp-works-tabs {
+    row-gap: 10px;
+    flex-wrap: wrap;
+  }
   // Header
   .logo {
     margin-right: 25px;
   }
   .header-menu {
-    width: 45%;
+    width: 47%;
     > .nav-item {
       margin-right: 17px;
     }
   }
   .disc-head {
     width: 44%;
+    > .feni-tel {
+      margin-right: 35px;
+    }
   }
   // Common classes
   .l-main {
@@ -111,6 +121,9 @@
     right: 0;
   }
   // Main
+  .fp-works-tabs {
+    display: none;
+  }
 }
 // 576px
 @media (max-width: 575.98px) {

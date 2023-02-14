@@ -1,25 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const da = [
+export const da = [
   {
-    id: "img1",
+    Daid: "jklogo",
     src: "./img/jklogo.webp",
+    desc: "Da",
   },
   {
-    id: "img2",
+    Daid: "img2",
     src: "./img/jklogo_apple.webp",
+    desc: "Dad",
   },
   {
-    id: "img3",
+    Daid: "img3",
     src: "./img/jklogo_apple.webp",
+    desc: "Daggg",
   },
   {
-    id: "img4",
+    Daid: "img4",
     src: "./img/jklogo.webp",
+    desc: "Da5356",
   },
 ];
-export const TabList = [
+
+export const TabList_main = [
   {
     name: "tab1",
     label: "Логотипы",
@@ -27,10 +32,12 @@ export const TabList = [
     content: (
       <>
         {da.map((dad, i) => (
-          <Link to={{ pathname: `/${dad.id}` }} key={i}>
+          // <LazyLoad>
+          <Link to={{ pathname: `/${dad.Daid}` }} key={i}>
             <img key={i} src={dad.src}></img>
+            <p className="">{dad.desc}</p>
           </Link>
-          
+          // </LazyLoad>
         ))}
       </>
     ),
@@ -72,8 +79,8 @@ export const TabList = [
     ),
   },
 ];
-export const TabList_main = [
-  ...TabList,
+export const TabList_portfolio = [
+  ...TabList_main,
   {
     name: "tab5",
     label: "Иллюстрации",

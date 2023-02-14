@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import more from "../../img/more.svg";
-import { TabList  } from "../../js/data.jsx";
+import { TabList_main } from "../../js/data.jsx";
 
 export default function Feni_preview() {
   const [currentTab, setCurrentTab] = useState("tab1");
@@ -12,7 +12,7 @@ export default function Feni_preview() {
         <div className="fp-section-title">
           <h2 className="section-title">Наши работы</h2>
           <div className="fp-works-tabs">
-            {TabList.map((tab, i) => (
+            {TabList_main.map((tab, i) => (
               <button
                 key={i}
                 onClick={() => setCurrentTab(tab.name)}
@@ -29,8 +29,8 @@ export default function Feni_preview() {
             </Link>
           </div>
         </div>
-        {TabList.map((tab, i) => {
-          if ((tab.name === currentTab)) {
+        {TabList_main.map((tab, i) => {
+          if (tab.name === currentTab) {
             return (
               <div className="fp-section-content" key={i}>
                 {tab.content}

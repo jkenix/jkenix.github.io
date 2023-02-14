@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import {Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
-import NotFound from "./NotFound.jsx";
+import { da, TabList_portfolio } from "../js/data.jsx";
 
 export default function Portfolio() {
+  const [currentTab, setCurrentTab] = useState("tab1");
   return (
     <>
       <HelmetProvider>
@@ -20,10 +20,33 @@ export default function Portfolio() {
             content="Посмотрите портфолио Feni Design Studio."
           />
           <meta name="description" content="Feni Design портфолио" />
-        </Helmet>  
+        </Helmet>
         <main className="l-main">
-          Порт <Link to={"dadad"}>DA</Link>
-          <Outlet></Outlet>
+          <h2 className="section-title">Наши работы</h2>
+          <div className="fp-works-tabs">
+            {/* {TabList_portfolio.map((tab, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrentTab(tab.name)}
+                className={
+                  tab.name === currentTab ? "btn-tab active" : "btn-tab"
+                }>
+                {tab.label}
+                <span className="btn-tab-num">{tab.num}</span>
+              </button>
+            ))} */}
+          </div>
+          {/* {TabList_portfolio.map((tab, i) => {
+            if (tab.name === currentTab) {
+              return (
+                <div className="fp-section-content" key={i}>
+                  {tab.content}
+                </div>
+              );
+            } else {
+              return null;
+            }
+          })} */}
         </main>
       </HelmetProvider>
     </>

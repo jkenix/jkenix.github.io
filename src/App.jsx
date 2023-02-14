@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from "react";
 import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
-import { da  } from "./js/data.jsx";
+import { da } from "./js/data.jsx";
 import Product from "./components/main/Product.jsx";
 
 const NotFound = lazy(() => import("./pages/NotFound.jsx"));
@@ -12,7 +12,7 @@ const Services = lazy(() => import("./pages/Services.jsx"));
 const About = lazy(() => import("./pages/About.jsx"));
 const Contacts = lazy(() => import("./pages/Contacts.jsx"));
 
-export default function App(props) {
+export default function App() {
   return (
     <React.StrictMode>
       <BrowserRouter>
@@ -27,13 +27,35 @@ export default function App(props) {
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="portfolio/*" element={<Portfolio />}>
-              <Route path="dadad" element={<Footer />} />
+              {da.map((dad, i) => (
+                <Route
+                  exact
+                  path={`:id/portfolio/${dad.id}/`}
+                  key={i}
+                  element={<Product />}></Route>
+              ))}
+              <Route path="logo" element={<Footer />}>
+                {da.map((dad, i) => (
+                  <Route
+                    exact
+                    path={`:id/${dad.Daid}/`}
+                    key={i}
+                    element={<Product />}></Route>
+                ))}
+              </Route>
               <Route path=":id/*" element={<NotFound />} />
             </Route>
             <Route path="services" element={<Services />}></Route>
             <Route path="about" element={<About />}></Route>
             <Route path="contacts" element={<Contacts />}></Route>
-            {/* <Route path="*" element={() => (<Product test={id.da} />)} /> */}
+            {da.map((dad, i) => (
+              <Route
+                exact
+                path={`/${dad.Daid}/`}
+                key={i}
+                element={<Product />}></Route>
+            ))}
+            {/* <Route path=":id/*" element={<NotFound />} /> */}
             <Route path="*" element={<NotFound />} />
             <Route path="" element={<NotFound />} />
           </Routes>

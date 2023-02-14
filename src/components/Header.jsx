@@ -12,7 +12,9 @@ export default function Header(props) {
           <Link className="logo" to="/">
             <img src={logo} alt="Feni logo" width="65" height="65" />
           </Link>
-          <nav className="header-menu">
+          <nav className="header-menu" onClick={() => {
+              NavActive();
+            }}>
             <NavLink className="nav-item" to="/portfolio" title="Портфолио">
               Портфолио
             </NavLink>

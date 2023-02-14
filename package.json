@@ -94,7 +94,11 @@
     "source": "docs",
     "destination": "docs",
     "include": [
-      "/"
+      "/",
+      "/portfolio",
+      "/services",
+      "/about",
+      "/contacts"
     ]
   }
 }
