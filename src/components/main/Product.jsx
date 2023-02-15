@@ -1,15 +1,11 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
 
 export default function Product(props) {
-  const state = () => {
-    const location = useLocation();
-  };
-
   return (
     <div>
-      <img src={`./img${location.pathname}.webp`} alt="" />
-      {/* <span>{da.desc}</span> */}
+      {/* Добавить alt,  */}
+      <img src={props.src} width="400" height="250" alt="" /> 
+      <span>{props.desc}</span>
     </div>
   );
 }

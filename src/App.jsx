@@ -2,15 +2,15 @@ import React, { Suspense, lazy } from "react";
 import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
-import { da } from "./js/data.jsx";
+import { logos } from "./js/data.jsx";
 import Product from "./components/main/Product.jsx";
 
-const NotFound = lazy(() => import("./pages/NotFound.jsx"));
 const Home = lazy(() => import("./pages/Home.jsx"));
 const Portfolio = lazy(() => import("./pages/Portfolio.jsx"));
 const Services = lazy(() => import("./pages/Services.jsx"));
 const About = lazy(() => import("./pages/About.jsx"));
 const Contacts = lazy(() => import("./pages/Contacts.jsx"));
+const NotFound = lazy(() => import("./pages/NotFound.jsx"));
 
 export default function App() {
   return (
@@ -26,34 +26,28 @@ export default function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route path="portfolio/*" element={<Portfolio />}>
-              {da.map((dad, i) => (
-                <Route
-                  exact
-                  path={`:id/portfolio/${dad.id}/`}
-                  key={i}
-                  element={<Product />}></Route>
-              ))}
-              <Route path="logo" element={<Footer />}>
-                {da.map((dad, i) => (
+            <Route path="/portfolio" element={<Portfolio />}>
+              <Route path=":id/logo" element={<Footer />}>
+                {logos.map((logo, i) => (
                   <Route
                     exact
-                    path={`:id/${dad.Daid}/`}
+                    path={`:id/${logo.logoId}/`}
                     key={i}
-                    element={<Product />}></Route>
+                    element={
+                      <Product desc={logo.desc} src={logo.src} />
+                    }></Route>
                 ))}
               </Route>
-              <Route path=":id/*" element={<NotFound />} />
             </Route>
             <Route path="services" element={<Services />}></Route>
             <Route path="about" element={<About />}></Route>
             <Route path="contacts" element={<Contacts />}></Route>
-            {da.map((dad, i) => (
+            {logos.map((logo, i) => (
               <Route
                 exact
-                path={`/${dad.Daid}/`}
+                path={`/${logo.logoId}/`}
                 key={i}
-                element={<Product />}></Route>
+                element={<Product desc={logo.desc} src={logo.src} />}></Route>
             ))}
             {/* <Route path=":id/*" element={<NotFound />} /> */}
             <Route path="*" element={<NotFound />} />

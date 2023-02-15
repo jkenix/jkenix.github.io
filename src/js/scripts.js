@@ -9,4 +9,13 @@ export function NavActive() {
   body.classList.toggle("overflow-is-hidden");
   header.classList.toggle("head-is-switch");
   headermenu.classList.toggle("nav-is-active");
+
+  headermenu.onclick = function() {
+    if (window.innerWidth < 768) {
+      NavActive();
+    }
+  }
+}
+export function HmenuActive() {
+  
 }

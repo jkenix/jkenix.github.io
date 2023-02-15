@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 
 import logo from "../img/feni-logo.svg";
-import { NavActive } from "../js/scripts";
+import { NavActive, HmenuActive } from "../js/scripts";
 
 export default function Header(props) {
   return (
@@ -13,7 +13,7 @@ export default function Header(props) {
             <img src={logo} alt="Feni logo" width="65" height="65" />
           </Link>
           <nav className="header-menu" onClick={() => {
-              NavActive();
+              HmenuActive();
             }}>
             <NavLink className="nav-item" to="/portfolio" title="Портфолио">
               Портфолио
