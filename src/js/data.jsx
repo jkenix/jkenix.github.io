@@ -7,32 +7,37 @@ var logo_list_main_size = 5;
 // Литеральные данные (изображения, описание и т.д.)
 export const logos = [
   {
-    logoId: "img1",
+    id: "img1",
     src: "./img/1.webp",
+    title: "1",
     desc: "1",
     class: "fp-work-main",
   },
   {
-    logoId: "img2",
+    id: "img2",
     src: "./img/1.webp",
+    title: "2",
     desc: "2",
     class: "fp-work-focus",
   },
   {
-    logoId: "img3",
+    id: "img3",
     src: "./img/1.webp",
+    title: "3",
     desc: "3",
     class: "fp-work-mini",
   },
   {
-    logoId: "img4",
+    id: "img4",
     src: "./img/1.webp",
+    title: "4",
     desc: "4",
     class: "fp-work-mini",
   },
   {
-    logoId: "img5",
+    id: "img5",
     src: "./img/1.webp",
+    title: "5",
     desc: "5",
     class: "fp-work-focus",
   },
@@ -47,7 +52,7 @@ export const websites = [
 ];
 export const style = [
   {
-    id: "jklogo",
+    id: "jk",
     src: "./img/jklogo.webp",
     desc: "Da",
     class: "fp-work-main",
@@ -55,7 +60,7 @@ export const style = [
 ];
 export const illustrations = [
   {
-    id: "jklogo",
+    id: "j",
     src: "./img/jklogo.webp",
     desc: "Da",
     class: "fp-work-main",
@@ -67,15 +72,14 @@ export const TabList_main = [
   {
     name: "tab1",
     label: "Все работы",
-    num: 10,
+    path: "/all_works",
     content: (
       <>
-        {logos.slice(0, logo_list_main_size).map((logo, i) => (
+        {all_works.slice(0).map((aw, i) => (
           <React.Fragment key={i}>
             {/* <LazyLoad> */}
-            <div className={logo.class + " work-img img__resp-block"}>
-              <img src={logo.src}></img>
-              <p className="fp-work-desc">{logo.desc}</p>
+            <div className={aw.class + " work-img img__resp-block"}>
+              <img src={aw.src}></img>
             </div>
             {/* </LazyLoad> */}
           </React.Fragment>
@@ -86,14 +90,16 @@ export const TabList_main = [
   {
     name: "tab2",
     label: "Логотипы",
+    path: "/logos",
     num: 10,
     content: (
       <>
         {logos.slice(0, logo_list_main_size).map((logo, i) => (
           <React.Fragment key={i}>
             {/* <LazyLoad> */}
-            <Link key={i}
-              to={{ pathname: `/${logo.logoId}` }}
+            <Link
+              key={i}
+              to={{ pathname: `/${logo.id}` }}
               className={logo.class + " work-img img__resp-block"}>
               <img src={logo.src}></img>
               <p className="fp-work-desc">{logo.desc}</p>
@@ -107,6 +113,7 @@ export const TabList_main = [
   {
     name: "tab3",
     label: "Веб-сайты",
+    path: "/websites",
     num: 3,
     content: (
       <>
@@ -119,6 +126,7 @@ export const TabList_main = [
   {
     name: "tab4",
     label: "Фирменный стиль",
+    path: "/style",
     num: 8,
     content: (
       <>
@@ -131,6 +139,7 @@ export const TabList_main = [
   {
     name: "tab5",
     label: "Иллюстрации",
+    path: "/illustrations",
     num: 4,
     content: (
       <>
@@ -146,8 +155,9 @@ export const TabList_portfolio = [
   ...TabList_main,
   {
     name: "tab6",
-    label: "Иллюстрации",
-    num: 5,
+    label: "Презентации",
+    path: "/presentations",
+    num: 10,
     content: (
       <>
         <h2>Tab content 6</h2>
@@ -158,23 +168,12 @@ export const TabList_portfolio = [
   },
   {
     name: "tab7",
-    label: "Презентации",
-    num: 10,
-    content: (
-      <>
-        <h2>Tab content 7</h2>
-        <p>Here is your tab content. You can separate this as a component.</p>
-        <p>Lorem ipsum dolor sit amet ...</p>
-      </>
-    ),
-  },
-  {
-    name: "tab8",
     label: "Креативы",
+    path: "/creatives",
     num: 20,
     content: (
       <>
-        <h2>Tab content 8</h2>
+        <h2>Tab content 7</h2>
         <p>Here is your tab content. You can separate this as a component.</p>
         <p>Lorem ipsum dolor sit amet ...</p>
       </>

@@ -2,10 +2,10 @@ import React, { Suspense, lazy } from "react";
 import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
-import { logos } from "./js/data.jsx";
-import Product from "./components/main/Product.jsx";
+import { all_works } from "./js/data.jsx";
 
 const Home = lazy(() => import("./pages/Home.jsx"));
+const Product = lazy(() => import("./components/main/Product.jsx"));
 const Portfolio = lazy(() => import("./pages/Portfolio.jsx"));
 const Services = lazy(() => import("./pages/Services.jsx"));
 const About = lazy(() => import("./pages/About.jsx"));
@@ -26,30 +26,26 @@ export default function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/portfolio" element={<Portfolio />}>
-              <Route path=":id/logo" element={<Footer />}>
-                {logos.map((logo, i) => (
-                  <Route
-                    exact
-                    path={`:id/${logo.logoId}/`}
-                    key={i}
-                    element={
-                      <Product desc={logo.desc} src={logo.src} />
-                    }></Route>
-                ))}
-              </Route>
+            <Route path="portfolio/" element={<Portfolio />}>
+              <Route path=":id" element={<NotFound />} />
+              {/* {all_works.map((aw, i) => (
+                <Route
+                  exact path={`:id/*${aw.id}/`}
+                  key={i}
+                  element={<Product desc={aw.desc} src={aw.src} />}></Route>
+              ))} */}
+              <Route path="*" element={<NotFound />} />
             </Route>
-            <Route path="services" element={<Services />}></Route>
-            <Route path="about" element={<About />}></Route>
-            <Route path="contacts" element={<Contacts />}></Route>
-            {logos.map((logo, i) => (
+            <Route path="/services" element={<Services />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/contacts" element={<Contacts />}></Route>
+            {all_works.map((aw, i) => (
               <Route
                 exact
-                path={`/${logo.logoId}/`}
+                path={`/${aw.id}/`}
                 key={i}
-                element={<Product desc={logo.desc} src={logo.src} />}></Route>
+                element={<Product title={aw.title} desc={aw.desc} src={aw.src} />}></Route>
             ))}
-            {/* <Route path=":id/*" element={<NotFound />} /> */}
             <Route path="*" element={<NotFound />} />
             <Route path="" element={<NotFound />} />
           </Routes>
