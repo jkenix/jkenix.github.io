@@ -16,6 +16,3 @@ export function NavActive() {
     }
   }
 }
-export function HmenuActive() {
-  
-}

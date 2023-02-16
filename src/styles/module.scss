@@ -12,7 +12,6 @@
   height: 65px;
   margin-right: 85px;
 }
-
 .header-menu {
   display: flex;
   width: 50%;
@@ -27,7 +26,6 @@
     }
   }
 }
-
 .disc-head {
   display: flex;
   align-items: center;
@@ -40,7 +38,6 @@
     min-width: 120px;
   }
 }
-
 .hamburger {
   cursor: pointer;
   display: none;
@@ -72,7 +69,6 @@
     right: 0px;
   }
 }
-
 // Common classes
 .nav-item,
 .feni-tel {
@@ -86,7 +82,6 @@
 .fp-section-title {
   padding-left: 60px; // 40
 }
-
 .fp-works-tabs {
   padding-top: 25px;
   white-space: nowrap;
@@ -94,7 +89,6 @@
     margin-left: auto;
   }
 }
-
 .fp-section-content {
   padding-top: 40px;
   > .fp-work-main {
@@ -113,7 +107,6 @@
     height: 497px;
   }
 }
-
 .fp-work-desc {
   display: none;
 }
@@ -135,7 +128,6 @@
   row-gap: 20px;
   justify-content: space-between;
 }
-
 // Buttons Common classes
 .btn-link {
   display: flex;
