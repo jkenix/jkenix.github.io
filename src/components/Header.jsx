@@ -13,7 +13,7 @@ export default function Header(props) {
             <img src={logo} alt="Feni logo" width="65" height="65" />
           </Link>
           <nav className="header-menu">
-            <NavLink className="nav-item" to="/portfolio" title="Портфолио">
+            <NavLink className="nav-item" to="/portfolio/all_works" title="Портфолио">
               Портфолио
             </NavLink>
             <NavLink className="nav-item" to="/services" title="Услуги и цены">

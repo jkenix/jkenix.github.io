@@ -5,14 +5,14 @@ export default function Product(props) {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Feni - Портфолио</title>
-        <meta property="og:title" content={props.title} />
+        <title>Feni - {`${props.tablabel}`}</title>
+        <meta property="og:title" content={`${props.title}`} />
         <meta property="og:url" content="URL/" />
+        <meta name="og:description" content={`${props.desc}`} />
         <meta
-          name="og:description"
-          content={props.desc}
+          name="description"
+          content={`Feni Design портфолио-${props.title}`}
         />
-        <meta name="description" content="Feni Design портфолио" />
       </Helmet>
       <main className="l-main">
         <div>

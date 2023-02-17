@@ -6,7 +6,7 @@ export default function Home(props) {
   return (
     <>
         <main className="l-main">
-          <Feni_preview />
+          <Feni_preview/>
         </main>
     </>
   );

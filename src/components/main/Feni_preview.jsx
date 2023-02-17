@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import more from "../../img/more.svg";
 import { TabList_main } from "../../js/data.jsx";
+import more from "../../img/more.svg";
 
-export default function Feni_preview() {
+export default function Feni_preview(props) {
   const [currentTab, setCurrentTab] = useState("tab2");
   return (
     <>
@@ -23,8 +23,8 @@ export default function Feni_preview() {
                 <span className="btn-tab-num">{tab.num}</span>
               </button>
             ))}
-            <Link className="btn-tab-link" to={"/portfolio"}>
-              Все работы{" "}
+            <Link className="btn-tab-link" to={"/portfolio/all_works"}>
+              Все работы
               <img src={more} width={"25"} height={"8"} alt="more arrow" />
             </Link>
           </div>
