@@ -8,7 +8,7 @@
 .l-preloader {
   @include flexcolumn();
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 900;
   justify-content: center;
@@ -30,10 +30,40 @@
 .l-main {
   padding-top: 121px;
 }
-.l-feni-preview {
+.l-fp-section-title {
   margin-left: auto;
   margin-right: auto;
-  width: 55%;
+  width: 48%;
+}
+.l-fp-section-content {
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  // width: 55%;
+  width: 1110px;
+  > .fp-work-main {
+    flex-basis: 100%;
+    height: 560px;
+  }
+  .fp-work-focus {
+    flex-basis: 60%;
+  }
+  .fp-work-mini {
+    flex-basis: 40%;
+  }
+  // Common classes
+  .fp-work-focus,
+  .fp-work-mini {
+    height: 497px;
+  }
+}
+.l-port-section-title {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  > .section-title {
+    text-align: center;
+  }
 }
 // Footer
 .l-footer {

@@ -103,6 +103,10 @@
     font-weight: 500;
   }
 }
+.nav-item.active {
+  pointer-events: none;
+  cursor: default;
+}
 // Main
 .btn-tab.active {
   text-decoration: underline;

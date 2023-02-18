@@ -9,7 +9,7 @@ export default function Feni_preview(props) {
   return (
     <>
       <section className="l-feni-preview">
-        <div className="fp-section-title">
+        <div className="l-fp-section-title">
           <h2 className="section-title">Наши работы</h2>
           <div className="fp-works-tabs works-tabs">
             {TabList_main.slice(1).map((tab, i) => (
@@ -32,7 +32,7 @@ export default function Feni_preview(props) {
         {TabList_main.map((tab, i) => {
           if (tab.name === currentTab) {
             return (
-              <div className="fp-section-content works-content" key={i}>
+              <div className="l-fp-section-content works-content" key={i}>
                 {tab.content}
               </div>
             );

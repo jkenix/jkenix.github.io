@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from "react";
-import { Routes, Route, BrowserRouter, Link, Navigate } from "react-router-dom";
+import { Routes, Route, BrowserRouter} from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import { all_works } from "./js/data.jsx";
@@ -63,7 +63,7 @@ export default function App() {
             {all_works.map((aw, i) => (
               <Route
                 exact
-                path={`/${aw.id}/`}
+                path={`/${aw.title}/`}
                 key={i}
                 element={
                   <Product
