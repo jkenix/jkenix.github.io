@@ -2,10 +2,13 @@
 @import "mixins_var.scss";
 // Titles h2
 .section-title {
-  row-gap: 24px;
-  font-size: 2.625rem;
-  line-height: 50px;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 145%;
+  letter-spacing: 0.02em;
 }
+// Section start module
+
 /* Header*/
 .logo {
   width: 65px;
@@ -78,20 +81,22 @@
   letter-spacing: 0.02em;
 }
 /* Main */
+// Feni-hi
+
 // Feni-preview
-.fp-section-title {
-  padding-left: 60px; // 40
-}
 .fp-works-tabs {
-  padding-top: 25px;
-  white-space: nowrap;
+  padding-top: 40px;
+  padding-left: 40px;
   > .btn-tab-link {
     margin-left: auto;
   }
 }
-// Common classes
+// Common classes (Home/Portfolio
 .works-tabs {
   display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  row-gap: 15px;
 }
 .works-content {
   display: flex;
@@ -99,9 +104,7 @@
 }
 // Porfolio
 .port-works-tabs {
-  flex-wrap: wrap;
   padding-top: 80px;
-  row-gap: 10px;
   justify-content: center;
   > .btn-tab {
     margin-right: 50px;
@@ -114,6 +117,23 @@
 .work-img-port {
   height: 321px;
   width: 33.33333333333%;
+}
+// Project
+.project-img,
+.project-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1110px;
+}
+.project-img {
+  background-size: cover;
+  height: 484px;
+  position: relative;
+  object-fit: cover;
+  background-position: top;
+}
+.project-content {
+  padding-left: 245px;
 }
 // Footer
 .footer-contacts {
@@ -151,7 +171,7 @@
   align-items: center;
   display: flex;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 0.938rem;
   gap: 5px;
   line-height: 145%;
   letter-spacing: 0.02em;
@@ -162,9 +182,12 @@
 // Images
 .img__resp-block {
   display: flex;
+  transition: all ease 0.5s;
   img {
-    height: auto;
+    height: 100%;
+    width: 100%;
     max-width: 100%;
+    object-fit: cover;
   }
 }
 .img__resp {

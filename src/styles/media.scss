@@ -15,14 +15,6 @@
     margin-right: 35px;
   }
   // Main
-  .l-fp-section-title {
-    width: 56%;
-  }
-  .l-fp-section-content {
-    // margin-left: 185px;
-    // margin-right: 185px;
-    width: 70%;
-  }
   .l-main {
   }
 }
@@ -36,24 +28,37 @@
     width: 140px;
   }
   // Main
-  .l-fp-section-title,
-  .l-fp-section-content {
-    width: initial;
-  }
+  // Home
   .l-fp-section-title {
-    margin-left: 190px;
-    margin-right: 150px;
-  }
-  .l-fp-section-content {
-    margin-left: 150px;
-    margin-right: 150px;
+    width: initial;
+    margin-left: 40px;
+    margin-right: 40px;
   }
   .fp-works-tabs {
     > .btn-tab {
       margin-right: 19px;
     }
   }
+  .l-fp-section-content,
+  .project-img {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  // Portfolio
+  .port-works-tabs {
+    padding-left: 40px;
+    > .btn-tab {
+      margin-right: 35px;
+    }
+  }
   .l-main {
+  }
+  // Project
+  .project-img {
+    max-width: 100%;
+  }
+  .project-content {
+    padding-left: 150px;
   }
   // Footer
   .l-footer {
@@ -72,18 +77,6 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-  .l-fp-section-title,
-  .l-fp-section-content {
-    margin-left: 85px;
-    margin-right: 85px;
-  }
-  .fp-section-title {
-    padding-left: 40px;
-  }
-  .fp-works-tabs {
-    row-gap: 10px;
-    flex-wrap: wrap;
-  }
   // Header
   .logo {
     margin-right: 25px;
@@ -100,12 +93,56 @@
       margin-right: 35px;
     }
   }
-  // Common classes
-  .l-main {
+  // Main
+  // Common class
+  .works-tabs > .btn-tab {
+    margin-right: 19px;
+  }
+  // Home
+  .l-fp-section-title {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .l-fp-section-content {
+    column-gap: 0;
+    > .fp-work-main,
+    > .fp-work-focus,
+    > .fp-work-mini {
+      flex-basis: 100%;
+      height: 462px;
+    }
+    > .fp-rtl {
+      padding-right: 0;
+    }
+    > .fp-ltl {
+      padding-left: 0;
+    }
+  }
+  // Portfolio
+  .port-works-tabs {
+    flex-wrap: wrap;
+    justify-content: start;
+    padding-right: 20px;
+  }
+  .work-img-port {
+    width: 50%;
+  }
+  // Project
+  .project-img {
+    // Продумать индивидуально для других данных, кроме веб-сайтов
+    background-position: left;
+  }
+  .project-content {
+    padding-left: 100px;
   }
 }
 // 768px
 @media (max-width: 767.98px) {
+  // Section title
+  .section-title {
+    font-size: 2rem;
+  }
+  // Header
   .header-menu {
     > .nav-item {
       margin-right: 0;
@@ -123,15 +160,48 @@
     right: 0;
   }
   // Main
-  .fp-works-tabs {
-    > .btn-tab-link {
+  // Home
+  // Feni-hi
+  .l-feni-hi {
+    padding-left: 35px;
+    padding-right: 30px;
+    .fh-title {
+      font-size: 2.5rem;
+    }
+    > .fh-content {
+      max-width: 100%;
+    }
+    > .fs-img {
       display: none;
     }
+  }
+  // Feni preview
+  .fp-works-tabs {
+    flex-wrap: wrap;
+    padding-left: 0;
+    > .btn-tab-link {
+      margin-left: 6px;
+    }
+  }
+  // Portfolio
+  .port-works-tabs {
+    padding-left: 20px;
+  }
+  .port-section-content {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .work-img-port {
+    width: 100%;
   }
 }
 // 576px
 @media (max-width: 575.98px) {
   .l-main {
+  }
+  // Project
+  .project-content {
+    padding-left: 60px;
   }
   // Footer
   .l-footer {

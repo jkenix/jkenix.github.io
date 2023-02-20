@@ -38,28 +38,6 @@ button {
 img {
   user-select: none;
 }
-img.lazy {
-  opacity: 0;
-}
-img:not(.initial) {
-  transition: opacity 1s;
-}
-img.initial,
-img.loaded {
-  opacity: 1;
-}
-
-img.error {
-  opacity: 1;
-  color: red;
-  &::before {
-    content: "Loading Error - "; 
-    font-size: 1.25rem;
-  }
-}
-img:not([src]) {
-  visibility: hidden;
-}
 
 ul {
   list-style: none;

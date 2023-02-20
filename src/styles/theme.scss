@@ -16,6 +16,16 @@ body {
     background-color: $ff5;
   }
 }
+.btn-bw55 {
+  color: $b55;
+  background-color: $we5;
+  border: 1px solid $b55;
+  &:hover,
+  &:focus-visible {
+    background-color: $b55;
+    color: $we5;
+  }
+}
 .btn-w {
   color: $sap;
   background-color: $we5;

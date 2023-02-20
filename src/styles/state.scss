@@ -221,3 +221,12 @@
     transform: translate(0, 18px) scale(1);
   }
 }
+// Lazyload
+.LazyLoad {
+  width: 100%;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  &.is-visible {
+    opacity: 1;
+  }
+}

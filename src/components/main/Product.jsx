@@ -14,11 +14,13 @@ export default function Product(props) {
           content={`Feni Design портфолио-${props.title}`}
         />
       </Helmet>
-      <main className="l-main">
-        <div>
-          {/* Добавить alt,  */}
-          <img src={props.src} width="400" height="250" alt="" />
-          <span>{props.desc}</span>
+      <main className="l-main-project">
+        <div
+          className="project-img"
+          style={{ backgroundImage: `url(${props.src})` }}></div>
+        <div className="project-content">
+          <h2 className="section-title">{props.title}</h2>
+          <p>{props.desc}</p>
         </div>
       </main>
     </HelmetProvider>

@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from "react";
-import { Routes, Route, BrowserRouter} from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import { all_works } from "./js/data.jsx";
@@ -25,37 +25,69 @@ export default function App() {
           }>
           <Header />
           <Routes>
-            <Route path="/" element={<Home />}></Route>
+            <Route path="/" element={<Home activee="da" />}></Route>
             <Route
               path="portfolio/all_works"
               element={
-                <Portfolio tablabel="Все работы" tabid="tab1" tabpath={"/all_works"}/>
+                <Portfolio
+                  tablabel="Все работы"
+                  tabid="tab1"
+                  tabpath={"/all_works"}
+                />
               }></Route>
             <Route
               path="portfolio/logos"
-              element={<Portfolio tablabel="Логотипы" tabid="tab2" tabpath={"/logos"}/>}></Route>
+              element={
+                <Portfolio
+                  tablabel="Логотипы"
+                  tabid="tab2"
+                  tabpath={"/logos"}
+                />
+              }></Route>
             <Route
               path="portfolio/websites"
-              element={<Portfolio tablabel="Веб-сайты" tabid="tab3" tabpath={"/websites"}/>}></Route>
+              element={
+                <Portfolio
+                  tablabel="Веб-сайты"
+                  tabid="tab3"
+                  tabpath={"/websites"}
+                />
+              }></Route>
             <Route
               path="portfolio/style"
               element={
-                <Portfolio tablabel="Фирменный стиль" tabid="tab4" tabpath={"/style"}/>
+                <Portfolio
+                  tablabel="Фирменный стиль"
+                  tabid="tab4"
+                  tabpath={"/style"}
+                />
               }></Route>
             <Route
               path="portfolio/illustrations"
               element={
-                <Portfolio tablabel="Иллюстрации" tabid="tab5" tabpath={"/illustrations"}/>
+                <Portfolio
+                  tablabel="Иллюстрации"
+                  tabid="tab5"
+                  tabpath={"/illustrations"}
+                />
               }></Route>
             <Route
               path="portfolio/presentations"
               element={
-                <Portfolio tablabel="Презентации" tabid="tab6" tabpath={"/presentations"}/>
+                <Portfolio
+                  tablabel="Презентации"
+                  tabid="tab6"
+                  tabpath={"/presentations"}
+                />
               }></Route>
             <Route
               path="portfolio/creatives"
               element={
-                <Portfolio tablabel="Креативы" tabid="tab7" tabpath={"/creatives"}/>
+                <Portfolio
+                  tablabel="Креативы"
+                  tabid="tab7"
+                  tabpath={"/creatives"}
+                />
               }></Route>
             <Route path="/services" element={<Services />}></Route>
             <Route path="/about" element={<About />}></Route>
