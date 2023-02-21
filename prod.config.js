@@ -78,7 +78,7 @@ module.exports = {
               mozjpeg: {
                 // That setting might be close to lossless, but it’s not guaranteed
                 // https://github.com/GoogleChromeLabs/squoosh/issues/85
-                quality: 100,
+                quality: 80,
               },
               webp: {
                 quality: 80,
@@ -112,7 +112,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "docs"),
     // assetModuleFilename: "assets/[hash][ext][query]",
-    assetModuleFilename: "./[hash][ext][query]",
+    assetModuleFilename: "./img/[name][ext]",
     clean: true,
     publicPath: "/",
   },
@@ -146,7 +146,7 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg|webp|ico)$/i,
         exclude: /node_modules/,
-        type: mode === "production" ? "asset" : "asset/resource",
+        type: "asset/resource",
       },
       {
         test: /\.(woff2?|eot|ttf|otf)$/i,

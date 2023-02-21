@@ -24,6 +24,15 @@ module.exports = {
   entry: { main: "./src/index.js" },
   output: {
     publicPath: "/",
+    assetModuleFilename: "./img/[name][ext]",
+    // assetModuleFilename: (pathData) => {
+    //   const filepath = path
+    //     .dirname(pathData.filename)
+    //     .split("/")
+    //     .slice(1)
+    //     .join("/");
+    //   return `${filepath}/[name][ext]`;
+    // },
   },
   devServer: {
     historyApiFallback: true,
@@ -71,7 +80,7 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg|webp|ico)$/i,
         exclude: /node_modules/,
-        type: mode === "production" ? "asset" : "asset/resource",
+        type: "asset/resource",
       },
       {
         test: /\.(woff2?|eot|ttf|otf)$/i,
