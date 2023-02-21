@@ -20,7 +20,7 @@ export default function Product(props) {
           style={{ backgroundImage: `url("${props.src}")` }}></div>
         <div className="project-content">
           <h2 className="section-title">{props.title}</h2>
-          <p>{props.desc}</p>
+          <p className="project-desc">{props.desc}</p>
         </div>
       </main>
     </HelmetProvider>

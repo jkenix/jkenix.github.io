@@ -22,7 +22,7 @@ export default function Home(props) {
           /> */}
         </Helmet>
         <main className="l-main">
-          <section className="l-feni-start l-feni-hi">
+          <section className="l-feni-start l-feni-hi l-feni-section">
             <div className="fs-content fh-content">
               <h1 className="fh-title">Feni Design</h1>
               <h2 className="section-title">
@@ -31,12 +31,29 @@ export default function Home(props) {
               <button className="btn-link btn-bw55">Обсудить проект</button>
             </div>
             <div className="fs-img img__resp-block">
-              <img src={feni_start} alt="Feni Studio preview image" />
+              <img
+                src={feni_start}
+                alt="Feni Studio preview image"
+                loading="eager"
+              />
             </div>
           </section>
-          <section className=""></section>
+          <section className="l-feni-info l-feni-section">
+            <span className="small-section">О нас</span>
+            <h2 className="feni-info-title section-title">
+              Мы онлайн дизайн студия, которая, помогает нашим клиентам по всему
+              миру получать осмысленный дизайн, создавая, значимые связи между
+              людьми и брендами!
+            </h2>
+            <p className="feni-info-desc section-desc">
+              Выполняем проекты для ведущих веб-студий по всему миру в качестве
+              субподрядчиков. Ключевой состав команды работает с момента
+              основания компании. Мы гарантируем индивидуальный подход к каждому
+              новому веб-сайту, логотипу, и/или фирменному стилю.
+            </p>
+          </section>
           <section className="l-feni-preview">
-            <div className="l-fp-section-title">
+            <div className="l-fp-section-title l-feni-section">
               <h2 className="fp-title section-title">Наши работы</h2>
               <div className="fp-works-tabs works-tabs">
                 {TabList_main.map((tab, i) => (
@@ -59,9 +76,9 @@ export default function Home(props) {
             {TabList_main.map((tab, i) => {
               if (tab.name === currentTab) {
                 return (
-                  <div className="l-fp-section-content works-content" key={i}>
+                  <div className="l-fp-section-content works-content l-feni-section" key={i}>
                     {tab.content}
-                    <button className="btn-tab-link"></button>
+                    <Link className="btn-link btn-b55 l-feni-section">Все работы</Link>
                   </div>
                 );
               } else {

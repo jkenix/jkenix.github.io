@@ -1,11 +1,11 @@
 import React, { Suspense, lazy } from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import { all_works } from "./js/data.jsx";
 
 const Home = lazy(() => import("./pages/Home.jsx"));
-const Product = lazy(() => import("./components/main/Product.jsx"));
+const Product = lazy(() => import("./pages/Product.jsx"));
 const Portfolio = lazy(() => import("./pages/Portfolio.jsx"));
 const Services = lazy(() => import("./pages/Services.jsx"));
 const About = lazy(() => import("./pages/About.jsx"));
@@ -25,7 +25,8 @@ export default function App() {
           }>
           <Header />
           <Routes>
-            <Route path="/" element={<Home activee="da" />}></Route>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/portfolio" element={<Navigate to="/portfolio/all_works" />}></Route>
             <Route
               path="portfolio/all_works"
               element={

@@ -1,9 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import LazyLoad from "react-lazy-load";
-import da from "../img/Dart-Service-Manager.webp";
+
+import da from "../img/Toystream.webp";
+import toystream from "../img/Toystream.webp";
+import sequoia from "../img/Sequoia.webp";
+import marico from "../img/Marico.webp";
 // Переменные
 var list_main_size = 5;
+var list_port_visible_size = 6;
 // Литеральные данные (изображения, описание и т.д.)
 export const logos = [
   {
@@ -44,53 +49,53 @@ export const logos = [
   {
     logo_id: "6",
     main_src: `${da}`,
-    title: "3",
+    title: "6",
     desc: "Da",
   },
   {
     logo_id: "7",
     main_src: `${da}`,
-    title: "3",
+    title: "7",
     desc: "Da",
   },
   {
     logo_id: "8",
     main_src: `${da}`,
-    title: "3",
+    title: "8",
     desc: "Da",
   },
   {
     logo_id: "9",
     main_src: `${da}`,
-    title: "3",
+    title: "9",
     desc: "Da",
   },
   {
     logo_id: "10",
     main_src: `${da}`,
-    title: "3",
+    title: "10",
     desc: "Da",
   },
 ];
 export const websites = [
   {
     web_id: "1",
-    main_src: "./img/Dart-Service-Manager.webp",
-    title: "3",
-    desc: "Da",
+    main_src: `${toystream}`,
+    title: "Toystream",
+    desc: "Сайт игровой студии Toystream, сделанный так, чтобы привлекать самых желанных клиентов по всему миру.",
     main_class: "fp-work-main",
   },
   {
     web_id: "2",
-    main_src: "./img/Dart-Service-Manager.webp",
-    title: "3",
-    desc: "Da",
+    main_src: `${sequoia}`,
+    title: "Sequoia",
+    desc: "Сайт веб-агенства Sequoia. Комплексное решение для бизнеса по цене одного сотрудника!",
     main_class: "fp-work-focus fp-rtl",
   },
   {
     web_id: "3",
-    main_src: "./img/Dart-Service-Manager.webp",
-    title: "3",
+    main_src: `${marico}`,
+    title: "Marico",
     desc: "Da",
     main_class: "fp-work-mini",
   },
@@ -99,14 +104,14 @@ export const style = [
   {
     style_id: "1",
     main_src: "./img/jklogo.webp",
-    title: "3",
+    title: "1",
     desc: "Da",
     main_class: "fp-work-main",
   },
   {
     style_id: "2",
     main_src: "./img/Dart-Service-Manager.webp",
-    title: "3",
+    title: "2",
     desc: "Da",
     main_class: "fp-work-focus fp-rtl",
   },
@@ -120,33 +125,33 @@ export const style = [
   {
     style_id: "4",
     main_src: "./img/Dart-Service-Manager.webp",
-    title: "3",
+    title: "4",
     desc: "Da",
     main_class: "fp-work-mini",
   },
   {
     style_id: "5",
     main_src: "./img/Dart-Service-Manager.webp",
-    title: "3",
+    title: "5",
     desc: "Da",
     main_class: "fp-work-focus fp-ltl",
   },
   {
     style_id: "6",
     main_src: "./img/Dart-Service-Manager.webp",
-    title: "3",
+    title: "6",
     desc: "Da",
   },
   {
     style_id: "7",
     main_src: "./img/Dart-Service-Manager.webp",
-    title: "3",
+    title: "7",
     desc: "Da",
   },
   {
     style_id: "8",
     main_src: "./img/Dart-Service-Manager.webp",
-    title: "3",
+    title: "8",
     desc: "Da",
   },
 ];
@@ -194,7 +199,14 @@ export const creatives = [
     desc: "Da",
   },
 ];
-export const all_works = [...logos, ...websites, ...style, ...illustrations];
+export const all_works = [
+  ...websites,
+  ...logos,
+  ...style,
+  ...illustrations,
+  ...presentations,
+  ...creatives,
+];
 // Вкладки на "Главной"
 export const TabList_main = [
   {
@@ -212,7 +224,7 @@ export const TabList_main = [
               target="_blank"
               rel="noopener noreferrer"
               className={logo.main_class + " img__resp-block"}>
-              <LazyLoad offset={200}>
+              <LazyLoad offset={100}>
                 <img src={logo.main_src} alt={logo.title}></img>
               </LazyLoad>
             </Link>
@@ -236,7 +248,7 @@ export const TabList_main = [
               target="_blank"
               rel="noopener noreferrer"
               className={web.main_class + " img__resp-block"}>
-              <LazyLoad offset={200}>
+              <LazyLoad offset={100}>
                 <img src={web.main_src} alt={web.title}></img>
               </LazyLoad>
             </Link>
@@ -261,7 +273,7 @@ export const TabList_main = [
               target="_blank"
               rel="noopener noreferrer"
               className={styles.main_class + " img__resp-block"}>
-              <LazyLoad offset={200}>
+              <LazyLoad offset={100}>
                 <img src={styles.main_src} alt={styles.title}></img>
               </LazyLoad>
             </Link>
@@ -287,7 +299,7 @@ export const TabList_main = [
               target="_blank"
               rel="noopener noreferrer"
               className={ill.main_class + " img__resp-block"}>
-              <LazyLoad offset={200}>
+              <LazyLoad offset={100}>
                 <img src={ill.main_src} alt={ill.title}></img>
               </LazyLoad>
             </Link>
@@ -306,18 +318,30 @@ export const TabList_portfolio = [
     path: "/all_works",
     content: (
       <>
-        {all_works.map((aw, i) => (
+        {all_works.slice(0, list_port_visible_size).map((aw, i) => (
           <React.Fragment key={i}>
-            {/* <LazyLoad> */}
             <Link
               key={i}
               to={{ pathname: `/${aw.title}` }}
               className={"work-img-port img__resp-block"}>
-              <LazyLoad height={321}>
+              <img
+                src={"../" + `${aw.main_src}`}
+                alt={aw.title}
+                height="321"
+                loading="eager"></img>
+            </Link>
+          </React.Fragment>
+        ))}
+        {all_works.slice(6).map((aw, i) => (
+          <React.Fragment key={i}>
+            <Link
+              key={i}
+              to={{ pathname: `/${aw.title}` }}
+              className={"work-img-port img__resp-block"}>
+              <LazyLoad height={321} offset={100}>
                 <img src={"../" + `${aw.main_src}`} alt={aw.title}></img>
               </LazyLoad>
             </Link>
-            {/* </LazyLoad> */}
           </React.Fragment>
         ))}
       </>
@@ -330,18 +354,29 @@ export const TabList_portfolio = [
     num: 10,
     content: (
       <>
-        {logos.slice(0).map((logo, i) => (
+        {logos.slice(0, list_port_visible_size).map((logo, i) => (
           <React.Fragment key={i}>
-            {/* <LazyLoad> */}
             <Link
               key={i}
               to={{ pathname: `/${logo.title}` }}
               className={"work-img-port img__resp-block"}>
-              <LazyLoad height={321}>
+              <img
+                src={"../" + `${logo.main_src}`}
+                height={321}
+                alt={logo.title} loading="eager"></img>
+            </Link>
+          </React.Fragment>
+        ))}
+        {logos.slice(6).map((logo, i) => (
+          <React.Fragment key={i}>
+            <Link
+              key={i}
+              to={{ pathname: `/${logo.title}` }}
+              className={"work-img-port img__resp-block"}>
+              <LazyLoad height={321} offset={100}>
                 <img src={"../" + `${logo.main_src}`} alt={logo.title}></img>
               </LazyLoad>
             </Link>
-            {/* </LazyLoad> */}
           </React.Fragment>
         ))}
       </>
@@ -356,16 +391,15 @@ export const TabList_portfolio = [
       <>
         {websites.slice(0).map((web, i) => (
           <React.Fragment key={i}>
-            {/* <LazyLoad> */}
             <Link
               key={i}
               to={{ pathname: `/${web.title}` }}
               className={"work-img-port img__resp-block"}>
-              <LazyLoad height={321}>
-                <img src={"../" + `${web.main_src}`} alt={web.title}></img>
-              </LazyLoad>
+              <img
+                src={"../" + `${web.main_src}`}
+                height={321}
+                alt={web.title} loading="eager"></img>
             </Link>
-            {/* </LazyLoad> */}
           </React.Fragment>
         ))}
       </>
@@ -378,15 +412,32 @@ export const TabList_portfolio = [
     num: 8,
     content: (
       <>
-        {style.map((styles, i) => (
+        {style.slice(0, list_port_visible_size).map((styles, i) => (
           <React.Fragment key={i}>
             {/* <LazyLoad> */}
             <Link
               key={i}
               to={{ pathname: `/${styles.title}` }}
               className={"work-img-port img__resp-block"}>
-              <LazyLoad height={321}>
-                <img src={"../" + `${styles.main_src}`} alt={styles.title}></img>
+              <img
+                src={"../" + `${styles.main_src}`}
+                height={321}
+                alt={styles.title} loading="eager"></img>
+            </Link>
+            {/* </LazyLoad> */}
+          </React.Fragment>
+        ))}
+        {style.slice(6).map((styles, i) => (
+          <React.Fragment key={i}>
+            {/* <LazyLoad> */}
+            <Link
+              key={i}
+              to={{ pathname: `/${styles.title}` }}
+              className={"work-img-port img__resp-block"}>
+              <LazyLoad height={321} offset={100}>
+                <img
+                  src={"../" + `${styles.main_src}`}
+                  alt={styles.title}></img>
               </LazyLoad>
             </Link>
             {/* </LazyLoad> */}
@@ -409,9 +460,10 @@ export const TabList_portfolio = [
               key={i}
               to={{ pathname: `/${ill.title}` }}
               className={"work-img-port img__resp-block"}>
-              <LazyLoad height={321}>
-                <img src={"../" + `${ill.main_src}`} alt={ill.title}></img>
-              </LazyLoad>
+              <img
+                src={"../" + `${ill.main_src}`}
+                height={321}
+                alt={ill.title} loading="eager"></img>
             </Link>
             {/* </LazyLoad> */}
           </React.Fragment>
@@ -423,7 +475,7 @@ export const TabList_portfolio = [
     name: "tab6",
     label: "Презентации",
     path: "/presentations",
-    num: 10,
+    num: 5,
     content: (
       <>
         {presentations.map((present, i) => (
@@ -433,11 +485,10 @@ export const TabList_portfolio = [
               key={i}
               to={{ pathname: `/${present.title}` }}
               className={"work-img-port img__resp-block"}>
-              <LazyLoad height={321}>
-                <img
-                  src={"../" + `${present.main_src}`}
-                  alt={present.title}></img>
-              </LazyLoad>
+              <img
+                src={"../" + `${present.main_src}`}
+                height={321}
+                alt={present.title} loading="eager"></img>
             </Link>
             {/* </LazyLoad> */}
           </React.Fragment>
@@ -449,7 +500,7 @@ export const TabList_portfolio = [
     name: "tab7",
     label: "Креативы",
     path: "/creatives",
-    num: 20,
+    num: 2,
     content: (
       <>
         {creatives.map((creative, i) => (
@@ -459,11 +510,10 @@ export const TabList_portfolio = [
               key={i}
               to={{ pathname: `/${creative.title}` }}
               className={"work-img-port img__resp-block"}>
-              <LazyLoad height={321}>
-                <img
-                  src={"../" + `${creative.main_src}`}
-                  alt={creative.title}></img>
-              </LazyLoad>
+              <img
+                src={"../" + `${creative.main_src}`}
+                height={321}
+                alt={creative.title} loading="eager"></img>
             </Link>
             {/* </LazyLoad> */}
           </React.Fragment>

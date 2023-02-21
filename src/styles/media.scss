@@ -39,8 +39,7 @@
       margin-right: 19px;
     }
   }
-  .l-fp-section-content,
-  .project-img {
+  .l-fp-section-content {
     margin-right: 10px;
     margin-left: 10px;
   }
@@ -54,9 +53,6 @@
   .l-main {
   }
   // Project
-  .project-img {
-    max-width: 100%;
-  }
   .project-content {
     padding-left: 150px;
   }
@@ -175,6 +171,13 @@
       display: none;
     }
   }
+  // Feni info
+  .l-feni-info {
+    padding-left: 35px;
+    > .feni-info-title {
+      font-size: 1.5rem;
+    }
+  }
   // Feni preview
   .fp-works-tabs {
     flex-wrap: wrap;
@@ -198,6 +201,10 @@
 // 576px
 @media (max-width: 575.98px) {
   .l-main {
+  }
+  // Feni info
+  .l-feni-info > .feni-info-title {
+    font-size: 1.2rem;
   }
   // Project
   .project-content {

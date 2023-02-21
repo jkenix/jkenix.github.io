@@ -28,13 +28,13 @@
 }
 // Main
 // Common classes
-.l-feni-start {
-  display: flex;
+.l-feni-section {
   margin-left: auto;
   margin-right: auto;
+}
+.l-feni-start {
+  display: flex;
   justify-content: space-between;
-  > .fs-content {
-  }
 }
 .da {
   text-align: center;
@@ -44,10 +44,9 @@
   padding-top: 121px;
 }
 // Home
+// Feni-start
 .l-feni-hi {
-  max-width: 1110px;
-  padding-left: 100px;
-  padding-bottom: 118px;
+  margin-bottom: 118px;
   .fh-title {
     font-weight: 800;
     font-size: 2.813rem;
@@ -62,12 +61,32 @@
     max-width: 307px;
   }
 }
+// Common classes (fs, fi)
+.l-feni-hi,
+.l-feni-info {
+  max-width: 1110px;
+  padding-left: 100px;
+}
+// Feni-info
+.l-feni-info {
+  margin-bottom: 100px;
+  > .feni-info-title,
+  > .feni-info-desc {
+    max-width: 95%;
+  }
+  > .feni-info-title {
+    padding-top: 15px;
+    padding-bottom: 40px;
+    font-weight: 700;
+  }
+}
 // Feni-preview
+.l-feni-preview {
+  margin-bottom: 100px;
+}
 // Common classes
 .l-fp-section-title,
 .l-fp-section-content {
-  margin-left: auto;
-  margin-right: auto;
   max-width: 1110px;
 }
 // Feni-preview all
@@ -98,6 +117,9 @@
   > .fp-work-mini {
     height: 497px;
   }
+  > .btn-link {
+    margin-top: 80px;
+  }
 }
 // Portfolio
 .l-port-section-title {
@@ -108,9 +130,9 @@
     text-align: center;
   }
 }
-// Project 
+// Project
 .l-main-project {
-  padding-top: 20px
+  padding-top: 20px;
 }
 // Footer
 .l-footer {

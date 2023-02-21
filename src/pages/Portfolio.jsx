@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import {NavLink, useLocation} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { TabList_portfolio } from "../js/data.jsx";
 
 export default function Portfolio(props) {
