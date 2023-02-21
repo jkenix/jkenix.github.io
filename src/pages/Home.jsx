@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import { TabList_main } from "../js/data.jsx";
 import more from "../img/more.svg";
-import feni_start from "../img/feni-start.svg";
+import feni_start from "../img/feni-start.webp";
 
 export default function Home(props) {
   const [currentTab, setCurrentTab] = useState("tab1");

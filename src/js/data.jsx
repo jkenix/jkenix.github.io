@@ -1,72 +1,73 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import LazyLoad from "react-lazy-load";
+import da from "../img/Dart-Service-Manager.webp";
 // Переменные
-var list_main_size = 5;        
+var list_main_size = 5;
 // Литеральные данные (изображения, описание и т.д.)
 export const logos = [
   {
     logo_id: "1",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: `${da}`,
     title: "1",
     desc: "1",
     main_class: "fp-work-main",
   },
   {
     logo_id: "2",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: `${da}`,
     title: "2",
     desc: "2",
     main_class: "fp-work-focus fp-rtl",
   },
   {
     logo_id: "3",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: `${da}`,
     title: "3",
     desc: "3",
     main_class: "fp-work-mini",
   },
   {
     logo_id: "4",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: `${da}`,
     title: "4",
     desc: "4",
     main_class: "fp-work-mini",
   },
   {
     logo_id: "5",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: `${da}`,
     title: "5",
     desc: "5",
     main_class: "fp-work-focus fp-ltl",
   },
   {
     logo_id: "6",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: `${da}`,
     title: "3",
     desc: "Da",
   },
   {
     logo_id: "7",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: `${da}`,
     title: "3",
     desc: "Da",
   },
   {
     logo_id: "8",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: `${da}`,
     title: "3",
     desc: "Da",
   },
   {
     logo_id: "9",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: `${da}`,
     title: "3",
     desc: "Da",
   },
   {
     logo_id: "10",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: `${da}`,
     title: "3",
     desc: "Da",
   },
@@ -74,21 +75,21 @@ export const logos = [
 export const websites = [
   {
     web_id: "1",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: "./img/Dart-Service-Manager.webp",
     title: "3",
     desc: "Da",
     main_class: "fp-work-main",
   },
   {
     web_id: "2",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: "./img/Dart-Service-Manager.webp",
     title: "3",
     desc: "Da",
     main_class: "fp-work-focus fp-rtl",
   },
   {
     web_id: "3",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: "./img/Dart-Service-Manager.webp",
     title: "3",
     desc: "Da",
     main_class: "fp-work-mini",
@@ -104,76 +105,76 @@ export const style = [
   },
   {
     style_id: "2",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: "./img/Dart-Service-Manager.webp",
     title: "3",
     desc: "Da",
     main_class: "fp-work-focus fp-rtl",
   },
   {
     style_id: "3",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: "./img/Dart-Service-Manager.webp",
     title: "3",
     desc: "Da",
     main_class: "fp-work-mini",
   },
   {
     style_id: "4",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: "./img/Dart-Service-Manager.webp",
     title: "3",
     desc: "Da",
     main_class: "fp-work-mini",
   },
   {
     style_id: "5",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: "./img/Dart-Service-Manager.webp",
     title: "3",
     desc: "Da",
     main_class: "fp-work-focus fp-ltl",
   },
   {
     style_id: "6",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: "./img/Dart-Service-Manager.webp",
     title: "3",
     desc: "Da",
   },
   {
     style_id: "7",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: "./img/Dart-Service-Manager.webp",
     title: "3",
     desc: "Da",
   },
   {
     style_id: "8",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: "./img/Dart-Service-Manager.webp",
     title: "3",
     desc: "Da",
   },
 ];
 export const illustrations = [
-  { 
+  {
     ill_id: "1",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: "./img/Dart-Service-Manager.webp",
     title: "3",
     desc: "Da",
     main_class: "fp-work-main",
   },
   {
     ill_id: "2",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: "./img/Dart-Service-Manager.webp",
     title: "3",
     desc: "Da",
     main_class: "fp-work-focus fp-rtl",
   },
   {
     ill_id: "3",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: "./img/Dart-Service-Manager.webp",
     title: "3",
     desc: "Da",
     main_class: "fp-work-mini",
   },
   {
     ill_id: "4",
-    main_src: "./img/Dart-Service-Manager.jpg",
+    main_src: "./img/Dart-Service-Manager.webp",
     title: "3",
     desc: "Da",
     main_class: "fp-work-main",
@@ -313,7 +314,7 @@ export const TabList_portfolio = [
               to={{ pathname: `/${aw.title}` }}
               className={"work-img-port img__resp-block"}>
               <LazyLoad height={321}>
-                <img src={"." + `${aw.main_src}`} alt={aw.title}></img>
+                <img src={"../" + `${aw.main_src}`} alt={aw.title}></img>
               </LazyLoad>
             </Link>
             {/* </LazyLoad> */}
@@ -337,7 +338,7 @@ export const TabList_portfolio = [
               to={{ pathname: `/${logo.title}` }}
               className={"work-img-port img__resp-block"}>
               <LazyLoad height={321}>
-                <img src={"." + `${logo.main_src}`} alt={logo.title}></img>
+                <img src={"../" + `${logo.main_src}`} alt={logo.title}></img>
               </LazyLoad>
             </Link>
             {/* </LazyLoad> */}
@@ -361,7 +362,7 @@ export const TabList_portfolio = [
               to={{ pathname: `/${web.title}` }}
               className={"work-img-port img__resp-block"}>
               <LazyLoad height={321}>
-                <img src={"." + `${web.main_src}`} alt={web.title}></img>
+                <img src={"../" + `${web.main_src}`} alt={web.title}></img>
               </LazyLoad>
             </Link>
             {/* </LazyLoad> */}
@@ -385,7 +386,7 @@ export const TabList_portfolio = [
               to={{ pathname: `/${styles.title}` }}
               className={"work-img-port img__resp-block"}>
               <LazyLoad height={321}>
-                <img src={"." + `${styles.main_src}`} alt={styles.title}></img>
+                <img src={"../" + `${styles.main_src}`} alt={styles.title}></img>
               </LazyLoad>
             </Link>
             {/* </LazyLoad> */}
@@ -409,7 +410,7 @@ export const TabList_portfolio = [
               to={{ pathname: `/${ill.title}` }}
               className={"work-img-port img__resp-block"}>
               <LazyLoad height={321}>
-                <img src={"." + `${ill.main_src}`} alt={ill.title}></img>
+                <img src={"../" + `${ill.main_src}`} alt={ill.title}></img>
               </LazyLoad>
             </Link>
             {/* </LazyLoad> */}
@@ -434,7 +435,7 @@ export const TabList_portfolio = [
               className={"work-img-port img__resp-block"}>
               <LazyLoad height={321}>
                 <img
-                  src={"." + `${present.main_src}`}
+                  src={"../" + `${present.main_src}`}
                   alt={present.title}></img>
               </LazyLoad>
             </Link>
@@ -460,7 +461,7 @@ export const TabList_portfolio = [
               className={"work-img-port img__resp-block"}>
               <LazyLoad height={321}>
                 <img
-                  src={"." + `${creative.main_src}`}
+                  src={"../" + `${creative.main_src}`}
                   alt={creative.title}></img>
               </LazyLoad>
             </Link>

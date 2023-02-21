@@ -7,7 +7,7 @@ export default function Product(props) {
       <Helmet>
         <title>Feni - {`${props.tablabel}`}</title>
         <meta property="og:title" content={`${props.title}`} />
-        <meta property="og:url" content="URL/" />
+        {/* <meta property="og:url" content="URL/" /> */}
         <meta name="og:description" content={`${props.desc}`} />
         <meta
           name="description"
@@ -17,7 +17,7 @@ export default function Product(props) {
       <main className="l-main-project">
         <div
           className="project-img"
-          style={{ backgroundImage: `url(${props.src})` }}></div>
+          style={{ backgroundImage: `url("${props.src}")` }}></div>
         <div className="project-content">
           <h2 className="section-title">{props.title}</h2>
           <p>{props.desc}</p>
