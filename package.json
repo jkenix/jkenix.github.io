@@ -91,7 +91,7 @@
     "mk": "mkdir docs"
   },
   "reactSnap": {
-    "inlineCss": true,
+    "inlineCss": false,
     "source": "docs",
     "destination": "docs",
     "include": [
