@@ -17,8 +17,6 @@
   line-height: 185%;
   letter-spacing: 0.02em;
 }
-// Section start module
-
 /* Header*/
 .logo {
   width: 65px;
@@ -99,6 +97,9 @@
     margin-left: auto;
   }
 }
+.fp-ltl > .work-desc {
+  left: 50px;
+}
 // Common classes (Home/Portfolio)
 .works-tabs {
   display: flex;
@@ -110,6 +111,49 @@
   display: flex;
   flex-wrap: wrap;
 }
+// Briefs
+.fb-info {
+  align-items: center;
+  display: flex;
+  transition: all ease 0.5s;
+  > .fb-count,
+  .fb-title {
+    padding-right: 30px;
+  }
+  .fb-count {
+    line-height: 18px;
+  }
+  > .fb-title {
+    font-weight: 700;
+    font-size: 2.813rem;
+    line-height: 145%;
+    letter-spacing: 0.02em;
+  }
+  > .fb-desc {
+    position: relative;
+    padding-left: 100px;
+    &::before {
+      content: "";
+      background-color: $b1;
+      position: absolute;
+      left: 0;
+      height: 1px;
+      width: 70px;
+      top: 50%;
+      display: inline-block;
+    }
+  }
+}
+// Partners
+.feni-partners-desc > .fp-desc {
+  width: 64%;
+  padding-top: 25px;
+}
+.feni-partners-img .LazyLoad {
+  width: auto;
+}
+// Discuss Project
+
 // Porfolio
 .port-works-tabs {
   padding-top: 80px;
@@ -126,19 +170,34 @@
   height: 321px;
   width: 33.33333333333%;
 }
-// Project
-.project-img,
-.project-content {
-  margin-left: auto;
-  margin-right: auto;
-}
-.project-img {
-  background-size: cover;
-  background-position: top;
-  height: 484px;
+// Common module (port, project)
+.work-img {
   position: relative;
-  object-fit: cover;
+}
+.work-desc {
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  max-width: 200px;
+  padding: 15px;
+  > .work-desc-title {
+    font-size: 1.375rem;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  > .work-desc-info {
+  }
+}
+// Project
+.project-img {
+  // height: 484px;
   max-width: 100%;
+  justify-content: center;
+  img {
+    // width: 100%;
+    width: auto;
+    object-fit: cover;
+  }
 }
 .project-content {
   padding-top: 40px;
@@ -149,6 +208,9 @@
   max-width: 65%;
   margin: 0 auto 0 0;
 }
+// Services
+// About
+// Contacts
 // Footer
 .footer-contacts {
   display: flex;
@@ -204,6 +266,10 @@
     object-fit: cover;
   }
 }
-.img__resp {
-  max-width: 100%;
+.img__rubber {
+  display: flex;
+  img {
+    height: auto;
+    max-width: 100%;
+  }
 }

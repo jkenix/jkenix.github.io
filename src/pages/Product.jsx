@@ -15,10 +15,10 @@ export default function Product(props) {
         />
       </Helmet>
       <main className="l-main-project">
-        <div
-          className="project-img"
-          style={{ backgroundImage: `url("${props.src}")` }}></div>
-        <div className="project-content">
+        <div className="project-img img__rubber l-feni-section">
+          <img src={props.src} alt={props.title} loading="eager"/>
+        </div>
+        <div className="project-content l-feni-section">
           <h2 className="section-title">{props.title}</h2>
           <p className="project-desc">{props.desc}</p>
         </div>

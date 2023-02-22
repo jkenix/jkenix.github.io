@@ -10,7 +10,7 @@ export default function Header(props) {
       <header className="l-header">
         <div className="l-header-wr">
           <Link className="logo" to="/">
-            <img src={logo} alt="Feni logo" width="65" height="65" />
+            <img src={logo} alt="Feni logo" width="65" height="65" loading="eager"/>
           </Link>
           <nav className="header-menu">
             <NavLink className="nav-item" to="/portfolio/all_works" title="Портфолио">

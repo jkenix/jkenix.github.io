@@ -1,78 +1,82 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import LazyLoad from "react-lazy-load";
-
-import da from "../img/Toystream.webp";
-import toystream from "../img/Toystream.webp";
-import sequoia from "../img/Sequoia.webp";
-import marico from "../img/Marico.webp";
+// Импорт изображений
+import * as img from "./images.js";
 // Переменные
 var list_main_size = 5;
 var list_port_visible_size = 6;
+// Категории
+const logo_category = ["Логотип"];
+const web_category = ["Веб-сайт"];
+const styles_category = ["Стиль"];
+const ill_category = ["Иллюстрация"];
+const present_category = ["Презентация"];
+const creative_category = ["Креатив"];
 // Литеральные данные (изображения, описание и т.д.)
 export const logos = [
   {
     logo_id: "1",
-    main_src: `${da}`,
+    main_src: `${img.Toystream}`,
     title: "1",
     desc: "1",
     main_class: "fp-work-main",
   },
   {
     logo_id: "2",
-    main_src: `${da}`,
+    main_src: `${img.Toystream}`,
     title: "2",
     desc: "2",
     main_class: "fp-work-focus fp-rtl",
   },
   {
     logo_id: "3",
-    main_src: `${da}`,
+    main_src: `${img.Toystream}`,
     title: "3",
     desc: "3",
     main_class: "fp-work-mini",
   },
   {
     logo_id: "4",
-    main_src: `${da}`,
+    main_src: `${img.Toystream}`,
     title: "4",
     desc: "4",
     main_class: "fp-work-mini",
   },
   {
     logo_id: "5",
-    main_src: `${da}`,
+    main_src: `${img.Toystream}`,
     title: "5",
     desc: "5",
     main_class: "fp-work-focus fp-ltl",
   },
   {
     logo_id: "6",
-    main_src: `${da}`,
+    main_src: `${img.Toystream}`,
     title: "6",
     desc: "Da",
   },
   {
     logo_id: "7",
-    main_src: `${da}`,
+    main_src: `${img.Toystream}`,
     title: "7",
     desc: "Da",
   },
   {
     logo_id: "8",
-    main_src: `${da}`,
+    main_src: `${img.Toystream}`,
     title: "8",
     desc: "Da",
   },
   {
     logo_id: "9",
-    main_src: `${da}`,
+    main_src: `${img.Toystream}`,
     title: "9",
     desc: "Da",
   },
   {
     logo_id: "10",
-    main_src: `${da}`,
+    main_src: `${img.Toystream}`,
     title: "10",
     desc: "Da",
   },
@@ -80,21 +84,21 @@ export const logos = [
 export const websites = [
   {
     web_id: "1",
-    main_src: `${toystream}`,
+    main_src: `${img.Toystream}`,
     title: "Toystream",
     desc: "Сайт игровой студии Toystream, сделанный так, чтобы привлекать самых желанных клиентов по всему миру.",
     main_class: "fp-work-main",
   },
   {
     web_id: "2",
-    main_src: `${sequoia}`,
+    main_src: `${img.Sequoia}`,
     title: "Sequoia",
     desc: "Сайт веб-агенства Sequoia. Комплексное решение для бизнеса по цене одного сотрудника!",
     main_class: "fp-work-focus fp-rtl",
   },
   {
     web_id: "3",
-    main_src: `${marico}`,
+    main_src: `${img.Marico}`,
     title: "Marico",
     desc: "Da",
     main_class: "fp-work-mini",
@@ -223,7 +227,15 @@ export const TabList_main = [
               to={{ pathname: `/${logo.title}` }}
               target="_blank"
               rel="noopener noreferrer"
-              className={logo.main_class + " img__resp-block"}>
+              className={logo.main_class + " work-img img__resp-block"}>
+              <>
+                <div className="work-desc">
+                  <h3 className="work-desc-title">{logo.title}</h3>
+                  <p className="work-desc-info feni-section-desc">
+                    {logo_category}
+                  </p>
+                </div>
+              </>
               <LazyLoad offset={100}>
                 <img src={logo.main_src} alt={logo.title}></img>
               </LazyLoad>
@@ -247,7 +259,15 @@ export const TabList_main = [
               to={{ pathname: `/${web.title}` }}
               target="_blank"
               rel="noopener noreferrer"
-              className={web.main_class + " img__resp-block"}>
+              className={web.main_class + " work-img img__resp-block"}>
+              <>
+                <div className="work-desc">
+                  <h3 className="work-desc-title">{web.title}</h3>
+                  <p className="work-desc-info feni-section-desc">
+                    {web_category}
+                  </p>
+                </div>
+              </>
               <LazyLoad offset={100}>
                 <img src={web.main_src} alt={web.title}></img>
               </LazyLoad>
@@ -272,7 +292,15 @@ export const TabList_main = [
               to={{ pathname: `/${styles.title}` }}
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.main_class + " img__resp-block"}>
+              className={styles.main_class + " work-img img__resp-block"}>
+              <>
+                <div className="work-desc">
+                  <h3 className="work-desc-title">{styles.title}</h3>
+                  <p className="work-desc-info feni-section-desc">
+                    {styles_category}
+                  </p>
+                </div>
+              </>
               <LazyLoad offset={100}>
                 <img src={styles.main_src} alt={styles.title}></img>
               </LazyLoad>
@@ -298,7 +326,15 @@ export const TabList_main = [
               to={{ pathname: `/${ill.title}` }}
               target="_blank"
               rel="noopener noreferrer"
-              className={ill.main_class + " img__resp-block"}>
+              className={ill.main_class + " work-img img__resp-block"}>
+              <>
+                <div className="work-desc">
+                  <h3 className="work-desc-title">{ill.title}</h3>
+                  <p className="work-desc-info feni-section-desc">
+                    {ill_category}
+                  </p>
+                </div>
+              </>
               <LazyLoad offset={100}>
                 <img src={ill.main_src} alt={ill.title}></img>
               </LazyLoad>
@@ -323,7 +359,12 @@ export const TabList_portfolio = [
             <Link
               key={i}
               to={{ pathname: `/${aw.title}` }}
-              className={"work-img-port img__resp-block"}>
+              className={"work-img-port work-img img__resp-block"}>
+              <>
+                <div className="work-desc">
+                  <h3 className="work-desc-title">{aw.title}</h3>
+                </div>
+              </>
               <img
                 src={"../" + `${aw.main_src}`}
                 alt={aw.title}
@@ -337,7 +378,12 @@ export const TabList_portfolio = [
             <Link
               key={i}
               to={{ pathname: `/${aw.title}` }}
-              className={"work-img-port img__resp-block"}>
+              className={"work-img-port work-img img__resp-block"}>
+              <>
+                <div className="work-desc">
+                  <h3 className="work-desc-title">{aw.title}</h3>
+                </div>
+              </>
               <LazyLoad height={321} offset={100}>
                 <img src={"../" + `${aw.main_src}`} alt={aw.title}></img>
               </LazyLoad>
@@ -359,11 +405,20 @@ export const TabList_portfolio = [
             <Link
               key={i}
               to={{ pathname: `/${logo.title}` }}
-              className={"work-img-port img__resp-block"}>
+              className={"work-img-port work-img img__resp-block"}>
+              <>
+                <div className="work-desc">
+                  <h3 className="work-desc-title">{logo.title}</h3>
+                  <p className="work-desc-info feni-section-desc">
+                    {logo_category}
+                  </p>
+                </div>
+              </>
               <img
                 src={"../" + `${logo.main_src}`}
                 height={321}
-                alt={logo.title} loading="eager"></img>
+                alt={logo.title}
+                loading="eager"></img>
             </Link>
           </React.Fragment>
         ))}
@@ -372,7 +427,15 @@ export const TabList_portfolio = [
             <Link
               key={i}
               to={{ pathname: `/${logo.title}` }}
-              className={"work-img-port img__resp-block"}>
+              className={"work-img-port work-img img__resp-block"}>
+              <>
+                <div className="work-desc">
+                  <h3 className="work-desc-title">{logo.title}</h3>
+                  <p className="work-desc-info feni-section-desc">
+                    {logo_category}
+                  </p>
+                </div>
+              </>
               <LazyLoad height={321} offset={100}>
                 <img src={"../" + `${logo.main_src}`} alt={logo.title}></img>
               </LazyLoad>
@@ -394,11 +457,20 @@ export const TabList_portfolio = [
             <Link
               key={i}
               to={{ pathname: `/${web.title}` }}
-              className={"work-img-port img__resp-block"}>
+              className={"work-img-port work-img img__resp-block"}>
+              <>
+                <div className="work-desc">
+                  <h3 className="work-desc-title">{web.title}</h3>
+                  <p className="work-desc-info feni-section-desc">
+                    {web_category}
+                  </p>
+                </div>
+              </>
               <img
                 src={"../" + `${web.main_src}`}
                 height={321}
-                alt={web.title} loading="eager"></img>
+                alt={web.title}
+                loading="eager"></img>
             </Link>
           </React.Fragment>
         ))}
@@ -414,33 +486,46 @@ export const TabList_portfolio = [
       <>
         {style.slice(0, list_port_visible_size).map((styles, i) => (
           <React.Fragment key={i}>
-            {/* <LazyLoad> */}
             <Link
               key={i}
               to={{ pathname: `/${styles.title}` }}
-              className={"work-img-port img__resp-block"}>
+              className={"work-img-port work-img img__resp-block"}>
+              <>
+                <div className="work-desc">
+                  <h3 className="work-desc-title">{styles.title}</h3>
+                  <p className="work-desc-info feni-section-desc">
+                    {styles_category}
+                  </p>
+                </div>
+              </>
               <img
                 src={"../" + `${styles.main_src}`}
                 height={321}
-                alt={styles.title} loading="eager"></img>
+                alt={styles.title}
+                loading="eager"></img>
             </Link>
-            {/* </LazyLoad> */}
           </React.Fragment>
         ))}
         {style.slice(6).map((styles, i) => (
           <React.Fragment key={i}>
-            {/* <LazyLoad> */}
             <Link
               key={i}
               to={{ pathname: `/${styles.title}` }}
-              className={"work-img-port img__resp-block"}>
+              className={"work-img-port work-img img__resp-block"}>
+              <>
+                <div className="work-desc">
+                  <h3 className="work-desc-title">{styles.title}</h3>
+                  <p className="work-desc-info feni-section-desc">
+                    {styles_category}
+                  </p>
+                </div>
+              </>
               <LazyLoad height={321} offset={100}>
                 <img
                   src={"../" + `${styles.main_src}`}
                   alt={styles.title}></img>
               </LazyLoad>
             </Link>
-            {/* </LazyLoad> */}
           </React.Fragment>
         ))}
       </>
@@ -455,17 +540,24 @@ export const TabList_portfolio = [
       <>
         {illustrations.map((ill, i) => (
           <React.Fragment key={i}>
-            {/* <LazyLoad> */}
             <Link
               key={i}
               to={{ pathname: `/${ill.title}` }}
-              className={"work-img-port img__resp-block"}>
+              className={"work-img-port work-img img__resp-block"}>
+              <>
+                <div className="work-desc">
+                  <h3 className="work-desc-title">{ill.title}</h3>
+                  <p className="work-desc-info feni-section-desc">
+                    {ill_category}
+                  </p>
+                </div>
+              </>
               <img
                 src={"../" + `${ill.main_src}`}
                 height={321}
-                alt={ill.title} loading="eager"></img>
+                alt={ill.title}
+                loading="eager"></img>
             </Link>
-            {/* </LazyLoad> */}
           </React.Fragment>
         ))}
       </>
@@ -480,17 +572,24 @@ export const TabList_portfolio = [
       <>
         {presentations.map((present, i) => (
           <React.Fragment key={i}>
-            {/* <LazyLoad> */}
             <Link
               key={i}
               to={{ pathname: `/${present.title}` }}
-              className={"work-img-port img__resp-block"}>
+              className={"work-img-port work-img img__resp-block"}>
+              <>
+                <div className="work-desc">
+                  <h3 className="work-desc-title">{present.title}</h3>
+                  <p className="work-desc-info feni-section-desc">
+                    {present_category}
+                  </p>
+                </div>
+              </>
               <img
                 src={"../" + `${present.main_src}`}
                 height={321}
-                alt={present.title} loading="eager"></img>
+                alt={present.title}
+                loading="eager"></img>
             </Link>
-            {/* </LazyLoad> */}
           </React.Fragment>
         ))}
       </>
@@ -505,17 +604,25 @@ export const TabList_portfolio = [
       <>
         {creatives.map((creative, i) => (
           <React.Fragment key={i}>
-            {/* <LazyLoad> */}
             <Link
               key={i}
               to={{ pathname: `/${creative.title}` }}
-              className={"work-img-port img__resp-block"}>
+              className={"work-img-port work-img img__resp-block"}>
+              <>
+                <div className="work-desc">
+                  <h3 className="work-desc-title">{creative.title}</h3>
+                  <p className="work-desc-info feni-section-desc">
+                    {" "}
+                    {creative_category}
+                  </p>
+                </div>
+              </>
               <img
                 src={"../" + `${creative.main_src}`}
                 height={321}
-                alt={creative.title} loading="eager"></img>
+                alt={creative.title}
+                loading="eager"></img>
             </Link>
-            {/* </LazyLoad> */}
           </React.Fragment>
         ))}
       </>

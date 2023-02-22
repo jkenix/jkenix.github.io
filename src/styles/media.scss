@@ -95,6 +95,7 @@
     margin-right: 19px;
   }
   // Home
+  // Feni preview
   .l-fp-section-title {
     margin-left: 20px;
     margin-right: 20px;
@@ -114,6 +115,44 @@
       padding-left: 0;
     }
   }
+  .fp-ltl {
+    > .work-desc {
+      left: 30px;
+    }
+  }
+  // Common classes (fp, port)
+  .works-content {
+    row-gap: 20px; 
+  }
+  // Briefs
+  .l-feni-briefs {
+    > .feni-briefs-desc {
+      width: 82%;
+    }
+    > .feni-briefs-content {
+      padding: 20px 20px 0;
+    }
+  }
+  .fb-info {
+    align-items: flex-start;
+    flex-direction: column;
+    > .fb-title {
+      padding-right: 0;
+    }
+    > .fb-desc {
+      padding-left: 0;
+      &::before {
+        display: none;
+      }
+    }
+  }
+  .fbi-block {
+    padding-top: 20px;
+  }
+  // Partners
+  .feni-partners-desc > .fp-desc {
+    width: 100%;
+  }
   // Portfolio
   .port-works-tabs {
     flex-wrap: wrap;
@@ -124,18 +163,15 @@
     width: 50%;
   }
   // Project
-  .project-img {
-    // Продумать индивидуально для других данных, кроме веб-сайтов
-    background-position: left;
-  }
   .project-content {
     padding-left: 100px;
   }
 }
 // 768px
 @media (max-width: 767.98px) {
-  // Section title
-  .section-title {
+  // h2 title
+  .section-title,
+  .fb-info > .fb-title {
     font-size: 2rem;
   }
   // Header
@@ -156,6 +192,11 @@
     right: 0;
   }
   // Main
+  // Common classes
+  .l-feni-info,
+  .l-feni-briefs {
+    padding-left: 35px;
+  }
   // Home
   // Feni-hi
   .l-feni-hi {
@@ -173,7 +214,6 @@
   }
   // Feni info
   .l-feni-info {
-    padding-left: 35px;
     > .feni-info-title {
       font-size: 1.5rem;
     }
@@ -205,6 +245,10 @@
   // Feni info
   .l-feni-info > .feni-info-title {
     font-size: 1.2rem;
+  }
+  // Partners
+  .l-feni-partners > .feni-partners-desc {
+    width: 90%;
   }
   // Project
   .project-content {

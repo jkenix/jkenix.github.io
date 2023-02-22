@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
 import { TabList_portfolio } from "../js/data.jsx";
+import UpBtn from "../components/UpBtn.jsx";
 
 export default function Portfolio(props) {
   const [currentTab, setCurrentTab] = useState(props.tabid);
@@ -44,9 +45,12 @@ export default function Portfolio(props) {
             {TabList_portfolio.map((tab, i) => {
               if (tab.name === currentTab) {
                 return (
-                  <div className="port-section-content works-content" key={i}>
-                    {tab.content}
-                  </div>
+                  <React.Fragment key={i}>
+                    <div className="port-section-content works-content" key={i}>
+                      {tab.content}
+                    </div>
+                    <UpBtn height="41px" mtop="50px" />
+                  </React.Fragment>
                 );
               } else {
                 return null;

@@ -108,8 +108,15 @@
   cursor: default;
 }
 // Main
+// Fproject, Portfolio
 .btn-tab.active {
   text-decoration: underline;
+}
+.work-img {
+  &:hover,
+  &:focus-visible {
+    opacity: 0.7;
+  }
 }
 // Footer
 

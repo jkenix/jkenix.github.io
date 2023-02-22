@@ -50,8 +50,12 @@ body {
   color: $ff5;
 }
 /* Color styles for page content */
-// Titles h2
-
+// Titles, desc
+.section-title,
+.section-desc,
+.small-section {
+  color: $b1;
+}
 // Header
 .l-header {
   background-color: $we5;
@@ -73,6 +77,27 @@ body {
 // Main
 .l-main {
   background-color: $we5;
+}
+// Briefs
+.fb-info {
+  > .fb-title {
+    color: $b1;
+  }
+  // Focus fb-info
+  &:hover,
+  &:focus-visible {
+    > .fb-count, > .fb-title, > .fb-desc {
+      color: $ff5;
+    }
+    > .fb-desc::before {
+      background-color: $ff5;
+    }
+  }
+}
+// Work-desc
+.work-desc {
+  background-color: $b55;
+  color: $we5;
 }
 // Footer
 .l-footer {
