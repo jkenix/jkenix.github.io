@@ -32,8 +32,10 @@ const plugins = [
     inline: true,
     minify: true,
     extract: true,
-    width: 1920,
-    height: 1080,
+    // width: 1920,
+    // height: 1080,
+    width: 320,
+    height: 565,
     penthouse: {
       blockJSRequests: false,
     },
@@ -47,27 +49,48 @@ module.exports = {
   devtool: "source-map",
   entry: { main: "./src/index.js" },
   optimization: {
+    runtimeChunk: "single",
     splitChunks: {
-      chunks: "async",
-      minSize: 20000,
-      minRemainingSize: 0,
-      minChunks: 1,
-      maxAsyncRequests: 30,
-      maxInitialRequests: 30,
-      enforceSizeThreshold: 50000,
+      chunks: "all",
+      maxInitialRequests: Infinity,
+      minSize: 0,
       cacheGroups: {
-        defaultVendors: {
+        vendor: {
           test: /[\\/]node_modules[\\/]/,
-          priority: -10,
-          reuseExistingChunk: true,
-        },
-        default: {
-          minChunks: 2,
-          priority: -20,
-          reuseExistingChunk: true,
+          name(module) {
+            // получает имя, то есть node_modules/packageName/not/this/part.js
+            // или node_modules/packageName
+            const packageName = module.context.match(
+              /[\\/]node_modules[\\/](.*?)([\\/]|$)/
+            )[1];
+            // имена npm-пакетов можно, не опасаясь проблем, использовать
+            // в URL, но некоторые серверы не любят символы наподобие @
+            return `npm.${packageName.replace("@", "")}`;
+          },
         },
       },
     },
+    // splitChunks: {
+    //   chunks: "async",
+    //   minSize: 20000,
+    //   minRemainingSize: 0,
+    //   minChunks: 1,
+    //   maxAsyncRequests: 30,
+    //   maxInitialRequests: 30,
+    //   enforceSizeThreshold: 50000,
+    //   cacheGroups: {
+    //     defaultVendors: {
+    //       test: /[\\/]node_modules[\\/]/,
+    //       priority: -10,
+    //       reuseExistingChunk: true,
+    //     },
+    //     default: {
+    //       minChunks: 2,
+    //       priority: -20,
+    //       reuseExistingChunk: true,
+    //     },
+    //   },
+    // },
     minimizer: [
       "...",
       new ImageMinimizerPlugin({
