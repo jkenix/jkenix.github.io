@@ -12,7 +12,11 @@ export default function About() {
           {/* <meta name="og:description" content="" /> */}
           {/* <meta name="description" content="" /> */}
         </Helmet>
-        <main className="l-main">куццууцк</main>
+        <main className="l-main">
+          <div className="l-feni-section l-fm">
+            В процессе...
+          </div>
+        </main>
       </HelmetProvider>
     </>
   );

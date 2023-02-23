@@ -86,7 +86,9 @@ body {
   // Focus fb-info
   &:hover,
   &:focus-visible {
-    > .fb-count, > .fb-title, > .fb-desc {
+    > .fb-count,
+    > .fb-title,
+    > .fb-desc {
       color: $ff5;
     }
     > .fb-desc::before {
@@ -94,15 +96,74 @@ body {
     }
   }
 }
+// Discuss
+.l-feni-discuss-project {
+  background-color: $b55;
+}
+.fdp-content-info {
+  > .fdp-title,
+  > .fdp-desc {
+    color: $we5;
+  }
+}
+.feedback-row {
+  .label-feedback,
+  .form-input {
+    color: $we5;
+  }
+  > .form-input {
+    border-bottom: 1px solid $we5;
+  }
+}
+.feni-checkbox-agree {
+  color: $we5;
+}
+.feedback-btn {
+  color: $we5;
+  background-color: $ff5;
+  &:hover,
+  &:focus-visible {
+    background-color: $we5;
+    color: $b55;
+  }
+}
+// Common module for forms
+.form-input {
+  padding: 10px;
+  padding-left: 0;
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+.message-input {
+  max-height: 100px;
+}
 // Work-desc
 .work-desc {
   background-color: $b55;
-  color: $we5;
+  > &-title,
+  > &-info {
+    color: $we5;
+  }
 }
 // Footer
 .l-footer {
   background-color: $b1;
 }
-.l-author a {
-  color: $wff;
+.footer-links-title,
+.footer-link {
+  color: $we5;
+}
+.l-footer-links-title {
+  color: $we5;
+}
+.l-footer-bottom > span,
+.l-footer-bottom > .footer-link {
+  color: $we5;
+}
+.l-footer-bottom > .footer-link {
+  &:hover,
+  &:focus-visible {
+    color: $ff5;
+  }
 }

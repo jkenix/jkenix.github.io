@@ -12,10 +12,10 @@ export default function Portfolio(props) {
         <Helmet>
           <title>Feni - {props.tablabel}</title>
           <meta property="og:title" content="Feni Design Портфолио" />
-          <meta
+          {/* <meta
             property="og:url"
             content={"https://jkenix.github.io/portfolio" + props.tabpath}
-          />
+          /> */}
           <meta
             name="og:description"
             content={`Посмотрите ${props.tablabel} Feni Design Studio.`}

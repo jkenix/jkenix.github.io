@@ -3,23 +3,18 @@ import { Link } from "react-router-dom";
 import LazyLoad from "react-lazy-load";
 // Импорт изображений
 import * as img from "./images.js";
-// Переменные
-var list_main_size = 5;
-var list_port_visible_size = 6;
-// Категории
-const logo_category = ["Логотип"];
-const web_category = ["Веб-сайт"];
-const styles_category = ["Стиль"];
-const ill_category = ["Иллюстрация"];
-const present_category = ["Презентация"];
-const creative_category = ["Креатив"];
-// Литеральные данные (изображения, описание и т.д.)
+// Константы
+const list_main_size = 5;
+const list_port_visible_size = 6;
+// Массивы (изображения, описание и т.д.)
 export const logos = [
   {
     logo_id: "1",
     main_src: `${img.Toystream}`,
     title: "1",
     desc: "1",
+    category: "Логотип",
+    client: `Компания "Пень Продакшн"`,
     main_class: "fp-work-main",
   },
   {
@@ -27,6 +22,8 @@ export const logos = [
     main_src: `${img.Toystream}`,
     title: "2",
     desc: "2",
+    category: "Логотип",
+    client: `Салон красоты "Марьяна"`,
     main_class: "fp-work-focus fp-rtl",
   },
   {
@@ -34,6 +31,8 @@ export const logos = [
     main_src: `${img.Toystream}`,
     title: "3",
     desc: "3",
+    category: "Логотип",
+    client: `Веб-студия "Браво"`,
     main_class: "fp-work-mini",
   },
   {
@@ -41,6 +40,8 @@ export const logos = [
     main_src: `${img.Toystream}`,
     title: "4",
     desc: "4",
+    category: "Логотип",
+    client: `Веб-студия "Браво"`,
     main_class: "fp-work-mini",
   },
   {
@@ -48,6 +49,8 @@ export const logos = [
     main_src: `${img.Toystream}`,
     title: "5",
     desc: "5",
+    category: "Логотип",
+    client: `Компания "Бстрострой"`,
     main_class: "fp-work-focus fp-ltl",
   },
   {
@@ -55,30 +58,40 @@ export const logos = [
     main_src: `${img.Toystream}`,
     title: "6",
     desc: "Da",
+    category: "Логотип",
+    client: ` ""`,
   },
   {
     logo_id: "7",
     main_src: `${img.Toystream}`,
     title: "7",
     desc: "Da",
+    category: "Логотип",
+    client: ` ""`,
   },
   {
     logo_id: "8",
     main_src: `${img.Toystream}`,
     title: "8",
     desc: "Da",
+    category: "Логотип",
+    client: ` ""`,
   },
   {
     logo_id: "9",
     main_src: `${img.Toystream}`,
     title: "9",
     desc: "Da",
+    category: "Логотип",
+    client: ` ""`,
   },
   {
     logo_id: "10",
     main_src: `${img.Toystream}`,
     title: "10",
     desc: "Da",
+    category: "Логотип",
+    client: ` ""`,
   },
 ];
 export const websites = [
@@ -87,6 +100,8 @@ export const websites = [
     main_src: `${img.Toystream}`,
     title: "Toystream",
     desc: "Сайт игровой студии Toystream, сделанный так, чтобы привлекать самых желанных клиентов по всему миру.",
+    category: "Веб-сайт",
+    client: ` ""`,
     main_class: "fp-work-main",
   },
   {
@@ -94,6 +109,8 @@ export const websites = [
     main_src: `${img.Sequoia}`,
     title: "Sequoia",
     desc: "Сайт веб-агенства Sequoia. Комплексное решение для бизнеса по цене одного сотрудника!",
+    category: "Веб-сайт",
+    client: ` ""`,
     main_class: "fp-work-focus fp-rtl",
   },
   {
@@ -101,106 +118,170 @@ export const websites = [
     main_src: `${img.Marico}`,
     title: "Marico",
     desc: "Da",
+    category: "Веб-сайт",
+    client: ` ""`,
     main_class: "fp-work-mini",
   },
 ];
 export const style = [
   {
     style_id: "1",
-    main_src: "./img/jklogo.webp",
+    main_src: `${img.Toystream}`,
     title: "1",
     desc: "Da",
+    category: "Стиль",
+    client: ` ""`,
     main_class: "fp-work-main",
   },
   {
     style_id: "2",
-    main_src: "./img/Dart-Service-Manager.webp",
+    main_src: `${img.Toystream}`,
     title: "2",
     desc: "Da",
+    category: "Стиль",
+    client: ` ""`,
     main_class: "fp-work-focus fp-rtl",
   },
   {
     style_id: "3",
-    main_src: "./img/Dart-Service-Manager.webp",
+    main_src: `${img.Toystream}`,
     title: "3",
     desc: "Da",
+    category: "Стиль",
+    client: ` ""`,
     main_class: "fp-work-mini",
   },
   {
     style_id: "4",
-    main_src: "./img/Dart-Service-Manager.webp",
+    main_src: `${img.Toystream}`,
     title: "4",
     desc: "Da",
+    category: "Стиль",
+    client: ` ""`,
     main_class: "fp-work-mini",
   },
   {
     style_id: "5",
-    main_src: "./img/Dart-Service-Manager.webp",
+    main_src: `${img.Toystream}`,
     title: "5",
     desc: "Da",
+    category: "Стиль",
+    client: ` ""`,
     main_class: "fp-work-focus fp-ltl",
   },
   {
     style_id: "6",
-    main_src: "./img/Dart-Service-Manager.webp",
+    main_src: `${img.Toystream}`,
     title: "6",
     desc: "Da",
+    category: "Стиль",
+    client: ` ""`,
   },
   {
     style_id: "7",
-    main_src: "./img/Dart-Service-Manager.webp",
+    main_src: `${img.Toystream}`,
     title: "7",
     desc: "Da",
+    category: "Стиль",
+    client: ` ""`,
   },
   {
     style_id: "8",
-    main_src: "./img/Dart-Service-Manager.webp",
+    main_src: `${img.Toystream}`,
     title: "8",
     desc: "Da",
+    category: "Стиль",
+    client: ` ""`,
   },
 ];
 export const illustrations = [
   {
     ill_id: "1",
-    main_src: "./img/Dart-Service-Manager.webp",
+    main_src: `${img.Toystream}`,
     title: "3",
     desc: "Da",
+    category: "Иллюстрация",
+    client: ` ""`,
     main_class: "fp-work-main",
   },
   {
     ill_id: "2",
-    main_src: "./img/Dart-Service-Manager.webp",
+    main_src: `${img.Toystream}`,
     title: "3",
     desc: "Da",
+    category: "Иллюстрация",
+    client: ` ""`,
     main_class: "fp-work-focus fp-rtl",
   },
   {
     ill_id: "3",
-    main_src: "./img/Dart-Service-Manager.webp",
+    main_src: `${img.Toystream}`,
     title: "3",
     desc: "Da",
+    category: "Иллюстрация",
+    client: ` ""`,
     main_class: "fp-work-mini",
   },
   {
     ill_id: "4",
-    main_src: "./img/Dart-Service-Manager.webp",
+    main_src: `${img.Toystream}`,
     title: "3",
     desc: "Da",
+    category: "Иллюстрация",
+    client: ` ""`,
     main_class: "fp-work-main",
   },
 ];
 export const presentations = [
   {
-    main_src: "./img/jklogo_apple.webp",
+    present_id: "1",
+    main_src: `${img.Toystream}`,
+    title: "1",
+    desc: "Da",
+    category: "Презентация",
+    client: ` ""`,
+  },
+  {
+    present_id: "2",
+    main_src: `${img.Toystream}`,
+    title: "2",
+    desc: "Da",
+    category: "Презентация",
+    client: ` ""`,
+  },
+  {
+    present_id: "3",
+    main_src: `${img.Toystream}`,
     title: "3",
     desc: "Da",
+    category: "Презентация",
+    client: ` ""`,
+  },
+  {
+    present_id: "4",
+    main_src: `${img.Toystream}`,
+    title: "4",
+    desc: "Da",
+    category: "Презентация",
+    client: ` ""`,
   },
 ];
 export const creatives = [
   {
-    main_src: "./img/jklogo_apple.webp",
-    title: "3",
+    creative_id: "1",
+    main_src: `${img.Toystream}`,
+    title: "1",
     desc: "Da",
+    category: "Креатив",
+    client: `Арт-студия "Парус"`,
+  },
+  {
+    creative_id: "2",
+    main_src: `${img.Toystream}`,
+    title: "1",
+    desc: "Креатив",
+    category: "Креатив",
+    client: `Арт-студия "Неон"`,
   },
 ];
 export const all_works = [
@@ -231,8 +312,8 @@ export const TabList_main = [
               <>
                 <div className="work-desc">
                   <h3 className="work-desc-title">{logo.title}</h3>
-                  <p className="work-desc-info feni-section-desc">
-                    {logo_category}
+                  <p className="work-desc-info section-desc">
+                    {logo.category}
                   </p>
                 </div>
               </>
@@ -264,7 +345,7 @@ export const TabList_main = [
                 <div className="work-desc">
                   <h3 className="work-desc-title">{web.title}</h3>
                   <p className="work-desc-info feni-section-desc">
-                    {web_category}
+                    {web.category}
                   </p>
                 </div>
               </>
@@ -297,7 +378,7 @@ export const TabList_main = [
                 <div className="work-desc">
                   <h3 className="work-desc-title">{styles.title}</h3>
                   <p className="work-desc-info feni-section-desc">
-                    {styles_category}
+                    {styles.category}
                   </p>
                 </div>
               </>
@@ -331,7 +412,7 @@ export const TabList_main = [
                 <div className="work-desc">
                   <h3 className="work-desc-title">{ill.title}</h3>
                   <p className="work-desc-info feni-section-desc">
-                    {ill_category}
+                    {ill.category}
                   </p>
                 </div>
               </>
@@ -363,6 +444,9 @@ export const TabList_portfolio = [
               <>
                 <div className="work-desc">
                   <h3 className="work-desc-title">{aw.title}</h3>
+                  <p className="work-desc-info feni-section-desc">
+                    {aw.category}
+                  </p>
                 </div>
               </>
               <img
@@ -382,6 +466,9 @@ export const TabList_portfolio = [
               <>
                 <div className="work-desc">
                   <h3 className="work-desc-title">{aw.title}</h3>
+                  <p className="work-desc-info feni-section-desc">
+                    {aw.category}
+                  </p>
                 </div>
               </>
               <LazyLoad height={321} offset={100}>
@@ -410,7 +497,7 @@ export const TabList_portfolio = [
                 <div className="work-desc">
                   <h3 className="work-desc-title">{logo.title}</h3>
                   <p className="work-desc-info feni-section-desc">
-                    {logo_category}
+                    {logo.category}
                   </p>
                 </div>
               </>
@@ -432,7 +519,7 @@ export const TabList_portfolio = [
                 <div className="work-desc">
                   <h3 className="work-desc-title">{logo.title}</h3>
                   <p className="work-desc-info feni-section-desc">
-                    {logo_category}
+                    {logo.category}
                   </p>
                 </div>
               </>
@@ -462,7 +549,7 @@ export const TabList_portfolio = [
                 <div className="work-desc">
                   <h3 className="work-desc-title">{web.title}</h3>
                   <p className="work-desc-info feni-section-desc">
-                    {web_category}
+                    {web.category}
                   </p>
                 </div>
               </>
@@ -494,7 +581,7 @@ export const TabList_portfolio = [
                 <div className="work-desc">
                   <h3 className="work-desc-title">{styles.title}</h3>
                   <p className="work-desc-info feni-section-desc">
-                    {styles_category}
+                    {styles.category}
                   </p>
                 </div>
               </>
@@ -516,7 +603,7 @@ export const TabList_portfolio = [
                 <div className="work-desc">
                   <h3 className="work-desc-title">{styles.title}</h3>
                   <p className="work-desc-info feni-section-desc">
-                    {styles_category}
+                    {styles.category}
                   </p>
                 </div>
               </>
@@ -548,7 +635,7 @@ export const TabList_portfolio = [
                 <div className="work-desc">
                   <h3 className="work-desc-title">{ill.title}</h3>
                   <p className="work-desc-info feni-section-desc">
-                    {ill_category}
+                    {ill.category}
                   </p>
                 </div>
               </>
@@ -580,7 +667,7 @@ export const TabList_portfolio = [
                 <div className="work-desc">
                   <h3 className="work-desc-title">{present.title}</h3>
                   <p className="work-desc-info feni-section-desc">
-                    {present_category}
+                    {present.category}
                   </p>
                 </div>
               </>
@@ -613,7 +700,7 @@ export const TabList_portfolio = [
                   <h3 className="work-desc-title">{creative.title}</h3>
                   <p className="work-desc-info feni-section-desc">
                     {" "}
-                    {creative_category}
+                    {creative.category}
                   </p>
                 </div>
               </>

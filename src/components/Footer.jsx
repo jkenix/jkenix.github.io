@@ -1,23 +1,87 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+import logo from "../img/feni-logo.svg";
 
 export default function Footer() {
   return (
     <footer className="l-footer">
-    <div className="l-author">
-      <a href="https://github.com/jkenix" title="Github profile link">
-        My Github Profile
-      </a>
-      <a
-        href="https://github.com/jkenix/jkenix.github.io/tree/toystream"
-        title="Github repo">
-        Website on Github
-      </a>
-      <a
-        href="https://www.figma.com/file/srEdFGe5jVsLZtrr9CqUUh/Pages?node-id=0%3A1"
-        title="Figma original layout link">
-        © Layout creator: Marion & Co.
-      </a>
-    </div>
-  </footer>
-  )
+      <div className="l-footer-content">
+        <div className="fc-first">
+          <div className="footer-logo">
+            <img
+              src={logo}
+              alt="Feni logo"
+              width="65"
+              height="65"
+              loading="eager"
+            />
+          </div>
+        </div>
+        <div className="fc-links">
+          <h3 className="footer-links-title small-section">Briefings</h3>
+          <div className="footer-links">
+            <Link to="/" className="footer-link">
+              Бриф на разработку веб дизайна
+            </Link>
+            <Link to="/" className="footer-link">
+              Бриф на разработку стиля
+            </Link>
+            <Link to="/" className="footer-link">
+              Бриф на разработку призентации
+            </Link>
+            <Link to="/" className="footer-link">
+              Бриф на разработку логотипа
+            </Link>
+            <Link to="/" className="footer-link">
+              Бриф на разработку иллюстрации
+            </Link>
+          </div>
+        </div>
+        <div className="fc-links">
+          <h3 className="footer-links-title small-section">О нас</h3>
+          <div className="footer-links">
+            <Link to="/portfolio" className="footer-link">
+              Портфолио
+            </Link>
+            <Link to="/services" className="footer-link">
+              Услуги и цены
+            </Link>
+            <Link to="/about" className="footer-link">
+              Brief for developing a presentation
+            </Link>
+            <Link to="/contacts" className="footer-link">
+              Logo design brief
+            </Link>
+          </div>
+        </div>
+        <div className="fc-links">
+          <h3 className="footer-links-title small-section">Контакты</h3>
+          <div className="footer-links">
+            <a href="mailto:hello@whalesagency.com" className="footer-link">
+              hello@whalesagency.com
+            </a>
+            <a href="tel:+7-963-728-66-90" className="footer-link">
+              +79637286690
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="l-footer-bottom">
+        <span className="footer-copyright">Copyright © 2023 Feni Design.</span>
+        <Link to="/" className="footer-link" title="Публичная Оферта">
+          Публичная Оферта
+        </Link>
+        <a
+          href="https://github.com/jkenix"
+          className="footer-link"
+          title="Github Profile">
+          Creator Github Profile
+        </a>
+      </div>
+      <div className="l-footer-bottom" style={{justifyContent: "center", paddingTop: "10px"}}>
+        <span style={{textTransform: "uppercase", fontSize: "1.5rem", whiteSpace: "normal", lineHeight: "35px"}}>Web-site just for study!</span>
+      </div>
+    </footer>
+  );
 }

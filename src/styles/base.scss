@@ -7,7 +7,7 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 
@@ -17,11 +17,14 @@ ul,
 li,
 span,
 button,
+label,
 input,
+input::placeholder,
 textarea,
+[type=submit],
 address,
 q {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin: 0;
 }
@@ -47,12 +50,4 @@ ul {
 address {
   font-style: normal;
   font-size: 1.5rem;
-}
-
-input {
-  &::placeholder {
-    font-family: "Inter";
-    font-size: 1.125rem;
-    letter-spacing: 0.18px;
-  }
 }

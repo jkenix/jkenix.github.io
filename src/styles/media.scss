@@ -3,11 +3,6 @@
 /* Media styles */
 // 1921+ px
 @media (min-width: 1921px) {
-  .l-footer {
-    justify-content: center;
-    align-items: center;
-    row-gap: 10px;
-  }
 }
 // 1400px
 @media (max-width: 1399.98px) {
@@ -16,6 +11,11 @@
   }
   // Main
   .l-main {
+  }
+  // Footer
+  .l-footer-content {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 // 1200px
@@ -29,6 +29,7 @@
   }
   // Main
   // Home
+  // Feni-preview
   .l-fp-section-title {
     width: initial;
     margin-left: 40px;
@@ -50,20 +51,9 @@
       margin-right: 35px;
     }
   }
-  .l-main {
-  }
   // Project
   .project-content {
     padding-left: 150px;
-  }
-  // Footer
-  .l-footer {
-    padding-top: 30px;
-    .footer-contacts {
-      align-items: center;
-      flex-direction: column;
-      row-gap: 30px;
-    }
   }
 }
 // 1024px
@@ -106,7 +96,8 @@
     > .fp-work-focus,
     > .fp-work-mini {
       flex-basis: 100%;
-      height: 462px;
+      // height: 462px;
+      height: 300px; // Optional
     }
     > .fp-rtl {
       padding-right: 0;
@@ -115,14 +106,12 @@
       padding-left: 0;
     }
   }
-  .fp-ltl {
-    > .work-desc {
-      left: 30px;
-    }
+  .fp-ltl > .work-desc {
+    left: 30px;
   }
   // Common classes (fp, port)
   .works-content {
-    row-gap: 20px; 
+    row-gap: 20px;
   }
   // Briefs
   .l-feni-briefs {
@@ -153,6 +142,40 @@
   .feni-partners-desc > .fp-desc {
     width: 100%;
   }
+  // Discuss
+  .l-fdp-content {
+    align-items: center;
+    flex-direction: column;
+    row-gap: 40px;
+    > .fdp-content-info {
+      width: 100%;
+      text-align: center;
+    }
+    > .fdp-content-form {
+      width: 70%;
+    }
+  }
+  .form-img-block {
+    display: none;
+  }
+  .feedback-row.top {
+    width: 100%;
+    padding-right: 0;
+  }
+  .feedback-row.right {
+    padding-right: 0;
+  }
+  .feedback-row.right,
+  .feedback-row.left {
+    width: 100%;
+  }
+  .feedback-row.message {
+    height: 100px;
+    padding-bottom: 30px;
+  }
+  .checkbox-row {
+    display: none;
+  }
   // Portfolio
   .port-works-tabs {
     flex-wrap: wrap;
@@ -165,6 +188,13 @@
   // Project
   .project-content {
     padding-left: 100px;
+  }
+  // Footer
+  .l-footer-content {
+    justify-content: flex-start;
+    > .fc-first {
+      width: 100%;
+    }
   }
 }
 // 768px
@@ -194,7 +224,8 @@
   // Main
   // Common classes
   .l-feni-info,
-  .l-feni-briefs {
+  .l-feni-briefs,
+  .l-fdp-content {
     padding-left: 35px;
   }
   // Home
@@ -226,6 +257,10 @@
       margin-left: 6px;
     }
   }
+  // Discuss
+  .l-fdp-content {
+    padding-right: 30px;
+  }
   // Portfolio
   .port-works-tabs {
     padding-left: 20px;
@@ -237,6 +272,10 @@
   .work-img-port {
     width: 100%;
   }
+  // Footer (Optional)
+  // .l-footer-content > .fc-links {
+  //   width: 100%;
+  // }
 }
 // 576px
 @media (max-width: 575.98px) {
@@ -252,13 +291,14 @@
   }
   // Project
   .project-content {
-    padding-left: 60px;
-  }
-  // Footer
-  .l-footer {
-    .footer-contacts {
-      align-items: baseline;
+    padding-left: 20px;
+    > .project-desc {
+      max-width: 90%;
     }
+  }
+  // Dicuss
+  .l-fdp-content > .fdp-content-form {
+    width: 80%;
   }
 }
 // 320px

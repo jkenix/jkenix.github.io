@@ -72,7 +72,7 @@
   margin-bottom: 100px;
   > .feni-info-title,
   > .feni-info-desc {
-    max-width: 95%;
+    max-width: 94%;
   }
   > .feni-info-title {
     padding-top: 15px;
@@ -136,12 +136,30 @@
   }
   > .feni-partners-img {
     justify-content: center;
-  
   }
 }
 // Discuss Project
 .l-feni-discuss-project {
+  padding-top: 100px;
 }
+.l-fdp-content {
+  display: flex;
+  column-gap: 60px;
+  padding-right: 100px;
+  padding-left: 100px;
+  > .fdp-content-info {
+    width: 35%;
+  }
+  > .fdp-content-form {
+    display: flex;
+    flex-wrap: wrap;
+    transition: all ease 0.5s;
+    width: 65%;
+    padding-bottom: 80px;
+    z-index: 6;
+  }
+}
+
 // Portfolio
 .l-portfolio {
   margin-bottom: 50px;
@@ -163,21 +181,47 @@
 // Contacts
 // Footer
 .l-footer {
+  padding-top: 70px;
+  padding-bottom: 40px;
   @include flexcolumn();
-  padding-top: 92px;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-bottom: 30px;
 }
-.l-author {
-  align-items: center;
+.l-footer-content {
   display: flex;
-  gap: 30px;
-  margin-top: 30px;
   flex-wrap: wrap;
-  a {
-    font-size: 1.5rem;
+  justify-content: center;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 100px;
+  row-gap: 20px;
+  max-width: 100%;
+  > .fc-first {
+    width: 25%;
+    padding: 0;
+  }
+  > .fc-links {
+    @include flexcolumn();
+    padding-left: 0;
+    padding-right: 31px;
+  }
+}
+.l-footer-bottom {
+  margin-right: 100px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  > .footer-copyright {
+    padding-right: 10px;
+  }
+  > .footer-link {
     text-decoration: underline;
+  }
+  span,
+  a {
+    font-size: 0.75rem;
+    line-height: 15px;
+    white-space: nowrap;
   }
 }
 // Up btn

@@ -4,9 +4,12 @@ import { Link } from "react-router-dom";
 
 import { TabList_main } from "../js/data.jsx";
 import LazyLoad from "react-lazy-load";
+
+import feni_start from "../img/feni-start.webp";
 import more from "../img/more.svg";
 import partners from "../img/partners.webp";
-import feni_start from "../img/feni-start.webp";
+
+import Discuss from "../components/Discuss.jsx";
 
 export default function Home() {
   const [currentTab, setCurrentTab] = useState("tab1");
@@ -34,7 +37,9 @@ export default function Home() {
             </div>
             <div className="fs-img img__resp-block">
               <img
-                src={feni_start} width="438" height="452"
+                src={feni_start}
+                width="438"
+                height="452"
                 alt="Feni Studio preview image"
                 loading="eager"
               />
@@ -128,7 +133,7 @@ export default function Home() {
               </Link>
               <Link to="/" className="fb-info l-fm fbi-block">
                 <span className="fb-count">04</span>
-                <span className="fb-title">Призентация</span>
+                <span className="fb-title">Презентация</span>
                 <span className="fb-desc section-desc">
                   бриф на разработку веб дизайна
                 </span>
@@ -156,9 +161,7 @@ export default function Home() {
               </LazyLoad>
             </div>
           </section>
-          <section className="l-feni-discuss-project">
-
-          </section>
+          <Discuss/>
         </main>
       </HelmetProvider>
     </>

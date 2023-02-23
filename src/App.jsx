@@ -1,7 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import Header from "./components/Header.jsx";
-import Footer from "./components/Footer.jsx";
 import { all_works } from "./js/data.jsx";
 
 const Home = lazy(() => import("./pages/Home.jsx"));
@@ -10,6 +9,7 @@ const Portfolio = lazy(() => import("./pages/Portfolio.jsx"));
 const Services = lazy(() => import("./pages/Services.jsx"));
 const About = lazy(() => import("./pages/About.jsx"));
 const Contacts = lazy(() => import("./pages/Contacts.jsx"));
+const Footer = lazy(() => import("./components/Footer.jsx"));
 const NotFound = lazy(() => import("./pages/NotFound.jsx"));
 
 export default function App() {

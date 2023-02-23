@@ -41,10 +41,6 @@
     animation: preloader-spin 1.5s linear infinite;
   }
 }
-// Global state
-.elem-is-hide {
-  display: none;
-}
 // Buttons (Common classes)
 .nav-item,
 .btn-tab {
@@ -118,8 +114,6 @@
     opacity: 0.7;
   }
 }
-// Footer
-
 /* Keyframes */
 // Preloader
 @keyframes preloader-spin {
@@ -235,6 +229,9 @@
   transition: all 1s ease-in-out;
   &.is-visible {
     opacity: 1;
+  }
+  &.rel {
+    position: relative;
   }
 }
 // Scroll
