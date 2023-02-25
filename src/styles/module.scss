@@ -184,6 +184,7 @@
   }
   > .message-input {
     border: none;
+    resize: none;
   }
 }
 .feedback-btn {
@@ -251,8 +252,12 @@
   > .work-desc-title {
     font-size: 1.375rem;
     line-height: 24px;
-    // margin-bottom: 15px;
+    margin-bottom: 10px;
   }
+}
+// LazyLoad work-desc
+.wdl { 
+  opacity: 0;
 }
 // Project
 .project-img {

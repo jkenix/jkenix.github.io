@@ -6,7 +6,6 @@ import mail_form from "../img/mail-form.webp";
 export default function Discuss() {
   return (
     <>
-      <section className="l-feni-discuss-project">
         <div className="l-fdp-content l-feni-section l-fm">
           <div className="fdp-content-info">
             <h2 className="fdp-title section-title">Обсудить проект</h2>
@@ -29,7 +28,7 @@ export default function Discuss() {
               </label>
               <input
                 type="text"
-                name="your-name"
+                id="your-name"
                 size="40"
                 className="form-input"
                 aria-required="true"
@@ -44,7 +43,7 @@ export default function Discuss() {
               </label>
               <input
                 type="tel"
-                name="your-phone"
+                id="your-phone"
                 size="40"
                 className="form-input"
                 aria-required="true"
@@ -59,7 +58,7 @@ export default function Discuss() {
               </label>
               <input
                 type="email"
-                name="your-email"
+                id="your-email"
                 size="30"
                 className="form-input"
                 aria-required="true"
@@ -97,7 +96,6 @@ export default function Discuss() {
             </div>
           </form>
         </div>
-      </section>
     </>
   );
 }

@@ -205,6 +205,7 @@
   }
 }
 .l-footer-bottom {
+  margin-top: 60px;
   margin-right: 100px;
   margin-left: 30px;
   display: flex;
@@ -216,6 +217,8 @@
   }
   > .footer-link {
     text-decoration: underline;
+    padding-right: 10px;
+    margin-bottom: 0;
   }
   span,
   a {

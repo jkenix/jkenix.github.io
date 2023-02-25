@@ -16,3 +16,8 @@ export function NavActive() {
     }
   };
 }
+// window.onresize = function (event) {
+//   if (window.innerWidth > 768) {
+    
+//   }
+// };

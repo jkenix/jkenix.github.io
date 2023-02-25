@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
+
 import { TabList_portfolio } from "../js/data.jsx";
 import UpBtn from "../components/UpBtn.jsx";
+import ScrollToTop from "../components/ScrollToTop.jsx";
 
 export default function Portfolio(props) {
   const [currentTab, setCurrentTab] = useState(props.tabid);
@@ -25,6 +28,13 @@ export default function Portfolio(props) {
             content={`Feni Design портфолио - ${props.tablabel}`}
           />
         </Helmet>
+        <motion.div
+          style={{ overflow: "hidden" }}
+          initial={{ y: -100, opacity: 0}}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: 100, opacity: 0 }}>
+            
+          </motion.div>
         <main className="l-main">
           <section className="l-portfolio">
             <div className="l-port-section-title">
@@ -58,6 +68,7 @@ export default function Portfolio(props) {
             })}
           </section>
         </main>
+        <ScrollToTop/>
       </HelmetProvider>
     </>
   );

@@ -28,13 +28,13 @@ export default function Footer() {
               Бриф на разработку стиля
             </Link>
             <Link to="/" className="footer-link">
-              Бриф на разработку призентации
+              Бриф на разработку презентации
             </Link>
             <Link to="/" className="footer-link">
               Бриф на разработку логотипа
             </Link>
             <Link to="/" className="footer-link">
-              Бриф на разработку иллюстрации
+              Бриф на разработку креатива
             </Link>
           </div>
         </div>
@@ -48,10 +48,10 @@ export default function Footer() {
               Услуги и цены
             </Link>
             <Link to="/about" className="footer-link">
-              Brief for developing a presentation
+              Мы
             </Link>
             <Link to="/contacts" className="footer-link">
-              Logo design brief
+              Контакты
             </Link>
           </div>
         </div>
@@ -79,8 +79,22 @@ export default function Footer() {
           Creator Github Profile
         </a>
       </div>
-      <div className="l-footer-bottom" style={{justifyContent: "center", paddingTop: "10px"}}>
-        <span style={{textTransform: "uppercase", fontSize: "1.5rem", whiteSpace: "normal", lineHeight: "35px"}}>Web-site just for study!</span>
+      <div
+        className="l-footer-bottom"
+        style={{
+          justifyContent: "center",
+          marginTop: "30px",
+          textAlign: "center",
+        }}>
+        <span
+          style={{
+            textTransform: "uppercase",
+            fontSize: "1.5rem",
+            whiteSpace: "normal",
+            lineHeight: "35px",
+          }}>
+          Web-site just for study!
+        </span>
       </div>
     </footer>
   );

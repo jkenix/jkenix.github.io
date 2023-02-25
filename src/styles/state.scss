@@ -95,7 +95,7 @@
     animation: navaactive 1.5s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
     text-transform: uppercase;
     text-align: center;
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     font-weight: 500;
   }
 }
@@ -229,6 +229,9 @@
   transition: all 1s ease-in-out;
   &.is-visible {
     opacity: 1;
+    .work-desc {
+      opacity: 1;
+    }
   }
   &.rel {
     position: relative;
