@@ -1,6 +1,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackInjector = require("html-webpack-injector");
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 
 let mode = "development";
@@ -13,6 +14,7 @@ const plugins = [
     template: "./index.html",
     chunks: ["main"],
   }),
+  new HtmlWebpackInjector(),
   new ReactRefreshWebpackPlugin(),
 ];
 
