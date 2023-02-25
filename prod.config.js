@@ -5,7 +5,6 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const HtmlWebpackInjector = require("html-webpack-injector");
-const HtmlCriticalWebpackPlugin = require("html-critical-webpack-plugin");
 
 let mode = "production";
 let target = "browserslist";
@@ -18,27 +17,12 @@ const plugins = [
     chunks: ["main"],
   }),
   new HtmlWebpackInjector(),
-  new CompressionPlugin({
-    algorithm: "gzip",
-    test: /\.(js|css|html|svg)$/i,
-  }),
   new webpack.DefinePlugin({
     PRODUCTION: JSON.stringify(true),
   }),
-  new HtmlCriticalWebpackPlugin({
-    base: path.resolve(__dirname, "docs"),
-    src: "./index.html",
-    dest: "./index.html",
-    inline: true,
-    minify: true,
-    extract: true,
-    // width: 1920,
-    // height: 1080,
-    width: 320,
-    height: 565,
-    penthouse: {
-      blockJSRequests: false,
-    },
+  new CompressionPlugin({
+    algorithm: "gzip",
+    test: /\.(js|css|html|svg)$/i,
   }),
 ];
 
@@ -54,21 +38,21 @@ module.exports = {
       chunks: "all",
       maxInitialRequests: Infinity,
       minSize: 0,
-      cacheGroups: {
-        vendor: {
-          test: /[\\/]node_modules[\\/]/,
-          name(module) {
-            // получает имя, то есть node_modules/packageName/not/this/part.js
-            // или node_modules/packageName
-            const packageName = module.context.match(
-              /[\\/]node_modules[\\/](.*?)([\\/]|$)/
-            )[1];
-            // имена npm-пакетов можно, не опасаясь проблем, использовать
-            // в URL, но некоторые серверы не любят символы наподобие @
-            return `npm.${packageName.replace("@", "")}`;
-          },
-        },
-      },
+      // cacheGroups: {
+      //   vendor: {
+      //     test: /[\\/]node_modules[\\/]/,
+      //     name(module) {
+      //       // получает имя, то есть node_modules/packageName/not/this/part.js
+      //       // или node_modules/packageName
+      //       const packageName = module.context.match(
+      //         /[\\/]node_modules[\\/](.*?)([\\/]|$)/
+      //       )[1];
+      //       // имена npm-пакетов можно, не опасаясь проблем, использовать
+      //       // в URL, но некоторые серверы не любят символы наподобие @
+      //       return `npm.${packageName.replace("@", "")}`;
+      //     },
+      //   },
+      // },
     },
     // splitChunks: {
     //   chunks: "async",
@@ -93,27 +77,27 @@ module.exports = {
     // },
     minimizer: [
       "...",
-      new ImageMinimizerPlugin({
-        minimizer: {
-          implementation: ImageMinimizerPlugin.squooshMinify,
-          options: {
-            encodeOptions: {
-              mozjpeg: {
-                // That setting might be close to lossless, but it’s not guaranteed
-                // https://github.com/GoogleChromeLabs/squoosh/issues/85
-                quality: 80,
-              },
-              webp: {
-                quality: 80,
-              },
-              avif: {
-                // https://github.com/GoogleChromeLabs/squoosh/blob/dev/codecs/avif/enc/README.md
-                cqLevel: 0,
-              },
-            },
-          },
-        },
-      }),
+      // new ImageMinimizerPlugin({
+      //   minimizer: {
+      //     implementation: ImageMinimizerPlugin.squooshMinify,
+      //     options: {
+      //       encodeOptions: {
+      //         mozjpeg: {
+      //           // That setting might be close to lossless, but it’s not guaranteed
+      //           // https://github.com/GoogleChromeLabs/squoosh/issues/85
+      //           quality: 80,
+      //         },
+      //         webp: {
+      //           quality: 85,
+      //         },
+      //         avif: {
+      //           // https://github.com/GoogleChromeLabs/squoosh/blob/dev/codecs/avif/enc/README.md
+      //           cqLevel: 0,
+      //         },
+      //       },
+      //     },
+      //   },
+      // }),
       new ImageMinimizerPlugin({
         minimizer: {
           implementation: ImageMinimizerPlugin.svgoMinify,
