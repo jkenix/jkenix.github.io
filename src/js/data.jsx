@@ -202,6 +202,7 @@ export const presentations = [
     desc: "Da",
     category: "Презентация",
     client: ` ""`,
+    main_class: "fp-work-main",
   },
   {
     present_id: "2",
@@ -210,6 +211,7 @@ export const presentations = [
     desc: "Da",
     category: "Презентация",
     client: ` ""`,
+    main_class: "fp-work-focus fp-rtl",
   },
   {
     present_id: "3",
@@ -218,6 +220,7 @@ export const presentations = [
     desc: "Da",
     category: "Презентация",
     client: ` ""`,
+    main_class: "fp-work-mini",
   },
   {
     present_id: "4",
@@ -226,6 +229,7 @@ export const presentations = [
     desc: "Da",
     category: "Презентация",
     client: ` ""`,
+    main_class: "fp-work-mini",
   },
   {
     present_id: "5",
@@ -234,6 +238,7 @@ export const presentations = [
     desc: "Da",
     category: "Презентация",
     client: ` ""`,
+    main_class: "fp-work-focus fp-ltl",
   },
 ];
 export const creatives = [
@@ -248,7 +253,7 @@ export const creatives = [
   {
     creative_id: "2",
     main_src: `${img.Toystream}`,
-    title: "1",
+    title: "2",
     desc: "Креатив",
     category: "Креатив",
     client: `Арт-студия "Неон"`,
@@ -373,7 +378,7 @@ export const TabList_main = [
             <Link
               key={i}
               to={{ pathname: `/${present.title}` }}
-              className={"work-img-port work-img img__resp-block"}>
+              className={present.main_class + " work-img-port work-img img__resp-block"}>
               <LazyLoad offset={100}>
                 <>
                   <div className="work-desc wdl">
