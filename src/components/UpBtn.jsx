@@ -3,7 +3,7 @@ import React from "react";
 export default function UpBtn(props) {
   return (
     <>
-      <div className="l-up-btn l-feni-section" style={{height: `${props.height}`, marginTop: `${props.mtop}`}}>
+      <div className="l-up-btn btn-focus" style={{height: `${props.height}`, marginTop: `${props.mtop}`}}>
         <button
           className="up-btn btn-link btn-b55"
           title="Вверх"

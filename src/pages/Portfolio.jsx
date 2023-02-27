@@ -28,15 +28,11 @@ export default function Portfolio(props) {
             content={`Feni Design портфолио - ${props.tablabel}`}
           />
         </Helmet>
-        <motion.div
-          style={{ overflow: "hidden" }}
-          initial={{ y: -100, opacity: 0}}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: 100, opacity: 0 }}>
-            
-          </motion.div>
         <main className="l-main">
-          <section className="l-portfolio">
+          <motion.section
+            className="l-portfolio"
+            initial={{opacity: 0, height: "auto" }}
+            animate={{opacity: 1 }}>
             <div className="l-port-section-title">
               <h2 className="section-title">Наши работы</h2>
               <div className="port-works-tabs works-tabs">
@@ -66,9 +62,9 @@ export default function Portfolio(props) {
                 return null;
               }
             })}
-          </section>
+          </motion.section>
         </main>
-        <ScrollToTop/>
+        <ScrollToTop />
       </HelmetProvider>
     </>
   );

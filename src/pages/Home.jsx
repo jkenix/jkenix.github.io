@@ -41,7 +41,13 @@ export default function Home() {
               <h2 className="section-title">
                 Мы помогаем зарабатывать в интернете
               </h2>
-              <button className="btn-link btn-bw55">Обсудить проект</button>
+              <button
+                className="btn-link btn-bw55"
+                onClick={() => {
+                  document.getElementById("discuss").scrollIntoView();
+                }}>
+                Обсудить проект
+              </button>
             </div>
             <div className="fs-img img__resp-block">
               <img
@@ -53,29 +59,33 @@ export default function Home() {
               />
             </div>
           </motion.section>
-          <motion.section
-            className="l-feni-info l-feni-section l-fm"
-            initial={{ y: 200, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}>
+          <section className="l-feni-info l-feni-section l-fm">
             <span className="small-section">О нас</span>
-            <h2 className="feni-info-title section-title">
-              Мы онлайн дизайн студия, которая, помогает нашим клиентам по всему
-              миру получать осмысленный дизайн, создавая, значимые связи между
+            <motion.h2
+              className="feni-info-title section-title"
+              initial={{ y: 200, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}>
+              Мы онлайн дизайн студия, которая помогает нашим клиентам по всему
+              миру получать осмысленный дизайн, создавая значимые связи между
               людьми и брендами!
-            </h2>
-            <p className="feni-info-desc section-desc">
+            </motion.h2>
+            <motion.p
+              className="feni-info-desc section-desc"
+              initial={{ y: 200, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}>
               Выполняем проекты для ведущих веб-студий по всему миру в качестве
               субподрядчиков. Ключевой состав команды работает с момента
               основания компании. Мы гарантируем индивидуальный подход к каждому
               новому веб-сайту, логотипу, и/или фирменному стилю.
-            </p>
-          </motion.section>
-          <motion.section
-            className="l-feni-preview"
-            initial={{ y: 150, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}>
-            <div className="l-fp-section-title l-feni-section l-fm">
+            </motion.p>
+          </section>
+          <section className="l-feni-preview">
+            <motion.div
+              className="l-fp-section-title l-feni-section l-fm"
+              initial={{ y: 150, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}>
               <h2 className="fp-title section-title">Наши работы</h2>
               <div className="fp-works-tabs works-tabs">
                 {TabList_main.map((tab, i) => (
@@ -97,7 +107,7 @@ export default function Home() {
                   <img src={more} width={"25"} height={"8"} alt="more arrow" />
                 </Link>
               </div>
-            </div>
+            </motion.div>
             {TabList_main.map((tab, i) => {
               if (tab.name === currentTab) {
                 return (
@@ -106,7 +116,7 @@ export default function Home() {
                     key={i}>
                     {tab.content}
                     <Link
-                      className="btn-link btn-b55 l-feni-section"
+                      className="btn-link btn-b55 btn-focus"
                       to={"/portfolio/all_works"}
                       title="Все работы">
                       Все работы
@@ -117,7 +127,7 @@ export default function Home() {
                 return null;
               }
             })}
-          </motion.section>
+          </section>
           <motion.section
             className="l-feni-briefs l-feni-section l-fm"
             initial={{ y: 150, opacity: 0 }}
@@ -166,31 +176,25 @@ export default function Home() {
               </Link>
             </div>
           </motion.section>
-          <motion.section
-            className="l-feni-partners l-feni-section l-fm"
-            initial={{ y: 150, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}>
-            <div className="feni-partners-desc l-feni-section">
+          <section className="l-feni-partners l-feni-section l-fm">
+            <motion.div
+              className="feni-partners-desc l-feni-section"
+              initial={{ y: 150, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}>
               <h2 className="fp-title section-title">Клиенты</h2>
               <p className="fp-desc section-desc l-feni-section">
                 Гордимся сотрудничеством с лидерами своих отраслей и счастливы
                 быть их digital-партнером
               </p>
-            </div>
+            </motion.div>
             <div className="feni-partners-img img__rubber">
-              <LazyLoad height={540} offset={100}>
+              <LazyLoad className="fp-img" height={540} offset={100}>
                 <img src={partners} width="618" height="540" alt="clients" />
               </LazyLoad>
             </div>
-          </motion.section>
-          <motion.section
-            className="l-feni-discuss-project"
-            initial={{ y: 300, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}>
-            <Discuss />
-          </motion.section>
+          </section>
+          <Discuss />
         </main>
         <ScrollToTop />
       </HelmetProvider>

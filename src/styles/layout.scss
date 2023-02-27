@@ -1,6 +1,6 @@
 // Import mixins, variables
 @import "mixins_var.scss";
-/* Layout classes */
+/* === Layout classes === */
 .l-wrapper {
   max-width: 1920px;
   margin: 0 auto;
@@ -16,7 +16,7 @@
   height: 100vh;
   overflow: hidden;
 }
-// Header
+// === Header ===
 .l-header {
   padding-top: 30px;
   padding-right: 120px;
@@ -26,9 +26,10 @@
   display: flex;
   align-items: center;
 }
-// Main
+// === Main ===
 // Common classes
-.l-feni-section {
+.l-feni-section,
+.btn-focus {
   margin-left: auto;
   margin-right: auto;
 }
@@ -39,20 +40,14 @@
 .l-fm {
   max-width: 1110px;
 }
-// All blocks main
+// === All blocks main ===
 .l-main {
   padding-top: 100px;
 }
-// Home
+//  === Home ===
 // Feni-start
 .l-feni-hi {
   margin-bottom: 50px;
-  .fh-title {
-    font-weight: 800;
-    font-size: 2.813rem;
-    line-height: 145%;
-    letter-spacing: 0.05em;
-  }
   .section-title {
     padding-top: 20px;
     padding-bottom: 41px;
@@ -134,8 +129,15 @@
     margin-bottom: 100px;
     width: 70%;
   }
+  .fp-desc {
+    width: 64%;
+    padding-top: 25px;
+  }
   > .feni-partners-img {
     justify-content: center;
+    > .fp-img {
+      width: auto;
+    }
   }
 }
 // Discuss Project
@@ -149,6 +151,14 @@
   padding-left: 100px;
   > .fdp-content-info {
     width: 35%;
+    > .fdp-desc {
+      padding-top: 25px;
+    }
+  }
+  .form-img {
+    position: absolute;
+    left: -130px;
+    bottom: 0px;
   }
   > .fdp-content-form {
     display: flex;
@@ -159,8 +169,7 @@
     z-index: 6;
   }
 }
-
-// Portfolio
+// === Portfolio ===
 .l-portfolio {
   margin-bottom: 50px;
 }
@@ -172,14 +181,96 @@
     text-align: center;
   }
 }
-// Project
+// Up btn
+.l-up-btn {
+  display: flex;
+  justify-content: center;
+}
+// === Project ===
 .l-main-project {
   padding-top: 20px;
+  > .project-img {
+    // height: 484px;
+    max-width: 100%;
+    justify-content: center;
+    > img {
+      // width: 100%;
+      width: auto;
+      object-fit: cover;
+    }
+  }
+  > .project-content {
+    padding-top: 40px;
+    padding-left: 245px;
+    max-width: 1110px;
+    > .project-desc {
+      max-width: 65%;
+      margin: 0 auto 0 0;
+    }
+  }
 }
-// Services
-// About
-// Contacts
-// Footer
+// === Services ===
+.l-feni-services {
+  padding-bottom: 100px;
+}
+// === About ===
+.l-feni-about {
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.l-fa-title {
+  padding-right: 51px;
+}
+.l-fa-desc {
+  max-width: 665px;
+  > p:nth-child(2) {
+    padding-top: 40px;
+  }
+}
+.l-feni-about-skills {
+  flex-wrap: wrap;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 100px;
+}
+.l-skill-content {
+  transition: all ease 0.5s;
+  // max-width: 235px;
+  width: 22%;
+  > .skill-title {
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+}
+.btn-fa {
+  margin-bottom: 100px;
+  > span {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+// === Contacts ===
+.l-feni-contacts {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 100px;
+  justify-content: center;
+  > .fcon-img {
+    max-width: 504px;
+  }
+  .contacts-link {
+    padding-top: 10px;
+  }
+  .contact-info.num {
+    margin-top: 40px;
+  }
+}
+// === Footer ===
 .l-footer {
   padding-top: 70px;
   padding-bottom: 40px;
@@ -220,15 +311,25 @@
     padding-right: 10px;
     margin-bottom: 0;
   }
-  span,
-  a {
+  > span,
+  > a {
     font-size: 0.75rem;
     line-height: 15px;
     white-space: nowrap;
   }
 }
-// Up btn
-.l-up-btn {
-  display: flex;
-  justify-content: center;
+// === Not found ===
+.l-not-found {
+  padding-left: 80px;
+  padding-bottom: 100px;
+  row-gap: 50px;
+  > .fnf-content {
+    max-width: 276px;
+    > .fnf-title {
+      margin-bottom: 50px;
+    }
+  }
+  .btn-fnf {
+    margin-left: 0;
+  }
 }

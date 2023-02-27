@@ -1,5 +1,7 @@
-import React from "react";
+import React, {lazy} from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { motion } from "framer-motion";
+const Discuss = lazy(() => import("../components/Discuss.jsx"));
 
 export default function Services() {
   return (
@@ -16,9 +18,13 @@ export default function Services() {
           <meta name="description" content="Закажи услугу у Feni Design" />
         </Helmet>
         <main className="l-main">
-        <div className="l-feni-section l-fm">
+          <motion.section
+            className="l-feni-services l-feni-section l-fm"
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}>
             В процессе...
-          </div>
+          </motion.section>
+          <Discuss />
         </main>
       </HelmetProvider>
     </>

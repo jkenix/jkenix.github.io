@@ -2,7 +2,7 @@
 @import "mixins_var.scss";
 // Section title, desc
 .section-title {
-  font-size: 2.5rem;
+  font-size: 1.875rem;
   font-weight: 500;
   line-height: 145%;
   letter-spacing: 0.02em;
@@ -16,6 +16,13 @@
   font-size: 1rem;
   line-height: 185%;
   letter-spacing: 0.02em;
+}
+// H1
+.fh-title {
+  font-weight: 800;
+  font-size: 2.813rem;
+  line-height: 145%;
+  letter-spacing: 0.05em;
 }
 /* Header*/
 .logo {
@@ -97,9 +104,6 @@
     margin-left: auto;
   }
 }
-.fp-ltl > .work-desc {
-  left: 50px;
-}
 // Common classes (Home/Portfolio)
 .works-tabs {
   display: flex;
@@ -117,10 +121,10 @@
   display: flex;
   transition: all ease 0.5s;
   > .fb-count,
-  .fb-title {
+  > .fb-title {
     padding-right: 30px;
   }
-  .fb-count {
+  > .fb-count {
     line-height: 18px;
   }
   > .fb-title {
@@ -144,25 +148,7 @@
     }
   }
 }
-// Partners
-.feni-partners-desc > .fp-desc {
-  width: 64%;
-  padding-top: 25px;
-}
-.feni-partners-img .LazyLoad {
-  width: auto;
-}
 // Discuss Project
-.form-img {
-  position: absolute;
-  left: -100px;
-  bottom: 0px;
-}
-.fdp-content-info {
-  > .fdp-desc {
-    padding-top: 25px;
-  }
-}
 .feedback-row {
   width: 100%;
   margin-bottom: 30px;
@@ -255,33 +241,20 @@
     margin-bottom: 10px;
   }
 }
-// LazyLoad work-desc
-.wdl { 
-  opacity: 0;
-}
 // Project
-.project-img {
-  // height: 484px;
-  max-width: 100%;
-  justify-content: center;
-  img {
-    // width: 100%;
-    width: auto;
-    object-fit: cover;
+
+// Services
+// Contacts
+.contacts-link {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 145%;
+  letter-spacing: 0.02em;
+  &:hover,
+  &:focus-visible {
+    color: $ff5;
   }
 }
-.project-content {
-  padding-top: 40px;
-  padding-left: 245px;
-  max-width: 1110px;
-}
-.project-desc {
-  max-width: 65%;
-  margin: 0 auto 0 0;
-}
-// Services
-// About
-// Contacts
 // Footer
 .footer-logo img {
   background-color: #f5f5f5;
@@ -292,12 +265,16 @@
   display: flex;
   flex-direction: column;
 }
+// Common classes
 .footer-link {
   font-size: 0.75rem;
   line-height: 185%;
   letter-spacing: 0.02em;
+  &:hover,
+  &:focus-visible {
+    color: $ff5;
+  }
 }
-// Common classes
 .footer-links-title,
 .footer-link {
   margin-bottom: 20px;

@@ -7,7 +7,7 @@ body {
 }
 // Backgrounds
 
-// Buttons common classes
+// === Buttons common classes ===
 .btn-b55 {
   color: $wff;
   background-color: $b55;
@@ -37,7 +37,7 @@ body {
 .btn-ff42 {
   border: 2px solid $ff42;
 }
-// Main btn
+// === Home/Portfolio btn ===
 .btn-tab {
   background-color: $we5;
   color: $b1;
@@ -56,7 +56,7 @@ body {
 .small-section {
   color: $b1;
 }
-// Header
+// === Header ===
 .l-header {
   background-color: $we5;
 }
@@ -74,7 +74,7 @@ body {
     color: $wff;
   }
 }
-// Main
+// === Main ===
 .l-main {
   background-color: $we5;
 }
@@ -96,7 +96,7 @@ body {
     }
   }
 }
-// Discuss
+// === Discuss ===
 .l-feni-discuss-project {
   background-color: $b55;
 }
@@ -146,7 +146,15 @@ body {
     color: $we5;
   }
 }
-// Footer
+// === About ===
+.skill-num {
+  color: $ff5;
+}
+// === Contacts ===
+.contacts-link {
+  color: $b1;
+}
+// === Footer ===
 .l-footer {
   background-color: $b1;
 }
@@ -160,10 +168,4 @@ body {
 .l-footer-bottom > span,
 .l-footer-bottom > .footer-link {
   color: $we5;
-}
-.l-footer-bottom > .footer-link {
-  &:hover,
-  &:focus-visible {
-    color: $ff5;
-  }
 }

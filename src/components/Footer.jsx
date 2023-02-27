@@ -25,7 +25,7 @@ export default function Footer() {
               Бриф на разработку веб дизайна
             </Link>
             <Link to="/" className="footer-link">
-              Бриф на разработку стиля
+              Бриф на разработку айдентики
             </Link>
             <Link to="/" className="footer-link">
               Бриф на разработку презентации
@@ -58,8 +58,8 @@ export default function Footer() {
         <div className="fc-links">
           <h3 className="footer-links-title small-section">Контакты</h3>
           <div className="footer-links">
-            <a href="mailto:hello@whalesagency.com" className="footer-link">
-              hello@whalesagency.com
+            <a href="mailto:feni@studio.com" className="footer-link">
+              feni@studio.com
             </a>
             <a href="tel:+7-963-728-66-90" className="footer-link">
               +79637286690

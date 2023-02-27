@@ -1,18 +1,16 @@
 // Import mixins
 @import "mixins_var.scss";
 /* Media styles */
-// 1921+ px
-@media (min-width: 1921px) {
-}
 // 1400px
 @media (max-width: 1399.98px) {
+  // === Header ===
   .header-menu > .nav-item {
     margin-right: 35px;
   }
-  // Main
+  // === Main ===
   .l-main {
   }
-  // Footer
+  // === Footer ===
   .l-footer-content {
     padding-left: 30px;
     padding-right: 30px;
@@ -20,6 +18,7 @@
 }
 // 1200px
 @media (max-width: 1199.98px) {
+  // === Header ===
   .l-header {
     padding-left: 85px;
     padding-right: 85px;
@@ -27,8 +26,8 @@
   .btn-head {
     width: 140px;
   }
-  // Main
-  // Home
+  // === Main ===
+  // === Home ===
   // Feni-preview
   .l-fp-section-title {
     width: initial;
@@ -44,18 +43,25 @@
     margin-right: 10px;
     margin-left: 10px;
   }
-  // Portfolio
+  // === Portfolio ===
   .port-works-tabs {
     padding-left: 40px;
     > .btn-tab {
       margin-right: 35px;
     }
   }
-  // Project
+  // === Project ===
   .project-content {
     padding-left: 150px;
   }
-  // Footer
+  // === About ===
+  .l-feni-about-skills {
+    row-gap: 20px;
+  }
+  .l-skill-content {
+    width: 45%;
+  }
+  // === Footer ===
   .l-footer-content > .fc-first {
     width: 15%;
   }
@@ -67,7 +73,7 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-  // Header
+  // === Header ===
   .logo {
     margin-right: 25px;
   }
@@ -83,12 +89,12 @@
       margin-right: 35px;
     }
   }
-  // Main
+  // === Main ===
   // Common class
   .works-tabs > .btn-tab {
     margin-right: 19px;
   }
-  // Home
+  // === Home ===
   // Feni preview
   .l-fp-section-title {
     margin-left: 20px;
@@ -115,7 +121,7 @@
   }
   // Common classes (fp, port)
   .works-content {
-    row-gap: 20px;
+    row-gap: 10px;
   }
   // Briefs
   .l-feni-briefs {
@@ -143,10 +149,10 @@
     padding-top: 20px;
   }
   // Partners
-  .feni-partners-desc > .fp-desc {
+  .l-feni-partners .fp-desc {
     width: 100%;
   }
-  // Discuss
+  // === Discuss ===
   .l-fdp-content {
     align-items: center;
     flex-direction: column;
@@ -180,13 +186,17 @@
   .checkbox-row {
     display: none;
   }
-  // Portfolio
+  // === Portfolio ===
   .work-img-port {
     width: 50%;
   }
-  // Project
+  // === Project ===
   .project-content {
     padding-left: 100px;
+  }
+  // === Contacts ===
+  .l-feni-contacts {
+    flex-direction: column;
   }
   // Footer
   // Optional
@@ -197,6 +207,17 @@
   //     width: 15%;
   //   }
   // }
+  // === Not Found ===
+  .l-not-found {
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0;
+    justify-content: center;
+    text-align: center;
+    .btn-fnf {
+      margin-left: auto;
+    }
+  }
 }
 // 768px
 @media (max-width: 767.98px) {
@@ -205,7 +226,7 @@
   .fb-info > .fb-title {
     font-size: 2rem;
   }
-  // Header
+  // === Header ===
   .header-menu {
     > .nav-item {
       margin-right: 0;
@@ -222,14 +243,14 @@
     position: absolute;
     right: 0;
   }
-  // Main
+  // === Main ===
   // Common classes
   .l-feni-info,
   .l-feni-briefs,
   .l-fdp-content {
     padding-left: 35px;
   }
-  // Home
+  // === Home ===
   // Feni-hi
   .l-feni-hi {
     padding-left: 35px;
@@ -258,11 +279,11 @@
       margin-left: 6px;
     }
   }
-  // Discuss
+  // === Discuss ===
   .l-fdp-content {
     padding-right: 30px;
   }
-  // Portfolio
+  // === Portfolio ===
   .port-works-tabs {
     flex-wrap: wrap;
     justify-content: start;
@@ -276,7 +297,23 @@
   .work-img-port {
     width: 100%;
   }
-  // Footer
+  // === About ===
+  .l-feni-about {
+    padding-left: 35px;
+    padding-right: 20px;
+  }
+  .fa-desc {
+    max-width: 94%;
+  }
+  .l-feni-about-skills {
+    justify-content: center;
+    padding-left: 35px;
+    padding-right: 50px;
+  }
+  .l-skill-content {
+    width: 100%;
+  }
+  // === Footer ===
   .l-footer-content {
     justify-content: flex-start;
     > .fc-first {
@@ -288,6 +325,7 @@
 @media (max-width: 575.98px) {
   .l-main {
   }
+  // === Main ===
   // Feni info
   .l-feni-info > .feni-info-title {
     font-size: 1.2rem;
@@ -296,14 +334,14 @@
   .l-feni-partners > .feni-partners-desc {
     width: 90%;
   }
-  // Project
+  // === Project ===
   .project-content {
     padding-left: 20px;
     > .project-desc {
       max-width: 90%;
     }
   }
-  // Dicuss
+  // === Dicuss ===
   .l-fdp-content > .fdp-content-form {
     width: 80%;
   }

@@ -1,11 +1,11 @@
 // Import mixins, variables
 @import "mixins_var.scss";
 /* State of modules and site skeleton */
-// Body
+// === Body ===
 .overflow-is-hidden {
   overflow: hidden;
 }
-// Preloader
+// === Preloader ===
 .preloader-content {
   display: block;
   position: relative;
@@ -41,14 +41,14 @@
     animation: preloader-spin 1.5s linear infinite;
   }
 }
-// Buttons (Common classes)
+// === Buttons (Common classes) ===
 .nav-item,
 .btn-tab {
   &.active {
     color: $ff5;
   }
 }
-// Header
+// === Header ===
 .head-is-switch {
   background-color: $b55;
   .logo {
@@ -103,7 +103,7 @@
   pointer-events: none;
   cursor: default;
 }
-// Main
+// === Main ===
 // Fproject, Portfolio
 .btn-tab.active {
   text-decoration: underline;
@@ -114,7 +114,11 @@
     opacity: 0.7;
   }
 }
-/* Keyframes */
+// LazyLoad work-desc
+.wdl { 
+  opacity: 0;
+}
+/* === Keyframes === */
 // Preloader
 @keyframes preloader-spin {
   0% {
@@ -222,7 +226,7 @@
     transform: translate(0, 18px) scale(1);
   }
 }
-// Lazyload
+// === Lazyload ===
 .LazyLoad {
   width: 100%;
   opacity: 0;
