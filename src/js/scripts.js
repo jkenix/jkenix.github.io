@@ -10,14 +10,11 @@ export function NavActive() {
   header.classList.toggle("head-is-switch");
   headermenu.classList.toggle("nav-is-active");
 
-  headermenu.onclick = function () {
-    if (window.innerWidth < 768) {
+  headermenu.addEventListener("click", function () {
+    var currentTarget = event.target;
+    // If click A elem - close menu
+    if (currentTarget.tagName === "A") {
       NavActive();
     }
-  };
+  });
 }
-// window.onresize = function (event) {
-//   if (window.innerWidth > 768) {
-    
-//   }
-// };
