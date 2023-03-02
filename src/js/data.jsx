@@ -10,88 +10,88 @@ const list_port_visible_size = 6;
 export const logos = [
   {
     logo_id: "1",
-    main_src: `${img.Toystream}`,
-    title: "1",
-    desc: "1",
+    main_src: `${img.scastle}`,
+    title: "Strong Castle",
+    desc: `Стильный логотип для отражения сути компании "Strong Castle"`,
     category: "Логотип",
-    client: `Компания "Пень Продакшн"`,
+    client: `Компания "Strong Castle"`,
     main_class: "fp-work-main",
   },
   {
     logo_id: "2",
-    main_src: `${img.Toystream}`,
-    title: "2",
-    desc: "2",
+    main_src: `${img.lion}`,
+    title: "Lion Games",
+    desc: `Логотип по заказу игрового клуба "Lion Games"`,
     category: "Логотип",
-    client: `Салон красоты "Марьяна"`,
+    client: `Игровой клуб "Lion Games"`,
     main_class: "fp-work-focus fp-rtl",
   },
   {
     logo_id: "3",
-    main_src: `${img.Toystream}`,
-    title: "3",
-    desc: "3",
+    main_src: `${img.bravo}`,
+    title: "Браво",
+    desc: `Логотип по заказу Веб-студии "Браво", призывающий мыслить!`,
     category: "Логотип",
     client: `Веб-студия "Браво"`,
     main_class: "fp-work-mini",
   },
   {
     logo_id: "4",
-    main_src: `${img.Toystream}`,
-    title: "4",
-    desc: "4",
+    main_src: `${img.cat_artio}`,
+    title: "Cat Artio",
+    desc: `Логотип по заказу Арт-студии "Cat Artio" с говорящим названием!`,
     category: "Логотип",
-    client: `Веб-студия "Браво"`,
+    client: `Арт-студия "Cat Artio"`,
     main_class: "fp-work-mini",
   },
   {
     logo_id: "5",
-    main_src: `${img.Toystream}`,
-    title: "5",
-    desc: "5",
+    main_src: `${img.dborn}`,
+    title: "Dragon Born Studio",
+    desc: `Логотип по заказу Игровой студии "Dragon Born Studio", от которого веет огнём интереса в разработке качественных видеоигр!`,
     category: "Логотип",
-    client: `Компания "Бстрострой"`,
+    client: `Игровая студия "Dragon Born Studio"`,
     main_class: "fp-work-focus fp-ltl",
   },
   {
     logo_id: "6",
-    main_src: `${img.Toystream}`,
-    title: "6",
-    desc: "Da",
+    main_src: `${img.adv_borjor}`,
+    title: "Борик и Жорик",
+    desc: `Логотип по заказу Адвокатская контора "Борик и Жорик" с древним вершителем правосудия.`,
     category: "Логотип",
-    client: ` ""`,
+    client: `Адвокатская контора "Борик и Жорик"`,
   },
   {
     logo_id: "7",
-    main_src: `${img.Toystream}`,
-    title: "7",
-    desc: "Da",
+    main_src: `${img.mariana}`,
+    title: "Салон красоты - Марьяна",
+    desc: `Необычный логотип по заказу салона красоты "Марьяна"`,
     category: "Логотип",
-    client: ` ""`,
+    client: `Салон красоты "Марьяна"`,
   },
   {
     logo_id: "8",
-    main_src: `${img.Toystream}`,
-    title: "8",
-    desc: "Da",
+    main_src: `${img.dwalley}`,
+    title: "Dragon Walley",
+    desc: `Логотип по заказу команды "Dragon Walley" с говорящим названием!`,
     category: "Логотип",
-    client: ` ""`,
+    client: `Команда иллюстраторов "Dragon Walley"`,
   },
   {
     logo_id: "9",
-    main_src: `${img.Toystream}`,
-    title: "9",
-    desc: "Da",
+    main_src: `${img.bsibir}`,
+    title: "Bunny Sibirian",
+    desc: `Логотип для популярной сибирской студии "Bunny Sibirian"`,
     category: "Логотип",
-    client: ` ""`,
+    client: `Компания "Bunny Sibirian"`,
   },
   {
     logo_id: "10",
-    main_src: `${img.Toystream}`,
-    title: "10",
-    desc: "Da",
+    main_src: `${img.wpalace}`,
+    title: "White palace",
+    desc: `Логотип по заказу студии веб-дизайна "White palace"`,
     category: "Логотип",
-    client: ` ""`,
+    client: `Студия веб-дизайна "White palace"`,
   },
 ];
 export const websites = [
@@ -99,7 +99,7 @@ export const websites = [
     web_id: "1",
     main_src: `${img.Toystream}`,
     title: "Toystream",
-    desc: "Сайт игровой студии Toystream, сделанный так, чтобы привлекать самых желанных клиентов по всему миру.",
+    desc: `Сайт игровой студии "Toystream", сделанный так, чтобы привлекать самых желанных клиентов по всему миру.`,
     category: "Веб-сайт",
     client: `Игровая студия "Toystream"`,
     main_class: "fp-work-main",
@@ -108,7 +108,7 @@ export const websites = [
     web_id: "2",
     main_src: `${img.Sequoia}`,
     title: "Sequoia",
-    desc: "Сайт веб-агенства Sequoia. Комплексное решение для бизнеса по цене одного сотрудника!",
+    desc: `Сайт веб-агенства "Sequoia". Комплексное решение для бизнеса по цене одного сотрудника!`,
     category: "Веб-сайт",
     client: `Веб-агенство "Sequoia"`,
     main_class: "fp-work-focus fp-rtl",
@@ -117,172 +117,167 @@ export const websites = [
     web_id: "3",
     main_src: `${img.Marico}`,
     title: "Marico",
-    desc: "Сервис Marico - анализатор аудитории веб-сайта.",
+    desc: `Сервис "Marico" - анализатор аудитории веб-сайта.`,
     category: "Веб-сайт",
     client: `Сервис "Marico"`,
     main_class: "fp-work-mini",
   },
 ];
-export const style = [
+export const styles = [
   {
     style_id: "1",
-    main_src: `${img.Toystream}`,
-    title: "1",
-    desc: "Da",
-    category: "Стиль",
-    client: ` ""`,
+    main_src: `${img.center_agency}`,
+    title: "Агенство Центр",
+    desc: `Обзорный пакет фирменного стиля для агенства "Центр"!`,
+    category: "Фирменный Стиль",
+    client: `Агенство "Центр"`,
     main_class: "fp-work-main",
   },
   {
     style_id: "2",
-    main_src: `${img.Toystream}`,
-    title: "2",
-    desc: "Da",
-    category: "Стиль",
-    client: ` ""`,
+    main_src: `${img.emi}`,
+    title: `Emi`,
+    desc: `Обзорный пакет фирменного стиля продукции для компании "Emi"!`,
+    category: "Фирменный Стиль",
+    client: `Компания "Emi"`,
     main_class: "fp-work-focus fp-rtl",
   },
   {
     style_id: "3",
-    main_src: `${img.Toystream}`,
-    title: "3",
-    desc: "Da",
-    category: "Стиль",
-    client: ` ""`,
+    main_src: `${img.boni_kutusu}`,
+    title: "Boni Kutusu",
+    desc: `Обзорный пакет фирменного стиля продукции для компании "Boni Kutusu"!`,
+    category: "Фирменный Стиль",
+    client: `Компания "Boni Kutusu"`,
     main_class: "fp-work-mini",
   },
   {
     style_id: "4",
-    main_src: `${img.Toystream}`,
-    title: "4",
-    desc: "Da",
-    category: "Стиль",
-    client: ` ""`,
-    main_class: "fp-work-mini",
-  },
-  {
-    style_id: "5",
-    main_src: `${img.Toystream}`,
-    title: "5",
-    desc: "Da",
-    category: "Стиль",
-    client: ` ""`,
-    main_class: "fp-work-focus fp-ltl",
-  },
-  {
-    style_id: "6",
-    main_src: `${img.Toystream}`,
-    title: "6",
-    desc: "Da",
-    category: "Стиль",
-    client: ` ""`,
-  },
-  {
-    style_id: "7",
-    main_src: `${img.Toystream}`,
-    title: "7",
-    desc: "Da",
-    category: "Стиль",
-    client: ` ""`,
-  },
-  {
-    style_id: "8",
-    main_src: `${img.Toystream}`,
-    title: "8",
-    desc: "Da",
-    category: "Стиль",
-    client: ` ""`,
+    main_src: `${img.hotuas}`,
+    title: "Хоту Ас",
+    desc: `Обзорный пакет фирменного стиля продукции для сибирской компании "Хоту Ас"!`,
+    category: "Фирменный Стиль",
+    client: `Компания "Хоту Ас"`,
+    main_class: "fp-work-main",
   },
 ];
 export const illustrations = [
   {
     ill_id: "1",
-    main_src: `${img.Toystream}`,
-    title: "1",
-    desc: "Da",
+    main_src: `${img.akva_dragon}`,
+    title: "Аква дракон",
+    desc: `Демонстративное изображение от художника из "Feni Design Studio"`,
     category: "Иллюстрация",
-    client: ` ""`,
+    client: `Студия веб-дизайна "Feni Design Studio"`,
     main_class: "fp-work-main",
   },
   {
     ill_id: "2",
-    main_src: `${img.Toystream}`,
-    title: "2",
-    desc: "Da",
+    main_src: `${img.andro_fly}`,
+    title: "Speed Sibirian",
+    desc: `Изображение для приложения компании "Speed Sibirian"`,
     category: "Иллюстрация",
-    client: ` ""`,
+    client: `Компания "Speed Sibirian"`,
     main_class: "fp-work-focus fp-rtl",
   },
   {
     ill_id: "3",
-    main_src: `${img.Toystream}`,
-    title: "3",
-    desc: "Da",
+    main_src: `${img.bay}`,
+    title: "Bay Adventure",
+    desc: `Изображение для игры "Bay Adventure" от компании "Lorem Drion"`,
     category: "Иллюстрация",
-    client: ` ""`,
+    client: `Игровая студия "Lorem Drion"`,
     main_class: "fp-work-mini",
   },
   {
     ill_id: "4",
-    main_src: `${img.Toystream}`,
-    title: "4",
-    desc: "Da",
+    main_src: `${img.cman}`,
+    title: "Woody eater",
+    desc: `Изображение для игры "Woody eater" от компании "Orphan Games"`,
+    category: "Иллюстрация",
+    client: `Игровая студия "Orphan Games"`,
+    main_class: "fp-work-mini",
+  },
+  {
+    ill_id: "5",
+    main_src: `${img.elephants}`,
+    title: "Elephants",
+    desc: `Демонстративное изображение от художника из "Feni Design Studio"`,
+    category: "Иллюстрация",
+    client: `Студия веб-дизайна "Feni Design Studio"`,
+    main_class: "fp-work-focus fp-ltl",
+  },
+  {
+    ill_id: "6",
+    main_src: `${img.ushi_dragon}`,
+    title: "Dragon Ushi",
+    desc: `Изображение для игры "Dragon Ushi" от компании "Bay Sorian"`,
+    category: "Иллюстрация",
+    client: `Игровая студия "Bay Sorian"`,
+  },
+  {
+    ill_id: "7",
+    main_src: `${img.velo_fun}`,
+    title: "ВелоФан",
+    desc: `Промо-изображение для компании "ВелоФан"`,
+    category: "Иллюстрация",
+    client: `Компания "ВелоФан"`,
+  },
+  {
+    ill_id: "8",
+    main_src: `${img.wild}`,
+    title: "Природа",
+    desc: `Демонстративное изображение от художника из "Feni Design Studio"`,
     category: "Иллюстрация",
     client: ` ""`,
-    main_class: "fp-work-main",
   },
 ];
 export const presentations = [
   {
     present_id: "1",
-    main_src: `${img.Toystream}`,
-    title: "1",
-    desc: "Da",
+    main_src: `${img.break_company}`,
+    title: "Break",
+    desc: `Готовый пакет презентаций для компании "Break"`,
     category: "Презентация",
-    client: ` ""`,
-    main_class: "fp-work-main",
+    client: `Компания "Break"`,
   },
   {
     present_id: "2",
-    main_src: `${img.Toystream}`,
-    title: "2",
-    desc: "Da",
+    main_src: `${img.ofan}`,
+    title: "Ofan",
+    desc: `Готовый дизайн презентации для компании "Ofan"`,
     category: "Презентация",
-    client: ` ""`,
-    main_class: "fp-work-focus fp-rtl",
+    client: `Компания "Ofan"`,
   },
   {
     present_id: "3",
-    main_src: `${img.Toystream}`,
-    title: "3",
-    desc: "Da",
+    main_src: `${img.officeo}`,
+    title: "Officeo",
+    desc: `Готовый пакет презентаций для компании "Officeo"`,
     category: "Презентация",
-    client: ` ""`,
-    main_class: "fp-work-mini",
+    client: `Компания "Officeo"`,
   },
   {
     present_id: "4",
-    main_src: `${img.Toystream}`,
-    title: "4",
-    desc: "Da",
+    main_src: `${img.peddle}`,
+    title: "Peddle",
+    desc: `Готовый пакет презентаций для компании "Peddle"`,
     category: "Презентация",
-    client: ` ""`,
-    main_class: "fp-work-mini",
+    client: `Компания "Peddle"`,
   },
   {
     present_id: "5",
-    main_src: `${img.Toystream}`,
-    title: "5",
-    desc: "Da",
+    main_src: `${img.wake}`,
+    title: "Wake",
+    desc: `Готовый пакет презентаций для компании "Wake"`,
     category: "Презентация",
-    client: ` ""`,
-    main_class: "fp-work-focus fp-ltl",
+    client: `Компания "Wake"`,
   },
 ];
 export const all_works = [
   ...websites,
   ...logos,
-  ...style,
+  ...styles,
   ...presentations,
   ...illustrations,
 ];
@@ -357,11 +352,11 @@ export const TabList_main = [
   {
     name: "tab3",
     label: "Фирменный стиль",
-    path: "/style",
-    num: 8,
+    path: "/styles",
+    num: 4,
     content: (
       <>
-        {style.slice(0, list_main_size).map((styles, i) => (
+        {styles.slice(0, list_main_size).map((styles, i) => (
           <React.Fragment key={i}>
             <Link
               key={i}
@@ -390,7 +385,7 @@ export const TabList_main = [
     name: "tab4",
     label: "Иллюстрации",
     path: "/illustrations",
-    num: 4,
+    num: 8,
     content: (
       <>
         {illustrations.slice(0, list_main_size).map((ill, i) => (
@@ -561,11 +556,11 @@ export const TabList_portfolio = [
   {
     name: "tab4",
     label: "Фирменный стиль",
-    path: "/style",
-    num: 8,
+    path: "/styles",
+    num: 4,
     content: (
       <>
-        {style.slice(0, list_port_visible_size).map((styles, i) => (
+        {styles.map((styles, i) => (
           <React.Fragment key={i}>
             <Link
               key={i}
@@ -587,28 +582,6 @@ export const TabList_portfolio = [
             </Link>
           </React.Fragment>
         ))}
-        {style.slice(6).map((styles, i) => (
-          <React.Fragment key={i}>
-            <Link
-              key={i}
-              to={{ pathname: `/${styles.title}` }}
-              className={"work-img-port work-img img__resp-block"}>
-              <LazyLoad height={321} offset={100}>
-                <>
-                  <div className="work-desc">
-                    <h3 className="work-desc-title">{styles.title}</h3>
-                    <p className="work-desc-info feni-section-desc">
-                      {styles.category}
-                    </p>
-                  </div>
-                  <img
-                    src={"../" + `${styles.main_src}`}
-                    alt={styles.title}></img>
-                </>
-              </LazyLoad>
-            </Link>
-          </React.Fragment>
-        ))}
       </>
     ),
   },
@@ -616,7 +589,7 @@ export const TabList_portfolio = [
     name: "tab5",
     label: "Иллюстрации",
     path: "/illustrations",
-    num: 4,
+    num: 8,
     content: (
       <>
         {illustrations.map((ill, i) => (

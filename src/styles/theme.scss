@@ -1,6 +1,10 @@
 // Import mixins
 @import "mixins_var.scss";
 /* Theme classes */
+// Common tags
+span, a {
+  color: $b1;
+}
 // Body
 body {
   background-color: $we5;

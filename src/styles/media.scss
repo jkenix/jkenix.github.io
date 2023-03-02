@@ -191,8 +191,14 @@
     width: 50%;
   }
   // === Project ===
-  .project-content {
-    padding-left: 100px;
+  .l-main-project {
+    > .project-content {
+      padding-left: 100px;
+      padding-right: 100px;
+      > .project-desc {
+        max-width: 100%;
+      }
+    }
   }
   // === Contacts ===
   .l-feni-contacts {
@@ -295,6 +301,13 @@
   }
   .work-img-port {
     width: 100%;
+  }
+  // === Project ===
+  .l-main-project {
+    > .project-content {
+      padding-left: 30px;
+      padding-right: 35px;
+    }
   }
   // === About ===
   .l-feni-about {

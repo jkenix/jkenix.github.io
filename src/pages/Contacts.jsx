@@ -17,7 +17,7 @@ export default function Contacts() {
           {/* <meta name="og:description" content="" />
           <meta name="description" content="" /> */}
         </Helmet>
-        <main className="l-main">
+        <main className="l-main l-contacts">
           <motion.section
             className="l-feni-contacts l-feni-section l-fm"
             initial={{ y: 100, opacity: 0 }}

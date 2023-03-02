@@ -14,7 +14,10 @@ export default function Portfolio(props) {
       <HelmetProvider>
         <Helmet>
           <title>Feni - {props.tablabel}</title>
-          <meta property="og:title" content={`Feni Design - ${props.tablabel}`} />
+          <meta
+            property="og:title"
+            content={`Feni Design - ${props.tablabel}`}
+          />
           {/* <meta
             property="og:url"
             content={"https://jkenix.github.io/portfolio" + props.tabpath}
@@ -29,11 +32,11 @@ export default function Portfolio(props) {
           />
         </Helmet>
         <main className="l-main">
-          <motion.section
-            className="l-portfolio"
-            initial={{ opacity: 0, height: "auto" }}
-            animate={{ opacity: 1 }}>
-            <div className="l-port-section-title">
+          <section className="l-portfolio">
+            <motion.div
+              className="l-port-section-title"
+              initial={{ y: -100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}>
               <h2 className="section-title">Наши работы</h2>
               <div className="port-works-tabs works-tabs">
                 {TabList_portfolio.slice(0).map((tab, i) => (
@@ -47,7 +50,7 @@ export default function Portfolio(props) {
                   </NavLink>
                 ))}
               </div>
-            </div>
+            </motion.div>
             {TabList_portfolio.map((tab, i) => {
               if (tab.name === currentTab) {
                 return (
@@ -62,7 +65,7 @@ export default function Portfolio(props) {
                 return null;
               }
             })}
-          </motion.section>
+          </section>
         </main>
         <ScrollToTop />
       </HelmetProvider>

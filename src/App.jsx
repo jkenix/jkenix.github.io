@@ -59,12 +59,12 @@ export default function App() {
                   />
                 }></Route>
               <Route
-                path="portfolio/style"
+                path="portfolio/styles"
                 element={
                   <Portfolio
                     tablabel="Фирменный стиль"
                     tabid="tab4"
-                    tabpath={"/style"}
+                    tabpath={"/styles"}
                   />
                 }></Route>
               <Route
@@ -97,8 +97,9 @@ export default function App() {
                     <Product
                       tablabel={aw.title}
                       title={aw.title}
-                      desc={aw.desc}
                       src={aw.main_src}
+                      desc={aw.desc}
+                      client={aw.client}
                     />
                   }></Route>
               ))}
