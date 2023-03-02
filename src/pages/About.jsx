@@ -2,6 +2,8 @@ import React, { lazy } from "react";
 import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { motion } from "framer-motion";
+
+import ScrollToTop from "../components/ScrollToTop.jsx";
 const Discuss = lazy(() => import("../components/Discuss.jsx"));
 const MotionComp = motion(Link);
 
@@ -11,8 +13,8 @@ export default function About() {
       <HelmetProvider>
         <Helmet>
           <title>О нас - Feni</title>
-          <meta property="og:title" content="Feni Design - о нас" />
-          <meta property="og:url" content="https://jkenix.github.io/about" />
+          <meta property="og:title" content="Feni Design - О нас" />
+          {/* <meta property="og:url" content="https://jkenix.github.io/about" /> */}
           {/* <meta name="og:description" content="" /> */}
           {/* <meta name="description" content="" /> */}
         </Helmet>
@@ -91,7 +93,7 @@ export default function About() {
           </section>
           <MotionComp
             className="btn-fa btn-link btn-bw55 btn-focus"
-            to="portfolio/all_works"
+            to="/portfolio/all_works"
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}>
@@ -99,6 +101,7 @@ export default function About() {
           </MotionComp>
           <Discuss />
         </main>
+        <ScrollToTop />
       </HelmetProvider>
     </>
   );

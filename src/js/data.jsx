@@ -194,6 +194,44 @@ export const style = [
     client: ` ""`,
   },
 ];
+export const illustrations = [
+  {
+    ill_id: "1",
+    main_src: `${img.Toystream}`,
+    title: "1",
+    desc: "Da",
+    category: "Иллюстрация",
+    client: ` ""`,
+    main_class: "fp-work-main",
+  },
+  {
+    ill_id: "2",
+    main_src: `${img.Toystream}`,
+    title: "2",
+    desc: "Da",
+    category: "Иллюстрация",
+    client: ` ""`,
+    main_class: "fp-work-focus fp-rtl",
+  },
+  {
+    ill_id: "3",
+    main_src: `${img.Toystream}`,
+    title: "3",
+    desc: "Da",
+    category: "Иллюстрация",
+    client: ` ""`,
+    main_class: "fp-work-mini",
+  },
+  {
+    ill_id: "4",
+    main_src: `${img.Toystream}`,
+    title: "4",
+    desc: "Da",
+    category: "Иллюстрация",
+    client: ` ""`,
+    main_class: "fp-work-main",
+  },
+];
 export const presentations = [
   {
     present_id: "1",
@@ -241,30 +279,12 @@ export const presentations = [
     main_class: "fp-work-focus fp-ltl",
   },
 ];
-export const creatives = [
-  {
-    creative_id: "1",
-    main_src: `${img.Toystream}`,
-    title: "1",
-    desc: "Da",
-    category: "Креатив",
-    client: `Арт-студия "Парус"`,
-  },
-  {
-    creative_id: "2",
-    main_src: `${img.Toystream}`,
-    title: "2",
-    desc: "Креатив",
-    category: "Креатив",
-    client: `Арт-студия "Неон"`,
-  },
-];
 export const all_works = [
   ...websites,
   ...logos,
   ...style,
   ...presentations,
-  ...creatives,
+  ...illustrations,
 ];
 // Вкладки на "Главной"
 export const TabList_main = [
@@ -368,26 +388,30 @@ export const TabList_main = [
   },
   {
     name: "tab4",
-    label: "Презентации",
-    path: "/presentations",
-    num: 5,
+    label: "Иллюстрации",
+    path: "/illustrations",
+    num: 4,
     content: (
       <>
-        {presentations.map((present, i) => (
+        {illustrations.slice(0, list_main_size).map((ill, i) => (
           <React.Fragment key={i}>
             <Link
               key={i}
-              to={{ pathname: `/${present.title}` }}
-              className={present.main_class + " work-img-port work-img img__resp-block"}>
+              to={{ pathname: `/${ill.title}` }}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={
+                ill.main_class + " work-img-port work-img img__resp-block"
+              }>
               <LazyLoad offset={100}>
                 <>
                   <div className="work-desc wdl">
-                    <h3 className="work-desc-title">{present.title}</h3>
+                    <h3 className="work-desc-title">{ill.title}</h3>
                     <p className="work-desc-info feni-section-desc">
-                      {present.category}
+                      {ill.category}
                     </p>
                   </div>
-                  <img src={present.main_src} alt={present.title}></img>
+                  <img src={ill.main_src} alt={ill.title}></img>
                 </>
               </LazyLoad>
             </Link>
@@ -590,6 +614,40 @@ export const TabList_portfolio = [
   },
   {
     name: "tab5",
+    label: "Иллюстрации",
+    path: "/illustrations",
+    num: 4,
+    content: (
+      <>
+        {illustrations.map((ill, i) => (
+          <React.Fragment key={i}>
+            <Link
+              key={i}
+              to={{ pathname: `/${ill.title}` }}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={"work-img-port work-img img__resp-block"}>
+              <>
+                <div className="work-desc">
+                  <h3 className="work-desc-title">{ill.title}</h3>
+                  <p className="work-desc-info feni-section-desc">
+                    {ill.category}
+                  </p>
+                </div>
+                <img
+                  src={"../" + `${ill.main_src}`}
+                  height={321}
+                  alt={ill.title}
+                  loading="eager"></img>
+              </>
+            </Link>
+          </React.Fragment>
+        ))}
+      </>
+    ),
+  },
+  {
+    name: "tab6",
     label: "Презентации",
     path: "/presentations",
     num: 5,
@@ -613,39 +671,6 @@ export const TabList_portfolio = [
                 src={"../" + `${present.main_src}`}
                 height={321}
                 alt={present.title}
-                loading="eager"></img>
-            </Link>
-          </React.Fragment>
-        ))}
-      </>
-    ),
-  },
-  {
-    name: "tab6",
-    label: "Креативы",
-    path: "/creatives",
-    num: 2,
-    content: (
-      <>
-        {creatives.map((creative, i) => (
-          <React.Fragment key={i}>
-            <Link
-              key={i}
-              to={{ pathname: `/${creative.title}` }}
-              className={"work-img-port work-img img__resp-block"}>
-              <>
-                <div className="work-desc">
-                  <h3 className="work-desc-title">{creative.title}</h3>
-                  <p className="work-desc-info feni-section-desc">
-                    {" "}
-                    {creative.category}
-                  </p>
-                </div>
-              </>
-              <img
-                src={"../" + `${creative.main_src}`}
-                height={321}
-                alt={creative.title}
                 loading="eager"></img>
             </Link>
           </React.Fragment>

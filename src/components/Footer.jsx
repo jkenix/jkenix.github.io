@@ -21,21 +21,21 @@ export default function Footer() {
         <div className="fc-links">
           <h3 className="footer-links-title small-section">Briefings</h3>
           <div className="footer-links">
-            <Link to="/" className="footer-link">
+            <a href="https://forms.gle/neVqs5xMX5GU2nbT6" className="footer-link">
               Бриф на разработку веб дизайна
-            </Link>
-            <Link to="/" className="footer-link">
-              Бриф на разработку айдентики
-            </Link>
-            <Link to="/" className="footer-link">
-              Бриф на разработку презентации
-            </Link>
-            <Link to="/" className="footer-link">
+            </a>
+            <a href="https://forms.gle/Tvioeac6DhDZxu9N9" className="footer-link">
               Бриф на разработку логотипа
-            </Link>
-            <Link to="/" className="footer-link">
-              Бриф на разработку креатива
-            </Link>
+            </a>
+            <a href="https://forms.gle/G1F61kMXz7n8ZJhh7" className="footer-link">
+              Бриф на разработку иллюстрации
+            </a>
+            <a href="https://forms.gle/Kf5J7RAoe2ZuEigc7" className="footer-link">
+              Бриф на разработку презентации
+            </a>
+            <a href="https://forms.gle/BzdVa4kz1FFwy36P7" className="footer-link">
+              Бриф на разработку фирменного стиля
+            </a>
           </div>
         </div>
         <div className="fc-links">

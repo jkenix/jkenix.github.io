@@ -139,41 +139,43 @@ export default function Home() {
               свяжемся с вами в ближайшее время!
             </p>
             <div className="feni-briefs-content">
-              <Link to="/" className="fb-info l-fm fbi-main">
+              <a
+                href="https://forms.gle/neVqs5xMX5GU2nbT6"
+                className="fb-info l-fm fbi-main">
                 <span className="fb-count small-section">01</span>
                 <span className="fb-title">Веб Дизайн</span>
                 <span className="fb-desc section-desc">
                   бриф на разработку веб дизайна
                 </span>
-              </Link>
-              <Link to="/" className="fb-info l-fm fbi-block">
+              </a>
+              <a href="https://forms.gle/Tvioeac6DhDZxu9N9" className="fb-info l-fm fbi-block">
                 <span className="fb-count small-section">02</span>
                 <span className="fb-title">Лого</span>
                 <span className="fb-desc section-desc">
-                  бриф на разработку лого
+                  бриф на разработку логотипа
                 </span>
-              </Link>
-              <Link to="/" className="fb-info l-fm fbi-block">
+              </a>
+              <a href="https://forms.gle/G1F61kMXz7n8ZJhh7" className="fb-info l-fm fbi-block">
                 <span className="fb-count small-section">03</span>
                 <span className="fb-title">Иллюстрация</span>
                 <span className="fb-desc section-desc">
                   бриф на разработку иллюстрации
                 </span>
-              </Link>
-              <Link to="/" className="fb-info l-fm fbi-block">
+              </a>
+              <a href="https://forms.gle/Kf5J7RAoe2ZuEigc7" className="fb-info l-fm fbi-block">
                 <span className="fb-count small-section">04</span>
                 <span className="fb-title">Презентация</span>
                 <span className="fb-desc section-desc">
-                  бриф на разработку веб дизайна
+                  бриф на разработку презентации
                 </span>
-              </Link>
-              <Link to="/" className="fb-info l-fm fbi-block">
+              </a>
+              <a href="https://forms.gle/BzdVa4kz1FFwy36P7" className="fb-info l-fm fbi-block">
                 <span className="fb-count small-section">05</span>
                 <span className="fb-title">Фирменный стиль</span>
                 <span className="fb-desc section-desc">
-                  бриф на разработку стиля
+                  бриф на разработку фирменного стиля
                 </span>
-              </Link>
+              </a>
             </div>
           </motion.section>
           <section className="l-feni-partners l-feni-section l-fm">

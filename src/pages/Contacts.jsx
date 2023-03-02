@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { motion } from "framer-motion";
 import Discuss from "../components/Discuss.jsx";
+import ScrollToTop from "../components/ScrollToTop.jsx";
 
 import contacts_img from "../img/feni-contacts.webp";
 
@@ -47,6 +48,7 @@ export default function Contacts() {
           </motion.section>
           <Discuss />
         </main>
+        <ScrollToTop />
       </HelmetProvider>
     </>
   );

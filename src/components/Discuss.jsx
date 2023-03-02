@@ -103,12 +103,13 @@ export default function Discuss() {
               <input
                 className="feni-checkbox"
                 type="checkbox"
+                id="checkbox"
                 name="checkbox"
                 required={true}
               />
-              <span className="feni-checkbox-agree">
+              <label className="feni-checkbox-agree" htmlFor="checkbox">
                 Согласие на обработку персональных данных
-              </span>
+              </label>
             </div>
           </motion.form>
         </div>

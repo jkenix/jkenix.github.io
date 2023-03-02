@@ -1,10 +1,5 @@
 import React, { Suspense, lazy } from "react";
-import {
-  Routes,
-  Route,
-  BrowserRouter,
-  Navigate,
-} from "react-router-dom";
+import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Header from "./components/Header.jsx";
 import { all_works } from "./js/data.jsx";
@@ -73,21 +68,21 @@ export default function App() {
                   />
                 }></Route>
               <Route
+                path="portfolio/illustrations"
+                element={
+                  <Portfolio
+                    tablabel="Иллюстрации"
+                    tabid="tab5"
+                    tabpath={"/illustrations"}
+                  />
+                }></Route>
+              <Route
                 path="portfolio/presentations"
                 element={
                   <Portfolio
                     tablabel="Презентации"
-                    tabid="tab5"
-                    tabpath={"/presentations"}
-                  />
-                }></Route>
-              <Route
-                path="portfolio/creatives"
-                element={
-                  <Portfolio
-                    tablabel="Креативы"
                     tabid="tab6"
-                    tabpath={"/creatives"}
+                    tabpath={"/presentations"}
                   />
                 }></Route>
               <Route path="/services" element={<Services />}></Route>

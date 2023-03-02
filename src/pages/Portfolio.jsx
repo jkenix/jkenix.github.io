@@ -14,7 +14,7 @@ export default function Portfolio(props) {
       <HelmetProvider>
         <Helmet>
           <title>Feni - {props.tablabel}</title>
-          <meta property="og:title" content="Feni Design Портфолио" />
+          <meta property="og:title" content={`Feni Design - ${props.tablabel}`} />
           {/* <meta
             property="og:url"
             content={"https://jkenix.github.io/portfolio" + props.tabpath}
@@ -31,8 +31,8 @@ export default function Portfolio(props) {
         <main className="l-main">
           <motion.section
             className="l-portfolio"
-            initial={{opacity: 0, height: "auto" }}
-            animate={{opacity: 1 }}>
+            initial={{ opacity: 0, height: "auto" }}
+            animate={{ opacity: 1 }}>
             <div className="l-port-section-title">
               <h2 className="section-title">Наши работы</h2>
               <div className="port-works-tabs works-tabs">
