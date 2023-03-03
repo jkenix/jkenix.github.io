@@ -184,7 +184,14 @@
     padding-bottom: 30px;
   }
   .checkbox-row {
-    display: none;
+    // display: none;
+    padding-left: 0;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+    > p {
+      font-size: 1rem;
+    }
   }
   // === Portfolio ===
   .work-img-port {
@@ -253,7 +260,7 @@
   // Common classes
   .l-feni-info,
   .l-feni-briefs,
-  .l-fdp-content {
+  .l-fdp-content, .l-feni-discuss-answer {
     padding-left: 35px;
   }
   // === Home ===

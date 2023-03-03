@@ -11,6 +11,7 @@ export const logos = [
   {
     logo_id: "1",
     main_src: `${img.scastle}`,
+    url: "Strong-Castle",
     title: "Strong Castle",
     desc: `Стильный логотип для отражения сути компании "Strong Castle"`,
     category: "Логотип",
@@ -20,6 +21,7 @@ export const logos = [
   {
     logo_id: "2",
     main_src: `${img.lion}`,
+    url: "Lion-Games",
     title: "Lion Games",
     desc: `Логотип по заказу игрового клуба "Lion Games"`,
     category: "Логотип",
@@ -29,6 +31,7 @@ export const logos = [
   {
     logo_id: "3",
     main_src: `${img.bravo}`,
+    url: "Bravo",
     title: "Браво",
     desc: `Логотип по заказу Веб-студии "Браво", призывающий мыслить!`,
     category: "Логотип",
@@ -38,6 +41,7 @@ export const logos = [
   {
     logo_id: "4",
     main_src: `${img.cat_artio}`,
+    url: "Cat-Artio",
     title: "Cat Artio",
     desc: `Логотип по заказу Арт-студии "Cat Artio" с говорящим названием!`,
     category: "Логотип",
@@ -47,6 +51,7 @@ export const logos = [
   {
     logo_id: "5",
     main_src: `${img.dborn}`,
+    url: "Dragon-Born-Studio",
     title: "Dragon Born Studio",
     desc: `Логотип по заказу Игровой студии "Dragon Born Studio", от которого веет огнём интереса в разработке качественных видеоигр!`,
     category: "Логотип",
@@ -56,6 +61,7 @@ export const logos = [
   {
     logo_id: "6",
     main_src: `${img.adv_borjor}`,
+    url: "Borik-Jorik",
     title: "Борик и Жорик",
     desc: `Логотип по заказу Адвокатская контора "Борик и Жорик" с древним вершителем правосудия.`,
     category: "Логотип",
@@ -64,6 +70,7 @@ export const logos = [
   {
     logo_id: "7",
     main_src: `${img.mariana}`,
+    url: "Mariana",
     title: "Салон красоты - Марьяна",
     desc: `Необычный логотип по заказу салона красоты "Марьяна"`,
     category: "Логотип",
@@ -72,6 +79,7 @@ export const logos = [
   {
     logo_id: "8",
     main_src: `${img.dwalley}`,
+    url: "Dragon-Walley",
     title: "Dragon Walley",
     desc: `Логотип по заказу команды "Dragon Walley" с говорящим названием!`,
     category: "Логотип",
@@ -80,6 +88,7 @@ export const logos = [
   {
     logo_id: "9",
     main_src: `${img.bsibir}`,
+    url: "Bunny-Sibirian",
     title: "Bunny Sibirian",
     desc: `Логотип для популярной сибирской студии "Bunny Sibirian"`,
     category: "Логотип",
@@ -88,6 +97,7 @@ export const logos = [
   {
     logo_id: "10",
     main_src: `${img.wpalace}`,
+    url: "White-palace",
     title: "White palace",
     desc: `Логотип по заказу студии веб-дизайна "White palace"`,
     category: "Логотип",
@@ -98,6 +108,7 @@ export const websites = [
   {
     web_id: "1",
     main_src: `${img.Toystream}`,
+    url: "Toystream",
     title: "Toystream",
     desc: `Сайт игровой студии "Toystream", сделанный так, чтобы привлекать самых желанных клиентов по всему миру.`,
     category: "Веб-сайт",
@@ -107,6 +118,7 @@ export const websites = [
   {
     web_id: "2",
     main_src: `${img.Sequoia}`,
+    url: "Sequoia",
     title: "Sequoia",
     desc: `Сайт веб-агенства "Sequoia". Комплексное решение для бизнеса по цене одного сотрудника!`,
     category: "Веб-сайт",
@@ -116,6 +128,7 @@ export const websites = [
   {
     web_id: "3",
     main_src: `${img.Marico}`,
+    url: "Marico",
     title: "Marico",
     desc: `Сервис "Marico" - анализатор аудитории веб-сайта.`,
     category: "Веб-сайт",
@@ -127,6 +140,7 @@ export const styles = [
   {
     style_id: "1",
     main_src: `${img.center_agency}`,
+    url: "Agency-Center",
     title: "Агенство Центр",
     desc: `Обзорный пакет фирменного стиля для агенства "Центр"!`,
     category: "Фирменный Стиль",
@@ -136,6 +150,7 @@ export const styles = [
   {
     style_id: "2",
     main_src: `${img.emi}`,
+    url: "Emi",
     title: `Emi`,
     desc: `Обзорный пакет фирменного стиля продукции для компании "Emi"!`,
     category: "Фирменный Стиль",
@@ -145,6 +160,7 @@ export const styles = [
   {
     style_id: "3",
     main_src: `${img.boni_kutusu}`,
+    url: "Boni-Kutusu",
     title: "Boni Kutusu",
     desc: `Обзорный пакет фирменного стиля продукции для компании "Boni Kutusu"!`,
     category: "Фирменный Стиль",
@@ -154,6 +170,7 @@ export const styles = [
   {
     style_id: "4",
     main_src: `${img.hotuas}`,
+    url: "Hotu-As",
     title: "Хоту Ас",
     desc: `Обзорный пакет фирменного стиля продукции для сибирской компании "Хоту Ас"!`,
     category: "Фирменный Стиль",
@@ -165,6 +182,7 @@ export const illustrations = [
   {
     ill_id: "1",
     main_src: `${img.akva_dragon}`,
+    url: "Aqua-dragon",
     title: "Аква дракон",
     desc: `Демонстративное изображение от художника из "Feni Design Studio"`,
     category: "Иллюстрация",
@@ -174,6 +192,7 @@ export const illustrations = [
   {
     ill_id: "2",
     main_src: `${img.andro_fly}`,
+    url: "Speed-Sibirian",
     title: "Speed Sibirian",
     desc: `Изображение для приложения компании "Speed Sibirian"`,
     category: "Иллюстрация",
@@ -183,6 +202,7 @@ export const illustrations = [
   {
     ill_id: "3",
     main_src: `${img.bay}`,
+    url: "Bay-Adventure",
     title: "Bay Adventure",
     desc: `Изображение для игры "Bay Adventure" от компании "Lorem Drion"`,
     category: "Иллюстрация",
@@ -192,6 +212,7 @@ export const illustrations = [
   {
     ill_id: "4",
     main_src: `${img.cman}`,
+    url: "Woody-eater",
     title: "Woody eater",
     desc: `Изображение для игры "Woody eater" от компании "Orphan Games"`,
     category: "Иллюстрация",
@@ -201,6 +222,7 @@ export const illustrations = [
   {
     ill_id: "5",
     main_src: `${img.elephants}`,
+    url: "Elephants",
     title: "Elephants",
     desc: `Демонстративное изображение от художника из "Feni Design Studio"`,
     category: "Иллюстрация",
@@ -210,6 +232,7 @@ export const illustrations = [
   {
     ill_id: "6",
     main_src: `${img.ushi_dragon}`,
+    url: "Dragon-Ushi",
     title: "Dragon Ushi",
     desc: `Изображение для игры "Dragon Ushi" от компании "Bay Sorian"`,
     category: "Иллюстрация",
@@ -218,6 +241,7 @@ export const illustrations = [
   {
     ill_id: "7",
     main_src: `${img.velo_fun}`,
+    url: "VeloFun",
     title: "ВелоФан",
     desc: `Промо-изображение для компании "ВелоФан"`,
     category: "Иллюстрация",
@@ -226,6 +250,7 @@ export const illustrations = [
   {
     ill_id: "8",
     main_src: `${img.wild}`,
+    url: "Wild",
     title: "Природа",
     desc: `Демонстративное изображение от художника из "Feni Design Studio"`,
     category: "Иллюстрация",
@@ -236,6 +261,7 @@ export const presentations = [
   {
     present_id: "1",
     main_src: `${img.break_company}`,
+    url: "Break",
     title: "Break",
     desc: `Готовый пакет презентаций для компании "Break"`,
     category: "Презентация",
@@ -244,6 +270,7 @@ export const presentations = [
   {
     present_id: "2",
     main_src: `${img.ofan}`,
+    url: "Ofan",
     title: "Ofan",
     desc: `Готовый дизайн презентации для компании "Ofan"`,
     category: "Презентация",
@@ -252,6 +279,7 @@ export const presentations = [
   {
     present_id: "3",
     main_src: `${img.officeo}`,
+    url: "Officeo",
     title: "Officeo",
     desc: `Готовый пакет презентаций для компании "Officeo"`,
     category: "Презентация",
@@ -260,6 +288,7 @@ export const presentations = [
   {
     present_id: "4",
     main_src: `${img.peddle}`,
+    url: "Peddle",
     title: "Peddle",
     desc: `Готовый пакет презентаций для компании "Peddle"`,
     category: "Презентация",
@@ -268,6 +297,7 @@ export const presentations = [
   {
     present_id: "5",
     main_src: `${img.wake}`,
+    url: "Wake",
     title: "Wake",
     desc: `Готовый пакет презентаций для компании "Wake"`,
     category: "Презентация",
@@ -294,7 +324,7 @@ export const TabList_main = [
           <React.Fragment key={i}>
             <Link
               key={i}
-              to={{ pathname: `/${logo.title}` }}
+              to={{ pathname: `/${logo.url}` }}
               target="_blank"
               rel="noopener noreferrer"
               className={logo.main_class + " work-img img__resp-block"}>
@@ -328,7 +358,7 @@ export const TabList_main = [
           <React.Fragment key={i}>
             <Link
               key={i}
-              to={{ pathname: `/${web.title}` }}
+              to={{ pathname: `/${web.url}` }}
               target="_blank"
               rel="noopener noreferrer"
               className={web.main_class + " work-img img__resp-block"}>
@@ -360,7 +390,7 @@ export const TabList_main = [
           <React.Fragment key={i}>
             <Link
               key={i}
-              to={{ pathname: `/${styles.title}` }}
+              to={{ pathname: `/${styles.url}` }}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.main_class + " work-img img__resp-block"}>
@@ -392,7 +422,7 @@ export const TabList_main = [
           <React.Fragment key={i}>
             <Link
               key={i}
-              to={{ pathname: `/${ill.title}` }}
+              to={{ pathname: `/${ill.url}` }}
               target="_blank"
               rel="noopener noreferrer"
               className={
@@ -428,7 +458,7 @@ export const TabList_portfolio = [
           <React.Fragment key={i}>
             <Link
               key={i}
-              to={{ pathname: `/${aw.title}` }}
+              to={{ pathname: `/${aw.url}` }}
               className={"work-img-port work-img img__resp-block"}>
               <>
                 <div className="work-desc">
@@ -450,7 +480,7 @@ export const TabList_portfolio = [
           <React.Fragment key={i}>
             <Link
               key={i}
-              to={{ pathname: `/${aw.title}` }}
+              to={{ pathname: `/${aw.url}` }}
               className={"work-img-port work-img img__resp-block"}>
               <LazyLoad height={321} offset={100}>
                 <>
@@ -480,7 +510,7 @@ export const TabList_portfolio = [
           <React.Fragment key={i}>
             <Link
               key={i}
-              to={{ pathname: `/${logo.title}` }}
+              to={{ pathname: `/${logo.url}` }}
               className={"work-img-port work-img img__resp-block"}>
               <>
                 <div className="work-desc">
@@ -502,7 +532,7 @@ export const TabList_portfolio = [
           <React.Fragment key={i}>
             <Link
               key={i}
-              to={{ pathname: `/${logo.title}` }}
+              to={{ pathname: `/${logo.url}` }}
               className={"work-img-port work-img img__resp-block"}>
               <LazyLoad height={321} offset={100}>
                 <>
@@ -532,7 +562,7 @@ export const TabList_portfolio = [
           <React.Fragment key={i}>
             <Link
               key={i}
-              to={{ pathname: `/${web.title}` }}
+              to={{ pathname: `/${web.url}` }}
               className={"work-img-port work-img img__resp-block"}>
               <>
                 <div className="work-desc">
@@ -564,7 +594,7 @@ export const TabList_portfolio = [
           <React.Fragment key={i}>
             <Link
               key={i}
-              to={{ pathname: `/${styles.title}` }}
+              to={{ pathname: `/${styles.url}` }}
               className={"work-img-port work-img img__resp-block"}>
               <>
                 <div className="work-desc">
@@ -596,7 +626,7 @@ export const TabList_portfolio = [
           <React.Fragment key={i}>
             <Link
               key={i}
-              to={{ pathname: `/${ill.title}` }}
+              to={{ pathname: `/${ill.url}` }}
               target="_blank"
               rel="noopener noreferrer"
               className={"work-img-port work-img img__resp-block"}>
@@ -630,7 +660,7 @@ export const TabList_portfolio = [
           <React.Fragment key={i}>
             <Link
               key={i}
-              to={{ pathname: `/${present.title}` }}
+              to={{ pathname: `/${present.url}` }}
               className={"work-img-port work-img img__resp-block"}>
               <>
                 <div className="work-desc">

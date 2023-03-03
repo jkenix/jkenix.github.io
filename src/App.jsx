@@ -91,11 +91,10 @@ export default function App() {
               {all_works.map((aw, i) => (
                 <Route
                   exact
-                  path={`/${aw.title}/`}
+                  path={`/${aw.url}/`}
                   key={i}
                   element={
                     <Product
-                      tablabel={aw.title}
                       title={aw.title}
                       src={aw.main_src}
                       desc={aw.desc}

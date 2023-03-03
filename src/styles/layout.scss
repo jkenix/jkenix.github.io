@@ -162,6 +162,18 @@
     z-index: 6;
   }
 }
+.l-feni-discuss-answer {
+  padding-left: 100px;
+  padding-right: 30px;
+  margin-bottom: 100px;
+  text-align: center;
+  > .fda-img {
+    display: block;
+    > img {
+      width: auto;
+    }
+  }
+}
 // === Portfolio ===
 .l-portfolio {
   margin-bottom: 50px;
@@ -207,7 +219,7 @@
     }
   }
   .btn-tab-link {
-    width: 170px;
+    white-space: nowrap;
     gap: 10px;
     margin-top: 20px;
   }

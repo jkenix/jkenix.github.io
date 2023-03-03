@@ -9,13 +9,13 @@ export default function Product(props) {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Feni - {`${props.tablabel}`}</title>
+        <title>Feni - {`${props.title}`}</title>
         <meta property="og:title" content={`${props.title}`} />
         {/* <meta property="og:url" content="URL/" /> */}
         <meta name="og:description" content={`${props.desc}`} />
         <meta
           name="description"
-          content={`Feni Design портфолио-${props.title}`}
+          content={`Feni Design портфолио - ${props.title}`}
         />
       </Helmet>
       <main className="l-main-project">

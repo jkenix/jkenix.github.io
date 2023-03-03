@@ -9,8 +9,7 @@ export default function NotFound() {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Страница не найдена</title>
-        <meta property="og:title" content="Страница не найдена" />
+        <title>Страница не найдена - 404</title>
         <meta name="description" content="" />
       </Helmet>
       <main className="l-main l-not-found l-feni-start l-fm l-feni-section">
