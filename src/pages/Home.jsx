@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, lazy } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -10,7 +10,7 @@ import feni_start from "../img/feni-start.webp";
 import more from "../img/more.svg";
 import partners from "../img/partners.webp";
 
-import Discuss from "../components/Discuss.jsx";
+const Discuss = lazy(() => import("../components/Discuss.jsx"));
 import ScrollToTop from "../components/ScrollToTop.jsx";
 
 export default function Home() {
@@ -171,9 +171,9 @@ export default function Home() {
               </a>
               <a href="https://forms.gle/BzdVa4kz1FFwy36P7" className="fb-info l-fm fbi-block">
                 <span className="fb-count small-section">05</span>
-                <span className="fb-title">Фирменный стиль</span>
+                <span className="fb-title">Айдентика</span>
                 <span className="fb-desc section-desc">
-                  бриф на разработку фирменного стиля
+                  бриф на разработку айдентики
                 </span>
               </a>
             </div>

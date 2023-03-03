@@ -143,7 +143,7 @@ export const styles = [
     url: "Agency-Center",
     title: "Агенство Центр",
     desc: `Обзорный пакет фирменного стиля для агенства "Центр"!`,
-    category: "Фирменный Стиль",
+    category: "Айдентика",
     client: `Агенство "Центр"`,
     main_class: "fp-work-main",
   },
@@ -153,7 +153,7 @@ export const styles = [
     url: "Emi",
     title: `Emi`,
     desc: `Обзорный пакет фирменного стиля продукции для компании "Emi"!`,
-    category: "Фирменный Стиль",
+    category: "Айдентика",
     client: `Компания "Emi"`,
     main_class: "fp-work-focus fp-rtl",
   },
@@ -163,7 +163,7 @@ export const styles = [
     url: "Boni-Kutusu",
     title: "Boni Kutusu",
     desc: `Обзорный пакет фирменного стиля продукции для компании "Boni Kutusu"!`,
-    category: "Фирменный Стиль",
+    category: "Айдентика",
     client: `Компания "Boni Kutusu"`,
     main_class: "fp-work-mini",
   },
@@ -173,7 +173,7 @@ export const styles = [
     url: "Hotu-As",
     title: "Хоту Ас",
     desc: `Обзорный пакет фирменного стиля продукции для сибирской компании "Хоту Ас"!`,
-    category: "Фирменный Стиль",
+    category: "Айдентика",
     client: `Компания "Хоту Ас"`,
     main_class: "fp-work-main",
   },
@@ -327,6 +327,7 @@ export const TabList_main = [
               to={{ pathname: `/${logo.url}` }}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={`${logo.title}`}
               className={logo.main_class + " work-img img__resp-block"}>
               <>
                 <LazyLoad offset={100}>
@@ -361,6 +362,7 @@ export const TabList_main = [
               to={{ pathname: `/${web.url}` }}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={`${web.title}`}
               className={web.main_class + " work-img img__resp-block"}>
               <LazyLoad offset={100}>
                 <>
@@ -381,8 +383,8 @@ export const TabList_main = [
   },
   {
     name: "tab3",
-    label: "Фирменный стиль",
-    path: "/styles",
+    label: "Айдентика",
+    path: "/identify",
     num: 4,
     content: (
       <>
@@ -393,6 +395,7 @@ export const TabList_main = [
               to={{ pathname: `/${styles.url}` }}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={`${styles.title}`}
               className={styles.main_class + " work-img img__resp-block"}>
               <LazyLoad offset={100}>
                 <>
@@ -425,6 +428,7 @@ export const TabList_main = [
               to={{ pathname: `/${ill.url}` }}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={`${ill.title}`}
               className={
                 ill.main_class + " work-img-port work-img img__resp-block"
               }>
@@ -459,6 +463,7 @@ export const TabList_portfolio = [
             <Link
               key={i}
               to={{ pathname: `/${aw.url}` }}
+              aria-label={`${aw.title}`}
               className={"work-img-port work-img img__resp-block"}>
               <>
                 <div className="work-desc">
@@ -481,6 +486,7 @@ export const TabList_portfolio = [
             <Link
               key={i}
               to={{ pathname: `/${aw.url}` }}
+              aria-label={`${aw.title}`}
               className={"work-img-port work-img img__resp-block"}>
               <LazyLoad height={321} offset={100}>
                 <>
@@ -511,6 +517,7 @@ export const TabList_portfolio = [
             <Link
               key={i}
               to={{ pathname: `/${logo.url}` }}
+              aria-label={`${logo.title}`}
               className={"work-img-port work-img img__resp-block"}>
               <>
                 <div className="work-desc">
@@ -533,6 +540,7 @@ export const TabList_portfolio = [
             <Link
               key={i}
               to={{ pathname: `/${logo.url}` }}
+              aria-label={`${logo.title}`}
               className={"work-img-port work-img img__resp-block"}>
               <LazyLoad height={321} offset={100}>
                 <>
@@ -563,6 +571,7 @@ export const TabList_portfolio = [
             <Link
               key={i}
               to={{ pathname: `/${web.url}` }}
+              aria-label={`${web.title}`}
               className={"work-img-port work-img img__resp-block"}>
               <>
                 <div className="work-desc">
@@ -585,8 +594,8 @@ export const TabList_portfolio = [
   },
   {
     name: "tab4",
-    label: "Фирменный стиль",
-    path: "/styles",
+    label: "Айдентика",
+    path: "/identify",
     num: 4,
     content: (
       <>
@@ -595,6 +604,7 @@ export const TabList_portfolio = [
             <Link
               key={i}
               to={{ pathname: `/${styles.url}` }}
+              aria-label={`${styles.title}`}
               className={"work-img-port work-img img__resp-block"}>
               <>
                 <div className="work-desc">
@@ -627,8 +637,7 @@ export const TabList_portfolio = [
             <Link
               key={i}
               to={{ pathname: `/${ill.url}` }}
-              target="_blank"
-              rel="noopener noreferrer"
+              aria-label={`${ill.title}`}
               className={"work-img-port work-img img__resp-block"}>
               <>
                 <div className="work-desc">
@@ -661,6 +670,7 @@ export const TabList_portfolio = [
             <Link
               key={i}
               to={{ pathname: `/${present.url}` }}
+              aria-label={`${present.title}`}
               className={"work-img-port work-img img__resp-block"}>
               <>
                 <div className="work-desc">

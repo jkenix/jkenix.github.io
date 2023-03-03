@@ -22,10 +22,10 @@ export default function Portfolio(props) {
             property="og:url"
             content={"https://jkenix.github.io/portfolio" + props.tabpath}
           /> */}
-          <meta
+          {/* <meta
             name="og:description"
-            content={`Посмотрите ${props.tablabel} Feni Design Studio.`}
-          />
+            content={`Посмотрите пример работ по теме "${props.tablabel}" от Feni Design Studio.`}
+          /> */}
           <meta
             name="description"
             content={`Feni Design портфолио - ${props.tablabel}`}

@@ -2,27 +2,9 @@ import React from "react";
 import LazyLoad from "react-lazy-load";
 import { motion } from "framer-motion";
 
-import { useForm } from "@formspree/react";
 import mail_form from "../img/mail-form.webp";
-import mail_send from "../img/emailsend.webp";
 
 export default function Discuss() {
-  const [state, handleSubmit] = useForm("mgebyljo");
-  if (state.succeeded) {
-    return (
-      <>
-        <div className="l-feni-discuss-answer l-feni-section l-fm">
-          <div className="fda-img img__resp-block">
-            <img src={mail_send} width="434" height="210" alt="Mail send" />
-          </div>
-          <p className="fda-desc section-desc">Заявка успешно отправлена!</p>
-          <p className="fda-desc section-desc">
-            Мы ответим вам в ближайшее время!
-          </p>
-        </div>
-      </>
-    );
-  }
   return (
     <>
       <section className="l-feni-discuss-project" id="discuss">
@@ -46,7 +28,8 @@ export default function Discuss() {
             </LazyLoad>
           </motion.div>
           <motion.form
-            onSubmit={handleSubmit}
+            action="https://formspree.io/f/mqkobyen"
+            method="POST"
             className="fdp-content-form"
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -62,7 +45,6 @@ export default function Discuss() {
                 size="40"
                 className="form-input"
                 aria-required="true"
-                aria-invalid="false"
                 placeholder="введите ваше имя"
                 required={true}
               />
@@ -78,7 +60,6 @@ export default function Discuss() {
                 size="40"
                 className="form-input"
                 aria-required="true"
-                aria-invalid="false"
                 placeholder="введите номер телефона"
                 required={true}
               />
@@ -94,7 +75,6 @@ export default function Discuss() {
                 size="30"
                 className="form-input"
                 aria-required="true"
-                aria-invalid="false"
                 placeholder="введите электронный адрес"
                 required={true}
               />
@@ -110,15 +90,12 @@ export default function Discuss() {
                 cols="40"
                 rows="10"
                 className="form-input message-input"
-                aria-invalid="false"
                 placeholder="enter a message"></textarea>
             </div>
             <input
               type="submit"
               value="Отправить"
-              disabled={state.submitting}
-              className="feedback-btn l-feni-section"
-              aria-invalid="false"></input>
+              className="feedback-btn l-feni-section"></input>
             <div className="checkbox-row">
               <p className="feni-checkbox-agree">
                 Отправляя форму вы даёте согласие на обработку персональных

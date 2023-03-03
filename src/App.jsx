@@ -13,6 +13,12 @@ const Contacts = lazy(() => import("./pages/Contacts.jsx"));
 const Footer = lazy(() => import("./components/Footer.jsx"));
 const NotFound = lazy(() => import("./pages/NotFound.jsx"));
 
+const Logos = lazy(() => import("./pages/nested/Logos.jsx"));
+const Websites = lazy(() => import("./pages/nested/Websites.jsx"));
+const Identify = lazy(() => import("./pages/nested/Identify.jsx"));
+const Illustrations = lazy(() => import("./pages/nested/Illustrations.jsx"));
+const Presentations = lazy(() => import("./pages/nested/Presentations.jsx"));
+
 export default function App() {
   return (
     <React.StrictMode>
@@ -59,12 +65,12 @@ export default function App() {
                   />
                 }></Route>
               <Route
-                path="portfolio/styles"
+                path="portfolio/identify"
                 element={
                   <Portfolio
-                    tablabel="Фирменный стиль"
+                    tablabel="Айдентика"
                     tabid="tab4"
-                    tabpath={"/styles"}
+                    tabpath={"/identify"}
                   />
                 }></Route>
               <Route
@@ -86,6 +92,11 @@ export default function App() {
                   />
                 }></Route>
               <Route path="/services" element={<Services />}></Route>
+              <Route path="services/logos" element={<Logos />}></Route>
+              <Route path="services/websites" element={<Websites />}></Route>
+              <Route path="services/identify" element={<Identify />}></Route>
+              <Route path="services/illustrations" element={<Illustrations />}></Route>
+              <Route path="services/presentations" element={<Presentations />}></Route>
               <Route path="/about" element={<About />}></Route>
               <Route path="/contacts" element={<Contacts />}></Route>
               {all_works.map((aw, i) => (

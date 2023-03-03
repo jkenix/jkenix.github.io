@@ -34,7 +34,7 @@ export default function Footer() {
               Бриф на разработку презентации
             </a>
             <a href="https://forms.gle/BzdVa4kz1FFwy36P7" className="footer-link">
-              Бриф на разработку фирменного стиля
+              Бриф на разработку айдентики
             </a>
           </div>
         </div>

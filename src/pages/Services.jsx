@@ -10,10 +10,10 @@ export default function Services() {
       <HelmetProvider>
         <Helmet>
           <title>Услуги и цены - Feni</title>
-          <meta
+          {/* <meta
             property="og:title"
             content="Услуги и цены - Feni Design Studio"
-          />
+          /> */}
           {/* <meta property="og:url" content="https://jkenix.github.io/sercices" /> */}
           <meta name="og:description" content="Услуги и цены Feni Design, " />
           <meta name="description" content="Закажи услугу у Feni Design" />

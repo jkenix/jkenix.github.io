@@ -5,12 +5,10 @@
 span, a {
   color: $b1;
 }
-// Body
+// === Body ===
 body {
   background-color: $we5;
 }
-// Backgrounds
-
 // === Buttons common classes ===
 .btn-b55 {
   color: $wff;
@@ -54,7 +52,7 @@ body {
   color: $ff5;
 }
 /* Color styles for page content */
-// Titles, desc
+// === Titles, desc ===
 .section-title,
 .section-desc,
 .small-section {
@@ -82,7 +80,7 @@ body {
 .l-main {
   background-color: $we5;
 }
-// Briefs
+// === Briefs ===
 .fb-info {
   > .fb-title {
     color: $b1;
@@ -142,7 +140,7 @@ body {
 .message-input {
   max-height: 100px;
 }
-// Work-desc
+// === Work-desc === (Main, Portfolio)
 .work-desc {
   background-color: $b55;
   > &-title,

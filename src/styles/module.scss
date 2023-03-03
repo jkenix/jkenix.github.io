@@ -1,6 +1,6 @@
 // Import mixins, variables
 @import "mixins_var.scss";
-// Section title, desc
+// === Section title, desc ===
 .section-title {
   font-size: 1.875rem;
   font-weight: 500;
@@ -24,7 +24,7 @@
   line-height: 145%;
   letter-spacing: 0.05em;
 }
-/* Header*/
+/* === Header ===*/
 .logo {
   width: 65px;
   height: 65px;
@@ -96,7 +96,7 @@
   letter-spacing: 0.02em;
 }
 /* Main */
-// Feni-preview
+// === Feni-preview ===
 .fp-works-tabs {
   padding-top: 40px;
   padding-left: 40px;
@@ -115,7 +115,7 @@
   display: flex;
   flex-wrap: wrap;
 }
-// Briefs
+// === Briefs ===
 .fb-info {
   align-items: center;
   display: flex;
@@ -148,7 +148,7 @@
     }
   }
 }
-// Discuss Project
+// === Discuss Project ===
 .feedback-row {
   width: 100%;
   margin-bottom: 30px;
@@ -209,7 +209,7 @@
   font-size: 0.75rem;
   line-height: 15px;
 }
-// Porfolio
+// === Porfolio ===
 .port-works-tabs {
   padding-top: 80px;
   justify-content: center;
@@ -242,7 +242,7 @@
     margin-bottom: 10px;
   }
 }
-// Project
+// === Project ===
 .project-title {
   font-weight: 700;
 }
@@ -250,7 +250,14 @@
   padding-right: 10px;
   font-weight: 700;
 }
-// Services
+// === Services === (Nested !)
+// --- Services Nested ---
+// Logos
+
+// Websites
+// Identify
+// Illustrations
+// Presentations
 // Contacts
 .contacts-link {
   font-size: 1.25rem;
@@ -262,7 +269,7 @@
     color: $ff5;
   }
 }
-// Footer
+// === Footer ===
 .footer-logo img {
   background-color: #f5f5f5;
   height: 67px;
@@ -295,7 +302,7 @@
   row-gap: 20px;
   justify-content: space-between;
 }
-// Buttons Common classes
+// === Buttons Common classes ===
 .btn-link {
   display: flex;
   align-items: center;
@@ -332,7 +339,7 @@
   height: 22px;
   // margin-left: auto;
 }
-// Images
+// === Images ===
 .img__resp-block {
   display: flex;
   transition: all ease 0.5s;
