@@ -14,8 +14,6 @@ import "./styles/module.scss";
 import "./styles/media.scss";
 import "./styles/state.scss";
 import "./styles/mixins_var.scss";
-import "./js/scripts.js";
 
-const container = document.getElementById("l-wrapper");
-const defroot = createRoot(container);
-defroot.render(<App />);
+const root = createRoot(document.getElementById('l-wrapper'));
+root.render(<App />);

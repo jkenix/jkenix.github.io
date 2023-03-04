@@ -37,6 +37,12 @@
   display: flex;
   justify-content: space-between;
 }
+.l-fs-content {
+  > .fs-desc {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+}
 .l-fm {
   max-width: 1110px;
 }
@@ -45,16 +51,12 @@
   padding-top: 100px;
 }
 //  === Home ===
-// Feni-start
+// Feni hi
 .l-feni-hi {
   margin-bottom: 50px;
-  .section-title {
-    padding-top: 20px;
-    padding-bottom: 41px;
-  }
-  > .fh-content {
-    max-width: 307px;
-  }
+}
+.l-fh-content {
+  max-width: 307px;
 }
 // Common classes (fs, fi, fb)
 .l-feni-hi,
@@ -214,6 +216,8 @@
 }
 // === Services ===
 .l-feni-services {
+  padding-left: 100px;
+  padding-right: 100px;
   padding-bottom: 100px;
 }
 // --- Services Nested ---

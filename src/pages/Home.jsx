@@ -33,12 +33,12 @@ export default function Home() {
         </Helmet>
         <main className="l-main">
           <motion.section
-            className="l-feni-start l-feni-hi l-feni-section l-fm"
+            className="l-feni-hi l-feni-start l-feni-section l-fm"
             initial={{ y: 200, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}>
-            <div className="fs-content fh-content">
-              <h1 className="fh-title">Feni Design</h1>
-              <h2 className="section-title">
+            <div className="l-fs-content l-fh-content">
+              <h1 className="fh-title section-main-title">Feni Design</h1>
+              <h2 className="fs-desc section-title">
                 Мы помогаем зарабатывать в интернете
               </h2>
               <button
@@ -49,7 +49,7 @@ export default function Home() {
                 Обсудить проект
               </button>
             </div>
-            <div className="fs-img img__resp-block">
+            <div className="l-fs-img img__resp-block">
               <img
                 src={feni_start}
                 width="438"

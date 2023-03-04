@@ -2,9 +2,27 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 
 import logo from "../img/feni-logo.svg";
-import { NavActive } from "../js/scripts";
+// import { NavActive } from "../js/scripts";
+function NavActive() {
+  let ham = document.querySelector(".hamburger");
+  let body = document.querySelector("body");
+  let header = document.querySelector(".l-header");
+  let headermenu = document.querySelector(".header-menu");
 
-export default function Header(props) {
+  ham.classList.toggle("ham-is-active");
+  body.classList.toggle("overflow-is-hidden");
+  header.classList.toggle("head-is-switch");
+  headermenu.classList.toggle("nav-is-active");
+
+  headermenu.addEventListener("click", function () {
+    var currentTarget = event.target;
+    // If click A elem - close menu
+    if (currentTarget.tagName === "A") {
+      NavActive();
+    }
+  });
+}
+export default function Header() {
   return (
     <>
       <header className="l-header">

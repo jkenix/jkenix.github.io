@@ -106,7 +106,6 @@
     > .fp-work-focus,
     > .fp-work-mini {
       flex-basis: 100%;
-      // height: 462px; // Optional
       height: 321px;
     }
     > .fp-rtl {
@@ -207,19 +206,13 @@
       }
     }
   }
+  // === Services ===
+  
   // === Contacts ===
   .l-feni-contacts {
     flex-direction: column;
   }
   // Footer
-  // Optional
-  // .l-footer-content {
-  //   justify-content: flex-start;
-  //   > .fc-first {
-  //     // width: 100%;
-  //     width: 15%;
-  //   }
-  // }
   // === Not Found ===
   .l-not-found {
     align-items: center;
@@ -234,10 +227,13 @@
 }
 // 768px
 @media (max-width: 767.98px) {
-  // h2 title
+  // h1, h2 title
+  .section-main-title {
+    font-size: 2rem;
+  }
   .section-title,
   .fb-info > .fb-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   // === Header ===
   .header-menu {
@@ -260,24 +256,22 @@
   // Common classes
   .l-feni-info,
   .l-feni-briefs,
-  .l-fdp-content, .l-feni-discuss-answer {
+  .l-fdp-content,
+  .l-feni-discuss-answer, .l-feni-services {
     padding-left: 35px;
   }
-  // === Home ===
-  // Feni-hi
-  .l-feni-hi {
+   // .l-feni-start block
+   .l-feni-start {
     padding-left: 35px;
     padding-right: 30px;
-    .fh-title {
-      font-size: 2.5rem;
-    }
-    > .fh-content {
-      max-width: 100%;
-    }
-    > .fs-img {
-      display: none;
-    }
   }
+  .l-fs-content {
+    max-width: 100%;
+  }
+  .l-fs-img {
+    display: none;
+  }
+  // === Home ===
   // Feni info
   .l-feni-info {
     > .feni-info-title {
@@ -316,9 +310,12 @@
       padding-right: 35px;
     }
   }
+  // === Services ===
+  .l-feni-services {
+    padding-right: 30px;
+  }
   // === About ===
   .l-feni-about {
-    padding-left: 35px;
     padding-right: 20px;
   }
   .fa-desc {

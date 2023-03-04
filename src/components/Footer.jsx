@@ -19,7 +19,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="fc-links">
-          <h3 className="footer-links-title small-section">Briefings</h3>
+          <h3 className="footer-links-title small-section">Брифы</h3>
           <div className="footer-links">
             <a href="https://forms.gle/neVqs5xMX5GU2nbT6" className="footer-link">
               Бриф на разработку веб дизайна
