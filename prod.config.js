@@ -1,6 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
-const CompressionPlugin = require("compression-webpack-plugin");
+// const CompressionPlugin = require("compression-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -20,10 +20,10 @@ const plugins = [
   new webpack.DefinePlugin({
     PRODUCTION: JSON.stringify(true),
   }),
-  new CompressionPlugin({
-    algorithm: "gzip",
-    test: /\.(js|css|html|svg)$/i,
-  }),
+  // new CompressionPlugin({
+  //   algorithm: "gzip",
+  //   test: /\.(js|css|html|svg)$/i,
+  // }),
 ];
 
 module.exports = {
@@ -38,21 +38,21 @@ module.exports = {
       chunks: "all",
       maxInitialRequests: Infinity,
       minSize: 0,
-      // cacheGroups: {
-      //   vendor: {
-      //     test: /[\\/]node_modules[\\/]/,
-      //     name(module) {
-      //       // получает имя, то есть node_modules/packageName/not/this/part.js
-      //       // или node_modules/packageName
-      //       const packageName = module.context.match(
-      //         /[\\/]node_modules[\\/](.*?)([\\/]|$)/
-      //       )[1];
-      //       // имена npm-пакетов можно, не опасаясь проблем, использовать
-      //       // в URL, но некоторые серверы не любят символы наподобие @
-      //       return `npm.${packageName.replace("@", "")}`;
-      //     },
-      //   },
-      // },
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name(module) {
+            // получает имя, то есть node_modules/packageName/not/this/part.js
+            // или node_modules/packageName
+            const packageName = module.context.match(
+              /[\\/]node_modules[\\/](.*?)([\\/]|$)/
+            )[1];
+            // имена npm-пакетов можно, не опасаясь проблем, использовать
+            // в URL, но некоторые серверы не любят символы наподобие @
+            return `npm.${packageName.replace("@", "")}`;
+          },
+        },
+      },
     },
     // splitChunks: {
     //   chunks: "async",
