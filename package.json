@@ -87,7 +87,7 @@
   },
   "scripts": {
     "dev": "cross-env webpack serve --config dev.config.js",
-    "build": "webpack --config prod.config.js && react-snap",
+    "prod": "webpack --config prod.config.js && react-snap",
     "clean": "rd /s /q docs",
     "mk": "mkdir docs"
   },
