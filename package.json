@@ -68,6 +68,7 @@
     "react-refresh": "^0.14.0",
     "react-router-dom": "^6.8.1",
     "react-scripts": "^5.0.1",
+    "react-slick": "^0.29.0",
     "react-snap": "^1.23.0",
     "sass": "^1.58.0",
     "sass-loader": "^13.2.0",
