@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState, lazy } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { motion } from "framer-motion";
 
 import ScrollToTop from "../../components/ScrollToTop.jsx";
 const Discuss = lazy(() => import("../../components/Discuss.jsx"));
+const Order_Form = lazy(() => import("../../components/Order_Form.jsx"));
 
 export default function Logos() {
+  const [count, setCount] = useState("");
   return (
     <>
       <HelmetProvider>
@@ -25,15 +27,13 @@ export default function Logos() {
             initial={{ y: 200, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}>
             <div className="logos-preview">
-              <h1 className="fh-title">Разработка Айдентики</h1>
+              <h1 className="fh-title">Разработка Логотипов</h1>
               <p className="lp-desc section-desc">
                 Вы хорошо знаете свой бизнес, а мы знаем как сделать хороший
                 дизайн! И будем рады сделать лого для вашей: Компании,
                 Приложения или Сайта.
               </p>
-              <div className="logos-info">
-
-              </div>
+              <div className="logos-info"></div>
               <button
                 className="btn-link btn-bw55"
                 onClick={() => {
@@ -44,7 +44,7 @@ export default function Logos() {
             </div>
             <div className="fs-img img__resp-block">
               <img
-                src={feni_start}
+                src={""}
                 width="438"
                 height="452"
                 alt="Feni Studio preview image"
@@ -52,6 +52,8 @@ export default function Logos() {
               />
             </div>
           </motion.section>
+          {/* <button onClick={() => setCount("xui")}>Click me</button>
+          <Order_Form count={count} /> */}
         </main>
         <ScrollToTop />
       </HelmetProvider>

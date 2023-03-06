@@ -216,9 +216,46 @@
 }
 // === Services ===
 .l-feni-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  grid-row-gap: 30px;
+  justify-items: center;
   padding-left: 100px;
   padding-right: 100px;
   padding-bottom: 100px;
+}
+.l-feni-service {
+  border: 1px solid $we5;
+  padding: 40px;
+  max-width: 350px;
+  &:hover,
+  &:focus-visible {
+    border: 1px solid $ff5;
+    > .feni-check {
+      > span {
+        color: $ff5;
+      }
+      > svg path {
+        stroke: $ff5;
+      }
+    }
+  }
+  > .feni-service-title {
+    font-weight: 700;
+  }
+  > .feni-service-desc {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  > .feni-check {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    white-space: nowrap;
+    > span {
+      font-weight: 700;;
+    }
+  }
 }
 // --- Services Nested ---
 // Logos

@@ -33,7 +33,7 @@ export default function Identify() {
             </div>
             <div className="fs-img img__resp-block">
               <img
-                src={feni_start}
+                src={""}
                 width="438"
                 height="452"
                 alt="Feni Studio preview image"

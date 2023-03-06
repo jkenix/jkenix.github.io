@@ -1,4 +1,4 @@
-import React from "react";
+import React, {lazy} from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { motion } from "framer-motion";
 
@@ -25,7 +25,7 @@ export default function Websites() {
             initial={{ y: 200, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}>
             <div className="fs-content fh-content">
-              <h1 className="fh-title">Feni Design</h1>
+              <h1 className="fh-title">Разработка Веб-Дизайна</h1>
               <h2 className="section-title">
                 Мы помогаем зарабатывать в интернете
               </h2>
@@ -39,7 +39,7 @@ export default function Websites() {
             </div>
             <div className="fs-img img__resp-block">
               <img
-                src={feni_start}
+                src={""}
                 width="438"
                 height="452"
                 alt="Feni Studio preview image"

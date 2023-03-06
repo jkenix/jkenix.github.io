@@ -7,9 +7,6 @@
   .header-menu > .nav-item {
     margin-right: 35px;
   }
-  // === Main ===
-  .l-main {
-  }
   // === Footer ===
   .l-footer-content {
     padding-left: 30px;
@@ -53,6 +50,10 @@
   // === Project ===
   .project-content {
     padding-left: 150px;
+  }
+  // === Services ===
+  .l-feni-services {
+    grid-template-columns: repeat(auto-fit, minmax(269.1px, 1fr));
   }
   // === About ===
   .l-feni-about-skills {
@@ -206,8 +207,8 @@
       }
     }
   }
-  // === Services ===
-  
+  // === Services (Nested !!!) ===
+
   // === Contacts ===
   .l-feni-contacts {
     flex-direction: column;
@@ -257,11 +258,12 @@
   .l-feni-info,
   .l-feni-briefs,
   .l-fdp-content,
-  .l-feni-discuss-answer, .l-feni-services {
+  .l-feni-discuss-answer,
+  .l-feni-services {
     padding-left: 35px;
   }
-   // .l-feni-start block
-   .l-feni-start {
+  // .l-feni-start block
+  .l-feni-start {
     padding-left: 35px;
     padding-right: 30px;
   }
@@ -313,6 +315,10 @@
   // === Services ===
   .l-feni-services {
     padding-right: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(229px, 1fr));
+  }
+  .l-feni-service {
+    padding: 20px;
   }
   // === About ===
   .l-feni-about {
@@ -339,8 +345,6 @@
 }
 // 576px
 @media (max-width: 575.98px) {
-  .l-main {
-  }
   // === Main ===
   // Feni info
   .l-feni-info > .feni-info-title {
@@ -360,6 +364,13 @@
   // === Dicuss ===
   .l-fdp-content > .fdp-content-form {
     width: 80%;
+  }
+  // === Services ===
+  .l-feni-services {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  .l-feni-service {
+    max-width: 100%;
   }
 }
 // 320px
