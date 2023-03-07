@@ -269,6 +269,9 @@
   }
   .l-fs-content {
     max-width: 100%;
+    > .fs-desc {
+      max-width: 90%;
+    }
   }
   .l-fs-img {
     display: none;

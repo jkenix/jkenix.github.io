@@ -98,10 +98,10 @@
     "destination": "docs",
     "include": [
       "/",
-      "/portfolio",
-      "/services",
-      "/about",
-      "/contacts"
+      "/portfolio/",
+      "/services/",
+      "/about/",
+      "/contacts/"
     ]
   }
 }

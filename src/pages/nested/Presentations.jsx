@@ -1,9 +1,15 @@
-import React, {lazy} from "react";
+import React, { lazy } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { motion } from "framer-motion";
 
-import ScrollToTop from "../../components/ScrollToTop.jsx";
-const Discuss = lazy(() => import("../../components/Discuss.jsx"));
+import presmade from "../../img/presmade.webp";
+
+import Service_Preview from "../../components/services/Service_Preview.jsx";
+import ScrollToTop from "../../components/main/ScrollToTop.jsx";
+const Discuss = lazy(() => import("../../components/main/Discuss.jsx"));
+const Order_Form = lazy(() =>
+  import("../../components/services/Order_Form.jsx")
+);
 
 export default function Presentations() {
   return (
@@ -20,33 +26,35 @@ export default function Presentations() {
           />
         </Helmet>
         <main className="l-main">
-          <motion.section
-            className="l-presentations l-feni-start l-feni-section l-fm"
-            initial={{ y: 200, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}>
-            <div className="fs-content fh-content">
-              <h1 className="fh-title">Разработка Презентаций</h1>
-              <h2 className="section-title">
-                Мы помогаем зарабатывать в интернете
-              </h2>
-              <button
-                className="btn-link btn-bw55"
-                onClick={() => {
-                  document.getElementById("discuss").scrollIntoView();
-                }}>
-                Обсудить проект
-              </button>
-            </div>
-            <div className="fs-img img__resp-block">
-              <img
-                src={""}
-                width="438"
-                height="452"
-                alt="Feni Studio preview image"
-                loading="eager"
-              />
-            </div>
-          </motion.section>
+          <Service_Preview
+            section_class="l-presentations l-feni-start l-feni-section l-fm"
+            brif_link="https://forms.gle/Kf5J7RAoe2ZuEigc7"
+            title_content={
+              <>
+                <h1 className="present-title section-main-title">
+                  Разработка Презентаций
+                </h1>
+                <p className="fs-desc present-desc section-desc">
+                  Мы сделаем для вас дизайн презентации, которые будут
+                  масштабировать или привлекать капитал!
+                </p>
+              </>
+            }
+            img_block={
+              <>
+                <div className="l-fs-img present-img img__resp-block">
+                  <img
+                    src={presmade}
+                    width="456"
+                    height="456"
+                    alt="Presentations preview image"
+                    loading="eager"
+                  />
+                </div>
+              </>
+            }
+          />
+          <Discuss />
         </main>
         <ScrollToTop />
       </HelmetProvider>

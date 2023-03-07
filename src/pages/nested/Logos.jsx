@@ -2,9 +2,14 @@ import React, { useState, lazy } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { motion } from "framer-motion";
 
-import ScrollToTop from "../../components/ScrollToTop.jsx";
-const Discuss = lazy(() => import("../../components/Discuss.jsx"));
-const Order_Form = lazy(() => import("../../components/Order_Form.jsx"));
+import logomake from "../../img/logomake.webp";
+
+import Service_Preview from "../../components/services/Service_Preview.jsx";
+import ScrollToTop from "../../components/main/ScrollToTop.jsx";
+const Discuss = lazy(() => import("../../components/main/Discuss.jsx"));
+const Order_Form = lazy(() =>
+  import("../../components/services/Order_Form.jsx")
+);
 
 export default function Logos() {
   const [count, setCount] = useState("");
@@ -22,38 +27,36 @@ export default function Logos() {
           />
         </Helmet>
         <main className="l-main">
-          <motion.section
-            className="l-logos l-feni-start l-feni-section l-fm"
-            initial={{ y: 200, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}>
-            <div className="logos-preview">
-              <h1 className="fh-title">Разработка Логотипов</h1>
-              <p className="lp-desc section-desc">
-                Вы хорошо знаете свой бизнес, а мы знаем как сделать хороший
-                дизайн! И будем рады сделать лого для вашей: Компании,
-                Приложения или Сайта.
-              </p>
-              <div className="logos-info"></div>
-              <button
-                className="btn-link btn-bw55"
-                onClick={() => {
-                  document.getElementById("discuss").scrollIntoView();
-                }}>
-                Обсудить проект
-              </button>
-            </div>
-            <div className="fs-img img__resp-block">
-              <img
-                src={""}
-                width="438"
-                height="452"
-                alt="Feni Studio preview image"
-                loading="eager"
-              />
-            </div>
-          </motion.section>
+          <Service_Preview
+            section_class="l-logos l-feni-start l-feni-section l-fm"
+            brif_link="https://forms.gle/Tvioeac6DhDZxu9N9"
+            title_content={
+              <>
+                <h1 className="logos-title section-main-title">Разработка Логотипов</h1>
+                <p className="fs-desc logos-desc section-desc">
+                  Вы хорошо знаете свой бизнес, а мы знаем как сделать хороший
+                  дизайн! И будем рады сделать лого для вашей: Компании,
+                  Приложения или Сайта.
+                </p>
+              </>
+            }
+            img_block={
+              <>
+                <div className="l-fs-img logos-img img__resp-block">
+                  <img
+                    src={logomake}
+                    width="472"
+                    height="472"
+                    alt="Logos preview image"
+                    loading="eager"
+                  />
+                </div>
+              </>
+            }
+          />
           {/* <button onClick={() => setCount("xui")}>Click me</button>
           <Order_Form count={count} /> */}
+          <Discuss />
         </main>
         <ScrollToTop />
       </HelmetProvider>

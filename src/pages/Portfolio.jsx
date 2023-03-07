@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { lazy, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import { TabList_portfolio } from "../js/data.jsx";
+
 import UpBtn from "../components/UpBtn.jsx";
-import ScrollToTop from "../components/ScrollToTop.jsx";
+import ScrollToTop from "../components/main/ScrollToTop.jsx";
+const Discuss = lazy(() => import("../components/main/Discuss.jsx"));
 
 export default function Portfolio(props) {
   const [currentTab, setCurrentTab] = useState(props.tabid);
@@ -66,6 +68,7 @@ export default function Portfolio(props) {
               }
             })}
           </section>
+          <Discuss />
         </main>
         <ScrollToTop />
       </HelmetProvider>

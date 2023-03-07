@@ -1,7 +1,8 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import ScrollToTop from "../components/ScrollToTop.jsx";
+
+import ScrollToTop from "../components/main/ScrollToTop.jsx";
 
 import not_found from "../img/404.webp";
 

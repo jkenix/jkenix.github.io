@@ -59,7 +59,7 @@
   max-width: 307px;
 }
 // Common classes (fs, fi, fb)
-.l-feni-hi,
+.l-feni-start,
 .l-feni-info,
 .l-feni-briefs {
   padding-left: 100px;
@@ -258,12 +258,34 @@
   }
 }
 // --- Services Nested ---
-// Logos
-
+.l-lfp {
+  max-width: 430px;
+}
+.l-service-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 // Websites
+.l-web-design {
+  margin-bottom: 100px;
+}
+// Logos
+.l-logos {
+  margin-bottom: 100px;
+}
 // Identify
+.l-identify {
+  margin-bottom: 100px;
+}
 // Illustrations
+.l-illustrations {
+  margin-bottom: 100px;
+}
 // Presentations
+.l-presentations {
+  margin-bottom: 100px;
+}
 // === About ===
 .l-feni-about {
   padding-bottom: 100px;
@@ -337,7 +359,7 @@
   justify-content: space-between;
   padding-left: 70px;
   padding-right: 100px;
-  row-gap: 20px;
+  row-gap: 50px; //20
   max-width: 100%;
   > .fc-first {
     width: 25%;

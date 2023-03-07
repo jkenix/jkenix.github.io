@@ -1,7 +1,9 @@
-import React from "react";
+import React, {lazy} from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import ScrollToTop from "../components/ScrollToTop.jsx";
+
+import ScrollToTop from "../components/main/ScrollToTop.jsx";
+import Discuss from "../components/main/Discuss.jsx";
 
 import more from "../img/more.svg";
 
@@ -37,6 +39,7 @@ export default function Product(props) {
             <img src={more} width={"25"} height={"8"} alt="more arrow" />
           </Link>
         </div>
+        <Discuss />
       </main>
       <ScrollToTop />
     </HelmetProvider>

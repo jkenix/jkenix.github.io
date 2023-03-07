@@ -10,8 +10,8 @@ import feni_start from "../img/feni-start.webp";
 import more from "../img/more.svg";
 import partners from "../img/partners.webp";
 
-const Discuss = lazy(() => import("../components/Discuss.jsx"));
-import ScrollToTop from "../components/ScrollToTop.jsx";
+const Discuss = lazy(() => import("../components/main/Discuss.jsx"));
+import ScrollToTop from "../components/main/ScrollToTop.jsx";
 
 export default function Home() {
   const [currentTab, setCurrentTab] = useState("tab1");
@@ -148,28 +148,36 @@ export default function Home() {
                   бриф на разработку веб дизайна
                 </span>
               </a>
-              <a href="https://forms.gle/Tvioeac6DhDZxu9N9" className="fb-info l-fm fbi-block">
+              <a
+                href="https://forms.gle/Tvioeac6DhDZxu9N9"
+                className="fb-info l-fm fbi-block">
                 <span className="fb-count small-section">02</span>
                 <span className="fb-title">Лого</span>
                 <span className="fb-desc section-desc">
                   бриф на разработку логотипа
                 </span>
               </a>
-              <a href="https://forms.gle/G1F61kMXz7n8ZJhh7" className="fb-info l-fm fbi-block">
+              <a
+                href="https://forms.gle/G1F61kMXz7n8ZJhh7"
+                className="fb-info l-fm fbi-block">
                 <span className="fb-count small-section">03</span>
                 <span className="fb-title">Иллюстрация</span>
                 <span className="fb-desc section-desc">
                   бриф на разработку иллюстрации
                 </span>
               </a>
-              <a href="https://forms.gle/Kf5J7RAoe2ZuEigc7" className="fb-info l-fm fbi-block">
+              <a
+                href="https://forms.gle/Kf5J7RAoe2ZuEigc7"
+                className="fb-info l-fm fbi-block">
                 <span className="fb-count small-section">04</span>
                 <span className="fb-title">Презентация</span>
                 <span className="fb-desc section-desc">
                   бриф на разработку презентации
                 </span>
               </a>
-              <a href="https://forms.gle/BzdVa4kz1FFwy36P7" className="fb-info l-fm fbi-block">
+              <a
+                href="https://forms.gle/BzdVa4kz1FFwy36P7"
+                className="fb-info l-fm fbi-block">
                 <span className="fb-count small-section">05</span>
                 <span className="fb-title">Айдентика</span>
                 <span className="fb-desc section-desc">

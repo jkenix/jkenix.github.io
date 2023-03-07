@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { motion } from "framer-motion";
 
-import ScrollToTop from "../components/ScrollToTop.jsx";
-const Discuss = lazy(() => import("../components/Discuss.jsx"));
+import ScrollToTop from "../components/main/ScrollToTop.jsx";
+const Discuss = lazy(() => import("../components/main/Discuss.jsx"));
 const MotionComp = motion(Link);
 
 export default function About() {
