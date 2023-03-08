@@ -151,30 +151,6 @@
   }
 }
 // === Discuss Project ===
-.feedback-row {
-  width: 100%;
-  margin-bottom: 30px;
-  &.top {
-    padding-right: 50px;
-    width: 53%;
-  }
-  &.right {
-    // padding-right: 20px;
-    padding-right: 43px;
-    width: 41%;
-  }
-  &.left {
-    width: 50%;
-  }
-  > .form-input {
-    width: 100%;
-    padding-top: 15px;
-  }
-  > .message-input {
-    border: none;
-    resize: none;
-  }
-}
 .feedback-btn {
   border: none;
   min-width: 35%;

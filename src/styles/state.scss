@@ -114,6 +114,7 @@
   &:hover,
   &:focus-visible {
     opacity: 0.7;
+    outline: 2px solid $ff5;
   }
 }
 // LazyLoad work-desc

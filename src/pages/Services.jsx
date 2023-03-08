@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { motion } from "framer-motion";
 
 import Service from "../components/Service.jsx";
 
@@ -23,11 +24,14 @@ export default function Services() {
             content="Закажи услугу у Feni Design Studio"
           />
         </Helmet>
-        <main className="l-main">
-          <section
-            className="l-feni-services l-feni-section l-fm"
-            initial={{ y: 100, opacity: 0 }}
+        <main className="l-main l-services">
+          <motion.section
+            className="l-fs-title l-feni-section l-fm"
+            initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}>
+            <h1 className="fs-title">Выберите услуги по дизайну от Feni Studio!</h1>
+          </motion.section>
+          <section className="l-feni-services l-feni-section l-fm">
             <Service
               title="Веб-дизайн"
               desc="Разрабатываем дизайн для интернет-магазинов, лендингов, корпоративных сайтов и продуктов SaaS"

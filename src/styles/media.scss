@@ -53,7 +53,10 @@
   }
   // === Services ===
   .l-feni-services {
-    grid-template-columns: repeat(auto-fit, minmax(269.1px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
+  }
+  .l-feni-service {
+    padding: 20px;
   }
   // === About ===
   .l-feni-about-skills {
@@ -146,7 +149,7 @@
     }
   }
   .fbi-block {
-    padding-top: 20px;
+    margin-top: 20px;
   }
   // Partners
   .l-feni-partners .fp-desc {
@@ -168,18 +171,18 @@
   .form-img-block {
     display: none;
   }
-  .feedback-row.top {
+  .l-feedback-row.top {
     width: 100%;
     padding-right: 0;
   }
-  .feedback-row.right {
+  .l-feedback-row.right {
     padding-right: 0;
   }
-  .feedback-row.right,
-  .feedback-row.left {
+  .l-feedback-row.right,
+  .l-feedback-row.left {
     width: 100%;
   }
-  .feedback-row.message {
+  .l-feedback-row.message {
     height: 100px;
     padding-bottom: 30px;
   }
@@ -207,8 +210,14 @@
       }
     }
   }
+  // === Services ===
+  .l-feni-services {
+    padding-right: 30px;
+    padding-left: 35px;
+    grid-template-columns: repeat(auto-fit, minmax(263.1px, 1fr));
+  }
   // === Services (Nested !!!) ===
-
+ 
   // === Contacts ===
   .l-feni-contacts {
     flex-direction: column;
@@ -317,11 +326,7 @@
   }
   // === Services ===
   .l-feni-services {
-    padding-right: 30px;
     grid-template-columns: repeat(auto-fit, minmax(229px, 1fr));
-  }
-  .l-feni-service {
-    padding: 20px;
   }
   // === About ===
   .l-feni-about {
@@ -371,9 +376,6 @@
   // === Services ===
   .l-feni-services {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-  }
-  .l-feni-service {
-    max-width: 100%;
   }
 }
 // 320px

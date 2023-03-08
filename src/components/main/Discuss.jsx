@@ -34,7 +34,7 @@ export default function Discuss() {
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}>
-            <div className="feedback-row top">
+            <div className="l-feedback-row top">
               <label className="label-feedback" htmlFor="Client name">
                 Ваше имя*
               </label>
@@ -45,11 +45,11 @@ export default function Discuss() {
                 size="40"
                 className="form-input"
                 aria-required="true"
-                placeholder="введите ваше имя"
+                placeholder="Введите имя"
                 required={true}
               />
             </div>
-            <div className="feedback-row right">
+            <div className="l-feedback-row right">
               <label className="label-feedback" htmlFor="Client phone">
                 Телефон*
               </label>
@@ -60,13 +60,13 @@ export default function Discuss() {
                 size="40"
                 className="form-input"
                 aria-required="true"
-                placeholder="введите номер телефона"
+                placeholder="Введите номер телефона"
                 required={true}
               />
             </div>
-            <div className="feedback-row left">
+            <div className="l-feedback-row left">
               <label className="label-feedback" htmlFor="Client email">
-                Email*
+                Почта*
               </label>
               <input
                 type="email"
@@ -75,13 +75,13 @@ export default function Discuss() {
                 size="30"
                 className="form-input"
                 aria-required="true"
-                placeholder="введите электронный адрес"
+                placeholder="Введите электронный адрес"
                 required={true}
               />
             </div>
-            <div className="feedback-row message">
+            <div className="l-feedback-row message">
               <label htmlFor="Client message" className="label-feedback">
-                Message
+                Сообщение
               </label>
               <textarea
                 id="Client message"
@@ -90,7 +90,7 @@ export default function Discuss() {
                 cols="40"
                 rows="10"
                 className="form-input message-input"
-                placeholder="enter a message"></textarea>
+                placeholder="Введите ваше сообщение"></textarea>
             </div>
             <input
               type="submit"

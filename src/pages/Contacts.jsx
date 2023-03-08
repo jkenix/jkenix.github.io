@@ -35,8 +35,8 @@ export default function Contacts() {
             <div className="fcon-content">
               <div className="contact-info mail">
                 <h2 className="contacts-title small-section">Телефон</h2>
-                <a href="tel:+38-097-757-51-51" className="contacts-link">
-                  +38 (097) 757 51 51
+                <a href="tel:+7-963-728-66-90" className="contacts-link">
+                +7-963-728-66-90
                 </a>
               </div>
               <div className="contact-info num">

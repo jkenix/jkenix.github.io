@@ -45,10 +45,10 @@ export default function Header() {
           </nav>
           <div className="disc-head">
             <a
-              href="tel:+38-097-757-5151"
+              href="tel:+7-963-728-66-90"
               className="feni-tel"
               title="Позвонить">
-              +38 (097) 757 51 51
+              +7-963-728-66-90
             </a>
             <a
               href="#discuss-project"
