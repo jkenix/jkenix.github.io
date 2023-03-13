@@ -6,6 +6,9 @@ import Discuss from "../components/main/Discuss.jsx";
 import ScrollToTop from "../components/main/ScrollToTop.jsx";
 
 import contacts_img from "../img/feni-contacts.webp";
+import vklogo from "../img/vk-logo.svg";
+import telegram from "../img/telegram-logo.svg";
+import wapp from "../img/wapp-logo.svg";
 
 export default function Contacts() {
   return (
@@ -19,6 +22,12 @@ export default function Contacts() {
           <meta name="description" content="" /> */}
         </Helmet>
         <main className="l-main l-contacts">
+          <motion.section
+            className="l-feni-contacts-title l-feni-section l-fm"
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}>
+            <h2 className="section-main-title">Feni Design Studio</h2>
+          </motion.section>
           <motion.section
             className="l-feni-contacts l-feni-section l-fm"
             initial={{ y: 100, opacity: 0 }}
@@ -36,7 +45,7 @@ export default function Contacts() {
               <div className="contact-info mail">
                 <h2 className="contacts-title small-section">Телефон</h2>
                 <a href="tel:+7-963-728-66-90" className="contacts-link">
-                +7-963-728-66-90
+                  +7-963-728-66-90
                 </a>
               </div>
               <div className="contact-info num">
@@ -44,6 +53,22 @@ export default function Contacts() {
                 <a href="mailto:feni@studio.com" className="contacts-link">
                   feni@studio.com
                 </a>
+              </div>
+              <div className="contact-info media">
+                <h2 className="contacts-title small-section">
+                  Cоциальные сети
+                </h2>
+                <div className="feni-media">
+                  <a href="#" title="Группа в VK">
+                    <img src={vklogo} width="40" height="40" alt="Vk" />
+                  </a>
+                  <a href="#" title="Группа в Telegram">
+                    <img src={telegram} width="40" height="40" alt="Vk" />
+                  </a>
+                  <a href="#" title="Связь в Whatsapp">
+                    <img src={wapp} width="40" height="40" alt="Vk" />
+                  </a>
+                </div>
               </div>
             </div>
           </motion.section>

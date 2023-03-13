@@ -303,6 +303,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  > .btn-bw55 {
+    &:hover,
+    &:focus-visible {
+      color: $wff;
+      background-color: $ff5;
+    }
+  }
 }
 // Websites
 .l-web-design {
@@ -365,22 +372,27 @@
   }
 }
 // === Contacts ===
-.l-contacts {
-  padding-top: 0;
+.l-feni-contacts-title {
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .l-feni-contacts {
   align-items: center;
   display: flex;
   gap: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   justify-content: center;
   > .fcon-img {
     max-width: 504px;
   }
-  .contacts-link {
-    padding-top: 10px;
+  .contacts-title {
+    margin-bottom: 15px;
   }
   .contact-info.num {
+    margin-top: 40px;
+  }
+  .contact-info.media {
     margin-top: 40px;
   }
 }
@@ -393,11 +405,10 @@
 .l-footer-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   justify-content: space-between;
   padding-left: 70px;
   padding-right: 100px;
-  row-gap: 50px; //20
+  row-gap: 20px;
   max-width: 100%;
   > .fc-first {
     width: 25%;
