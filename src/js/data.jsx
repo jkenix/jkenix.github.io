@@ -455,7 +455,7 @@ export const TabList_portfolio = [
   {
     name: "tab1",
     label: "Все работы",
-    path: "/all_works",
+    path: "/all_works/",
     content: (
       <>
         {all_works.slice(0, list_port_visible_size).map((aw, i) => (
@@ -474,7 +474,7 @@ export const TabList_portfolio = [
                 </div>
               </>
               <img
-                src={"../" + `${aw.main_src}`}
+                src={`${aw.main_src}`}
                 alt={aw.title}
                 height="321"
                 loading="eager"></img>
@@ -496,7 +496,7 @@ export const TabList_portfolio = [
                       {aw.category}
                     </p>
                   </div>
-                  <img src={"../" + `${aw.main_src}`} alt={aw.title}></img>
+                  <img src={`${aw.main_src}`} alt={aw.title}></img>
                 </>
               </LazyLoad>
             </Link>
@@ -508,7 +508,7 @@ export const TabList_portfolio = [
   {
     name: "tab2",
     label: "Логотипы",
-    path: "/logos",
+    path: "/logos/",
     num: 10,
     content: (
       <>
@@ -528,7 +528,7 @@ export const TabList_portfolio = [
                 </div>
               </>
               <img
-                src={"../" + `${logo.main_src}`}
+                src={`${logo.main_src}`}
                 height={321}
                 alt={logo.title}
                 loading="eager"></img>
@@ -550,7 +550,7 @@ export const TabList_portfolio = [
                       {logo.category}
                     </p>
                   </div>
-                  <img src={"../" + `${logo.main_src}`} alt={logo.title}></img>
+                  <img src={`${logo.main_src}`} alt={logo.title}></img>
                 </>
               </LazyLoad>
             </Link>
@@ -562,7 +562,7 @@ export const TabList_portfolio = [
   {
     name: "tab3",
     label: "Веб-сайты",
-    path: "/websites",
+    path: "/websites/",
     num: 3,
     content: (
       <>
@@ -582,7 +582,7 @@ export const TabList_portfolio = [
                 </div>
               </>
               <img
-                src={"../" + `${web.main_src}`}
+                src={`${web.main_src}`}
                 height={321}
                 alt={web.title}
                 loading="eager"></img>
@@ -595,7 +595,7 @@ export const TabList_portfolio = [
   {
     name: "tab4",
     label: "Айдентика",
-    path: "/identify",
+    path: "/identify/",
     num: 4,
     content: (
       <>
@@ -615,7 +615,7 @@ export const TabList_portfolio = [
                 </div>
               </>
               <img
-                src={"../" + `${styles.main_src}`}
+                src={`${styles.main_src}`}
                 height={321}
                 alt={styles.title}
                 loading="eager"></img>
@@ -628,11 +628,11 @@ export const TabList_portfolio = [
   {
     name: "tab5",
     label: "Иллюстрации",
-    path: "/illustrations",
+    path: "/illustrations/",
     num: 8,
     content: (
       <>
-        {illustrations.map((ill, i) => (
+        {illustrations.slice(0, list_port_visible_size).map((ill, i) => (
           <React.Fragment key={i}>
             <Link
               key={i}
@@ -647,11 +647,32 @@ export const TabList_portfolio = [
                   </p>
                 </div>
                 <img
-                  src={"../" + `${ill.main_src}`}
+                  src={`${ill.main_src}`}
                   height={321}
                   alt={ill.title}
                   loading="eager"></img>
               </>
+            </Link>
+          </React.Fragment>
+        ))}
+        {illustrations.slice(6).map((ill, i) => (
+          <React.Fragment key={i}>
+            <Link
+              key={i}
+              to={{ pathname: `/${ill.url}` }}
+              aria-label={`${ill.title}`}
+              className={"work-img-port work-img img__resp-block"}>
+              <LazyLoad height={321} offset={100}>
+                <>
+                  <div className="work-desc wdl">
+                    <h3 className="work-desc-title">{ill.title}</h3>
+                    <p className="work-desc-info feni-section-desc">
+                      {ill.category}
+                    </p>
+                  </div>
+                  <img src={`${ill.main_src}`} alt={ill.title}></img>
+                </>
+              </LazyLoad>
             </Link>
           </React.Fragment>
         ))}
@@ -661,7 +682,7 @@ export const TabList_portfolio = [
   {
     name: "tab6",
     label: "Презентации",
-    path: "/presentations",
+    path: "/presentations/",
     num: 5,
     content: (
       <>
@@ -681,7 +702,7 @@ export const TabList_portfolio = [
                 </div>
               </>
               <img
-                src={"../" + `${present.main_src}`}
+                src={`${present.main_src}`}
                 height={321}
                 alt={present.title}
                 loading="eager"></img>

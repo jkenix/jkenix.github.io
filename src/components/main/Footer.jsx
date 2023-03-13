@@ -54,7 +54,7 @@ export default function Footer() {
         <div className="fc-links">
           <h3 className="footer-links-title small-section">О нас</h3>
           <div className="footer-links feni-links">
-            <Link to="/portfolio/all_works" className="footer-link">
+            <Link to="/portfolio/all_works/" className="footer-link">
               Портфолио
             </Link>
             <Link to="/services/" className="footer-link">

@@ -101,7 +101,7 @@ export default function Home() {
                 ))}
                 <Link
                   className="btn-tab-link"
-                  to={"/portfolio/all_works"}
+                  to={"/portfolio/all_works/"}
                   title="Все работы">
                   Все работы
                   <img src={more} width={"25"} height={"8"} alt="more arrow" />
@@ -117,7 +117,7 @@ export default function Home() {
                     {tab.content}
                     <Link
                       className="btn-link btn-b55 btn-focus"
-                      to={"/portfolio/all_works"}
+                      to={"/portfolio/all_works/"}
                       title="Все работы">
                       Все работы
                     </Link>

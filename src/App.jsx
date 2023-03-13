@@ -36,45 +36,45 @@ export default function App() {
               <Route path="/" element={<Home />}></Route>
               <Route
                 path="/portfolio/"
-                element={<Navigate to="/portfolio/all_works" />}></Route>
+                element={<Navigate to="/portfolio/all_works/" />}></Route>
               <Route
-                path="portfolio/all_works"
+                path="portfolio/all_works/"
                 element={
                   <Portfolio
                     tablabel="Все работы"
                     tabid="tab1"
-                    tabpath={"/all_works"}
+                    tabpath={"/all_works/"}
                   />
                 }></Route>
               <Route
-                path="portfolio/logos"
+                path="portfolio/logos/"
                 element={
                   <Portfolio
                     tablabel="Логотипы"
                     tabid="tab2"
-                    tabpath={"/logos"}
+                    tabpath={"/logos/"}
                   />
                 }></Route>
               <Route
-                path="portfolio/websites"
+                path="portfolio/websites/"
                 element={
                   <Portfolio
                     tablabel="Веб-сайты"
                     tabid="tab3"
-                    tabpath={"/websites"}
+                    tabpath={"/websites/"}
                   />
                 }></Route>
               <Route
-                path="portfolio/identify"
+                path="portfolio/identify/"
                 element={
                   <Portfolio
                     tablabel="Айдентика"
                     tabid="tab4"
-                    tabpath={"/identify"}
+                    tabpath={"/identify/"}
                   />
                 }></Route>
               <Route
-                path="portfolio/illustrations"
+                path="portfolio/illustrations/"
                 element={
                   <Portfolio
                     tablabel="Иллюстрации"
@@ -83,25 +83,25 @@ export default function App() {
                   />
                 }></Route>
               <Route
-                path="portfolio/presentations"
+                path="portfolio/presentations/"
                 element={
                   <Portfolio
                     tablabel="Презентации"
                     tabid="tab6"
-                    tabpath={"/presentations"}
+                    tabpath={"/presentations/"}
                   />
                 }></Route>
               <Route path="/services/" element={<Services />}></Route>
-              <Route path="services/logos" element={<Logos />}></Route>
+              <Route path="services/logos/" element={<Logos />}></Route>
               <Route
-                path="services/web-design"
+                path="services/web-design/"
                 element={<Web_design />}></Route>
-              <Route path="services/identify" element={<Identify />}></Route>
+              <Route path="services/identify/" element={<Identify />}></Route>
               <Route
-                path="services/illustrations"
+                path="services/illustrations/"
                 element={<Illustrations />}></Route>
               <Route
-                path="services/presentations"
+                path="services/presentations/"
                 element={<Presentations />}></Route>
               <Route path="/about/" element={<About />}></Route>
               <Route path="/contacts/" element={<Contacts />}></Route>

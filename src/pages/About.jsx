@@ -93,7 +93,7 @@ export default function About() {
           </section>
           <MotionComp
             className="btn-fa btn-link btn-bw55 btn-focus"
-            to="/portfolio/all_works"
+            to="/portfolio/all_works/"
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}>

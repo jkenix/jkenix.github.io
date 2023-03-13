@@ -35,27 +35,27 @@ export default function Services() {
             <Service
               title="Веб-дизайн"
               desc="Разрабатываем дизайн для интернет-магазинов, лендингов, корпоративных сайтов и продуктов SaaS"
-              link={{ pathname: location.pathname + `web-design` }}
+              link={{ pathname: location.pathname + `web-design/` }}
             />
             <Service
               title="Логотипы"
               desc="Мы создадим логотип в любом стиле от геральдики до минимализма!"
-              link={{ pathname: location.pathname + `logos` }}
+              link={{ pathname: location.pathname + `logos/` }}
             />
             <Service
               title="Айдентика"
               desc="Мы занимаемся дизайном логотипов, элементов фирменного стиля"
-              link={{ pathname: location.pathname + `identify` }}
+              link={{ pathname: location.pathname + `identify/` }}
             />
             <Service
               title="Иллюстрации"
               desc="Для приложений, веб-сайтов, креативов, презентаций и так далее."
-              link={{ pathname: location.pathname + `illustrations` }}
+              link={{ pathname: location.pathname + `illustrations/` }}
             />
             <Service
               title="Презентации"
               desc="Услуги по дизайну презентаций для стартапов, стремящихся масштабировать или привлечь капитал"
-              link={{ pathname: location.pathname + `presentations` }}
+              link={{ pathname: location.pathname + `presentations/` }}
             />
           </section>
           <Discuss />
