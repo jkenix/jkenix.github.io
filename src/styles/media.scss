@@ -58,6 +58,10 @@
   .l-feni-service {
     padding: 20px;
   }
+  // --- Services (Nested) ---
+  .l-unique-project {
+    width: 61.7%;
+  }
   // === About ===
   .l-feni-about-skills {
     row-gap: 20px;
@@ -94,10 +98,6 @@
     }
   }
   // === Main ===
-  // Common class
-  .works-tabs > .btn-tab {
-    margin-right: 19px;
-  }
   // === Home ===
   // Feni preview
   .l-fp-section-title {
@@ -121,6 +121,12 @@
   }
   .fp-ltl > .work-desc {
     left: 30px;
+  }
+  .fp-works-tabs {
+    padding-left: 0;
+    > .btn-tab {
+      margin-right: 12px;
+    }
   }
   // Common classes (fp, port)
   .works-content {
@@ -197,6 +203,9 @@
     }
   }
   // === Portfolio ===
+  .port-works-tabs > .btn-tab {
+    margin-right: 21px;
+  }
   .work-img-port {
     width: 50%;
   }
@@ -217,7 +226,25 @@
     grid-template-columns: repeat(auto-fit, minmax(263.1px, 1fr));
   }
   // === Services (Nested !!!) ===
- 
+  // Prices
+  .l-price-project, .l-pp-identify > .l-unique-project {
+    width: 43.2%;
+  }
+  .l-unique-project {
+    width: 100%;
+  }
+  .l-price-project,
+  .l-unique-project {
+    &:hover {
+      &::before {
+        display: none;
+      }
+    }
+  }
+  // Benefits
+  .l-benefits-items > .benefits-item {
+    width: 41%;
+  }
   // === Contacts ===
   .l-contacts {
     padding-top: 50px;
@@ -271,7 +298,11 @@
   .l-feni-briefs,
   .l-fdp-content,
   .l-feni-discuss-answer,
-  .l-feni-services {
+  .l-feni-services,
+  .l-process-dev > .pd-title,
+  .l-process-dev-slider,
+  .l-prices,
+  .l-benefits {
     padding-left: 35px;
   }
   // .l-feni-start block
@@ -299,6 +330,9 @@
   .fp-works-tabs {
     flex-wrap: wrap;
     padding-left: 0;
+    > .btn-tab {
+      margin-right: 15px;
+    }
     > .btn-tab-link {
       margin-left: 6px;
     }
@@ -330,6 +364,19 @@
   // === Services ===
   .l-feni-services {
     grid-template-columns: repeat(auto-fit, minmax(229px, 1fr));
+  }
+  // --- Services (Nested) ---
+  // Prices
+  .l-process-dev > .pd-title {
+    padding-right: 30px;
+  }
+  .l-price-project,
+  .l-pp-identify > .l-unique-project {
+    width: 41.3%;
+  }
+  // Benefits
+  .l-benefits {
+    padding-right: 30px;
   }
   // === About ===
   .l-feni-about {
@@ -379,6 +426,13 @@
   // === Services ===
   .l-feni-services {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  // --- Services (Nested) ---
+  // Prices, Benefits
+  .l-price-project,
+  .l-benefits-items > .benefits-item,
+  .l-pp-identify > .l-unique-project {
+    width: 100%;
   }
 }
 // 320px

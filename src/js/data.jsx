@@ -266,6 +266,7 @@ export const presentations = [
     desc: `Готовый пакет презентаций для компании "Break"`,
     category: "Презентация",
     client: `Компания "Break"`,
+    main_class: "fp-work-main",
   },
   {
     present_id: "2",
@@ -275,6 +276,7 @@ export const presentations = [
     desc: `Готовый дизайн презентации для компании "Ofan"`,
     category: "Презентация",
     client: `Компания "Ofan"`,
+    main_class: "fp-work-focus fp-rtl",
   },
   {
     present_id: "3",
@@ -284,6 +286,7 @@ export const presentations = [
     desc: `Готовый пакет презентаций для компании "Officeo"`,
     category: "Презентация",
     client: `Компания "Officeo"`,
+    main_class: "fp-work-mini",
   },
   {
     present_id: "4",
@@ -293,6 +296,7 @@ export const presentations = [
     desc: `Готовый пакет презентаций для компании "Peddle"`,
     category: "Презентация",
     client: `Компания "Peddle"`,
+    main_class: "fp-work-mini",
   },
   {
     present_id: "5",
@@ -302,6 +306,7 @@ export const presentations = [
     desc: `Готовый пакет презентаций для компании "Wake"`,
     category: "Презентация",
     client: `Компания "Wake"`,
+    main_class: "fp-work-focus fp-ltl",
   },
 ];
 export const all_works = [
@@ -311,12 +316,11 @@ export const all_works = [
   ...presentations,
   ...illustrations,
 ];
-// Вкладки на "Главной"
+// Вкладки на "Главной" и страницах "Сервисов"
 export const TabList_main = [
   {
     name: "tab1",
     label: "Логотипы",
-    path: "/logos",
     num: 10,
     content: (
       <>
@@ -351,7 +355,6 @@ export const TabList_main = [
   {
     name: "tab2",
     label: "Веб-сайты",
-    path: "/websites",
     num: 3,
     content: (
       <>
@@ -384,7 +387,6 @@ export const TabList_main = [
   {
     name: "tab3",
     label: "Айдентика",
-    path: "/identify",
     num: 4,
     content: (
       <>
@@ -417,7 +419,6 @@ export const TabList_main = [
   {
     name: "tab4",
     label: "Иллюстрации",
-    path: "/illustrations",
     num: 8,
     content: (
       <>
@@ -441,6 +442,40 @@ export const TabList_main = [
                     </p>
                   </div>
                   <img src={ill.main_src} alt={ill.title}></img>
+                </>
+              </LazyLoad>
+            </Link>
+          </React.Fragment>
+        ))}
+      </>
+    ),
+  },
+  {
+    name: "tab5",
+    label: "Презентации",
+    num: 5,
+    content: (
+      <>
+        {presentations.slice(0, list_main_size).map((present, i) => (
+          <React.Fragment key={i}>
+            <Link
+              key={i}
+              to={{ pathname: `/${present.url}` }}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${present.title}`}
+              className={
+                present.main_class + " work-img-port work-img img__resp-block"
+              }>
+              <LazyLoad offset={100}>
+                <>
+                  <div className="work-desc wdl">
+                    <h3 className="work-desc-title">{present.title}</h3>
+                    <p className="work-desc-info feni-section-desc">
+                      {present.category}
+                    </p>
+                  </div>
+                  <img src={present.main_src} alt={present.title}></img>
                 </>
               </LazyLoad>
             </Link>
@@ -713,3 +748,31 @@ export const TabList_portfolio = [
     ),
   },
 ];
+// Настройки слайдера на страницах "Сервисов"
+export const Slider_settings = {
+  infinite: false,
+  speed: 500,
+  swipeToSlide: true,
+  slidesToShow: 4,
+  dots: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 767.98,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 575.98,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+};

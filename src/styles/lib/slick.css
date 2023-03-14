@@ -5,7 +5,8 @@
 
   display: block;
   box-sizing: border-box;
-
+  /* В медиа запросах с опред ширины */
+  cursor: grab; 
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -17,7 +18,9 @@
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
 }
-
+.slick-slider:active {
+  cursor: grabbing;
+}
 .slick-list {
   position: relative;
 
@@ -53,6 +56,7 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  column-gap: 10px;
 }
 .slick-track:before,
 .slick-track:after {
@@ -70,9 +74,12 @@
 .slick-slide {
   display: none;
   float: left;
-
   height: 100%;
   min-height: 1px;
+  /* max-width: 250px; */
+}
+.slick-slide > div {
+  /* display: flex; */
 }
 [dir="rtl"] .slick-slide {
   float: right;

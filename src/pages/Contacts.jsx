@@ -26,7 +26,7 @@ export default function Contacts() {
             className="l-feni-contacts-title l-feni-section l-fm"
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}>
-            <h2 className="section-main-title">Feni Design Studio</h2>
+            <h2 className="section-title">Оставайтесь с нами на связи!</h2>
           </motion.section>
           <motion.section
             className="l-feni-contacts l-feni-section l-fm"

@@ -120,6 +120,10 @@
 .wdl {
   opacity: 0;
 }
+// Slider
+.grabbing {
+  cursor: grabbing;
+}
 /* === Keyframes === */
 // Preloader
 @keyframes preloader-spin {

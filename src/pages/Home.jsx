@@ -37,7 +37,7 @@ export default function Home() {
             initial={{ y: 200, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}>
             <div className="l-fs-content l-fh-content">
-              <h1 className="fh-title section-main-title">Feni Design</h1>
+              <h1 className="fh-title section-main-title">Feni Studio</h1>
               <h2 className="fs-desc section-title">
                 Мы помогаем зарабатывать в интернете
               </h2>
@@ -111,9 +111,12 @@ export default function Home() {
             {TabList_main.map((tab, i) => {
               if (tab.name === currentTab) {
                 return (
-                  <div
+                  <motion.div
                     className="l-fp-section-content works-content l-feni-section l-fm"
-                    key={i}>
+                    key={i}
+                    initial={{ y: 150, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    viewport={{ once: true }}>
                     {tab.content}
                     <Link
                       className="btn-link btn-b55 btn-focus"
@@ -121,7 +124,7 @@ export default function Home() {
                       title="Все работы">
                       Все работы
                     </Link>
-                  </div>
+                  </motion.div>
                 );
               } else {
                 return null;

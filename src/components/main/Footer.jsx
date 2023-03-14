@@ -63,9 +63,6 @@ export default function Footer() {
             <Link to="/about/" className="footer-link">
               Мы
             </Link>
-            <Link to="/contacts/" className="footer-link">
-              Контакты
-            </Link>
           </div>
         </div>
         <div className="fc-links">

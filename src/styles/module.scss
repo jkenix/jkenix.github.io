@@ -228,15 +228,30 @@
   padding-right: 10px;
   font-weight: 700;
 }
-// Contacts
-
 // --- Services Nested ---
-
-// Websites
-// Logos
-// Identify
-// Illustrations
-// Presentations
+// --- Slider ---
+.pd-num {
+  font-weight: 900;
+  font-size: 4.375rem;
+  -webkit-text-stroke: 0.007em #5551f7;
+  color: transparent;
+}
+.process-dev-content {
+  padding-bottom: 20px;
+}
+.pdc-up {
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+// --- Slider title, Price, Beneftis title, pp-desc ---
+.pd-title,
+.prices-title,
+.price-project-title,
+.price,
+.pp-desc-strong,
+.benefits-title {
+  font-weight: 600;
+}
 // Contacts
 .contacts-link {
   font-size: 1.25rem;
@@ -277,7 +292,7 @@
   row-gap: 20px;
   justify-content: space-between;
 }
-// Footer, Contacts 
+// Footer, Contacts
 .feni-links {
   display: flex;
   flex-direction: column;

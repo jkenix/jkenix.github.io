@@ -39,8 +39,8 @@
 }
 .l-fs-content {
   > .fs-desc {
-    padding-top: 30px;
-    padding-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
   }
 }
 .l-fm {
@@ -58,10 +58,11 @@
 .l-fh-content {
   max-width: 307px;
 }
-// Common classes (fs, fi, fb)
+// Common classes (fs, fi, fb, feni-services)
 .l-feni-start,
 .l-feni-info,
-.l-feni-briefs {
+.l-feni-briefs,
+.l-prices {
   padding-left: 100px;
 }
 // Feni-info
@@ -296,6 +297,9 @@
   }
 }
 // --- Services Nested ---
+.l-service-preview {
+  margin-bottom: 100px;
+}
 .l-lfp {
   max-width: 430px;
 }
@@ -311,25 +315,130 @@
     }
   }
 }
-// Websites
-.l-web-design {
-  margin-bottom: 100px;
+// Slides
+.l-process-dev {
+  margin-bottom: 150px;
+  > .pd-title {
+    padding-bottom: 50px;
+    padding-left: 80px;
+  }
 }
-// Logos
-.l-logos {
-  margin-bottom: 100px;
+.l-process-dev-slider {
+  padding-right: 30px;
+  padding-left: 120px;
 }
-// Identify
-.l-identify {
+// Service Works
+.l-service-works {
   margin-bottom: 100px;
+  > .service-works-title {
+    padding-left: 40px;
+    font-weight: 600;
+  }
 }
-// Illustrations
-.l-illustrations {
+// Prices
+.l-prices {
   margin-bottom: 100px;
+  padding-right: 30px;
+  > .prices-title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }
-// Presentations
-.l-presentations {
+.l-project-prices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+.l-price-project {
+  width: 28.5%;
+  transition: all ease 0.5s;
+  > .price-project-info {
+    text-align: center;
+    > .price-project-title {
+      margin-bottom: 40px;
+    }
+  }
+  > .btn-order {
+    margin-top: 40px;
+  }
+}
+.l-project-points-list {
+  margin-top: 50px;
+  > .project-point {
+    align-items: center;
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 15px;
+  }
+}
+.l-unique-project {
+  width: 62.3%;
+  text-align: center;
+  > .unique-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  > .btn-order {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+// Common classes (Prices)
+.l-price-project,
+.l-unique-project {
+  padding: 20px;
+  border: 1px solid #cfcece;
+  &:hover {
+    border-color: $b55;
+    > .btn-order {
+      background-color: $b55;
+      color: #e5e5e5;
+    }
+    &::before {
+      display: block;
+    }
+  }
+  // Before
+  &::before {
+    display: none;
+    content: "";
+    position: absolute;
+    margin-right: 0px;
+    margin-top: -21px;
+    width: 27px;
+    height: 43px;
+    background-image: url("../img/mark.svg");
+    background-repeat: no-repeat;
+  }
+  // Hover on before
+}
+// Identify Prices
+.l-pp-identify {
+  > .l-unique-project {
+    width: 100%;
+  }
+}
+// Benefits
+.l-benefits {
+  padding-left: 50px;
+  padding-right: 30px;
   margin-bottom: 100px;
+  > .benefits-title {
+    margin-bottom: 80px;
+  }
+}
+.l-benefits-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  > .benefits-item {
+    padding: 20px;
+    width: 20%;
+  }
+  .benefits-img {
+    margin-bottom: 25px;
+  }
 }
 // === About ===
 .l-feni-about {
@@ -374,8 +483,8 @@
 // === Contacts ===
 .l-feni-contacts-title {
   text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 .l-feni-contacts {
   align-items: center;

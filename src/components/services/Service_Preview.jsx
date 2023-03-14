@@ -5,11 +5,14 @@ export default function Service_Preview(props) {
   return (
     <>
       <motion.section
-        className={props.section_class}
-        initial={{ y: 200, opacity: 0 }}
+        className="l-service-preview l-feni-start l-feni-section l-fm"
+        initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}>
         <div className="l-fs-content l-lfp">
-          {props.title_content}
+          <h1 className="fs-title section-main-title">{props.title}</h1>
+          <p className="fs-desc section-desc">
+           {props.desc}
+          </p>
           <div className="l-service-info">
             <a href={props.brif_link} className="btn-link btn-b55">
               Заполнить бриф
@@ -17,13 +20,15 @@ export default function Service_Preview(props) {
             <button
               className="btn-link btn-bw55"
               onClick={() => {
-                // document.getElementById("prices").scrollIntoView();
+                document.getElementById("prices").scrollIntoView();
               }}>
               Цены
             </button>
           </div>
         </div>
-        {props.img_block}
+        <div className="l-fs-img wd-img img__resp-block">
+          {props.img_content}
+        </div>
       </motion.section>
     </>
   );
