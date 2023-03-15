@@ -226,7 +226,8 @@
   }
   // === Services (Вложенные !!!) ===
   // Prices
-  .l-price-project, .l-pp-identify > .l-unique-project {
+  .l-price-project,
+  .l-pp-identify > .l-unique-project {
     width: 43.2%;
   }
   .l-unique-project {
@@ -300,7 +301,6 @@
   .l-feni-services,
   .l-process-dev > .pd-title,
   .l-process-dev-slider,
-  .l-prices,
   .l-benefits {
     padding-left: 35px;
   }
@@ -372,6 +372,9 @@
   .l-price-project,
   .l-pp-identify > .l-unique-project {
     width: 41.3%;
+  }
+  .l-prices {
+    padding-left: 30px;
   }
   // Benefits
   .l-benefits {

@@ -19,9 +19,9 @@ export default function Unique_Order_Card(props) {
         <p className="unique-desc section-desc">
           Мы в деле! Давайте обсудим условия подходящие, именно для вас!
         </p>
-        <button className="btn-order btn-link btn-bw55 btn-focus">
+        <div className="btn-order btn-link btn-bw55 btn-focus">
           Заказать
-        </button>
+        </div>
       </MotionComp>
     </>
   );
