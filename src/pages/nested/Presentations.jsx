@@ -12,6 +12,7 @@ import checkbox from "../../img/checkbox.svg";
 import Service_Preview from "../../components/services/Service_Preview.jsx";
 import { TabList_main, Slider_settings } from "../../js/data.jsx";
 import Order_Card from "../../components/services/Order_Card.jsx";
+import Unique_Order_Card from "../../components/services/Unique_Order_Card.jsx";
 
 import ScrollToTop from "../../components/main/ScrollToTop.jsx";
 const Benefits = lazy(() => import("../../components/services/Benefits.jsx"));
@@ -64,13 +65,13 @@ export default function Presentations() {
                 <div className="process-dev-content">
                   <span className="pd-num">01</span>
                   <p className="pd-desc section-desc">
-                    Вы предоставляете нам контент в текстовом виде
+                    Вы предоставляете нам наброски проекта
                   </p>
                 </div>
                 <div className="process-dev-content pdc-up">
                   <span className="pd-num">02</span>
                   <p className="pd-desc section-desc">
-                    Заполнение брифа и Исследования
+                    Заполненяем бриф и проводим Исследования
                   </p>
                 </div>
                 <div className="process-dev-content">
@@ -88,7 +89,7 @@ export default function Presentations() {
                 <div className="process-dev-content pdc-up">
                   <span className="pd-num">05</span>
                   <p className="pd-desc section-desc">
-                    Доработка, проработка деталей и передача их Вам!
+                    Доработка и передача клиенту всех согласованных файлов!
                   </p>
                 </div>
               </Slider>
@@ -108,7 +109,7 @@ export default function Presentations() {
                     {tab.content}
                     <Link
                       className="btn-link btn-b55 btn-focus"
-                      to={"/portfolio/all_works/"}
+                      to={"/portfolio/presentations/"}
                       title="Все работы">
                       Все работы
                     </Link>

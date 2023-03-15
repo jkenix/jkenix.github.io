@@ -1,6 +1,6 @@
 // Import mixins, variables
 @import "mixins_var.scss";
-/* State of modules and site skeleton */
+/* Состояние модулей (Анимация и подсветка) */
 // === Body ===
 .overflow-is-hidden {
   overflow: hidden;
@@ -41,7 +41,7 @@
     animation: preloader-spin 1.5s linear infinite;
   }
 }
-// === Buttons (Common classes) ===
+// === Кнопки навигации (Общие классы) ===
 .nav-item,
 .btn-tab {
   &.active {
@@ -119,10 +119,6 @@
 // LazyLoad work-desc
 .wdl {
   opacity: 0;
-}
-// Slider
-.grabbing {
-  cursor: grabbing;
 }
 /* === Keyframes === */
 // Preloader

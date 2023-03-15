@@ -12,7 +12,6 @@ import checkbox from "../../img/checkbox.svg";
 import Service_Preview from "../../components/services/Service_Preview.jsx";
 import { TabList_main, Slider_settings } from "../../js/data.jsx";
 import Order_Card from "../../components/services/Order_Card.jsx";
-import Unique_Order_Card from "../../components/services/Unique_Order_Card.jsx";
 
 import ScrollToTop from "../../components/main/ScrollToTop.jsx";
 const Benefits = lazy(() => import("../../components/services/Benefits.jsx"));
@@ -58,14 +57,14 @@ export default function Logos() {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}>
             <h2 className="pd-title section-title">
-              Как выглядит Процесс разработки лого:
+              Как выглядит Процесс разработки логотипа:
             </h2>
             <div className="l-process-dev-slider">
               <Slider {...Slider_settings}>
                 <div className="process-dev-content">
                   <span className="pd-num">01</span>
                   <p className="pd-desc section-desc">
-                    Вы предоставляете нам контент в текстовом виде
+                    Вы предоставляете нам наброски проекта
                   </p>
                 </div>
                 <div className="process-dev-content pdc-up">
@@ -95,8 +94,7 @@ export default function Logos() {
                 <div className="process-dev-content pdc-up">
                   <span className="pd-num">06</span>
                   <p className="pd-desc section-desc">
-                    Доработка и передача клиенту всех согласованных файлов и
-                    форматов
+                    Доработка и передача клиенту всех согласованных файлов!
                   </p>
                 </div>
               </Slider>
@@ -116,7 +114,7 @@ export default function Logos() {
                     {tab.content}
                     <Link
                       className="btn-link btn-b55 btn-focus"
-                      to={"/portfolio/all_works/"}
+                      to={"/portfolio/logos/"}
                       title="Все работы">
                       Все работы
                     </Link>

@@ -1,7 +1,7 @@
 // Import mixins
 @import "mixins_var.scss";
-/* Theme classes */
-// Common tags
+/* Классы тем */
+// Общие тэги
 span, a {
   color: $b1;
 }
@@ -9,7 +9,7 @@ span, a {
 body {
   background-color: $we5;
 }
-// === Buttons common classes ===
+// === Общие классы кнопок ===
 .btn-b55 {
   color: $wff;
   background-color: $b55;
@@ -39,7 +39,7 @@ body {
 .btn-ff42 {
   border: 2px solid $ff42;
 }
-// === Home/Portfolio btn ===
+// === Home/Portfolio кнопки ===
 .btn-tab {
   background-color: $we5;
   color: $b1;
@@ -51,8 +51,8 @@ body {
 .btn-tab-link {
   color: $ff5;
 }
-/* Color styles for page content */
-// === Titles, desc ===
+/* Стили цветов */
+// === Заголовки, описание ===
 .section-title,
 .section-desc,
 .small-section {
@@ -129,7 +129,7 @@ body {
     color: $b55;
   }
 }
-// Common module for forms
+// Общие модули для формы
 .form-input {
   padding: 10px;
   padding-left: 0;

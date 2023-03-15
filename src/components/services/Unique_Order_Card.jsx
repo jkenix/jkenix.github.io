@@ -9,7 +9,7 @@ export default function Unique_Order_Card(props) {
       <MotionComp
         to={props.card_link}
         className="l-unique-project"
-        initial={{ y: 100, opacity: 0 }}
+        initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}>
         <span className="price-project-title small-section">

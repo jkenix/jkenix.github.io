@@ -66,7 +66,7 @@ export default function Identify() {
                 <div className="process-dev-content">
                   <span className="pd-num">01</span>
                   <p className="pd-desc section-desc">
-                    Вы предоставляете нам наброски
+                    Вы предоставляете нам наброски проекта
                   </p>
                 </div>
                 <div className="process-dev-content pdc-up">
@@ -131,7 +131,7 @@ export default function Identify() {
                     {tab.content}
                     <Link
                       className="btn-link btn-b55 btn-focus"
-                      to={"/portfolio/all_works/"}
+                      to={"/portfolio/identify/"}
                       title="Все работы">
                       Все работы
                     </Link>

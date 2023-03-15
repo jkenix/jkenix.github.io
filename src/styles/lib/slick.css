@@ -2,33 +2,29 @@
 .slick-slider {
   /* width: 100%; */
   position: relative;
-
   display: block;
   box-sizing: border-box;
   /* В медиа запросах с опред ширины */
-  cursor: grab; 
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
   -webkit-touch-callout: none;
   -khtml-user-select: none;
   -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
 }
-.slick-slider:active {
-  cursor: grabbing;
-}
 .slick-list {
   position: relative;
-
+  cursor: grab;
   display: block;
   overflow: hidden;
-
   margin: 0;
   padding: 0;
+}
+.slick-list:active {
+  cursor: grabbing;
 }
 .slick-list:focus {
   outline: none;

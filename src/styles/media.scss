@@ -1,6 +1,6 @@
 // Import mixins
 @import "mixins_var.scss";
-/* Media styles */
+/* Стили медиа-запросов */
 // 1400px
 @media (max-width: 1399.98px) {
   // === Header ===
@@ -58,7 +58,7 @@
   .l-feni-service {
     padding: 20px;
   }
-  // --- Services (Nested) ---
+  // --- Services (Вложенные) ---
   .l-unique-project {
     width: 61.7%;
   }
@@ -128,7 +128,7 @@
       margin-right: 12px;
     }
   }
-  // Common classes (fp, port)
+  // Общие классы (Feni preview, Portfolio)
   .works-content {
     row-gap: 10px;
   }
@@ -193,7 +193,6 @@
     padding-bottom: 30px;
   }
   .checkbox-row {
-    // display: none;
     padding-left: 0;
     padding-top: 20px;
     width: 100%;
@@ -225,7 +224,7 @@
     padding-left: 35px;
     grid-template-columns: repeat(auto-fit, minmax(263.1px, 1fr));
   }
-  // === Services (Nested !!!) ===
+  // === Services (Вложенные !!!) ===
   // Prices
   .l-price-project, .l-pp-identify > .l-unique-project {
     width: 43.2%;
@@ -293,7 +292,7 @@
     right: 0;
   }
   // === Main ===
-  // Common classes
+  // Общие классы (Main)
   .l-feni-info,
   .l-feni-briefs,
   .l-fdp-content,
@@ -365,7 +364,7 @@
   .l-feni-services {
     grid-template-columns: repeat(auto-fit, minmax(229px, 1fr));
   }
-  // --- Services (Nested) ---
+  // --- Services (Вложенные !!!) ---
   // Prices
   .l-process-dev > .pd-title {
     padding-right: 30px;
@@ -427,7 +426,7 @@
   .l-feni-services {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   }
-  // --- Services (Nested) ---
+  // --- Services (Вложенные !!!) ---
   // Prices, Benefits
   .l-price-project,
   .l-benefits-items > .benefits-item,

@@ -172,7 +172,7 @@
   font-size: 0.625rem;
   line-height: 145%;
 }
-// Common module (Form)
+// Общие модули (Form)
 .label-feedback {
   font-size: 1rem;
   font-weight: 500;
@@ -204,7 +204,7 @@
   height: 321px;
   width: 33.33333333333%;
 }
-// Common module (port, project)
+// Общие модули (Porfolio, Project)
 .work-img {
   position: relative;
 }
@@ -228,7 +228,7 @@
   padding-right: 10px;
   font-weight: 700;
 }
-// --- Services Nested ---
+// --- Services Вложенные (!!!) ---
 // --- Slider ---
 .pd-num {
   font-weight: 900;
@@ -301,7 +301,7 @@
   display: flex;
   gap: 15px;
 }
-// === Buttons Common classes ===
+// === Общие классы кнопок ===
 .btn-link {
   display: flex;
   align-items: center;
@@ -338,7 +338,7 @@
   height: 22px;
   // margin-left: auto;
 }
-// === Images ===
+// === Изображения ===
 .img__resp-block {
   display: flex;
   transition: all ease 0.5s;

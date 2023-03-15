@@ -35,13 +35,13 @@ export default function Discuss() {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}>
             <div className="l-feedback-row top">
-              <label className="label-feedback" htmlFor="Client name">
+              <label className="label-feedback" htmlFor="Client-name">
                 Ваше имя*
               </label>
               <input
                 type="text"
-                id="Client name"
-                name="Client name"
+                id="Client-name"
+                name="Client-name"
                 size="40"
                 className="form-input"
                 aria-required="true"
@@ -50,13 +50,13 @@ export default function Discuss() {
               />
             </div>
             <div className="l-feedback-row right">
-              <label className="label-feedback" htmlFor="Client phone">
+              <label className="label-feedback" htmlFor="Client-phone">
                 Телефон*
               </label>
               <input
                 type="tel"
-                id="Client phone"
-                name="Client phone"
+                id="Client-phone"
+                name="Client-phone"
                 size="40"
                 className="form-input"
                 aria-required="true"
@@ -65,13 +65,13 @@ export default function Discuss() {
               />
             </div>
             <div className="l-feedback-row left">
-              <label className="label-feedback" htmlFor="Client email">
+              <label className="label-feedback" htmlFor="Client-email">
                 Почта*
               </label>
               <input
                 type="email"
-                id="Client email"
-                name="Client email"
+                id="Client-email"
+                name="Client-email"
                 size="30"
                 className="form-input"
                 aria-required="true"
@@ -80,12 +80,12 @@ export default function Discuss() {
               />
             </div>
             <div className="l-feedback-row message">
-              <label htmlFor="Client message" className="label-feedback">
+              <label htmlFor="Client-message" className="label-feedback">
                 Сообщение
               </label>
               <textarea
-                id="Client message"
-                name="Client message"
+                id="Client-message"
+                name="Client-message"
                 maxLength="700"
                 cols="40"
                 rows="10"

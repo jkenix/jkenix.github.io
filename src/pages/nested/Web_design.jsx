@@ -59,7 +59,7 @@ export default function Web_design() {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}>
             <h2 className="pd-title section-title">
-              Как выглядит Процесс разработки лого:
+              Как выглядит Процесс разработки веб-дизайна:
             </h2>
             <div className="l-process-dev-slider">
               <Slider {...Slider_settings}>
@@ -110,7 +110,7 @@ export default function Web_design() {
                     {tab.content}
                     <Link
                       className="btn-link btn-b55 btn-focus"
-                      to={"/portfolio/all_works/"}
+                      to={"/portfolio/websites/"}
                       title="Все работы">
                       Все работы
                     </Link>

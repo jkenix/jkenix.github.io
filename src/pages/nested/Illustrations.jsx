@@ -12,6 +12,7 @@ import checkbox from "../../img/checkbox.svg";
 import Service_Preview from "../../components/services/Service_Preview.jsx";
 import { TabList_main, Slider_settings } from "../../js/data.jsx";
 import Order_Card from "../../components/services/Order_Card.jsx";
+import Unique_Order_Card from "../../components/services/Unique_Order_Card.jsx";
 
 import ScrollToTop from "../../components/main/ScrollToTop.jsx";
 const Benefits = lazy(() => import("../../components/services/Benefits.jsx"));
@@ -57,7 +58,7 @@ export default function Illustrations() {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}>
             <h2 className="pd-title section-title">
-              Как выглядит Процесс разработки лого:
+              Как выглядит Процесс разработки иллюстраций:
             </h2>
             <div className="l-process-dev-slider">
               <Slider {...Slider_settings}>
@@ -70,7 +71,7 @@ export default function Illustrations() {
                 <div className="process-dev-content pdc-up">
                   <span className="pd-num">02</span>
                   <p className="pd-desc section-desc">
-                    Заполнение брифа и Исследования
+                    Заполненяем бриф и проводим Исследования
                   </p>
                 </div>
                 <div className="process-dev-content">
@@ -82,7 +83,7 @@ export default function Illustrations() {
                 <div className="process-dev-content pdc-up">
                   <span className="pd-num">04</span>
                   <p className="pd-desc section-desc">
-                    Обсудим первые иллюстрации и внесем правки!
+                    Обсудим первых иллюстраций и внесение правки!
                   </p>
                 </div>
                 <div className="process-dev-content pdc-up">
@@ -94,7 +95,7 @@ export default function Illustrations() {
                 <div className="process-dev-content pdc-up">
                   <span className="pd-num">06</span>
                   <p className="pd-desc section-desc">
-                    Передаем Вам все необходимые готовые файлы!
+                    Доработка и передача клиенту всех согласованных файлов! 
                   </p>
                 </div>
               </Slider>
@@ -114,7 +115,7 @@ export default function Illustrations() {
                     {tab.content}
                     <Link
                       className="btn-link btn-b55 btn-focus"
-                      to={"/portfolio/all_works/"}
+                      to={"/portfolio/illustrations/"}
                       title="Все работы">
                       Все работы
                     </Link>

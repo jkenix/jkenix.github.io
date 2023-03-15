@@ -1,6 +1,6 @@
 // Import mixins, variables
 @import "mixins_var.scss";
-/* === Layout classes === */
+/* === Классы макетов === */
 .l-wrapper {
   max-width: 1920px;
   margin: 0 auto;
@@ -27,7 +27,7 @@
   align-items: center;
 }
 // === Main ===
-// Common classes
+// Общие классы (Main)
 .l-feni-section,
 .btn-focus {
   margin-left: auto;
@@ -43,10 +43,18 @@
     margin-bottom: 50px;
   }
 }
+// Max-width
 .l-fm {
   max-width: 1110px;
 }
-// === All blocks main ===
+// Общие классы (Home) (fs, fi, fb, feni-services)
+.l-feni-start,
+.l-feni-info,
+.l-feni-briefs,
+.l-prices {
+  padding-left: 100px;
+}
+// === Все классы (Main) ===
 .l-main {
   padding-top: 100px;
 }
@@ -57,13 +65,6 @@
 }
 .l-fh-content {
   max-width: 307px;
-}
-// Common classes (fs, fi, fb, feni-services)
-.l-feni-start,
-.l-feni-info,
-.l-feni-briefs,
-.l-prices {
-  padding-left: 100px;
 }
 // Feni-info
 .l-feni-info {
@@ -97,7 +98,7 @@
   > .fp-work-mini {
     flex-basis: 40%;
   }
-  // Common classes
+  // Общие классы (Feni-preview)
   > .fp-work-focus,
   > .fp-work-mini {
     height: 497px;
@@ -210,11 +211,9 @@
 .l-main-project {
   padding-top: 20px;
   > .project-img {
-    // height: 484px;
     max-width: 100%;
     justify-content: center;
     > img {
-      // width: 100%;
       width: auto;
       object-fit: cover;
     }
@@ -266,8 +265,7 @@
   border: 1px solid $b55;
   padding: 40px;
   &:hover,
-  &:focus-visible,
-  &:active {
+  &:focus-visible {
     outline: $ff5;
     border: 1px solid $ff5;
     > .feni-check {
@@ -384,7 +382,7 @@
     margin-bottom: 40px;
   }
 }
-// Common classes (Prices)
+// Общие классы (Prices)
 .l-price-project,
 .l-unique-project {
   padding: 20px;
@@ -395,6 +393,7 @@
       background-color: $b55;
       color: #e5e5e5;
     }
+    // Наведение на before
     &::before {
       display: block;
     }
@@ -411,7 +410,6 @@
     background-image: url("../img/mark.svg");
     background-repeat: no-repeat;
   }
-  // Hover on before
 }
 // Identify Prices
 .l-pp-identify {
@@ -465,7 +463,6 @@
 }
 .l-skill-content {
   transition: all ease 0.5s;
-  // max-width: 235px;
   width: 22%;
   > .skill-title {
     font-weight: 700;
