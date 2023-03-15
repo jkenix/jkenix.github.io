@@ -1,4 +1,1 @@
-# Каталог проектов, сделанных по макетам.
-
-Main ветка является тестовой.  
-:white_check_mark: Последний готовый проект. -> https://github.com/jkenix/jkenix.github.io/tree/pages-page
+# :white_check_mark: Полностью адаптивный веб-сайт, сделанный по макету..
