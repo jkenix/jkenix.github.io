@@ -90,7 +90,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="l-footer-bottom">
-        <span className="footer-copyright">Copyright © 2023 Feni Design.</span>
+        <span className="footer-copyright">Copyright © 2023 Feni Studio.</span>
         <Link to="/" className="footer-link" title="Публичная Оферта">
           Публичная Оферта
         </Link>
