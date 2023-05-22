@@ -1,14 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-const MotionComp = motion(Link);
-
+import React from "react"; // Подключение модулей React
+import { motion } from "framer-motion"; // Подключение Библиотеки Framer-motion
+// Компонент блока карточки заказа
 export default function Order_Card(props) {
   return (
     <>
-      <MotionComp
-        to={props.card_link}
+      <motion.div
         className="l-price-project"
+        id="l-price-project"
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true }}>
@@ -16,11 +14,13 @@ export default function Order_Card(props) {
           <h3 className="price-project-title small-section">{props.title}</h3>
           <span className="price section-title">{props.price}</span>
         </div>
-        <div className="btn-order btn-link btn-bw55 btn-focus">
+        <button
+          className="btn-order btn-link btn-bw41 btn-focus"
+          onClick={props.Click}>
           Заказать
-        </div>
+        </button>
         <ul className="l-project-points-list">{props.points}</ul>
-      </MotionComp>
+      </motion.div>
     </>
   );
 }

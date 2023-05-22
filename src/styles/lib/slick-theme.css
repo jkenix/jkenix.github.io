@@ -47,6 +47,7 @@
 .slick-next:hover:before,
 .slick-next:focus:before {
   opacity: 1;
+  color: #5551f7;
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before {
@@ -148,6 +149,8 @@
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before {
   opacity: 1;
+  color: #5551f7;
+
 }
 .slick-dots li button:before {
   font-family: "slick";
@@ -175,7 +178,7 @@
   color: black;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 1024.98px) {
   .slick-slide {
     text-align: center;
   }

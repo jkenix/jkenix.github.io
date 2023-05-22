@@ -1,7 +1,7 @@
-// Убрать импорт реакта
+// Подключение модулей React
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-
+import { useLocation } from "react-router-dom"; 
+// Функция прокрутки вверх при переключении между страницами
 export default function ScrollToTop() {
   const routePath = useLocation();
   const onTop = () => {

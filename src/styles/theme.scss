@@ -2,7 +2,8 @@
 @import "mixins_var.scss";
 /* Классы тем */
 // Общие тэги
-span, a {
+span,
+a {
   color: $b1;
 }
 // === Body ===
@@ -10,34 +11,23 @@ body {
   background-color: $we5;
 }
 // === Общие классы кнопок ===
-.btn-b55 {
+.btn-b41 {
   color: $wff;
-  background-color: $b55;
+  background-color: $b41;
   &:hover,
   &:focus-visible {
     background-color: $ff5;
   }
 }
-.btn-bw55 {
+.btn-bw41 {
   color: $b1;
   background-color: $we5;
-  border: 1px solid $b55;
+  border: 1px solid $b41;
   &:hover,
   &:focus-visible {
-    background-color: $b55;
+    background-color: $b41;
     color: $we5;
   }
-}
-.btn-w {
-  color: $sap;
-  background-color: $we5;
-}
-.btn-sap {
-  background-color: $sap;
-  color: $wff;
-}
-.btn-ff42 {
-  border: 2px solid $ff42;
 }
 // === Home/Portfolio кнопки ===
 .btn-tab {
@@ -46,10 +36,33 @@ body {
   &:hover,
   &:focus-visible {
     color: $ff5;
+    span {
+      color: $ff5;
+    }
   }
 }
 .btn-tab-link {
   color: $ff5;
+}
+// Forms
+.l-client-info > .label-required {
+  color: red;
+}
+.label-feedback,
+.form-input {
+  color: $we5;
+}
+.form-input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid $we5;
+}
+[class="form-input"]:invalid {
+  border-bottom: 1px solid red;
+}
+[class="form-input"]:valid {
+  border-bottom: 1px solid rgb(0, 255, 0);
 }
 /* Стили цветов */
 // === Заголовки, описание ===
@@ -71,7 +84,7 @@ body {
   }
 }
 .nav-is-active {
-  background-color: $b55;
+  background-color: $b41;
   & > a {
     color: $wff;
   }
@@ -100,21 +113,12 @@ body {
 }
 // === Discuss ===
 .l-feni-discuss-project {
-  background-color: $b55;
+  background-color: $b41;
 }
-.fdp-content-info {
+.l-fdp-content-info {
   > .fdp-title,
   > .fdp-desc {
     color: $we5;
-  }
-}
-.l-feedback-row {
-  .label-feedback,
-  .form-input {
-    color: $we5;
-  }
-  > .form-input {
-    border-bottom: 1px solid $we5;
   }
 }
 .feni-checkbox-agree {
@@ -126,7 +130,7 @@ body {
   &:hover,
   &:focus-visible {
     background-color: $we5;
-    color: $b55;
+    color: $b41;
   }
 }
 // Общие модули для формы
@@ -142,7 +146,7 @@ body {
 }
 // === Work-desc === (Main, Portfolio)
 .work-desc {
-  background-color: $b55;
+  background-color: $b41;
   > &-title,
   > &-info {
     color: $we5;

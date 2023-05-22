@@ -1,22 +1,19 @@
-import React, { lazy } from "react";
-import { Link } from "react-router-dom";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { motion } from "framer-motion";
-
-import ScrollToTop from "../components/main/ScrollToTop.jsx";
-const Discuss = lazy(() => import("../components/main/Discuss.jsx"));
-const MotionComp = motion(Link);
-
+import React, { lazy } from "react"; // Подключение модулей React
+import { Link } from "react-router-dom"; // Подключение модулей React
+import { Helmet, HelmetProvider } from "react-helmet-async"; // Импорт модулей Helmet
+import { motion } from "framer-motion"; // Подключение Библиотеки Framer-motion
+const MotionComp = motion(Link); // Смешивание Link и компонента Motion
+// Компонент страницы "Мы"
 export default function About() {
   return (
     <>
       <HelmetProvider>
         <Helmet>
           <title>О нас - Feni</title>
-          <meta property="og:title" content="Feni Design - О нас" />
-          {/* <meta property="og:url" content="https://jkenix.github.io/about" /> */}
-          {/* <meta name="og:description" content="" /> */}
-          {/* <meta name="description" content="" /> */}
+          <meta property="og:title" content="Feni - О нас" />
+          <meta property="og:url" content="https://jkenix-project.pages.dev/about/" />
+          <meta name="og:description" content="Познакомьтесь со студией web-дизайна Feni!" />
+          <meta name="description" content="Узнайте больше о студии web-дизайна Feni!" />
         </Helmet>
         <main className="l-main">
           <motion.section
@@ -92,16 +89,14 @@ export default function About() {
             </motion.div>
           </section>
           <MotionComp
-            className="btn-fa btn-link btn-bw55 btn-focus"
+            className="btn-fa btn-link btn-bw41 btn-focus"
             to="/portfolio/all_works/"
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}>
             <span>Посмотреть все наши работы</span>
           </MotionComp>
-          <Discuss />
         </main>
-        <ScrollToTop />
       </HelmetProvider>
     </>
   );

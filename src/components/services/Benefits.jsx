@@ -1,12 +1,12 @@
-import React from "react";
-import { motion } from "framer-motion";
-import LazyLoad from "react-lazy-load";
-
+import React from "react"; // Подключение модулей React
+import { motion } from "framer-motion"; // Подключение Библиотеки Framer-motion
+import LazyLoad from "react-lazy-load"; // Подключение модулей React
+// Импорт изображений
 import rocket from "../../img/rocket.webp";
 import doggo from "../../img/doggo.webp";
 import gift from "../../img/gift.webp";
 import pig from "../../img/pig.webp";
-
+// Компонент с преимуществами работы для страниц Сервисов
 export default function Benefits() {
   return (
     <>
@@ -28,7 +28,7 @@ export default function Benefits() {
               <img src={rocket} width="42" height="49" alt="rocket" />
             </LazyLoad>
             <p className="benefits-desc section-desc">
-              Большой опыт (более 800+ успешных разработок)
+              Большой опыт (более 50+ успешных разработок)!
             </p>
           </motion.div>
           <motion.div
@@ -40,7 +40,7 @@ export default function Benefits() {
               <img src={doggo} width="47" height="52" alt="doggo" />
             </LazyLoad>
             <p className="benefits-desc section-desc">
-              Команда опытных и профессиональных дизайнеров
+              Команда опытных и профессиональных разработчиков!
             </p>
           </motion.div>
           <motion.div
@@ -52,7 +52,7 @@ export default function Benefits() {
               <img src={gift} width="48" height="43" alt="gift" />
             </LazyLoad>
             <p className="benefits-desc section-desc">
-              Бесплатные консультации по разработке дизайна
+              Бесплатные консультации по разработке дизайна!
             </p>
           </motion.div>
           <motion.div
@@ -64,7 +64,7 @@ export default function Benefits() {
               <img src={pig} width="44" height="54" alt="rocket" />
             </LazyLoad>
             <p className="benefits-desc section-desc">
-              Комплексный подход к экономии
+              Комплексный подход к экономии ваших средств!
             </p>
           </motion.div>
         </div>

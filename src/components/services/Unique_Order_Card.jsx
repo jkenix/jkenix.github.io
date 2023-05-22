@@ -1,13 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-const MotionComp = motion(Link);
-
+import React from "react"; // Подключение модулей React
+import { motion } from "framer-motion"; // Подключение Библиотеки Framer-motion
+// Компонент блока карточки заказа "Уникальный проект"
 export default function Unique_Order_Card(props) {
   return (
     <>
-      <MotionComp
-        to={props.card_link}
+      <motion.div
         className="l-unique-project"
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -19,10 +16,10 @@ export default function Unique_Order_Card(props) {
         <p className="unique-desc section-desc">
           Мы в деле! Давайте обсудим условия подходящие, именно для вас!
         </p>
-        <div className="btn-order btn-link btn-bw55 btn-focus">
+        <button className="btn-order btn-link btn-bw41 btn-focus" onClick={props.Click}>
           Заказать
-        </div>
-      </MotionComp>
+        </button>
+      </motion.div>
     </>
   );
 }

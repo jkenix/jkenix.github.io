@@ -62,6 +62,9 @@
   .l-unique-project {
     width: 61.7%;
   }
+  .l-fdp-content-info > .fdp-title {
+    font-size: 1.6rem;
+  }
   // === About ===
   .l-feni-about-skills {
     row-gap: 20px;
@@ -98,6 +101,16 @@
     }
   }
   // === Main ===
+  // Общие классы
+  .l-fs-content {
+    max-width: 100%;
+    > .fs-desc {
+      max-width: 90%;
+    }
+  }
+  .l-fs-img {
+    display: none;
+  }
   // === Home ===
   // Feni preview
   .l-fp-section-title {
@@ -161,45 +174,52 @@
   .l-feni-partners .fp-desc {
     width: 100%;
   }
+  // Forms (Общий класс)
+  .l-feni-form {
+    > .l-feedback-row.top {
+      width: 100%;
+      padding-right: 0;
+    }
+    > .l-feedback-row.right {
+      padding-right: 0;
+    }
+    > .l-feedback-row.right,
+    > .l-feedback-row.left {
+      width: 100%;
+    }
+  }
+  // Checkbox общий класс
+  .checkbox-row {
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
   // === Discuss ===
   .l-fdp-content {
     align-items: center;
     flex-direction: column;
     row-gap: 40px;
-    > .fdp-content-info {
+    > .l-fdp-content-info {
       width: 100%;
       text-align: center;
     }
-    > .fdp-content-form {
+    > .l-fdp-content-form {
       width: 70%;
+      > .checkbox-row {
+        padding-top: 15px;
+        > .feni-checkbox-agree {
+          font-size: 1rem;
+        }
+      }
     }
   }
   .form-img-block {
     display: none;
   }
-  .l-feedback-row.top {
-    width: 100%;
-    padding-right: 0;
-  }
-  .l-feedback-row.right {
-    padding-right: 0;
-  }
-  .l-feedback-row.right,
-  .l-feedback-row.left {
-    width: 100%;
-  }
   .l-feedback-row.message {
     height: 100px;
-    padding-bottom: 30px;
-  }
-  .checkbox-row {
-    padding-left: 0;
-    padding-top: 20px;
-    width: 100%;
-    text-align: center;
-    > p {
-      font-size: 1rem;
-    }
+    padding-bottom: 35px;
   }
   // === Portfolio ===
   .port-works-tabs > .btn-tab {
@@ -241,6 +261,38 @@
       }
     }
   }
+  // Form
+  .l-of-wrapper > .l-feni-section {
+    width: 100%;
+    padding-right: 20px;
+    display: flex;
+  }
+  .l-of-content > .fof-close {
+    right: 35px;
+  }
+  .l-order-form {
+    width: 100%;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    padding-right: 30px;
+    justify-content: center;
+    > .section-title {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+    > .l-feedback-row {
+      margin-bottom: 15px;
+      &.top,
+      &.right,
+      &.left,
+      &.message {
+        width: 70%;
+      }
+      &.message {
+        padding-bottom: 25px;
+      }
+    }
+  }
   // Benefits
   .l-benefits-items > .benefits-item {
     width: 41%;
@@ -262,6 +314,50 @@
     text-align: center;
     .btn-fnf {
       margin-left: auto;
+    }
+    > .fnf-img {
+      display: none;
+    }
+  }
+}
+// Landscape 1024 (Form Services)
+@media (max-width: 1024.98px) and (orientation: landscape) and (pointer: coarse) {
+  .l-of-content {
+    > .fof-close {
+      right: 40px;
+      svg {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+  .l-order-form {
+    justify-content: start;
+    padding-top: 20px;
+    > .section-title {
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+    > .l-feedback-row {
+      &.top {
+        padding-right: 25px;
+      }
+      &.top,
+      &.right,
+      &.left {
+        width: 47%;
+      }
+      &.message {
+        width: 66%;
+        padding-right: 20px;
+      }
+    }
+    > .feedback-btn {
+      min-width: 30%;
+      margin-top: 30px;
+    }
+    > .checkbox-row {
+      display: none;
     }
   }
 }
@@ -307,16 +403,6 @@
   // .l-feni-start block
   .l-feni-start {
     padding-left: 35px;
-    padding-right: 30px;
-  }
-  .l-fs-content {
-    max-width: 100%;
-    > .fs-desc {
-      max-width: 90%;
-    }
-  }
-  .l-fs-img {
-    display: none;
   }
   // === Home ===
   // Feni info
@@ -365,16 +451,16 @@
     grid-template-columns: repeat(auto-fit, minmax(229px, 1fr));
   }
   // --- Services (Вложенные !!!) ---
+  // Slider
+  .l-process-dev-slider {
+    padding-right: 30px;
+  }
   // Prices
   .l-process-dev > .pd-title {
     padding-right: 30px;
   }
-  .l-price-project,
-  .l-pp-identify > .l-unique-project {
+  .l-price-project {
     width: 41.3%;
-  }
-  .l-prices {
-    padding-left: 30px;
   }
   // Benefits
   .l-benefits {
@@ -422,7 +508,7 @@
     }
   }
   // === Dicuss ===
-  .l-fdp-content > .fdp-content-form {
+  .l-fdp-content > .l-fdp-content-form {
     width: 80%;
   }
   // === Services ===
@@ -432,9 +518,33 @@
   // --- Services (Вложенные !!!) ---
   // Prices, Benefits
   .l-price-project,
-  .l-benefits-items > .benefits-item,
-  .l-pp-identify > .l-unique-project {
+  .l-benefits-items > .benefits-item {
     width: 100%;
+  }
+  // Form
+  .l-order-form {
+    > .section-title {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+    > .l-feedback-row {
+      &.top,
+      &.right,
+      &.left,
+      &.message {
+        width: 85%;
+      }
+    }
+    > .checkbox-row > .feni-checkbox-agree {
+      font-size: 0.7rem;
+    }
+  }
+  // Policy
+  .l-privacy-policy,
+  .l-public-offer {
+    > .section-title {
+      font-size: 1.3rem;
+    }
   }
 }
 // 320px

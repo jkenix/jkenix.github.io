@@ -1,14 +1,12 @@
-import React, { lazy, useState } from "react";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { NavLink } from "react-router-dom";
-import { motion } from "framer-motion";
-
+import React, { lazy, useState } from "react"; // Подключение модулей React
+import { Helmet, HelmetProvider } from "react-helmet-async"; // Импорт модулей Helmet
+import { NavLink } from "react-router-dom"; // Подключение модулей React
+import { motion } from "framer-motion"; // Подключение Библиотеки Framer-motion
+// Импорт информации о Портфолио для страницы "Портфолио"
 import { TabList_portfolio } from "../js/data.jsx";
-
+// Импорт компонента прокрутки страницы вверх
 import UpBtn from "../components/UpBtn.jsx";
-import ScrollToTop from "../components/main/ScrollToTop.jsx";
-const Discuss = lazy(() => import("../components/main/Discuss.jsx"));
-
+// Компонент страницы "Портфолио"
 export default function Portfolio(props) {
   const [currentTab, setCurrentTab] = useState(props.tabid);
   return (
@@ -18,19 +16,19 @@ export default function Portfolio(props) {
           <title>Feni - {props.tablabel}</title>
           <meta
             property="og:title"
-            content={`Feni Design - ${props.tablabel}`}
+            content={`Feni Studio - ${props.tablabel}`}
           />
-          {/* <meta
+          <meta
             property="og:url"
             content={"https://jkenix.github.io/portfolio" + props.tabpath}
-          /> */}
-          {/* <meta
+          />
+          <meta
             name="og:description"
-            content={`Посмотрите пример работ по теме "${props.tablabel}" от Feni Design Studio.`}
-          /> */}
+            content={`Посмотрите пример работ по теме "${props.tablabel}" от Feni Studio!`}
+          />
           <meta
             name="description"
-            content={`Feni Design портфолио - ${props.tablabel}`}
+            content={`Посмотрите портфолио от Feni Studio! Представляем вам ${props.tablabel}!`}
           />
         </Helmet>
         <main className="l-main">
@@ -68,9 +66,7 @@ export default function Portfolio(props) {
               }
             })}
           </section>
-          <Discuss />
         </main>
-        <ScrollToTop />
       </HelmetProvider>
     </>
   );

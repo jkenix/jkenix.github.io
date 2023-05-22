@@ -46,11 +46,14 @@
 .btn-tab {
   &.active {
     color: $ff5;
+    span {
+      color: $ff5;
+    }
   }
 }
 // === Header ===
 .head-is-switch {
-  background-color: $b55;
+  background-color: $b41;
   .logo {
     background-color: $wff;
     height: 67px;
@@ -73,6 +76,11 @@
     animation: span3 0.2s forwards cubic-bezier(0.8, 0.5, 0.2, 1.4);
     animation-delay: 0.5s;
   }
+}
+// Во избежание появления со сменой ориентации
+// При просмотре всплывающей формы в "Сервисах"
+.ham-is-hide {
+  display: none;
 }
 .nav-is-active {
   animation: fadeMe 300ms linear forwards;
@@ -119,6 +127,22 @@
 // LazyLoad work-desc
 .wdl {
   opacity: 0;
+}
+// Order Form
+.of-is-visible {
+  display: block;
+}
+.fof-close {
+  background-color: transparent;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  &:hover {
+    svg path {
+      stroke: $b1;
+    }
+  }
 }
 /* === Keyframes === */
 // Preloader

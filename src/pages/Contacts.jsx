@@ -1,25 +1,22 @@
-import React from "react";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { motion } from "framer-motion";
-
-import Discuss from "../components/main/Discuss.jsx";
-import ScrollToTop from "../components/main/ScrollToTop.jsx";
-
+import React from "react"; // Подключение модулей React
+import { Helmet, HelmetProvider } from "react-helmet-async"; // Импорт модулей Helmet
+import { motion } from "framer-motion"; // Подключение Библиотеки Framer-motion
+// Импорт изображений
 import contacts_img from "../img/feni-contacts.webp";
 import vklogo from "../img/vk-logo.svg";
 import telegram from "../img/telegram-logo.svg";
 import wapp from "../img/wapp-logo.svg";
-
+// Компонент страницы "Контакты"
 export default function Contacts() {
   return (
     <>
       <HelmetProvider>
         <Helmet>
           <title>Контакты - Feni</title>
-          <meta property="og:title" content="Контакты - Feni Design" />
-          <meta property="og:url" content="https://jkenix.github.io/contacts" />
-          {/* <meta name="og:description" content="" />
-          <meta name="description" content="" /> */}
+          <meta property="og:title" content="Контакты - Feni Studio" />
+          <meta property="og:url" content="https://jkenix-project.pages.dev/contacts/" />
+          <meta name="og:description" content="Контактные данные студии Feni" />
+          <meta name="description" content="Свяжитесь со студией Feni!" />
         </Helmet>
         <main className="l-main l-contacts">
           <motion.section
@@ -72,9 +69,7 @@ export default function Contacts() {
               </div>
             </div>
           </motion.section>
-          <Discuss />
         </main>
-        <ScrollToTop />
       </HelmetProvider>
     </>
   );

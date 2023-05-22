@@ -1,6 +1,6 @@
-import React from "react";
-import { motion } from "framer-motion";
-
+import React from "react"; // Подключение модулей React
+import { motion } from "framer-motion"; // Подключение Библиотеки Framer-motion
+// Компонент начального блока на страницах Сервисов
 export default function Service_Preview(props) {
   return (
     <>
@@ -14,11 +14,11 @@ export default function Service_Preview(props) {
            {props.desc}
           </p>
           <div className="l-service-info">
-            <a href={props.brif_link} className="btn-link btn-b55">
+            <a href={props.brif_link} className="btn-link btn-b41">
               Заполнить бриф
             </a>
             <button
-              className="btn-link btn-bw55"
+              className="btn-link btn-bw41"
               onClick={() => {
                 document.getElementById("prices").scrollIntoView();
               }}>

@@ -47,6 +47,10 @@ ul {
   padding: 0;
 }
 
+[type=submit] {
+  cursor: pointer;
+}
+
 address {
   font-style: normal;
   font-size: 1.5rem;

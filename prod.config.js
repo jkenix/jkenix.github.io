@@ -1,43 +1,49 @@
-const path = require("path");
-const webpack = require("webpack");
-// const CompressionPlugin = require("compression-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const HtmlWebpackInjector = require("html-webpack-injector");
+const path = require("path"); // Модуль для работы с путями к файлам и каталогам
+const webpack = require("webpack"); // Сборщик модулей
+const CompressionPlugin = require("compression-webpack-plugin"); // Плагин для сжатия файлов в .gzip
+const MiniCssExtractPlugin = require("mini-css-extract-plugin"); // Плагин извлекает CSS в отдельные файлы
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin"); // Плагин для сжатия изображений
+const HtmlWebpackPlugin = require("html-webpack-plugin"); // Плагин для генерации HTML-файла по шаблону
+const HtmlWebpackInjector = require("html-webpack-injector"); // Плагин внедряет код Html по шаблону
 
-let mode = "production";
-let target = "browserslist";
+let mode = "production"; // Объявление режима "продакшн"
+let target = "browserslist"; // Получение списка браузеров
 const plugins = [
+  // Подключение плагинов
   new MiniCssExtractPlugin({
     filename: "[name].[contenthash].css",
   }),
   new HtmlWebpackPlugin({
+    // Настройка плагина для генерации html файла
     template: "./index.html",
     chunks: ["main"],
   }),
   new HtmlWebpackInjector(),
+  // Перезаписывает переменную во время сборки
+  // Для избежания вызова лишних функций
   new webpack.DefinePlugin({
     PRODUCTION: JSON.stringify(true),
   }),
-  // new CompressionPlugin({
-  //   algorithm: "gzip",
-  //   test: /\.(js|css|html|svg)$/i,
-  // }),
+  // Подключение плагина сжатия .gzip
+  new CompressionPlugin({
+    algorithm: "gzip",
+    test: /\.(js|css|html|svg)$/i,
+  }),
 ];
-
+// Применение режима, цели, плагинов, откладки, точки входа и выхода
 module.exports = {
   mode,
   target,
   plugins,
-  devtool: "source-map",
-  entry: { main: "./src/index.js" },
+  devtool: "source-map", // Местоположение исходного кода показывается полностью
+  entry: { main: "./src/index.js" }, // Точка входа Webpack
   optimization: {
-    runtimeChunk: "single",
+    runtimeChunk: "single", // Генерировать чанки по отдельности
     splitChunks: {
-      chunks: "all",
-      maxInitialRequests: Infinity,
-      minSize: 0,
+      // Разбивание чанков на части
+      chunks: "all", // Количество чанков
+      maxInitialRequests: Infinity, // Мниимальный размер запроса файлов
+      minSize: 0, // Размер файлов
       // cacheGroups: {
       //   vendor: {
       //     test: /[\\/]node_modules[\\/]/,
@@ -76,6 +82,7 @@ module.exports = {
     //   },
     // },
     minimizer: [
+      // Переопределяет минимизатор по умолчанию
       "...",
       // new ImageMinimizerPlugin({
       //   minimizer: {
@@ -99,17 +106,13 @@ module.exports = {
       //   },
       // }),
       new ImageMinimizerPlugin({
+        // Использование ImageMinimizerPlugin для сжатия svg
         minimizer: {
           implementation: ImageMinimizerPlugin.svgoMinify,
           options: {
             encodeOptions: {
-              // Pass over SVGs multiple times to ensure all optimizations are applied. False by default
               multipass: true,
-              plugins: [
-                // set of built-in plugins enabled by default
-                // see: https://github.com/svg/svgo#default-preset
-                "preset-default",
-              ],
+              plugins: ["preset-default"],
             },
           },
         },
@@ -117,12 +120,15 @@ module.exports = {
     ],
   },
   output: {
+    // Указание выходных файлов для ресурсов
     path: path.resolve(__dirname, "docs"),
     // assetModuleFilename: "assets/[hash][ext][query]",
     assetModuleFilename: "./img/[name][ext]",
     clean: true,
     publicPath: "/",
   },
+  // Подключение модулей.
+  // test - формат файлов, exlude - исключения, use - используемый модуль
   module: {
     rules: [
       { test: /\.(html)$/, exclude: /node_modules/, use: ["html-loader"] },
@@ -140,7 +146,7 @@ module.exports = {
                   [
                     "postcss-preset-env",
                     {
-                      // Options
+                      // Oпции
                     },
                   ],
                 ],

@@ -1,3 +1,4 @@
+// Подключение модулей React
 import React from "react";
 import { Link } from "react-router-dom";
 import LazyLoad from "react-lazy-load";
@@ -6,7 +7,8 @@ import * as img from "./images.js";
 // Константы
 const list_main_size = 5;
 const list_port_visible_size = 6;
-// Массивы (изображения, описание и т.д.)
+// Массивы данных (изображения, описание и т.д.)
+// Для вкладки "Логотипы"
 export const logos = [
   {
     logo_id: "1",
@@ -104,6 +106,7 @@ export const logos = [
     client: `Студия веб-дизайна "White palace"`,
   },
 ];
+// Для вкладки "Веб-сайты"
 export const websites = [
   {
     web_id: "1",
@@ -136,6 +139,7 @@ export const websites = [
     main_class: "fp-work-mini",
   },
 ];
+// Для вкладки "Айдентика"
 export const styles = [
   {
     style_id: "1",
@@ -178,6 +182,7 @@ export const styles = [
     main_class: "fp-work-main",
   },
 ];
+// Для вкладки "Иллюстрации"
 export const illustrations = [
   {
     ill_id: "1",
@@ -257,6 +262,7 @@ export const illustrations = [
     client: ` ""`,
   },
 ];
+// Для вкладки "Презентации"
 export const presentations = [
   {
     present_id: "1",
@@ -309,6 +315,7 @@ export const presentations = [
     main_class: "fp-work-focus fp-ltl",
   },
 ];
+// Массив, объединяющий все данные для вкладок
 export const all_works = [
   ...websites,
   ...logos,
@@ -750,28 +757,28 @@ export const TabList_portfolio = [
 ];
 // Настройки слайдера на страницах "Сервисов"
 export const Slider_settings = {
-  infinite: false,
-  speed: 500,
-  swipeToSlide: true,
-  slidesToShow: 4,
-  dots: true,
-  responsive: [
+  infinite: false, // Бесконечная прокрутка
+  speed: 500, // Скорость
+  swipeToSlide: true, // Свайп для переключения
+  slidesToShow: 4, // Количество слайдов для показа
+  dots: true, // Точки для переключения
+  responsive: [ // Настройка медиа-запросов
     {
-      breakpoint: 1024,
+      breakpoint: 1024.98, // Начиная с ширины экрана 1024.98px
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 3, // Количество слайдов для показа
       },
     },
     {
-      breakpoint: 767.98,
+      breakpoint: 767.98, // Начиная с ширины экрана 767.98px
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 2, // Количество слайдов для показа
       },
     },
     {
-      breakpoint: 575.98,
+      breakpoint: 575.98, // Начиная с ширины экрана 575.98px
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 1, // Количество слайдов для показа
       },
     },
   ],

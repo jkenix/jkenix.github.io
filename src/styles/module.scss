@@ -63,7 +63,6 @@
   display: none;
   width: 34px;
   height: 34px;
-  z-index: 11;
 }
 .hamburger > span {
   display: block;
@@ -150,7 +149,8 @@
     }
   }
 }
-// === Discuss Project ===
+// Общие модули (Form)
+// Кнопка отправки
 .feedback-btn {
   border: none;
   min-width: 35%;
@@ -161,18 +161,15 @@
 .checkbox-row {
   display: flex;
   align-items: center;
-  padding-left: 38px;
-  width: 57%;
+  padding-left: 20px;
+  width: 51%;
   user-select: none;
-}
-.feni-checkbox {
-  margin-right: 10px;
 }
 .feni-checkbox-agree {
   font-size: 0.625rem;
   line-height: 145%;
 }
-// Общие модули (Form)
+// Labels/Inputs strings
 .label-feedback {
   font-size: 1rem;
   font-weight: 500;
@@ -181,11 +178,15 @@
 .form-input {
   background: transparent;
   outline: none;
-  border: none;
   max-width: 100%;
-  padding-left: 0;
   font-size: 0.75rem;
   line-height: 15px;
+  width: 100%;
+  margin-top: 15px;
+  padding: 0 10px 10px 0;
+}
+.message-input {
+  resize: none;
 }
 // === Porfolio ===
 .port-works-tabs {
@@ -233,7 +234,7 @@
 .pd-num {
   font-weight: 900;
   font-size: 4.375rem;
-  -webkit-text-stroke: 0.007em #5551f7;
+  -webkit-text-stroke: 0.007em $b41;
   color: transparent;
 }
 .process-dev-content {
@@ -251,6 +252,21 @@
 .pp-desc-strong,
 .benefits-title {
   font-weight: 600;
+}
+// Order Form
+#Service-name {
+  border: none;
+  margin: 0;
+  pointer-events: none;
+  cursor: default;
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 255, 0);
+  margin-top: 10px;
+  font-size: 1rem;
+  overflow: hidden;
+  &:focus {
+    outline: none;
+  }
 }
 // Contacts
 .contacts-link {
@@ -311,7 +327,7 @@
   letter-spacing: 0.02em;
   justify-content: center;
   text-align: center;
-  width: 171px;
+  width: 185px;
   height: 41px;
 }
 .btn-tab {

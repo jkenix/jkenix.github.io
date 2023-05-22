@@ -1,10 +1,11 @@
 {
   "presets": [
-    ["@babel/preset-env"],
+    // Предустановки Babel (Плагины)
+    ["@babel/preset-env"], // Для интеграции со списками браузеров
     [
-      "@babel/preset-react",
+      "@babel/preset-react", // Для поддержки react
       {
-        "runtime": "automatic"
+        "runtime": "automatic" // Автоматический запуск плагина
       }
     ]
   ]

@@ -1,11 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
+import React from "react"; // Подключение модулей React
+import { Link } from "react-router-dom"; // Подключение модулей React
+// Импорт изображений
 import logo from "../../img/feni-logo.svg";
 import vklogo from "../../img/vk-logo.svg";
 import telegram from "../../img/telegram-logo.svg";
 import wapp from "../../img/wapp-logo.svg";
-
+// Компонент нижней части страницы
 export default function Footer() {
   return (
     <footer className="l-footer">
@@ -27,7 +27,7 @@ export default function Footer() {
             <a
               href="https://forms.gle/neVqs5xMX5GU2nbT6"
               className="footer-link">
-              Бриф на разработку веб дизайна
+              Бриф на разработку веб-сайта
             </a>
             <a
               href="https://forms.gle/Tvioeac6DhDZxu9N9"
@@ -91,8 +91,17 @@ export default function Footer() {
       </div>
       <div className="l-footer-bottom">
         <span className="footer-copyright">Copyright © 2023 Feni Studio.</span>
-        <Link to="/" className="footer-link" title="Публичная Оферта">
+        <Link
+          to="/public-offer/"
+          className="footer-link"
+          title="Публичная Оферта">
           Публичная Оферта
+        </Link>
+        <Link
+          to="/privacy-policy/"
+          className="footer-link"
+          title="Публичная Оферта">
+          Политика конфиденциальности
         </Link>
         <a
           href="https://github.com/jkenix"

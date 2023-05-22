@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-const MotionComp = motion(Link);
-
+import React from "react"; // Подключение модулей React
+import { Link } from "react-router-dom"; // Подключение модулей React
+import { motion } from "framer-motion"; // Подключение Библиотеки Framer-motion
+const MotionComp = motion(Link); // Смешивание Link и компонента Motion
+// Компонент блока страницы "Наши сервисы"
 export default function Service(props) {
   return (
     <>
