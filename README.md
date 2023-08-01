@@ -1,6 +1,8 @@
-# Каталог проектов jkenix, сделанных по макетам №1.
+# Каталог проектов jkenix по web-разработке.
 
-**Каталог №2 (АКТУАЛЬНЫЙ)** ➡️ https://github.com/jkenix/jkenix-project :white_check_mark:
+***Каталог переехал. Новые проекты добавляться не будут!***  
+Здесь собраны проекты, которые разрабатывались в течении первого года моего обучения.  
+**АКТУАЛЬНЫЙ КАТАЛОГ** ➡️ https://github.com/jkenix/jkenix-project :white_check_mark:  
 
 ## Адаптивные Сайты:
 **Feni Studio** по макету компании **Whales** ↪ https://github.com/jkenix/jkenix-project/tree/feni-website (Изначальная ветка разработки ➡️ https://github.com/jkenix/jkenix.github.io/tree/feni)  
