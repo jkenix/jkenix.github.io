@@ -13,4 +13,4 @@
 **Interno** ↪ https://github.com/jkenix/jkenix.github.io/tree/interno  
 **Arka** ↪ https://github.com/jkenix/jkenix.github.io/tree/arka  
 **Pulstar** ↪ https://github.com/jkenix/jkenix.github.io/tree/pulstar  
-**Seoflow** на базе библиотеки Bootstrap ↪ https://github.com/jkenix/jkenix.github.io/tree/seoflow  
+**Seoflow** ↪ https://github.com/jkenix/jkenix.github.io/tree/seoflow  
