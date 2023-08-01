@@ -5,7 +5,7 @@
 **АКТУАЛЬНЫЙ КАТАЛОГ** ➡️ https://github.com/jkenix/jkenix-project :white_check_mark:  
 
 ## Адаптивные Сайты:
-**Feni Studio** по макету компании **Whales** ↪ https://github.com/jkenix/jkenix-project/tree/feni-website (Изначальная ветка разработки ➡️ https://github.com/jkenix/jkenix.github.io/tree/feni)  
+**Feni Studio** по макету компании **Whales** ↪ https://github.com/jkenix/jkenix-project/tree/feni-website    
 **Toystream** на базе React.js по макету компании **Toystream** ↪ https://github.com/jkenix/jkenix.github.io/tree/toystream
 
 ## Адаптивные Лендинги:  
