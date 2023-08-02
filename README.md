@@ -1,4 +1,6 @@
-# :white_check_mark: Полностью адаптивная страница, сделанная по макету.
+# 🌐 **Pulstar**
 
-Демонстрация работы ➡️ https://pulstar.pages.dev/  
-Макет ➡️ https://www.figma.com/file/q2jzPHwJmrQUOxmBs5rRIo/Pulstar?node-id=0%3A1
+✅ Адаптивная страница.  
+
+[Демонстрация работы](https://pulstar.pages.dev/) 🔗  
+[Макет](https://www.figma.com/file/q2jzPHwJmrQUOxmBs5rRIo/Pulstar?node-id=0%3A1) ✏️  
