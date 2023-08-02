@@ -1,8 +1,6 @@
 # Каталог проектов jkenix по web-разработке.
 
-***Каталог переехал. Новые проекты добавляться не будут!***  
-Здесь собраны проекты, которые разрабатывались в течении первого года моего обучения.  
-**АКТУАЛЬНЫЙ КАТАЛОГ** ➡️ [jkenix-projects](https://github.com/jkenix/jkenix-project) :white_check_mark:  
+Здесь собраны проекты, которые разрабатывались в течении первого года моего обучения.   **Актуальный каталог** можно посмотреть [здесь](https://github.com/jkenix/jkenix-project) :white_check_mark:  
 
 ## Адаптивные Сайты:
 - [**Feni Studio**](https://github.com/jkenix/jkenix-project/tree/feni-website) на React.js  
