@@ -2,7 +2,7 @@
 
 ***Каталог переехал. Новые проекты добавляться не будут!***  
 Здесь собраны проекты, которые разрабатывались в течении первого года моего обучения.  
-**АКТУАЛЬНЫЙ КАТАЛОГ** ➡️ https://github.com/jkenix/jkenix-project :white_check_mark:  
+**АКТУАЛЬНЫЙ КАТАЛОГ** ➡️ [jkenix-projects](https://github.com/jkenix/jkenix-project) :white_check_mark:  
 
 ## Адаптивные Сайты:
 - [**Feni Studio**](https://github.com/jkenix/jkenix-project/tree/feni-website) на React.js  
