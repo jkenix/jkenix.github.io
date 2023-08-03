@@ -1,6 +1,6 @@
 # 🌐 **Pulstar**
 
-✅ Адаптивная страница.  
+✅ Adaptive Landing.  
 
-- [Демонстрация работы](https://pulstar.pages.dev/) 🔗  
-- [Макет](https://www.figma.com/file/q2jzPHwJmrQUOxmBs5rRIo/Pulstar?node-id=0%3A1) ✏️  
+- [Demonstration of work](https://pulstar.pages.dev/) 🔗  
+- [Layout](https://www.figma.com/file/q2jzPHwJmrQUOxmBs5rRIo/Pulstar?node-id=0%3A1) ✏️  
