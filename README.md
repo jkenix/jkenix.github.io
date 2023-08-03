@@ -1,4 +1,4 @@
-# 🙌 Jkenix's web development project catalog. 🙌    
+# 🙌 Jkenix's projects catalog of web development. 🙌    
 
 ⚡ Collected here are projects that were developed during my first year of web development training. ⚡  
 
