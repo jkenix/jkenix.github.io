@@ -1,11 +1,11 @@
 # 🌐**Feni**   
 
-Адаптивный SPA сайт на базе библиотеки React.js. ⚛️     
+Adaptive SPA site based on React.js library. ⚛️      
   
-- [Демонстрация работы](https://feni.pages.dev/) 🔗  
-- [Макет](https://www.figma.com/file/X9DR9ThkQiIW1Vv4BjDB1P/Whales-Design-2.0?type=design&node-id=299-461&mode=design) ✏️  
+- [Demonstration of work](https://feni.pages.dev/) 🔗  
+- [Layout](https://www.figma.com/file/X9DR9ThkQiIW1Vv4BjDB1P/Whales-Design-2.0?type=design&node-id=299-461&mode=design) ✏️  
 
-Здесь нет собранного билда и некоторых фиксов.  
-[**Полная версия проекта со всеми файлами**](https://github.com/jkenix/jkenix-project/tree/feni-website) 🔨   
+It doesn't have the build and some of the fixes.  
+[**Full version of the project with all files**](https://github.com/jkenix/jkenix-project/tree/feni-website) 🔨   
 
 
