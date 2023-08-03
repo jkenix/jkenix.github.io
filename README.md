@@ -3,7 +3,7 @@
 ⚡ Collected here are projects that were developed during my first year of web development training. ⚡  
 
 ## Adaptive Web-sites:
-- [**Feni Studio**](https://github.com/jkenix/jkenix-project/tree/feni-website) on React.js 🔗  
+- [**Feni Studio**](https://github.com/jkenix/jkenix.github.io/tree/feni) on React.js 🔗  
 - [**Toystream**](https://github.com/jkenix/jkenix.github.io/tree/toystream) on React.js 🔗   
 ## Adaptive Landings:  
 - [**Pages**](https://github.com/jkenix/jkenix.github.io/tree/pages-page) 🔗  
