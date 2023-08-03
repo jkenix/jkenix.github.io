@@ -1,4 +1,4 @@
-# 🌐**Toystream**🌐   
+# 🌐**Toystream**   
 
 Adaptive SPA site based on React.js library. ⚛️
 
