@@ -19,7 +19,7 @@ export default function News() {
         <Helmet>
           <title>News</title>
           <meta property="og:title" content="News Toy.Stream" />
-          <meta property="og:url" content="https://jkenix.github.io/news" />
+          <meta property="og:url" content={`${location.href}`} />
           <meta
             name="og:description"
             content="Check news from Toy.Stream team."
@@ -32,14 +32,13 @@ export default function News() {
             onClick={() => {
               ShowMenu();
               NavActive();
-            }}
-          >
+            }}>
             <span className="hamburger-item"></span>
           </div>
           <Header nlink="link-active la-c" />
         </header>
         <main className="l-main">
-        <Sociallinksvert slvname="social-links-vert slv-abs" />
+          <Sociallinksvert slvname="social-links-vert slv-abs" />
           <div className="l-news-wr">
             <h2>Новости</h2>
             <div className="l-news">
@@ -50,8 +49,7 @@ export default function News() {
                     className="img__resp"
                     width="505"
                     height="350"
-                    alt="Game news picture"
-                  ></img>
+                    alt="Game news picture"></img>
                 </div>
                 <div className="news-content">
                   <span className="news-date">
@@ -61,8 +59,7 @@ export default function News() {
                       width="24"
                       height="24"
                       alt="Calendar"
-                      aria-hidden="true"
-                    ></img>
+                      aria-hidden="true"></img>
                     1 апреля 2021 г
                   </span>
                   <div className="news-title">
@@ -81,8 +78,7 @@ export default function News() {
                       className="img__resp"
                       width="71"
                       height="21"
-                      alt="Arrow news"
-                    ></img>
+                      alt="Arrow news"></img>
                   </div>
                 </div>
               </Link>
@@ -93,8 +89,7 @@ export default function News() {
                     className="img__resp"
                     width="505"
                     height="350"
-                    alt="Game news picture"
-                  ></img>
+                    alt="Game news picture"></img>
                 </div>
                 <div className="news-content">
                   <span className="news-date">
@@ -104,8 +99,7 @@ export default function News() {
                       width="24"
                       height="24"
                       alt="Calendar"
-                      aria-hidden="true"
-                    ></img>
+                      aria-hidden="true"></img>
                     1 апреля 2021 г
                   </span>
                   <div className="news-title">
@@ -124,8 +118,7 @@ export default function News() {
                       className="img__resp"
                       width="71"
                       height="21"
-                      alt="Arrow news"
-                    ></img>
+                      alt="Arrow news"></img>
                   </div>
                 </div>
               </Link>
@@ -136,8 +129,7 @@ export default function News() {
                     className="img__resp"
                     width="505"
                     height="350"
-                    alt="Game news picture"
-                  ></img>
+                    alt="Game news picture"></img>
                 </div>
                 <div className="news-content">
                   <span className="news-date">
@@ -147,8 +139,7 @@ export default function News() {
                       width="24"
                       height="24"
                       alt="Calendar"
-                      aria-hidden="true"
-                    ></img>
+                      aria-hidden="true"></img>
                     1 апреля 2021 г
                   </span>
                   <div className="news-title">
@@ -167,8 +158,7 @@ export default function News() {
                       className="img__resp"
                       width="71"
                       height="21"
-                      alt="Arrow news"
-                    ></img>
+                      alt="Arrow news"></img>
                   </div>
                 </div>
               </Link>
@@ -179,8 +169,7 @@ export default function News() {
                     className="img__resp"
                     width="505"
                     height="350"
-                    alt="Game news picture"
-                  ></img>
+                    alt="Game news picture"></img>
                 </div>
                 <div className="news-content">
                   <span className="news-date">
@@ -190,8 +179,7 @@ export default function News() {
                       width="24"
                       height="24"
                       alt="Calendar"
-                      aria-hidden="true"
-                    ></img>
+                      aria-hidden="true"></img>
                     1 апреля 2021 г
                   </span>
                   <div className="news-title">
@@ -210,8 +198,7 @@ export default function News() {
                       className="img__resp"
                       width="71"
                       height="21"
-                      alt="Arrow news"
-                    ></img>
+                      alt="Arrow news"></img>
                   </div>
                 </div>
               </Link>
@@ -222,8 +209,7 @@ export default function News() {
                     className="img__resp"
                     width="505"
                     height="350"
-                    alt="Game news picture"
-                  ></img>
+                    alt="Game news picture"></img>
                 </div>
                 <div className="news-content">
                   <span className="news-date">
@@ -233,8 +219,7 @@ export default function News() {
                       width="24"
                       height="24"
                       alt="Calendar"
-                      aria-hidden="true"
-                    ></img>
+                      aria-hidden="true"></img>
                     1 апреля 2021 г
                   </span>
                   <div className="news-title">
@@ -253,8 +238,7 @@ export default function News() {
                       className="img__resp"
                       width="71"
                       height="21"
-                      alt="Arrow news"
-                    ></img>
+                      alt="Arrow news"></img>
                   </div>
                 </div>
               </Link>
@@ -265,8 +249,7 @@ export default function News() {
                     className="img__resp"
                     width="505"
                     height="350"
-                    alt="Game news picture"
-                  ></img>
+                    alt="Game news picture"></img>
                 </div>
                 <div className="news-content">
                   <span className="news-date">
@@ -276,8 +259,7 @@ export default function News() {
                       width="24"
                       height="24"
                       alt="Calendar"
-                      aria-hidden="true"
-                    ></img>
+                      aria-hidden="true"></img>
                     1 апреля 2021 г
                   </span>
                   <div className="news-title">
@@ -296,13 +278,12 @@ export default function News() {
                       className="img__resp"
                       width="71"
                       height="21"
-                      alt="Arrow news"
-                    ></img>
+                      alt="Arrow news"></img>
                   </div>
                 </div>
               </Link>
             </div>
-          <UpBtn btnname="up-btn"/>
+            <UpBtn btnname="up-btn" />
           </div>
         </main>
         <Footer />

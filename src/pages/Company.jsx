@@ -1,10 +1,6 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import {
-  ShowMenu,
-  ShowMenuylgcom,
-  NavActive,
-} from "../js/scripts";
+import { ShowMenu, ShowMenuylgcom, NavActive } from "../js/scripts";
 import "../styles/lib/slick.css";
 import "../styles/lib/slick-theme.css";
 
@@ -26,10 +22,7 @@ export default function Company() {
         <Helmet>
           <title>Toy.Stream - Game studio</title>
           <meta property="og:title" content="Company Toy.Stream" />
-          <meta
-            property="og:url"
-            content="https://jkenix.github.io/company"
-          />
+          <meta property="og:url" content={`${location.href}`} />
           <meta name="og:description" content="About company Toy.Stream." />
           <meta name="description" content="Toy.Steam - About company." />
         </Helmet>
@@ -40,8 +33,7 @@ export default function Company() {
               ShowMenu();
               ShowMenuylgcom();
               NavActive();
-            }}
-          >
+            }}>
             <span className="hamburger-item"></span>
           </div>
           <Header comlink="link-active la-c" />
@@ -85,8 +77,7 @@ export default function Company() {
                     width={160}
                     height={162}
                     alt="Flag icon"
-                    aria-hidden="true"
-                  ></img>
+                    aria-hidden="true"></img>
                   <div className="text-block">
                     <span className="num-title">2млрд+</span>
                     <span className="num-desc">Установок</span>
@@ -98,8 +89,7 @@ export default function Company() {
                     width={160}
                     height={162}
                     alt="champ icon"
-                    aria-hidden="true"
-                  ></img>
+                    aria-hidden="true"></img>
                   <div className="text-block">
                     <span className="num-title">250млн+</span>
                     <span className="num-desc">Активных юзеров в месяц</span>
@@ -113,8 +103,7 @@ export default function Company() {
                     width={160}
                     height={162}
                     alt="mountain icon"
-                    aria-hidden="true"
-                  ></img>
+                    aria-hidden="true"></img>
                   <div className="text-block">
                     <span className="num-title">500млн+</span>
                     <span className="num-desc">Игроков</span>
@@ -126,8 +115,7 @@ export default function Company() {
                     width={160}
                     height={162}
                     alt="Star icon"
-                    aria-hidden="true"
-                  ></img>
+                    aria-hidden="true"></img>
                   <div className="text-block">
                     <span className="num-title">500+</span>
                     <span className="num-desc">Сотрудников</span>
@@ -146,7 +134,7 @@ export default function Company() {
               </div>
             </div>
           </div>
-          <UpBtn btnname="up-btn ub-abs"/>
+          <UpBtn btnname="up-btn ub-abs" />
         </main>
         <Footer />
       </HelmetProvider>

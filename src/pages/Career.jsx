@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { ShowMenu, ShowMenubclg, NavActive} from "../js/scripts";
+import { ShowMenu, ShowMenubclg, NavActive } from "../js/scripts";
 import { Link } from "react-router-dom";
 import "../styles/lib/slick.css";
 import "../styles/lib/slick-theme.css";
@@ -24,7 +24,7 @@ export default function Career() {
         <Helmet>
           <title>Career</title>
           <meta property="og:title" content="Career in Toy.Stream" />
-          <meta property="og:url" content="https://jkenix.github.io/career" />
+          <meta property="og:url" content={`${location.href}`} />
           <meta name="og:description" content="Post a job now!" />
           <meta name="description" content="Career in Toy.Stream." />
         </Helmet>
@@ -35,8 +35,7 @@ export default function Career() {
               ShowMenu();
               ShowMenubclg();
               NavActive();
-            }}
-          >
+            }}>
             <span className="hamburger-item"></span>
           </div>
           <Header carlink="link-active la-c" />
@@ -55,14 +54,11 @@ export default function Career() {
                 <a
                   className="btn check-vacancy"
                   href="#vacancies"
-                  title="Check vacancies"
-                >
+                  title="Check vacancies">
                   Вакансия
                 </a>
               </div>
-              <picture
-                className="car-pic-block img__resp-block"
-              >
+              <picture className="car-pic-block img__resp-block">
                 <source
                   media="(max-width: 1024.98px)"
                   srcSet={lampactive}
@@ -74,8 +70,7 @@ export default function Career() {
                   className="img__resp"
                   width="327"
                   height="560"
-                  alt="Career preview picture"
-                ></img>
+                  alt="Career preview picture"></img>
               </picture>
             </div>
           </div>
@@ -137,7 +132,7 @@ export default function Career() {
                 </div>
               </Link>
             </div>
-           <UpBtn btnname="up-btn"/>
+            <UpBtn btnname="up-btn" />
           </div>
           <div className="l-bw-wr">
             <div className="l-benefits-work">
@@ -163,15 +158,13 @@ export default function Career() {
                   <div className="bw-row-content team">
                     <div
                       className="bwrc-pic img__resp-block"
-                      aria-hidden="true"
-                    >
+                      aria-hidden="true">
                       <img
                         src={ponyman}
                         className="img__resp"
                         width="160"
                         height="162"
-                        alt="Ponyman"
-                      ></img>
+                        alt="Ponyman"></img>
                     </div>
                     <div className="bwrc-desc">
                       <span className="bwrc-desc-title">Команда</span>
@@ -181,15 +174,13 @@ export default function Career() {
                   <div className="bw-row-content bonus">
                     <div
                       className="bwrc-pic img__resp-block"
-                      aria-hidden="true"
-                    >
+                      aria-hidden="true">
                       <img
                         src={coin}
                         className="img__resp"
                         width="160"
                         height="162"
-                        alt="Coin"
-                      ></img>
+                        alt="Coin"></img>
                     </div>
                     <div className="bwrc-desc">
                       <span className="bwrc-desc-title">Бонусы</span>
@@ -201,15 +192,13 @@ export default function Career() {
                   <div className="bw-row-content self-realization">
                     <div
                       className="bwrc-pic img__resp-block"
-                      aria-hidden="true"
-                    >
+                      aria-hidden="true">
                       <img
                         src={crown}
                         className="img__resp"
                         width="160"
                         height="162"
-                        alt="Crown"
-                      ></img>
+                        alt="Crown"></img>
                     </div>
                     <div className="bwrc-desc">
                       <span className="bwrc-desc-title">Самореализация</span>
@@ -219,15 +208,13 @@ export default function Career() {
                   <div className="bw-row-content development">
                     <div
                       className="bwrc-pic img__resp-block"
-                      aria-hidden="true"
-                    >
+                      aria-hidden="true">
                       <img
                         src={prize}
                         className="img__resp"
                         width="160"
                         height="162"
-                        alt="Prize"
-                      ></img>
+                        alt="Prize"></img>
                     </div>
                     <div className="bwrc-desc">
                       <span className="bwrc-desc-title">Развитие</span>

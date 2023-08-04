@@ -23,7 +23,7 @@ export default function Games() {
         <Helmet>
           <title>Games</title>
           <meta property="og:title" content="Games Toy.Stream" />
-          <meta property="og:url" content="https://jkenix.github.io/games" />
+          <meta property="og:url" content={`${location.href}`} />
           <meta name="og:description" content="Games by Toy.Stream." />
           <meta name="description" content="Toy.Stream Games." />
         </Helmet>
@@ -34,8 +34,7 @@ export default function Games() {
               ShowMenu();
               ShowMenubclg();
               NavActive();
-            }}
-          >
+            }}>
             <span className="hamburger-item"></span>
           </div>
           <Header glink="link-active la-c" />
@@ -63,8 +62,7 @@ export default function Games() {
                 <a
                   className="btn check-works"
                   href="#work"
-                  title="Check our works"
-                >
+                  title="Check our works">
                   Смотреть наши работы
                 </a>
               </div>
@@ -74,8 +72,7 @@ export default function Games() {
                   className="img__resp"
                   width="419"
                   height="662"
-                  alt="Games preview picture"
-                ></img>
+                  alt="Games preview picture"></img>
               </div>
             </div>
           </div>
@@ -100,8 +97,7 @@ export default function Games() {
                   className="img__resp"
                   width="695"
                   height="695"
-                  alt="Design Masters"
-                ></img>
+                  alt="Design Masters"></img>
               </div>
             </div>
           </div>
@@ -113,8 +109,7 @@ export default function Games() {
                   className="img__resp"
                   width="695"
                   height="695"
-                  alt="Perfect Makeup 3D"
-                ></img>
+                  alt="Perfect Makeup 3D"></img>
               </div>
               <div className="l-game-info">
                 <h2>Perfect Makeup 3D</h2>
@@ -127,8 +122,7 @@ export default function Games() {
                 </div>
                 <button
                   className="btn check-gi"
-                  title="Check Perfect Makeup 3D"
-                >
+                  title="Check Perfect Makeup 3D">
                   Подробнее
                 </button>
               </div>
@@ -155,8 +149,7 @@ export default function Games() {
                   className="img__resp"
                   width="695"
                   height="695"
-                  alt="Escape Masters"
-                ></img>
+                  alt="Escape Masters"></img>
               </div>
             </div>
           </div>
@@ -168,8 +161,7 @@ export default function Games() {
                   className="img__resp"
                   width="695"
                   height="695"
-                  alt="Hitmasters"
-                ></img>
+                  alt="Hitmasters"></img>
               </div>
               <div className="l-game-info">
                 <h2>Hitmasters</h2>
@@ -190,8 +182,7 @@ export default function Games() {
           <a
             href="#lastprojects"
             title="Check last projects"
-            className="btn more-projects"
-          >
+            className="btn more-projects">
             Больше проектов
           </a>
           <div className="l-lp-wr">
@@ -202,7 +193,7 @@ export default function Games() {
               <ResizableSliderGames />
             </div>
           </div>
-          <UpBtn btnname="up-btn ub-abs"/>
+          <UpBtn btnname="up-btn ub-abs" />
         </main>
         <Footer />
       </HelmetProvider>
