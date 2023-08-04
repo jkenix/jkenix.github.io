@@ -1,6 +1,6 @@
-# 🙌 Jkenix's projects catalog of web development. 🙌    
+# Jkenix's projects catalog of web development. 🙌    
 
-⚡ Collected here are projects that were developed during my first year of web development training. ⚡  
+Collected here are projects that were developed during my first year of web development training. ⚡  
 
 ## Adaptive Web-sites:
 - [**Feni Studio**](https://github.com/jkenix/jkenix.github.io/tree/feni) on React.js 🔗  
