@@ -1,1 +1,4 @@
-Страница, адаптированная только под макет.
+# Wooder
+
+Page **adaptived for layout only**.  
+Study project, not for demo. 🎓
