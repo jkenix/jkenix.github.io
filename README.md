@@ -1,6 +1,6 @@
-# 🌐 **Seoflow**   
+# **Seoflow** 🌐
 
-✅ Adaptive Landing.  
+Adaptive Landing Page. ✅
 The layout is based on the **Bootstrap** library.  
 
 - [Demonstration of work](https://seoflow.pages.dev/) 🔗    
