@@ -1,1 +1,3 @@
-# :zap: Моя первая страница с адаптивом. :zap:
+# My First Adaptive Page. :zap:
+
+Study project, not for demo. 🎓  
