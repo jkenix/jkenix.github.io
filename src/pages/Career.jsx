@@ -24,7 +24,10 @@ export default function Career() {
         <Helmet>
           <title>Career</title>
           <meta property="og:title" content="Career in Toy.Stream" />
-          <meta property="og:url" content={`${location.href}`} />
+          <meta
+            property="og:url"
+            content={`${"https://toystream.pages.dev" + "/career"}`}
+          />
           <meta name="og:description" content="Post a job now!" />
           <meta name="description" content="Career in Toy.Stream." />
         </Helmet>

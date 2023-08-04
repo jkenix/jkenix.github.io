@@ -16,7 +16,7 @@ export default function Home() {
         <Helmet>
           <title>Toy.Stream</title>
           <meta property="og:title" content="Toy.Stream - Game studio" />
-          <meta property="og:url" content={`${location.href}`} />
+          <meta property="og:url" content="https://toystream.pages.dev/" />
           <meta
             name="og:description"
             content="Toy.Steam - Page made by jkenix from layout."

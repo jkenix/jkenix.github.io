@@ -13,7 +13,7 @@ export default function Contacts() {
         <Helmet>
           <title>Contacts</title>
           <meta property="og:title" content="Toy.Stream Contacts" />
-          <meta property="og:url" content={`${location.href}`} />
+          <meta property="og:url" content={`${"https://toystream.pages.dev" + "/contacts"}`} />
           <meta name="og:description" content="Contacts - Toy.Stream." />
           <meta name="description" content="Toy.Stream - Contacts." />
         </Helmet>

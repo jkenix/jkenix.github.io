@@ -19,7 +19,7 @@ export default function News() {
         <Helmet>
           <title>News</title>
           <meta property="og:title" content="News Toy.Stream" />
-          <meta property="og:url" content={`${location.href}`} />
+          <meta property="og:url" content={`${"https://toystream.pages.dev" + "/news"}`} />
           <meta
             name="og:description"
             content="Check news from Toy.Stream team."

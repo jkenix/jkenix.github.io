@@ -23,7 +23,7 @@ export default function Games() {
         <Helmet>
           <title>Games</title>
           <meta property="og:title" content="Games Toy.Stream" />
-          <meta property="og:url" content={`${location.href}`} />
+          <meta property="og:url" content={`${"https://toystream.pages.dev" + "/games"}`} />
           <meta name="og:description" content="Games by Toy.Stream." />
           <meta name="description" content="Toy.Stream Games." />
         </Helmet>
