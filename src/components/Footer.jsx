@@ -15,8 +15,7 @@ function Footer(props) {
         <div className="company">
           <a
             href="https://www.figma.com/file/0hfNUTOuJDRHGWilFAUkFV/Toy.Stream---%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D1%82%D0%B8%D0%BF-(Copy)?t=TpUfLgFj0ACTCmEa-0"
-            title="Figma original layout link"
-          >
+            title="Figma original layout link">
             © Toy.Stream, Inc.
           </a>
         </div>
@@ -47,8 +46,7 @@ function Footer(props) {
               width={"25"}
               height={"25"}
               alt="pinterest"
-              title="pinterest"
-            ></img>
+              title="pinterest"></img>
           </Link>
           <Link to="/">
             <img
@@ -56,8 +54,7 @@ function Footer(props) {
               width={"25"}
               height={"25"}
               alt="Behance"
-              title="Behance"
-            ></img>
+              title="Behance"></img>
           </Link>
           <Link to="/">
             <img
@@ -65,8 +62,7 @@ function Footer(props) {
               width={"25"}
               height={"25"}
               alt="Dribbble"
-              title="Dribbble"
-            ></img>
+              title="Dribbble"></img>
           </Link>
           <Link to="/">
             <img
@@ -74,8 +70,7 @@ function Footer(props) {
               width={"25"}
               height={"25"}
               alt="Snapchat"
-              title="Snapchat"
-            ></img>
+              title="Snapchat"></img>
           </Link>
           <Link to="/">
             <img
@@ -83,17 +78,15 @@ function Footer(props) {
               width={"25"}
               height={"25"}
               alt="Linkedin"
-              title="Linkedin"
-            ></img>
+              title="Linkedin"></img>
           </Link>
           <Link to="/">
             <img
               src={Facebook}
               width={"25"}
-              height={"24.99"}
+              height={"25"}
               alt="Facebook"
-              title="Facebook"
-            ></img>
+              title="Facebook"></img>
           </Link>
         </div>
       </div>
@@ -108,8 +101,7 @@ function Footer(props) {
 
         <a
           href="https://github.com/jkenix/jkenix.github.io/tree/toystream"
-          title="Github repo"
-        >
+          title="Github repo">
           Website on Github
         </a>
       </div>

@@ -8,7 +8,6 @@ import "../styles/lib/slick-theme.css";
 import Header from "../components/Header.jsx";
 import Sociallinksvert from "../components/Sociallinksvert.jsx";
 import UpBtn from "../components/UpBtn.jsx";
-import Footer from "../components/Footer.jsx";
 
 import lamp from "../img/lamp.svg";
 import lampactive from "../img/lamp-active.svg";
@@ -41,7 +40,7 @@ export default function Career() {
             }}>
             <span className="hamburger-item"></span>
           </div>
-          <Header carlink="link-active la-c" />
+          <Header />
         </header>
         <main className="l-main">
           <Sociallinksvert slvname="social-links-vert slv-static" />
@@ -231,7 +230,6 @@ export default function Career() {
             </div>
           </div>
         </main>
-        <Footer />
       </HelmetProvider>
     </>
   );

@@ -4,7 +4,6 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { ShowMenu, NavActive } from "../js/scripts";
 import Header from "../components/Header.jsx";
 import Sociallinksvert from "../components/Sociallinksvert.jsx";
-import Footer from "../components/Footer.jsx";
 
 export default function Contacts() {
   return (
@@ -13,7 +12,10 @@ export default function Contacts() {
         <Helmet>
           <title>Contacts</title>
           <meta property="og:title" content="Toy.Stream Contacts" />
-          <meta property="og:url" content={`${"https://toystream.pages.dev" + "/contacts"}`} />
+          <meta
+            property="og:url"
+            content={`${"https://toystream.pages.dev" + "/contacts"}`}
+          />
           <meta name="og:description" content="Contacts - Toy.Stream." />
           <meta name="description" content="Toy.Stream - Contacts." />
         </Helmet>
@@ -27,7 +29,7 @@ export default function Contacts() {
           >
             <span className="hamburger-item"></span>
           </div>
-          <Header conlink="link-active la-c" />
+          <Header />
         </header>
         <main className="l-main">
           <Sociallinksvert slvname="social-links-vert slv-abs slv-con" />
@@ -55,7 +57,6 @@ export default function Contacts() {
             </div>
           </div>
         </main>
-        <Footer />
       </HelmetProvider>
     </>
   );

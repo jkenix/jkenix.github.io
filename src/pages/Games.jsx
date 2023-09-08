@@ -8,7 +8,6 @@ import Header from "../components/Header.jsx";
 import Sociallinksvert from "../components/Sociallinksvert.jsx";
 import ResizableSliderGames from "../components/ResizableSliderGames.jsx";
 import UpBtn from "../components/UpBtn.jsx";
-import Footer from "../components/Footer.jsx";
 
 import gp from "../img/games-preview.svg";
 import dmasters from "../img/design-masters.webp";
@@ -23,7 +22,10 @@ export default function Games() {
         <Helmet>
           <title>Games</title>
           <meta property="og:title" content="Games Toy.Stream" />
-          <meta property="og:url" content={`${"https://toystream.pages.dev" + "/games"}`} />
+          <meta
+            property="og:url"
+            content={`${"https://toystream.pages.dev" + "/games"}`}
+          />
           <meta name="og:description" content="Games by Toy.Stream." />
           <meta name="description" content="Toy.Stream Games." />
         </Helmet>
@@ -37,7 +39,7 @@ export default function Games() {
             }}>
             <span className="hamburger-item"></span>
           </div>
-          <Header glink="link-active la-c" />
+          <Header />
         </header>
         <main className="l-main">
           <Sociallinksvert slvname="social-links-vert slv-static" />
@@ -195,7 +197,6 @@ export default function Games() {
           </div>
           <UpBtn btnname="up-btn ub-abs" />
         </main>
-        <Footer />
       </HelmetProvider>
     </>
   );

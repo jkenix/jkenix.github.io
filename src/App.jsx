@@ -2,6 +2,8 @@ import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import gifcat from "./img/YAgE.gif";
+
+import Footer from "./components/Footer.jsx";
 const Home = lazy(() => import("./pages/Home.jsx"));
 const Company = lazy(() => import("./pages/Company.jsx"));
 const Games = lazy(() => import("./pages/Games.jsx"));
@@ -23,11 +25,10 @@ export default function App() {
               flexDirection: "column",
               height: "100vh",
               textAlign: "center",
-              "fontFamily": "AkrobatRegular",
-              "fontWeight": "900",
-              "fontSize": "4.5rem",
-            }}
-          >
+              fontFamily: "AkrobatRegular",
+              fontWeight: "900",
+              fontSize: "4.5rem",
+            }}>
             Загрузка...
             <div className="img__resp-block">
               <img
@@ -35,8 +36,7 @@ export default function App() {
                 className="img__resp"
                 width="600"
                 height="600"
-                alt="Gif cat"
-              ></img>
+                alt="Gif cat"></img>
             </div>
           </div>
         }
@@ -49,6 +49,7 @@ export default function App() {
           <Route path="/news" element={<News />}></Route>
           <Route path="/contacts" element={<Contacts />}></Route>
         </Routes>
+        <Footer />
       </Suspense>
     </BrowserRouter>
   );

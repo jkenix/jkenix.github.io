@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { bhremove } from "../js/scripts";
 
 import logo from "../img/Company-logo.svg";
@@ -18,72 +18,56 @@ export default function Header(props) {
         />
       </Link>
       <nav className="header-menu">
-        <Link
-          className={props.mlink}
+        <NavLink
           to="/"
           title="Главная"
           onClick={() => {
             bhremove();
-          }}
-        >
+          }}>
           Главная
-        </Link>
-        <Link
-          className={props.comlink}
+        </NavLink>
+        <NavLink
           to="/company"
           title="Компания"
           onClick={() => {
             bhremove();
-          }}
-        >
+          }}>
           Компания
-        </Link>
-        <Link
-          className={props.glink}
+        </NavLink>
+        <NavLink
           to="/games"
           title="Игры"
           onClick={() => {
             bhremove();
-          }}
-        >
+          }}>
           Игры
-        </Link>
-        <Link
-          className={props.carlink}
+        </NavLink>
+        <NavLink
           to="/career"
           title="Карьера"
           onClick={() => {
             bhremove();
-          }}
-        >
+          }}>
           Карьера
-        </Link>
-        <Link
-          className={props.nlink}
+        </NavLink>
+        <NavLink
           to="/news"
           title="Новости"
           onClick={() => {
             bhremove();
-          }}
-        >
+          }}>
           Новости
-        </Link>
-        <Link
-          className={props.conlink}
+        </NavLink>
+        <NavLink
           to="/contacts"
           title="Контакты"
           onClick={() => {
             bhremove();
-          }}
-        >
+          }}>
           Контакты
-        </Link>
+        </NavLink>
       </nav>
-      <Link
-        className="btn lang-sw"
-        to="/"
-        title="Switch language"
-      >
+      <Link className="btn lang-sw" to="/" title="Switch language">
         ENG
       </Link>
     </>

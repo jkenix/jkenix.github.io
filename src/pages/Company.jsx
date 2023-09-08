@@ -8,7 +8,6 @@ import Header from "../components/Header.jsx";
 import Sociallinksvert from "../components/Sociallinksvert.jsx";
 import ResizableSliderAt from "../components/ResizableSliderAt.jsx";
 import UpBtn from "../components/UpBtn.jsx";
-import Footer from "../components/Footer.jsx";
 
 import mountain from "../img/mountain.png";
 import champ from "../img/champ.png";
@@ -22,7 +21,10 @@ export default function Company() {
         <Helmet>
           <title>Toy.Stream - Game studio</title>
           <meta property="og:title" content="Company Toy.Stream" />
-          <meta property="og:url" content={`${"https://toystream.pages.dev" + "/company"}`} />
+          <meta
+            property="og:url"
+            content={`${"https://toystream.pages.dev" + "/company"}`}
+          />
           <meta name="og:description" content="About company Toy.Stream." />
           <meta name="description" content="Toy.Steam - About company." />
         </Helmet>
@@ -36,7 +38,7 @@ export default function Company() {
             }}>
             <span className="hamburger-item"></span>
           </div>
-          <Header comlink="link-active la-c" />
+          <Header />
         </header>
         <main className="l-main">
           <Sociallinksvert slvname="social-links-vert slv-static" />
@@ -136,7 +138,6 @@ export default function Company() {
           </div>
           <UpBtn btnname="up-btn ub-abs" />
         </main>
-        <Footer />
       </HelmetProvider>
     </>
   );

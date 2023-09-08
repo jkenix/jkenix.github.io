@@ -20,12 +20,12 @@
 }
 /* Color styles for page content */
 // Header
-.l-header {
-  .la-c {
-    color: #ff0000;
-  }
-  nav a {
+.header-menu {
+  > a {
     color: #000000;
+  }
+  > .active {
+    color: #ff0000;
   }
 }
 // Main
@@ -78,10 +78,10 @@
     }
   }
   // Contacts
-  .l-con-wr .ci-content{
-    a, span {
+  .l-con-wr .ci-content {
+    a,
+    span {
       color: #000000;
-
     }
   }
 }

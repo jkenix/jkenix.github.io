@@ -6,7 +6,6 @@ import { ShowMenu, NavActive } from "../js/scripts";
 import Header from "../components/Header.jsx";
 import Sociallinksvert from "../components/Sociallinksvert.jsx";
 import UpBtn from "../components/UpBtn.jsx";
-import Footer from "../components/Footer.jsx";
 
 import gamenews from "../img/gamenews.png";
 import calendar from "../img/calendar.svg";
@@ -19,7 +18,10 @@ export default function News() {
         <Helmet>
           <title>News</title>
           <meta property="og:title" content="News Toy.Stream" />
-          <meta property="og:url" content={`${"https://toystream.pages.dev" + "/news"}`} />
+          <meta
+            property="og:url"
+            content={`${"https://toystream.pages.dev" + "/news"}`}
+          />
           <meta
             name="og:description"
             content="Check news from Toy.Stream team."
@@ -35,7 +37,7 @@ export default function News() {
             }}>
             <span className="hamburger-item"></span>
           </div>
-          <Header nlink="link-active la-c" />
+          <Header />
         </header>
         <main className="l-main">
           <Sociallinksvert slvname="social-links-vert slv-abs" />
@@ -286,7 +288,6 @@ export default function News() {
             <UpBtn btnname="up-btn" />
           </div>
         </main>
-        <Footer />
       </HelmetProvider>
     </>
   );

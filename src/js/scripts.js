@@ -9,7 +9,7 @@ export function ShowMenu() {
 }
 // Remove class overflow-hidden from body (on click on other pages except main)
 export function bhremove() {
-   let body = document.querySelector("body");
+  let body = document.querySelector("body");
   body.classList.remove("overflow-hidden");
 }
 

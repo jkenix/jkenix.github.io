@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import { ShowMenu, ShowMenuylg, NavActive} from "../js/scripts";
 import Header from "../components/Header.jsx";
 import Sociallinksvert from "../components/Sociallinksvert.jsx";
-import Footer from "../components/Footer.jsx";
-
 import unicorn from "../img/unicorn.svg";
 
 export default function Home() {
@@ -37,7 +35,7 @@ export default function Home() {
           >
             <span className="hamburger-item"></span>
           </div>
-          <Header mlink="link-active la-c" />
+          <Header/>
         </header>
         <div className="l-main ylg-bg">
           <div className="l-ga-wr">
@@ -48,7 +46,10 @@ export default function Home() {
               <div className="desc">
                 <Sociallinksvert slvname="social-links-vert" />
                 <div className="desc-content">
-                  <Link to="/games" className="btn check-box" title="Learn more">
+                  <Link
+                    to="/games"
+                    className="btn check-box"
+                    title="Learn more">
                     Узнать подробнее
                   </Link>
                   <div className="text-box">
@@ -66,12 +67,10 @@ export default function Home() {
                 className="img__resp"
                 width="768"
                 height="733"
-                alt="Unicorn picture"
-              ></img>
+                alt="Unicorn picture"></img>
             </div>
           </div>
         </div>
-        <Footer />
       </HelmetProvider>
     </>
   );
