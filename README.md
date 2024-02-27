@@ -3,7 +3,7 @@
 Collected here are projects that were developed during ***my first year of web development training***. ⚡  
 **ACTUAL CATALOG** with the current project I'm working on, you [can check out here](https://github.com/jkenix/jkenix-projects) ✅  
 
-**Best projects** are listed below. ⬇️  
+**Serious First Projects** are listed below. ⬇️  
 
 ## Adaptive Web-sites:
 - [**Feni Studio**](https://github.com/jkenix/jkenix.github.io/tree/feni) on React.js 🔗  
