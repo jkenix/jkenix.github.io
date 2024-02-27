@@ -1,7 +1,7 @@
-# Jkenix's projects catalog of web development. 🙌    
+# Jkenix's OLD projects catalog of web development. 🙌 [ARCHIVE]   
 
-Collected here are projects that were developed during **my first year of web development training**. ⚡  
-**Actual catalog** with the current project I'm working on, you can check out [here](https://github.com/jkenix/jkenix-projects) ✅  
+Collected here are projects that were developed during ***my first year of web development training***. ⚡  
+**ACTUAL CATALOG** with the current project I'm working on, you [can check out here](https://github.com/jkenix/jkenix-projects) ✅  
 
 **Best projects** are listed below. ⬇️  
 
