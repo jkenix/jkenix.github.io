@@ -1,4 +1,4 @@
-@import "mixins_var.scss";
+@use "mixins_var.scss";
 /* Layout classes */
 #wrapper {
   max-width: 1920px;
@@ -37,7 +37,7 @@
     padding: 49px 40px 0 86px;
     .l-games-about {
       max-width: 1000px;
-      @include flexcolumn();
+      @include mixins_var.flexcolumn();
       gap: 75px;
       .title {
         h2 {
@@ -55,7 +55,7 @@
           padding-top: 28px;
           padding-left: 97px;
           .check-box {
-            @include flexcolumn();
+            @include mixins_var.flexcolumn();
             gap: 10px;
             justify-content: center;
             width: 105px;
@@ -103,7 +103,7 @@
       gap: 64px;
       padding-left: 97px;
       .com-title {
-        @include flexcolumn();
+        @include mixins_var.flexcolumn();
         padding-top: 47px;
         padding-left: 3px;
         max-width: 650px;
@@ -132,13 +132,13 @@
       display: flex;
       padding-top: 5px;
       .l-scolumn {
-        @include flexcolumn();
+        @include mixins_var.flexcolumn();
         gap: 44px;
         .l-sblock {
-          @include flexcolumn();
+          @include mixins_var.flexcolumn();
           gap: 19px;
           .text-block {
-            @include flexcolumn();
+            @include mixins_var.flexcolumn();
             .num-title {
               font-weight: 900;
               font-size: 2.75rem;
@@ -163,7 +163,7 @@
     padding-right: 151px;
     padding-bottom: 84px;
     .l-about-team {
-      @include flexcolumn();
+      @include mixins_var.flexcolumn();
       gap: 21px;
       .l-at-title {
         h2 {
@@ -231,7 +231,7 @@
       justify-content: space-between;
       gap: 40px;
       .gam-title {
-        @include flexcolumn();
+        @include mixins_var.flexcolumn();
         width: 607px;
         padding-top: 61px;
         h2 {
@@ -304,7 +304,7 @@
       }
       .check-gi {
         align-items: center;
-        @include flexcolumn();
+        @include mixins_var.flexcolumn();
         font-weight: 800;
         font-size: 1.375rem;
         gap: 15px;
@@ -397,7 +397,7 @@
         }
         .check-gp {
           align-items: center;
-          @include flexcolumn();
+          @include mixins_var.flexcolumn();
           font-weight: 800;
           font-size: 1.375rem;
           gap: 5px;
@@ -499,7 +499,7 @@
       grid-gap: 31px;
       margin-top: 33px;
       .vac-block {
-        @include flexcolumn();
+        @include mixins_var.flexcolumn();
         justify-content: flex-end;
         max-width: 505px;
         height: 505px;
@@ -515,7 +515,7 @@
             padding-left: 40px;
           }
           .check-more {
-            @include flexcolumn();
+            @include mixins_var.flexcolumn();
             align-items: center;
             gap: 10px;
             justify-content: center;
@@ -568,14 +568,14 @@
         }
       }
       .bw-content {
-        @include flexcolumn();
+        @include mixins_var.flexcolumn();
         gap: 38px;
         max-width: 609px;
         .bw-row {
           display: flex;
           .bw-row-content {
             .bwrc-desc {
-              @include flexcolumn();
+              @include mixins_var.flexcolumn();
               &-title {
                 font-weight: 900;
                 font-size: 2.75rem;
@@ -683,7 +683,7 @@
           line-height: 85px;
         }
         .ci-content {
-          @include flexcolumn();
+          @include mixins_var.flexcolumn();
           padding-top: 55px;
           a,
           span {
@@ -736,7 +736,7 @@
   }
   .l-author {
     align-items: center;
-    @include flexcolumn();
+    @include mixins_var.flexcolumn();
     gap: 5px;
     margin: 32px 0 32px;
     white-space: nowrap;

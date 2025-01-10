@@ -1,4 +1,4 @@
-@import "mixins_var.scss";
+@use "mixins_var.scss";
 /* Media styles */
 // 2099+ px
 @media (min-width: 2099px) {
@@ -205,7 +205,7 @@
       margin-right: 57px;
     }
     .header-menu {
-      @include flexcolumn();
+      @include mixins_var.flexcolumn();
       position: absolute;
       overflow: auto;
       top: 120px;

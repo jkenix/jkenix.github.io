@@ -1,4 +1,4 @@
-@import "mixins_var.scss";
+@use "mixins_var.scss";
 /* Modules. Reusable many times in code. */
 // Body
 .overflow-hidden {
@@ -72,7 +72,7 @@
 }
 .up-btn {
   align-items: center;
-  @include flexcolumn();
+  @include mixins_var.flexcolumn();
   justify-content: center;
   font-weight: 800;
   font-size: 1.375rem;
